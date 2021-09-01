@@ -1,0 +1,24 @@
+uuid: 3057d786-ff58-4cc6-b0b6-463c685abe52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_video.localgov_video
+    - paragraphs.paragraphs_type.localgov_video
+_core:
+  default_config_hash: 4PhBC6oRm9_u9Zi2OvxQuswCIbR96HHujWwBmWub3jM
+id: paragraph.localgov_video.default
+targetEntityType: paragraph
+bundle: localgov_video
+mode: default
+content:
+  localgov_video:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: responsive_3x2
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

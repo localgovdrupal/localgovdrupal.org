@@ -1,0 +1,52 @@
+uuid: 571072f9-df46-48ed-9052-fc7582f7fd78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_fact_box.localgov_above_text
+    - field.field.paragraph.localgov_fact_box.localgov_background
+    - field.field.paragraph.localgov_fact_box.localgov_below_text
+    - field.field.paragraph.localgov_fact_box.localgov_fact
+    - paragraphs.paragraphs_type.localgov_fact_box
+_core:
+  default_config_hash: FRagC6s3tdSBwHHjZM1xGShDlz0E6TgyKRI1mSQ9gyM
+id: paragraph.localgov_fact_box.default
+targetEntityType: paragraph
+bundle: localgov_fact_box
+mode: default
+content:
+  localgov_above_text:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_background:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  localgov_below_text:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_fact:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  moderation_state: true
+  status: true
+  uid: true

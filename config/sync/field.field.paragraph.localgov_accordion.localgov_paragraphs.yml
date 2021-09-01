@@ -1,0 +1,75 @@
+uuid: 0737701d-4e4d-4cc3-a2b1-a9879a64368e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_paragraphs
+    - paragraphs.paragraphs_type.localgov_accordion
+    - paragraphs.paragraphs_type.localgov_accordion_pane
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: JpnTBTxa8E2nqD2uPxuuKrqw9xQ_9YN88qXcFtFlKMI
+id: paragraph.localgov_accordion.localgov_paragraphs
+field_name: localgov_paragraphs
+entity_type: paragraph
+bundle: localgov_accordion
+label: Paragraphs
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      localgov_accordion_pane: localgov_accordion_pane
+    target_bundles_drag_drop:
+      from_library:
+        weight: 16
+        enabled: false
+      localgov_accordion:
+        weight: 17
+        enabled: false
+      localgov_accordion_pane:
+        enabled: true
+        weight: 18
+      localgov_box_link:
+        weight: 19
+        enabled: false
+      localgov_call_out_box:
+        weight: 20
+        enabled: false
+      localgov_contact:
+        weight: 21
+        enabled: false
+      localgov_fact_box:
+        weight: 22
+        enabled: false
+      localgov_image:
+        weight: 23
+        enabled: false
+      localgov_link:
+        weight: 24
+        enabled: false
+      localgov_link_and_summary:
+        weight: 25
+        enabled: false
+      localgov_quote:
+        weight: 26
+        enabled: false
+      localgov_text:
+        weight: 27
+        enabled: false
+      localgov_video:
+        weight: 28
+        enabled: false
+      page_section:
+        weight: 29
+        enabled: false
+      topic_list_builder:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

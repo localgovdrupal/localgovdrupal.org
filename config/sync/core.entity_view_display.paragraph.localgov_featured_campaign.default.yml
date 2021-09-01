@@ -1,0 +1,55 @@
+uuid: c2587f16-f39a-4141-bdde-a852ad6f4a3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_featured_campaign.localgov_featured_campaign_image
+    - field.field.paragraph.localgov_featured_campaign.localgov_featured_campaign_link
+    - field.field.paragraph.localgov_featured_campaign.localgov_featured_campaign_text
+    - paragraphs.paragraphs_type.localgov_featured_campaign
+  module:
+    - field_formatter_class
+    - link
+_core:
+  default_config_hash: 4XkdCftdh15gCgpirtD9Hgjtga0_8vcoONOvetgZoiI
+id: paragraph.localgov_featured_campaign.default
+targetEntityType: paragraph
+bundle: localgov_featured_campaign
+mode: default
+content:
+  localgov_featured_campaign_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: localgov_featured_large
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: featured-campaign__img
+    region: content
+  localgov_featured_campaign_link:
+    weight: 1
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: featured-campaign__title
+    type: link
+    region: content
+  localgov_featured_campaign_text:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: featured-campaign__summary
+    type: basic_string
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: 6d533d37-5e7a-4599-8d59-47fc5483ca6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_button
+    - paragraphs.paragraphs_type.localgov_call_out_box
+  module:
+    - link
+_core:
+  default_config_hash: XoJlbP8ctFb4mKzYzmjZE8vOZWcKwCx1vR5rqI3DBOU
+id: paragraph.localgov_call_out_box.localgov_button
+field_name: localgov_button
+entity_type: paragraph
+bundle: localgov_call_out_box
+label: Button
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

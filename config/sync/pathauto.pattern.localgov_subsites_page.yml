@@ -1,0 +1,24 @@
+uuid: 39d528f6-3afa-4b7a-91a9-ef30049b084f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: GWkttAQNGRIm75pW08ENstgfoBJ6o1V4Vr3dw30g6FA
+id: localgov_subsites_page
+label: 'Subsite page'
+type: 'canonical_entities:node'
+pattern: '[node:localgov_subsites_parent:entity:url:relative]/[node:title]'
+selection_criteria:
+  a17ad9f1-47e0-407c-9351-970cb7dc958c:
+    id: node_type
+    bundles:
+      localgov_subsites_page: localgov_subsites_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a17ad9f1-47e0-407c-9351-970cb7dc958c
+selection_logic: and
+weight: -5
+relationships: {  }

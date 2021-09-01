@@ -1,0 +1,31 @@
+uuid: 47f7abaf-cd2b-4aad-a1e2-df305bc1cc8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_subsites_topic
+    - node.type.localgov_subsites_page
+    - taxonomy.vocabulary.localgov_topic
+_core:
+  default_config_hash: zYxz86_Y0TNjbIoKNKv_NlXL87ERu3KoZK-ZdEn02LY
+id: node.localgov_subsites_page.localgov_subsites_topic
+field_name: localgov_subsites_topic
+entity_type: node
+bundle: localgov_subsites_page
+label: 'Topic term'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      localgov_topic: localgov_topic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

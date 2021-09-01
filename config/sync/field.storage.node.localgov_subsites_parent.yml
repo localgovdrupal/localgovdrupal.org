@@ -1,0 +1,22 @@
+uuid: bb88e06a-ff92-48ab-976a-0e605b9de377
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_hierarchy
+    - node
+_core:
+  default_config_hash: muQkTfQS0SRKLeaB4uUBrNt_lIETdd4ZId60hrDesho
+id: node.localgov_subsites_parent
+field_name: localgov_subsites_parent
+entity_type: node
+type: entity_reference_hierarchy
+settings:
+  target_type: node
+module: entity_hierarchy
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

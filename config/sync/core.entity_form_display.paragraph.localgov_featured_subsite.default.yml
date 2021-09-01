@@ -1,0 +1,45 @@
+uuid: 52863cba-663e-494b-9860-55b2d44918c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_featured_subsite.localgov_featured_subsite_image
+    - field.field.paragraph.localgov_featured_subsite.localgov_featured_subsite_link
+    - field.field.paragraph.localgov_featured_subsite.localgov_featured_subsite_text
+    - paragraphs.paragraphs_type.localgov_featured_subsite
+  module:
+    - link
+    - media_library
+_core:
+  default_config_hash: xz3ie6UkIkYamtdBxSobNMvqjUFz1k-MAB1567ms59M
+id: paragraph.localgov_featured_subsite.default
+targetEntityType: paragraph
+bundle: localgov_featured_subsite
+mode: default
+content:
+  localgov_featured_subsite_image:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  localgov_featured_subsite_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  localgov_featured_subsite_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

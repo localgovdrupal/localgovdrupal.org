@@ -1,0 +1,53 @@
+uuid: dc15aea6-391c-42c6-ad04-0c2ec293acb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_key_contact_item.localgov_colour_theme
+    - field.field.paragraph.localgov_key_contact_item.localgov_contact_email
+    - field.field.paragraph.localgov_key_contact_item.localgov_heading_level
+    - field.field.paragraph.localgov_key_contact_item.localgov_image
+    - field.field.paragraph.localgov_key_contact_item.localgov_link
+    - field.field.paragraph.localgov_key_contact_item.localgov_title
+    - paragraphs.paragraphs_type.localgov_key_contact_item
+  module:
+    - link
+_core:
+  default_config_hash: ExipRoX0R4Z7Iq4ZgQCgbCFkdLSC8bhZj9cG2DeotsQ
+id: paragraph.localgov_key_contact_item.default
+targetEntityType: paragraph
+bundle: localgov_key_contact_item
+mode: default
+content:
+  localgov_contact_email:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  localgov_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  localgov_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  localgov_colour_theme: true
+  localgov_heading_level: true
+  localgov_title: true

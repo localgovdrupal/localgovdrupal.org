@@ -1,0 +1,25 @@
+uuid: fd71eabd-92e9-4962-b1ce-332240d0bcfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_media_position
+    - paragraphs.paragraphs_type.localgov_media_with_text
+  module:
+    - options
+_core:
+  default_config_hash: iHpW_zCl9FvQtHhTFM5GFi4yeqUI-U3atsySIY2UN8c
+id: paragraph.localgov_media_with_text.localgov_media_position
+field_name: localgov_media_position
+entity_type: paragraph
+bundle: localgov_media_with_text
+label: 'Media position'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: top
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,30 @@
+uuid: 81fb6f19-2ac9-4e93-abd6-885fee17abed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_subsites_banner_logo
+    - media.type.image
+    - paragraphs.paragraphs_type.localgov_banner_primary
+_core:
+  default_config_hash: xA-sKuveXtwDjawJwCsoymGReFHy9cjzb-BdiXmZ1uI
+id: paragraph.localgov_banner_primary.localgov_subsites_banner_logo
+field_name: localgov_subsites_banner_logo
+entity_type: paragraph
+bundle: localgov_banner_primary
+label: Logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

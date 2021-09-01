@@ -1,0 +1,25 @@
+uuid: 61fc983a-3a2e-41d7-b788-ad8f550fe488
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_subsites_hide_menu
+    - node.type.localgov_subsites_overview
+_core:
+  default_config_hash: BoopdzwOdYvTEKO-cpOO8Kar_3qUk288OY-AQwFvsS8
+id: node.localgov_subsites_overview.localgov_subsites_hide_menu
+field_name: localgov_subsites_hide_menu
+entity_type: node
+bundle: localgov_subsites_overview
+label: 'Hide page menu'
+description: 'Hide the sidebar menu from overview and associated pages.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

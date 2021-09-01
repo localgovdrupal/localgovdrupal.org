@@ -1,0 +1,30 @@
+uuid: 5e3a1683-5009-45de-89ba-a831fbe0af26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_video
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.localgov_video
+_core:
+  default_config_hash: LsTASqWD5A2rz0Nd0sj6hsqNYT6SKAVLw4pXy8ZKQ5Y
+id: paragraph.localgov_video.localgov_video
+field_name: localgov_video
+entity_type: paragraph
+bundle: localgov_video
+label: Video
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

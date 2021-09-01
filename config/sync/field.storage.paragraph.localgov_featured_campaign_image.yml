@@ -1,0 +1,22 @@
+uuid: 6b5c12d0-69e5-407b-90bd-b80567dc8499
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+_core:
+  default_config_hash: UKX9cZnoIj4eZC-qxlT34CVZ9b6woE_n7m37Oh3jDYA
+id: paragraph.localgov_featured_campaign_image
+field_name: localgov_featured_campaign_image
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

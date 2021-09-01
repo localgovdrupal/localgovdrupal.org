@@ -1,0 +1,21 @@
+uuid: 4ae02c97-f0ba-4736-bfad-54f4adfb7615
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_fact
+    - paragraphs.paragraphs_type.localgov_fact_box
+_core:
+  default_config_hash: bz4L5pWmKrJ8wS_odQ15YWNd3lPwH_VOdBozzABJLYc
+id: paragraph.localgov_fact_box.localgov_fact
+field_name: localgov_fact
+entity_type: paragraph
+bundle: localgov_fact_box
+label: Fact
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

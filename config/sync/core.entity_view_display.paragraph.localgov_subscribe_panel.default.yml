@@ -1,0 +1,114 @@
+uuid: 579c755c-45c2-433d-8deb-438db8c081cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_email_title
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_form_markup
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_social_links
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_social_text
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_social_title
+    - paragraphs.paragraphs_type.localgov_subscribe_panel
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_email:
+      children:
+        - localgov_subs_panel_email_title
+        - localgov_subs_panel_form_markup
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'email-subscription-panel col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        effect: none
+        speed: fast
+        attributes: ''
+      label: Email
+    group_social:
+      children:
+        - localgov_subs_panel_social_title
+        - localgov_subs_panel_social_text
+        - localgov_subs_panel_social_links
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'social-media-subscription-panel col-md-4'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Social
+_core:
+  default_config_hash: cFgPAAIYWsECMtnFQPIPKaRbY35lmn--ViosSA5c3Ms
+id: paragraph.localgov_subscribe_panel.default
+targetEntityType: paragraph
+bundle: localgov_subscribe_panel
+mode: default
+content:
+  localgov_subs_panel_email_title:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: 'email-subscription-panel__title h4'
+    type: string
+    region: content
+  localgov_subs_panel_form_markup:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: email-subscription-panel__form
+    type: text_default
+    region: content
+  localgov_subs_panel_social_links:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: 'social-media-subscription-panel__links row'
+    region: content
+  localgov_subs_panel_social_text:
+    weight: 5
+    label: visually_hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: social-media-subscription-panel__text
+    type: text_default
+    region: content
+  localgov_subs_panel_social_title:
+    weight: 4
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: 'social-media-subscription-panel__title h4'
+    type: string
+    region: content
+hidden: {  }

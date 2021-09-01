@@ -1,0 +1,28 @@
+uuid: c3322af5-8e3c-4158-9a25-4d55b3fb7e4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_box_link.localgov_image
+    - field.field.paragraph.localgov_box_link.localgov_link
+    - field.field.paragraph.localgov_box_link.localgov_opens_in_a_new_window
+    - paragraphs.paragraphs_type.localgov_box_link
+_core:
+  default_config_hash: h2xlkZy3M9rewELCApy7KpQAvkUU_mx3kBuAM0tWtrw
+id: paragraph.localgov_box_link.default
+targetEntityType: paragraph
+bundle: localgov_box_link
+mode: default
+content:
+  localgov_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: responsive_3x2
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  localgov_link: true
+  localgov_opens_in_a_new_window: true

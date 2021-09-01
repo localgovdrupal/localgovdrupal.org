@@ -1,0 +1,33 @@
+uuid: bd2ad57d-25cb-4887-9dd3-22ef3a5e7c34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_media_item
+    - media.type.image
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.localgov_media_with_text
+_core:
+  default_config_hash: hsST_EreL8OGqs1lmWVasA7jF1ORCY2qCpCY8Wi7iOI
+id: paragraph.localgov_media_with_text.localgov_media_item
+field_name: localgov_media_item
+entity_type: paragraph
+bundle: localgov_media_with_text
+label: 'Media item'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

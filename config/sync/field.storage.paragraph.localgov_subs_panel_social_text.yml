@@ -1,0 +1,21 @@
+uuid: 4f07808d-a67b-413a-8879-a861ddad87bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: ihQue7SPydwWa_h0Qt0GzKEMMhCZ1tPz6dUtqC_kbM0
+id: paragraph.localgov_subs_panel_social_text
+field_name: localgov_subs_panel_social_text
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

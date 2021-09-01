@@ -1,0 +1,21 @@
+uuid: e2907646-39cc-42a0-92dc-b72c5cf0f6f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_labelled_icon_title
+    - paragraphs.paragraphs_type.localgov_labelled_icon
+_core:
+  default_config_hash: p3gmvPqAuh2EUAY98Mjq8o5sKlY0cfB3LtIqE48P8Mk
+id: paragraph.localgov_labelled_icon.localgov_labelled_icon_title
+field_name: localgov_labelled_icon_title
+entity_type: paragraph
+bundle: localgov_labelled_icon
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

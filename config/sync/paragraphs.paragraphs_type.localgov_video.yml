@@ -1,0 +1,12 @@
+uuid: ab7ed102-e1b0-4d18-b6ab-96f3ecf224ee
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i2jKtZ-iZPh6o4iuunzcLlI_M4HOsuAV_sFDHvFJ1Ig
+id: localgov_video
+label: Video
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

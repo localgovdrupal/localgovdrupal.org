@@ -1,0 +1,21 @@
+uuid: 74fd7fec-bbdd-4c31-be38-b912afb8a65d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_newsroom_teaser_title
+    - paragraphs.paragraphs_type.localgov_newsroom_teaser
+_core:
+  default_config_hash: tErgxtHvXTkMbkeZ6KTouzk5fxDMwgH09wJlWfycqdk
+id: paragraph.localgov_newsroom_teaser.localgov_newsroom_teaser_title
+field_name: localgov_newsroom_teaser_title
+entity_type: paragraph
+bundle: localgov_newsroom_teaser
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

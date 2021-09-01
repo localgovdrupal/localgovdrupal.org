@@ -1,0 +1,21 @@
+uuid: 77a17eea-76dd-4cd6-aaf5-6789961fe336
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_author
+    - paragraphs.paragraphs_type.localgov_quote
+_core:
+  default_config_hash: Rz1doWr5baCnbEN-mhAD4BYWx5dI4bLMT_FCEKTah-4
+id: paragraph.localgov_quote.localgov_author
+field_name: localgov_author
+entity_type: paragraph
+bundle: localgov_quote
+label: Author
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

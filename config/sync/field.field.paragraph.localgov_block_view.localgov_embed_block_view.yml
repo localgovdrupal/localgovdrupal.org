@@ -1,0 +1,31 @@
+uuid: 98531846-082a-48e6-8c5b-d2bc52bbc1b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_embed_block_view
+    - paragraphs.paragraphs_type.localgov_block_view
+  module:
+    - viewsreference
+_core:
+  default_config_hash: MxqBo9o-OhaNA6WocutAulJgLb0yX4tsbc5s3SI4afQ
+id: paragraph.localgov_block_view.localgov_embed_block_view
+field_name: localgov_embed_block_view
+entity_type: paragraph
+bundle: localgov_block_view
+label: 'Block view'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views: {  }
+  enabled_settings: {  }
+field_type: viewsreference

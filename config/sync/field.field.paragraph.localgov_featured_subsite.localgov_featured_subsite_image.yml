@@ -1,0 +1,30 @@
+uuid: c1f883ca-15ad-4f21-8483-779dc9200547
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_featured_subsite_image
+    - media.type.image
+    - paragraphs.paragraphs_type.localgov_featured_subsite
+_core:
+  default_config_hash: is1SxQXWFyBPZJU_IEoJF7aji3qRyik7kycHogujl3w
+id: paragraph.localgov_featured_subsite.localgov_featured_subsite_image
+field_name: localgov_featured_subsite_image
+entity_type: paragraph
+bundle: localgov_featured_subsite
+label: 'Subsite image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

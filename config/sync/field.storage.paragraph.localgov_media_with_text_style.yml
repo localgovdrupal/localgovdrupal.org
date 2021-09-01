@@ -1,0 +1,29 @@
+uuid: 966a61c4-8d37-434a-a7e6-8de52425fdeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: _AYtDHVnjNa1bc3U1dkxiQOFQW1w3EQfTGB2DiJkXog
+id: paragraph.localgov_media_with_text_style
+field_name: localgov_media_with_text_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: Default
+    -
+      value: featured
+      label: Featured
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 55927baf-8c6c-43c0-acf9-504b46550cbc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 79OVxQDc39nODxSNssSXgfmuOOYaJG5OfqxcuWaJPvQ
+id: localgov_featured_teasers
+label: 'Featured teasers'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

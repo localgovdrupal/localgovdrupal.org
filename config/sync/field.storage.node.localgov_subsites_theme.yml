@@ -1,0 +1,26 @@
+uuid: 825e11ce-4480-48ec-9dae-658c0fd24772
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: JLQ7jxZf66gK6bLodaBwJjygdfasVCktU1s1zpGwqYE
+id: node.localgov_subsites_theme
+field_name: localgov_subsites_theme
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: theme_a
+      label: Default
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

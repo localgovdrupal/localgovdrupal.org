@@ -1,0 +1,24 @@
+uuid: c337876b-662e-47c1-b64e-bdf81f457fa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_subsites
+  theme:
+    - localgov_base
+_core:
+  default_config_hash: Hpri2MrWcZkb0ZMzwlSzXSM46CY9nGszCS0owTKRTF4
+id: subsitenavigation
+theme: localgov_base
+region: sidebar_second
+weight: -7
+provider: null
+plugin: localgov_subsite_navigation
+settings:
+  id: localgov_subsite_navigation
+  label: 'Subsite navigation'
+  provider: localgov_subsites
+  label_display: visible
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility: {  }

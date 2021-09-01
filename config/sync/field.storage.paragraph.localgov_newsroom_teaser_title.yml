@@ -1,0 +1,23 @@
+uuid: 6e51eb35-510a-4090-9961-09356d439f6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: UoEJJrFult5xJXJwWq-iSlsRxmJr-iFMTXO6crk_ddE
+id: paragraph.localgov_newsroom_teaser_title
+field_name: localgov_newsroom_teaser_title
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

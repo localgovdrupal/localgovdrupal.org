@@ -1,0 +1,25 @@
+uuid: e84889d7-c763-4ce8-a07d-f1e539ba2344
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_labelled_icon_link
+    - paragraphs.paragraphs_type.localgov_labelled_icon
+  module:
+    - link
+_core:
+  default_config_hash: 8PeBnpbVB0jBsL18FRqKJbIfwHTongEoC0psvBUuRLI
+id: paragraph.localgov_labelled_icon.localgov_labelled_icon_link
+field_name: localgov_labelled_icon_link
+entity_type: paragraph
+bundle: localgov_labelled_icon
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,23 @@
+uuid: 2adb7470-a471-4f29-b3c7-997195cd99bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_background
+    - paragraphs.paragraphs_type.localgov_fact_box
+  module:
+    - options
+_core:
+  default_config_hash: cWEeYSmxdzQxTES7wdVuRwda2dGKj4pxa9X-0OEy5CA
+id: paragraph.localgov_fact_box.localgov_background
+field_name: localgov_background
+entity_type: paragraph
+bundle: localgov_fact_box
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

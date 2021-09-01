@@ -1,0 +1,61 @@
+uuid: b3c94a7f-a23c-4a67-8103-97a8186b4d9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_box_links_listing.localgov_box_listing_theme
+    - field.field.paragraph.localgov_box_links_listing.localgov_heading_level
+    - field.field.paragraph.localgov_box_links_listing.localgov_paragraphs
+    - field.field.paragraph.localgov_box_links_listing.localgov_title
+    - paragraphs.paragraphs_type.localgov_box_links_listing
+  module:
+    - paragraphs
+_core:
+  default_config_hash: hd7qCzIIYWIbmahK9qp8Bg3RbkcT-MauxsnVq76fuVw
+id: paragraph.localgov_box_links_listing.default
+targetEntityType: paragraph
+bundle: localgov_box_links_listing
+mode: default
+content:
+  localgov_box_listing_theme:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  localgov_heading_level:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  localgov_paragraphs:
+    weight: 3
+    settings:
+      title: 'Box link'
+      title_plural: 'Box links'
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 1
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: localgov_box_link
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  localgov_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

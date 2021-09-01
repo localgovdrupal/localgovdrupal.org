@@ -1,0 +1,37 @@
+uuid: cab8ec34-c970-4b1e-81e1-14b4c951b2f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_key_contacts.localgov_heading_level
+    - field.field.paragraph.localgov_key_contacts.localgov_paragraphs
+    - field.field.paragraph.localgov_key_contacts.localgov_title
+    - paragraphs.paragraphs_type.localgov_key_contacts
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 4wcu0rWM16FTvb2Cg6IBn9MtIbB9uL9adQOdnXj7Qr0
+id: paragraph.localgov_key_contacts.default
+targetEntityType: paragraph
+bundle: localgov_key_contacts
+mode: default
+content:
+  localgov_paragraphs:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  localgov_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  localgov_heading_level: true

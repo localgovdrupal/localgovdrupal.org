@@ -1,0 +1,20 @@
+uuid: 704bfe0d-2f5c-4116-910b-598f05bd8749
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 9PtzEL0mNJod1E6JFu7jW-awIMePZ89H-sSWMdumduU
+name: 'Subsite page'
+type: localgov_subsites_page
+description: 'General subsite pages attached to an overview page.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

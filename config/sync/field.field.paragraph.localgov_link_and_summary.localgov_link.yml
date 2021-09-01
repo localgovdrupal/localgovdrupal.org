@@ -1,0 +1,25 @@
+uuid: 56f49b1c-6a7f-4f0c-afd5-8e3a1e44794b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_link
+    - paragraphs.paragraphs_type.localgov_link_and_summary
+  module:
+    - link
+_core:
+  default_config_hash: Xvcjk2OwNuX1i7z1hAQtMjHZsEbkdafE5jn1MuQ0uGo
+id: paragraph.localgov_link_and_summary.localgov_link
+field_name: localgov_link
+entity_type: paragraph
+bundle: localgov_link_and_summary
+label: 'Title link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

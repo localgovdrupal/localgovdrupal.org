@@ -1,0 +1,109 @@
+uuid: 4c1f645e-19be-4ac0-bf36-b5dd8c7df751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_email_title
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_form_markup
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_social_links
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_social_text
+    - field.field.paragraph.localgov_subscribe_panel.localgov_subs_panel_social_title
+    - paragraphs.paragraphs_type.localgov_subscribe_panel
+  module:
+    - field_group
+    - paragraphs
+    - text
+third_party_settings:
+  field_group:
+    group_email:
+      children:
+        - localgov_subs_panel_email_title
+        - localgov_subs_panel_form_markup
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: email-subscription-panel
+        description: ''
+        open: true
+        required_fields: true
+      label: Email
+    group_social_media_subscription_:
+      children:
+        - localgov_subs_panel_social_title
+        - localgov_subs_panel_social_text
+        - localgov_subs_panel_social_links
+      parent_name: ''
+      weight: 3
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: social-media-subscription-panel
+        description: ''
+        open: true
+        required_fields: true
+      label: 'Social media subscription panel'
+_core:
+  default_config_hash: WGzQUR5QB3RfqDW51zDPf7SZbOFXP_InkrxWZGIytRE
+id: paragraph.localgov_subscribe_panel.default
+targetEntityType: paragraph
+bundle: localgov_subscribe_panel
+mode: default
+content:
+  localgov_subs_panel_email_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_subs_panel_form_markup:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  localgov_subs_panel_social_links:
+    type: paragraphs
+    weight: 8
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: localgov_labelled_icon
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  localgov_subs_panel_social_text:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  localgov_subs_panel_social_title:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

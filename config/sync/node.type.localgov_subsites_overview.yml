@@ -1,0 +1,20 @@
+uuid: 5ee964e8-718e-436c-ad7d-213a31180ac8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: KlNELABA-D_qU_tLdS-nMz87nRdrS3I9upFBaMd9zqM
+name: 'Subsite overview'
+type: localgov_subsites_overview
+description: 'Main subsite landing page.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 4b8a3ee2-b931-4a83-9cc9-9e17df450910
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_body_text
+    - paragraphs.paragraphs_type.localgov_accordion_pane
+  module:
+    - text
+_core:
+  default_config_hash: g4-lvUVByBYNx5PJX2Q9QueCFTNtveqPlhvlRQIdZho
+id: paragraph.localgov_accordion_pane.localgov_body_text
+field_name: localgov_body_text
+entity_type: paragraph
+bundle: localgov_accordion_pane
+label: Content
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

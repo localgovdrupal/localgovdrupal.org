@@ -1,0 +1,25 @@
+uuid: 0b71c59d-99db-466c-9c29-cf0b7360e48e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_table_theme
+    - paragraphs.paragraphs_type.localgov_table
+  module:
+    - options
+_core:
+  default_config_hash: InjxTXoz4EHlDdgcm9ZWmXtymGMq4JHiVCE-njjS7O0
+id: paragraph.localgov_table.localgov_table_theme
+field_name: localgov_table_theme
+entity_type: paragraph
+bundle: localgov_table
+label: 'Table theme'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: minimal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

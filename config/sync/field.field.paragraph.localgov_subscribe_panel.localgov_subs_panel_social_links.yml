@@ -1,0 +1,78 @@
+uuid: cec32a8b-a2ee-4e95-b603-544c5cd34347
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_subs_panel_social_links
+    - paragraphs.paragraphs_type.localgov_labelled_icon
+    - paragraphs.paragraphs_type.localgov_subscribe_panel
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: CD4sC2NZhrVLZah1BNFaKzANZ4T92WTL0fBnrvbKneA
+id: paragraph.localgov_subscribe_panel.localgov_subs_panel_social_links
+field_name: localgov_subs_panel_social_links
+entity_type: paragraph
+bundle: localgov_subscribe_panel
+label: 'Social media links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      localgov_labelled_icon: localgov_labelled_icon
+    target_bundles_drag_drop:
+      from_library:
+        weight: 17
+        enabled: false
+      localgov_box_link:
+        weight: 18
+        enabled: false
+      localgov_call_out_box:
+        weight: 19
+        enabled: false
+      localgov_contact:
+        weight: 20
+        enabled: false
+      localgov_fact_box:
+        weight: 21
+        enabled: false
+      localgov_ia_block:
+        weight: 22
+        enabled: false
+      localgov_image:
+        weight: 23
+        enabled: false
+      localgov_labelled_icon:
+        enabled: true
+        weight: 24
+      localgov_link:
+        weight: 25
+        enabled: false
+      localgov_link_and_summary:
+        weight: 26
+        enabled: false
+      localgov_newsroom_teaser:
+        weight: 27
+        enabled: false
+      localgov_quote:
+        weight: 28
+        enabled: false
+      localgov_subscribe_panel:
+        weight: 29
+        enabled: false
+      localgov_text:
+        weight: 30
+        enabled: false
+      localgov_video:
+        weight: 31
+        enabled: false
+      page_section:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

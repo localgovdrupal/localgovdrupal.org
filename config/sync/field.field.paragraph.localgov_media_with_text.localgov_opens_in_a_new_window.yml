@@ -1,0 +1,25 @@
+uuid: 70677f7a-334c-433f-a78e-9da408313f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_opens_in_a_new_window
+    - paragraphs.paragraphs_type.localgov_media_with_text
+_core:
+  default_config_hash: QMmtM0gswIm8kXuqfvtSXt7Ta7WyK48GdCmFjOSLekg
+id: paragraph.localgov_media_with_text.localgov_opens_in_a_new_window
+field_name: localgov_opens_in_a_new_window
+entity_type: paragraph
+bundle: localgov_media_with_text
+label: 'Open link in a new window'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

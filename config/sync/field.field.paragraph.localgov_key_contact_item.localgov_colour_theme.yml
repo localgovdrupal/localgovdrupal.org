@@ -1,0 +1,25 @@
+uuid: 47617cb7-b99e-427e-9588-6c38dda49866
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_colour_theme
+    - paragraphs.paragraphs_type.localgov_key_contact_item
+  module:
+    - options
+_core:
+  default_config_hash: fVKAIkz2GmzyYjzWg90TK0v4PKD7R-T5AeFadjawDk8
+id: paragraph.localgov_key_contact_item.localgov_colour_theme
+field_name: localgov_colour_theme
+entity_type: paragraph
+bundle: localgov_key_contact_item
+label: 'Colour theme'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

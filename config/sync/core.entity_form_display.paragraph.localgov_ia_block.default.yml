@@ -1,0 +1,54 @@
+uuid: d675070e-2dd4-4355-a66d-859ae623acbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_ia_block.localgov_ia_block_link
+    - field.field.paragraph.localgov_ia_block.localgov_ia_block_links
+    - field.field.paragraph.localgov_ia_block.localgov_ia_block_promoted
+    - field.field.paragraph.localgov_ia_block.localgov_ia_block_title
+    - paragraphs.paragraphs_type.localgov_ia_block
+  module:
+    - link
+_core:
+  default_config_hash: LaEwzPFikVCmwqx9PIoWhdchvDHGs50xHFgnC4tcwhU
+id: paragraph.localgov_ia_block.default
+targetEntityType: paragraph
+bundle: localgov_ia_block
+mode: default
+content:
+  localgov_ia_block_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  localgov_ia_block_links:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  localgov_ia_block_promoted:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  localgov_ia_block_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

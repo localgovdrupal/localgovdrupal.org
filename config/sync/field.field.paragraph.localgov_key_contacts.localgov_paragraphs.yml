@@ -1,0 +1,96 @@
+uuid: 069a1a44-06cc-4fc4-b7af-029e292d9e56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_paragraphs
+    - paragraphs.paragraphs_type.localgov_key_contact_item
+    - paragraphs.paragraphs_type.localgov_key_contacts
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Xo5PW6UsztdT-BtV0083iVMd77sZXYDyK5YydRq4Ilc
+id: paragraph.localgov_key_contacts.localgov_paragraphs
+field_name: localgov_paragraphs
+entity_type: paragraph
+bundle: localgov_key_contacts
+label: 'Key contact item'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      localgov_key_contact_item: localgov_key_contact_item
+    target_bundles_drag_drop:
+      from_library:
+        weight: 23
+        enabled: false
+      localgov_accordion:
+        weight: 24
+        enabled: false
+      localgov_accordion_pane:
+        weight: 25
+        enabled: false
+      localgov_box_link:
+        weight: 26
+        enabled: false
+      localgov_box_links_listing:
+        weight: 27
+        enabled: false
+      localgov_call_out_box:
+        weight: 28
+        enabled: false
+      localgov_contact:
+        weight: 29
+        enabled: false
+      localgov_documents:
+        weight: 30
+        enabled: false
+      localgov_fact_box:
+        weight: 31
+        enabled: false
+      localgov_image:
+        weight: 32
+        enabled: false
+      localgov_key_contacts:
+        weight: 33
+        enabled: false
+      localgov_key_contact_item:
+        enabled: true
+        weight: 34
+      localgov_link:
+        weight: 35
+        enabled: false
+      localgov_link_and_summary:
+        weight: 36
+        enabled: false
+      localgov_quote:
+        weight: 37
+        enabled: false
+      localgov_tab_panel:
+        weight: 38
+        enabled: false
+      localgov_table:
+        weight: 39
+        enabled: false
+      localgov_tabs:
+        weight: 40
+        enabled: false
+      localgov_text:
+        weight: 41
+        enabled: false
+      localgov_video:
+        weight: 42
+        enabled: false
+      page_section:
+        weight: 43
+        enabled: false
+      topic_list_builder:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

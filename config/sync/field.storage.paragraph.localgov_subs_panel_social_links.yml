@@ -1,0 +1,22 @@
+uuid: 69c34aed-1fab-491e-b161-e61cd0c4270a
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: EK50WzwLeafScXYQ1vuxjQhAGqjVx-xd2H6dzilFwQM
+id: paragraph.localgov_subs_panel_social_links
+field_name: localgov_subs_panel_social_links
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

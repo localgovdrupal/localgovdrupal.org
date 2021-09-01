@@ -1,0 +1,25 @@
+uuid: 5e64cf7e-9f87-435b-95ab-4f21c167505a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_featured_campaign_link
+    - paragraphs.paragraphs_type.localgov_featured_campaign
+  module:
+    - link
+_core:
+  default_config_hash: rWOmQVvrqfqGSAemvmcgEbDOCk9a8_EWcqagUa30wu4
+id: paragraph.localgov_featured_campaign.localgov_featured_campaign_link
+field_name: localgov_featured_campaign_link
+entity_type: paragraph
+bundle: localgov_featured_campaign
+label: 'Campaign title link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

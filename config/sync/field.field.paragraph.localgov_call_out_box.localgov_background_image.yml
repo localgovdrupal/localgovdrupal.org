@@ -1,0 +1,30 @@
+uuid: 1f2e3358-2ddb-4f07-8e5f-d56085b4fc69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_background_image
+    - media.type.image
+    - paragraphs.paragraphs_type.localgov_call_out_box
+_core:
+  default_config_hash: PT-qG3_6YEx_EgjKcdmSwch2OjR_f4jUJ-yAJ6UnINU
+id: paragraph.localgov_call_out_box.localgov_background_image
+field_name: localgov_background_image
+entity_type: paragraph
+bundle: localgov_call_out_box
+label: 'Background image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

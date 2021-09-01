@@ -1,0 +1,30 @@
+uuid: 097af3e4-bd09-455f-a7ba-8a3eacabc8fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_documents
+    - media.type.document
+    - paragraphs.paragraphs_type.localgov_documents
+_core:
+  default_config_hash: 9zVavsTQj223_-W17BmXPHXBarP0z1wdzzDUOI0I3M0
+id: paragraph.localgov_documents.localgov_documents
+field_name: localgov_documents
+entity_type: paragraph
+bundle: localgov_documents
+label: Documents
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

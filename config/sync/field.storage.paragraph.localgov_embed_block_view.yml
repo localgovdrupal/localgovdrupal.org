@@ -1,0 +1,23 @@
+uuid: d39336a9-ecf3-4cef-96d5-14989990283c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+_core:
+  default_config_hash: sTO2Q5fgTnIaAEUbO-sBe8PGJ1mqITuUM3RG3h9CQYQ
+id: paragraph.localgov_embed_block_view
+field_name: localgov_embed_block_view
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

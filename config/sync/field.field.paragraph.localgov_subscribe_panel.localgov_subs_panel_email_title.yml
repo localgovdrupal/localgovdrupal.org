@@ -1,0 +1,23 @@
+uuid: 23eb6218-998e-4a27-bbd1-43ca13cbc729
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_subs_panel_email_title
+    - paragraphs.paragraphs_type.localgov_subscribe_panel
+_core:
+  default_config_hash: dpLpwnt1ACscAMWaHoGYN0lVj-NmXwaziwHqBCgtnTM
+id: paragraph.localgov_subscribe_panel.localgov_subs_panel_email_title
+field_name: localgov_subs_panel_email_title
+entity_type: paragraph
+bundle: localgov_subscribe_panel
+label: 'Email section title'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Email updates'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 7b9271d1-bee7-4ddd-90a1-6d34f1e89281
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_subs_panel_social_title
+    - paragraphs.paragraphs_type.localgov_subscribe_panel
+_core:
+  default_config_hash: 1SlSNLgDtSXI6j45jqYrlYSfc5wom-jibqs5Og38a04
+id: paragraph.localgov_subscribe_panel.localgov_subs_panel_social_title
+field_name: localgov_subs_panel_social_title
+entity_type: paragraph
+bundle: localgov_subscribe_panel
+label: 'Social section title'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Follow us'
+default_value_callback: ''
+settings: {  }
+field_type: string

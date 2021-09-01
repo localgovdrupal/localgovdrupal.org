@@ -1,0 +1,23 @@
+uuid: 81e01e98-2dd3-41f6-b793-0b417728eb6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_labelled_icon_icon
+    - paragraphs.paragraphs_type.localgov_labelled_icon
+  module:
+    - fontawesome
+_core:
+  default_config_hash: 2XE4-Pe_uAFIe1JdGMaPwdpH2mW0eC7nKoD5YJ5QQHw
+id: paragraph.localgov_labelled_icon.localgov_labelled_icon_icon
+field_name: localgov_labelled_icon_icon
+entity_type: paragraph
+bundle: localgov_labelled_icon
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

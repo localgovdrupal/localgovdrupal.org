@@ -1,0 +1,21 @@
+uuid: cb4989df-ab44-4f7b-a0da-324bfa6876fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: i2jcfZaUzxuL7t4IZLIUn8o3HJCnLhUzXkM_tFPKYjU
+id: node.localgov_subsites_summary
+field_name: localgov_subsites_summary
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: bcb89d23-61e4-4ca2-af51-284e3125b858
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_subsites_summary
+    - node.type.localgov_subsites_overview
+_core:
+  default_config_hash: T__fqckwJVAM-Ytx3mI2EBNEEetnyY8pATN-pOxqGIo
+id: node.localgov_subsites_overview.localgov_subsites_summary
+field_name: localgov_subsites_summary
+entity_type: node
+bundle: localgov_subsites_overview
+label: Summary
+description: 'Text displayed in teasers on other pages that may reference this one.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,25 @@
+uuid: 1ccac0de-93b4-4dbf-ad7c-5f6b9b742e3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_ia_block_links
+    - paragraphs.paragraphs_type.localgov_ia_block
+  module:
+    - link
+_core:
+  default_config_hash: 7ng18YvInKfE1ECW1aA02gzCREq7sUJnkApaJPj0jcg
+id: paragraph.localgov_ia_block.localgov_ia_block_links
+field_name: localgov_ia_block_links
+entity_type: paragraph
+bundle: localgov_ia_block
+label: 'Service title link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

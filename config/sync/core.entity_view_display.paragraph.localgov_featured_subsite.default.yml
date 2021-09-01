@@ -1,0 +1,55 @@
+uuid: 8cdaa99b-b5c7-4452-9764-054b7f87b5b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_featured_subsite.localgov_featured_subsite_image
+    - field.field.paragraph.localgov_featured_subsite.localgov_featured_subsite_link
+    - field.field.paragraph.localgov_featured_subsite.localgov_featured_subsite_text
+    - paragraphs.paragraphs_type.localgov_featured_subsite
+  module:
+    - field_formatter_class
+    - link
+_core:
+  default_config_hash: AN-LvxA0X84KcVqRDjBht7R9D1zENetHodR4heR4E1I
+id: paragraph.localgov_featured_subsite.default
+targetEntityType: paragraph
+bundle: localgov_featured_subsite
+mode: default
+content:
+  localgov_featured_subsite_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: localgov_featured_large
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: featured-subsite__img
+    region: content
+  localgov_featured_subsite_link:
+    weight: 1
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: featured-subsite__title
+    type: link
+    region: content
+  localgov_featured_subsite_text:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: featured-subsite__summary
+    type: basic_string
+    region: content
+hidden:
+  search_api_excerpt: true

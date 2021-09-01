@@ -1,0 +1,84 @@
+uuid: 04a033dc-6d25-429c-bc55-8247fae71df6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_media_with_text.localgov_heading_level
+    - field.field.paragraph.localgov_media_with_text.localgov_link
+    - field.field.paragraph.localgov_media_with_text.localgov_media_item
+    - field.field.paragraph.localgov_media_with_text.localgov_media_position
+    - field.field.paragraph.localgov_media_with_text.localgov_media_with_text_style
+    - field.field.paragraph.localgov_media_with_text.localgov_opens_in_a_new_window
+    - field.field.paragraph.localgov_media_with_text.localgov_text
+    - field.field.paragraph.localgov_media_with_text.localgov_title
+    - paragraphs.paragraphs_type.localgov_media_with_text
+  module:
+    - link
+    - media_library
+    - text
+_core:
+  default_config_hash: 2HgfzhZkv1SfO3RpWCgEfeGWXQ9dFDV82X0bv3lW3e4
+id: paragraph.localgov_media_with_text.default
+targetEntityType: paragraph
+bundle: localgov_media_with_text
+mode: default
+content:
+  localgov_heading_level:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  localgov_link:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  localgov_media_item:
+    type: media_library_widget
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  localgov_media_position:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  localgov_media_with_text_style:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  localgov_opens_in_a_new_window:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  localgov_text:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  localgov_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

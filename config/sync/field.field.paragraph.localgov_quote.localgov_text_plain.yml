@@ -1,0 +1,21 @@
+uuid: 2a3b6c53-2a83-4054-9ea9-86869db3c500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_text_plain
+    - paragraphs.paragraphs_type.localgov_quote
+_core:
+  default_config_hash: v8zlScUmp80_lXHOfmjlpQQK4z-3lB0dfwVOriI6Nm8
+id: paragraph.localgov_quote.localgov_text_plain
+field_name: localgov_text_plain
+entity_type: paragraph
+bundle: localgov_quote
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

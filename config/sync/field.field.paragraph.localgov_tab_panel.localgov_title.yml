@@ -1,0 +1,21 @@
+uuid: c2309876-e077-4405-a6bf-15a5d6e581d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_title
+    - paragraphs.paragraphs_type.localgov_tab_panel
+_core:
+  default_config_hash: 2N-z5fcG2xROI2jWf3olBNEiz2V2CJod3fe2v8rLBF8
+id: paragraph.localgov_tab_panel.localgov_title
+field_name: localgov_title
+entity_type: paragraph
+bundle: localgov_tab_panel
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

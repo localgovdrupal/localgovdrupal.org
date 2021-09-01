@@ -1,0 +1,25 @@
+uuid: 67932cdf-d60a-4fc1-82a1-2f5b4b7c8573
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_media_with_text_style
+    - paragraphs.paragraphs_type.localgov_media_with_text
+  module:
+    - options
+_core:
+  default_config_hash: sahFfkdDpoUGiOLHcdaV6TTyguTVCOvccz6Su7CsUD4
+id: paragraph.localgov_media_with_text.localgov_media_with_text_style
+field_name: localgov_media_with_text_style
+entity_type: paragraph
+bundle: localgov_media_with_text
+label: 'Media with text style'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

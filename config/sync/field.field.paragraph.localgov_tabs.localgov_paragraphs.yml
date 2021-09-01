@@ -1,0 +1,87 @@
+uuid: 488caf55-8ec7-46cf-b354-ac47e11146f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_paragraphs
+    - paragraphs.paragraphs_type.localgov_tab_panel
+    - paragraphs.paragraphs_type.localgov_tabs
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 14LznstahX_q3DJ3zVtQEDJN-RgtTivLJ-jueQz3zEo
+id: paragraph.localgov_tabs.localgov_paragraphs
+field_name: localgov_paragraphs
+entity_type: paragraph
+bundle: localgov_tabs
+label: 'Tab panels'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      localgov_tab_panel: localgov_tab_panel
+    target_bundles_drag_drop:
+      from_library:
+        weight: 19
+        enabled: false
+      localgov_accordion:
+        weight: 20
+        enabled: false
+      localgov_accordion_pane:
+        weight: 21
+        enabled: false
+      localgov_box_link:
+        weight: 22
+        enabled: false
+      localgov_call_out_box:
+        weight: 23
+        enabled: false
+      localgov_contact:
+        weight: 24
+        enabled: false
+      localgov_documents:
+        weight: 25
+        enabled: false
+      localgov_fact_box:
+        weight: 26
+        enabled: false
+      localgov_image:
+        weight: 27
+        enabled: false
+      localgov_link:
+        weight: 28
+        enabled: false
+      localgov_link_and_summary:
+        weight: 29
+        enabled: false
+      localgov_quote:
+        weight: 30
+        enabled: false
+      localgov_tab_panel:
+        enabled: true
+        weight: 34
+      localgov_table:
+        weight: 31
+        enabled: false
+      localgov_tabs:
+        weight: 32
+        enabled: false
+      localgov_text:
+        weight: 33
+        enabled: false
+      localgov_video:
+        weight: 34
+        enabled: false
+      page_section:
+        weight: 35
+        enabled: false
+      topic_list_builder:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

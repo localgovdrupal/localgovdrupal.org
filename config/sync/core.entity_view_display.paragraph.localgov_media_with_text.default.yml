@@ -1,0 +1,58 @@
+uuid: 7f69e632-db53-48a3-886f-b4bd88354204
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_media_with_text.localgov_heading_level
+    - field.field.paragraph.localgov_media_with_text.localgov_link
+    - field.field.paragraph.localgov_media_with_text.localgov_media_item
+    - field.field.paragraph.localgov_media_with_text.localgov_media_position
+    - field.field.paragraph.localgov_media_with_text.localgov_media_with_text_style
+    - field.field.paragraph.localgov_media_with_text.localgov_opens_in_a_new_window
+    - field.field.paragraph.localgov_media_with_text.localgov_text
+    - field.field.paragraph.localgov_media_with_text.localgov_title
+    - paragraphs.paragraphs_type.localgov_media_with_text
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: Q0n1MBaO1YRp46KkWPfrgPxtu-Wq-caQwbP-hW0kLug
+id: paragraph.localgov_media_with_text.default
+targetEntityType: paragraph
+bundle: localgov_media_with_text
+mode: default
+content:
+  localgov_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  localgov_media_item:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  localgov_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  localgov_heading_level: true
+  localgov_media_position: true
+  localgov_media_with_text_style: true
+  localgov_opens_in_a_new_window: true
+  localgov_title: true

@@ -1,0 +1,25 @@
+uuid: 0d097638-8408-483c-b6c7-e501f73dfbb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_newsroom_teaser_link
+    - paragraphs.paragraphs_type.localgov_newsroom_teaser
+  module:
+    - link
+_core:
+  default_config_hash: x3G7fjc-ChD17yHBXywfXvJIikBoDPuoew6TmDOnu_M
+id: paragraph.localgov_newsroom_teaser.localgov_newsroom_teaser_link
+field_name: localgov_newsroom_teaser_link
+entity_type: paragraph
+bundle: localgov_newsroom_teaser
+label: 'Title link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,25 @@
+uuid: fe3da0a1-315c-4b1a-b857-6029c0d04e3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_ia_block_promoted
+    - paragraphs.paragraphs_type.localgov_ia_block
+_core:
+  default_config_hash: DQWScKSJQVFeguXO0PvS1qQGObtYGb3BiaA-MXqzIFs
+id: paragraph.localgov_ia_block.localgov_ia_block_promoted
+field_name: localgov_ia_block_promoted
+entity_type: paragraph
+bundle: localgov_ia_block
+label: Promoted
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,35 @@
+uuid: 58c0bd23-b80d-4063-849e-2c1db443fec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_quote.localgov_author
+    - field.field.paragraph.localgov_quote.localgov_text_plain
+    - paragraphs.paragraphs_type.localgov_quote
+_core:
+  default_config_hash: wYnuz4j2pgS3aH9haQv5wGWhBEZNlh7ZJnjseg76DBI
+id: paragraph.localgov_quote.default
+targetEntityType: paragraph
+bundle: localgov_quote
+mode: default
+content:
+  localgov_author:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_text_plain:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

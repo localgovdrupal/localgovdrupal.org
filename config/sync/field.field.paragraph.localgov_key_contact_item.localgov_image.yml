@@ -1,0 +1,30 @@
+uuid: b80583ef-f023-4ee6-8eb4-695221516430
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_image
+    - media.type.image
+    - paragraphs.paragraphs_type.localgov_key_contact_item
+_core:
+  default_config_hash: eXtWu8u4xxqYLBP1o-q6Gkfz-G-M6AS0lxWex7qqwtU
+id: paragraph.localgov_key_contact_item.localgov_image
+field_name: localgov_image
+entity_type: paragraph
+bundle: localgov_key_contact_item
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

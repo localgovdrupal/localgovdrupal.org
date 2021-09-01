@@ -1,0 +1,45 @@
+uuid: 34541e19-d13c-45e9-9ff9-d45e0a02674e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.localgov_subsites_overview.localgov_subsites_banner
+    - field.field.node.localgov_subsites_overview.localgov_subsites_content
+    - field.field.node.localgov_subsites_overview.localgov_subsites_hide_menu
+    - field.field.node.localgov_subsites_overview.localgov_subsites_summary
+    - field.field.node.localgov_subsites_overview.localgov_subsites_theme
+    - node.type.localgov_subsites_overview
+  module:
+    - layout_paragraphs
+    - user
+_core:
+  default_config_hash: I3klntxojCjVS2TSj7gM8E5rX1ZUmzPAT6TNSnZ_3NA
+id: node.localgov_subsites_overview.search_index
+targetEntityType: node
+bundle: localgov_subsites_overview
+mode: search_index
+content:
+  localgov_subsites_content:
+    type: layout_paragraphs
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  localgov_subsites_summary:
+    type: basic_string
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true
+  localgov_subsites_banner: true
+  localgov_subsites_hide_menu: true
+  localgov_subsites_pages: true
+  localgov_subsites_theme: true
+  search_api_excerpt: true

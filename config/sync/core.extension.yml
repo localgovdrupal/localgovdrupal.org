@@ -13,18 +13,23 @@ module:
   crop: 0
   ctools: 0
   datetime: 0
+  dbal: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
   entity_browser_entity_form: 0
+  entity_hierarchy: 0
+  entity_hierarchy_breadcrumb: 0
   entity_reference_revisions: 0
   entity_usage: 0
   field: 0
+  field_formatter_class: 0
   field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  fontawesome: 0
   geolocation: 0
   geolocation_google_maps: 0
   help: 0
@@ -32,10 +37,13 @@ module:
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
+  layout_discovery: 0
+  layout_paragraphs: 0
   link: 0
   link_attributes: 0
   linkit: 0
   localgov_core: 0
+  localgov_homepage_paragraphs: 0
   localgov_media: 0
   localgov_menu_link_group: 0
   localgov_page_components: 0
@@ -46,6 +54,8 @@ module:
   localgov_services_navigation: 0
   localgov_services_page: 0
   localgov_services_sublanding: 0
+  localgov_subsites: 0
+  localgov_subsites_paragraphs: 0
   localgov_topics: 0
   media: 0
   media_library: 0
@@ -63,6 +73,7 @@ module:
   role_delegation: 0
   simple_sitemap: 0
   system: 0
+  tablefield: 0
   taxonomy: 0
   telephone: 0
   text: 0
@@ -71,6 +82,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  viewsreference: 0
   workflows: 0
   pathauto: 1
   views: 10

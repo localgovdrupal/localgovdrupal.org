@@ -1,0 +1,25 @@
+uuid: bed141b9-2c5c-42be-ac36-48d5a291fd7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_link
+    - paragraphs.paragraphs_type.localgov_box_link
+  module:
+    - link
+_core:
+  default_config_hash: 8jziLEnBPqqhoFUa5V9Ozqa38MJCeoOF_PRONdavz6g
+id: paragraph.localgov_box_link.localgov_link
+field_name: localgov_link
+entity_type: paragraph
+bundle: localgov_box_link
+label: 'Title link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

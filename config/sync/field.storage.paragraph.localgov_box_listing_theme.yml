@@ -1,0 +1,29 @@
+uuid: 95fc3777-e06f-41c8-8944-83bb46457582
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 1EwkdHggIDKMTpixoxYYL2WYzG1RCMUClO43bwRJnM4
+id: paragraph.localgov_box_listing_theme
+field_name: localgov_box_listing_theme
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grid
+      label: Grid
+    -
+      value: boxes
+      label: Boxes
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

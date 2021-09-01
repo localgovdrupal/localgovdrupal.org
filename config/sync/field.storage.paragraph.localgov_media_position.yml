@@ -1,0 +1,35 @@
+uuid: 3a8979cb-72fc-444e-865a-78f6b09e8f63
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 6pCZbI-dpFHSpJW2NUtGHmb7kywMngy2Qv4WcWWutf4
+id: paragraph.localgov_media_position
+field_name: localgov_media_position
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: Left
+    -
+      value: right
+      label: Right
+    -
+      value: top
+      label: Top
+    -
+      value: bottom
+      label: Bottom
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

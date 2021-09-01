@@ -1,0 +1,37 @@
+uuid: 16800c82-2602-487a-b392-3f66b19a36ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_tabs.localgov_heading_level
+    - field.field.paragraph.localgov_tabs.localgov_paragraphs
+    - field.field.paragraph.localgov_tabs.localgov_title
+    - paragraphs.paragraphs_type.localgov_tabs
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: encY6aSkFcWpR-LUR86utDVaTczZBMCyt_uIgR9Yr_Q
+id: paragraph.localgov_tabs.default
+targetEntityType: paragraph
+bundle: localgov_tabs
+mode: default
+content:
+  localgov_paragraphs:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  localgov_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  localgov_heading_level: true

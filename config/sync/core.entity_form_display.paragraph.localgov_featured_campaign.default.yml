@@ -1,0 +1,45 @@
+uuid: 0167c6a8-115b-47d2-916e-d80deaff60c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_featured_campaign.localgov_featured_campaign_image
+    - field.field.paragraph.localgov_featured_campaign.localgov_featured_campaign_link
+    - field.field.paragraph.localgov_featured_campaign.localgov_featured_campaign_text
+    - paragraphs.paragraphs_type.localgov_featured_campaign
+  module:
+    - link
+    - media_library
+_core:
+  default_config_hash: TZKXMSzehPlUbUmN_MO75D69ia6uqliC2A8IgUQCjNw
+id: paragraph.localgov_featured_campaign.default
+targetEntityType: paragraph
+bundle: localgov_featured_campaign
+mode: default
+content:
+  localgov_featured_campaign_image:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  localgov_featured_campaign_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  localgov_featured_campaign_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

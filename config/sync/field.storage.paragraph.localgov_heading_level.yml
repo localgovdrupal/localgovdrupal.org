@@ -1,0 +1,38 @@
+uuid: 281da784-1541-4e88-b816-c95a8ee72217
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: mpMpiy7GdMRQ6551exvZ9rV_RrxViRhDVXsU9NlC_t8
+id: paragraph.localgov_heading_level
+field_name: localgov_heading_level
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: h2
+      label: 'Heading level 2'
+    -
+      value: h3
+      label: 'Heading level 3'
+    -
+      value: h4
+      label: 'Heading level 4'
+    -
+      value: h5
+      label: 'Heading level 5'
+    -
+      value: h6
+      label: 'Heading level 6'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,70 @@
+uuid: f418d9ee-ee09-448e-9650-7baca4b8d069
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_call_out_box.localgov_background_image
+    - field.field.paragraph.localgov_call_out_box.localgov_body_text
+    - field.field.paragraph.localgov_call_out_box.localgov_button
+    - field.field.paragraph.localgov_call_out_box.localgov_colour_theme
+    - field.field.paragraph.localgov_call_out_box.localgov_header_text
+    - field.field.paragraph.localgov_call_out_box.localgov_heading_level
+    - field.field.paragraph.localgov_call_out_box.localgov_opens_in_a_new_window
+    - paragraphs.paragraphs_type.localgov_call_out_box
+  module:
+    - link
+    - options
+    - text
+_core:
+  default_config_hash: Fi9z85rojI4J7b2yCUunjqZ6NE-6pYeUBTAPwPSwcIE
+id: paragraph.localgov_call_out_box.default
+targetEntityType: paragraph
+bundle: localgov_call_out_box
+mode: default
+content:
+  localgov_background_image:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  localgov_body_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  localgov_button:
+    type: link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  localgov_header_text:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  localgov_heading_level:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden:
+  localgov_colour_theme: true
+  localgov_opens_in_a_new_window: true

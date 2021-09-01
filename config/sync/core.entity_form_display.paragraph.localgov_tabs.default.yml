@@ -1,0 +1,54 @@
+uuid: 220621f4-3918-4dd0-976c-1d30dd4d11d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_tabs.localgov_heading_level
+    - field.field.paragraph.localgov_tabs.localgov_paragraphs
+    - field.field.paragraph.localgov_tabs.localgov_title
+    - paragraphs.paragraphs_type.localgov_tabs
+  module:
+    - paragraphs
+_core:
+  default_config_hash: rBajLIdGjBhLtoiVX7csWCh7y3-AvjjSQCgKPeIWK2I
+id: paragraph.localgov_tabs.default
+targetEntityType: paragraph
+bundle: localgov_tabs
+mode: default
+content:
+  localgov_heading_level:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  localgov_paragraphs:
+    weight: 2
+    settings:
+      title: 'Tab panel'
+      title_plural: 'Tab panels'
+      edit_mode: closed_expand_nested
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 1
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: localgov_tab_panel
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  localgov_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

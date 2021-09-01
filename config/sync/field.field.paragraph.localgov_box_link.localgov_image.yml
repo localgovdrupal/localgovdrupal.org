@@ -1,0 +1,30 @@
+uuid: 3df57154-a346-48a3-a66d-75e338bb33db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_image
+    - media.type.image
+    - paragraphs.paragraphs_type.localgov_box_link
+_core:
+  default_config_hash: ElJexT-amKdkb_PBI0ceKUWdtUh1IWiGUChbqOlFAIg
+id: paragraph.localgov_box_link.localgov_image
+field_name: localgov_image
+entity_type: paragraph
+bundle: localgov_box_link
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,12 @@
+uuid: 202a785e-46ed-4476-be6a-1b474da369b1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kqJHJKBV07VV08VCtwhCbhMm6BiqzqxpU6jDm6oQeSw
+id: localgov_quote
+label: Quote
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
