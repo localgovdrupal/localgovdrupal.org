@@ -1,0 +1,21 @@
+uuid: af0bcce6-d567-4cf2-8f43-414886e9b134
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: D6pITZzzQLXraEaCFKbs_ZPH6yKanclfIZEsw3bRXpE
+id: node.localgov_services_parent
+field_name: localgov_services_parent
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

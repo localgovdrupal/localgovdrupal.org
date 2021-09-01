@@ -1,0 +1,17 @@
+uuid: a4cd8aff-fbfb-4109-97a6-0a9b3aa8f0dc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sXjvgbaQhSfa1CjyOsENdnv_ZAMt5-092z8aZcLD8Kc
+name: localgov_newsroom_teaser
+label: 'LocalGov Newsroom teaser'
+effects:
+  ff65eadb-38a8-471d-ba15-f3e627e8afe1:
+    uuid: ff65eadb-38a8-471d-ba15-f3e627e8afe1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 200
+      anchor: center-center

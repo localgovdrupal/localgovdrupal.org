@@ -1,0 +1,22 @@
+uuid: 2482f297-502d-43bd-8a58-67f551bc7c12
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - business
+      - about-this-website
+      - main
+    parent: 'about-this-website:'
+_core:
+  default_config_hash: WULkEekP8OdZimuV1w42i5Jm5eEXT6P0ep9hxPyGzUg
+name: 'Service page'
+type: localgov_services_page
+description: 'Basic page that can be placed in a service and on a service sub landing page.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

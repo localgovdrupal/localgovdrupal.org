@@ -1,0 +1,44 @@
+uuid: e1530012-797e-4914-8530-5fd82eba2c19
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.paragraphs_library_browser
+  module:
+    - entity_browser_entity_form
+    - views
+_core:
+  default_config_hash: z0OUvAWDkINhq8kLFjxqlLGHoHwlIty2K4LxynCd5eg
+name: page_components
+label: 'Page components'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Add/Select component'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  19e5e98c-307e-437a-b850-0fab163d7fec:
+    settings:
+      view: paragraphs_library_browser
+      view_display: entity_browser
+      submit_text: 'Select component'
+      auto_select: false
+    uuid: 19e5e98c-307e-437a-b850-0fab163d7fec
+    weight: 1
+    label: 'Available components'
+    id: view
+  2a5ca23a-1a2a-4fcb-8a06-6f50bcc77fcb:
+    settings:
+      entity_type: paragraphs_library_item
+      bundle: paragraphs_library_item
+      form_mode: default
+      submit_text: 'Save component'
+    uuid: 2a5ca23a-1a2a-4fcb-8a06-6f50bcc77fcb
+    weight: 2
+    label: 'Create component'
+    id: entity_form

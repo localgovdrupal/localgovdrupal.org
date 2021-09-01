@@ -1,0 +1,21 @@
+uuid: 59944d69-c821-48da-9a1f-d01793bbd578
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: pv8ZYLI5LKw4a0mI6WMO_Ipq1gVkij9yb1vtE8r36Fo
+id: node.localgov_download_links
+field_name: localgov_download_links
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

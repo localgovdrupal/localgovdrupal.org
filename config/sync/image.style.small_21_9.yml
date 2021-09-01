@@ -1,0 +1,27 @@
+uuid: b2f454b6-e4ae-4f34-9f13-5f103040f134
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.7_3
+  module:
+    - crop
+_core:
+  default_config_hash: FyXgPghb1ngFG0SDAchm-ibHfGvOYlBc2u6tJuHALQ0
+name: small_21_9
+label: 'Small 21:9 (768x330)'
+effects:
+  06eaf095-124b-435d-af50-442044e91e7d:
+    uuid: 06eaf095-124b-435d-af50-442044e91e7d
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      anchor: center-center
+      width: 768
+      height: 330
+  0dadbeb9-882a-4138-82d5-ddd13d143142:
+    uuid: 0dadbeb9-882a-4138-82d5-ddd13d143142
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: '7_3'

@@ -1,0 +1,28 @@
+uuid: 4399182d-b736-4da7-a225-eff04d41e339
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov
+    - system
+  theme:
+    - classy
+_core:
+  default_config_hash: mH4ym6-Q8lKaPKaIFzv9MvHtmEi12D2AWFa2HYuzS5s
+id: classy_localgov_home_welcome_block
+theme: classy
+region: sidebar_first
+weight: 0
+provider: null
+plugin: localgov_home_welcome_block
+settings:
+  id: localgov_home_welcome_block
+  label: 'Home welcome block'
+  provider: null
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

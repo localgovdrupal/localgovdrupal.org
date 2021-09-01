@@ -1,0 +1,57 @@
+uuid: 8d74d54f-05a8-41f0-b2d0-a2569097be24
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.localgov_services_landing.body
+    - field.field.node.localgov_services_landing.localgov_address
+    - field.field.node.localgov_services_landing.localgov_address_first_line
+    - field.field.node.localgov_services_landing.localgov_common_tasks
+    - field.field.node.localgov_services_landing.localgov_contact_us_online
+    - field.field.node.localgov_services_landing.localgov_destinations
+    - field.field.node.localgov_services_landing.localgov_email_address
+    - field.field.node.localgov_services_landing.localgov_facebook
+    - field.field.node.localgov_services_landing.localgov_hearing_difficulties_ph
+    - field.field.node.localgov_services_landing.localgov_link_to_map
+    - field.field.node.localgov_services_landing.localgov_opening_hours
+    - field.field.node.localgov_services_landing.localgov_other_team_contacts
+    - field.field.node.localgov_services_landing.localgov_phone
+    - field.field.node.localgov_services_landing.localgov_popular_topics
+    - field.field.node.localgov_services_landing.localgov_twitter
+    - node.type.localgov_services_landing
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: kZlT0G0EE7J64XTYJKSNiltCd_HRHxfWY2QGGK8G5Cw
+id: node.localgov_services_landing.teaser
+targetEntityType: node
+bundle: localgov_services_landing
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  links: true
+  localgov_address: true
+  localgov_address_first_line: true
+  localgov_common_tasks: true
+  localgov_contact_us_online: true
+  localgov_destinations: true
+  localgov_email_address: true
+  localgov_facebook: true
+  localgov_hearing_difficulties_ph: true
+  localgov_link_to_map: true
+  localgov_opening_hours: true
+  localgov_other_team_contacts: true
+  localgov_phone: true
+  localgov_popular_topics: true
+  localgov_twitter: true

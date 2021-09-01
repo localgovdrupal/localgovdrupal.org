@@ -1,0 +1,27 @@
+uuid: 88e0c113-a928-4759-8573-ba80e369071e
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.7_3
+  module:
+    - crop
+_core:
+  default_config_hash: OGN6Mm90-aye9mNQsonRkx1j4UAUDL4LXWKxjevRbsU
+name: large_21_9_2x
+label: 'Large 21:9 2x (2880x1240)'
+effects:
+  6b96b7e5-aabd-406e-86ec-2c2e2c18bd82:
+    uuid: 6b96b7e5-aabd-406e-86ec-2c2e2c18bd82
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      anchor: center-center
+      width: 2880
+      height: 1240
+  fc3d68ba-e69d-4939-a76f-800c2c5f978b:
+    uuid: fc3d68ba-e69d-4939-a76f-800c2c5f978b
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: '7_3'

@@ -1,0 +1,21 @@
+uuid: f0e0a734-cb07-45a6-b6ef-5ee3abde3d6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_twitter
+    - node.type.localgov_services_landing
+_core:
+  default_config_hash: RwpNX1JAlPxTV2TBZGLluaUpdamHNqR18SjkfUgzNUY
+id: node.localgov_services_landing.localgov_twitter
+field_name: localgov_twitter
+entity_type: node
+bundle: localgov_services_landing
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

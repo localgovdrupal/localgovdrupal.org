@@ -1,0 +1,22 @@
+uuid: a958a204-75d6-4d1a-9f97-bd46a6b86b0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lgd_org_theme
+_core:
+  default_config_hash: UY09pCmBcMsiuUgEVt5rAEmiflmIf7xoSYV8CyV3KvQ
+id: lgd_org_theme_localgov_mainpagecontent
+theme: lgd_org_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

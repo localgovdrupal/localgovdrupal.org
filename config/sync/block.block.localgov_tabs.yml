@@ -1,0 +1,22 @@
+uuid: dfd11e67-9cae-4a9e-8330-de50136667f2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - localgov_theme
+_core:
+  default_config_hash: 17WQm1vjTFEjLHYOcDhn4F8C6leBD5gAgiOS0GhbFbg
+id: localgov_tabs
+theme: localgov_theme
+region: content_top
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

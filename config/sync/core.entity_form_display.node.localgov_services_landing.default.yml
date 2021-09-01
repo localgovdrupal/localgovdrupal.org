@@ -1,0 +1,354 @@
+uuid: 60b994a7-f520-460c-bc62-1736a4fab04f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_services_landing.body
+    - field.field.node.localgov_services_landing.localgov_address
+    - field.field.node.localgov_services_landing.localgov_address_first_line
+    - field.field.node.localgov_services_landing.localgov_common_tasks
+    - field.field.node.localgov_services_landing.localgov_contact_us_online
+    - field.field.node.localgov_services_landing.localgov_destinations
+    - field.field.node.localgov_services_landing.localgov_email_address
+    - field.field.node.localgov_services_landing.localgov_facebook
+    - field.field.node.localgov_services_landing.localgov_hearing_difficulties_ph
+    - field.field.node.localgov_services_landing.localgov_link_to_map
+    - field.field.node.localgov_services_landing.localgov_opening_hours
+    - field.field.node.localgov_services_landing.localgov_other_team_contacts
+    - field.field.node.localgov_services_landing.localgov_phone
+    - field.field.node.localgov_services_landing.localgov_popular_topics
+    - field.field.node.localgov_services_landing.localgov_twitter
+    - node.type.localgov_services_landing
+  module:
+    - field_group
+    - link
+    - localgov_services
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_description:
+      children:
+        - title
+        - body
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Description
+      region: content
+    group_common_tasks:
+      children:
+        - localgov_common_tasks
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Common tasks'
+      region: content
+    group_destinations:
+      children:
+        - localgov_destinations
+      parent_name: group_tabs
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Child pages'
+      region: content
+    group_tabs:
+      children:
+        - group_description
+        - group_common_tasks
+        - group_destinations
+        - group_social_media
+        - group_popular_topics
+        - group_contact
+        - group_location
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: tabs
+      region: content
+    group_social_media:
+      children:
+        - localgov_twitter
+        - localgov_facebook
+      parent_name: group_tabs
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Social media'
+      region: content
+    group_contact:
+      children:
+        - localgov_phone
+        - localgov_email_address
+        - localgov_contact_us_online
+        - localgov_other_team_contacts
+        - localgov_hearing_difficulties_ph
+        - localgov_opening_hours
+      parent_name: group_tabs
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Contact
+      region: content
+    group_popular_topics:
+      children:
+        - localgov_popular_topics
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Popular topics'
+      region: content
+    group_location:
+      children:
+        - localgov_address_first_line
+        - localgov_address
+        - localgov_link_to_map
+      parent_name: group_tabs
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: Location
+      region: content
+_core:
+  default_config_hash: XXqqzWUP3BrQbXNAyprVCMevVpSqPGLoD-mQh1xTeBI
+id: node.localgov_services_landing.default
+targetEntityType: node
+bundle: localgov_services_landing
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_address:
+    weight: 17
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  localgov_address_first_line:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_common_tasks:
+    weight: 18
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_with_type
+    region: content
+  localgov_contact_us_online:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_destinations:
+    weight: 16
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  localgov_email_address:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_facebook:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_hearing_difficulties_ph:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_link_to_map:
+    weight: 18
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  localgov_opening_hours:
+    weight: 19
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  localgov_other_team_contacts:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_phone:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  localgov_popular_topics:
+    weight: 15
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  localgov_services_navigation_children:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  localgov_twitter:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

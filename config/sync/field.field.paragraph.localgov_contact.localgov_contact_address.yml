@@ -1,0 +1,63 @@
+uuid: 812e9a12-a347-487d-8f75-fd8890fff86e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_address
+    - paragraphs.paragraphs_type.localgov_contact
+  module:
+    - address
+_core:
+  default_config_hash: ld9Q9swSg5pHlsZDDkOt2MvbD0sb4z1nuhBqOsdr8Yg
+id: paragraph.localgov_contact.localgov_contact_address
+field_name: localgov_contact_address
+entity_type: paragraph
+bundle: localgov_contact
+label: Address
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    langcode: ''
+    country_code: GB
+    administrative_area: null
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: ''
+    organization: ''
+    given_name: ''
+    additional_name: null
+    family_name: ''
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: optional
+    additionalName:
+      override: optional
+    familyName:
+      override: optional
+    organization:
+      override: optional
+    addressLine1:
+      override: optional
+    addressLine2:
+      override: optional
+    postalCode:
+      override: optional
+    sortingCode:
+      override: optional
+    dependentLocality:
+      override: optional
+    locality:
+      override: optional
+    administrativeArea:
+      override: optional
+  fields: {  }
+field_type: address

@@ -1,0 +1,21 @@
+uuid: 7372c47e-71eb-4aad-b0ce-138db83dd5af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_address_first_line
+    - node.type.localgov_services_landing
+_core:
+  default_config_hash: dx4aSrAsUD-AvxrqR7DyjCMs_XGHdmOKmYJ9cuq-rPE
+id: node.localgov_services_landing.localgov_address_first_line
+field_name: localgov_address_first_line
+entity_type: node
+bundle: localgov_services_landing
+label: 'First line of address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

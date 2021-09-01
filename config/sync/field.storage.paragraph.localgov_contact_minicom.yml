@@ -1,0 +1,21 @@
+uuid: 668d3b63-07f8-4475-8bff-4100e42df7bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - telephone
+_core:
+  default_config_hash: liS7-9cFFbDWVkRLc6_fGU2WxWDrCmyflnVkesaSKrg
+id: paragraph.localgov_contact_minicom
+field_name: localgov_contact_minicom
+entity_type: paragraph
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

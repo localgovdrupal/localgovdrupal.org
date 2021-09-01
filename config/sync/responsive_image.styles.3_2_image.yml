@@ -1,0 +1,21 @@
+uuid: 1b23d7ca-7b0a-4528-9ca9-168d7e998117
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_3_2_2x
+    - image.style.large_3_2_768x512
+  module:
+    - localgov_media
+_core:
+  default_config_hash: HFXnFJlHvke0K35rRxC42eS-lSiw1-SYVclSjDCAVt8
+id: 3_2_image
+label: '3:2 Image'
+image_style_mappings:
+  -
+    breakpoint_id: localgov_media.bootstrap4_md_768px
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_3_2_2x
+breakpoint_group: localgov_media
+fallback_image_style: large_3_2_768x512

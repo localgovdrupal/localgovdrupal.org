@@ -1,0 +1,21 @@
+uuid: 67383760-b6a2-485d-9396-c9d95c439cb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Y9J7nbNlRvQAVQH4p5-m5Tywsm0qJtGEt6gfz5G68bQ
+id: node.field_localgov_services_landing
+field_name: field_localgov_services_landing
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 3b88f7b7-ef01-4f62-b91d-e5274160a3e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - paragraphs
+_core:
+  default_config_hash: rrn0eqQp6g4ik0uLdAUJLBM_a6xO03D1aDBizw37Nyw
+id: paragraph.localgov_contact_address
+field_name: localgov_contact_address
+entity_type: paragraph
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: ee7cd50e-cba7-476a-9d2c-6e7beec1194b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.localgov_services_sublanding
+  module:
+    - text
+_core:
+  default_config_hash: 9z-j9J77G7ELhVEwfLPtOgj1dWm5cyvUy_jFnbF1Qyk
+id: node.localgov_services_sublanding.body
+field_name: body
+entity_type: node
+bundle: localgov_services_sublanding
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

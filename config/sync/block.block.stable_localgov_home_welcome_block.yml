@@ -1,0 +1,28 @@
+uuid: f3e6bb54-5f21-487b-9bd1-60b5faefe0b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov
+    - system
+  theme:
+    - stable
+_core:
+  default_config_hash: mH4ym6-Q8lKaPKaIFzv9MvHtmEi12D2AWFa2HYuzS5s
+id: stable_localgov_home_welcome_block
+theme: stable
+region: sidebar_first
+weight: 0
+provider: null
+plugin: localgov_home_welcome_block
+settings:
+  id: localgov_home_welcome_block
+  label: 'Home welcome block'
+  provider: null
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

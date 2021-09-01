@@ -1,0 +1,21 @@
+uuid: e99b6e62-a8d5-4109-a957-ceed418eec0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_email_address
+    - node.type.localgov_services_landing
+_core:
+  default_config_hash: gwx7hzQZJBOttgPCNn_IrpP4Xzlzj4JNRx9Jro0PI0c
+id: node.localgov_services_landing.localgov_email_address
+field_name: localgov_email_address
+entity_type: node
+bundle: localgov_services_landing
+label: 'Email address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

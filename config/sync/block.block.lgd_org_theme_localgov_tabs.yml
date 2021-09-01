@@ -1,0 +1,22 @@
+uuid: 86b49f54-88ad-4588-adfc-543034463120
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lgd_org_theme
+_core:
+  default_config_hash: 17WQm1vjTFEjLHYOcDhn4F8C6leBD5gAgiOS0GhbFbg
+id: lgd_org_theme_localgov_tabs
+theme: lgd_org_theme
+region: content_top
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

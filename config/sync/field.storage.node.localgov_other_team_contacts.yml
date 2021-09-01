@@ -1,0 +1,23 @@
+uuid: dc6d0887-8cb0-44ba-bb6b-90cee43c8217
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fGBjNpvp4xs6AsRxSXFt__y3b_0gyQOqScr_9WEc2u8
+id: node.localgov_other_team_contacts
+field_name: localgov_other_team_contacts
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 59278ffd-da4a-4634-805e-f38c5c6f80f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.7_3
+  module:
+    - crop
+_core:
+  default_config_hash: jGEwGrXme-BwOKKtWTwCCOzEvKJZQryiAhSyyNwCUx0
+name: scale_crop_7_3_large
+label: 'Scale crop 7:3 large'
+effects:
+  6e4edf30-59c0-45d0-ba6d-63dac5128eef:
+    uuid: 6e4edf30-59c0-45d0-ba6d-63dac5128eef
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      anchor: center-center
+      width: 1440
+      height: 617
+  e88ccb2e-a374-461b-8c15-023ba0a10c34:
+    uuid: e88ccb2e-a374-461b-8c15-023ba0a10c34
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: '7_3'

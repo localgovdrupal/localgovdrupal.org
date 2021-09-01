@@ -1,0 +1,164 @@
+uuid: e90cc26b-62b5-474d-a4b3-56b24636fa38
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.localgov_services_landing.body
+    - field.field.node.localgov_services_landing.localgov_address
+    - field.field.node.localgov_services_landing.localgov_address_first_line
+    - field.field.node.localgov_services_landing.localgov_common_tasks
+    - field.field.node.localgov_services_landing.localgov_contact_us_online
+    - field.field.node.localgov_services_landing.localgov_destinations
+    - field.field.node.localgov_services_landing.localgov_email_address
+    - field.field.node.localgov_services_landing.localgov_facebook
+    - field.field.node.localgov_services_landing.localgov_hearing_difficulties_ph
+    - field.field.node.localgov_services_landing.localgov_link_to_map
+    - field.field.node.localgov_services_landing.localgov_opening_hours
+    - field.field.node.localgov_services_landing.localgov_other_team_contacts
+    - field.field.node.localgov_services_landing.localgov_phone
+    - field.field.node.localgov_services_landing.localgov_popular_topics
+    - field.field.node.localgov_services_landing.localgov_twitter
+    - node.type.localgov_services_landing
+  module:
+    - link
+    - localgov_services_landing
+    - text
+    - user
+_core:
+  default_config_hash: TEkOPPxWFihwCuX139-IHFyY_7t-AKEXn-yDOCPfDbE
+id: node.localgov_services_landing.search_index
+targetEntityType: node
+bundle: localgov_services_landing
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  localgov_address:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  localgov_address_first_line:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  localgov_common_tasks:
+    type: link
+    weight: 12
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  localgov_contact_us_online:
+    type: string
+    weight: 13
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  localgov_destinations:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  localgov_email_address:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  localgov_facebook:
+    type: string
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  localgov_hearing_difficulties_ph:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  localgov_link_to_map:
+    weight: 9
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  localgov_opening_hours:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  localgov_other_team_contacts:
+    type: string
+    weight: 14
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  localgov_phone:
+    type: string
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  localgov_popular_topics:
+    weight: 11
+    label: hidden
+    settings:
+      title: 'Popular topics'
+    third_party_settings: {  }
+    type: taxonomy_vertical_list
+    region: content
+  localgov_twitter:
+    type: string
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  links: true
+  search_api_excerpt: true

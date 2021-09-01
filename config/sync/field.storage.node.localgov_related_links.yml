@@ -1,0 +1,21 @@
+uuid: c40b2e2a-1440-4543-90d1-951e95390a14
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: DaxB3YfKt2VOeZUhcIV4APKa9Di_oZsFMt5QcJUJfd0
+id: node.localgov_related_links
+field_name: localgov_related_links
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

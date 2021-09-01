@@ -1,0 +1,22 @@
+uuid: ac5227c9-8855-4c7e-98c2-dbd9f1b163a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lgd_org_theme
+_core:
+  default_config_hash: 0AtJcZqnd6CQ5w6OmCCFHWrcid_-E3GjXi1x4vbHssQ
+id: lgd_org_theme_localgov_messages
+theme: lgd_org_theme
+region: messages
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

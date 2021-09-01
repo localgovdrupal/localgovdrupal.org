@@ -1,0 +1,33 @@
+uuid: d8170040-fa60-4f6b-a75f-30558584e72f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_destinations
+    - node.type.localgov_services_landing
+    - node.type.localgov_services_page
+    - node.type.localgov_services_sublanding
+_core:
+  default_config_hash: pH_-QPb-Vs4nARMi0ve6PIREPABVTGxsNKz1haWGhzA
+id: node.localgov_services_landing.localgov_destinations
+field_name: localgov_destinations
+entity_type: node
+bundle: localgov_services_landing
+label: 'Child pages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_services_landing: localgov_services_landing
+      localgov_services_sublanding: localgov_services_sublanding
+      localgov_services_page: localgov_services_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: basic_page
+field_type: entity_reference

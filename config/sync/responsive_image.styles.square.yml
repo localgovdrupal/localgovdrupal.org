@@ -1,0 +1,21 @@
+uuid: 1ebdeba2-02b2-40a0-8534-44f18768b42b
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.square_large
+    - image.style.square_medium
+  module:
+    - localgov_media
+_core:
+  default_config_hash: vlsPsFT_xyig28t4yNgWcLg4KvjVNsyV-H0hgHqC0J0
+id: square
+label: Square
+image_style_mappings:
+  -
+    breakpoint_id: localgov_media.bootstrap4_md_768px
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: square_large
+breakpoint_group: localgov_media
+fallback_image_style: square_medium

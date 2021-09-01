@@ -1,0 +1,21 @@
+uuid: 3f36503b-ac4a-4757-8fca-f3473a152185
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_other_team_contacts
+    - node.type.localgov_services_landing
+_core:
+  default_config_hash: aoCferja1bz3glT0mpiIOxfBFoNlksXhbx3JoV4Zjr8
+id: node.localgov_services_landing.localgov_other_team_contacts
+field_name: localgov_other_team_contacts
+entity_type: node
+bundle: localgov_services_landing
+label: 'Other team contacts URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

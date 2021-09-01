@@ -1,0 +1,14 @@
+uuid: 1afaf073-af58-417f-b44a-383fb1bf1a76
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.localgov_author
+  module:
+    - user
+id: user_remove_role_action.localgov_author
+label: 'Remove the Author role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: localgov_author

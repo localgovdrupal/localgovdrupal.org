@@ -1,0 +1,21 @@
+uuid: 3094c86e-46c7-4f92-97b8-50d6260c435f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_email
+    - paragraphs.paragraphs_type.localgov_contact
+_core:
+  default_config_hash: UqQIxaWIykDWqc067lH2aXr7uztwjM5wWUYl63wBfxU
+id: paragraph.localgov_contact.localgov_contact_email
+field_name: localgov_contact_email
+entity_type: paragraph
+bundle: localgov_contact
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

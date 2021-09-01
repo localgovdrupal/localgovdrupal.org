@@ -1,0 +1,32 @@
+uuid: f260daca-9084-4019-a1ac-7faf5f39712b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_link.localgov_title
+    - field.field.paragraph.localgov_link.localgov_url
+    - paragraphs.paragraphs_type.localgov_link
+_core:
+  default_config_hash: Ch5SL-Nn8onmVWzqR90OaxIwwMGLAy3lnqfmBVqW2Qs
+id: paragraph.localgov_link.default
+targetEntityType: paragraph
+bundle: localgov_link
+mode: default
+content:
+  localgov_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  localgov_url:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

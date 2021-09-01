@@ -1,0 +1,23 @@
+uuid: e784dc2e-05ec-41f6-917f-991e1125aa42
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: DmlapiDxO1FI-JKNCa23uTKLdQHBa-ezb1UcXFCj_iY
+id: node.localgov_twitter
+field_name: localgov_twitter
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

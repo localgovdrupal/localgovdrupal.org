@@ -1,0 +1,21 @@
+uuid: bbc39a06-90a5-478a-8733-973ce6f1edf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.topic_list_header
+    - paragraphs.paragraphs_type.topic_list_builder
+_core:
+  default_config_hash: HvgwcBkuNkpljcJFIIGHdvArIr73hzjcSBqYi2QIIcM
+id: paragraph.topic_list_builder.topic_list_header
+field_name: topic_list_header
+entity_type: paragraph
+bundle: topic_list_builder
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

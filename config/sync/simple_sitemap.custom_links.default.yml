@@ -1,0 +1,7 @@
+links:
+  -
+    path: /
+    priority: '1.0'
+    changefreq: daily
+_core:
+  default_config_hash: _iOvXq8pAkn81anJ32ELiAx746QP86Z4PyXz514puXQ

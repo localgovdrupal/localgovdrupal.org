@@ -1,0 +1,73 @@
+uuid: 92e9ac06-7e12-4b4e-a0ec-a3c1ccb85b3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg
+  module:
+    - ckeditor
+_core:
+  default_config_hash: BYnFpZIRCLycV6n5MmbSZt71mMClHh-9GoNgSaGV3mI
+format: wysiwyg
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Format
+            - Styles
+            - RemoveFormat
+            - Underline
+            - Bold
+            - Italic
+        -
+          name: Edit
+          items:
+            - Copy
+            - Cut
+            - Paste
+            - Undo
+            - Redo
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - DrupalMediaLibrary
+        -
+          name: Tools
+          items:
+            - Source
+        -
+          name: Tables
+          items:
+            - Table
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: "mark|Highlight\r\na.external-link|External link\r\na.pdf-link|PDF link\r\na.btn.btn-start.col-sm-6.mt-3|Start button\r\np.alert.alert-info|Alert info\r\np.alert.alert-danger|Alert warning\r\np.alert.alert-primary|Alert failure\r\np.alert.alert-success|Alert success\r\np.callout.callout-primary|Callout primary\r\np.callout.callout-success|Callout success\r\np.callout.callout-danger|Callout danger\r\np.callout.callout-teal|Callout teal\r\np.callout.callout-carbon|Callout carbon\r\np.callout.callout-yellow|Callout yellow\r\nul.list-checked|Green ticks"
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

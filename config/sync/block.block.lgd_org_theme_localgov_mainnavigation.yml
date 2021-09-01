@@ -1,0 +1,27 @@
+uuid: ca106d1e-53a8-4591-899e-03a793fe98a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - lgd_org_theme
+_core:
+  default_config_hash: JDy28S-TIX0XKccmCHL3hLvVaYlgiLNNZNaTs8r1HCw
+id: lgd_org_theme_localgov_mainnavigation
+theme: lgd_org_theme
+region: primary_menu
+weight: -1
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

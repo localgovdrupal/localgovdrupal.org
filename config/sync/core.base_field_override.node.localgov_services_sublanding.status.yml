@@ -1,0 +1,24 @@
+uuid: 6610f94e-d3c6-4782-81fc-54edf1502308
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.localgov_services_sublanding
+_core:
+  default_config_hash: dZxMveRvZ7Bd1MVNONwMIn__vi36ScbfP9Rg7b10Ar0
+id: node.localgov_services_sublanding.status
+field_name: status
+entity_type: node
+bundle: localgov_services_sublanding
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,25 @@
+uuid: 08cdd11c-c050-47e8-ad2a-8d4960ee733f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_override_related_links
+    - node.type.localgov_services_page
+_core:
+  default_config_hash: D4tTCv_Loxu_HYRgfrX6XjWIZTFEikJcWCMcXX4sFMc
+id: node.localgov_services_page.localgov_override_related_links
+field_name: localgov_override_related_links
+entity_type: node
+bundle: localgov_services_page
+label: 'Replace automatically generated links'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

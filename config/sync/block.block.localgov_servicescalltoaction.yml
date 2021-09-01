@@ -1,0 +1,22 @@
+uuid: 2397b218-53e3-4ff2-8983-b6e1859a5dc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_services
+  theme:
+    - localgov_base
+_core:
+  default_config_hash: irdD06rR7tuEpqROAODrvo0krVQRiTsvm89U0gb8aME
+id: localgov_servicescalltoaction
+theme: localgov_base
+region: content_top
+weight: 1
+provider: null
+plugin: localgov_service_cta_block
+settings:
+  id: localgov_service_cta_block
+  label: 'Services call to action'
+  provider: localgov_services
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: e3e1b4d1-1ea3-43f4-bd1b-804d50b1c236
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.localgov_contributor
+  module:
+    - user
+id: user_remove_role_action.localgov_contributor
+label: 'Remove the Contributor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: localgov_contributor

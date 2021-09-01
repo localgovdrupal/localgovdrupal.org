@@ -1,0 +1,14 @@
+uuid: 3c88e427-358a-4d1b-974c-7cafb2f1e782
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EFvH1C81Szr6CBCMk6YeZ1HOP3PEoitgixDdQeDIrqE
+id: localgov_news_16_9
+label: '16:9 for News image'
+description: ''
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,22 @@
+uuid: f7e767c5-262a-4d70-a7fb-0b301191d160
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_core
+  theme:
+    - classy
+_core:
+  default_config_hash: WhGf5S3ZSZ698FcbYpQIoadx9DPUFiJXFrRXnidY1-I
+id: classy_localgov_page_header_block
+theme: classy
+region: sidebar_first
+weight: -10
+provider: null
+plugin: localgov_page_header_block
+settings:
+  id: localgov_page_header_block
+  label: 'Page header block'
+  provider: localgov_core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: e40e5800-eddd-4837-8b3b-817a6f81f1bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_services_parent
+    - node.type.localgov_services_landing
+    - node.type.localgov_services_sublanding
+_core:
+  default_config_hash: 9AnMOJ1dSW4-ICzelQxPSlNRJKKotvWe-muMW4IYTbw
+id: node.localgov_services_sublanding.localgov_services_parent
+field_name: localgov_services_parent
+entity_type: node
+bundle: localgov_services_sublanding
+label: 'Services: Parent'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: localgov_services
+  handler_settings:
+    target_bundles:
+      localgov_services_landing: localgov_services_landing
+field_type: entity_reference

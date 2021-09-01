@@ -1,0 +1,23 @@
+uuid: b4af8b42-d3fc-498f-a8fa-afb2b0a70830
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: kQnv0F8NOBrd4cOqjJedl18Nu2PBfwiJuSQc3GlZNE4
+id: paragraph.topic_list_header
+field_name: topic_list_header
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

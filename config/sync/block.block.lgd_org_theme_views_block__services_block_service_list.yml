@@ -1,0 +1,32 @@
+uuid: 481f4854-4659-4176-9657-c287c87b1649
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.services
+  module:
+    - system
+    - views
+  theme:
+    - lgd_org_theme
+_core:
+  default_config_hash: hGFmcX5dYyC3exYK5w2TJn1UW-dWgN3mUlPa5GIV2GI
+id: lgd_org_theme_views_block__services_block_service_list
+theme: lgd_org_theme
+region: content_top
+weight: 5
+provider: null
+plugin: 'views_block:services-block_service_list'
+settings:
+  id: 'views_block:services-block_service_list'
+  label: 'Services list block'
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

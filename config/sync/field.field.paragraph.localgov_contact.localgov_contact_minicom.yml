@@ -1,0 +1,23 @@
+uuid: 66f42ab9-d204-4496-a4f8-2178918ef1fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_minicom
+    - paragraphs.paragraphs_type.localgov_contact
+  module:
+    - telephone
+_core:
+  default_config_hash: pQM0S946-K2VG3_qC8kyKHbnJLXNaW86BVFQloa9b60
+id: paragraph.localgov_contact.localgov_contact_minicom
+field_name: localgov_contact_minicom
+entity_type: paragraph
+bundle: localgov_contact
+label: Minicom
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,31 @@
+uuid: 8c9b757a-ab26-4aaf-ac8e-a1e68e1c7ed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.topic_list_term
+    - paragraphs.paragraphs_type.topic_list_builder
+    - taxonomy.vocabulary.localgov_topic
+_core:
+  default_config_hash: DJzIHjDX2m88xijFew8h84fBMVYClU_vLUhS1fLRFu4
+id: paragraph.topic_list_builder.topic_list_term
+field_name: topic_list_term
+entity_type: paragraph
+bundle: topic_list_builder
+label: 'Topic term'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      localgov_topic: localgov_topic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

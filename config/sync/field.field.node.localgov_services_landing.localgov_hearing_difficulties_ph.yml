@@ -1,0 +1,21 @@
+uuid: 25a49a13-87c2-4111-96db-e2e50114441a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_hearing_difficulties_ph
+    - node.type.localgov_services_landing
+_core:
+  default_config_hash: AplEzZpD_mj6cWVA5meaZ048IxAdKRPHwjC5hn8KWGk
+id: node.localgov_services_landing.localgov_hearing_difficulties_ph
+field_name: localgov_hearing_difficulties_ph
+entity_type: node
+bundle: localgov_services_landing
+label: 'Hearing or speech difficulties phone number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

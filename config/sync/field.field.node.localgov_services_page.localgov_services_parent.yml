@@ -1,0 +1,28 @@
+uuid: bd17039f-7237-46fe-b1e7-fe136391acf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_services_parent
+    - node.type.localgov_services_landing
+    - node.type.localgov_services_page
+    - node.type.localgov_services_sublanding
+_core:
+  default_config_hash: AfhE_M8pOksIJo7tZKPQKUSQd8JlS_RcMRYPboA8g24
+id: node.localgov_services_page.localgov_services_parent
+field_name: localgov_services_parent
+entity_type: node
+bundle: localgov_services_page
+label: Parent
+description: 'This sets the breadcrumb and the url alias for the page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: localgov_services
+  handler_settings:
+    target_bundles:
+      localgov_services_landing: localgov_services_landing
+      localgov_services_sublanding: localgov_services_sublanding
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 5de032be-5256-4ce4-87a1-fde2c163b1b6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: qD7Bt6o7KSV0N8MOgdbXViYhyS3uIEvgrtOsHTniYp0
+id: node.localgov_override_related_links
+field_name: localgov_override_related_links
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

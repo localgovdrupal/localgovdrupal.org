@@ -1,0 +1,21 @@
+uuid: e01bb098-46d9-4497-9300-e4c855053e73
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - telephone
+_core:
+  default_config_hash: eQ-LmF2KhvoNuP7RS5iUj-4rCcI05lvRpC__zFj61Jo
+id: paragraph.localgov_contact_out_of_hours
+field_name: localgov_contact_out_of_hours
+entity_type: paragraph
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

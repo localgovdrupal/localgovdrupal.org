@@ -1,0 +1,27 @@
+uuid: 1d0a2a26-864b-475b-9ed2-25d5e137ce32
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.28_9
+  module:
+    - crop
+_core:
+  default_config_hash: _cNDCjSotgKkESSpzBCpT4pEB0ccZuz0XoZGJ88e20U
+name: small_28_9
+label: 'Small 28:9 (768x247)'
+effects:
+  f9d1a62f-07e1-4d2c-92da-10e40b73c5b0:
+    uuid: f9d1a62f-07e1-4d2c-92da-10e40b73c5b0
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '28_9'
+  c860cb37-e3eb-491d-955d-1e9103be6270:
+    uuid: c860cb37-e3eb-491d-955d-1e9103be6270
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 768
+      height: 247
+      anchor: center-center

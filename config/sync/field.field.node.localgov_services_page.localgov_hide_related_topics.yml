@@ -1,0 +1,25 @@
+uuid: b6ad1ff3-7cec-4428-9bc6-9c9c012d25ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_hide_related_topics
+    - node.type.localgov_services_page
+_core:
+  default_config_hash: fS3uUSlApy0UeECevAANnKUawn0hfRJvaWrmfatp3bs
+id: node.localgov_services_page.localgov_hide_related_topics
+field_name: localgov_hide_related_topics
+entity_type: node
+bundle: localgov_services_page
+label: 'Hide the related topics panel'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,101 @@
+uuid: 8fa8afa8-1cfc-49b6-a0da-29ab048118cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.localgov_services_page.body
+    - field.field.node.localgov_services_page.localgov_common_tasks
+    - field.field.node.localgov_services_page.localgov_download_links
+    - field.field.node.localgov_services_page.localgov_hide_related_topics
+    - field.field.node.localgov_services_page.localgov_override_related_links
+    - field.field.node.localgov_services_page.localgov_page_components
+    - field.field.node.localgov_services_page.localgov_related_links
+    - field.field.node.localgov_services_page.localgov_services_parent
+    - field.field.node.localgov_services_page.localgov_topic_classified
+    - node.type.localgov_services_page
+  module:
+    - link
+    - text
+    - user
+_core:
+  default_config_hash: _SVw7GD-lRFMBW6I9XtTDO7YqxYHgQHIB6fPxvUyCQA
+id: node.localgov_services_page.search_index
+targetEntityType: node
+bundle: localgov_services_page
+mode: search_index
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  localgov_common_tasks:
+    type: link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+  localgov_download_links:
+    type: link
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+  localgov_page_components:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  localgov_related_links:
+    type: link
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+  localgov_services_parent:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  localgov_topic_classified:
+    type: entity_reference_label
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  links: true
+  localgov_hide_related_topics: true
+  localgov_override_related_links: true
+  search_api_excerpt: true

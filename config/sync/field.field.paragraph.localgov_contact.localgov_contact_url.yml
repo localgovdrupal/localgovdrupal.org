@@ -1,0 +1,25 @@
+uuid: dc709663-9a02-4c82-a705-a7916ca27722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_url
+    - paragraphs.paragraphs_type.localgov_contact
+  module:
+    - link
+_core:
+  default_config_hash: E8rSMi_7TWMtGAo6n7Ax7w37mFyZuR4x4Bku2XTPcbQ
+id: paragraph.localgov_contact.localgov_contact_url
+field_name: localgov_contact_url
+entity_type: paragraph
+bundle: localgov_contact
+label: 'Contact us online URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

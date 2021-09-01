@@ -1,0 +1,22 @@
+uuid: 2a1bb5e2-f07a-4705-b1b2-5da69fa7e189
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_core
+  theme:
+    - localgov_theme
+_core:
+  default_config_hash: vnplRTYyzei_YcZo1r95IOfB3JApfgAPsnXh5jlouMM
+id: localgov_poweredbylocalgovdrupal
+theme: localgov_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: localgov_powered_by_block
+settings:
+  id: localgov_powered_by_block
+  label: 'Powered by LocalGovDrupal'
+  provider: localgov_core
+  label_display: '0'
+visibility: {  }

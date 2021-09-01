@@ -1,0 +1,31 @@
+uuid: e78c2b44-b4f7-4b61-8e44-daeb85c79a75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_popular_topics
+    - node.type.localgov_services_landing
+    - taxonomy.vocabulary.localgov_topic
+_core:
+  default_config_hash: YoyIHg4zQsY472C20YQB_uS-1VMbwTcOGwPuuCaHPT4
+id: node.localgov_services_landing.localgov_popular_topics
+field_name: localgov_popular_topics
+entity_type: node
+bundle: localgov_services_landing
+label: 'Popular topics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      localgov_topic: localgov_topic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

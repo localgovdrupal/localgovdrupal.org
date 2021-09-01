@@ -1,0 +1,23 @@
+uuid: 8ee3c5cc-b226-4ca4-a60e-c28aec1e8128
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_phone
+    - paragraphs.paragraphs_type.localgov_contact
+  module:
+    - telephone
+_core:
+  default_config_hash: Fk2XBkv5th7T7Zox1mm0vmrzWHEJpHuPb7narSdYYnI
+id: paragraph.localgov_contact.localgov_contact_phone
+field_name: localgov_contact_phone
+entity_type: paragraph
+bundle: localgov_contact
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

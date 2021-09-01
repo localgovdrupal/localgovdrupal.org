@@ -1,0 +1,21 @@
+uuid: f5448fbe-681b-41b0-b37c-35af0f063281
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_contact_us_online
+    - node.type.localgov_services_landing
+_core:
+  default_config_hash: '-A5wBNo6G4ltWDC7JJmzRnhEcE4ZINuBo470ZQdmkn8'
+id: node.localgov_services_landing.localgov_contact_us_online
+field_name: localgov_contact_us_online
+entity_type: node
+bundle: localgov_services_landing
+label: 'Contact us online URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

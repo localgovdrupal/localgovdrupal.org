@@ -1,0 +1,25 @@
+uuid: 0c171e37-91d0-409b-9f9f-a35ae4e04f4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_common_tasks
+    - node.type.localgov_services_landing
+  module:
+    - link
+_core:
+  default_config_hash: ZnlXYEGr-DP72hMafF1OBzI_rGg0X2ztwsiZDajyYpo
+id: node.localgov_services_landing.localgov_common_tasks
+field_name: localgov_common_tasks
+entity_type: node
+bundle: localgov_services_landing
+label: 'Task buttons'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

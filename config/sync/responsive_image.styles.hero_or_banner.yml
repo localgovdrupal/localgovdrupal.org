@@ -1,0 +1,27 @@
+uuid: a1bfe414-0d64-4080-88ce-22dfe4947d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_21_9
+    - image.style.large_21_9_2x
+    - image.style.small_21_9
+  module:
+    - localgov_media
+_core:
+  default_config_hash: Kn0sXgNFwVjiagzgO7kDXU2IVhNg5bzxDiGpFnwm5os
+id: hero_or_banner
+label: 'Hero or Banner'
+image_style_mappings:
+  -
+    breakpoint_id: localgov_media.bootstrap4_xl_1200px
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_21_9_2x
+  -
+    breakpoint_id: localgov_media.bootstrap4_md_768px
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_21_9
+breakpoint_group: localgov_media
+fallback_image_style: small_21_9

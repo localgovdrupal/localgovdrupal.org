@@ -1,0 +1,19 @@
+uuid: 266b3ee4-1cc5-4e16-ba61-6c426e1d4ffb
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.7_3
+  module:
+    - crop
+_core:
+  default_config_hash: DQk32s4VohWIcgmyU1iVFIwKmv5llmaJunlL5CeQqf0
+name: manual_7_3_crop
+label: 'Manual 7:3 crop'
+effects:
+  6a9056df-03c2-4b09-a3b2-3c5333250735:
+    uuid: 6a9056df-03c2-4b09-a3b2-3c5333250735
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '7_3'

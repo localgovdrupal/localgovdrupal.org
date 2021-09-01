@@ -1,0 +1,14 @@
+uuid: 49418a77-aa68-4579-966d-f7f98b627160
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format wysiwyg'
+  - 'view media'

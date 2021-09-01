@@ -1,0 +1,180 @@
+uuid: 8f63b94b-6107-4775-8946-7a4edcf9af07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_services_sublanding.body
+    - field.field.node.localgov_services_sublanding.localgov_services_parent
+    - field.field.node.localgov_services_sublanding.localgov_topics
+    - node.type.localgov_services_sublanding
+  module:
+    - field_group
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_description
+        - group_service
+        - group_topics
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: tabs
+      region: content
+    group_description:
+      children:
+        - title
+        - body
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      format_settings:
+        label: Content
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Content
+    group_service:
+      children:
+        - field_service
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        label: 'Parent page'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Parent page'
+    group_topics:
+      children:
+        - localgov_topics
+      parent_name: group_tabs
+      weight: 3
+      format_type: tab
+      format_settings:
+        label: 'Child pages'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Child pages'
+_core:
+  default_config_hash: qgi7Ji5DkUSjOgN-tHtizxxz2sY5ynYpwTxYgHu-xUc
+id: node.localgov_services_sublanding.default
+targetEntityType: node
+bundle: localgov_services_sublanding
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_services_navigation_children:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  localgov_services_parent:
+    weight: 101
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  localgov_topics:
+    type: entity_reference_paragraphs
+    weight: 8
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

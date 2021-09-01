@@ -1,0 +1,48 @@
+uuid: 3a0b604b-d338-4b3c-8432-da1024ebfe1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.topic_list_builder.topic_list_header
+    - field.field.paragraph.topic_list_builder.topic_list_links
+    - field.field.paragraph.topic_list_builder.topic_list_term
+    - paragraphs.paragraphs_type.topic_list_builder
+  module:
+    - link
+_core:
+  default_config_hash: IpXtJ8SiD4IHr7mcvrGPTvRvsgWZ3Qvhf47z1CsHOD0
+id: paragraph.topic_list_builder.default
+targetEntityType: paragraph
+bundle: topic_list_builder
+mode: default
+content:
+  topic_list_header:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  topic_list_links:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  topic_list_term:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

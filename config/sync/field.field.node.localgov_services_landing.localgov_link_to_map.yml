@@ -1,0 +1,25 @@
+uuid: 33fe9d09-5840-4653-b5fa-790c9b8a2977
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_link_to_map
+    - node.type.localgov_services_landing
+  module:
+    - link
+_core:
+  default_config_hash: uTmjJlPI_C3OlGaqqiXWaNrzTzDAoJ1VX80Ofd5YCHo
+id: node.localgov_services_landing.localgov_link_to_map
+field_name: localgov_link_to_map
+entity_type: node
+bundle: localgov_services_landing
+label: 'Link to map'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

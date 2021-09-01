@@ -1,0 +1,25 @@
+uuid: ddb172b5-be19-4bb4-8342-372c042e069c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_twitter
+    - paragraphs.paragraphs_type.localgov_contact
+  module:
+    - link
+_core:
+  default_config_hash: hUGvpmZPYSkOVu1SQ42zFEYVhDHZuo1vuf0nhfzD8rQ
+id: paragraph.localgov_contact.localgov_contact_twitter
+field_name: localgov_contact_twitter
+entity_type: paragraph
+bundle: localgov_contact
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

@@ -1,0 +1,25 @@
+uuid: 181d43fd-0e4d-425b-a970-a0eb1cc5afef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: qguQNAqViOFENAgO1wUZl6SAFmwh2l_TBuiZixMFVxY
+id: localgov_services_hierarchy
+label: 'Services Hierarchy'
+type: 'canonical_entities:node'
+pattern: '[node:localgov_services_parent:entity:url:relative]/[node:title]'
+selection_criteria:
+  9dd1b1bc-3678-4642-8568-86d6d27c3dfd:
+    id: node_type
+    bundles:
+      localgov_services_page: localgov_services_page
+      localgov_services_sublanding: localgov_services_sublanding
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9dd1b1bc-3678-4642-8568-86d6d27c3dfd
+selection_logic: and
+weight: -5
+relationships: {  }

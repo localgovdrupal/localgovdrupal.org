@@ -1,0 +1,21 @@
+uuid: 224f8127-0491-4a1f-8151-ac1b0ffe1107
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_facebook
+    - node.type.localgov_services_landing
+_core:
+  default_config_hash: XSq55nJFWPg3OqXHoxvs9sb8zBzjq5kLWaC0zj8TA0w
+id: node.localgov_services_landing.localgov_facebook
+field_name: localgov_facebook
+entity_type: node
+bundle: localgov_services_landing
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

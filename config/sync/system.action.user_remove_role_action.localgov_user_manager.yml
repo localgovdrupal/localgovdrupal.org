@@ -1,0 +1,14 @@
+uuid: 4902d410-1952-4d27-95fd-db3116ada8b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.localgov_user_manager
+  module:
+    - user
+id: user_remove_role_action.localgov_user_manager
+label: 'Remove the User manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: localgov_user_manager

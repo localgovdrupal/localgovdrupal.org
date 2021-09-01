@@ -1,0 +1,27 @@
+uuid: 3f1bc2d8-8b4f-4ed1-a342-4846ff058643
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_topic_classified
+    - node.type.localgov_services_page
+_core:
+  default_config_hash: xTQKBhxTEoCg08kismzip2OQnHXeqF-POcwHu4ITM54
+id: node.localgov_services_page.localgov_topic_classified
+field_name: localgov_topic_classified
+entity_type: node
+bundle: localgov_services_page
+label: 'Topic terms'
+description: 'Topic tags group together related content across all services.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: topics
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 1ba1165e-2fb6-43af-9e1c-b15834a8c9aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_location
+    - paragraphs.paragraphs_type.localgov_contact
+  module:
+    - geolocation
+_core:
+  default_config_hash: sxTbOkI3pDXkTbDq0pCZeqTeiXw9e9Pjwqoh5jdAYgI
+id: paragraph.localgov_contact.localgov_contact_location
+field_name: localgov_contact_location
+entity_type: paragraph
+bundle: localgov_contact
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

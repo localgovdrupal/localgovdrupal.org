@@ -1,0 +1,21 @@
+uuid: 86a0383b-40de-43be-b5b0-883534dc0096
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: NhLR_4oFbvfGxZdfrNwM0BWOdLEtgrvO0emLAR3-z-w
+id: node.localgov_address
+field_name: localgov_address
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

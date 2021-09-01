@@ -1,0 +1,24 @@
+uuid: 63a1ea4f-f089-456d-98b5-e6e97da17cfe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: jevtx_LVnykt2VQVy4Tt1QDBYbUJ36ked7_HQ4j4oUU
+id: localgov_services_landing
+label: 'Services Landing Page'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  42d90085-1126-4394-9349-88a26a0317f5:
+    id: node_type
+    bundles:
+      localgov_services_landing: localgov_services_landing
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 42d90085-1126-4394-9349-88a26a0317f5
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,27 @@
+uuid: 6d93956b-6174-4ac9-af92-3df042a0ed89
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.28_9
+  module:
+    - crop
+_core:
+  default_config_hash: ow2AxxFAOs0Zz_gBNlN2xgLcBX3NPEGudszGtVCsQjU
+name: medium_28_9
+label: 'Medium 28:9 (1024x329)'
+effects:
+  724f72ee-70c4-4f8c-9e63-07846b997add:
+    uuid: 724f72ee-70c4-4f8c-9e63-07846b997add
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '28_9'
+  b224f2b9-6e18-4f26-a27e-ae3a441e44f7:
+    uuid: b224f2b9-6e18-4f26-a27e-ae3a441e44f7
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1024
+      height: 329
+      anchor: center-center

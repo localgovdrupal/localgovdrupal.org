@@ -1,0 +1,10 @@
+uuid: d65f5e3d-811b-4e55-84d8-97880a4cb77c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kclBi10cR8fydoX29_PWJlP1Q7YY_iiflyyNIO3LYzk
+name: Topic
+vid: localgov_topic
+description: 'Topic tags group together related content across all services'
+weight: 0

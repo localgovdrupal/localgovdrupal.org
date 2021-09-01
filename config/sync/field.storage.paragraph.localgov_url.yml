@@ -1,0 +1,23 @@
+uuid: 2d48479f-bc32-48d4-b159-8431aedd7b4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 6LldmN7uZQsBMon39W8AMWBUzk2E0NTtEhxPHQs-6HQ
+id: paragraph.localgov_url
+field_name: localgov_url
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

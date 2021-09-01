@@ -1,0 +1,12 @@
+uuid: 04db6fba-1f47-48bf-bc4b-51b2fa34a191
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PITweXGQ2mXqWFe8U6nBkCuFDsuZSBHEj2k6QfusoMo
+id: localgov_link
+label: Link
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

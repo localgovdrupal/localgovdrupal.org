@@ -1,0 +1,27 @@
+uuid: 03b6d4cb-df09-44f6-9883-1c9a81fb26f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.28_9
+  module:
+    - crop
+_core:
+  default_config_hash: 23Sn7pJyl2ywlWqTRz0RaGNLJ_gE3YC7ZiHjHn0tucY
+name: large_28_9_2x
+label: 'Large 28:9 2x (2880x926)'
+effects:
+  32a425dd-aab6-4f0f-9f0f-6a9a3ce0b228:
+    uuid: 32a425dd-aab6-4f0f-9f0f-6a9a3ce0b228
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '28_9'
+  a4d2be16-9925-44d7-9f60-0072aafbd52d:
+    uuid: a4d2be16-9925-44d7-9f60-0072aafbd52d
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 2880
+      height: 926
+      anchor: center-center

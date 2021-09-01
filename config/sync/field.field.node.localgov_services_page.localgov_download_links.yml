@@ -1,0 +1,25 @@
+uuid: 51aebec6-6471-414f-b9f2-dac32e0c05ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_download_links
+    - node.type.localgov_services_page
+  module:
+    - link
+_core:
+  default_config_hash: fUtzwV0QWKogV_VgRs-0O4uXkpJk0XgKYVeDtk7Hufw
+id: node.localgov_services_page.localgov_download_links
+field_name: localgov_download_links
+entity_type: node
+bundle: localgov_services_page
+label: 'Download links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

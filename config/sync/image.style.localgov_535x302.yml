@@ -1,0 +1,27 @@
+uuid: 671e1569-d9a4-4b9e-a8cc-1106e249a6ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.localgov_news_16_9
+  module:
+    - crop
+_core:
+  default_config_hash: YAZSPfuMNS2KA9kuI5mlrqf-AQIsDWvqMo9_JVCLmKw
+name: localgov_535x302
+label: 'LocalGov 535x302'
+effects:
+  38cd1939-7fb0-43e0-86b1-604655d7e061:
+    uuid: 38cd1939-7fb0-43e0-86b1-604655d7e061
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 535
+      height: 302
+      anchor: center-center
+  ddbdb069-c2e0-4965-b6cc-7f1f2a3bb1d9:
+    uuid: ddbdb069-c2e0-4965-b6cc-7f1f2a3bb1d9
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: localgov_news_16_9

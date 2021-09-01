@@ -1,0 +1,25 @@
+uuid: dfc9d9a6-85f2-40d3-ad9d-4da1cdc70cb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_other_url
+    - paragraphs.paragraphs_type.localgov_contact
+  module:
+    - link
+_core:
+  default_config_hash: 4mKmhPzAbHmD60rvpQLnd3WYwZgW4lOTr3IGGyS6iVY
+id: paragraph.localgov_contact.localgov_contact_other_url
+field_name: localgov_contact_other_url
+entity_type: paragraph
+bundle: localgov_contact
+label: 'Other team.localgov_contact.URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,27 @@
+uuid: 3d3a5562-ec15-41a1-a869-075018e7f2b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.7_3
+  module:
+    - crop
+_core:
+  default_config_hash: INTtDlcky4GaXIWjMJUyNXmBTxM6XBpNNyCDkdYG4T0
+name: medium_21_9
+label: 'Medium 21:9 (1024x440)'
+effects:
+  52985ed4-81d6-4ecf-90c1-4e8c651f76ba:
+    uuid: 52985ed4-81d6-4ecf-90c1-4e8c651f76ba
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      anchor: center-center
+      width: 1024
+      height: 440
+  a35dd68a-69ae-4798-bf43-ecbf3c450f65:
+    uuid: a35dd68a-69ae-4798-bf43-ecbf3c450f65
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: '7_3'

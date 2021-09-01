@@ -1,0 +1,14 @@
+uuid: bddfdfa7-0e63-4e28-878e-32251ed1e4d9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mCgzXhONdVbTa12rFiyl09O1cJXfPYgP9RC0kBsh270
+id: '16_9'
+label: '16:9'
+description: ''
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

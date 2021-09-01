@@ -1,0 +1,21 @@
+uuid: 1043f01d-e3cb-41ae-aa46-51990fcc1ae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_phone
+    - node.type.localgov_services_landing
+_core:
+  default_config_hash: Z7RYUyBrx_WD-vX68BhGXP0cR5Grh0NSWxHV0TtAUeg
+id: node.localgov_services_landing.localgov_phone
+field_name: localgov_phone
+entity_type: node
+bundle: localgov_services_landing
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

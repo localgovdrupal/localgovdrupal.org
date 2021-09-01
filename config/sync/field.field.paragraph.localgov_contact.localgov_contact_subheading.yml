@@ -1,0 +1,21 @@
+uuid: b0b8053f-4cd3-4846-9237-0b689adfa570
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_contact_subheading
+    - paragraphs.paragraphs_type.localgov_contact
+_core:
+  default_config_hash: qKMFTI1QsqX2KlmzipQ879IGpcf-drkjs0kUrrkSpN0
+id: paragraph.localgov_contact.localgov_contact_subheading
+field_name: localgov_contact_subheading
+entity_type: paragraph
+bundle: localgov_contact
+label: Subheading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

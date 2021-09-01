@@ -1,0 +1,36 @@
+uuid: 98e46d00-0603-461b-8a0f-fded9d3f2184
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_topics
+    - node.type.localgov_services_sublanding
+    - paragraphs.paragraphs_type.topic_list_builder
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: aczeJm2MTEEv0ilVbetQik-iVcUWPfidyRPlHomzZT0
+id: node.localgov_services_sublanding.localgov_topics
+field_name: localgov_topics
+entity_type: node
+bundle: localgov_services_sublanding
+label: 'Child pages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      topic_list_builder: topic_list_builder
+    target_bundles_drag_drop:
+      advanced_links:
+        weight: 3
+        enabled: false
+      topic_list_builder:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

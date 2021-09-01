@@ -1,0 +1,22 @@
+uuid: 5233cdd2-cc51-4cea-999a-5863c3bd2e0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_services_page
+  theme:
+    - localgov_base
+_core:
+  default_config_hash: QH1L1FVx-KSXKFzRe56B8OHaCsMFXMqW95pvk8G4awY
+id: localgov_servicepagerelatedlinks
+theme: localgov_base
+region: sidebar_second
+weight: 0
+provider: null
+plugin: localgov_services_related_links_block
+settings:
+  id: localgov_services_related_links_block
+  label: 'Service page related links'
+  provider: localgov_services_page
+  label_display: '0'
+visibility: {  }
