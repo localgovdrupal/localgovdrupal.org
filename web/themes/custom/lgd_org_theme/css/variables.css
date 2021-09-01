@@ -1,0 +1,376 @@
+/*
+  Import fonts.
+  In the base theme, we have no fonts importing so that the theme is as fast
+  as possible, and so we are not loading fonts that are then going to be
+  overridden in a subtheme in any case.
+  Want a font? Load it here, or in the html.html.twig file (you'll have to
+  copy that file to the theme) which should give you an even faster loading time.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/*
+  Override whatever variables you want.
+  In the base theme, most item values are set as variables. These variables
+  usually reference other variables. For example, we have a certain number of
+  colours, font sizes, spacing units, etc. We then create specific variables
+  (for example a variable for the color of a link in the header) but these
+  specific variables reference our base "root" variables.
+  The overrides here give an example of what you might want to change. As you
+  can see, you can change as much or as little as you wish.
+  Examples:
+  - The base font size in the base theme is 16px (1rem). If you want
+    all your fonts to be based on a different scale, set `--font-size` variable
+    to something else.
+  - The base line-height is 1.5 in the base theme. If you want that to be 1.3,
+    set --line-height to 1.3. A lot of spacing between items is based on this
+    rhythm (1.5rem), so changing to 1.3 will update all across the board.
+  - The accent colour in our base theme is purple. If you would like it to be
+    hotpink, just set `--color-accent: hotpink;`
+*/
+
+body {
+
+  /* Widths and Spacing */
+  /* --width-extra-large: 73.75rem; 1180px */
+  /* --width-large: 60rem;
+  --width-medium: 48rem;
+  --width-small: 30rem;
+  --width-container: var(--width-extra-large);
+  --width-restricted-width-section: var(--width-medium);
+  --spacing-smallest: 0.25rem;
+  --spacing-smaller: 0.5rem;
+  --spacing-small: 0.75rem;
+  --spacing: 1rem;
+  --spacing-large: 1.5rem;
+  --spacing-larger: 2rem;
+  --spacing-largest: 2.5rem;
+  --spacing-mega: 3rem;
+  --spacing-padding-horizontal: var(--spacing);
+  --line-height: 1.5;
+  --vertical-rhythm-spacing: calc(var(--line-height) * 1rem); */
+
+  /* Colours */
+  /*
+    Colours Defined
+    In this section, we define the colours available in our theme.
+    We should not refer to these directly in our CSS however. Instead,
+    we use the names at our "Colours Applied" section.
+  */
+  --color-accent: var(--color-dandilion);
+  /* --color-green: #048a04;
+  --color-red: #e4251b;
+  --color-orange: #ed7522;
+  --color-yellow: #fd0;
+  --color-blue: #297bbb; */
+  --color-dandilion: #FFE146;
+  --color-sahara: #ffe376;
+  --color-seafoam: #96F1C6;
+  --color-melrose: #aebffe;
+  --color-bittersweet: #ff8262;
+
+  /*
+    Grey Scale
+    In this section, we define our greys; let's not have 50 shades
+  */
+  /* --color-white: #fff;
+  --color-grey-light: #f3f2f1;
+  --color-grey-medium: #b1b4b6;
+  --color-grey-dark: #505a5f;
+  --color-black: #0b0c0c; */
+  /*
+    Colours Applied
+    In this section, we "apply" our colours.
+  */
+  /* --color-info: var(--color-blue);
+  --color-success: var(--color-green);
+  --color-danger: var(--color-red);
+  --color-warning: var(--color-orange);
+  --color-minor: var(--color-yellow); */
+  --color-link: var(--color-black);
+  /* --color-focus: var(--color-yellow); */
+
+  /* Fonts */
+  --font-primary: 'Inter', oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-secondary: 'Lora', "Times New Roman", times, serif;
+  /*
+    Font sizes based on vertical rhythm of:
+    - Font size: 16px;
+    - Scale factor: 1.303
+    - Details: https://www.gridlover.net/try
+  */
+  --font-size: 1rem;
+  /* --font-size-smallest: calc(var(--font-size) * 0.3);
+  --font-size-smaller: calc(var(--font-size) * 0.5);
+  --font-size-small: calc(var(--font-size) * 0.75); */
+  --font-size-normal: calc(var(--font-size) * 1);
+  --font-size-medium: calc(var(--font-size) * 1.0625);/*17px*/
+  --font-size-large: calc(var(--font-size) * 1.1875);/*19px*/
+  --font-size-larger: calc(var(--font-size) * 1.625);/*26px*/
+  --font-size-largest: calc(var(--font-size) * 2.875);
+  --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
+  --font-size-h2: clamp(var(--font-size-large), 8vw, var(--font-size-larger));
+  --font-size-h3: clamp(var(--font-size-medium), 6vw, var(--font-size-large));
+  /* --font-size-h4: var(--font-size-medium);
+  --font-size-h5: var(--font-size-medium);
+  --font-size-h6: var(--font-size-medium); */
+
+  /* Borders */
+  /* --border-width: 1px;
+  --border-width-large: 5px; */
+  /* --border-color: var(--color-grey-light); */
+  --border-color-dark: var(--color-black);
+  /* --border-color-alert: var(--color-black); */
+  /* --border-style: solid;
+  --border-radius: var(--spacing-smallest);
+  --border: var(--border-width) var(--border-style) var(--border-color);
+  --border-large: var(--border-width-large) var(--border-style) var(--border-color); */
+
+  /* Animation */
+  /* --transition-time: 0.3s; */
+}
+
+/*
+  Applying Variables
+
+  By taking this approach of setting variables above, and then applying them here
+  to specific items, we can easily override these in sub-themes to change items
+  one-by-one without the CSS cascade affecting us (unless we want it to - in that case,
+  override the defined variables above instead).
+*/
+body {
+
+  /* Breadcrumbs */
+  /* --breadcrumbs-background-color: var(--color-white);
+  --breadcrumbs-border: var(--border);
+  --breadcrumbs-divider: "»";
+  --breadcrumbs-font-size: var(--font-size-medium);
+  --breadcrumbs-padding-vertical: var(--spacing-small);
+  --breadcrumbs-padding-horizontal: 0;
+  --breadcrumbs-link-color: var(--color-accent);
+  --breadcrumbs-spacing-bottom: var(--vertical-rhythm-spacing); */
+
+  /* Header Items */
+  --section-spacing-vertical-header: var(--spacing);
+  --color-section-header-bg: var(--color-accent);
+  --header-link-color: var(--color-black);
+  /* --header-services-button-border: var(--border);
+  --header-services-button-border-color: var(--color-white);
+  --header-services-button-color: var(--color-white);
+  --header-services-button-bg-color: transparent;
+  --header-services-button-bg-color-hover: var(--color-accent);
+  --header-services-button-color-hover: var(--color-white); */
+  --header-logo-width: 10rem;
+  /* --header-search-button-color: var(--color-white);
+  --header-search-button-bg-color: var(--color-accent);
+  --header-search-button-color-hover: var(--color-accent);
+  --header-search-button-bg-color-hover: var(--color-white);
+  --header-search-input-border: none; */
+
+  /* Secondary Menu */
+  /* --secondary-menu-bg-color: var(--color-white);
+  --section-spacing-vertical-secondary-menu: var(--spacing-largest);
+  --section-spacing-horizontal-secondary-menu: var(--spacing-largest);
+  --secondary-menu-link-color: var(--color-black);
+  --secondary-menu-link-color-focus: var(--color-black);
+  --secondary-menu-column-count: 3; */
+
+  /* Footer Items */
+  /* --color-section-pre-footer-bg: var(--color-grey-dark);
+  --color-section-footer-bg: var(--color-white);
+  --color-section-post-footer-bg: var(--color-white);
+  --section-spacing-vertical-pre-footer: var(--spacing-largest);
+  --section-spacing-vertical-footer: var(--spacing);
+  --section-spacing-vertical-post-footer: var(--spacing); */
+
+  /* Page Title */
+  /* --page-title-border: var(--border);
+  --page-title-width: var(--width-medium);
+  --page-title-lede-font-size: var(--font-size-h3); */
+
+  /* Input Elements */
+  /* --input-padding-vertical: var(--spacing);
+  --input-padding-horizontal: var(--spacing);
+  --input-text-color: var(--color-white);
+  --input-text-color-hover: var(--color-accent);
+  --input-icon-color: var(--input-text-color);
+  --input-icon-color-hover: var(--color-accent);
+  --input-border-color: var(--color-grey-medium);
+  --input-border-color-hover: var(--color-grey-medium);
+  --input-bg-color: var(--color-white);
+  --input-bg-color-hover: var(--color-grey-light);
+  --input-border-radius: 0; */
+
+  /* Button Elements (and button-styled links) */
+  /* --button-padding-vertical: var(--spacing);
+  --button-padding-horizontal: var(--spacing);
+  --button-text-color: var(--color-white);
+  --button-text-color-hover: var(--color-accent);
+  --button-icon-color: var(--button-text-color);
+  --button-icon-color-hover: var(--color-accent);
+  --button-border-color: var(--color-accent);
+  --button-bg-color: var(--color-accent);
+  --button-bg-color-hover: var(--color-white);
+  --button-font-family: var(--font-primary);
+  --button-border-radius: 0; */
+
+  /* Sidebar Items */
+  /* --sidebar-exposed-form-bg-color: var(--color-grey-light);
+  --sidebar-exposed-form-padding-vertical: var(--spacing-larger);
+  --sidebar-exposed-form-padding-horizontal: var(--spacing-larger);
+  --sidebar-exposed-form-item-spacing: var(--spacing); */
+
+  /* Guide Navigation */
+   /* --section-spacing-vertical-guide-nav: calc(var(--spacing-large) + 1rem); 1rem to account for padding on left of bullets */
+  /* --section-spacing-horizontal-guide-nav: var(--spacing-large);
+  --guide-nav-column-count: 3;  */
+
+  /* IA Block */
+  /* --ia-block-bg-color: var(--color-white);
+  --ia-block-bg-color-promoted: var(--color-white); */
+
+  /* Featured Subsite */
+  /* --featured-subsite-bg-color: var(--color-grey-light); */
+
+  /* Box Links */
+  /* --box-link-border: var(--border);
+  --box-link-content-spacing: var(--spacing-small); */
+
+  /* Fact Box */
+  /* --fact-box-bg-light: var(--color-grey-light);
+  --fact-box-bg-dark: var(--color-grey-dark);
+  --fact-box-bg-accent: var(--color-accent);
+  --fact-box-padding-vertical: var(--spacing-largest);
+  --fact-box-padding-horizontal: var(--spacing-large);
+  --fact-box-title: var(--font-size-large);
+  --fact-box-fact: var(--font-size-largest);
+  --fact-box-border: var(--border-large);
+  --fact-box-border-color: var(--color-grey-medium);
+  --fact-box-red: red;
+  --fact-box-blue: blue;
+  --fact-box-text-color-accent: var(--color-white); */
+
+  /* Image with Caption */
+  /* --image-with-caption-border: var(--border);
+  --image-with-caption-border-color: var(--color-grey-light);
+  --image-with-caption-padding: var(--spacing);
+  --image-with-caption-bg-color: var(--color-grey-light); */
+
+  /* Quote */
+  --quote-padding: 0px;
+  --quote-padding-left: 0px;
+  --quote-border: var(--border-width);
+  --quote-border-color: var(--color-bittersweet);
+  --quote-bg-color: none;
+  --quote-author-color: var(--color-black);
+
+  /* Featured Teasers */
+  /* --featured-teaser-border: var(--border);
+  --featured-teaser-content-padding: var(--spacing); */
+
+  /* Documents */
+  /* --table-border: var(--border);
+  --table-padding: var(--spacing);
+  --table-bg-color: var(--color-grey-light); */
+
+  /* Tabs */
+  /* --tabs-border: var(--border);
+  --tabs-border-color: var(--color-grey-dark);
+  --tabs-text-color: var(--color-grey-dark);
+  --tabs-button-bg-color: var(--color-grey-light);
+  --tabs-button-active-color: var(--color-white);
+  --tabs-button-font-size: var(--font-size);
+  --tabs-button-font-family: var(--font-primary); */
+
+  /* Links styled like buttons */
+  /* --button-link-padding: var(--spacing);
+  --button-link-bg-color: var(--color-accent);
+  --button-link-color: var(--color-white);
+  --button-link-bg-color-hover: var(--color-accent);
+  --button-link-color-hover: var(--color-white); */
+
+  /* Step-by-Step */
+  /* --step-by-step-relationship-border-color: var(--color-accent);
+  --step-by-step-part-of-color: var(--color-accent);
+  --step-by-step-active-item-color: var(--color-accent);
+  --step-by-step-active-bullet-bg-color: var(--color-accent);
+  --step-by-step-active-bullet-border-color: var(--color-accent);
+  --step-by-step-line-joining-items-border: var(--border);
+  --step-by-step-line-joining-items-color: var(--color-accent);
+  --step-by-step-nav-block-width: var(--width-medium); */
+
+  /* Call-out Box */
+  /* --call-out-box-padding: var(--spacing-large);
+  --call-out-box-link-padding: var(--spacing-smaller);
+  --call-out-box-bg-color: var(--color-accent);
+  --call-out-box-text-color: var(--color-white); */
+
+  /* Service Statuses */
+  /* --service-statuses-padding: var(--spacing);
+  --service-statuses-container-bg-color: var(--color-accent);
+  --service-statuses-container-text-color: var(--color-white);
+  --service-statuses-list-bg-color: var(--color-white);
+  --service-statuses-list-spacing: var(--spacing-large);
+  --service-statuses-list-border: var(--border);
+  --service-statuses-list-border-color: var(--color-accent); */
+
+  /* Banner */
+  /* --banner-content-width: var(--width-medium);
+  --banner-content-margin: calc(var(--spacing-largest) * 2);
+  --banner-content-padding: var(--spacing-largest);
+  --banner-content-bg-color: var(--color-accent);
+  --banner-content-text-color: var(--color-white);
+  --banner-title-size: var(--font-size-larger); */
+
+  /* Teaser View Mode */
+  /* --teaser-image-with: 33%;
+  --teaser-featured-content-padding: var(--spacing-larger);
+  --teaser-featured-height: 100%;
+  --teaser-featured-border: var(--border);
+  --teaser-featured-border-color: var(--border-color-dark); */
+
+  /* News */
+  /* --newsroom-featured-bottom-space: var(--spacing-largest);
+  --news-category-spacing: var(--spacing); */
+
+  /* Search Results */
+  /* --search-results-item-spacing: var(--spacing-largest);
+  --search-results-list-item-border: var(--border);
+  --search-results-list-item-marker-color: transparent; */
+
+  /* WYSIWYG Styles */
+  /* --btn-start-bg-color: var(--color-success);
+  --btn-start-bg-color-hover: var(--color-white);
+  --btn-start-color: var(--color-white);
+  --btn-start-color-hover: var(--color-success);
+  --btn-start-padding-horizontal: var(--spacing);
+  --btn-start-padding-vertical: var(--spacing-smaller);
+  --btn-start-border: var(--border);
+  --btn-start-border-color-hover: var(--btn-start-bg-color);
+  --btn-start-icon: "\203A";
+  --btn-start-icon-size: var(--font-size-largest);
+  --btn-start-icon-top: -3px;
+  --external-link-icon-color: var(--color-accent); */
+
+  /* Alert Banner */
+  /* --alert-banner-bg-color: var(--color-success);
+  --alert-banner-bg-color-minor: var(--color-minor);
+  --alert-banner-bg-color-major: var(--color-danger);
+  --alert-banner-bg-color-notable-person: var(--color-black);
+  --alert-banner-color: var(--color-white);
+  --alert-banner-focus-color: var(--color-black);
+  --alert-banner-minor-color: var(--color-black);
+  --alert-banner-minor-border-color: var(--color-black);
+  --alert-banner-close-button-bg-color: var(--color-black);
+  --alert-banner-close-button-color: var(--color-white);
+  --alert-banner-close-button-border-color: var(--color-white);
+  --alert-banner-close-padding-vertical: var(--spacing-smaller);
+  --alert-banner-close-padding-horizontal: var(--spacing-small);
+  --alert-banner-color-minor: var(--color-black);
+  --alert-banner-close-border: var(--border);
+  --alert-banner-close-border-color: var(--color-white);
+  --alert-banner-inner-margin-vertical: 0;
+  --alert-banner-inner-margin-horizontal: 0;
+  --alert-banner-inner-padding-vertical: var(--spacing);
+  --alert-banner-inner-padding-horizontal: 0; */
+}

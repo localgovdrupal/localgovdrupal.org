@@ -1,0 +1,41 @@
+.pull-out-quote {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding: var(--quote-padding);
+  padding-left: var(--quote-padding-left);
+  border-color: var(--quote-border-color);
+  border-left: var(--quote-border);
+  background-color: var(--quote-bg-color);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-large);
+}
+
+.pull-out-quote:before {
+  content: '';
+  background: url("../../assets/images/quote.svg") no-repeat 0 50% ;
+  height: 50px;
+  width: 36px;
+  display: block;
+}
+
+.pull-out-quote__content {
+  margin: 0;
+}
+
+.pull-out-quote__author {
+  margin-top: var(--vertical-rhythm-spacing);
+  color: var(--quote-author-color);
+  font-weight: normal;
+  font-size: var(--font-size-normal);
+  font-family: var(--font-primary);
+
+}
+
+.pull-out-quote__author:before {
+  content: '';
+  background: url("../../assets/images/speech.svg") no-repeat 0 50% ;
+  height: 70px;
+  width: 100%;
+  display: block;
+}
