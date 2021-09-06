@@ -1,0 +1,25 @@
+uuid: ee9626e1-a60e-4cfc-aa1f-4ccc6856baa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility-menu
+  module:
+    - system
+  theme:
+    - lgd_org_theme
+id: utilitymenu
+theme: lgd_org_theme
+region: primary_menu
+weight: -5
+provider: null
+plugin: 'system_menu_block:utility-menu'
+settings:
+  id: 'system_menu_block:utility-menu'
+  label: 'Utility menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 00c7daac-e9be-462f-81ea-754dc94de730
+langcode: en
+status: true
+dependencies:
+  module:
+    - lgd_org_blocks
+  theme:
+    - lgd_org_theme
+id: slogan
+theme: lgd_org_theme
+region: banner
+weight: -7
+provider: null
+plugin: lgd_org_blocks_blocks
+settings:
+  id: lgd_org_blocks_blocks
+  label: Slogan
+  provider: lgd_org_blocks
+  label_display: '0'
+  content: 'Open source publishing platform, created by councils, for councils'
+visibility: {  }

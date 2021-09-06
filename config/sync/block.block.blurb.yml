@@ -1,0 +1,26 @@
+uuid: cc0c51e5-84ce-4300-8009-f765dcf51003
+langcode: en
+status: true
+dependencies:
+  module:
+    - lgd_org_blocks
+    - system
+  theme:
+    - lgd_org_theme
+id: blurb
+theme: lgd_org_theme
+region: banner
+weight: -6
+provider: null
+plugin: lgd_org_blocks_blocks_2
+settings:
+  id: lgd_org_blocks_blocks_2
+  label: Blurb
+  provider: lgd_org_blocks
+  label_display: '0'
+  content: 'Enhanced functionality, an expert community, best in class code, thorough user research, best practice accessibility, the list goes on... and all in the box!'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

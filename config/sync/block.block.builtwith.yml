@@ -1,0 +1,22 @@
+uuid: af62cbb6-96ef-463e-bf47-0001a9f1c743
+langcode: en
+status: true
+dependencies:
+  module:
+    - lgd_org_blocks
+  theme:
+    - lgd_org_theme
+id: builtwith
+theme: lgd_org_theme
+region: lower_footer_first
+weight: -7
+provider: null
+plugin: lgd_org_blocks_builtwith
+settings:
+  id: lgd_org_blocks_builtwith
+  label: 'Built With'
+  provider: lgd_org_blocks
+  label_display: '0'
+  footer_slogan: 'LocalGov Drupal. Created by councils, for councils.'
+  content: 'This site is built with LocalGov Drupal'
+visibility: {  }

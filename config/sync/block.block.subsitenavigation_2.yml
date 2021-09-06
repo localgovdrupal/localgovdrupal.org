@@ -1,0 +1,31 @@
+uuid: bd7b1584-a298-49f6-a5c7-b3775cdd14b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - localgov_subsites
+  theme:
+    - lgd_org_theme
+id: subsitenavigation_2
+theme: lgd_org_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: localgov_subsite_navigation
+settings:
+  id: localgov_subsite_navigation
+  label: 'Subsite navigation'
+  provider: localgov_subsites
+  label_display: visible
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      localgov_subsites_overview: localgov_subsites_overview
+      localgov_subsites_page: localgov_subsites_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

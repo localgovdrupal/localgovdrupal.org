@@ -1,0 +1,21 @@
+uuid: 6500962c-2897-4339-a2fc-abcfbf0bbd65
+langcode: en
+status: true
+dependencies:
+  module:
+    - lgd_org_blocks
+  theme:
+    - lgd_org_theme
+id: newsletter
+theme: lgd_org_theme
+region: footer_second
+weight: -7
+provider: null
+plugin: lgd_org_blocks_newsletter
+settings:
+  id: lgd_org_blocks_newsletter
+  label: newsletter
+  provider: lgd_org_blocks
+  label_display: '0'
+  content: 'Sign me up for regular LocalGov Drupal news'
+visibility: {  }
