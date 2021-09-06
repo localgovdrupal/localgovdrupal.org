@@ -5,3 +5,37 @@ block.settings.lgd_org_blocks_blocks:
     content:
       type: string
       label: Content
+block.settings.lgd_org_blocks_blocks_2:
+  type: block_settings
+  label: 'Blocks block 2'
+  mapping:
+    content:
+      type: string
+      label: Content
+block.settings.lgd_org_blocks_blocks_3:
+  type: block_settings
+  label: 'Blocks block 3'
+  mapping:
+    number:
+      type: string
+      label: Number
+    content:
+      type: string
+      label: Content
+block.settings.lgd_org_blocks_newsletter:
+  type: block_settings
+  label: 'Newsletter block'
+  mapping:
+    content:
+      type: string
+      label: Content
+block.settings.lgd_org_blocks_builtwith:
+  type: block_settings
+  label: 'Built With block'
+  mapping:
+    content:
+      type: string
+      label: 'Built with text'
+    footer_slogan:
+      type: string
+      label: 'Footer Slogan'

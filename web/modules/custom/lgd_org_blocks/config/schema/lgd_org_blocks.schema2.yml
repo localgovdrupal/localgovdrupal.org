@@ -1,7 +1,0 @@
-block.settings.lgd_org_blocks_blocks_2:
-  type: block_settings
-  label: 'Blocks block 2'
-  mapping:
-    content:
-      type: string
-      label: Content

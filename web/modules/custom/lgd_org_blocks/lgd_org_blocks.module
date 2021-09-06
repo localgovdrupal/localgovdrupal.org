@@ -8,5 +8,17 @@ function lgd_org_blocks_theme($existing, $type, $theme, $path) {
         'content' => NULL,
       ],
     ],
+    'lgd_org_newsletter' => [
+      'variables' => [
+        'number' => NULL,
+        'content' => NULL,
+      ],
+    ],
+    'lgd_org_builtwith' => [
+      'variables' => [
+        'slogan' => NULL,
+        'content' => NULL,
+      ],
+    ],
   ];
 }
