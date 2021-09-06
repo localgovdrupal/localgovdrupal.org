@@ -146,9 +146,9 @@ body {
   --breadcrumbs-divider: "»";
   --breadcrumbs-font-size: var(--font-size-medium);
   --breadcrumbs-padding-vertical: var(--spacing-small);
-  --breadcrumbs-padding-horizontal: 0;
-  --breadcrumbs-link-color: var(--color-accent);
-  --breadcrumbs-spacing-bottom: var(--vertical-rhythm-spacing); */
+  --breadcrumbs-padding-horizontal: 0; */
+  --breadcrumbs-link-color: var(--color-black);
+  /* --breadcrumbs-spacing-bottom: var(--vertical-rhythm-spacing); */
 
   /* Header Items */
   --section-spacing-vertical-header: var(--spacing);
@@ -251,10 +251,10 @@ body {
   --fact-box-text-color-accent: var(--color-white); */
 
   /* Image with Caption */
-  /* --image-with-caption-border: var(--border);
-  --image-with-caption-border-color: var(--color-grey-light);
-  --image-with-caption-padding: var(--spacing);
-  --image-with-caption-bg-color: var(--color-grey-light); */
+  --image-with-caption-border: var(--border);
+  --image-with-caption-border-color: var(--color-black);
+  --image-with-caption-padding: var(--spacing) 0 var(--spacing);
+  --image-with-caption-bg-color: var(--color-white);
 
   /* Quote */
   --quote-padding: 0px;
@@ -329,7 +329,7 @@ body {
   --teaser-featured-border: var(--border);
   --teaser-featured-border-color: var(--border-color-dark); */
 
-  /* News */
+  /* News */Homepage (1)
   /* --newsroom-featured-bottom-space: var(--spacing-largest);
   --news-category-spacing: var(--spacing); */
 
@@ -342,7 +342,7 @@ body {
   /* --btn-start-bg-color: var(--color-success);
   --btn-start-bg-color-hover: var(--color-white);
   --btn-start-color: var(--color-white);
-  --btn-start-color-hover: var(--color-success);
+  --btn-start-color-hover: var(--conHomepage (1)or-success);
   --btn-start-padding-horizontal: var(--spacing);
   --btn-start-padding-vertical: var(--spacing-smaller);
   --btn-start-border: var(--border);
@@ -356,7 +356,7 @@ body {
   /* --alert-banner-bg-color: var(--color-success);
   --alert-banner-bg-color-minor: var(--color-minor);
   --alert-banner-bg-color-major: var(--color-danger);
-  --alert-banner-bg-color-notable-person: var(--color-black);
+  --alert-banner-bg-color-notable-pnerson: var(--color-black);
   --alert-banner-color: var(--color-white);
   --alert-banner-focus-color: var(--color-black);
   --alert-banner-minor-color: var(--color-black);
@@ -368,7 +368,7 @@ body {
   --alert-banner-close-padding-horizontal: var(--spacing-small);
   --alert-banner-color-minor: var(--color-black);
   --alert-banner-close-border: var(--border);
-  --alert-banner-close-border-color: var(--color-white);
+  --alert-banner-close-border-color:Homepage (1) var(--color-white);
   --alert-banner-inner-margin-vertical: 0;
   --alert-banner-inner-margin-horizontal: 0;
   --alert-banner-inner-padding-vertical: var(--spacing);
