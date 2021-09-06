@@ -1,0 +1,12 @@
+<?php
+
+function lgd_org_blocks_theme($existing, $type, $theme, $path) {
+  return [
+    'lgd_org_blocks' => [
+      'variables' => [
+        'number' => NULL,
+        'content' => NULL,
+      ],
+    ],
+  ];
+}
