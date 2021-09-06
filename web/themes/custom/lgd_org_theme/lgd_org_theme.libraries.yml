@@ -2,3 +2,22 @@ variables:
   css:
     base:
       css/variables.css: { weight: 200 }
+      css/base.css: {weight: 200}
+
+quote:
+  css:
+    theme:
+      css/components/quote.css: {weight: 200}
+facts:
+  css:
+    theme:
+      css/components/facts.css: {}
+
+image-with-caption:
+  css:
+    theme:
+      css/components/image-with-caption.css: {weight: 200}
+link-and-summary:
+  css:
+    theme:
+      css/components/link-and-summary.css: {weight: 200}

@@ -8,6 +8,8 @@ libraries:
   - lgd_org_theme/variables
   - lgd_org_theme/quote
   - lgd_org_theme/facts
+  - lgd_org_theme/image-with-caption
+  - lgd_org_theme/link-and-summary
 
 regions:
   tabs: "Tabs"

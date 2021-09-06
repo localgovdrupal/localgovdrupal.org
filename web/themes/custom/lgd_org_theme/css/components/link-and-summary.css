@@ -1,0 +1,54 @@
+.link-block__title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--vertical-rhythm-spacing);
+}
+
+.link-block__title-icon {
+  flex-shrink: 0;
+  margin-right: var(--spacing-smaller);
+}
+
+.link-block__title {
+  margin-bottom: 0;
+}
+
+.link-block {
+  background: var(--color-dandilion);
+  border-corner-shape: bevel;
+}
+
+.link-block {
+  background: var(--color-dandilion);
+  background:
+      -moz-linear-gradient(45deg,  transparent 25px, var(--color-dandilion) 25px),
+      -moz-linear-gradient(135deg, transparent 25px, var(--color-dandilion) 25px),
+      -moz-linear-gradient(225deg, transparent 25px, var(--color-dandilion) 25px),
+      -moz-linear-gradient(315deg, transparent 25px, var(--color-dandilion) 25px);
+  background:
+      -o-linear-gradient(45deg,  transparent 25px, var(--color-dandilion) 25px),
+      -o-linear-gradient(135deg, transparent 25px, var(--color-dandilion) 25px),
+      -o-linear-gradient(225deg, transparent 25px, var(--color-dandilion) 25px),
+      -o-linear-gradient(315deg, transparent 25px, var(--color-dandilion) 25px);
+  background:
+      -webkit-linear-gradient(45deg,  transparent 25px, var(--color-dandilion) 25px),
+      -webkit-linear-gradient(135deg, transparent 25px, var(--color-dandilion) 25px),
+      -webkit-linear-gradient(225deg, transparent 25px, var(--color-dandilion) 25px),
+      -webkit-linear-gradient(315deg, transparent 25px, var(--color-dandilion) 25px);
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 50% 50%;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  padding: 40px;
+  text-align: center;
+}
+
+.link-block__title {
+  text-align: center;
+}
+
+.link-block__title-wrapper {
+  display: inline;
+}

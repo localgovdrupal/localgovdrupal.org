@@ -1,0 +1,6 @@
+.lgd-image--has-caption {
+  border: 0;
+  border-bottom: var(--image-with-caption-border);
+  border-color: var(--image-with-caption-border-color);
+  margin-bottom: var(--spacing);
+}
