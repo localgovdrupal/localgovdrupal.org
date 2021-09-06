@@ -47,8 +47,13 @@
 
 .link-block__title {
   text-align: center;
+  font-family: var(--font-secondary) !important;
 }
 
 .link-block__title-wrapper {
   display: inline;
+}
+
+.link-block__title-icon {
+  display: none;
 }

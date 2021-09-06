@@ -1,0 +1,92 @@
+.callout.callout-primary {
+  color: var(--color-black);
+}
+
+.field--name-localgov-subsites-content > .field__item:first-of-type .field--name-localgov-text p:first-of-type{
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-larger);
+}
+
+.menu--utility-menu {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.menu--utility-menu li {
+  padding: calc(var(--spacing)/2);
+}
+
+.menu--utility-menu li:nth-last-of-type(1),
+.menu--utility-menu li:nth-last-of-type(2),
+.menu--utility-menu li:nth-last-of-type(3){
+  border: 1px solid black;
+}
+
+.menu--utility-menu li:nth-last-of-type(3),
+.menu--utility-menu li:nth-last-of-type(2) {
+  border-right: 0;.
+}
+.menu--utility-menu li:nth-last-of-type(1),
+.menu--utility-menu li:nth-last-of-type(2) {
+  border-left: 0;
+}
+
+.menu a{
+  text-decoration: none;
+}
+
+/* Banner Region */
+
+.lgd-region--banner {
+  background: var(--color-dandilion);
+  padding-bottom: var(--spacing);
+}
+
+.lgd-region--banner .lgd-region__inner {
+  max-width: var(--width-container);
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.block-lgd-org-blocks-blocks {
+  grid-column: 1 / span 3;
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-largest);
+  line-height: 115%;
+  letter-spacing: -1px;
+  /* todo  */
+}
+.block-lgd-org-blocks-blocks-2 {
+  grid-column: 1 / span 3;
+}
+.block-lgd-org-blocks-blocks-3 {
+  grid-column: 5;
+  grid-row: 1 / span 2;
+  justify-self: center;
+  align-self: center;
+}
+.lgd-org--councils {
+  display: block;
+  background: url("../../assets/images/decagon.svg") 0 0 no-repeat;
+  background-size: contain;
+  width: 190px;
+  height: 190px;
+  text-align: center;
+  padding: var(--spacing);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.lgd-org--councils .number {
+  font-size: 85px;
+  letter-spacing: -3px;
+  display: block;
+  line-height: 100%;
+}

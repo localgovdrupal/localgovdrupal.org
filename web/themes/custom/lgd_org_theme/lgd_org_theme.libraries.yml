@@ -21,3 +21,7 @@ link-and-summary:
   css:
     theme:
       css/components/link-and-summary.css: {weight: 200}
+overrides:
+  css:
+    theme:
+      css/components/overrides: {}

@@ -107,7 +107,7 @@ body {
   --font-size-medium: calc(var(--font-size) * 1.0625);/*17px*/
   --font-size-large: calc(var(--font-size) * 1.1875);/*19px*/
   --font-size-larger: calc(var(--font-size) * 1.625);/*26px*/
-  --font-size-largest: calc(var(--font-size) * 2.875);
+  --font-size-largest: calc(var(--font-size) * 2.68);
   --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
   --font-size-h2: clamp(var(--font-size-large), 8vw, var(--font-size-larger));
   --font-size-h3: clamp(var(--font-size-medium), 6vw, var(--font-size-large));
@@ -346,7 +346,13 @@ body {
   --btn-start-padding-horizontal: var(--spacing);
   --btn-start-padding-vertical: var(--spacing-smaller);
   --btn-start-border: var(--border);
-  --btn-start-border-color-hover: var(--btn-start-bg-color);
+  --btn-:root {
+  --big-slogan: {
+    color: red;
+    font-weight: 600;
+  };
+}
+start-border-color-hover: var(--btn-start-bg-color);
   --btn-start-icon: "\203A";
   --btn-start-icon-size: var(--font-size-largest);
   --btn-start-icon-top: -3px;
@@ -358,10 +364,13 @@ body {
   --alert-banner-bg-color-major: var(--color-danger);
   --alert-banner-bg-color-notable-pnerson: var(--color-black);
   --alert-banner-color: var(--color-white);
-  --alert-banner-focus-color: var(--color-black);
-  --alert-banner-minor-color: var(--color-black);
-  --alert-banner-minor-border-color: var(--color-black);
-  --alert-banner-close-button-bg-color: var(--color-black);
+  --a:root {
+  --big-slogan: {
+    color: red;
+    font-weight: 600;
+  };
+}
+lert-banner-close-button-bg-color: var(--color-black);
   --alert-banner-close-button-color: var(--color-white);
   --alert-banner-close-button-border-color: var(--color-white);
   --alert-banner-close-padding-vertical: var(--spacing-smaller);
@@ -373,4 +382,6 @@ body {
   --alert-banner-inner-margin-horizontal: 0;
   --alert-banner-inner-padding-vertical: var(--spacing);
   --alert-banner-inner-padding-horizontal: 0; */
+
+
 }
