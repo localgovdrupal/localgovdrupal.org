@@ -33,3 +33,7 @@ text:
   css:
     theme:
       css/components/text.css: {}
+overrides:
+  css:
+    theme:
+      css/components/overrides.css: {}

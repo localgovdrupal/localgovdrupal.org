@@ -13,6 +13,7 @@ libraries:
   - lgd_org_theme/menu
   - lgd_org_theme/banner
   - lgd_org_theme/text
+  - lgd_org_theme/overrides
 
 regions:
   tabs: "Tabs"

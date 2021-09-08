@@ -178,7 +178,7 @@ body {
   /* Footer Items */
   --color-section-pre-footer-bg: var(--color-bittersweet);
   --color-section-footer-bg: var(--color-white);
-  --color-section-post-footer-bg: var(--color-white);
+  --color-section-post-footer-bg: var(--color-melrose);
   --section-spacing-vertical-pre-footer: var(--spacing-largest);
   --section-spacing-vertical-footer: var(--spacing);
   --section-spacing-vertical-post-footer: var(--spacing);
@@ -329,7 +329,7 @@ body {
   --teaser-featured-border: var(--border);
   --teaser-featured-border-color: var(--border-color-dark); */
 
-  /* News */Homepage (1)
+  /* News */
   /* --newsroom-featured-bottom-space: var(--spacing-largest);
   --news-category-spacing: var(--spacing); */
 
