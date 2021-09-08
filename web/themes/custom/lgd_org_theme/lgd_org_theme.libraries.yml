@@ -24,12 +24,12 @@ link-and-summary:
 menu:
   css:
     theme:
-      css/components/menu: {}
+      css/components/menu.css: {}
 banner:
   css:
     theme:
-      css/components/banner: {}
+      css/components/banner.css: {}
 text:
   css:
     theme:
-      css/components/text: {}
+      css/components/text.css: {}
