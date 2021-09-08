@@ -39,6 +39,7 @@ module:
   inline_entity_form: 0
   layout_discovery: 0
   layout_paragraphs: 0
+  lgd_org_blocks: 0
   link: 0
   link_attributes: 0
   linkit: 0

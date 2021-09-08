@@ -1,11 +1,11 @@
 uuid: 42ca7905-6b1a-40d0-b2bb-807086eb42cf
-name: 'Drush Site-Install'
+name: 'LocalGov Drupal'
 mail: admin@example.com
-slogan: ''
+slogan: 'Open source publishing platform, created by councils, for councils'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
