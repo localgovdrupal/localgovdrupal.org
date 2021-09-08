@@ -3,7 +3,6 @@ variables:
     base:
       css/variables.css: { weight: 200 }
       css/base.css: {weight: 200}
-
 quote:
   css:
     theme:
@@ -37,3 +36,7 @@ overrides:
   css:
     theme:
       css/components/overrides.css: {}
+layout:
+  css:
+    theme:
+      css/layout.css: {weight: 200}

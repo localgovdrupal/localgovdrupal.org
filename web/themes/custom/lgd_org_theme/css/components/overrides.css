@@ -32,3 +32,46 @@
 .menu--footer li a:hover{
   font-weight: bold;
 }
+
+.layout--threecol-33-34-33 {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.path-frontpage .layout--twocol > .layout__region--first{
+  flex: 0 1 30%;
+}
+
+.path-frontpage .field--name-localgov-subsites-content > .field__item:first-of-type > .paragraph--type--page-section .layout__region--first p:first-of-type {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-large);
+  font-weight: 500;
+}
+
+.path-frontpage .pull-out-quote{
+  max-width: 795px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.region-sidebar-second {
+  max-width: 14.125rem;
+  float: right;
+}
+
+.block-localgov-subsite-navigation h2 {
+  font-size: var(--font-size-large);
+}
+.block-localgov-subsite-navigation > .menu {
+  padding-left: 0;
+}
+
+.block-localgov-subsite-navigation .menu li {
+  display: inline-block;
+}
+
+.is-active {
+  font-weight: 600;
+}

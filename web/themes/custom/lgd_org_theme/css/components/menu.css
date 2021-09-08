@@ -4,6 +4,8 @@
   padding-left: 0;
   list-style: none;
   justify-content: flex-end;
+  font-size: var(--font-size-large);
+  font-weight: 500;
 }
 
 .menu--utility-menu li {
@@ -27,4 +29,9 @@
 
 .menu a{
   text-decoration: none;
+}
+
+.menu--main {
+  font-size: var(--font-size-larger);
+  font-weight: 600;
 }

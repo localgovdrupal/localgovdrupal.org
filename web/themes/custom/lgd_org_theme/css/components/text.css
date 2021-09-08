@@ -2,7 +2,8 @@
   color: var(--color-black);
 }
 
-.field--name-localgov-subsites-content > .field__item:first-of-type .field--name-localgov-text p:first-of-type{
+.field--name-localgov-subsites-content > .field__item:first-of-type > .paragraph--type--localgov-text p:first-of-type,
+.field--name-localgov-subsites-content > .field__item:first-of-type > .paragraph--type--page-section .layout__region--first p:first-of-type {
   font-family: var(--font-secondary);
   font-size: var(--font-size-larger);
 }

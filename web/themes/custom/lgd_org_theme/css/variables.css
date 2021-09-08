@@ -6,8 +6,8 @@
   Want a font? Load it here, or in the html.html.twig file (you'll have to
   copy that file to the theme) which should give you an even faster loading time.
 */
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /*
   Override whatever variables you want.
@@ -32,11 +32,11 @@
 body {
 
   /* Widths and Spacing */
-  /* --width-extra-large: 73.75rem; 1180px */
-  /* --width-large: 60rem;
+  --width-extra-large: 90rem; /* 1440px */
+  --width-large: 60rem;
   --width-medium: 48rem;
   --width-small: 30rem;
-  --width-container: var(--width-extra-large);
+  --width-container: calc(var(--width-extra-large) - 100px);
   --width-restricted-width-section: var(--width-medium);
   --spacing-smallest: 0.25rem;
   --spacing-smaller: 0.5rem;
@@ -44,11 +44,11 @@ body {
   --spacing: 1rem;
   --spacing-large: 1.5rem;
   --spacing-larger: 2rem;
-  --spacing-largest: 2.5rem;
-  --spacing-mega: 3rem;
+  --spacing-largest: 3.5rem;
+  --spacing-mega: 4.5rem;
   --spacing-padding-horizontal: var(--spacing);
-  --line-height: 1.5;
-  --vertical-rhythm-spacing: calc(var(--line-height) * 1rem); */
+  --line-height: 1.4;
+  /* --vertical-rhythm-spacing: calc(var(--line-height) * 1rem); */
 
   /* Colours */
   /*
@@ -124,7 +124,12 @@ body {
   /* --border-style: solid;
   --border-radius: var(--spacing-smallest);
   --border: var(--border-width) var(--border-style) var(--border-color);
-  --border-large: var(--border-width-large) var(--border-style) var(--border-color); */
+  --border-large: var(--border-width-large) var(--border-style) var(--border-color); */  --breadcrumbs-background-color: var(--color-white);
+  --breadcrumbs-border: var(--border);
+  --breadcrumbs-divider: "»";
+  --breadcrumbs-font-size: var(--font-size-medium);
+  --breadcrumbs-padding-vertical: var(--spacing-small);
+  --breadcrumbs-padding-horizontal: 0;
 
   /* Animation */
   /* --transition-time: 0.3s; */
@@ -141,12 +146,12 @@ body {
 body {
 
   /* Breadcrumbs */
-  /* --breadcrumbs-background-color: var(--color-white);
+  --breadcrumbs-background-color: var(--color-white);
   --breadcrumbs-border: var(--border);
-  --breadcrumbs-divider: "»";
+  --breadcrumbs-divider: "/";
   --breadcrumbs-font-size: var(--font-size-medium);
   --breadcrumbs-padding-vertical: var(--spacing-small);
-  --breadcrumbs-padding-horizontal: 0; */
+  --breadcrumbs-padding-horizontal: 0;
   --breadcrumbs-link-color: var(--color-black);
   /* --breadcrumbs-spacing-bottom: var(--vertical-rhythm-spacing); */
 
@@ -160,7 +165,7 @@ body {
   --header-services-button-bg-color: transparent;
   --header-services-button-bg-color-hover: var(--color-accent);
   --header-services-button-color-hover: var(--color-white); */
-  --header-logo-width: 10rem;
+  --header-logo-width: 12rem;
   /* --header-search-button-color: var(--color-white);
   --header-search-button-bg-color: var(--color-accent);
   --header-search-button-color-hover: var(--color-accent);
@@ -215,10 +220,10 @@ body {
   --button-border-radius: 0; */
 
   /* Sidebar Items */
-  /* --sidebar-exposed-form-bg-color: var(--color-grey-light);
-  --sidebar-exposed-form-padding-vertical: var(--spacing-larger);
-  --sidebar-exposed-form-padding-horizontal: var(--spacing-larger);
-  --sidebar-exposed-form-item-spacing: var(--spacing); */
+  --sidebar-exposed-form-bg-color: var(--color-white);
+  --sidebar-exposed-form-padding-vertical: 0;
+  --sidebar-exposed-form-padding-horizontal: 0;
+  --sidebar-exposed-form-item-spacing: 0;
 
   /* Guide Navigation */
    /* --section-spacing-vertical-guide-nav: calc(var(--spacing-large) + 1rem); 1rem to account for padding on left of bullets */
@@ -258,14 +263,12 @@ body {
 
   /* Quote */
   --quote-padding: 0px;
-  --quote-padding-left: 0px;
-  --quote-border: var(--border-width);
-  --quote-border-color: var(--color-bittersweet);
+  --quote-padding-left: 0px;font-size: ;
   --quote-bg-color: none;
   --quote-author-color: var(--color-black);
 
   /* Featured Teasers */
-  /* --featured-teaser-border: var(--border);
+  /* --featured-teaser-border: var(--border)admin (1);
   --featured-teaser-content-padding: var(--spacing); */
 
   /* Documents */
@@ -276,7 +279,7 @@ body {
   /* Tabs */
   /* --tabs-border: var(--border);
   --tabs-border-color: var(--color-grey-dark);
-  --tabs-text-color: var(--color-grey-dark);
+  --tabs-text-color: var(--color-grey-dark);admin (1)
   --tabs-button-bg-color: var(--color-grey-light);
   --tabs-button-active-color: var(--color-white);
   --tabs-button-font-size: var(--font-size);
