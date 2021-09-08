@@ -1,0 +1,34 @@
+uuid: c0832334-2ab2-41d3-be99-72aa3481c96e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.localgov_news_search
+  enforced:
+    module:
+      - localgov_news
+  module:
+    - system
+    - views
+  theme:
+    - localgov_theme
+_core:
+  default_config_hash: qsQMXZXqIF7zESWJcsmN3-n0-0RgwrwwVY0_DJ7TTB4
+id: localgov_news_search
+theme: localgov_theme
+region: sidebar_second
+weight: -2
+provider: null
+plugin: 'views_exposed_filter_block:localgov_news_search-page_search_news'
+settings:
+  id: 'views_exposed_filter_block:localgov_news_search-page_search_news'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '/news/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,50 @@
+uuid: 55550530-1c4e-45c0-9b32-1f9505ddb2be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_newsroom.localgov_newsroom_featured
+    - node.type.localgov_newsroom
+  enforced:
+    module:
+      - localgov_news
+  module:
+    - user
+_core:
+  default_config_hash: trkLMQW-mmvy07RjzV4QojeiXmBh258PPRLeqtJyE-g
+id: node.localgov_newsroom.default
+targetEntityType: node
+bundle: localgov_newsroom
+mode: default
+content:
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_news_facets:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_news_search:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_newsroom_all_view:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_newsroom_featured:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

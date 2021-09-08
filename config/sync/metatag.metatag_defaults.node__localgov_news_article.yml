@@ -1,0 +1,25 @@
+uuid: 04828f60-cfa0-401d-8e80-ba2d85b68121
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - localgov_news
+_core:
+  default_config_hash: '-dx0M3XnNS-PlRhng1QRKKnXOL4x8wHuU_M8n26WzfI'
+id: node__localgov_news_article
+label: 'Content: News article'
+tags:
+  schema_article_about: '[node:localgov_news_categories:0:entity]'
+  schema_article_author: 'a:4:{s:5:"@type";s:12:"Organization";s:3:"@id";s:10:"[site:url]";s:4:"name";s:11:"[site:name]";s:3:"url";s:10:"[site:url]";}'
+  schema_article_date_modified: '[node:changed:custom:Y-m-d]'
+  schema_article_date_published: '[node:localgov_news_date:date:custom:Y-m-d]'
+  schema_article_description: '[node:summary]'
+  schema_article_has_part: 'a:2:{s:5:"@type";s:14:"WebPageElement";s:19:"isAccessibleForFree";s:4:"True";}'
+  schema_article_headline: '[node:title]'
+  schema_article_image: 'a:5:{s:5:"@type";s:11:"ImageObject";s:20:"representativeOfPage";s:4:"True";s:3:"url";s:49:"[node:field_media_image:entity:field_media_image]";s:5:"width";s:55:"[node:field_media_image:entity:field_media_image:width]";s:6:"height";s:56:"[node:field_media_image:entity:field_media_image:height]";}'
+  schema_article_is_accessible_for_free: 'True'
+  schema_article_main_entity_of_page: '[node:url]'
+  schema_article_name: '[node:title]'
+  schema_article_publisher: 'a:4:{s:5:"@type";s:12:"Organization";s:3:"@id";s:10:"[site:url]";s:4:"name";s:11:"[site:name]";s:3:"url";s:10:"[site:url]";}'
+  schema_article_type: NewsArticle

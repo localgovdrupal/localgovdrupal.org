@@ -1,0 +1,31 @@
+uuid: d8329710-9dc4-4c21-a861-31c8f7de4c28
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.localgov_news_date
+  module:
+    - facets
+    - system
+  theme:
+    - localgov_theme
+_core:
+  default_config_hash: GW1Z2LXF8SeEuALM-b020nevNP7vIY4NpNFpA4kVYpQ
+id: localgov_news_date
+theme: localgov_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:localgov_news_date'
+settings:
+  id: 'facet_block:localgov_news_date'
+  label: 'News date'
+  provider: facets
+  label_display: visible
+  block_id: localgov_news_date
+visibility:
+  request_path:
+    id: request_path
+    pages: '/news/*'
+    negate: false
+    context_mapping: {  }

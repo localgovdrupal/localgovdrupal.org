@@ -10,4 +10,5 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'use search_api_autocomplete for localgov_news_search'
   - 'view media'

@@ -1,0 +1,32 @@
+uuid: be67fde7-b4fd-4ea9-b3c3-d0bda59dfde9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_news_related
+    - node.type.localgov_news_article
+  enforced:
+    module:
+      - localgov_news
+_core:
+  default_config_hash: Ch0eETCNzc6xZVlS6h7KKOJ9xE9MFNNnFKKOo1lsQgI
+id: node.localgov_news_article.localgov_news_related
+field_name: localgov_news_related
+entity_type: node
+bundle: localgov_news_article
+label: 'Related articles'
+description: 'Select up to three related news articles to be listed with this news article.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_news_article: localgov_news_article
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

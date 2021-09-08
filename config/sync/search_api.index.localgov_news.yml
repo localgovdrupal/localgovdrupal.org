@@ -1,0 +1,185 @@
+uuid: 0d37dc27-035b-4f16-968a-38587efb21b0
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - localgov_news
+  config:
+    - field.storage.node.localgov_news_categories
+    - field.storage.node.localgov_news_date
+    - field.storage.node.localgov_newsroom
+    - search_api.server.localgov_news
+    - core.entity_view_mode.node.search_index
+  module:
+    - node
+    - search_api
+_core:
+  default_config_hash: 3LzfshfzpJMfhGkVwfk7UwiBmFezeZSp0_yEswdxUjY
+id: localgov_news
+name: News
+description: ''
+read_only: false
+field_settings:
+  localgov_news_categories:
+    label: Categories
+    datasource_id: 'entity:node'
+    property_path: localgov_news_categories
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.localgov_news_categories
+  localgov_news_date:
+    label: Date
+    datasource_id: 'entity:node'
+    property_path: localgov_news_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.localgov_news_date
+  localgov_newsroom:
+    label: Newsroom
+    datasource_id: 'entity:node'
+    property_path: localgov_newsroom
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.localgov_newsroom
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          localgov_news_article: search_index
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - localgov_news_article
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  html_filter:
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+    title: false
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - rendered_item
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  stopwords:
+    all_fields: true
+    fields:
+      - rendered_item
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+  tokenizer:
+    all_fields: true
+    fields:
+      - rendered_item
+    ignored: ._-
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+  transliteration:
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: localgov_news

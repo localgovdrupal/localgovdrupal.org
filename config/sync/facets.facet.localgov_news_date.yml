@@ -1,0 +1,65 @@
+uuid: 98ba0076-8eec-4cc2-abb8-189bd08e1f3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.localgov_news
+    - views.view.localgov_news_search
+  enforced:
+    module:
+      - localgov_news
+  module:
+    - search_api
+_core:
+  default_config_hash: ym1DS2P1xle_7V9SXi1YpRkxdBWZQl2S4mOepCCio38
+id: localgov_news_date
+name: Date
+url_alias: date
+weight: 0
+min_count: 1
+show_only_one_result: false
+field_identifier: localgov_news_date
+facet_source_id: 'search_api:views_page__localgov_news_search__page_search_news'
+widget:
+  type: checkbox
+  config:
+    show_numbers: true
+    soft_limit: 0
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+    show_reset_link: true
+    reset_text: 'All years'
+    hide_reset_when_no_selection: true
+query_operator: or
+use_hierarchy: false
+keep_hierarchy_parents_active: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+hard_limit: 0
+exclude: false
+only_visible_when_facet_source_is_visible: false
+processor_configs:
+  date_item:
+    processor_id: date_item
+    weights:
+      build: 35
+    settings:
+      date_display: actual_date
+      granularity: 6
+      date_format: ''
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings:
+      sort: DESC
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }
+empty_behavior:
+  behavior: none
+show_title: true

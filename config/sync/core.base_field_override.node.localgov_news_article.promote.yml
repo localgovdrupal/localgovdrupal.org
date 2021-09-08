@@ -1,0 +1,24 @@
+uuid: c17e699b-4200-4260-82a7-9da64bf6ab71
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.localgov_news_article
+_core:
+  default_config_hash: UgO22nf4dK6eQtFg2VGeOsJ-BmPVDwjArxAezGaNgNE
+id: node.localgov_news_article.promote
+field_name: promote
+entity_type: node
+bundle: localgov_news_article
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

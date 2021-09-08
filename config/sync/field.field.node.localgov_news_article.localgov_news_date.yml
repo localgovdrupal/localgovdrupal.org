@@ -1,0 +1,29 @@
+uuid: e092562d-da2b-46f6-85cb-60461c641860
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_news_date
+    - node.type.localgov_news_article
+  enforced:
+    module:
+      - localgov_news
+  module:
+    - datetime
+_core:
+  default_config_hash: IUxkOctGVTj1tvvFgbwjuWfrUTEhHeqBwWbrl0o_R8A
+id: node.localgov_news_article.localgov_news_date
+field_name: localgov_news_date
+entity_type: node
+bundle: localgov_news_article
+label: Date
+description: 'The date shown on the news article and used to order articles on news listing pages.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

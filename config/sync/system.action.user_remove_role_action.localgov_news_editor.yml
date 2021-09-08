@@ -1,0 +1,14 @@
+uuid: 19de91c4-2adf-4c17-90cf-77f9f57603da
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.localgov_news_editor
+  module:
+    - user
+id: user_remove_role_action.localgov_news_editor
+label: 'Remove the News editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: localgov_news_editor

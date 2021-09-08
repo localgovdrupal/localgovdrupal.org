@@ -1,0 +1,30 @@
+uuid: 90fc8d8f-5403-47d1-a919-93bebb33e70d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_newsroom
+    - node.type.localgov_news_article
+    - node.type.localgov_newsroom
+_core:
+  default_config_hash: gW0Vdn4H1iQ-ph6GClHKGpZre40Uv78WIcyUv4rgHPw
+id: node.localgov_news_article.localgov_newsroom
+field_name: localgov_newsroom
+entity_type: node
+bundle: localgov_news_article
+label: Newsroom
+description: 'Which newsroom does this news article appear in.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_newsroom: localgov_newsroom
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
