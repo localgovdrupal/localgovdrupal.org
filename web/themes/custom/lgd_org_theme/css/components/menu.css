@@ -1,0 +1,30 @@
+.menu--utility-menu {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.menu--utility-menu li {
+  padding: calc(var(--spacing)/2);
+}
+
+.menu--utility-menu li:nth-last-of-type(1),
+.menu--utility-menu li:nth-last-of-type(2),
+.menu--utility-menu li:nth-last-of-type(3){
+  border: 1px solid black;
+}
+
+.menu--utility-menu li:nth-last-of-type(3),
+.menu--utility-menu li:nth-last-of-type(2) {
+  border-right: 0;.
+}
+.menu--utility-menu li:nth-last-of-type(1),
+.menu--utility-menu li:nth-last-of-type(2) {
+  border-left: 0;
+}
+
+.menu a{
+  text-decoration: none;
+}

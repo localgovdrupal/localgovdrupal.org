@@ -1,45 +1,4 @@
-.callout.callout-primary {
-  color: var(--color-black);
-}
-
-.field--name-localgov-subsites-content > .field__item:first-of-type .field--name-localgov-text p:first-of-type{
-  font-family: var(--font-secondary);
-  font-size: var(--font-size-larger);
-}
-
-.menu--utility-menu {
-  display: flex;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-  justify-content: flex-end;
-}
-
-.menu--utility-menu li {
-  padding: calc(var(--spacing)/2);
-}
-
-.menu--utility-menu li:nth-last-of-type(1),
-.menu--utility-menu li:nth-last-of-type(2),
-.menu--utility-menu li:nth-last-of-type(3){
-  border: 1px solid black;
-}
-
-.menu--utility-menu li:nth-last-of-type(3),
-.menu--utility-menu li:nth-last-of-type(2) {
-  border-right: 0;.
-}
-.menu--utility-menu li:nth-last-of-type(1),
-.menu--utility-menu li:nth-last-of-type(2) {
-  border-left: 0;
-}
-
-.menu a{
-  text-decoration: none;
-}
-
 /* Banner Region */
-
 .lgd-region--banner {
   background: var(--color-dandilion);
   padding-bottom: var(--spacing);
@@ -58,7 +17,7 @@
   font-family: var(--font-secondary);
   font-size: var(--font-size-largest);
   line-height: 115%;
-  letter-spacing: -1px;
+  letter-spacing: -1px:
   /* todo  */
 }
 .block-lgd-org-blocks-blocks-2 {

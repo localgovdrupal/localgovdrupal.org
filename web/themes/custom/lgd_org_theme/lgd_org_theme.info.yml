@@ -10,7 +10,9 @@ libraries:
   - lgd_org_theme/facts
   - lgd_org_theme/image-with-caption
   - lgd_org_theme/link-and-summary
-  - lgd_org_theme/overrides
+  - lgd_org_theme/menu
+  - lgd_org_theme/banner
+  - lgd_org_theme/text
 
 regions:
   tabs: "Tabs"

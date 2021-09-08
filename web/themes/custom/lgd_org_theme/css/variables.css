@@ -176,12 +176,12 @@ body {
   --secondary-menu-column-count: 3; */
 
   /* Footer Items */
-  /* --color-section-pre-footer-bg: var(--color-grey-dark);
+  --color-section-pre-footer-bg: var(--color-bittersweet);
   --color-section-footer-bg: var(--color-white);
   --color-section-post-footer-bg: var(--color-white);
   --section-spacing-vertical-pre-footer: var(--spacing-largest);
   --section-spacing-vertical-footer: var(--spacing);
-  --section-spacing-vertical-post-footer: var(--spacing); */
+  --section-spacing-vertical-post-footer: var(--spacing);
 
   /* Page Title */
   /* --page-title-border: var(--border);
