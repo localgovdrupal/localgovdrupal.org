@@ -16,6 +16,7 @@
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
+        "drupal/masquerade": "^2.0@beta",
         "localgovdrupal/localgov": "^2.0",
         "localgovdrupal/localgov_news": "2.x-dev"
     },
