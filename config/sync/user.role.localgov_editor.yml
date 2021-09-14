@@ -59,6 +59,7 @@ permissions:
   - 'edit any localgov_subsites_overview content'
   - 'edit any localgov_subsites_page content'
   - 'edit any remote_video media'
+  - 'edit layout paragraphs plugin config'
   - 'edit own document media'
   - 'edit own image media'
   - 'edit own localgov_services_landing content'
