@@ -1,6 +1,6 @@
 .menu--utility-menu {
   display: flex;
-  margin-bottom: 0;
+  margin-bottom: var(--spacing-larger);
   padding-left: 0;
   list-style: none;
   justify-content: flex-end;
@@ -26,7 +26,13 @@
 .menu--utility-menu li:nth-last-of-type(2) {
   border-left: 0;
 }
-
+.menu--utility-menu li:nth-last-of-type(3) {
+  margin-left: var(--spacing);
+  padding-left: var(--spacing);
+}
+.menu--utility-menu li:nth-last-of-type(1) {
+  padding-right: var(--spacing);
+}
 .menu a{
   text-decoration: none;
 }
@@ -34,4 +40,13 @@
 .menu--main {
   font-size: var(--font-size-larger);
   font-weight: 600;
+}
+
+.menu--main > .menu-item a {
+  padding: var(--spacing-smaller) var(--spacing-small) !important;
+}
+
+.lgd-region--header {
+  align-self: flex-end;
+  margin-bottom: var(--spacing);
 }

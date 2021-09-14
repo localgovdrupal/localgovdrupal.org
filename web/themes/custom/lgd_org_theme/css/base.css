@@ -1,3 +1,25 @@
-h2, h3 {
+h3 {
   font-family: var(--font-primary) !important;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.node--type-localgov-subsites-page > h1,
+.node--type-localgov-subsites-page > h2 {
+  margin-top: var(--spacing);
+  font-family: var(--font-primary) !important;
+}
+
+.paragraph--type--localgov-text {
+  font-size: var(--font-size-large);
+  --line-height: 1.45;
+  line-height: var(--line-height);
+}
+
+blockquote {
+  margin-top: var(--spacing-largest);
+  margin-bottom: var(--spacing-larger);
 }

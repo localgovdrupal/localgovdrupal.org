@@ -2,5 +2,10 @@
   border: 0;
   border-bottom: var(--image-with-caption-border);
   border-color: var(--image-with-caption-border-color);
-  margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing-largest);
+}
+
+.field--name-localgov-caption {
+ font-size: var(--font-size-small);
+ padding-top: var(--spacing-large);
 }

@@ -1,11 +1,17 @@
 .key-facts {
   padding: var(--spacing) 0;
+  margin-bottom: var(--spacing-larger);
 }
 
 .key-facts > h2 {
   background: var(--color-seafoam);
   margin-bottom: 0;
-  padding: var(--spacing);
+  padding: var(--spacing-small);
+  padding-bottom: var(--spacing-large);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  width: ;
 }
 
 .key-facts > .field__items{
@@ -24,7 +30,7 @@
   page-break-inside: avoid;
   break-inside: avoid;
   background: var(--color-seafoam);
-  padding: calc(var(--spacing)/2);
+  padding: var(--spacing-smaller);
   padding-top: 0;
   /* padding-right: 0; */
   /* width: 30%; */
@@ -32,7 +38,7 @@
 
 .key-fact {
   background: var(--color-white);
-  padding: var(--spacing);
+  padding: var(--spacing-small);
   display: block;
 }
 
@@ -53,4 +59,7 @@
 
 .key-fact h3 {
   border-bottom: var(--border-width-large) solid var(--color-seafoam);
+  padding-bottom: var(--spacing-small);
+  font-size: var(--font-size-large);
+  font-weight: 700;
 }

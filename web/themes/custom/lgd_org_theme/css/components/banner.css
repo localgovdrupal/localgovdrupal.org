@@ -2,7 +2,7 @@
 .lgd-region--banner {
   background: var(--color-dandilion);
   padding-bottom: var(--spacing-largest);
-  padding-top: var(--spacing-largest);
+  padding-top: var(--spacing);
 }
 
 .lgd-region--banner .lgd-region__inner {

@@ -1,11 +1,12 @@
 .pull-out-quote {
-  margin-top: 0;
+  margin-top: var(--spacing-largest);
+  margin-bottom: var(--spacing-largest);
   margin-right: 0;
   margin-left: 0;
   padding: var(--quote-padding);
   padding-left: var(--quote-padding-left);
-  border-color: var(--quote-border-color);
-  border-left: var(--quote-border);
+  border-color: transparent;
+  border-left: 0px;
   background-color: var(--quote-bg-color);
   font-family: var(--font-secondary);
   font-size: var(--font-size-large);
@@ -20,7 +21,7 @@
   margin-top: var(--vertical-rhythm-spacing);
   color: var(--quote-author-color);
   font-weight: normal;
-  font-size: var(--font-size-normal);
+  font-size: var(--font-size-medium);
   font-family: var(--font-primary);
 
 }
@@ -32,6 +33,7 @@
   width: 100%;
   display: block;
   background-size: contain;
+  margin-bottom: var(--spacing-small);
 }
 
 blockquote {
