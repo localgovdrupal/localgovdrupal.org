@@ -1,6 +1,4 @@
 .pull-out-quote {
-  margin-top: var(--spacing-largest);
-  margin-bottom: var(--spacing-largest);
   margin-right: 0;
   margin-left: 0;
   padding: var(--quote-padding);
@@ -9,12 +7,21 @@
   border-left: 0px;
   background-color: var(--quote-bg-color);
   font-family: var(--font-secondary);
-  font-size: var(--font-size-large);
+  font-size: clamp(var(--font-size-largish), 2.5vw, var(--font-size-large));
+  margin-top: clamp(var(--spacing), 2vw, var(--spacing-largest));
+  margin-bottom: clamp(var(--spacing), 2.5vw, var(--spacing-largest));
 }
 
 .pull-out-quote__content {
   margin: 0;
-  width: 100%;
+}
+@media screen and (min-width: 70rem) {
+  blockquote {
+    width: 60%;
+  }
+  .pull-out-quote blockquote {
+    width: 100%;
+  }
 }
 
 .pull-out-quote__author {
@@ -23,7 +30,6 @@
   font-weight: normal;
   font-size: var(--font-size-medium);
   font-family: var(--font-primary);
-
 }
 
 .pull-out-quote__author:before{
@@ -39,9 +45,8 @@
 blockquote {
   font-family: var(--font-secondary);
   font-size: var(--font-size-larger);
+  font-size: clamp(var(--font-size-largish), 2.5vw, var(--font-size-larger));
   margin-inline-start: 0;
-  width: 60%;
-
 }
 
 blockquote > p:first-of-type:before,

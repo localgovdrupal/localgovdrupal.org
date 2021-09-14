@@ -106,11 +106,12 @@ body {
   --font-size-normal: calc(var(--font-size) * 1);
   --font-size-medium: calc(var(--font-size) * 1.0625);/*17px*/
   --font-size-large: calc(var(--font-size) * 1.1875);/*19px*/
+  --font-size-largish: calc(var(--font-size) * 1.3125);/*21px*/
   --font-size-larger: calc(var(--font-size) * 1.625);/*26px*/
   --font-size-largest: calc(var(--font-size) * 2.68);
   --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
-  --font-size-h2: clamp(var(--font-size-large), 8vw, var(--font-size-larger));
-  --font-size-h3: clamp(var(--font-size-medium), 6vw, var(--font-size-large));
+  --font-size-h2: clamp(var(--font-size-largish), 8vw, var(--font-size-larger));
+  --font-size-h3: clamp(var(--font-size-medium), 2.5vw, var(--font-size-largish));
   /* --font-size-h4: var(--font-size-medium);
   --font-size-h5: var(--font-size-medium);
   --font-size-h6: var(--font-size-medium); */
@@ -144,23 +145,23 @@ body {
   --breadcrumbs-background-color: var(--color-white);
   --breadcrumbs-border: var(--border);
   --breadcrumbs-divider: "/";
-  --breadcrumbs-font-size: var(--font-size-medium);
-  --breadcrumbs-padding-vertical: var(--spacing);
+  --breadcrumbs-font-size: clamp(var(--font-size-smaller), 2.5vw, var(--font-size-medium));
+  --breadcrumbs-padding-vertical: clamp(var(--spacing-smaller), 2.5vw, var(--spacing));
   --breadcrumbs-padding-horizontal: 0;
   --breadcrumbs-link-color: var(--color-black);
-  /* --breadcrumbs-spacing-bottom: var(--vertical-rhythm-spacing); */
+  --breadcrumbs-spacing-bottom: clamp(var(--spacing-smaller), 2.5vw, var(--spacing));
 
   /* Header Items */
-  --section-spacing-vertical-header: var(--spacing-large);
+  --section-spacing-vertical-header: clamp(var(--spacing), 2.5vw, var(--spacing-large));
   --color-section-header-bg: var(--color-accent);
   --header-link-color: var(--color-black);
-  /* --header-services-button-border: var(--border);
-  --header-services-button-border-color: var(--color-white);
-  --header-services-button-color: var(--color-white);
+  --header-services-button-border: var(--border);
+  --header-services-button-border-color: transparent;
+  --header-services-button-color: var(--color-black);
   --header-services-button-bg-color: transparent;
   --header-services-button-bg-color-hover: var(--color-accent);
-  --header-services-button-color-hover: var(--color-white); */
-  --header-logo-width: 12rem;
+  --header-services-button-color-hover: var(--color-black);
+  --header-logo-width: 9.62rem;
   /* --header-search-button-color: var(--color-white);
   --header-search-button-bg-color: var(--color-accent);
   --header-search-button-color-hover: var(--color-accent);
@@ -170,7 +171,7 @@ body {
   /* Secondary Menu */
   /* --secondary-menu-bg-color: var(--color-white);
   --section-spacing-vertical-secondary-menu: var(--spacing-largest);
-  --section-spacing-horizontal-secondary-menu: var(--spacing-largest);
+  --section-spacing-horizontal-secondary-menu: var(--spacing-largest);polygon
   --secondary-menu-link-color: var(--color-black);
   --secondary-menu-link-color-focus: var(--color-black);
   --secondary-menu-column-count: 3; */
@@ -181,7 +182,7 @@ body {
   --color-section-post-footer-bg: var(--color-melrose);
   --section-spacing-vertical-pre-footer: var(--spacing-largest);
   --section-spacing-vertical-footer: var(--spacing);
-  --section-spacing-vertical-post-footer: var(--spacing);
+  --section-spacing-vertical-post-footer: var(--spacing-largest);
 
   /* Page Title */
   /* --page-title-border: var(--border);

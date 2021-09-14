@@ -38,6 +38,9 @@
   background-repeat: no-repeat;
   padding: var(--spacing-large);
   text-align: center;
+  max-width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .layout__region--second .link-block{
