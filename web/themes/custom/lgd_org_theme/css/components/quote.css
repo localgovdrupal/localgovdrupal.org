@@ -42,6 +42,7 @@
   margin-bottom: var(--spacing-small);
 }
 
+
 blockquote {
   font-family: var(--font-secondary);
   font-size: var(--font-size-larger);
@@ -64,4 +65,18 @@ blockquote > p:first-of-type:before,
   height: 50px;
   width: 36px;
   display: block;
+}
+
+
+.path-frontpage .pull-out-quote__author:before{
+  background: url("../../assets/images/speech-front.svg") no-repeat 0 50% ;
+}
+.path-frontpage .pull-out-quote {
+  text-align: center;
+}
+.path-frontpage blockquote > p:first-of-type:before,
+.pull-out-quote__content:before{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
