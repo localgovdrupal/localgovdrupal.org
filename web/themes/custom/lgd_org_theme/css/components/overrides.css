@@ -3,7 +3,7 @@
   border: 1px solid var(--color-black);
   text-decoration: none;
   padding: var(--spacing);
-  color: var(--color-black);
+  margin: var(--spacing);
 }
 .lgd-org--newsletter a:hover{
   background-color: var(--color-sahara);
@@ -11,6 +11,10 @@
 
 .lgd-footer__pre-footer .lgd-org--newsletter a {
   color: var(--color-black);
+  font-size: clamp(var(--font-size-large), 2.5vw, var(--font-size-larger
+  ));
+  text-align: center;
+  font-weight: 500;
 }
 
 .lgd-footer__pre-footer .lgd-row__one-third {
@@ -94,6 +98,7 @@
 
 .footer--slogan {
   line-height: 1.15;
+  font-size: clamp(var(--font-size-larger), 2.5vw, 2.1875rem );
 }
 
 
@@ -120,4 +125,42 @@ main {
 .media-with-text--media-right > *,
 .media-with-text--media-left > *{
   width: 50%;
+}
+
+
+/*Partcipating Councisl*/
+.block-views-blockcouncil-logos-block-1 h2{
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: var(--spacing-largest);
+}
+.block-views-blockcouncil-logos-block-1 {
+  padding: var(--spacing-large) 0 var(--spacing-largest);
+}
+
+.block-views-blockcouncil-logos-block-1 .view-content{
+  display: grid;
+  gap: var(--spacing);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.block-views-blockcouncil-logos-block-1  .views-row {
+  display: flex;
+}
+.block-views-blockcouncil-logos-block-1  .views-row article{
+  align-self: center;
+  justify-self: center;
+  width: 5.5rem;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 70rem) {
+  .block-views-blockcouncil-logos-block-1 .view-content{
+    display: grid;
+    gap: var(--spacing-larger);
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .block-views-blockcouncil-logos-block-1  .views-row article{
+    width: 8.125rem;
+  }
 }
