@@ -117,7 +117,9 @@ header .menu a{
   }
 
 }
-
+.menu--main > .menu-item a {
+  border-bottom: 4px solid transparent !important;
+}
 .menu--utility-menu > .menu-item--active-trail a,
 .menu--utility-menu > .menu-item a:focus,
 .menu--utility-menu > .menu-item a:hover,
