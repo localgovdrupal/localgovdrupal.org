@@ -11,6 +11,10 @@ facts:
   css:
     theme:
       css/components/facts.css: {}
+fact-box:
+  css:
+    theme:
+      css/components/fact-box.css: {weight: 200}
 
 image-with-caption:
   css:

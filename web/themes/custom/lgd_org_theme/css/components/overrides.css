@@ -111,3 +111,13 @@ main {
     width: 12rem !important;
   }
 }
+
+
+/*Media item with text*/
+.media-with-text {
+  margin-bottom: var(--spacing);
+}
+.media-with-text--media-right > *,
+.media-with-text--media-left > *{
+  width: 50%;
+}

@@ -42,3 +42,23 @@ blockquote {
   margin-top: var(--spacing-largest);
   margin-bottom: var(--spacing-larger);
 }
+
+table {
+  width: 100%;
+  text-align: left;
+  border: var(--table-border);
+}
+
+thead th {
+  padding: var(--table-padding);
+  background-color: var(--table-bg-color);
+}
+
+tbody td {
+  padding: var(--table-padding);
+  border-bottom: var(--table-border);
+}
+
+tbody tr {
+  border-bottom: var(--table-border);
+}

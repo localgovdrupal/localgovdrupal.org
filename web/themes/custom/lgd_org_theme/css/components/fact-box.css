@@ -1,0 +1,14 @@
+.fact-box {
+  padding: var(--spacing-larger);
+  --line-height: 1.1;
+  line-height: var(--line-height);
+}
+
+.fact-box--fade-red-blue {
+  color: var(--color-black);
+  background-image: linear-gradient(var(--fact-box-red), var(--fact-box-blue));
+}
+
+.fact-box__fact {
+  font-family: var(--font-secondary);
+}
