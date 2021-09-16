@@ -1,0 +1,28 @@
+uuid: 49727495-5027-4f6b-ae96-4563e464bb01
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.localgov_news_category
+  module:
+    - facets
+    - system
+  theme:
+    - lgd_org_theme
+id: category
+theme: lgd_org_theme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:localgov_news_category'
+settings:
+  id: 'facet_block:localgov_news_category'
+  label: Category
+  provider: facets
+  label_display: visible
+  block_id: category
+visibility:
+  request_path:
+    id: request_path
+    pages: /news/search
+    negate: false

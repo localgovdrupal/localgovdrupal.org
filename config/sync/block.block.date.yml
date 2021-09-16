@@ -1,0 +1,28 @@
+uuid: d4287bb8-47a5-4e3a-8133-c70afb7e3eb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.localgov_news_date
+  module:
+    - facets
+    - system
+  theme:
+    - lgd_org_theme
+id: date
+theme: lgd_org_theme
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:localgov_news_date'
+settings:
+  id: 'facet_block:localgov_news_date'
+  label: Date
+  provider: facets
+  label_display: '0'
+  block_id: date
+visibility:
+  request_path:
+    id: request_path
+    pages: /news/search
+    negate: false
