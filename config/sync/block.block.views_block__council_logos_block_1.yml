@@ -1,0 +1,24 @@
+uuid: 91d8b1e9-f3f8-4482-bfb2-368612ab5a30
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.council_logos
+  module:
+    - views
+  theme:
+    - lgd_org_theme
+id: views_block__council_logos_block_1
+theme: lgd_org_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'views_block:council_logos-block_1'
+settings:
+  id: 'views_block:council_logos-block_1'
+  label: 'Participating councils'
+  provider: views
+  label_display: visible
+  views_label: 'Participating councils'
+  items_per_page: none
+visibility: {  }

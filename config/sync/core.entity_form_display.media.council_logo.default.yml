@@ -1,0 +1,62 @@
+uuid: 4ef02b86-2d3b-4e35-960f-715bec98f192
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.council_logo.field_media_image
+    - image.style.thumbnail
+    - media.type.council_logo
+  module:
+    - image
+    - path
+id: media.council_logo.default
+targetEntityType: media
+bundle: council_logo
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

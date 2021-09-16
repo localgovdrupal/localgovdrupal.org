@@ -1,0 +1,30 @@
+uuid: f48349da-ce77-4640-abb5-420b72c1f899
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.council_logo.field_media_image
+    - image.style.thumbnail
+    - media.type.council_logo
+  module:
+    - image
+id: media.council_logo.media_library
+targetEntityType: media
+bundle: council_logo
+mode: media_library
+content:
+  field_media_image:
+    weight: -50
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  name: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,14 @@
+uuid: 79602db6-168d-4b46-8728-d930d8e91fdb
+langcode: en
+status: true
+dependencies: {  }
+id: council_logo
+label: 'Council logo'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name
