@@ -67,14 +67,23 @@
   margin-left: auto;
 }
 
+
+/* sidebar */
 .region-sidebar-second {
-  margin-top: var(--spacing-larger);
+  margin-top: 0;
   margin-bottom: var(--spacing-larger);
+}
+.region-sidebar-second ul {
+  width: 100%;
+}
+.region-sidebar-second ul li {
+  width: 100%;
 }
 
 @media screen and (min-width: 70rem) {
   .region-sidebar-second {
-    margin-top: var(--spacing-larger);
+    margin-top: 0;
+    width: 100%;
     max-width: 14.125rem;
     float: right;
   }
