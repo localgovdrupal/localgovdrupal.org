@@ -1,0 +1,8 @@
+uuid: 5478deec-b0e9-44aa-89fb-dda7dd4d403c
+langcode: en
+status: true
+dependencies: {  }
+id: special_block
+label: 'Special block'
+revision: 0
+description: ''

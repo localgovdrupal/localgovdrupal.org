@@ -1,0 +1,44 @@
+uuid: 8837f74d-c7f4-4225-a5c5-78f6c1532f5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.special_block
+    - field.field.block_content.special_block.body
+    - field.field.block_content.special_block.field_content
+  module:
+    - layout_paragraphs
+    - text
+id: block_content.special_block.default
+targetEntityType: block_content
+bundle: special_block
+mode: default
+content:
+  body:
+    weight: 1
+    settings:
+      rows: 9
+      placeholder: ''
+      summary_rows: 3
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_content:
+    type: layout_paragraphs
+    weight: 2
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 0
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
