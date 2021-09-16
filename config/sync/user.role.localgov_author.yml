@@ -17,6 +17,7 @@ permissions:
   - 'access page_components entity browser pages'
   - 'access paragraphs_library_items entity browser pages'
   - 'access toolbar'
+  - 'create council_logo media'
   - 'create document media'
   - 'create image media'
   - 'create localgov_services_landing content'
