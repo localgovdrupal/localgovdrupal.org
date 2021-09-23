@@ -1,0 +1,30 @@
+uuid: 0f6a77d0-df95-4874-9ede-08a4a5f2d54c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:special_block:b6216938-a3e5-4af2-acaf-4f7587d606b7'
+  module:
+    - block_content
+    - system
+  theme:
+    - lgd_org_theme
+id: quote
+theme: lgd_org_theme
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:b6216938-a3e5-4af2-acaf-4f7587d606b7'
+settings:
+  id: 'block_content:b6216938-a3e5-4af2-acaf-4f7587d606b7'
+  label: Quote
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -1,0 +1,32 @@
+uuid: f6c8a377-ff52-4e26-ad03-36abe3d890d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - lgd_org_theme
+id: pagetitle
+theme: lgd_org_theme
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      localgov_subsites_overview: localgov_subsites_overview
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

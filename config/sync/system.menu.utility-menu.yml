@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: utility-menu
 label: 'Utility menu'
-description: ''
+description: 'Pre-header links'
 locked: false
