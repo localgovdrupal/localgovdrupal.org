@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Default node template for localgov_subsites_page pages.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+<div class="container-fluid">
+  <article{{ attributes.addClass(classes) }}>
+    <h1>{{ node.label }}</h1>
+    {{ content }}
+  </article>
+</div>
