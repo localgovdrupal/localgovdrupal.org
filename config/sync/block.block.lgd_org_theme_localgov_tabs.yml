@@ -8,8 +8,8 @@ _core:
   default_config_hash: 17WQm1vjTFEjLHYOcDhn4F8C6leBD5gAgiOS0GhbFbg
 id: lgd_org_theme_localgov_tabs
 theme: lgd_org_theme
-region: content_top
-weight: 0
+region: tabs
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:
