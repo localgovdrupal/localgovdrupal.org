@@ -202,3 +202,18 @@ form#views-exposed-form-localgov-news-search-page-search-news {
 .js input.form-autocomplete {
   background-position: 98% center;
 }
+
+pre {
+  font-family: monospace;
+  background-color: #f1f1f1;
+  padding: var(--spacing);
+  display: inline-block;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+code {
+  font-family: monospace;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
