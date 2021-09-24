@@ -1,0 +1,45 @@
+.alert {
+  padding: 1rem;
+  border: 4px solid blue;
+}
+.alert-info {
+  border-color: blue;
+}
+
+.alert-danger {
+  border-color: red;
+}
+
+.alert-primary {
+  border-color: yellow;
+}
+.alert-success {
+  border-color: black;
+}
+
+.callout {
+  color: white;
+  padding: 1rem;
+  background-color: green;
+}
+.callout-primary {
+  background: yellow;
+  color: black;
+}
+.callout-success {
+  background: green;
+}
+.callout-danger {
+  background: red;
+}
+.callout-teal {
+  background: teal;
+}
+.callout-carbon {
+  background: darkgray;
+  color: black;
+}
+.callout-yellow {
+  background: yellow;
+  color: black;
+}

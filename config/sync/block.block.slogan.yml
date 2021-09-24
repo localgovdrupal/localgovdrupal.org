@@ -17,5 +17,5 @@ settings:
   label: Slogan
   provider: lgd_org_blocks
   label_display: '0'
-  content: 'Open source publishing platform, created by councils, for councils'
+  content: 'The publishing platform created by councils, for councils'
 visibility: {  }

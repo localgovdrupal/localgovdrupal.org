@@ -14,9 +14,9 @@ provider: null
 plugin: lgd_org_blocks_builtwith
 settings:
   id: lgd_org_blocks_builtwith
-  label: 'Built With'
+  label: 'Built with'
   provider: lgd_org_blocks
   label_display: '0'
-  footer_slogan: 'LocalGov Drupal. Created by councils, for councils.'
-  content: 'This site is built with LocalGov Drupal'
+  footer_slogan: 'LocalGov Drupal. Created by councils, for councils. asdlkadj'
+  content: 'Created by councils, for councils. aasadasd'
 visibility: {  }

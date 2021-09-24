@@ -81,6 +81,7 @@ permissions:
   - 'edit own remote_video media'
   - 'edit paragraph library item'
   - 'edit terms in localgov_topic'
+  - 'reorder entity_hierarchy children'
   - 'revert all revisions'
   - 'revert localgov_services_landing revisions'
   - 'revert localgov_services_page revisions'
