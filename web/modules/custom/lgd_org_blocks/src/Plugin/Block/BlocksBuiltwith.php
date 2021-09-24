@@ -47,6 +47,7 @@ class BlocksBuiltwith extends BlockBase {
    * {@inheritdoc}
    */
   public function blockSubmit($form, FormStateInterface $form_state) {
+    $this->configuration['footer_slogan'] = $form_state->getValue('footer_slogan');
     $this->configuration['content'] = $form_state->getValue('content');
   }
 
