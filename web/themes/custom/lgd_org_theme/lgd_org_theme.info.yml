@@ -17,6 +17,9 @@ libraries:
   - lgd_org_theme/text
   - lgd_org_theme/overrides
 
+ckeditor_stylesheets:
+  - css/ckeditor.css
+
 regions:
   tabs: "Tabs"
   header: "Header"
