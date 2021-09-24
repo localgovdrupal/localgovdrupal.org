@@ -50,7 +50,7 @@ header .menu a{
   list-style: none;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 72rem) {
   .menu--utility-menu {
     display: flex;
     margin-bottom: var(--spacing-larger);
@@ -100,6 +100,7 @@ header .menu a{
   }
 
 }
+
 .menu--main > .menu-item a {
   border-bottom: 4px solid transparent !important;
 }

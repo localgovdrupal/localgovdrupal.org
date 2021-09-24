@@ -16,7 +16,7 @@
   border: 5px solid var(--color-bittersweet);
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 72rem) {
   .lgd-header__nav {
     background-color: transparent;
     padding: 0;
