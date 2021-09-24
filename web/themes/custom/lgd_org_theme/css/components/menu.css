@@ -2,7 +2,7 @@
 
 .menu--main > .menu-item a {
   padding: 0 !important;
-  font-weight: 600;
+  display: inline-block !important;
 }
 
 .menu--main > .menu-item + .menu-item {
@@ -28,6 +28,7 @@ header .menu a{
 .lgd-header__toggle-icon {
   width: 100%;
 }
+
 .lgd-header__toggle-icon::after {
   display: block !important;
   margin-top: calc(var(--font-size-larger) * -0.1);
@@ -50,6 +51,7 @@ header .menu a{
   padding-left: 0;
   list-style: none;
 }
+
 .menu--utility-menu,
 .menu--main  {
   width: 100%;
@@ -61,6 +63,22 @@ header .menu a{
   padding: var(--spacing-smaller);
   display: block;
 
+}
+
+/* Main menu becomes horizintal at 60rem */
+
+/* Override the base theme to keep the vertical menu until 60rem */
+
+@media screen and (min-width: 48rem){
+  .lgd-region--primary-menu .menu--main {
+      display: block !important;
+  }
+}
+
+@media screen and (min-width: 60rem){
+  .lgd-region--primary-menu .menu--main {
+      display: flex !important;
+  }
 }
 
 @media screen and (min-width: 60rem) {
@@ -144,6 +162,7 @@ header .menu a{
     font-size: var(--font-size-larger);
   }
 }
+
 /* .menu--main > .menu-item a {
   border-bottom: 4px solid transparent !important;
 } */
@@ -157,7 +176,8 @@ header .menu a{
 .menu--main > .menu-item a:focus,
 .menu--main > .menu-item a:hover {
   color: var(--color-black);
+  /* border-left: 5px solid var(--color-seafoam); */
   background-color: transparent !important;
-  /* border-bottom: 4px solid var(--color-black) !important; */
-}
+  font-weight: 600;
 
+}
