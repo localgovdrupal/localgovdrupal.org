@@ -44,3 +44,7 @@ layout:
   css:
     theme:
       css/layout.css: {weight: 200}
+header:
+  css:
+    theme:
+      css/components/header.css: {weight: 200}

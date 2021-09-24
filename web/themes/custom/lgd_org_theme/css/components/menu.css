@@ -1,16 +1,8 @@
-.menu--utility-menu {
-  /* display: flex; */
-  margin-bottom: var(--spacing-larger);
-  padding-left: 0;
-  list-style: none;
-  /* justify-content: flex-end;
-  font-size: var(--font-size-large);
-  font-weight: 500; */ */
-}
-
+/* Main menu styling */
 
 .menu--main > .menu-item a {
-  padding: var(--spacing-smallest) var(--spacing-smallest) !important;
+  padding: 0 !important;
+  display: inline-block !important;
 }
 
 .menu--main > .menu-item + .menu-item {
@@ -21,11 +13,7 @@ header .menu a{
   text-decoration: none;
 }
 
-
-.lgd-region--header {
-  align-self: flex-end;
-  margin-bottom: var(--spacing);
-}
+/* Mobile toggle styling  */
 
 .lgd-header__toggle {
   background: url(../../assets/images/menu-polygon.svg) 0 0 no-repeat;
@@ -40,6 +28,7 @@ header .menu a{
 .lgd-header__toggle-icon {
   width: 100%;
 }
+
 .lgd-header__toggle-icon::after {
   display: block !important;
   margin-top: calc(var(--font-size-larger) * -0.1);
@@ -53,21 +42,50 @@ header .menu a{
   background: url(../../assets/images/menu-bars.svg) 0 0 no-repeat;
 }
 
-.lgd-header__nav {
-  background-color: var(--color-sahara);
-  padding: var(--spacing);
-  border: 5px solid var(--color-bittersweet);
+
+
+/* Utility menu styling */
+
+.menu--utility-menu {
+  margin-bottom: var(--spacing-larger);
+  padding-left: 0;
+  list-style: none;
 }
 
-@media screen and (min-width: 70rem) {
-  .lgd-header__nav {
-    background-color: transparent;
-    padding: 0;
-    border: 0px;
+.menu--utility-menu,
+.menu--main  {
+  width: 100%;
+}
+
+.menu--utility-menu li,
+.menu--main li {
+  border-bottom: 1px solid var(--color-black);
+  padding: var(--spacing-smaller);
+  display: block;
+
+}
+
+/* Main menu becomes horizintal at 60rem */
+
+/* Override the base theme to keep the vertical menu until 60rem */
+
+@media screen and (min-width: 48rem){
+  .lgd-region--primary-menu .menu--main {
+      display: block !important;
   }
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 60rem){
+  .lgd-region--primary-menu .menu--main {
+      display: flex !important;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .menu--main > .menu-item a {
+    padding: var(--spacing-smallest) var(--spacing-smallest) !important;
+  }
+
   .menu--utility-menu {
     display: flex;
     margin-bottom: var(--spacing-larger);
@@ -77,9 +95,13 @@ header .menu a{
     font-size: var(--font-size-large);
     font-weight: 500;
   }
+  .menu--main li {
+    border: none;
+  }
 
   .menu--utility-menu li {
     padding: calc(var(--spacing)/2);
+    border: none;
   }
 
   .menu--utility-menu li:nth-last-of-type(1),
@@ -104,7 +126,7 @@ header .menu a{
     padding-right: var(--spacing);
   }
   .menu--main {
-    font-size: var(--font-size-larger);
+    font-size: 21px;
     font-weight: 600;
   }
 
@@ -116,10 +138,37 @@ header .menu a{
     margin-left: var(--spacing) !important;
   }
 
+  /* Hover and active trail styles */
+
+  .menu--utility-menu > .menu-item--active-trail a,
+  .menu--utility-menu > .menu-item a:focus,
+  .menu--utility-menu > .menu-item a:hover,
+  .menu--main > .menu-item--active-trail a,
+  .menu--main > .menu-item a:focus,
+  .menu--main > .menu-item a:hover {
+    color: var(--color-black);
+    background-color: transparent !important;
+    border-bottom: 4px solid var(--color-black) !important;
+  }
+
+  .menu--main > .menu-item a {
+    border-bottom: 4px solid transparent !important;
+  }
+
 }
-.menu--main > .menu-item a {
+
+@media screen and (min-width: 72rem) {
+  .menu--main {
+    font-size: var(--font-size-larger);
+  }
+}
+
+/* .menu--main > .menu-item a {
   border-bottom: 4px solid transparent !important;
-}
+} */
+
+/* Hover and active trail styles */
+
 .menu--utility-menu > .menu-item--active-trail a,
 .menu--utility-menu > .menu-item a:focus,
 .menu--utility-menu > .menu-item a:hover,
@@ -127,7 +176,8 @@ header .menu a{
 .menu--main > .menu-item a:focus,
 .menu--main > .menu-item a:hover {
   color: var(--color-black);
+  /* border-left: 5px solid var(--color-seafoam); */
   background-color: transparent !important;
-  border-bottom: 4px solid var(--color-black) !important;
-}
+  font-weight: 600;
 
+}

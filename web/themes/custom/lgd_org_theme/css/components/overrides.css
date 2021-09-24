@@ -26,7 +26,7 @@
 .lgd-footer__post-footer{
   text-align: center;
 }
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 48rem) {
   .lgd-footer__post-footer .lgd-row__one-third:first-of-type {
     width: 50%;
     text-align: left;
@@ -50,9 +50,9 @@
 }
 
 @media screen and (min-width: 70rem) {
-.path-frontpage .layout--twocol > .layout__region--first{
-  flex: 0 1 30%;
-}
+  .path-frontpage .layout--twocol > .layout__region--first{
+    flex: 0 1 30%;
+  }
 }
 
 .path-frontpage .field--name-localgov-subsites-content > .field__item:first-of-type > .paragraph--type--page-section .layout__region--first p:first-of-type {
@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 48rem) {
   .region-sidebar-second {
     margin-top: 0;
     width: 100%;
@@ -163,14 +163,15 @@ main {
   margin-inline: auto;
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 48rem) {
   .block-views-blockcouncil-logos-block-1 .view-content{
     display: grid;
     gap: var(--spacing-larger);
     grid-template-columns: repeat(5, 1fr);
   }
   .block-views-blockcouncil-logos-block-1  .views-row article{
-    width: 8.125rem;
+    max-width: 8.125rem;
+    width: 100%;
   }
 }
 

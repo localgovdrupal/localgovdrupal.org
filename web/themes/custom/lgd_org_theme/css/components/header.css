@@ -1,0 +1,183 @@
+/*
+  @file Theming for the header area.
+  Note: The header area is NOT just the header region. It is the
+  header region, but also the containing wrapper, which places
+  - primary menu
+  - search
+  - mobile search, and
+  - secondary menu
+
+  We will theme those individual regions in their own files. This
+  file is for the general area layout and the specific header region.
+*/
+.lgd-region__inner--primary-menu {
+  background-color: var(--color-sahara);
+  padding: var(--spacing-small);
+  border: 1px solid var(--color-bittersweet);
+}
+
+@media screen and (min-width: 60rem) {
+  .lgd-region__inner--primary-menu  {
+    background-color: transparent;
+    padding: 0;
+    border: 0px;
+  }
+}
+
+.lgd-header {
+  padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
+  padding-bottom: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
+  background-color: var(--color-section-header-bg);
+}
+
+.lgd-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.lgd-header .lgd-region--header {
+  margin-right: calc(var(--spacing) * 2);
+}
+
+/*
+  Layout for the Nav Sections.
+  Theming for individual sections in within each individual section's
+  CSS file.
+
+  Primary: Primary Menu and Search Block
+  Secondary: Secondary Menu area (services list)
+*/
+.lgd-header__nav--primary {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 60rem) {
+  .lgd-header__nav--primary {
+    display: block;
+    width: auto;
+  }
+}
+
+.lgd-header__nav--secondary {
+  display: none;
+  width: 100%;
+}
+
+.lgd-header__nav--active {
+  display: block;
+}
+
+/* Theming the Header Toggles */
+
+.lgd-header__toggles {
+  display: flex;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 60rem) {
+  .lgd-header__toggles {
+    margin-right: var(--spacing);
+  }
+}
+
+.lgd-header__toggle {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: var(--spacing);
+  padding: var(--spacing);
+  cursor: pointer;
+  color: var(--header-services-button-color);
+  border: var(--header-services-button-border);
+  border-color: var(--header-services-button-border-color);
+  background-color: var(--header-services-button-bg-color);
+  font-size: var(--font-size-medium);
+  line-height: 1;
+}
+.lgd-header__toggle:focus,
+.lgd-header__toggle:hover {
+  color: var(--header-services-button-color-hover);
+  background-color: var(--header-services-button-bg-color-hover);
+}
+
+.lgd-header__toggle-icon::after {
+  display: inline-block;
+  margin-top: calc(var(--font-size-larger) * -0.1);
+  margin-left: calc(var(--spacing) / 2);
+  content: "\203A";
+  transition: var(--transition-time);
+  transform: rotate(90deg);
+  font-size: var(--font-size-larger);
+}
+
+.lgd-header__toggle--active .lgd-header__toggle-icon::after {
+  transform: rotate(270deg);
+}
+
+/* Overrides for Specific Toggles */
+@media screen and (min-width: 60rem) {
+  .lgd-header__toggle--primary {
+    display: none;
+  }
+}
+
+.lgd-header a {
+  color: var(--header-link-color);
+}
+
+.branding__item--logo {
+  width: var(--header-logo-width);
+}
+
+.branding__item--logo a {
+  transition: none;
+}
+.branding__item--logo a:focus {
+  outline-width: 1px;
+  outline-style: dashed;
+  outline-color: var(--color-white);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Search Region */
+.lgd-region--search form {
+  display: flex;
+  align-items: center;
+}
+
+.lgd-region--search label {
+  display: block;
+  color: var(--header-search-button-color);
+}
+
+.lgd-region--search .form-text {
+  border: var(--header-search-input-border);
+}
+
+.lgd-region--search .form-actions {
+  margin-top: auto;
+}
+
+.lgd-region--search .form-submit {
+  color: var(--header-search-button-color);
+  background-color: var(--header-search-button-bg-color);
+}
+.lgd-region--search .form-submit:hover,
+.lgd-region--search .form-submit:focus {
+  color: var(--header-search-button-color-hover);
+  background-color: var(--header-search-button-bg-color-hover);
+}
+
+/*
+  If JavaScript is disabled,
+  we show all header items and hide the toggle buttons.
+*/
+.no-js .lgd-header__nav {
+  display: block !important;
+}
+.no-js .lgd-header__toggle {
+  display: none !important;
+}

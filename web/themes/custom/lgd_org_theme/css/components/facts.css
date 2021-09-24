@@ -15,7 +15,7 @@
 
 
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 48rem) {
   .key-facts > .field__items{
     /* display: grid;
     grid-gap: 10px;
