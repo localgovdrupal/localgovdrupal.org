@@ -43,12 +43,14 @@
   font-size: clamp(var(--font-size-medium), 2.5vw, var(--font-size-larger));
   margin-bottom: var(--spacing);
 }
+
 .block-lgd-org-blocks-blocks-3 {
   grid-column: 5;
   grid-row: 1 / span 2;
   justify-self: center;
   align-self: center;
 }
+
 .lgd-org--councils {
   display: block;
   background: url("../../assets/images/decagon.svg") 0 0 no-repeat;

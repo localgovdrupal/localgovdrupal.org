@@ -10,14 +10,14 @@
   We will theme those individual regions in their own files. This
   file is for the general area layout and the specific header region.
 */
-.lgd-header__nav {
+.lgd-region__inner--primary-menu {
   background-color: var(--color-sahara);
-  padding: var(--spacing);
-  border: 5px solid var(--color-bittersweet);
+  padding: var(--spacing-small);
+  border: 1px solid var(--color-bittersweet);
 }
 
-@media screen and (min-width: 72rem) {
-  .lgd-header__nav {
+@media screen and (min-width: 60rem) {
+  .lgd-region__inner--primary-menu  {
     background-color: transparent;
     padding: 0;
     border: 0px;
@@ -53,7 +53,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 72rem) {
+@media screen and (min-width: 60rem) {
   .lgd-header__nav--primary {
     display: block;
     width: auto;
@@ -70,12 +70,13 @@
 }
 
 /* Theming the Header Toggles */
+
 .lgd-header__toggles {
   display: flex;
   margin-left: auto;
 }
 
-@media screen and (min-width: 72rem) {
+@media screen and (min-width: 60rem) {
   .lgd-header__toggles {
     margin-right: var(--spacing);
   }
@@ -116,7 +117,7 @@
 }
 
 /* Overrides for Specific Toggles */
-@media screen and (min-width: 72rem) {
+@media screen and (min-width: 60rem) {
   .lgd-header__toggle--primary {
     display: none;
   }
