@@ -1,13 +1,4 @@
-.menu--utility-menu {
-  /* display: flex; */
-  margin-bottom: var(--spacing-larger);
-  padding-left: 0;
-  list-style: none;
-  /* justify-content: flex-end;
-  font-size: var(--font-size-large);
-  font-weight: 500; */ */
-}
-
+/* Main menu styling */
 
 .menu--main > .menu-item a {
   padding: var(--spacing-smallest) var(--spacing-smallest) !important;
@@ -21,11 +12,7 @@ header .menu a{
   text-decoration: none;
 }
 
-
-.lgd-region--header {
-  align-self: flex-end;
-  margin-bottom: var(--spacing);
-}
+/* Mobile toggle styling  */
 
 .lgd-header__toggle {
   background: url(../../assets/images/menu-polygon.svg) 0 0 no-repeat;
@@ -53,21 +40,17 @@ header .menu a{
   background: url(../../assets/images/menu-bars.svg) 0 0 no-repeat;
 }
 
-.lgd-header__nav {
-  background-color: var(--color-sahara);
-  padding: var(--spacing);
-  border: 5px solid var(--color-bittersweet);
+
+
+/* Utility menu styling */
+
+.menu--utility-menu {
+  margin-bottom: var(--spacing-larger);
+  padding-left: 0;
+  list-style: none;
 }
 
-@media screen and (min-width: 70rem) {
-  .lgd-header__nav {
-    background-color: transparent;
-    padding: 0;
-    border: 0px;
-  }
-}
-
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 48rem) {
   .menu--utility-menu {
     display: flex;
     margin-bottom: var(--spacing-larger);
@@ -120,6 +103,9 @@ header .menu a{
 .menu--main > .menu-item a {
   border-bottom: 4px solid transparent !important;
 }
+
+/* Hover and active trail styles */
+
 .menu--utility-menu > .menu-item--active-trail a,
 .menu--utility-menu > .menu-item a:focus,
 .menu--utility-menu > .menu-item a:hover,

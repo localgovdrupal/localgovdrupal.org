@@ -3,7 +3,7 @@ h2, h3 {
   line-height: var(--line-height);
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 48rem) {
   body {
     font-size: var(--font-size-large);
     --line-height: 1.45;
