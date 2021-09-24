@@ -21,6 +21,8 @@ permissions:
   - 'access toolbar'
   - 'administer blocks'
   - 'administer menu'
+  - 'administer redirect settings'
+  - 'administer redirects'
   - 'create council_logo media'
   - 'create document media'
   - 'create image media'

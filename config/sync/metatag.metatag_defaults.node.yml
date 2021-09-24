@@ -7,6 +7,8 @@ _core:
 id: node
 label: Content
 tags:
-  title: '[node:title] | [site:name]'
   description: '[node:summary]'
   canonical_url: '[node:url]'
+  title: '[node:title] | [site:name]'
+  twitter_cards_type: summary
+  twitter_cards_site: '@localgovdrupal'
