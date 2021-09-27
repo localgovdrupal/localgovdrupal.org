@@ -4,16 +4,12 @@
   padding-bottom: var(--spacing-large);
 }
 
-.lgd-region--banner .lgd-region__inner {
-  max-width: var(--width-container);
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 @media screen and (min-width: 72rem) {
   .lgd-region--banner {
     padding-bottom: var(--spacing-largest);
-    padding-top: var(--spacing);
+    /* padding-top: var(--spacing); */
   }
   .lgd-region--banner .lgd-region__inner {
     display: grid;
@@ -21,12 +17,13 @@
     gap: 20px;
   }
 }
+
 .block-lgd-org-blocks-blocks {
   --line-height: 1.15;
   line-height: var(--line-height);
   grid-column: 1 / span 3;
   font-family: var(--font-secondary);
-  font-size: clamp(var(--font-size-largish), 2.5vw, var(--font-size-larger));
+  font-size: clamp(var(--font-size-largish), 2.5vw, 1.875rem);
   letter-spacing: -1px;
 }
 
@@ -69,10 +66,19 @@
   font-weight: 600;
 }
 
+.lgd-org--councils .number {
+  font-size: 3.25rem;
+  letter-spacing: -3px;
+  display: block;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+
 @media screen and (min-width: 72rem) {
   .lgd-org--councils {
-    width: 11.875rem;
-    height: 11.875rem;
+    width: 12.875rem;
+    height: 12.875rem;
   }
   .lgd-org--councils .number {
     font-size: 5.3125rem;
@@ -80,12 +86,4 @@
   .lgd-org--councils {
     font-size: var(--font-size-normal)
   }
-}
-
-.lgd-org--councils .number {
-  font-size: 3.25rem;
-  letter-spacing: -3px;
-  display: block;
-  line-height: 100%;
-  font-weight: normal;
 }

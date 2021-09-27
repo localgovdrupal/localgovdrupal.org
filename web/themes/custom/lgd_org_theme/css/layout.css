@@ -6,13 +6,25 @@
   The main container class that defines how wide our content area is
 */
 .lgd-container,
-.lgd-region__inner--banner {
+.lgd-region__inner--banner,
+.lgd-region--banner .lgd-region__inner {
   /* width: calc(100vw - 100px); */
-  max-width: var(--width-container);
+  /* max-width: var(--width-container); */
+  max-width: calc(100vw - 100px);
   margin-right: auto;
   margin-left: auto;
-  padding-left: var(--spacing);
-  padding-right: var(--spacing);
+  /* padding-left: var(--spacing);
+  padding-right: var(--spacing); */
+}
+
+@media screen and (min-width: 90rem) {
+  .lgd-container,
+  .lgd-region__inner--banner,
+  .lgd-region--banner .lgd-region__inner {
+    max-width: var(--width-container);
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .padding-horizontal {
@@ -23,56 +35,6 @@
 .layout__region > * {
   margin-bottom: var(--vertical-rhythm-spacing);
 }
-
-@media screen and (min-width: 70rem) {
-  .lgd-row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .lgd-row > * {
-    margin-right: calc(var(--spacing) / 2);
-    margin-left: calc(var(--spacing) / 2);
-  }
-  .lgd-row > .lgd-row__full {
-    margin-right: 0;
-    margin-left: calc(var(--spacing) / 2);
-  }
-  .lgd-row__one-quarter,
-  .lgd-row--quarters > * {
-    width: calc(25% - var(--spacing));
-  }
-
-  .lgd-row__one-third,
-  .lgd-row--thirds > * {
-    width: calc(33% - var(--spacing));
-  }
-
-  .lgd-row__one-half,
-  .lgd-row--halves > * {
-    width: calc(50% - var(--spacing));
-  }
-
-  .lgd-row__two-thirds {
-    width: calc((100% / 3 * 2) - var(--spacing));
-  }
-
-  .lgd-row__three-quarters {
-    width: calc(75% - var(--spacing));
-  }
-
-  .lgd-row__full {
-    width: calc(100% - var(--spacing));
-  }
-
-  /* .lgd-container,
-  .lgd-region__inner--banner {
-    padding-left: calc(var(--spacing)*4);
-    padding-right: calc(var(--spacing)*4);
-  } */
-}
-
-
 .special--homepage {
   background: rgb(255,225,70);
   background: linear-gradient(180deg, rgba(255,225,70,0.8) 0%, rgba(255,130,98,0.8) 100%);
@@ -124,3 +86,5 @@
     margin-bottom: 0;
   }
 }
+
+

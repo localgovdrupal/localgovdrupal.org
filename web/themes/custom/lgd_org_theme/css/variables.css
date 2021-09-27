@@ -46,7 +46,7 @@ body {
   --spacing-larger: 2.34375rem; /*37.5px*/
   --spacing-largest: 3.125rem; /*50px*/
   --spacing-mega: 4.5rem; /*72px*/
-  --spacing-padding-horizontal: var(--spacing);
+  --spacing-padding-horizontal: 0;
   --line-height: 1.4;
   /* --vertical-rhythm-spacing: calc(var(--line-height) * 1rem); */
 
