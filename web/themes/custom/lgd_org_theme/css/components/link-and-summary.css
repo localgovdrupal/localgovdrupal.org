@@ -94,7 +94,9 @@ background:
   text-align: center;
   font-family: var(--font-secondary) !important;
   margin-bottom: var(--spacing);
-  font-size: var(--font-size-larger);
+  font-size: 2rem;
+  font-weight: 500;
+  font-size: clamp(1.875rem, 2.5vw, 2rem);
 }
 
 .link-block__title a{

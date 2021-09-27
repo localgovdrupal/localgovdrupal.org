@@ -1,8 +1,11 @@
 variables:
   css:
     base:
-      css/variables.css: { weight: 200 }
-      css/base.css: {weight: 200}
+      css/variables.css: { weight: 400 }
+base:
+  css:
+    theme:
+      css/base.css: {weight: 400}
 layout:
   css:
     theme:

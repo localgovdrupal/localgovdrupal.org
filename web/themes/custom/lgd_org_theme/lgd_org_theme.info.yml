@@ -6,6 +6,7 @@ base theme: "localgov_base"
 
 libraries:
   - lgd_org_theme/variables
+  - lgd_org_theme/base
   - lgd_org_theme/grid
   - lgd_org_theme/layout
   - lgd_org_theme/quote

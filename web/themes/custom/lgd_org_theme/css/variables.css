@@ -48,7 +48,7 @@ body {
   --spacing-mega: 4.5rem; /*72px*/
   --spacing-padding-horizontal: 0;
   --line-height: 1.4;
-  /* --vertical-rhythm-spacing: calc(var(--line-height) * 1rem); */
+  --vertical-rhythm-spacing: calc(var(--line-height) * 0.75rem);
 
   /* Colours */
   /*
@@ -109,11 +109,11 @@ body {
   --font-size-largish: calc(var(--font-size) * 1.3125);/*21px*/
   --font-size-larger: calc(var(--font-size) * 1.625);/*26px*/
   --font-size-largest: calc(var(--font-size) * 2.68);
-  --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
-  --font-size-h2: clamp(var(--font-size-largish), 8vw, var(--font-size-larger));
+  --font-size-h1: clamp(var(--font-size-largish), 10vw, var(--font-size-larger));
+  --font-size-h2: clamp(var(--font-size-largish), 2.5vw, var(--font-size-larger));
   --font-size-h3: clamp(var(--font-size-medium), 2.5vw, var(--font-size-largish));
-  /* --font-size-h4: var(--font-size-medium);
-  --font-size-h5: var(--font-size-medium);
+  --font-size-h4: clamp(var(--font-size-medium), 2.5vw, var(--font-size-large));
+  /*--font-size-h5: var(--font-size-medium);
   --font-size-h6: var(--font-size-medium); */
 
   /* Borders */
@@ -143,13 +143,13 @@ body {
 
   /* Breadcrumbs */
   --breadcrumbs-background-color: var(--color-white);
-  --breadcrumbs-border: var(--border);
+  --breadcrumbs-border: 0;
   --breadcrumbs-divider: "/";
   --breadcrumbs-font-size: clamp(var(--font-size-smaller), 2.5vw, var(--font-size-medium));
-  --breadcrumbs-padding-vertical: clamp(var(--spacing-smaller), 2.5vw, var(--spacing));
+  --breadcrumbs-padding-vertical: var(--spacing-smaller);
   --breadcrumbs-padding-horizontal: 0;
   --breadcrumbs-link-color: var(--color-black);
-  --breadcrumbs-spacing-bottom: clamp(var(--spacing-smaller), 2.5vw, var(--spacing));
+  --breadcrumbs-spacing-bottom: clamp(var(--spacing-smaller), 2.5vw, var(--spacing-large));
 
   /* Header Items */
   --section-spacing-vertical-header: clamp(var(--spacing), 2.5vw, var(--spacing-large));
