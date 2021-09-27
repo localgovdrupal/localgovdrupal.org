@@ -43,29 +43,7 @@
   font-weight: bold;
 }
 
-.layout--threecol-33-34-33 {
-  max-width: 1060px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-@media screen and (min-width: 70rem) {
-  .path-frontpage .layout--twocol > .layout__region--first{
-    flex: 0 1 30%;
-  }
-}
-
-.path-frontpage .field--name-localgov-subsites-content > .field__item:first-of-type > .paragraph--type--page-section .layout__region--first p:first-of-type {
-  font-family: var(--font-primary);
-  font-size: clamp(var(--font-size-medium), 2.5vw, var(--font-size-large));
-  font-weight: 500;
-}
-
-.path-frontpage .pull-out-quote{
-  max-width: 795px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 
 /* sidebar */
@@ -80,12 +58,24 @@
   width: 100%;
 }
 
-@media screen and (min-width: 48rem) {
+/* @media screen and (min-width: 48rem) {
+  aside {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
   .region-sidebar-second {
+    grid-column: 2 / span 3;
     margin-top: 0;
-    width: 100%;
-    max-width: 14.125rem;
-    float: right;
+  }
+} */
+
+@media screen and (min-width: 70rem) {
+  aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .region-sidebar-second {
+    grid-column: 2 / span 2;
   }
 }
 

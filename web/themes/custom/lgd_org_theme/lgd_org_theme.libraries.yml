@@ -3,6 +3,18 @@ variables:
     base:
       css/variables.css: { weight: 200 }
       css/base.css: {weight: 200}
+layout:
+  css:
+    theme:
+      css/layout.css: {weight: 200}
+header:
+  css:
+    theme:
+      css/components/header.css: {weight: 200}
+grid:
+  css:
+    theme:
+      css/grid.css: {weight: 200}
 quote:
   css:
     theme:
@@ -40,11 +52,8 @@ overrides:
   css:
     theme:
       css/components/overrides.css: {}
-layout:
+front:
   css:
     theme:
-      css/layout.css: {weight: 200}
-header:
-  css:
-    theme:
-      css/components/header.css: {weight: 200}
+      css/components/front.css: {}
+
