@@ -6,6 +6,8 @@ base theme: "localgov_base"
 
 libraries:
   - lgd_org_theme/variables
+  - lgd_org_theme/base
+  - lgd_org_theme/grid
   - lgd_org_theme/layout
   - lgd_org_theme/quote
   - lgd_org_theme/facts
@@ -17,6 +19,7 @@ libraries:
   - lgd_org_theme/text
   - lgd_org_theme/overrides
   - lgd_org_theme/header
+  - lgd_org_theme/front
 
 ckeditor_stylesheets:
   - css/ckeditor.css
