@@ -32,9 +32,9 @@
       -webkit-linear-gradient(225deg, transparent 25px, var(--color-seafoam) 25px),
       -webkit-linear-gradient(315deg, transparent 25px, var(--color-seafoam) 25px);
   background-position: bottom left, bottom right, top right, top left;
-  -moz-background-size: 50% 50%;
-  -webkit-background-size: 50% 50%;
-  background-size: 50% 50%;
+  -moz-background-size: 51% 51%;
+  -webkit-background-size: 51% 51%;
+  background-size: 51% 51%;
   background-repeat: no-repeat;
   padding: var(--spacing-large);
   text-align: center;
@@ -61,9 +61,9 @@ background:
   -webkit-linear-gradient(225deg, transparent 25px, var(--color-melrose) 25px),
   -webkit-linear-gradient(315deg, transparent 25px, var(--color-melrose) 25px);
   background-position: bottom left, bottom right, top right, top left;
-  -moz-background-size: 50% 50%;
-  -webkit-background-size: 50% 50%;
-  background-size: 50% 50%;
+  -moz-background-size: 51% 51%;
+  -webkit-background-size: 51% 51%;
+  background-size: 51% 51%;
   background-repeat: no-repeat;
 }
 .layout__region--third .link-block{
@@ -84,9 +84,9 @@ background:
   -webkit-linear-gradient(225deg, transparent 25px, var(--color-sahara) 25px),
   -webkit-linear-gradient(315deg, transparent 25px, var(--color-sahara) 25px);
   background-position: bottom left, bottom right, top right, top left;
-  -moz-background-size: 50% 50%;
-  -webkit-background-size: 50% 50%;
-  background-size: 50% 50%;
+  -moz-background-size: 51% 51%;
+  -webkit-background-size: 51% 51%;
+  background-size: 51% 51%;
   background-repeat: no-repeat;
 }
 
