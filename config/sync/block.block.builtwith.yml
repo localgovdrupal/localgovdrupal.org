@@ -17,6 +17,6 @@ settings:
   label: 'Built with'
   provider: lgd_org_blocks
   label_display: '0'
-  footer_slogan: 'Created by councils, for councils. '
+  footer_slogan: 'Created by councils, for councils.'
   content: 'This site is built with LocalGov Drupal'
 visibility: {  }
