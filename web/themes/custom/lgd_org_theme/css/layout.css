@@ -84,22 +84,23 @@
   padding: 0 !important;
   max-width: 100vw !important;
   margin-top: var(--spacing-larger);
-
 }
+
 .lgd-region--content-bottom .field--name-field-content {
-  width: 66%;
+  width: 90%;
   max-width: 52rem;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
 }
+
 .lgd-region--content-bottom .field--name-field-content > * {
   margin-left: var(--spacing-small);
   margin-right: var(--spacing-small);
+  margin-bottom: var(--spacing);
 }
 .lgd-region--content-bottom .field--name-body {
   margin-bottom: var(--spacing-largest);
-  width: 66%;
+  width: 90%;
   max-width: 52rem;
   margin-left: auto;
   margin-right: auto;
@@ -109,4 +110,17 @@
   font-weight: 500;
   line-height: 1.2;
   font-family: var(--font-primary);
+}
+
+@media screen and (min-width: 48rem) {
+  .lgd-region--content-bottom .field--name-field-content {
+    display: flex;
+    width: 66%;
+  }
+  .lgd-region--content-bottom .field--name-body {
+    width: 66%;
+  }
+  .lgd-region--content-bottom .field--name-field-content > * {
+    margin-bottom: 0;
+  }
 }
