@@ -1,10 +1,10 @@
 uuid: 42ca7905-6b1a-40d0-b2bb-807086eb42cf
 name: 'LocalGov Drupal'
-mail: admin@example.com
+mail: hello@localgovdrupal.org
 slogan: 'Open source publishing platform, created by councils, for councils'
 page:
-  403: ''
-  404: ''
+  403: /node/42
+  404: /node/41
   front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
