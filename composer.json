@@ -18,8 +18,10 @@
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/masquerade": "^2.0@beta",
+        "drupal/purge": "^3.0",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/redirect": "^1.6",
+        "drupal/varnish_purge": "^2.1",
         "localgovdrupal/localgov": "^2.0",
         "localgovdrupal/localgov_news": "2.x-dev"
     },
