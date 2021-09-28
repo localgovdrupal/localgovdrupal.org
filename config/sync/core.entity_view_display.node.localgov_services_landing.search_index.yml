@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.localgov_services_landing.body
+    - field.field.node.localgov_services_landing.field_meta_tags
     - field.field.node.localgov_services_landing.localgov_address
     - field.field.node.localgov_services_landing.localgov_address_first_line
     - field.field.node.localgov_services_landing.localgov_common_tasks
@@ -160,5 +161,6 @@ content:
     third_party_settings: {  }
 hidden:
   content_moderation_control: true
+  field_meta_tags: true
   links: true
   search_api_excerpt: true

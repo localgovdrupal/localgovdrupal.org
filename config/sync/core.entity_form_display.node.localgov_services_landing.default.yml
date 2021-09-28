@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.localgov_services_landing.body
+    - field.field.node.localgov_services_landing.field_meta_tags
     - field.field.node.localgov_services_landing.localgov_address
     - field.field.node.localgov_services_landing.localgov_address_first_line
     - field.field.node.localgov_services_landing.localgov_common_tasks
@@ -23,6 +24,7 @@ dependencies:
     - field_group
     - link
     - localgov_services
+    - metatag
     - path
     - text
 third_party_settings:
@@ -174,6 +176,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta_tags:
+    weight: 101
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   localgov_address:
     weight: 17
     settings:

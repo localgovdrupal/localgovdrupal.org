@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.localgov_subsites_page.field_meta_tags
     - field.field.node.localgov_subsites_page.localgov_subsites_banner
     - field.field.node.localgov_subsites_page.localgov_subsites_content
     - field.field.node.localgov_subsites_page.localgov_subsites_parent
@@ -11,6 +12,7 @@ dependencies:
     - node.type.localgov_subsites_page
   module:
     - layout_paragraphs
+    - metatag
     - user
 _core:
   default_config_hash: sxMmTy5mVe6vQn2h7AZsnRuciST9CUq5OVNNUjvHlxo
@@ -19,6 +21,13 @@ targetEntityType: node
 bundle: localgov_subsites_page
 mode: default
 content:
+  field_meta_tags:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   localgov_subsites_content:
     weight: 0
     label: hidden
