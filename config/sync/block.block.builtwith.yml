@@ -17,6 +17,10 @@ settings:
   label: 'Built with'
   provider: lgd_org_blocks
   label_display: '0'
+<<<<<<< Updated upstream
   footer_slogan: 'Created by councils, for councils. '
+=======
+  footer_slogan: 'The publishing platform created by councils, for councils.'
+>>>>>>> Stashed changes
   content: 'This site is built with LocalGov Drupal'
 visibility: {  }
