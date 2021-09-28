@@ -168,10 +168,6 @@ header .menu a{
   }
 }
 
-/* .menu--main > .menu-item a {
-  border-bottom: 4px solid transparent !important;
-} */
-
 /* Hover and active trail styles */
 
 .menu--utility-menu > .menu-item--active-trail a,
@@ -181,8 +177,6 @@ header .menu a{
 .menu--main > .menu-item a:focus,
 .menu--main > .menu-item a:hover {
   color: var(--color-black);
-  /* border-left: 5px solid var(--color-seafoam); */
   background-color: transparent !important;
   font-weight: 600;
-
 }

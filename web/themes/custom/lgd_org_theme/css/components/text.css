@@ -7,3 +7,18 @@
   font-family: var(--font-secondary);
   font-size: clamp(1.5rem, 2.5vw, var(--font-size-larger));
 }
+
+pre {
+  font-family: monospace;
+  background-color: #f1f1f1;
+  padding: var(--spacing);
+  display: inline-block;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+code {
+  font-family: monospace;
+  background-color: #f1f1f1;
+  padding: 2px;
+}

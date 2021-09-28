@@ -8,14 +8,11 @@
 .lgd-container,
 .lgd-region__inner--banner,
 .lgd-region--banner .lgd-region__inner {
-  /* width: calc(100vw - 100px); */
-  /* max-width: var(--width-container); */
   max-width: 90vw;
   margin-right: auto;
   margin-left: auto;
-  /* padding-left: var(--spacing);
-  padding-right: var(--spacing); */
 }
+
 @media screen and (min-width: 48rem) {
   .lgd-container,
   .lgd-region__inner--banner,
@@ -97,15 +94,6 @@
     margin-bottom: 0;
   }
 }
-
-
-
-/* @media screen and (min-width: 48rem) {
-  .lgd-row > * {
-    margin-right: 0;
-    margin-left: 0;
-  }
-} */
 
 @media screen and (min-width: 70rem) {
   .lgd-region--breadcrumb > .lgd-container,
