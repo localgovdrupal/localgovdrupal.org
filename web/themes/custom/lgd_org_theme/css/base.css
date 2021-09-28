@@ -36,21 +36,14 @@ h2 {
   font-weight:500;
 }
 
-h2, h3, h4, h5, h6, .heading {
-  margin-top: 1.5rem;
+
+.field--name-localgov-text h2,
+.field--name-localgov-text h3,
+.field--name-localgov-text h4,
+.field--name-localgov-text h5,
+.field--name-localgov-text h6 {
+  margin-top: 1.75rem;
 }
-
-/* .node--type-localgov-subsites-page > h1,
-.node--type-localgov-subsites-page > h2 {
-  margin-top: var(--spacing);
-  font-family: var(--font-primary) !important;
-} */
-
-/* .paragraph--type--localgov-text {
-  font-size: var(--font-size-large);
-  --line-height: 1.45;
-  line-height: var(--line-height);
-} */
 
 blockquote {
   margin-top: var(--spacing-largest);
