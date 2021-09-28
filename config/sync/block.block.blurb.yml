@@ -18,7 +18,7 @@ settings:
   label: Blurb
   provider: lgd_org_blocks
   label_display: '0'
-  content: 'Enhanced functionality, an expert community, best in class code, thorough user research, best practice accessibility, the list goes on... and all in the box!'
+  content: 'LocalGov Drupal is a publicly owned asset that delivers a better digital experience for citizens, improves service outcomes, and saves money.'
 visibility:
   request_path:
     id: request_path

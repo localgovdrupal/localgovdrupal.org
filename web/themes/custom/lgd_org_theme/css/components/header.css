@@ -1,15 +1,3 @@
-/*
-  @file Theming for the header area.
-  Note: The header area is NOT just the header region. It is the
-  header region, but also the containing wrapper, which places
-  - primary menu
-  - search
-  - mobile search, and
-  - secondary menu
-
-  We will theme those individual regions in their own files. This
-  file is for the general area layout and the specific header region.
-*/
 .lgd-region__inner--primary-menu {
   background-color: var(--color-sahara);
   padding: var(--spacing-small);
@@ -48,6 +36,7 @@
   Primary: Primary Menu and Search Block
   Secondary: Secondary Menu area (services list)
 */
+
 .lgd-header__nav--primary {
   display: none;
   width: 100%;

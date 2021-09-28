@@ -3,6 +3,7 @@
 .menu--main > .menu-item a {
   padding: 0 !important;
   display: inline-block !important;
+  letter-spacing: -0.5px;
 }
 
 .menu--main > .menu-item + .menu-item {
@@ -79,6 +80,9 @@ header .menu a{
   .lgd-region--primary-menu .menu--main {
       display: flex !important;
   }
+  .navigation--main {
+    margin-right: -14px;
+  }
 }
 
 @media screen and (min-width: 60rem) {
@@ -97,6 +101,7 @@ header .menu a{
   }
   .menu--main li {
     border: none;
+    padding: 0;
   }
 
   .menu--utility-menu li {
@@ -135,7 +140,7 @@ header .menu a{
   }
 
   .menu--main > .menu-item + .menu-item {
-    margin-left: var(--spacing) !important;
+    margin-left: 0 !important;
   }
 
   /* Hover and active trail styles */
@@ -163,10 +168,6 @@ header .menu a{
   }
 }
 
-/* .menu--main > .menu-item a {
-  border-bottom: 4px solid transparent !important;
-} */
-
 /* Hover and active trail styles */
 
 .menu--utility-menu > .menu-item--active-trail a,
@@ -176,8 +177,6 @@ header .menu a{
 .menu--main > .menu-item a:focus,
 .menu--main > .menu-item a:hover {
   color: var(--color-black);
-  /* border-left: 5px solid var(--color-seafoam); */
   background-color: transparent !important;
   font-weight: 600;
-
 }
