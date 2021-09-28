@@ -221,22 +221,6 @@ body {
   --sidebar-exposed-form-padding-horizontal: 0;
   --sidebar-exposed-form-item-spacing: 0;
 
-  /* Guide Navigation */
-   /* --section-spacing-vertical-guide-nav: calc(var(--spacing-large) + 1rem); 1rem to account for padding on left of bullets */
-  /* --section-spacing-horizontal-guide-nav: var(--spacing-large);
-  --guide-nav-column-count: 3;  */
-
-  /* IA Block */
-  /* --ia-block-bg-color: var(--color-white);
-  --ia-block-bg-color-promoted: var(--color-white); */
-
-  /* Featured Subsite */
-  /* --featured-subsite-bg-color: var(--color-grey-light); */
-
-  /* Box Links */
-  /* --box-link-border: var(--border);
-  --box-link-content-spacing: var(--spacing-small); */
-
   /* Fact Box */
   --fact-box-bg-light: var(--color-sahara);
   --fact-box-bg-dark: var(--color-dandilion);
@@ -272,15 +256,6 @@ body {
   --table-padding: var(--spacing-small);
   --table-bg-color: var(--color-grey-light);
 
-  /* Tabs */
-  /* --tabs-border: var(--border);
-  --tabs-border-color: var(--color-grey-dark);
-  --tabs-text-color: var(--color-grey-dark);admin (1)
-  --tabs-button-bg-color: var(--color-grey-light);
-  --tabs-button-active-color: var(--color-white);
-  --tabs-button-font-size: var(--font-size);
-  --tabs-button-font-family: var(--font-primary); */
-
   /* Links styled like buttons */
   /* --button-link-padding: var(--spacing); */
   /* --button-link-bg-color: var(--color-accent); */
@@ -288,30 +263,11 @@ body {
   /* --button-link-bg-color-hover: var(--color-accent); */
   --button-link-color-hover: var(--color-black);
 
-  /* Step-by-Step */
-  /* --step-by-step-relationship-border-color: var(--color-accent);
-  --step-by-step-part-of-color: var(--color-accent);
-  --step-by-step-active-item-color: var(--color-accent);
-  --step-by-step-active-bullet-bg-color: var(--color-accent);
-  --step-by-step-active-bullet-border-color: var(--color-accent);
-  --step-by-step-line-joining-items-border: var(--border);
-  --step-by-step-line-joining-items-color: var(--color-accent);
-  --step-by-step-nav-block-width: var(--width-medium); */
-
   /* Call-out Box */
   /* --call-out-box-padding: var(--spacing-large);
   --call-out-box-link-padding: var(--spacing-smaller);
   --call-out-box-bg-color: var(--color-accent); */
   --call-out-box-text-color: var(--color-black);
-
-  /* Service Statuses */
-  /* --service-statuses-padding: var(--spacing);
-  --service-statuses-container-bg-color: var(--color-accent);
-  --service-statuses-container-text-color: var(--color-white);
-  --service-statuses-list-bg-color: var(--color-white);
-  --service-statuses-list-spacing: var(--spacing-large);
-  --service-statuses-list-border: var(--border);
-  --service-statuses-list-border-color: var(--color-accent); */
 
   /* Banner */
   /* --banner-content-width: var(--width-medium);
@@ -331,56 +287,3 @@ body {
   /* News */
   /* --newsroom-featured-bottom-space: var(--spacing-largest);
   --news-category-spacing: var(--spacing); */
-
-  /* Search Results */
-  /* --search-results-item-spacing: var(--spacing-largest);
-  --search-results-list-item-border: var(--border);
-  --search-results-list-item-marker-color: transparent; */
-
-  /* WYSIWYG Styles */
-  /* --btn-start-bg-color: var(--color-success);
-  --btn-start-bg-color-hover: var(--color-white);
-  --btn-start-color: var(--color-white);
-  --btn-start-color-hover: var(--conHomepage (1)or-success);
-  --btn-start-padding-horizontal: var(--spacing);
-  --btn-start-padding-vertical: var(--spacing-smaller);
-  --btn-start-border: var(--border);
-  --btn-:root {
-  --big-slogan: {
-    color: red;
-    font-weight: 600;
-  };
-}
-start-border-color-hover: var(--btn-start-bg-color);
-  --btn-start-icon: "\203A";
-  --btn-start-icon-size: var(--font-size-largest);
-  --btn-start-icon-top: -3px;
-  --external-link-icon-color: var(--color-accent); */
-
-  /* Alert Banner */
-  /* --alert-banner-bg-color: var(--color-success);
-  --alert-banner-bg-color-minor: var(--color-minor);
-  --alert-banner-bg-color-major: var(--color-danger);
-  --alert-banner-bg-color-notable-pnerson: var(--color-black);
-  --alert-banner-color: var(--color-white);
-  --a:root {
-  --big-slogan: {
-    color: red;
-    font-weight: 600;
-  };
-}
-lert-banner-close-button-bg-color: var(--color-black);
-  --alert-banner-close-button-color: var(--color-white);
-  --alert-banner-close-button-border-color: var(--color-white);
-  --alert-banner-close-padding-vertical: var(--spacing-smaller);
-  --alert-banner-close-padding-horizontal: var(--spacing-small);
-  --alert-banner-color-minor: var(--color-black);
-  --alert-banner-close-border: var(--border);
-  --alert-banner-close-border-color:Homepage (1) var(--color-white);
-  --alert-banner-inner-margin-vertical: 0;
-  --alert-banner-inner-margin-horizontal: 0;
-  --alert-banner-inner-padding-vertical: var(--spacing);
-  --alert-banner-inner-padding-horizontal: 0;
-
-
-}*/

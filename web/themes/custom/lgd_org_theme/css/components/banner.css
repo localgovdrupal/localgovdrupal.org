@@ -9,7 +9,6 @@
 @media screen and (min-width: 72rem) {
   .lgd-region--banner {
     padding-bottom: var(--spacing-largest);
-    /* padding-top: var(--spacing); */
   }
   .lgd-region--banner .lgd-region__inner {
     display: grid;
