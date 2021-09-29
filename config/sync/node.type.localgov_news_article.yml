@@ -5,6 +5,13 @@ dependencies:
   enforced:
     module:
       - localgov_news
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: oeLShrBt3cog1ZI2TMZBGIduyGnQ5Df-1NF_QREvguY
 name: 'News article'
