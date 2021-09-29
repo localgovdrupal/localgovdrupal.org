@@ -5,7 +5,7 @@ generate_duration: 10000
 remove_duplicates: true
 skip_untranslated: true
 xsl: true
-base_url: ''
+base_url: 'https://localgovdrupal.org'
 default_variant: default
 custom_links_include_images: false
 excluded_languages: {  }
@@ -15,3 +15,5 @@ enabled_entity_types:
   - menu_link_content
 _core:
   default_config_hash: 2CVQWCMHHIqT_kLCVL_IRfqt8HP9IrnehZNbhXk2jZ0
+disable_language_hreflang: false
+entities_per_queue_item: 50
