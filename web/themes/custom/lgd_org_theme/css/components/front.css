@@ -2,22 +2,23 @@
   margin-bottom: var(--spacing);
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 60rem) {
   .path-frontpage .field--name-localgov-subsites-content > .field__item{
     margin-bottom: var(--spacing-largest);
   }
   .path-frontpage .layout{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
   }
 
   .path-frontpage .layout--twocol > .layout__region--first{
-    grid-column: 1 / span 2;
+    grid-column: 1 ;
   }
   .path-frontpage .layout--twocol > .layout__region--second{
-    grid-column: 3 / span 3;
+    grid-column: 2 / span 2;
+    max-width: 49rem;
   }
 
   .path-frontpage .layout--threecol-33-34-33 {
@@ -41,9 +42,28 @@
   font-size: clamp(var(--font-size-medium), 2.5vw, 1.625rem);
   font-weight: 500;
 }
-
+.path-frontpage blockquote {
+  font-size: clamp(1.2rem, 3vw, 1.875rem);
+}
 .path-frontpage .pull-out-quote{
   max-width: 795px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 48rem) {
+  .path-frontpage .node__content .pull-out-quote {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 60rem) {
+  .path-frontpage .node__content .pull-out-quote {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+  }
+}
+.path-frontpage .pull-out-quote__content:before {
+  width: 44PX;
+  margin-bottom: 1rem;
 }

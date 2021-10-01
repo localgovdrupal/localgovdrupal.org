@@ -24,7 +24,7 @@
   font-family: var(--font-secondary);
   font-size: clamp(var(--font-size-largish), 2.5vw, 1.875rem);
   letter-spacing: -1px;
-  max-width: 740px;
+  max-width: 560px;
 }
 
 .path-frontpage .block-lgd-org-blocks-blocks {
@@ -36,6 +36,7 @@
     font-size: 3.125rem;
     margin-bottom: var(--spacing);
     line-height: 1.14;
+    max-width: 740px;
   }
   .block-lgd-org-blocks-blocks-2 {
     /* font-size: 1.5rem; */

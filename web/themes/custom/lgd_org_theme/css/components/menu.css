@@ -105,7 +105,7 @@ header .menu a{
   }
 
   .menu--utility-menu li {
-    padding: calc(var(--spacing)/2);
+    padding: 10px;
     border: none;
   }
 
@@ -125,10 +125,10 @@ header .menu a{
   }
   .menu--utility-menu li:nth-last-of-type(3) {
     margin-left: var(--spacing);
-    padding-left: var(--spacing);
+    padding-left: 20px;
   }
   .menu--utility-menu li:nth-last-of-type(1) {
-    padding-right: var(--spacing);
+    padding-right: 20px;
   }
   .menu--main {
     font-size: 21px;
@@ -164,7 +164,7 @@ header .menu a{
 
 @media screen and (min-width: 72rem) {
   .menu--main {
-    font-size: var(--font-size-larger);
+    font-size: 1.5625rem;
   }
 }
 

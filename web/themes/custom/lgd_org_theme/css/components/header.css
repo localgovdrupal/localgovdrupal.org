@@ -21,7 +21,7 @@
 .lgd-header__inner {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
+  align-items: flex-start;
 }
 
 .lgd-header .lgd-region--header {
@@ -123,6 +123,8 @@
 @media screen and (min-width: 60rem) {
   .branding__item--logo {
     margin-top: 3rem;
+  }
+  .path-frontpage .branding__item--logo {
     margin-bottom: 4.5rem;
   }
 }

@@ -121,7 +121,7 @@
 
 
 main {
-  margin-top: var(--spacing-larger);
+  margin-top: 2rem;
   margin-bottom: var(--spacing-larger);
 }
 
