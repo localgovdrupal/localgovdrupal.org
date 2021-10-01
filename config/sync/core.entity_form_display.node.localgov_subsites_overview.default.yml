@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.localgov_subsites_overview.field_meta_tags
     - field.field.node.localgov_subsites_overview.localgov_subsites_banner
     - field.field.node.localgov_subsites_overview.localgov_subsites_content
     - field.field.node.localgov_subsites_overview.localgov_subsites_hide_menu
@@ -12,6 +13,7 @@ dependencies:
   module:
     - field_group
     - layout_paragraphs
+    - metatag
     - paragraphs
     - path
 third_party_settings:
@@ -88,6 +90,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta_tags:
+    weight: 40
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   localgov_subsites_banner:
     type: entity_reference_paragraphs
     weight: 37

@@ -6,6 +6,7 @@ dependencies:
     - facets.facet.localgov_news_category
     - field.field.node.localgov_news_article.body
     - field.field.node.localgov_news_article.field_media_image
+    - field.field.node.localgov_news_article.field_meta_tags
     - field.field.node.localgov_news_article.localgov_news_categories
     - field.field.node.localgov_news_article.localgov_news_date
     - field.field.node.localgov_news_article.localgov_news_related
@@ -17,6 +18,7 @@ dependencies:
   module:
     - datetime
     - entity_reference_facet_link
+    - metatag
     - text
     - user
 _core:
@@ -32,6 +34,13 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   links:
     weight: 0

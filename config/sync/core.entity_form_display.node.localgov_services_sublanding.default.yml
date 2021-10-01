@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.localgov_services_sublanding.body
+    - field.field.node.localgov_services_sublanding.field_meta_tags
     - field.field.node.localgov_services_sublanding.localgov_services_parent
     - field.field.node.localgov_services_sublanding.localgov_topics
     - node.type.localgov_services_sublanding
   module:
     - field_group
+    - metatag
     - paragraphs
     - path
     - text
@@ -94,6 +96,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta_tags:
+    weight: 102
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   localgov_services_navigation_children:
     weight: -20
     settings: {  }

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.localgov_services_landing.body
+    - field.field.node.localgov_services_landing.field_meta_tags
     - field.field.node.localgov_services_landing.localgov_address
     - field.field.node.localgov_services_landing.localgov_address_first_line
     - field.field.node.localgov_services_landing.localgov_common_tasks
@@ -22,6 +23,7 @@ dependencies:
   module:
     - link
     - localgov_services_landing
+    - metatag
     - text
     - user
 _core:
@@ -37,6 +39,13 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   localgov_address:
     weight: 4
@@ -135,3 +144,4 @@ hidden:
   localgov_common_tasks: true
   localgov_contact_us_online: true
   localgov_other_team_contacts: true
+  search_api_excerpt: true

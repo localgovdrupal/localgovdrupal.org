@@ -1,0 +1,21 @@
+uuid: 33ad94f9-8e2b-4228-bfd4-395c31eaaadf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.localgov_services_sublanding
+  module:
+    - metatag
+id: node.localgov_services_sublanding.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: localgov_services_sublanding
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

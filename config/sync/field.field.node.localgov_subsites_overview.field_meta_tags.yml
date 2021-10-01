@@ -1,0 +1,21 @@
+uuid: 64ae05d3-f584-42ff-a904-0c4110f2e9bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.localgov_subsites_overview
+  module:
+    - metatag
+id: node.localgov_subsites_overview.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: localgov_subsites_overview
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

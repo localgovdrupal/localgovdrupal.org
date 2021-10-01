@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.localgov_news_article.body
     - field.field.node.localgov_news_article.field_media_image
+    - field.field.node.localgov_news_article.field_meta_tags
     - field.field.node.localgov_news_article.localgov_news_categories
     - field.field.node.localgov_news_article.localgov_news_date
     - field.field.node.localgov_news_article.localgov_news_related
@@ -17,6 +18,7 @@ dependencies:
     - datetime
     - field_group
     - media_library
+    - metatag
     - path
     - text
 third_party_settings:
@@ -125,6 +127,13 @@ content:
     third_party_settings: {  }
     type: media_library_widget
     region: content
+  field_meta_tags:
+    weight: 51
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   localgov_news_categories:
     weight: 4
     settings:
@@ -212,4 +221,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

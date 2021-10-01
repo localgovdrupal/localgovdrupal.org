@@ -5,6 +5,7 @@ dependencies:
   config:
     - entity_browser.browser.page_components
     - field.field.node.localgov_services_page.body
+    - field.field.node.localgov_services_page.field_meta_tags
     - field.field.node.localgov_services_page.localgov_common_tasks
     - field.field.node.localgov_services_page.localgov_download_links
     - field.field.node.localgov_services_page.localgov_hide_related_topics
@@ -19,6 +20,7 @@ dependencies:
     - field_group
     - link_attributes
     - localgov_services
+    - metatag
     - path
     - text
 third_party_settings:
@@ -108,6 +110,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta_tags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   localgov_common_tasks:
     weight: 11
     settings:
