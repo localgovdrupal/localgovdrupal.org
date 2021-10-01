@@ -20,15 +20,26 @@
 .block-lgd-org-blocks-blocks {
   --line-height: 1.15;
   line-height: var(--line-height);
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
   font-family: var(--font-secondary);
   font-size: clamp(var(--font-size-largish), 2.5vw, 1.875rem);
   letter-spacing: -1px;
+  max-width: 740px;
 }
 
 .path-frontpage .block-lgd-org-blocks-blocks {
-  font-size: clamp(var(--font-size-larger), 2.5vw, var(--font-size-largest));
+  font-size: var(--font-size-larger);
   margin-bottom: var(--spacing);
+}
+@media screen and (min-width: 72rem) {
+  .path-frontpage .block-lgd-org-blocks-blocks {
+    font-size: 3.125rem;
+    margin-bottom: var(--spacing);
+    line-height: 1.14;
+  }
+  .block-lgd-org-blocks-blocks-2 {
+    /* font-size: 1.5rem; */
+  }
 }
 
 .block-lgd-org-blocks-blocks-2 {
@@ -36,8 +47,10 @@
   line-height: var(--line-height);
   grid-column: 1 / span 3;
   font-size: 24px;
-  font-size: clamp(var(--font-size-medium), 2.5vw, var(--font-size-larger));
+  font-size: clamp(var(--font-size-medium), 2.5vw, 1.5rem);
   margin-bottom: var(--spacing);
+  font-weight: 500;
+  letter-spacing: -0.5px;
 }
 
 .block-lgd-org-blocks-blocks-3 {
@@ -62,7 +75,7 @@
   margin-left: auto;
   margin-right: auto;
   font-size: var(--font-size-small);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .lgd-org--councils .number {
@@ -83,6 +96,8 @@
     font-size: 5.3125rem;
   }
   .lgd-org--councils {
-    font-size: var(--font-size-normal)
+    font-size: var(--font-size-medium);
+    line-height: 1.1;
+    /* font-weight: normal; */
   }
 }

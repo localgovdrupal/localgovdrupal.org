@@ -152,7 +152,7 @@ body {
   --breadcrumbs-spacing-bottom: clamp(var(--spacing-smaller), 2.5vw, var(--spacing-large));
 
   /* Header Items */
-  --section-spacing-vertical-header: clamp(var(--spacing), 2.5vw, var(--spacing-large));
+  --section-spacing-vertical-header: clamp(var(--spacing), 2.5vw, 1.5rem);
   --color-section-header-bg: var(--color-accent);
   --header-link-color: var(--color-black);
   --header-services-button-border: var(--border);

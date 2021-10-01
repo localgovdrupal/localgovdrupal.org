@@ -21,7 +21,7 @@
 .lgd-header__inner {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .lgd-header .lgd-region--header {
@@ -118,6 +118,13 @@
 
 .branding__item--logo {
   width: var(--header-logo-width);
+
+}
+@media screen and (min-width: 60rem) {
+  .branding__item--logo {
+    margin-top: 3rem;
+    margin-bottom: 4.5rem;
+  }
 }
 
 .branding__item--logo a {
