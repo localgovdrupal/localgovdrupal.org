@@ -47,7 +47,7 @@ h2 {
 
 blockquote {
   margin-top: var(--spacing-largest);
-  margin-bottom: var(--spacing-larger);
+  margin-bottom: var(--spacing-largest);
 }
 
 table {

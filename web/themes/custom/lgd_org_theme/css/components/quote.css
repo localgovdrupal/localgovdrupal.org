@@ -1,50 +1,6 @@
-.pull-out-quote {
-  margin-right: 0;
-  margin-left: 0;
-  padding: var(--quote-padding);
-  padding-left: var(--quote-padding-left);
-  border-color: transparent;
-  border-left: 0px;
-  background-color: var(--quote-bg-color);
-  font-family: var(--font-secondary);
-  font-size: clamp(var(--font-size-largish), 2.5vw, var(--font-size-large));
-  margin-top: clamp(var(--spacing), 2vw, var(--spacing-largest));
-  margin-bottom: clamp(var(--spacing), 2.5vw, var(--spacing-largest));
-}
-
-.pull-out-quote__content {
-  margin: 0;
-}
-
-@media screen and (min-width: 48rem) {
-  blockquote {
-    width: 60%;
-  }
-  .pull-out-quote blockquote {
-    width: 100%;
-  }
-}
-
-.pull-out-quote__author {
-  margin-top: var(--vertical-rhythm-spacing);
-  color: var(--quote-author-color);
-  font-weight: normal;
-  font-size: var(--font-size-medium);
-  font-family: var(--font-primary);
-}
-
-.pull-out-quote__author:before {
-  content: '';
-  background: url("../../assets/images/speech.svg") no-repeat 0 50% ;
-  height: 70px;
-  width: 100%;
-  display: block;
-  background-size: contain;
-  margin-bottom: var(--spacing-small);
-}
-
-
 blockquote {
+  --font-size-largish: calc(var(--font-size) * 1.375);
+  --font-size-larger: calc(var(--font-size) * 1.5);
   font-family: var(--font-secondary);
   font-size: var(--font-size-larger);
   font-size: clamp(var(--font-size-largish), 2.5vw, var(--font-size-larger));
@@ -58,30 +14,79 @@ blockquote > p:first-of-type:before,
   height: 24px;
   width: 31px;
   display: inline-block;
-  background-size: contain;
+  background-size: 100%;
   margin-right: var(--spacing);
 }
 
+blockquote > p:first-of-type:before {
+  background: url("../../assets/images/quote-purple.svg") no-repeat 0 50% ;
+}
+
+blockquote > p:last-of-type:after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  border-top: 5px solid var(--color-melrose);
+  margin-top: 12px;
+}
+
+.pull-out-quote {
+  --font-size-largish: calc(var(--font-size) * 1.375);
+  --font-size-large: calc(var(--font-size) * 1.5);
+  --spacing-mega: 4rem;
+  margin-right: 0;
+  margin-left: 0;
+  padding: var(--quote-padding);
+  padding-left: var(--quote-padding-left);
+  border-color: transparent;
+  border-left: 0px;
+  background-color: var(--quote-bg-color);
+  font-family: var(--font-secondary);
+  font-size: clamp(var(--font-size-largish), 8vw, var(--font-size-large));
+  margin-top: clamp(var(--spacing), 8vw, var(--spacing-largest));
+  margin-bottom: clamp(var(--spacing), 8vw, var(--spacing-mega));
+  text-align: center;
+}
+
+.pull-out-quote__content {
+  margin: 0;
+  width: 100%;
+  background: url("../../assets/images/speech-front.svg") no-repeat 0 100% ;
+  padding-bottom: clamp(50px, 8vw, 75px);
+  background-size: contain;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.pull-out-quote__author {
+  margin-top: 1rem;
+  color: var(--quote-author-color);
+  font-weight: normal;
+  font-size: var(--font-size-medium);
+  font-family: var(--font-primary);
+}
 .pull-out-quote__content:before {
-  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.pull-out-quote__content:before {
+  height: 30px;
   width: 36px;
+  margin-bottom: 1.5rem;
   display: block;
 }
 
 /* Front page overrides */
 
-.path-frontpage .pull-out-quote__author:before{
-  background: url("../../assets/images/speech-front.svg") no-repeat 0 50% ;
-  background-size: 100%;
-}
-
-.path-frontpage .pull-out-quote {
-  text-align: center;
-}
-
-.path-frontpage blockquote > p:first-of-type:before,
 .path-frontpage .pull-out-quote__content:before{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: 50px;
+}
+.path-frontpage .pull-out-quote__content{
+  padding-bottom: clamp(50px, 8vw, 75px);
 }
