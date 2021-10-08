@@ -102,7 +102,7 @@ body {
   --font-size: 1rem;
   /* --font-size-smallest: calc(var(--font-size) * 0.3);
   --font-size-smaller: calc(var(--font-size) * 0.5); */
-  --font-size-small: calc(var(--font-size) * 0.875); /*17px*/
+  --font-size-small: calc(var(--font-size) * 0.875);
   --font-size-normal: calc(var(--font-size) * 1);
   --font-size-medium: calc(var(--font-size) * 1.0625);/*17px*/
   --font-size-large: calc(var(--font-size) * 1.1875);/*19px*/
@@ -117,15 +117,7 @@ body {
   --font-size-h6: var(--font-size-medium); */
 
   /* Borders */
-  /* --border-width: 1px;
-  --border-width-large: 5px; */
-  /* --border-color: var(--color-grey-light); */
   --border-color-dark: var(--color-black);
-  /* --border-color-alert: var(--color-black); */
-  /* --border-style: solid;
-  --border-radius: var(--spacing-smallest);
-  --border: var(--border-width) var(--border-style) var(--border-color);
-  --border-large: var(--border-width-large) var(--border-style) var(--border-color); */
 
   /* Animation */
   /* --transition-time: 0.3s; */

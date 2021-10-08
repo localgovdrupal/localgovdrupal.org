@@ -74,6 +74,9 @@ header .menu a{
   .lgd-region--primary-menu .menu--main {
       display: block !important;
   }
+  .lgd-region--primary-menu .menu--main > .menu-item a {
+    color: var(--color-black);
+  }
 }
 
 @media screen and (min-width: 60rem){
