@@ -140,9 +140,34 @@ main {
 .media-with-text {
   margin-bottom: var(--spacing);
 }
+
+.media-with-text--media-right ,
+.media-with-text--media-left {
+    display: block;
+}
+
 .media-with-text--media-right > *,
 .media-with-text--media-left > *{
-  width: 50%;
+    width: 100%;
+}
+.media-with-text--media-left > *:last-child {
+  padding-left: 0;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .media-with-text--media-right ,
+  .media-with-text--media-left {
+      display: flex;
+  }
+  .media-with-text--media-right > *,
+  .media-with-text--media-left > *{
+    width: 50%;
+  }
+  .media-with-text--media-left > *:last-child {
+    padding-left: 1rem;
+    padding-top: 0;
+  }
 }
 
 
