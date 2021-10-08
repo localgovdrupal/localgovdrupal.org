@@ -52,6 +52,11 @@ blockquote > p:last-of-type:after {
 .pull-out-quote__content {
   margin: 0;
   width: 100%;
+  background: url("../../assets/images/speech-front.svg") no-repeat 0 100% ;
+  padding-bottom: clamp(50px, 8vw, 75px);
+  background-size: contain;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pull-out-quote__author {
@@ -66,15 +71,6 @@ blockquote > p:last-of-type:after {
   margin-left: auto;
   margin-right: auto;
 }
-.pull-out-quote__content:after {
-  content: '';
-  background: url("../../assets/images/speech-front.svg") no-repeat 0 100% ;
-  height: 60px;
-  width: 100%;
-  display: block;
-  background-size: 100%;
-  /* margin-bottom: var(--spacing-small); */
-}
 
 
 
@@ -88,18 +84,9 @@ blockquote > p:last-of-type:after {
 
 /* Front page overrides */
 
-/* .path-frontpage .pull-out-quote__author:before{
-  background: url("../../assets/images/speech-front.svg") no-repeat 0 50% ;
-  background-size: 100%;
-}
-
-.path-frontpage .pull-out-quote {
-  text-align: center;
-}
-
-.path-frontpage blockquote > p:first-of-type:before,
 .path-frontpage .pull-out-quote__content:before{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
+  height: 50px;
+}
+.path-frontpage .pull-out-quote__content{
+  padding-bottom: clamp(50px, 8vw, 75px);
+}
