@@ -131,7 +131,7 @@ main {
 
 @media screen and (min-width: 70rem) {
   .branding__item--logo {
-    width: 12rem !important;
+    width: 13.25 ;
   }
 }
 

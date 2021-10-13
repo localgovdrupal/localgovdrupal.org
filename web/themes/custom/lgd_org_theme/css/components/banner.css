@@ -13,7 +13,7 @@
   .lgd-region--banner .lgd-region__inner {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    gap: 16px;
   }
 }
 
@@ -48,7 +48,7 @@
   line-height: var(--line-height);
   grid-column: 1 / span 3;
   font-size: 24px;
-  font-size: clamp(var(--font-size-medium), 2.5vw, 1.5rem);
+  font-size: clamp(var(--font-size-medium), 2.5vw, 1.3125rem);
   margin-bottom: var(--spacing);
   font-weight: 500;
   letter-spacing: -0.5px;
