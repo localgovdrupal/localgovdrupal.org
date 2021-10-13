@@ -42,9 +42,9 @@ body {
   --spacing-smaller: 0.5rem;
   --spacing-small: 0.75rem;
   --spacing: 1rem;
-  --spacing-large: 1.5625rem; /*25px*/
+  --spacing-large: 1.5rem; /*24px*/
   --spacing-larger: 2.34375rem; /*37.5px*/
-  --spacing-largest: 3.125rem; /*50px*/
+  --spacing-largest: 3rem; /*48px*/
   --spacing-mega: 4.5rem; /*72px*/
   --spacing-padding-horizontal: 0;
   --line-height: 1.4;

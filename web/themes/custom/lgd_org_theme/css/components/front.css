@@ -67,3 +67,102 @@
   width: 44PX;
   margin-bottom: 1rem;
 }
+
+
+/* Adding a facncy section at the top of the homepage. */
+.path-frontpage main {
+  margin-top: 0;
+}
+
+.lgd-region--content-top {
+  background: linear-gradient(180deg, #FFE376 30.48%, #FF8262 114.39%);
+  background: linear-gradient(180deg, rgba(255,227,118, 0.6) 30.48%, rgba(255,130,98, 0.6) 114.39%);
+  padding: calc(var(--spacing)*2) 0 var(--spacing-largest);
+  margin-bottom: calc(var(--spacing)*4);
+}
+
+@media screen and (min-width: 40rem) {
+  .block-homepage--intro .field--name-field-content {
+    display: grid;
+    grid-gap: 48px 64px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Layout the blocks in that fancy section.  */
+
+.block-homepage--intro .field--name-field-content > .field__item:first-of-type {
+  grid-column: 1 / span 3;
+}
+
+.block-homepage--intro .field--name-field-content > .field__item {
+  grid-column: 4 / span 3;
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-largish);
+}
+
+.block-homepage--intro .field--name-field-content > .field__item:last-of-type {
+  grid-column: 1 / span 6;
+  font-family: var(--font-primary);
+  --font-size-largest: 2.5rem;
+  font-size: clamp(var(--font-size-larger), 2.5vw, var(--font-size-largest));
+  text-align: center;
+  line-height: 1.28;
+  /* line-height: 48px; */
+  font-weight: 500;
+  margin-top: var(--spacing-largest);
+}
+
+@media screen and (min-width: 50rem) {
+  .block-homepage--intro .field--name-field-content > .field__item:last-of-type {
+    grid-column: 2 / span 4;
+    margin-top: 0;
+  }
+}
+
+/* Use the carbon callout style for a nice fancy link  */
+
+.block-homepage--intro .callout-carbon {
+  background-color: transparent;
+  color: black;
+  padding: 0;
+  display: block;
+  margin-top: 2rem;
+}
+
+.block-homepage--intro .callout-carbon a {
+  color: black;
+  text-decoration: none;
+  padding: var(--spacing);
+  padding-right: 82px;
+  position: relative;
+  border: 1px solid black;
+  font-weight: 600;
+  margin-top: var(--spacing);
+}
+
+.block-homepage--intro .callout-carbon a:hover,
+.block-homepage--intro .callout-carbon a:focus {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+.block-homepage--intro .callout-carbon a:after {
+  background: url(../../assets/images/arrow.svg) 50% 50% no-repeat;
+  content: "";
+  height: 100%;
+  width: 65px;
+  display: inline-block;
+  border-left: 1px solid black;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Use something for another fancy link. */
+
+.block-homepage--intro .field--name-field-content > .field__item:nth-last-of-type(2) a{
+  background: url(../../assets/images/arrow.svg)  100% 70% no-repeat;
+  background-size: 25px;
+  padding-right: 36px;
+}
