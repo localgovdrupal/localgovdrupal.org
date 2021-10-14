@@ -38,9 +38,6 @@
     line-height: 1.14;
     max-width: 740px;
   }
-  .block-lgd-org-blocks-blocks-2 {
-    /* font-size: 1.5rem; */
-  }
 }
 
 .block-lgd-org-blocks-blocks-2 {
@@ -99,6 +96,5 @@
   .lgd-org--councils {
     font-size: var(--font-size-medium);
     line-height: 1.1;
-    /* font-weight: normal; */
   }
 }

@@ -37,11 +37,6 @@
   }
 }
 
-/* .path-frontpage .field--name-localgov-subsites-content > .field__item:first-of-type > .paragraph--type--page-section .layout__region--first p:first-of-type {
-  font-family: var(--font-primary);
-  font-size: clamp(var(--font-size-medium), 2.5vw, 1.625rem);
-  font-weight: 500;
-} */
 .path-frontpage blockquote {
   font-size: clamp(1.2rem, 3vw, 1.875rem);
 }
