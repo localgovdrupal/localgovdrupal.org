@@ -37,6 +37,8 @@
   background-size: 51% 51%;
   background-repeat: no-repeat;
   padding: var(--spacing-large);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
   max-width: 22rem;
   margin-left: auto;
@@ -93,10 +95,11 @@ background:
 .link-block__title {
   text-align: center;
   font-family: var(--font-secondary) !important;
-  margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing-large);
   font-size: 2rem;
   font-weight: 500;
   font-size: clamp(1.875rem, 2.5vw, 2rem);
+  line-height: 1.14;
 }
 
 .link-block__title a{
@@ -114,4 +117,5 @@ background:
 
 .link-block__content {
   font-size: var(--font-size-large);
+  line-height: 1.4;
 }

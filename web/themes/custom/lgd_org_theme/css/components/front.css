@@ -49,9 +49,15 @@
   max-width: 795px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 48rem) {
+  .path-frontpage .pull-out-quote {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
   .path-frontpage .node__content .pull-out-quote {
     margin-top: 3rem;
     margin-bottom: 4rem;
@@ -59,8 +65,8 @@
 }
 @media screen and (min-width: 60rem) {
   .path-frontpage .node__content .pull-out-quote {
-    margin-top: 5rem;
-    margin-bottom: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 .path-frontpage .pull-out-quote__content:before {

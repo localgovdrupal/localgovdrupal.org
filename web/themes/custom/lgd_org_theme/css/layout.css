@@ -44,7 +44,7 @@
   background: rgb(255,225,70);
   background: linear-gradient(180deg, rgba(255,225,70,0.8) 0%, rgba(255,130,98,0.8) 100%);
   text-align: center;
-  padding-top: var(--spacing-larger);
+  padding-top: 3rem;
 }
 
 .lgd-region--content-bottom .lgd-container {
@@ -66,7 +66,7 @@
   margin-bottom: var(--spacing);
 }
 .lgd-region--content-bottom .field--name-body {
-  margin-bottom: var(--spacing-largest);
+  margin-bottom: 4rem;
   width: 90%;
   max-width: 52rem;
   margin-left: auto;
@@ -77,6 +77,7 @@
   font-weight: 500;
   line-height: 1.2;
   font-family: var(--font-primary);
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 48rem) {
