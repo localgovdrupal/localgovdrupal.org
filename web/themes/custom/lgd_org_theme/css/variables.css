@@ -6,8 +6,8 @@
   Want a font? Load it here, or in the html.html.twig file (you'll have to
   copy that file to the theme) which should give you an even faster loading time.
 */
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
 
 /*
   Override whatever variables you want.
@@ -201,3 +201,4 @@ body {
 
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
+}
