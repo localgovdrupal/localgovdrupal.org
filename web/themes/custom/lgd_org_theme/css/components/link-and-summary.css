@@ -112,6 +112,9 @@ background:
   text-decoration: none;
   margin-bottom: var(--spacing-large);
 }
+.link-block__title a:hover{
+  text-decoration: underline;
+}
 
 .link-block__title-wrapper {
   display: inline;
