@@ -43,6 +43,12 @@
   max-width: 22rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 40rem) {
+  .link-block {
+    margin-bottom: 0;
+  }
 }
 
 .layout__region--second .link-block{
@@ -98,7 +104,7 @@ background:
   margin-bottom: var(--spacing-large);
   font-size: 2rem;
   font-weight: 500;
-  font-size: clamp(1.875rem, 2.5vw, 2rem);
+  font-size: clamp(1.875rem, 2.5vw, 2.1875rem);
   line-height: 1.14;
 }
 
@@ -116,6 +122,6 @@ background:
 }
 
 .link-block__content {
-  font-size: var(--font-size-large);
+  font-size: 1.25rem;
   line-height: 1.4;
 }

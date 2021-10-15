@@ -42,7 +42,7 @@
 
 .special--homepage {
   background: rgb(255,225,70);
-  background: linear-gradient(180deg, rgba(255,225,70,0.8) 0%, rgba(255,130,98,0.8) 100%);
+  background: linear-gradient(180deg, #FFED90 0%, #FFB4A1 100%);
   text-align: center;
   padding-top: 3rem;
 }

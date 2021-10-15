@@ -130,6 +130,14 @@
     margin-bottom: 3rem;
   }
 }
+
+@media screen and (min-width: 70rem) {
+  .branding__item--logo {
+    width: 13.25rem ;
+  }
+}
+
+
 .path-frontpage header {
   padding-bottom: var(--spacing);
 }
