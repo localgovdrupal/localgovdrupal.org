@@ -75,7 +75,7 @@
   margin-top: 0;
 }
 
-.lgd-region--content-top {
+.path-frontpage .lgd-region--content-top {
   background: linear-gradient(180deg, #FFE376 30.48%, #FF8262 114.39%);
   background: linear-gradient(180deg, rgba(255,227,118, 0.6) 30.48%, rgba(255,130,98, 0.6) 114.39%);
   padding: calc(var(--spacing)*2) 0 var(--spacing-largest);

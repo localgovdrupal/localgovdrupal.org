@@ -14,7 +14,7 @@
 
 .lgd-header {
   padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
-  padding-bottom: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
+  padding-bottom: 1rem;
   background-color: var(--color-section-header-bg);
 }
 
