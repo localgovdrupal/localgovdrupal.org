@@ -59,4 +59,9 @@ front:
   css:
     theme:
       css/components/front.css: {}
-
+header-js:
+  js:
+    js/header.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupal.debounce
