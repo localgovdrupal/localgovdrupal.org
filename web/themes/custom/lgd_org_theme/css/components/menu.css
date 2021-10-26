@@ -1,4 +1,63 @@
-Main menu styling
+/*
+  @file Theming main menu.
+*/
+/* .lgd-region--primary-menu {
+  background-color: var(--color-white);
+} */
+
+/* .menu--main {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+} */
+
+.menu--main > .menu-item a {
+  /* display: block; */
+  padding: 0;
+  /* color: var(--color-black); */
+}
+
+/* .menu--main > .menu-item--active-trail a,
+.menu--main > .menu-item a:focus,
+.menu--main > .menu-item a:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+} */
+
+ @media screen and (min-width: 48rem) {
+ /* .lgd-region--primary-menu {
+    background-color: transparent;
+  }
+
+  .lgd-region--primary-menu .menu--main {
+    display: flex;
+  } */
+
+  .menu--main > .menu-item {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* .menu--main > .menu-item a {
+    border: 1px solid transparent;
+    color: var(--color-white);
+    background-color: transparent;
+  }
+
+  .menu--main > .menu-item--active-trail a,
+  .menu--main > .menu-item a:focus,
+  .menu--main > .menu-item a:hover {
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  .menu--main > .menu-item a:hover {
+    border-color: var(--color-white);
+  } */
+}
+
+
+/* Main menu styling */
 
 .menu--main > .menu-item a {
   padding: 0 !important;
@@ -84,7 +143,7 @@ header .menu a{
       display: flex !important;
   }
   .navigation--main {
-    margin-right: -22px;
+    margin-right: -1rem;
   }
 }
 
@@ -183,3 +242,5 @@ header .menu a{
   background-color: transparent !important;
   font-weight: 600;
 }
+
+

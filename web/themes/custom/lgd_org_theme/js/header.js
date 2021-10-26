@@ -128,7 +128,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
       // the secondary menu region when clicked (the primary menu will always be visible).
       function handleWindowResized() {
         handleReset();
-        if  (window.innerWidth < 768) {
+        if  (window.innerWidth < 961) {
           if (secondaryMenuToggle !== null && secondaryMenuRegion !== null) {
             secondaryMenuToggle.removeEventListener('click', handleSecondaryMenuToggleClick, true);
             secondaryMenuToggle.removeEventListener('click', handleSecondaryMenuShiftTabClick, true);
