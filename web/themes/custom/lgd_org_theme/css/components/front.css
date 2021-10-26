@@ -37,11 +37,6 @@
   }
 }
 
-.path-frontpage .field--name-localgov-subsites-content > .field__item:first-of-type > .paragraph--type--page-section .layout__region--first p:first-of-type {
-  font-family: var(--font-primary);
-  font-size: clamp(var(--font-size-medium), 2.5vw, 1.625rem);
-  font-weight: 500;
-}
 .path-frontpage blockquote {
   font-size: clamp(1.2rem, 3vw, 1.875rem);
 }
@@ -49,9 +44,15 @@
   max-width: 795px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 48rem) {
+  .path-frontpage .pull-out-quote {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
   .path-frontpage .node__content .pull-out-quote {
     margin-top: 3rem;
     margin-bottom: 4rem;
@@ -59,11 +60,117 @@
 }
 @media screen and (min-width: 60rem) {
   .path-frontpage .node__content .pull-out-quote {
-    margin-top: 5rem;
-    margin-bottom: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 .path-frontpage .pull-out-quote__content:before {
   width: 44PX;
   margin-bottom: 1rem;
+}
+
+
+/* Adding a facncy section at the top of the homepage. */
+.path-frontpage main {
+  margin-top: 0;
+}
+
+.path-frontpage .lgd-region--content-top {
+  background: linear-gradient(180deg, #FFE376 30.48%, #FF8262 114.39%);
+  background: linear-gradient(180deg, rgba(255,227,118, 0.6) 30.48%, rgba(255,130,98, 0.6) 114.39%);
+  padding: calc(var(--spacing)*2) 0 var(--spacing-largest);
+  margin-bottom: calc(var(--spacing)*3);
+}
+
+@media screen and (min-width: 40rem) {
+  .block-homepage--intro .field--name-field-content {
+    display: grid;
+    grid-gap: 48px 64px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .lgd-region--content-top {
+    margin-bottom: calc(var(--spacing)*4);
+  }
+}
+
+/* Layout the blocks in that fancy section.  */
+
+.block-homepage--intro .field--name-field-content > .field__item:first-of-type {
+  grid-column: 1 / span 3;
+}
+
+.block-homepage--intro .field--name-field-content > .field__item {
+  grid-column: 4 / span 3;
+  font-family: var(--font-secondary);
+  font-size: clamp(var(--font-size-large), 2.5vw , var(--font-size-largish));
+  line-height: 1.39;
+}
+
+.block-homepage--intro .field--name-field-content > .field__item p {
+  margin-bottom: 0.5rem;
+}
+
+.block-homepage--intro .field--name-field-content > .field__item:last-of-type {
+  grid-column: 1 / span 6;
+  font-family: var(--font-primary);
+  --font-size-largest: 2.25rem;
+  font-size: clamp(1.75rem, 2.5vw, var(--font-size-largest));
+  text-align: center;
+  line-height: 1.28;
+  margin-top: var(--spacing-largest);
+}
+
+@media screen and (min-width: 50rem) {
+  .block-homepage--intro .field--name-field-content > .field__item:last-of-type {
+    grid-column: 2 / span 4;
+    margin-top: 0;
+  }
+}
+
+/* Use the carbon callout style for a nice fancy link  */
+
+.block-homepage--intro .callout-carbon {
+  background-color: transparent;
+  color: black;
+  padding: 0;
+  display: block;
+}
+
+.block-homepage--intro .callout-carbon a {
+  color: black;
+  text-decoration: none;
+  padding: var(--spacing);
+  padding-right: 82px;
+  position: relative;
+  border: 1px solid black;
+  font-weight: 600;
+  margin-top: var(--spacing);
+  display: inline-block;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+.block-homepage--intro .callout-carbon a:hover,
+.block-homepage--intro .callout-carbon a:focus {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+.block-homepage--intro .callout-carbon a:after {
+  background: url(../../assets/images/arrow.svg) 50% 50% no-repeat;
+  content: "";
+  height: 100%;
+  width: 65px;
+  display: inline-block;
+  border-left: 1px solid black;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Use something for another fancy link. */
+
+.block-homepage--intro .field--name-field-content > .field__item:nth-last-of-type(2) a{
+  background: url(../../assets/images/arrow.svg)  100% 70% no-repeat;
+  background-size: 25px;
+  padding-right: 36px;
 }

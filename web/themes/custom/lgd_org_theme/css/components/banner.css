@@ -5,41 +5,55 @@
 }
 
 
+.lgd-region--banner .lgd-region__inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.path-frontpage .lgd-region--banner {
+  padding-bottom: var(--spacing-larger);
+}
 
 @media screen and (min-width: 72rem) {
   .lgd-region--banner {
     padding-bottom: var(--spacing-largest);
   }
-  .lgd-region--banner .lgd-region__inner {
+  /* .lgd-region--banner .lgd-region__inner {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-  }
+    gap: 16px;
+  } */
 }
+
+/* The slogan block. */
 
 .block-lgd-org-blocks-blocks {
   --line-height: 1.15;
   line-height: var(--line-height);
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 6;
   font-family: var(--font-secondary);
-  font-size: clamp(var(--font-size-largish), 2.5vw, 1.875rem);
+  font-size: clamp(var(--font-size-largish), 2.5vw, 1.75rem);
   letter-spacing: -1px;
-  max-width: 560px;
+  /* max-width: 560px; */
+}
+@media screen and (min-width: 72rem) {
+  .block-lgd-org-blocks-blocks {
+    grid-column: 1 / span 4;
+  }
 }
 
 .path-frontpage .block-lgd-org-blocks-blocks {
   font-size: var(--font-size-larger);
   margin-bottom: var(--spacing);
 }
+
 @media screen and (min-width: 72rem) {
   .path-frontpage .block-lgd-org-blocks-blocks {
     font-size: 3.125rem;
     margin-bottom: var(--spacing);
     line-height: 1.14;
     max-width: 740px;
-  }
-  .block-lgd-org-blocks-blocks-2 {
-    /* font-size: 1.5rem; */
   }
 }
 
@@ -48,17 +62,27 @@
   line-height: var(--line-height);
   grid-column: 1 / span 3;
   font-size: 24px;
-  font-size: clamp(var(--font-size-medium), 2.5vw, 1.5rem);
-  margin-bottom: var(--spacing);
+  font-size: clamp(var(--font-size-medium), 2.5vw, 1.3125rem);
+  /* margin-bottom: var(--spacing); */
   font-weight: 500;
   letter-spacing: -0.5px;
 }
 
+
+
 .block-lgd-org-blocks-blocks-3 {
-  grid-column: 5;
-  grid-row: 1 / span 2;
+  grid-column: 4 / span 3;
+  /* grid-row: 1 / span 2; */
   justify-self: center;
   align-self: center;
+}
+@media screen and (min-width: 72rem) {
+  .block-lgd-org-blocks-blocks-3 {
+    grid-column: 5;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    align-self: center;
+  }
 }
 
 .lgd-org--councils {
@@ -75,8 +99,10 @@
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  font-size: var(--font-size-small);
+  font-size: 0.875rem;
   font-weight: 500;
+  letter-spacing: -0.3px;
+  line-height: 1;
 }
 
 .lgd-org--councils .number {
@@ -99,6 +125,5 @@
   .lgd-org--councils {
     font-size: var(--font-size-medium);
     line-height: 1.1;
-    /* font-weight: normal; */
   }
 }

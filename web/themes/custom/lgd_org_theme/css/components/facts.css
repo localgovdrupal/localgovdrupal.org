@@ -13,8 +13,6 @@
   font-weight: 700;
 }
 
-
-
 @media screen and (min-width: 48rem) {
   .key-facts > .field__items{
     column-count: 3;

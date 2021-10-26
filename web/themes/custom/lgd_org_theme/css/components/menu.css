@@ -1,9 +1,9 @@
-/* Main menu styling */
+Main menu styling
 
 .menu--main > .menu-item a {
   padding: 0 !important;
   display: inline-block !important;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.7px;
 }
 
 .menu--main > .menu-item + .menu-item {
@@ -84,7 +84,7 @@ header .menu a{
       display: flex !important;
   }
   .navigation--main {
-    margin-right: -14px;
+    margin-right: -22px;
   }
 }
 
@@ -95,7 +95,7 @@ header .menu a{
 
   .menu--utility-menu {
     display: flex;
-    margin-bottom: var(--spacing-larger);
+    margin-bottom: 2rem;
     padding-left: 0;
     list-style: none;
     justify-content: flex-end;
@@ -120,7 +120,7 @@ header .menu a{
 
   .menu--utility-menu li:nth-last-of-type(3),
   .menu--utility-menu li:nth-last-of-type(2) {
-    border-right: 0;.
+    border-right: 0;
   }
   .menu--utility-menu li:nth-last-of-type(1),
   .menu--utility-menu li:nth-last-of-type(2) {

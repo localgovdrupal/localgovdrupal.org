@@ -2,30 +2,37 @@ variables:
   css:
     base:
       css/variables.css: { weight: 400 }
+
 base:
   css:
     theme:
       css/base.css: {weight: 400}
+
 layout:
   css:
     theme:
       css/layout.css: {weight: 200}
+
 header:
   css:
     theme:
       css/components/header.css: {weight: 200}
+
 grid:
   css:
     theme:
       css/grid.css: {weight: 200}
+
 quote:
   css:
     theme:
       css/components/quote.css: {weight: 200}
+
 facts:
   css:
     theme:
       css/components/facts.css: {}
+
 fact-box:
   css:
     theme:
@@ -35,30 +42,37 @@ image-with-caption:
   css:
     theme:
       css/components/image-with-caption.css: {weight: 200}
+
 link-and-summary:
   css:
     theme:
       css/components/link-and-summary.css: {weight: 200}
+
 menu:
   css:
     theme:
       css/components/menu.css: {}
+
 banner:
   css:
     theme:
       css/components/banner.css: {}
+
 text:
   css:
     theme:
       css/components/text.css: {}
+
 overrides:
   css:
     theme:
       css/components/overrides.css: {}
+
 front:
   css:
     theme:
       css/components/front.css: {}
+      
 header-js:
   js:
     js/header.js: {}
