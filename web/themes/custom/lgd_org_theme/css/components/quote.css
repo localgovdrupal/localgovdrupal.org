@@ -47,6 +47,7 @@ blockquote > p:last-of-type:after {
   margin-top: clamp(var(--spacing), 8vw, var(--spacing-largest));
   margin-bottom: clamp(var(--spacing), 8vw, var(--spacing-mega));
   text-align: center;
+  line-height: 1.3;
 }
 
 .pull-out-quote__content {

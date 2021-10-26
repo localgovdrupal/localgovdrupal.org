@@ -1,0 +1,34 @@
+uuid: d54f875a-6e0e-4ba7-9ef8-be36dec7e651
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:special_block:5f38ae82-b62a-4703-bc7a-c8106e1822e9'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - lgd_org_theme
+third_party_settings:
+  block_class:
+    classes: block-homepage--intro
+id: homepagetop
+theme: lgd_org_theme
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:5f38ae82-b62a-4703-bc7a-c8106e1822e9'
+settings:
+  id: 'block_content:5f38ae82-b62a-4703-bc7a-c8106e1822e9'
+  label: 'Homepage top'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

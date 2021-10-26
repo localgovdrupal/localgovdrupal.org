@@ -6,8 +6,8 @@
   Want a font? Load it here, or in the html.html.twig file (you'll have to
   copy that file to the theme) which should give you an even faster loading time.
 */
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
 
 /*
   Override whatever variables you want.
@@ -42,9 +42,9 @@ body {
   --spacing-smaller: 0.5rem;
   --spacing-small: 0.75rem;
   --spacing: 1rem;
-  --spacing-large: 1.5625rem; /*25px*/
+  --spacing-large: 1.5rem; /*24px*/
   --spacing-larger: 2.34375rem; /*37.5px*/
-  --spacing-largest: 3.125rem; /*50px*/
+  --spacing-largest: 3rem; /*48px*/
   --spacing-mega: 4.5rem; /*72px*/
   --spacing-padding-horizontal: 0;
   --line-height: 1.4;
@@ -58,11 +58,6 @@ body {
     we use the names at our "Colours Applied" section.
   */
   --color-accent: var(--color-dandilion);
-  /* --color-green: #048a04;
-  --color-red: #e4251b;
-  --color-orange: #ed7522;
-  --color-yellow: #fd0;
-  --color-blue: #297bbb; */
   --color-dandilion: #FFE146;
   --color-sahara: #ffe376;
   --color-seafoam: #96F1C6;
@@ -82,13 +77,7 @@ body {
     Colours Applied
     In this section, we "apply" our colours.
   */
-  /* --color-info: var(--color-blue);
-  --color-success: var(--color-green);
-  --color-danger: var(--color-red);
-  --color-warning: var(--color-orange);
-  --color-minor: var(--color-yellow); */
   --color-link: var(--color-black);
-  /* --color-focus: var(--color-yellow); */
 
   /* Fonts */
   --font-primary: 'Inter', oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -100,8 +89,6 @@ body {
     - Details: https://www.gridlover.net/try
   */
   --font-size: 1rem;
-  /* --font-size-smallest: calc(var(--font-size) * 0.3);
-  --font-size-smaller: calc(var(--font-size) * 0.5); */
   --font-size-small: calc(var(--font-size) * 0.875);
   --font-size-normal: calc(var(--font-size) * 1);
   --font-size-medium: calc(var(--font-size) * 1.0625);/*17px*/
@@ -113,14 +100,9 @@ body {
   --font-size-h2: clamp(var(--font-size-largish), 2.5vw, var(--font-size-larger));
   --font-size-h3: clamp(var(--font-size-medium), 2.5vw, var(--font-size-largish));
   --font-size-h4: clamp(var(--font-size-medium), 2.5vw, var(--font-size-large));
-  /*--font-size-h5: var(--font-size-medium);
-  --font-size-h6: var(--font-size-medium); */
 
   /* Borders */
   --border-color-dark: var(--color-black);
-
-  /* Animation */
-  /* --transition-time: 0.3s; */
 }
 
 /*
@@ -154,19 +136,6 @@ body {
   --header-services-button-bg-color-hover: var(--color-accent);
   --header-services-button-color-hover: var(--color-black);
   --header-logo-width: 9.62rem;
-  /* --header-search-button-color: var(--color-white);
-  --header-search-button-bg-color: var(--color-accent);
-  --header-search-button-color-hover: var(--color-accent);
-  --header-search-button-bg-color-hover: var(--color-white);
-  --header-search-input-border: none; */
-
-  /* Secondary Menu */
-  /* --secondary-menu-bg-color: var(--color-white);
-  --section-spacing-vertical-secondary-menu: var(--spacing-largest);
-  --section-spacing-horizontal-secondary-menu: var(--spacing-largest);polygon
-  --secondary-menu-link-color: var(--color-black);
-  --secondary-menu-link-color-focus: var(--color-black);
-  --secondary-menu-column-count: 3; */
 
   /* Footer Items */
   --color-section-pre-footer-bg: var(--color-bittersweet);
@@ -175,24 +144,6 @@ body {
   --section-spacing-vertical-pre-footer: var(--spacing-largest);
   --section-spacing-vertical-footer: var(--spacing);
   --section-spacing-vertical-post-footer: var(--spacing-largest);
-
-  /* Page Title */
-  /* --page-title-border: var(--border);
-  --page-title-width: var(--width-medium);
-  --page-title-lede-font-size: var(--font-size-h3); */
-
-  /* Input Elements */
-  /* --input-padding-vertical: var(--spacing);
-  --input-padding-horizontal: var(--spacing); */
-  /* --input-text-color: var(--color-white);
-  --input-text-color-hover: var(--color-accent);
-  --input-icon-color: var(--input-text-color);
-  --input-icon-color-hover: var(--color-accent);
-  --input-border-color: var(--color-grey-medium);
-  --input-border-color-hover: var(--color-grey-medium);
-  --input-bg-color: var(--color-white);
-  --input-bg-color-hover: var(--color-grey-light);
-  --input-border-radius: 0; */
 
   /* Button Elements (and button-styled links) */
   --button-padding-vertical: var(--spacing);
@@ -239,43 +190,15 @@ body {
   --quote-bg-color: none;
   --quote-author-color: var(--color-black);
 
-  /* Featured Teasers */
-  /* --featured-teaser-border: var(--border)admin (1);
-  --featured-teaser-content-padding: var(--spacing); */
-
   /* Documents */
   --table-border: 1px solid var(--table-bg-color);
   --table-padding: var(--spacing-small);
   --table-bg-color: var(--color-grey-light);
 
   /* Links styled like buttons */
-  /* --button-link-padding: var(--spacing); */
-  /* --button-link-bg-color: var(--color-accent); */
   --button-link-color: var(--color-black);
-  /* --button-link-bg-color-hover: var(--color-accent); */
   --button-link-color-hover: var(--color-black);
 
   /* Call-out Box */
-  /* --call-out-box-padding: var(--spacing-large);
-  --call-out-box-link-padding: var(--spacing-smaller);
-  --call-out-box-bg-color: var(--color-accent); */
   --call-out-box-text-color: var(--color-black);
-
-  /* Banner */
-  /* --banner-content-width: var(--width-medium);
-  --banner-content-margin: calc(var(--spacing-largest) * 2);
-  --banner-content-padding: var(--spacing-largest);
-  --banner-content-bg-color: var(--color-accent);
-  --banner-content-text-color: var(--color-white);
-  --banner-title-size: var(--font-size-larger); */
-
-  /* Teaser View Mode */
-  /* --teaser-image-with: 33%;
-  --teaser-featured-content-padding: var(--spacing-larger);
-  --teaser-featured-height: 100%;
-  --teaser-featured-border: var(--border);
-  --teaser-featured-border-color: var(--border-color-dark); */
-
-  /* News */
-  /* --newsroom-featured-bottom-space: var(--spacing-largest);
-  --news-category-spacing: var(--spacing); */
+}

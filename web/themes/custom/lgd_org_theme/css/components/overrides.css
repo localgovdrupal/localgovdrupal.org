@@ -3,6 +3,8 @@
   border: 1px solid var(--color-black);
   text-decoration: none;
   padding: var(--spacing);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin: var(--spacing);
 }
 .lgd-org--newsletter a:hover{
@@ -15,6 +17,7 @@
   ));
   text-align: center;
   font-weight: 500;
+  letter-spacing: -0.2px;
 }
 
 .lgd-footer__pre-footer .lgd-row__one-third {
@@ -114,9 +117,14 @@
   font-weight: 600;
 }
 
-.footer--slogan {
+.lgd-org--footer-block p {
+  margin-bottom: 0;
+}
+.lgd-org--footer-block .footer--slogan {
   line-height: 1.15;
   font-size: clamp(var(--font-size-larger), 2.5vw, 2.1875rem );
+  font-family: var(--font-secondary);
+  margin-bottom: 1.5rem;
 }
 
 
@@ -129,11 +137,6 @@ main {
   padding-bottom: 0;
 }
 
-@media screen and (min-width: 70rem) {
-  .branding__item--logo {
-    width: 12rem !important;
-  }
-}
 
 
 /*Media item with text*/
@@ -178,7 +181,7 @@ main {
   margin-bottom: var(--spacing-largest);
 }
 .block-views-blockcouncil-logos-block-1 {
-  padding: var(--spacing-large) 0 var(--spacing-largest);
+  padding: var(--spacing) 0 4rem;
 }
 
 .block-views-blockcouncil-logos-block-1 .view-content{

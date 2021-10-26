@@ -14,7 +14,7 @@
 
 .lgd-header {
   padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
-  padding-bottom: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
+  padding-bottom: 1rem;
   background-color: var(--color-section-header-bg);
 }
 
@@ -40,6 +40,8 @@
 .lgd-header__nav--primary {
   display: none;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media screen and (min-width: 60rem) {
@@ -122,11 +124,22 @@
 }
 @media screen and (min-width: 60rem) {
   .branding__item--logo {
-    margin-top: 3rem;
+    margin-top: var(--spacing-small);
   }
   .path-frontpage .branding__item--logo {
-    margin-bottom: 4.5rem;
+    margin-bottom: 3rem;
   }
+}
+
+@media screen and (min-width: 70rem) {
+  .branding__item--logo {
+    width: 13.25rem ;
+  }
+}
+
+
+.path-frontpage header {
+  padding-bottom: var(--spacing);
 }
 
 .branding__item--logo a {
