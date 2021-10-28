@@ -1,9 +1,9 @@
-uuid: d54f875a-6e0e-4ba7-9ef8-be36dec7e651
+uuid: 099b3287-72a1-4728-8703-c261c2cad34d
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:special_block:5f38ae82-b62a-4703-bc7a-c8106e1822e9'
+    - 'block_content:special_block:37ff0082-b79d-4220-bd5c-e8de1121496c'
   module:
     - block_class
     - block_content
@@ -18,9 +18,9 @@ theme: lgd_org_theme
 region: content_top
 weight: 0
 provider: null
-plugin: 'block_content:5f38ae82-b62a-4703-bc7a-c8106e1822e9'
+plugin: 'block_content:37ff0082-b79d-4220-bd5c-e8de1121496c'
 settings:
-  id: 'block_content:5f38ae82-b62a-4703-bc7a-c8106e1822e9'
+  id: 'block_content:37ff0082-b79d-4220-bd5c-e8de1121496c'
   label: 'Homepage top'
   provider: block_content
   label_display: '0'
