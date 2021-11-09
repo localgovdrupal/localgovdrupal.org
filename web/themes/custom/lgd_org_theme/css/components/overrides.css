@@ -240,3 +240,21 @@ form#views-exposed-form-localgov-news-search-page-search-news {
 .js input.form-autocomplete {
   background-position: 98% center;
 }
+
+.footer-logos p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.region-lower-footer-third,
+.region-lower-footer-third div{
+  height: 100%;
+}
+.footer-logos p a:hover {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
