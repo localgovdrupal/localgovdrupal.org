@@ -1,0 +1,29 @@
+uuid: 1a3a6748-58bc-4884-8f5f-84de29cbea74
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:special_block:f6ff6fd8-a3a9-4ae1-b32d-3676d7b4ba40'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - lgd_org_theme
+third_party_settings:
+  block_class:
+    classes: footer-logos
+id: footerlogos
+theme: lgd_org_theme
+region: lower_footer_third
+weight: -12
+provider: null
+plugin: 'block_content:f6ff6fd8-a3a9-4ae1-b32d-3676d7b4ba40'
+settings:
+  id: 'block_content:f6ff6fd8-a3a9-4ae1-b32d-3676d7b4ba40'
+  label: 'footer logos'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
