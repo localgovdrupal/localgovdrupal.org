@@ -1,9 +1,12 @@
+_core:
+  default_config_hash: 2CVQWCMHHIqT_kLCVL_IRfqt8HP9IrnehZNbhXk2jZ0
 max_links: 2000
 cron_generate: true
 cron_generate_interval: 0
 generate_duration: 10000
 remove_duplicates: true
 skip_untranslated: true
+disable_language_hreflang: false
 xsl: true
 base_url: 'https://localgovdrupal.org'
 default_variant: default
@@ -13,7 +16,4 @@ enabled_entity_types:
   - node
   - taxonomy_term
   - menu_link_content
-_core:
-  default_config_hash: 2CVQWCMHHIqT_kLCVL_IRfqt8HP9IrnehZNbhXk2jZ0
-disable_language_hreflang: false
 entities_per_queue_item: 50

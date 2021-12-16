@@ -16,7 +16,7 @@ bundle: localgov_link_and_summary
 mode: default
 content:
   localgov_link:
-    weight: 0
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -25,13 +25,13 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 0
     region: content
   localgov_summary:
-    weight: 1
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 1
     region: content
 hidden: {  }

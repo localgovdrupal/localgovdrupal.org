@@ -18,13 +18,13 @@ plugin: 'block_content:b6216938-a3e5-4af2-acaf-4f7587d606b7'
 settings:
   id: 'block_content:b6216938-a3e5-4af2-acaf-4f7587d606b7'
   label: Quote
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

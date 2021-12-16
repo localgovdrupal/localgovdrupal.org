@@ -23,9 +23,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       localgov_accordion_pane: localgov_accordion_pane
+    negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: 16
@@ -34,8 +34,8 @@ settings:
         weight: 17
         enabled: false
       localgov_accordion_pane:
-        enabled: true
         weight: 18
+        enabled: true
       localgov_box_link:
         weight: 19
         enabled: false

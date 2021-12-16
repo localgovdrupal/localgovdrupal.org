@@ -2,11 +2,11 @@ uuid: b197137c-0bdf-4862-8ee3-8950c4c64938
 langcode: en
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - localgov_news
-  module:
-    - node
 _core:
   default_config_hash: 1MBxSZrsbV7BWVHN0Fw3-WFa4AwZKLXlQ-2I-Foxz5A
 id: localgov_news
@@ -16,12 +16,12 @@ pattern: '[node:localgov_newsroom:entity:url:relative]/[node:localgov_news_date:
 selection_criteria:
   fa93e7c4-4c6f-4ed1-988b-ce660e1d6292:
     id: node_type
-    bundles:
-      localgov_news_article: localgov_news_article
     negate: false
+    uuid: fa93e7c4-4c6f-4ed1-988b-ce660e1d6292
     context_mapping:
       node: node
-    uuid: fa93e7c4-4c6f-4ed1-988b-ce660e1d6292
+    bundles:
+      localgov_news_article: localgov_news_article
 selection_logic: and
 weight: -5
 relationships: {  }

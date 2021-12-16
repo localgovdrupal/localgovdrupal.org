@@ -17,12 +17,12 @@ bundle: image
 mode: medium_8_7
 content:
   field_media_image:
+    type: image
     label: visually_hidden
     settings:
-      image_style: medium_8_7
       image_link: ''
+      image_style: medium_8_7
     third_party_settings: {  }
-    type: image
     weight: 1
     region: content
 hidden:

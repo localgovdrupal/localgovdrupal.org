@@ -20,13 +20,13 @@ plugin: 'views_block:services-block_service_list'
 settings:
   id: 'views_block:services-block_service_list'
   label: 'Services list block'
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

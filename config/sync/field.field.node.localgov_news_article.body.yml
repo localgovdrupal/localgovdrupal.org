@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.node.body
     - node.type.localgov_news_article
+  module:
+    - text
   enforced:
     module:
       - localgov_news
-  module:
-    - text
 _core:
   default_config_hash: eAEuOeFmUTm3yKzeUZYGSMHCsJnXxSMGKcKmXh8TsRw
 id: node.localgov_news_article.body

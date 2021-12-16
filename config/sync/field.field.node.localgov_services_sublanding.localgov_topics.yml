@@ -23,14 +23,14 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       topic_list_builder: topic_list_builder
+    negate: 0
     target_bundles_drag_drop:
       advanced_links:
         weight: 3
         enabled: false
       topic_list_builder:
-        enabled: true
         weight: 4
+        enabled: true
 field_type: entity_reference_revisions

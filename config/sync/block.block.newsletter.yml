@@ -15,7 +15,7 @@ plugin: lgd_org_blocks_newsletter
 settings:
   id: lgd_org_blocks_newsletter
   label: newsletter
-  provider: lgd_org_blocks
   label_display: '0'
+  provider: lgd_org_blocks
   content: 'Sign me up for regular LocalGov Drupal news'
 visibility: {  }

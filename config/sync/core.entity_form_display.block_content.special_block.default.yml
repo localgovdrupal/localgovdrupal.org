@@ -15,24 +15,24 @@ bundle: special_block
 mode: default
 content:
   body:
+    type: text_textarea_with_summary
     weight: 1
+    region: content
     settings:
       rows: 9
-      placeholder: ''
       summary_rows: 3
+      placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    type: text_textarea_with_summary
-    region: content
   field_content:
     type: layout_paragraphs
     weight: 2
+    region: content
     settings:
       preview_view_mode: default
       nesting_depth: 0
       require_layouts: 0
     third_party_settings: {  }
-    region: content
   info:
     type: string_textfield
     weight: 0

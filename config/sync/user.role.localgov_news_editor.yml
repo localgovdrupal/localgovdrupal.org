@@ -2,6 +2,14 @@ uuid: 92f83c67-a839-4ac9-ae35-d5b140f56e25
 langcode: en
 status: true
 dependencies:
+  config:
+    - media.type.image
+    - node.type.localgov_news_article
+  module:
+    - media
+    - node
+    - system
+    - toolbar
   enforced:
     module:
       - localgov_news
@@ -19,25 +27,11 @@ permissions:
   - 'create localgov_news_article content'
   - 'delete any localgov_news_article content'
   - 'delete own localgov_news_article content'
-  - 'delete own media'
   - 'edit any image media'
   - 'edit any localgov_news_article content'
   - 'edit own image media'
   - 'edit own localgov_news_article content'
   - 'revert localgov_news_article revisions'
-  - 'update any image media'
-  - 'use localgov_editorial transition approve'
-  - 'use localgov_editorial transition archive'
-  - 'use localgov_editorial transition archived_draft'
-  - 'use localgov_editorial transition archived_published'
-  - 'use localgov_editorial transition create_new_draft'
-  - 'use localgov_editorial transition publish'
-  - 'use localgov_editorial transition reject'
-  - 'use localgov_editorial transition submit_for_review'
-  - 'view all localgov_news_article revisions'
-  - 'view any unpublished localgov_news_article content'
   - 'view localgov_news_article revisions'
-  - 'view own media'
-  - 'view own unpublished localgov_news_article content'
   - 'view own unpublished media'
   - 'view the administration theme'

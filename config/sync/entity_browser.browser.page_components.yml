@@ -23,22 +23,22 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   19e5e98c-307e-437a-b850-0fab163d7fec:
+    id: view
+    uuid: 19e5e98c-307e-437a-b850-0fab163d7fec
+    label: 'Available components'
+    weight: 1
     settings:
-      view: paragraphs_library_browser
-      view_display: entity_browser
       submit_text: 'Select component'
       auto_select: false
-    uuid: 19e5e98c-307e-437a-b850-0fab163d7fec
-    weight: 1
-    label: 'Available components'
-    id: view
+      view: paragraphs_library_browser
+      view_display: entity_browser
   2a5ca23a-1a2a-4fcb-8a06-6f50bcc77fcb:
+    id: entity_form
+    uuid: 2a5ca23a-1a2a-4fcb-8a06-6f50bcc77fcb
+    label: 'Create component'
+    weight: 2
     settings:
+      submit_text: 'Save component'
       entity_type: paragraphs_library_item
       bundle: paragraphs_library_item
       form_mode: default
-      submit_text: 'Save component'
-    uuid: 2a5ca23a-1a2a-4fcb-8a06-6f50bcc77fcb
-    weight: 2
-    label: 'Create component'
-    id: entity_form

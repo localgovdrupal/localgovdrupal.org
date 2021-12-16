@@ -16,13 +16,13 @@ bundle: localgov_table
 mode: default
 content:
   localgov_table:
-    weight: 0
+    type: tablefield
     label: hidden
     settings:
       row_header: true
       column_header: false
     third_party_settings: {  }
-    type: tablefield
+    weight: 0
     region: content
 hidden:
   localgov_table_theme: true

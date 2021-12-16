@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: EFvH1C81Szr6CBCMk6YeZ1HOP3PEoitgixDdQeDIrqE
-id: localgov_news_16_9
 label: '16:9 for News image'
+id: localgov_news_16_9
 description: ''
 aspect_ratio: '16:9'
 soft_limit_width: null

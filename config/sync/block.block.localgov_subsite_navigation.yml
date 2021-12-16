@@ -17,6 +17,6 @@ plugin: localgov_subsite_navigation
 settings:
   id: localgov_subsite_navigation
   label: 'Subsite navigation'
-  provider: localgov_subsites
   label_display: '0'
+  provider: localgov_subsites
 visibility: {  }

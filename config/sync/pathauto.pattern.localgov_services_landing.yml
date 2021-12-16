@@ -13,12 +13,12 @@ pattern: '[node:title]'
 selection_criteria:
   42d90085-1126-4394-9349-88a26a0317f5:
     id: node_type
-    bundles:
-      localgov_services_landing: localgov_services_landing
     negate: false
+    uuid: 42d90085-1126-4394-9349-88a26a0317f5
     context_mapping:
       node: node
-    uuid: 42d90085-1126-4394-9349-88a26a0317f5
+    bundles:
+      localgov_services_landing: localgov_services_landing
 selection_logic: and
 weight: -5
 relationships: {  }

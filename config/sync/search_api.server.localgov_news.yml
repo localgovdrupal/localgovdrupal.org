@@ -2,11 +2,11 @@ uuid: f997d0e2-a5ff-4dcf-9796-1fa980e3692d
 langcode: en
 status: true
 dependencies:
+  module:
+    - search_api_db
   enforced:
     module:
       - localgov_news
-  module:
-    - search_api_db
 _core:
   default_config_hash: LG2q6Fu3KSlHfgwnnBDC4dHqZ5nCANxWaapXUWk15gQ
 id: localgov_news

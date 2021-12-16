@@ -23,9 +23,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       localgov_key_contact_item: localgov_key_contact_item
+    negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: 23
@@ -57,12 +57,12 @@ settings:
       localgov_image:
         weight: 32
         enabled: false
+      localgov_key_contact_item:
+        weight: 34
+        enabled: true
       localgov_key_contacts:
         weight: 33
         enabled: false
-      localgov_key_contact_item:
-        enabled: true
-        weight: 34
       localgov_link:
         weight: 35
         enabled: false

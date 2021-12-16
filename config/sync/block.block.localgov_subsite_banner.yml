@@ -17,6 +17,6 @@ plugin: localgov_subsite_banner
 settings:
   id: localgov_subsite_banner
   label: 'Subsite banner'
-  provider: localgov_subsites
   label_display: '0'
+  provider: localgov_subsites
 visibility: {  }

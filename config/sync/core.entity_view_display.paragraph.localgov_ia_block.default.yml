@@ -16,22 +16,22 @@ bundle: localgov_ia_block
 mode: default
 content:
   localgov_ia_block_promoted:
-    weight: 1
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 1
     region: content
   localgov_ia_block_title:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
 hidden:
   localgov_ia_block_link: true

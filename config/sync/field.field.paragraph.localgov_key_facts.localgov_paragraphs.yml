@@ -23,9 +23,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       localgov_key_fact: localgov_key_fact
+    negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: 25
@@ -64,8 +64,8 @@ settings:
         weight: 35
         enabled: false
       localgov_key_fact:
-        enabled: true
         weight: 37
+        enabled: true
       localgov_key_facts:
         weight: 38
         enabled: false

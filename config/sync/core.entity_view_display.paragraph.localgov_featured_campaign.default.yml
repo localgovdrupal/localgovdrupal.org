@@ -19,7 +19,6 @@ mode: default
 content:
   localgov_featured_campaign_image:
     type: entity_reference_entity_view
-    weight: 0
     label: visually_hidden
     settings:
       view_mode: localgov_featured_large
@@ -27,9 +26,10 @@ content:
     third_party_settings:
       field_formatter_class:
         class: featured-campaign__img
+    weight: 0
     region: content
   localgov_featured_campaign_link:
-    weight: 1
+    type: link
     label: visually_hidden
     settings:
       trim_length: 80
@@ -40,16 +40,16 @@ content:
     third_party_settings:
       field_formatter_class:
         class: featured-campaign__title
-    type: link
+    weight: 1
     region: content
   localgov_featured_campaign_text:
-    weight: 2
+    type: basic_string
     label: visually_hidden
     settings: {  }
     third_party_settings:
       field_formatter_class:
         class: featured-campaign__summary
-    type: basic_string
+    weight: 2
     region: content
 hidden:
   search_api_excerpt: true

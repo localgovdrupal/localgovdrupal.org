@@ -17,8 +17,8 @@ plugin: 'views_block:council_logos-block_1'
 settings:
   id: 'views_block:council_logos-block_1'
   label: 'Participating councils'
-  provider: views
   label_display: visible
+  provider: views
   views_label: 'Participating councils'
   items_per_page: none
 visibility: {  }

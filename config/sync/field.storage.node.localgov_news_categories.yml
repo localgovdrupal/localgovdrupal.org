@@ -2,12 +2,12 @@ uuid: 37f5e8df-cc61-4972-bfa3-166c7026c4ef
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - localgov_news
   module:
     - node
     - taxonomy
+  enforced:
+    module:
+      - localgov_news
 _core:
   default_config_hash: 6cyX7hJLCuqgRW0J0eE6zaIXQKy9VldWhpA0VWdHL2M
 id: node.localgov_news_categories

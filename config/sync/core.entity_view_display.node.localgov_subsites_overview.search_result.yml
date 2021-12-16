@@ -22,11 +22,11 @@ mode: search_result
 content:
   localgov_subsites_summary:
     type: basic_string
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_meta_tags: true
   links: true

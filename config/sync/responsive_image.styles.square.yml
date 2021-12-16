@@ -13,9 +13,9 @@ id: square
 label: Square
 image_style_mappings:
   -
-    breakpoint_id: localgov_media.bootstrap4_md_768px
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: square_large
+    breakpoint_id: localgov_media.bootstrap4_md_768px
+    multiplier: 1x
 breakpoint_group: localgov_media
 fallback_image_style: square_medium

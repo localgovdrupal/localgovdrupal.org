@@ -16,18 +16,18 @@ bundle: localgov_table
 mode: default
 content:
   localgov_table:
+    type: tablefield
     weight: 1
+    region: content
     settings:
       input_type: textfield
     third_party_settings: {  }
-    type: tablefield
-    region: content
   localgov_table_theme:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
 hidden:
   created: true
   status: true

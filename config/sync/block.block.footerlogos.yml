@@ -21,8 +21,8 @@ plugin: 'block_content:f6ff6fd8-a3a9-4ae1-b32d-3676d7b4ba40'
 settings:
   id: 'block_content:f6ff6fd8-a3a9-4ae1-b32d-3676d7b4ba40'
   label: 'footer logos'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

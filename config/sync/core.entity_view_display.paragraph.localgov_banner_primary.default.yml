@@ -19,7 +19,7 @@ bundle: localgov_banner_primary
 mode: default
 content:
   localgov_image:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: responsive_banner
@@ -27,11 +27,10 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: entity_reference_entity_view
+    weight: 0
     region: content
   localgov_subsites_banner_logo:
     type: entity_reference_entity_view
-    weight: 4
     label: hidden
     settings:
       view_mode: square
@@ -39,28 +38,29 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 4
     region: content
   localgov_subsites_banner_text:
-    weight: 2
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 2
     region: content
   localgov_title:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   localgov_url:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
 hidden: {  }

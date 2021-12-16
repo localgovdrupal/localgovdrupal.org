@@ -17,6 +17,6 @@ plugin: localgov_page_header_block
 settings:
   id: localgov_page_header_block
   label: 'Page header block'
-  provider: localgov_core
   label_display: '0'
+  provider: localgov_core
 visibility: {  }

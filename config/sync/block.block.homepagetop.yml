@@ -22,13 +22,13 @@ plugin: 'block_content:37ff0082-b79d-4220-bd5c-e8de1121496c'
 settings:
   id: 'block_content:37ff0082-b79d-4220-bd5c-e8de1121496c'
   label: 'Homepage top'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

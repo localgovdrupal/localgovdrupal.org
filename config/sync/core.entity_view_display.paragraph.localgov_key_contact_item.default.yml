@@ -20,23 +20,23 @@ bundle: localgov_key_contact_item
 mode: default
 content:
   localgov_contact_email:
-    weight: 1
+    type: email_mailto
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: email_mailto
+    weight: 1
     region: content
   localgov_image:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 0
     region: content
   localgov_link:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -45,7 +45,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
 hidden:
   localgov_colour_theme: true

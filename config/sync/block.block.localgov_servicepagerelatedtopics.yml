@@ -17,6 +17,6 @@ plugin: localgov_services_related_topics_block
 settings:
   id: localgov_services_related_topics_block
   label: 'Service page related topics'
-  provider: localgov_services_page
   label_display: '0'
+  provider: localgov_services_page
 visibility: {  }

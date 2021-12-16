@@ -2,12 +2,12 @@ uuid: 03b79735-a6bc-4744-a244-36a7e237fb56
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - localgov_news
   module:
     - datetime
     - node
+  enforced:
+    module:
+      - localgov_news
 _core:
   default_config_hash: 7Bz8K2ko8eHl-9UQSwZF43BTk1nWaFbQMcCO-lbB_28
 id: node.localgov_news_date

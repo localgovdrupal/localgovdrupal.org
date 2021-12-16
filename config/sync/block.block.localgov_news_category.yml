@@ -20,12 +20,12 @@ plugin: 'facet_block:localgov_news_category'
 settings:
   id: 'facet_block:localgov_news_category'
   label: Category
-  provider: facets
   label_display: '0'
+  provider: facets
   block_id: localgov_news_category
 visibility:
   request_path:
     id: request_path
-    pages: '/news/*'
     negate: false
     context_mapping: {  }
+    pages: '/news/*'

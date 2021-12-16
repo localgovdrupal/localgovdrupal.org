@@ -16,11 +16,11 @@ mode: default
 content:
   localgov_embed_block_view:
     type: viewsreference_formatter
-    weight: 0
-    region: content
     label: hidden
     settings:
       plugin_types:
         - block
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden: {  }

@@ -17,6 +17,6 @@ plugin: localgov_services_related_links_block
 settings:
   id: localgov_services_related_links_block
   label: 'Service page related links'
-  provider: localgov_services_page
   label_display: '0'
+  provider: localgov_services_page
 visibility: {  }

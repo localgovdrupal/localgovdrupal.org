@@ -2,11 +2,11 @@ uuid: 90b5b0a9-b4ef-4730-9871-584e1d8dd22f
 langcode: en
 status: true
 dependencies:
+  module:
+    - menu_ui
   enforced:
     module:
       - localgov_news
-  module:
-    - menu_ui
 third_party_settings:
   menu_ui:
     available_menus:

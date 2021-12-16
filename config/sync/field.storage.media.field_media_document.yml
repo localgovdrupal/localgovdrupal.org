@@ -2,12 +2,12 @@ uuid: fe99a740-f90b-4ad4-8f91-bb84a261cd09
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - media
   module:
     - file
     - media
+  enforced:
+    module:
+      - media
 _core:
   default_config_hash: rQoPQKvhehKl_xDCFHeMJ5nA5i6bxUSdrNxazOSPGTg
 id: media.field_media_document
@@ -15,10 +15,10 @@ field_name: field_media_document
 entity_type: media
 type: file
 settings:
-  uri_scheme: public
   target_type: file
   display_field: false
   display_default: false
+  uri_scheme: public
 module: file
 locked: false
 cardinality: 1

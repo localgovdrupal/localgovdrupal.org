@@ -1,7 +1,13 @@
 uuid: 49418a77-aa68-4579-966d-f7f98b627160
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.wysiwyg
+  module:
+    - filter
+    - media
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated

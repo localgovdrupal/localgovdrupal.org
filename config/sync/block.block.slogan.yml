@@ -15,7 +15,7 @@ plugin: lgd_org_blocks_blocks
 settings:
   id: lgd_org_blocks_blocks
   label: Slogan
-  provider: lgd_org_blocks
   label_display: '0'
+  provider: lgd_org_blocks
   content: 'The publishing platform created by councils, for councils.'
 visibility: {  }

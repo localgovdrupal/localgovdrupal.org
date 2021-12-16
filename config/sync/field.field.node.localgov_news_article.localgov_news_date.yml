@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.node.localgov_news_date
     - node.type.localgov_news_article
+  module:
+    - datetime
   enforced:
     module:
       - localgov_news
-  module:
-    - datetime
 _core:
   default_config_hash: IUxkOctGVTj1tvvFgbwjuWfrUTEhHeqBwWbrl0o_R8A
 id: node.localgov_news_article.localgov_news_date

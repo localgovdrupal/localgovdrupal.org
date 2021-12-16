@@ -26,12 +26,12 @@ bundle: localgov_services_page
 mode: search_result
 content:
   body:
-    label: hidden
-    weight: 0
     type: text_summary_or_trimmed
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true

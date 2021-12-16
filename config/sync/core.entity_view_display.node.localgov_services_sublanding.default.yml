@@ -20,20 +20,20 @@ bundle: localgov_services_sublanding
 mode: default
 content:
   field_meta_tags:
-    weight: 1
+    type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    weight: 1
     region: content
   localgov_topics:
     type: entity_reference_revisions_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   body: true

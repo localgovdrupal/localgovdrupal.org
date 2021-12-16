@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: Bl0yZxDk_n84ambWpE5tRQBzzGkv8cHUuFrFF4lLrKw
-id: square
 label: Square
+id: square
 description: ''
 aspect_ratio: '1:1'
 soft_limit_width: null

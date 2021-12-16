@@ -13,9 +13,9 @@ id: localgov_newsroom_featured
 label: 'LocalGov Newsroom featured'
 image_style_mappings:
   -
-    breakpoint_id: localgov_media.bootstrap4_md_768px
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: localgov_535x302
+    breakpoint_id: localgov_media.bootstrap4_md_768px
+    multiplier: 1x
 breakpoint_group: localgov_media
 fallback_image_style: localgov_248x181

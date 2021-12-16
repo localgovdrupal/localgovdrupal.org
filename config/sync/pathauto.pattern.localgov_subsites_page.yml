@@ -13,12 +13,12 @@ pattern: '[node:localgov_subsites_parent:entity:url:relative]/[node:title]'
 selection_criteria:
   a17ad9f1-47e0-407c-9351-970cb7dc958c:
     id: node_type
-    bundles:
-      localgov_subsites_page: localgov_subsites_page
     negate: false
+    uuid: a17ad9f1-47e0-407c-9351-970cb7dc958c
     context_mapping:
       node: node
-    uuid: a17ad9f1-47e0-407c-9351-970cb7dc958c
+    bundles:
+      localgov_subsites_page: localgov_subsites_page
 selection_logic: and
 weight: -5
 relationships: {  }

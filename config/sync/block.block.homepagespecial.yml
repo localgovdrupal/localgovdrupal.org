@@ -22,13 +22,13 @@ plugin: 'block_content:e1f85d82-9e41-42e5-b038-a1de5421b48a'
 settings:
   id: 'block_content:e1f85d82-9e41-42e5-b038-a1de5421b48a'
   label: 'Homepage special'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

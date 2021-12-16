@@ -17,26 +17,26 @@ bundle: topic_list_builder
 mode: default
 content:
   topic_list_header:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   topic_list_links:
-    weight: 1
+    type: link_node_reference
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: link_node_reference
+    weight: 1
     region: content
   topic_list_term:
-    weight: 0
+    type: entity_reference_label
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 0
     region: content
 hidden: {  }

@@ -18,11 +18,11 @@ plugin: 'facet_block:localgov_news_date'
 settings:
   id: 'facet_block:localgov_news_date'
   label: Date
-  provider: facets
   label_display: '0'
+  provider: facets
   block_id: date
 visibility:
   request_path:
     id: request_path
-    pages: /news/search
     negate: false
+    pages: /news/search

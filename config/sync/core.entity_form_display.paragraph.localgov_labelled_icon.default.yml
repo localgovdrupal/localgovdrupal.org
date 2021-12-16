@@ -18,27 +18,27 @@ bundle: localgov_labelled_icon
 mode: default
 content:
   localgov_labelled_icon_icon:
+    type: fontawesome_icon_widget
     weight: 103
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: fontawesome_icon_widget
-    region: content
   localgov_labelled_icon_link:
+    type: link_default
     weight: 102
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   localgov_labelled_icon_title:
+    type: string_textfield
     weight: 101
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
 hidden:
   created: true
   status: true

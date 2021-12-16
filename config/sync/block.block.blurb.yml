@@ -16,11 +16,11 @@ plugin: lgd_org_blocks_blocks_2
 settings:
   id: lgd_org_blocks_blocks_2
   label: Blurb
-  provider: lgd_org_blocks
   label_display: '0'
+  provider: lgd_org_blocks
   content: 'LocalGov Drupal is a publicly owned asset that delivers a better digital experience for citizens, improves service outcomes, and saves money.'
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

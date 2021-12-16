@@ -1,7 +1,11 @@
 uuid: 9028e767-8e56-4e89-9ba2-78e8fe9c92b0
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - media
+    - search_api_autocomplete
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous

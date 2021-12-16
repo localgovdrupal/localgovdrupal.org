@@ -2,6 +2,26 @@ uuid: 88d3a40d-0f9f-4723-9d4d-404c65a847a6
 langcode: en
 status: true
 dependencies:
+  config:
+    - media.type.council_logo
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - node.type.localgov_services_landing
+    - node.type.localgov_services_page
+    - node.type.localgov_services_sublanding
+    - node.type.localgov_subsites_overview
+    - node.type.localgov_subsites_page
+  module:
+    - entity_browser
+    - layout_paragraphs
+    - media
+    - node
+    - paragraphs
+    - paragraphs_library
+    - path
+    - system
+    - toolbar
   enforced:
     module:
       - localgov_roles

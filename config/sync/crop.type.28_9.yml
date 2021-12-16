@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: wFjZ2ZUHr_x1hTDlmlb6gA7sO_0hdvyA7QVNzcQInS8
-id: '28_9'
 label: '28:9'
+id: '28_9'
 description: ''
 aspect_ratio: '28:9'
 soft_limit_width: null

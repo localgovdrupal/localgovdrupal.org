@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: sNQ61xvGh-uhoAiVqKW6Oig9JVywoMwWZF1hrE_cpDQ
-id: '3_2'
 label: '3:2'
+id: '3_2'
 description: ''
 aspect_ratio: '3:2'
 soft_limit_width: null

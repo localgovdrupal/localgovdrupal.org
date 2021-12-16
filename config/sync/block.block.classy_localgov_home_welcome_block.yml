@@ -18,11 +18,11 @@ plugin: localgov_home_welcome_block
 settings:
   id: localgov_home_welcome_block
   label: 'Home welcome block'
-  provider: null
   label_display: '0'
+  provider: null
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

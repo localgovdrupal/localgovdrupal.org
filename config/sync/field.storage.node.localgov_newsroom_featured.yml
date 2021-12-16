@@ -2,11 +2,11 @@ uuid: b0924a40-75c6-45a4-b14f-31447d973d23
 langcode: en
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - localgov_news
-  module:
-    - node
 _core:
   default_config_hash: 29upxQpQUwRnBoUeL7WsobWql72uHBNa8yVYR2FHoMk
 id: node.localgov_newsroom_featured

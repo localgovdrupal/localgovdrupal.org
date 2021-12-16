@@ -15,12 +15,12 @@ bundle: localgov_banner_secondary
 mode: default
 content:
   localgov_image:
+    type: media_library_widget
     weight: 0
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
 hidden:
   created: true
   status: true

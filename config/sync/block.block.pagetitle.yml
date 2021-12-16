@@ -16,17 +16,17 @@ plugin: page_title_block
 settings:
   id: page_title_block
   label: 'Page title'
-  provider: core
   label_display: '0'
+  provider: core
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      localgov_subsites_overview: localgov_subsites_overview
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: true
+    bundles:
+      localgov_subsites_overview: localgov_subsites_overview

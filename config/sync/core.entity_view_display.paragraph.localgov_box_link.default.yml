@@ -16,12 +16,12 @@ mode: default
 content:
   localgov_image:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: responsive_3x2
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   localgov_link: true

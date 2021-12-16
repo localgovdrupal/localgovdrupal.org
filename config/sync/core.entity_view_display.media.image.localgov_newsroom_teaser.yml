@@ -17,12 +17,12 @@ bundle: image
 mode: localgov_newsroom_teaser
 content:
   field_media_image:
+    type: image
     label: visually_hidden
     settings:
-      image_style: localgov_newsroom_teaser
       image_link: ''
+      image_style: localgov_newsroom_teaser
     third_party_settings: {  }
-    type: image
     weight: 1
     region: content
 hidden:

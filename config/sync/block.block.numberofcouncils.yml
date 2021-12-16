@@ -16,12 +16,12 @@ plugin: lgd_org_blocks_blocks_3
 settings:
   id: lgd_org_blocks_blocks_3
   label: 'Number of councils'
-  provider: lgd_org_blocks
   label_display: '0'
+  provider: lgd_org_blocks
   number: '22'
   content: 'UK Councils and growing'
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

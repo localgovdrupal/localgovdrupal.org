@@ -23,11 +23,11 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       localgov_image: localgov_image
       localgov_quote: localgov_quote
       localgov_text: localgov_text
+    negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: 37
@@ -81,8 +81,8 @@ settings:
         weight: 53
         enabled: false
       localgov_image:
-        enabled: true
         weight: 54
+        enabled: true
       localgov_key_contact_item:
         weight: 56
         enabled: false
@@ -111,8 +111,8 @@ settings:
         weight: 63
         enabled: false
       localgov_quote:
-        enabled: true
         weight: 64
+        enabled: true
       localgov_subscribe_panel:
         weight: 65
         enabled: false
@@ -126,8 +126,8 @@ settings:
         weight: 67
         enabled: false
       localgov_text:
-        enabled: true
         weight: 69
+        enabled: true
       localgov_video:
         weight: 70
         enabled: false

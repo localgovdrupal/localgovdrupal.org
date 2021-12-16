@@ -16,9 +16,9 @@ effects:
     id: image_scale_and_crop
     weight: -9
     data:
-      anchor: center-center
       width: 1024
       height: 440
+      anchor: center-center
   a35dd68a-69ae-4798-bf43-ecbf3c450f65:
     uuid: a35dd68a-69ae-4798-bf43-ecbf3c450f65
     id: crop_crop

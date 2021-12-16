@@ -13,12 +13,12 @@ pattern: '[node:title]'
 selection_criteria:
   58bd74f7-9aeb-469f-ae66-ee1acf0ac229:
     id: node_type
-    bundles:
-      localgov_newsroom: localgov_newsroom
     negate: false
+    uuid: 58bd74f7-9aeb-469f-ae66-ee1acf0ac229
     context_mapping:
       node: node
-    uuid: 58bd74f7-9aeb-469f-ae66-ee1acf0ac229
+    bundles:
+      localgov_newsroom: localgov_newsroom
 selection_logic: and
 weight: -5
 relationships: {  }

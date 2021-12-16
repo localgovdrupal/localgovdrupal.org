@@ -2,15 +2,15 @@ uuid: f02b6392-8293-47dd-95ef-bdb1cc233301
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - localgov_news
   config:
     - search_api.index.localgov_news
     - views.view.localgov_news_search
   module:
     - views
     - search_api_autocomplete
+  enforced:
+    module:
+      - localgov_news
 _core:
   default_config_hash: tIGyhT8iiRyS3Wi0UR5bYB1O5wGXUGrObBfypbxRb7I
 id: localgov_news_search
@@ -19,10 +19,10 @@ index_id: localgov_news
 suggester_settings:
   live_results:
     fields: {  }
-    view_modes: {  }
     highlight:
       enabled: false
       field: ''
+    view_modes: {  }
 suggester_weights: {  }
 suggester_limits: {  }
 search_settings:

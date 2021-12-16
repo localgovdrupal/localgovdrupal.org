@@ -27,28 +27,26 @@ bundle: localgov_services_page
 mode: search_index
 content:
   body:
-    label: hidden
-    weight: 0
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   localgov_common_tasks:
     type: link
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings:
-      trim_length: null
-      url_only: false
-      url_plain: false
-      rel: '0'
-      target: '0'
-    third_party_settings: {  }
   localgov_download_links:
     type: link
-    weight: 3
-    region: content
     label: hidden
     settings:
       trim_length: null
@@ -57,19 +55,19 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
+    weight: 3
+    region: content
   localgov_page_components:
-    weight: 1
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 1
     region: content
   localgov_related_links:
     type: link
-    weight: 4
-    region: content
     label: hidden
     settings:
       trim_length: null
@@ -78,22 +76,24 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
+    weight: 4
+    region: content
   localgov_services_parent:
     type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
     weight: 5
     region: content
-    label: hidden
-    settings:
-      link: false
-    third_party_settings: {  }
   localgov_topic_classified:
     type: entity_reference_label
-    weight: 6
-    region: content
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   content_moderation_control: true
   field_meta_tags: true

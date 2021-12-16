@@ -12,12 +12,12 @@ dependencies:
     - field.field.node.localgov_news_article.localgov_news_related
     - field.field.node.localgov_news_article.localgov_newsroom
     - node.type.localgov_news_article
-  enforced:
-    module:
-      - localgov_news
   module:
     - text
     - user
+  enforced:
+    module:
+      - localgov_news
 _core:
   default_config_hash: Bp_VccbFGuUf9EqA_loZYGfGZmLQ-93L6Hi3KB5KerY
 id: node.localgov_news_article.search_result
@@ -26,11 +26,11 @@ bundle: localgov_news_article
 mode: search_result
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_media_image: true

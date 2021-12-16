@@ -18,11 +18,11 @@ plugin: 'facet_block:localgov_news_category'
 settings:
   id: 'facet_block:localgov_news_category'
   label: Category
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: category
 visibility:
   request_path:
     id: request_path
-    pages: /news/search
     negate: false
+    pages: /news/search

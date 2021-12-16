@@ -2,6 +2,10 @@ uuid: 6402aad1-fa9f-4b27-a932-76a332c5274f
 langcode: en
 status: true
 dependencies:
+  module:
+    - role_delegation
+    - system
+    - toolbar
   enforced:
     module:
       - localgov_roles

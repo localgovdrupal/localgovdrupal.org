@@ -24,10 +24,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       localgov_banner_primary: localgov_banner_primary
       localgov_banner_secondary: localgov_banner_secondary
+    negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: 36
@@ -39,11 +39,11 @@ settings:
         weight: 38
         enabled: false
       localgov_banner_primary:
-        enabled: true
         weight: 39
-      localgov_banner_secondary:
         enabled: true
+      localgov_banner_secondary:
         weight: 40
+        enabled: true
       localgov_block_view:
         weight: 41
         enabled: false
