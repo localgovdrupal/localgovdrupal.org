@@ -6,6 +6,7 @@ dependencies:
     - media.type.image
     - node.type.localgov_news_article
   module:
+    - content_moderation
     - media
     - node
     - system
@@ -32,6 +33,7 @@ permissions:
   - 'edit own image media'
   - 'edit own localgov_news_article content'
   - 'revert localgov_news_article revisions'
+  - 'view any unpublished content'
   - 'view localgov_news_article revisions'
   - 'view own unpublished media'
   - 'view the administration theme'

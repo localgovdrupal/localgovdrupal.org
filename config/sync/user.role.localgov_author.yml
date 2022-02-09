@@ -13,6 +13,7 @@ dependencies:
     - node.type.localgov_subsites_overview
     - node.type.localgov_subsites_page
   module:
+    - content_moderation
     - entity_browser
     - layout_paragraphs
     - media
@@ -78,6 +79,7 @@ permissions:
   - 'revert localgov_subsites_page revisions'
   - 'update media'
   - 'view all revisions'
+  - 'view any unpublished content'
   - 'view localgov_services_landing revisions'
   - 'view localgov_services_page revisions'
   - 'view localgov_services_sublanding revisions'
