@@ -267,6 +267,7 @@ form#views-exposed-form-localgov-news-search-page-search-news {
   width: 100%;
   height: 100%;
 }
+
 .services--feature-block a {
   display: flex;
   align-items: center;
@@ -281,3 +282,4 @@ form#views-exposed-form-localgov-news-search-page-search-news {
 .services--feature-block a:hover .services--feature-icon {
   color: var(--color-black);
 }
+
