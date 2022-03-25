@@ -283,3 +283,17 @@ form#views-exposed-form-localgov-news-search-page-search-news {
   color: var(--color-black);
 }
 
+.block-localgov-subsite-navigation ul li {
+  font-weight: normal;
+}
+.block-localgov-subsite-navigation > .menu > li {
+  font-weight: 600;
+}
+.block-localgov-subsite-navigation > .menu .menu {
+  margin-top: 0.7rem;
+  display: block;
+}
+.block-localgov-subsite-navigation > .menu .menu ul {
+  margin-top: 0;
+  display: none;
+}
