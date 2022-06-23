@@ -297,3 +297,11 @@ form#views-exposed-form-localgov-news-search-page-search-news {
   margin-top: 0;
   display: none;
 }
+
+thead th, tbody td, tbody th {
+  padding: var(--table-padding);
+  border: var(--table-border);
+}
+th {
+  background-color: var(--table-bg-color);
+}
