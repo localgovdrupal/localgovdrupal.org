@@ -12,6 +12,7 @@ dependencies:
     - node.type.localgov_services_sublanding
     - node.type.localgov_subsites_overview
     - node.type.localgov_subsites_page
+    - node.type.webform
     - taxonomy.vocabulary.localgov_topic
   module:
     - block
@@ -29,6 +30,8 @@ dependencies:
     - taxonomy
     - toolbar
     - webform
+    - webform_node
+    - webform_submission_log
   enforced:
     module:
       - localgov_roles
@@ -40,6 +43,7 @@ weight: 2
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access any webform configuration'
   - 'access content overview'
   - 'access media overview'
   - 'access page_components entity browser pages'
@@ -47,11 +51,14 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access webform overview'
+  - 'access webform submission log'
   - 'administer blocks'
   - 'administer menu'
   - 'administer nodes'
   - 'administer redirect settings'
   - 'administer redirects'
+  - 'administer webform'
+  - 'administer webform submission'
   - 'bypass node access'
   - 'create council_logo media'
   - 'create document media'
@@ -67,6 +74,7 @@ permissions:
   - 'create terms in localgov_topic'
   - 'create url aliases'
   - 'create webform'
+  - 'create webform content'
   - 'delete any council_logo media'
   - 'delete any document media'
   - 'delete any image media'
@@ -77,6 +85,8 @@ permissions:
   - 'delete any localgov_subsites_page content'
   - 'delete any media'
   - 'delete any remote_video media'
+  - 'delete any webform'
+  - 'delete any webform content'
   - 'delete any webform submission'
   - 'delete localgov_services_landing revisions'
   - 'delete localgov_services_page revisions'
@@ -94,6 +104,8 @@ permissions:
   - 'delete own localgov_subsites_page content'
   - 'delete own remote_video media'
   - 'delete terms in localgov_topic'
+  - 'delete webform submissions any node'
+  - 'delete webform submissions own node'
   - 'edit any council_logo media'
   - 'edit any document media'
   - 'edit any image media'
@@ -103,6 +115,9 @@ permissions:
   - 'edit any localgov_subsites_overview content'
   - 'edit any localgov_subsites_page content'
   - 'edit any remote_video media'
+  - 'edit any webform'
+  - 'edit any webform content'
+  - 'edit any webform submission'
   - 'edit layout paragraphs plugin config'
   - 'edit own council_logo media'
   - 'edit own document media'
@@ -115,6 +130,8 @@ permissions:
   - 'edit own remote_video media'
   - 'edit paragraph library item'
   - 'edit terms in localgov_topic'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
   - 'reorder entity_hierarchy children'
   - 'revert all revisions'
   - 'revert localgov_services_landing revisions'
@@ -122,6 +139,7 @@ permissions:
   - 'revert localgov_services_sublanding revisions'
   - 'revert localgov_subsites_overview revisions'
   - 'revert localgov_subsites_page revisions'
+  - 'revert webform revisions'
   - 'update any media'
   - 'update media'
   - 'view all revisions'
@@ -136,3 +154,6 @@ permissions:
   - 'view own unpublished media'
   - 'view the administration theme'
   - 'view unpublished paragraphs'
+  - 'view webform revisions'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'
