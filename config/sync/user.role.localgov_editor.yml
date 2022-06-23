@@ -28,6 +28,7 @@ dependencies:
     - system
     - taxonomy
     - toolbar
+    - webform
   enforced:
     module:
       - localgov_roles
@@ -45,6 +46,7 @@ permissions:
   - 'access paragraphs_library_items entity browser pages'
   - 'access taxonomy overview'
   - 'access toolbar'
+  - 'access webform overview'
   - 'administer blocks'
   - 'administer menu'
   - 'administer nodes'
@@ -64,6 +66,7 @@ permissions:
   - 'create remote_video media'
   - 'create terms in localgov_topic'
   - 'create url aliases'
+  - 'create webform'
   - 'delete any council_logo media'
   - 'delete any document media'
   - 'delete any image media'
@@ -74,6 +77,7 @@ permissions:
   - 'delete any localgov_subsites_page content'
   - 'delete any media'
   - 'delete any remote_video media'
+  - 'delete any webform submission'
   - 'delete localgov_services_landing revisions'
   - 'delete localgov_services_page revisions'
   - 'delete localgov_services_sublanding revisions'
@@ -122,6 +126,7 @@ permissions:
   - 'update media'
   - 'view all revisions'
   - 'view any unpublished content'
+  - 'view any webform submission'
   - 'view localgov_services_landing revisions'
   - 'view localgov_services_page revisions'
   - 'view localgov_services_sublanding revisions'

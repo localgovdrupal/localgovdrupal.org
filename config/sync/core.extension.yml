@@ -72,6 +72,7 @@ module:
   metatag: 0
   metatag_open_graph: 0
   metatag_twitter_cards: 0
+  mysql: 0
   node: 0
   office_hours: 0
   options: 0
@@ -110,6 +111,7 @@ module:
   varnish_purger: 0
   views_ui: 0
   viewsreference: 0
+  webform: 0
   workflows: 0
   pathauto: 1
   views: 10
