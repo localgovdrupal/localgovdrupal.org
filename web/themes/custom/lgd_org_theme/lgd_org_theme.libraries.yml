@@ -72,7 +72,12 @@ front:
   css:
     theme:
       css/components/front.css: {}
-      
+
+form-items:
+  css:
+    theme:
+      css/components/form-items.css: {}
+
 header-js:
   js:
     js/header.js: {}
