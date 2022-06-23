@@ -22,11 +22,14 @@ content:
     settings:
       image_link: ''
       image_style: scale_crop_7_3_large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
   created: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

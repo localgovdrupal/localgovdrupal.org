@@ -12,7 +12,7 @@ type: 'canonical_entities:node'
 pattern: '[node:localgov_subsites_parent:entity:url:relative]/[node:title]'
 selection_criteria:
   a17ad9f1-47e0-407c-9351-970cb7dc958c:
-    id: node_type
+    id: 'entity_bundle:node'
     negate: false
     uuid: a17ad9f1-47e0-407c-9351-970cb7dc958c
     context_mapping:
