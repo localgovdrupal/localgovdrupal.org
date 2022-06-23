@@ -20,6 +20,7 @@ libraries:
   - lgd_org_theme/overrides
   - lgd_org_theme/header
   - lgd_org_theme/front
+  - lgd_org_theme/form-items
 
 ckeditor_stylesheets:
   - css/ckeditor.css
