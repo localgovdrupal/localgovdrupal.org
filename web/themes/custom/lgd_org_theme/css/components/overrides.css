@@ -270,3 +270,10 @@ main {
   display: none;
 }
 
+thead th, tbody td, tbody th {
+  padding: var(--table-padding);
+  border: var(--table-border);
+}
+th {
+  background-color: var(--table-bg-color);
+}

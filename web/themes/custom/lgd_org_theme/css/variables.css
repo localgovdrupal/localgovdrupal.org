@@ -191,9 +191,9 @@ body {
   --quote-author-color: var(--color-black);
 
   /* Documents */
-  --table-border: 1px solid var(--table-bg-color);
+  --table-border: 1px solid var(--color-grey-medium);
   --table-padding: var(--spacing-small);
-  --table-bg-color: var(--color-grey-light);
+  --table-bg-color: var(--color-sahara);
 
   /* Links styled like buttons */
   --button-link-color: var(--color-black);
@@ -201,4 +201,6 @@ body {
 
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
+
+
 }
