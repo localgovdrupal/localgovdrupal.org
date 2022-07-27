@@ -25,6 +25,7 @@ dependencies:
     - paragraphs_library
     - path
     - redirect
+    - simple_sitemap
     - system
     - taxonomy
     - toolbar
@@ -50,6 +51,7 @@ permissions:
   - 'administer nodes'
   - 'administer redirect settings'
   - 'administer redirects'
+  - 'administer sitemap settings'
   - 'bypass node access'
   - 'create council_logo media'
   - 'create document media'
