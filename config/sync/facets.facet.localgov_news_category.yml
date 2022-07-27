@@ -16,6 +16,8 @@ id: localgov_news_category
 name: Category
 weight: 0
 min_count: 1
+missing: false
+missing_label: others
 url_alias: category
 facet_source_id: 'search_api:views_page__localgov_news_search__page_search_news'
 field_identifier: localgov_news_categories
