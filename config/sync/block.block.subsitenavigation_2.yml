@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - ctools
     - localgov_subsites
+    - node
   theme:
     - lgd_org_theme
 id: subsitenavigation_2
