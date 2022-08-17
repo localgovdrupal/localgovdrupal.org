@@ -9,16 +9,16 @@ _core:
 id: localgov_step_by_step_overview
 label: 'Step by step overview'
 type: 'canonical_entities:node'
-pattern: 'step-by-step/[node:title]'
+pattern: '[node:localgov_subsites_parent:entity:url:relative]/[node:title]'
 selection_criteria:
-  b7733dd9-c007-410f-94cb-896af2a94006:
+  2e4c94f6-c30c-447d-8226-6e3a996d200a:
     id: 'entity_bundle:node'
-    bundles:
-      localgov_step_by_step_overview: localgov_step_by_step_overview
     negate: false
+    uuid: 2e4c94f6-c30c-447d-8226-6e3a996d200a
     context_mapping:
       node: node
-    uuid: b7733dd9-c007-410f-94cb-896af2a94006
+    bundles:
+      localgov_step_by_step_overview: localgov_step_by_step_overview
 selection_logic: and
 weight: -5
 relationships: {  }
