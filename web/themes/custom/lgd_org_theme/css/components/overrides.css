@@ -277,3 +277,7 @@ thead th, tbody td, tbody th {
 th {
   background-color: var(--table-bg-color);
 }
+
+.step-by-step-pages ol.step-list .step .step__title .step-show {
+  background-color: var(--color-grey-light);
+}
