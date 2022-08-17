@@ -7,6 +7,7 @@ dependencies:
     - node.type.localgov_services_landing
     - node.type.localgov_services_page
     - node.type.localgov_services_sublanding
+    - node.type.localgov_step_by_step_overview
 _core:
   default_config_hash: pH_-QPb-Vs4nARMi0ve6PIREPABVTGxsNKz1haWGhzA
 id: node.localgov_services_landing.localgov_destinations
@@ -26,6 +27,7 @@ settings:
       localgov_services_landing: localgov_services_landing
       localgov_services_sublanding: localgov_services_sublanding
       localgov_services_page: localgov_services_page
+      localgov_step_by_step_overview: localgov_step_by_step_overview
     sort:
       field: _none
     auto_create: false

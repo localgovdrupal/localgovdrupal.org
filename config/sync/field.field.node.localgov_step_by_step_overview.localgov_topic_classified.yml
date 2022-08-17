@@ -1,0 +1,31 @@
+uuid: 9cc77570-d305-43b3-894c-6f3dfc79a6bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_topic_classified
+    - node.type.localgov_step_by_step_overview
+    - taxonomy.vocabulary.localgov_topic
+_core:
+  default_config_hash: UCKcQY2hSIFNv0h_ubRFB1q4xyxxjxuZwdDZCDjwMbY
+id: node.localgov_step_by_step_overview.localgov_topic_classified
+field_name: localgov_topic_classified
+entity_type: node
+bundle: localgov_step_by_step_overview
+label: 'Topic term'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      localgov_topic: localgov_topic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

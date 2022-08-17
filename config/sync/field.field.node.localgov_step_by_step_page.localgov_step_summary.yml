@@ -1,0 +1,23 @@
+uuid: 7c8d54f9-10f5-41ed-a0f4-8f5a710e881c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_step_summary
+    - node.type.localgov_step_by_step_page
+  module:
+    - text
+_core:
+  default_config_hash: cRNBUBTF-9-9d3995OslyKwCzq5zQpECo_nNcaAT1ew
+id: node.localgov_step_by_step_page.localgov_step_summary
+field_name: localgov_step_summary
+entity_type: node
+bundle: localgov_step_by_step_page
+label: 'Step summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

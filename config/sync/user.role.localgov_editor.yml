@@ -10,6 +10,8 @@ dependencies:
     - node.type.localgov_services_landing
     - node.type.localgov_services_page
     - node.type.localgov_services_sublanding
+    - node.type.localgov_step_by_step_overview
+    - node.type.localgov_step_by_step_page
     - node.type.localgov_subsites_overview
     - node.type.localgov_subsites_page
     - taxonomy.vocabulary.localgov_topic
@@ -59,6 +61,8 @@ permissions:
   - 'create localgov_services_landing content'
   - 'create localgov_services_page content'
   - 'create localgov_services_sublanding content'
+  - 'create localgov_step_by_step_overview content'
+  - 'create localgov_step_by_step_page content'
   - 'create localgov_subsites_overview content'
   - 'create localgov_subsites_page content'
   - 'create media'
@@ -72,6 +76,8 @@ permissions:
   - 'delete any localgov_services_landing content'
   - 'delete any localgov_services_page content'
   - 'delete any localgov_services_sublanding content'
+  - 'delete any localgov_step_by_step_overview content'
+  - 'delete any localgov_step_by_step_page content'
   - 'delete any localgov_subsites_overview content'
   - 'delete any localgov_subsites_page content'
   - 'delete any media'
@@ -79,6 +85,8 @@ permissions:
   - 'delete localgov_services_landing revisions'
   - 'delete localgov_services_page revisions'
   - 'delete localgov_services_sublanding revisions'
+  - 'delete localgov_step_by_step_overview revisions'
+  - 'delete localgov_step_by_step_page revisions'
   - 'delete localgov_subsites_overview revisions'
   - 'delete localgov_subsites_page revisions'
   - 'delete media'
@@ -88,6 +96,8 @@ permissions:
   - 'delete own localgov_services_landing content'
   - 'delete own localgov_services_page content'
   - 'delete own localgov_services_sublanding content'
+  - 'delete own localgov_step_by_step_overview content'
+  - 'delete own localgov_step_by_step_page content'
   - 'delete own localgov_subsites_overview content'
   - 'delete own localgov_subsites_page content'
   - 'delete own remote_video media'
@@ -98,6 +108,8 @@ permissions:
   - 'edit any localgov_services_landing content'
   - 'edit any localgov_services_page content'
   - 'edit any localgov_services_sublanding content'
+  - 'edit any localgov_step_by_step_overview content'
+  - 'edit any localgov_step_by_step_page content'
   - 'edit any localgov_subsites_overview content'
   - 'edit any localgov_subsites_page content'
   - 'edit any remote_video media'
@@ -108,6 +120,8 @@ permissions:
   - 'edit own localgov_services_landing content'
   - 'edit own localgov_services_page content'
   - 'edit own localgov_services_sublanding content'
+  - 'edit own localgov_step_by_step_overview content'
+  - 'edit own localgov_step_by_step_page content'
   - 'edit own localgov_subsites_overview content'
   - 'edit own localgov_subsites_page content'
   - 'edit own remote_video media'
@@ -118,6 +132,8 @@ permissions:
   - 'revert localgov_services_landing revisions'
   - 'revert localgov_services_page revisions'
   - 'revert localgov_services_sublanding revisions'
+  - 'revert localgov_step_by_step_overview revisions'
+  - 'revert localgov_step_by_step_page revisions'
   - 'revert localgov_subsites_overview revisions'
   - 'revert localgov_subsites_page revisions'
   - 'update any media'
@@ -127,6 +143,8 @@ permissions:
   - 'view localgov_services_landing revisions'
   - 'view localgov_services_page revisions'
   - 'view localgov_services_sublanding revisions'
+  - 'view localgov_step_by_step_overview revisions'
+  - 'view localgov_step_by_step_page revisions'
   - 'view localgov_subsites_overview revisions'
   - 'view localgov_subsites_page revisions'
   - 'view own unpublished content'

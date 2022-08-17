@@ -1,0 +1,30 @@
+uuid: 6a2d1075-1fda-4ac1-a305-45b9959cddea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_step_parent
+    - node.type.localgov_step_by_step_overview
+    - node.type.localgov_step_by_step_page
+_core:
+  default_config_hash: 0JNlYIcq7cnVhW_2bl3yZI_LCzd9FLx5-DCY5YrqXWU
+id: node.localgov_step_by_step_page.localgov_step_parent
+field_name: localgov_step_parent
+entity_type: node
+bundle: localgov_step_by_step_page
+label: 'Step by step overview'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_step_by_step_overview: localgov_step_by_step_overview
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
