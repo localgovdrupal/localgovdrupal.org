@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.localgov_step_by_step_overview.localgov_services_parent
     - field.field.node.localgov_step_by_step_overview.localgov_step_by_step_pages
     - field.field.node.localgov_step_by_step_overview.localgov_step_description
+    - field.field.node.localgov_step_by_step_overview.localgov_subsites_parent
     - field.field.node.localgov_step_by_step_overview.localgov_topic_classified
     - node.type.localgov_step_by_step_overview
   module:
@@ -60,4 +61,5 @@ content:
     region: content
 hidden:
   links: true
+  localgov_subsites_parent: true
   search_api_excerpt: true

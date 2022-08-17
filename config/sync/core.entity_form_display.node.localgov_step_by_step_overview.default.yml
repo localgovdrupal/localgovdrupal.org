@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.localgov_step_by_step_overview.localgov_services_parent
     - field.field.node.localgov_step_by_step_overview.localgov_step_by_step_pages
     - field.field.node.localgov_step_by_step_overview.localgov_step_description
+    - field.field.node.localgov_step_by_step_overview.localgov_subsites_parent
     - field.field.node.localgov_step_by_step_overview.localgov_topic_classified
     - node.type.localgov_step_by_step_overview
   module:
+    - entity_hierarchy
     - path
     - text
 _core:
@@ -61,6 +63,17 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  localgov_subsites_parent:
+    type: entity_reference_hierarchy_autocomplete
+    weight: 52
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+      hide_weight: false
     third_party_settings: {  }
   localgov_topic_classified:
     type: entity_reference_autocomplete
