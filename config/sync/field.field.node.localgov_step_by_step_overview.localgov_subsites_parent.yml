@@ -1,0 +1,36 @@
+uuid: 23af68d3-63ca-4447-a37f-3552ebd7825d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_subsites_parent
+    - node.type.localgov_step_by_step_overview
+    - node.type.localgov_subsites_overview
+    - node.type.localgov_subsites_page
+  module:
+    - entity_hierarchy
+id: node.localgov_step_by_step_overview.localgov_subsites_parent
+field_name: localgov_subsites_parent
+entity_type: node
+bundle: localgov_step_by_step_overview
+label: Parent
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_subsites_overview: localgov_subsites_overview
+      localgov_subsites_page: localgov_subsites_page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: localgov_subsites_overview
+  weight_min: -50
+  weight_max: 50
+  weight_label: Weight
+field_type: entity_reference_hierarchy

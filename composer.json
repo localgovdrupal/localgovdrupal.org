@@ -18,7 +18,7 @@
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/masquerade": "^2.0@beta",
-        "drupal/purge": "^3.0",
+        "drupal/purge": "3.x-dev@dev",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/redirect": "^1.6",
         "drupal/varnish_purge": "^2.1",

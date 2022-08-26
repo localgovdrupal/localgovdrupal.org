@@ -1,0 +1,21 @@
+uuid: a3db71c1-977f-4164-909c-ec4808d8768f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_step_section_title
+    - node.type.localgov_step_by_step_page
+_core:
+  default_config_hash: bzYQgHYEAXffUArC_fB7jkGdvdVf_udz5yu-0Lu8LgY
+id: node.localgov_step_by_step_page.localgov_step_section_title
+field_name: localgov_step_section_title
+entity_type: node
+bundle: localgov_step_by_step_page
+label: 'Step title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

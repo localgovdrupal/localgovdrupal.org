@@ -61,6 +61,7 @@ module:
   localgov_services_navigation: 0
   localgov_services_page: 0
   localgov_services_sublanding: 0
+  localgov_step_by_step: 0
   localgov_subsites: 0
   localgov_subsites_paragraphs: 0
   localgov_topics: 0

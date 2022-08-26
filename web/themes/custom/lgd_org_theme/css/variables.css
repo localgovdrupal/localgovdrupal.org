@@ -202,5 +202,13 @@ body {
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
 
-
+  /* Step by step  */
+  --step-by-step-relationship-border-color: var(--color-accent);
+  --step-by-step-part-of-color: var(--color-black);
+  --step-by-step-active-item-color: var(--color-black);
+  --step-by-step-active-bullet-bg-color: var(--color-black);
+  --step-by-step-active-bullet-border-color: var(--color-black);
+  --step-by-step-line-joining-items-border: var(--border);
+  --step-by-step-line-joining-items-color: var(--color-black);
+  --step-by-step-nav-block-width: var(--width-medium);
 }

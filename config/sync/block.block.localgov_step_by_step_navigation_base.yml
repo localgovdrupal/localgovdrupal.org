@@ -1,0 +1,35 @@
+uuid: 0573e172-61c0-44aa-b7f9-cc7cde039162
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.localgov_step_by_step_navigation
+  module:
+    - node
+    - views
+  theme:
+    - localgov_base
+_core:
+  default_config_hash: LvHKvWrQz4yLbc0H_juYTFdrEMq4D4E1PLUFMjycasw
+id: localgov_step_by_step_navigation_base
+theme: localgov_base
+region: sidebar_second
+weight: 200
+provider: null
+plugin: 'views_block:localgov_step_by_step_navigation-steps'
+settings:
+  id: 'views_block:localgov_step_by_step_navigation-steps'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      localgov_step_by_step_page: localgov_step_by_step_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
