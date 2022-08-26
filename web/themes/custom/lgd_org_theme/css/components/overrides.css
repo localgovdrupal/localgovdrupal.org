@@ -279,5 +279,9 @@ th {
 }
 
 .step-by-step-pages ol.step-list .step .step__title .step-show {
-  background-color: var(--color-grey-light);
+  padding: 0;
+}
+
+.step-by-step-pages ol.step-list .step .step__summary p {
+  font-size: var(--font-size-small);
 }
