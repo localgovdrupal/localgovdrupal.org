@@ -1,0 +1,12 @@
+uuid: f186f0b2-3116-42ef-bcb8-2896b6aa3434
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+id: trusted_admin
+label: 'Trusted admin'
+weight: 7
+is_admin: null
+permissions:
+  - 'administer blocks'
