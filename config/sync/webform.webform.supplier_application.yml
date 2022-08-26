@@ -1,6 +1,6 @@
-uuid: d4e0248a-7441-4758-ba50-8c57ef243b01
+uuid: 640d611e-984d-47ab-9e73-cf9d1ec63a43
 langcode: en
-status: closed
+status: open
 dependencies: {  }
 weight: 0
 open: null
@@ -8,11 +8,72 @@ close: null
 uid: 2
 template: false
 archive: false
-id: test
-title: test
-description: ''
+id: supplier_application
+title: 'Supplier Application'
+description: 'Application form for potential suppliers'
 category: ''
-elements: null
+elements: |-
+  company_name:
+    '#type': textfield
+    '#title': 'Company name'
+    '#required': true
+    '#required_error': 'Please provide the name of the company'
+  website:
+    '#type': url
+    '#title': Website
+    '#required': true
+    '#required_error': 'Please provide your website URL'
+  contact_person:
+    '#type': textfield
+    '#title': 'Contact person'
+    '#required': true
+    '#required_error': 'Please provide your name'
+  job_title:
+    '#type': textfield
+    '#title': 'Position / Role'
+    '#required': true
+    '#required_error': 'Please provide your role or job description'
+  contact_email:
+    '#type': email
+    '#title': 'Contact email'
+    '#required': true
+    '#required_error': 'Please provide your email address'
+  content_telephone_:
+    '#type': textfield
+    '#title': 'Content telephone:'
+    '#required': true
+    '#required_error': 'Please provide a contact number'
+  drupal_org_profile_url:
+    '#type': url
+    '#title': 'Drupal.org profile URL'
+  speaker_engagement_url:
+    '#type': url
+    '#title': 'Speaker engagement URL'
+  please_list_which_councils_you_are_working_with:
+    '#type': textarea
+    '#title': 'Name the councils you are working with'
+    '#required': true
+    '#required_error': 'Suppliers need to be working with a LocalGov Drupal council'
+  please_provide_a_contact_name_email_address_for_at_least_one_cou:
+    '#type': textarea
+    '#title': 'Please provide a contact name & email address for at least one council reference. '
+    '#required': true
+    '#required_error': 'Suppliers must be recommended by a LocalGov Drupal council.'
+  we_agree_to_:
+    '#type': checkboxes
+    '#title': 'We agree to:'
+    '#options':
+      'provide councils with the features and flexibility to meet user needs': 'provide councils with the features and flexibility to meet user needs'
+      'be backed by excellent customer service and documentation': 'be backed by excellent customer service and documentation'
+      'be fairly priced': 'be fairly priced'
+      'provide comprehensive APIs as standard, not as an add-on': 'provide comprehensive APIs as standard, not as an add-on'
+      'adhere to the GOV.UK technology code of practice': 'adhere to the GOV.UK technology code of practice'
+      'commit to the long term sustainability of the project': 'commit to the long term sustainability of the project'
+      'show active participation in our technical group, with frequent pull requests which are positively reviewed by their peers': 'show active participation in our technical group, with frequent pull requests which are positively reviewed by their peers'
+      'accept the MoU / terms and conditions': 'accept the MoU / terms and conditions'
+      'accept community code of conducts for Slack and the wider the community': 'accept community code of conducts for Slack and the wider the community'
+    '#required': true
+    '#options__properties': ''
 css: ''
 javascript: ''
 settings:
@@ -22,11 +83,11 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /webformpreview
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
-  form_submit_once: false
+  form_title: source_entity_webform
+  form_submit_once: true
   form_open_message: ''
   form_close_message: ''
   form_exception_message: ''
@@ -82,7 +143,7 @@ settings:
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
-  wizard_progress_bar: true
+  wizard_progress_bar: false
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
@@ -97,7 +158,7 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   preview: 0
@@ -115,12 +176,12 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
-  confirmation_url: ''
+  confirmation_type: url
+  confirmation_url: 'https://localgovdrupal.org/suppliers/thank-you'
   confirmation_title: ''
   confirmation_message: ''
   confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
@@ -194,5 +255,42 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: hello@localgovdrupal.org
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Suppliers form submission'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
 variants: {  }
