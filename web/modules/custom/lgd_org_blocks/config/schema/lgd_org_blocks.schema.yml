@@ -39,3 +39,10 @@ block.settings.lgd_org_blocks_builtwith:
     footer_slogan:
       type: string
       label: 'Footer Slogan'
+block.settings.lgd_org_blocks_Mailchimp:
+  type: block_settings
+  label: 'Mailchimp block'
+  mapping:
+    content:
+      type: string
+      label: Content
