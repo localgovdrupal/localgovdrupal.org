@@ -1,0 +1,30 @@
+uuid: b0510f68-6db0-4d18-a6fd-60e84602ad05
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.share_your_feedback
+  module:
+    - system
+    - webform
+  theme:
+    - lgd_org_theme
+id: webform_2
+theme: lgd_org_theme
+region: content
+weight: -12
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform - feedback'
+  label_display: visible
+  provider: webform
+  webform_id: share_your_feedback
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/93

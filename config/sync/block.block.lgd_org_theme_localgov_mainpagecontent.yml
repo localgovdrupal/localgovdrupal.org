@@ -11,7 +11,7 @@ _core:
 id: lgd_org_theme_localgov_mainpagecontent
 theme: lgd_org_theme
 region: content
-weight: -10
+weight: -14
 provider: null
 plugin: system_main_block
 settings:

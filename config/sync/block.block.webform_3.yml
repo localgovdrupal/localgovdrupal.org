@@ -1,0 +1,30 @@
+uuid: afd9c3c9-6c3f-4a46-a244-09595d465cf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.join_the_slack_community
+  module:
+    - system
+    - webform
+  theme:
+    - lgd_org_theme
+id: webform_3
+theme: lgd_org_theme
+region: content
+weight: -11
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform - slack'
+  label_display: '0'
+  provider: webform
+  webform_id: join_the_slack_community
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/86

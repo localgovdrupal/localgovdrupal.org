@@ -11,7 +11,7 @@ dependencies:
 id: views_block__localgov_step_by_step_navigation_steps_for_overview
 theme: lgd_org_theme
 region: content
-weight: 0
+weight: -8
 provider: null
 plugin: 'views_block:localgov_step_by_step_navigation-steps_for_overview'
 settings:

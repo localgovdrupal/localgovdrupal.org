@@ -22,14 +22,14 @@ settings:
   label: ''
   label_display: '0'
   provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   node_type:
     id: node_type
-    bundles:
-      localgov_step_by_step_page: localgov_step_by_step_page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      localgov_step_by_step_page: localgov_step_by_step_page
