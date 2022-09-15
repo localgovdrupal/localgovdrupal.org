@@ -1,0 +1,30 @@
+uuid: 8225b8a4-2556-468d-89fa-6f9f786f16d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.supplier_application
+  module:
+    - system
+    - webform
+  theme:
+    - lgd_org_theme
+id: webform
+theme: lgd_org_theme
+region: content
+weight: -13
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform - supplier application'
+  label_display: '0'
+  provider: webform
+  webform_id: supplier_application
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/78
