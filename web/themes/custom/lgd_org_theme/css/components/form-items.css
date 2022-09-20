@@ -30,3 +30,17 @@ form#views-exposed-form-localgov-news-search-page-search-news {
 .js input.form-autocomplete {
   background-position: 98% center;
 }
+
+#mc_embed_signup .indicates-required {
+  font-size: var(--font-size-small);
+  margin-bottom: var(--spacing);
+}
+
+.mc-field-group {
+  margin-bottom: var(--spacing);
+
+}
+
+#mc-embedded-subscribe {
+  font-size: var(--font-size-medium);
+}
