@@ -31,6 +31,7 @@ form#views-exposed-form-localgov-news-search-page-search-news {
   background-position: 98% center;
 }
 
+/*Mailchimp*/
 #mc_embed_signup .indicates-required {
   font-size: var(--font-size-small);
   margin-bottom: var(--spacing);
@@ -41,6 +42,13 @@ form#views-exposed-form-localgov-news-search-page-search-news {
 
 }
 
+
+.webform-button--submit,
 #mc-embedded-subscribe {
   font-size: var(--font-size-medium);
+}
+
+/*Webform*/
+.block-webform {
+  margin-bottom: var(--spacing-largest);
 }
