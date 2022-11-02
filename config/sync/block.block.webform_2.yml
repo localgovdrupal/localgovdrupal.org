@@ -1,30 +1,30 @@
-uuid: 8225b8a4-2556-468d-89fa-6f9f786f16d1
+uuid: b0510f68-6db0-4d18-a6fd-60e84602ad05
 langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.supplier_application
+    - webform.webform.share_your_feedback
   module:
     - system
     - webform
   theme:
     - lgd_org_theme
-id: webform
+id: webform_2
 theme: lgd_org_theme
 region: content
-weight: -9
+weight: -12
 provider: null
 plugin: webform_block
 settings:
   id: webform_block
-  label: 'Webform - supplier application'
-  label_display: '0'
+  label: 'Webform - feedback'
+  label_display: visible
   provider: webform
-  webform_id: supplier_application
+  webform_id: share_your_feedback
   default_data: ''
   redirect: false
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /node/78
+    pages: /node/93

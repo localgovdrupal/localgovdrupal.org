@@ -13,12 +13,12 @@ pattern: '[node:localgov_step_parent:entity:url:relative]/[node:title]'
 selection_criteria:
   e8541e26-53e0-4b3e-92eb-e13703ad3772:
     id: 'entity_bundle:node'
-    bundles:
-      localgov_step_by_step_page: localgov_step_by_step_page
     negate: false
+    uuid: e8541e26-53e0-4b3e-92eb-e13703ad3772
     context_mapping:
       node: node
-    uuid: e8541e26-53e0-4b3e-92eb-e13703ad3772
+    bundles:
+      localgov_step_by_step_page: localgov_step_by_step_page
 selection_logic: and
 weight: -5
 relationships: {  }
