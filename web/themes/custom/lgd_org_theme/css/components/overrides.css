@@ -285,3 +285,7 @@ th {
 .step-by-step-pages ol.step-list .step .step__summary p {
   font-size: var(--font-size-small);
 }
+
+.lgd-prev-next {
+  margin-top: var(--spacing-largest);
+}

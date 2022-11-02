@@ -48,6 +48,13 @@ form#views-exposed-form-localgov-news-search-page-search-news {
   font-size: var(--font-size-medium);
 }
 
+.response {
+  color: white;
+  padding: 1rem;
+  background-color: green;
+  margin-bottom: var(--spacing);
+}
+
 /*Webform*/
 .block-webform {
   margin-bottom: var(--spacing-largest);
