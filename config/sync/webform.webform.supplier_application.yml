@@ -15,12 +15,12 @@ category: ''
 elements: |-
   company_name:
     '#type': textfield
-    '#title': '*Company name'
+    '#title': '*Agency name'
     '#required': true
     '#required_error': 'Please provide the name of the company'
   website:
     '#type': url
-    '#title': '*Company Website'
+    '#title': '*Agency Website'
     '#required': true
     '#required_error': 'Please provide your website URL'
   contact_person:
