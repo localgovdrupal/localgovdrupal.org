@@ -37,6 +37,7 @@ module:
   fontawesome: 0
   geolocation: 0
   geolocation_google_maps: 0
+  gtm: 0
   help: 0
   history: 0
   image: 0
