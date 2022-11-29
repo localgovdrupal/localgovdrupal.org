@@ -1,0 +1,34 @@
+##
+# Site configuration for LocalGov Drupal public site (lgdorg)
+#
+# This file is used by the automation tools and is automatically generated.
+# Any manual changes are liable to be overwritten.
+---
+alias: lgdorg
+composer: true
+db_backup_path: /var/backups/mysql/sqldump
+db_dump: localgov_prod.sql
+db_prefix:
+deployer: true
+description: 'LocalGov Drupal public site'
+envs:
+  prod:
+    git_root: /var/www/production.localgovdrupal.org/gitroot
+    uri: localgovdrupal.org
+  stage:
+    git_root: /var/www/stage.localgovdrupal.org/gitroot
+    uri: stage.localgovdrupal.org
+git_default_branch: 1.x
+git_repo: git@github.com:localgovdrupal/localgovdrupal.org.git
+live_env: prod
+maintainers:
+  - stephen@agile.coop
+name: localgovdrupal.org
+ssh_host: localgovdrupal.org
+ssh_port: 22
+ssh_proxy: false
+ssh_user: admin
+type: drupal8
+updater: true
+url: https://localgovdrupal.org
+web_root: web
