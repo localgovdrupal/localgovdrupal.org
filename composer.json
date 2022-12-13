@@ -28,6 +28,7 @@
         "drupal/purge": "3.x-dev@dev",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/redirect": "^1.6",
+        "drupal/stage_file_proxy": "^1.4",
         "drupal/varnish_purge": "^2.1",
         "drupal/webform": "^6.1",
         "localgovdrupal/localgov": "^2.0",
