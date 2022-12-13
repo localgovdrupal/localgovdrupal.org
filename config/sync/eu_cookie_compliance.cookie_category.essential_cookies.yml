@@ -1,0 +1,9 @@
+uuid: 9386dc1e-7ba6-4815-8b5c-800632ecfccf
+langcode: en
+status: true
+dependencies: {  }
+id: essential_cookies
+label: 'Essential cookies'
+description: ''
+checkbox_default_state: required
+weight: -9

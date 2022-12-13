@@ -1,0 +1,9 @@
+uuid: b2ba9f95-bcba-4aca-a5b6-29dca8ce1e9d
+langcode: en
+status: true
+dependencies: {  }
+id: non_essential
+label: Non-Essential
+description: ''
+checkbox_default_state: unchecked
+weight: -9
