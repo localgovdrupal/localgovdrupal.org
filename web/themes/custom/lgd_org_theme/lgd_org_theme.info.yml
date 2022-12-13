@@ -21,6 +21,7 @@ libraries:
   - lgd_org_theme/header
   - lgd_org_theme/front
   - lgd_org_theme/form-items
+  - lgd_org_theme/cookie-compliance
 
 ckeditor_stylesheets:
   - css/ckeditor.css

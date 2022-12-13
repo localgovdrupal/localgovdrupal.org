@@ -84,3 +84,8 @@ header-js:
   dependencies:
     - core/drupal
     - core/drupal.debounce
+
+cookie-compliance:
+  css:
+    theme:
+      css/components/cookie-compliance.css: {}
