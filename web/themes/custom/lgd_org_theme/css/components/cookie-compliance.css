@@ -1,0 +1,166 @@
+body {
+  --ctf-color-white: var(--color-white);
+  --ctf-color-black: #000;
+  --ctf-color-grey-light: #dddddd;
+  --ctf-color-grey: #a0a0a0;
+  --ctf-color-grey-dark: #303030;
+  --ctf-background-color: var(--ctf-color-white);
+  --ctf-foreground-color: var(--ctf-color-grey-dark);
+  /*Breakpoints */
+  --ctf-bp-medium: "500px";
+  --ctf-bp-large: "1000px";
+}
+
+/*// Layout and wrapper*/
+.sliding-popup-left {
+  display: block;
+  margin: 0;
+  padding: var(--spacing);
+  left: 0;
+  right: auto;
+  z-index: 99999;
+  background: var(--ctf-background-color);
+  width: 90%;
+  max-width: calc(100% - 75px);
+  height: 100%;
+  position: fixed;
+}
+
+@media screen and (min-width: 48rem) {
+  .sliding-popup-left {
+    width: 500px;
+  }
+}
+
+.sliding-popup-left .cookie-compliance__content {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.mm-page:before,
+.dialog-off-canvas-main-canvas:before {
+  content: '';
+  z-index: 1;
+  background-color: none;
+  transition: background-color 1s linear;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.eu-cookie-compliance-popup-open .mm-page:before,
+.eu-cookie-compliance-popup-open .dialog-off-canvas-main-canvas:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+
+
+/*// Typography*/
+.sliding-popup-left {
+  text-align: left;
+}
+
+.sliding-popup-left p,
+.sliding-popup-left h2 {
+  color: var(--ctf-foreground-color);
+}
+
+
+/*// The category checkboxes*/
+.eu-cookie-compliance-categories {
+  /*// Hide them*/
+  display: none;
+}
+
+/*// Buttons*/
+.cookie-compliance__buttons {
+  clear: left;
+  padding-top: 10px;
+  max-width: 280px;
+}
+
+@media screen and (min-width: 48rem) {
+  .cookie-compliance__buttons {
+    align-items: end;
+    align-self: end;
+    justify-content: end;
+    justify-self: end;
+  }
+}
+.eu-cookie-compliance-categories {
+  background-color: pink;
+}
+.cookie-compliance__buttons button {
+  width: 100%;
+  margin-top: var(--spacing);
+}
+
+@media screen and (min-width: 48rem) {
+  .eu-cookie-compliance-categories button {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+.cookie-compliance__buttons .cookie-compliance__button--more {
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  margin-top: 20px;
+  color: var(--ctf-foreground-color);
+  border: none;
+  width: 100%;
+  max-width: none;
+  text-decoration: underline;
+}
+
+.cookie-compliance__buttons .cookie-compliance__button--more:hover {
+  background: transparent;
+  color: var(--ctf-foreground-color);
+  text-decoration: none;
+}
+
+.cookie-compliance__buttons button:hover,
+.cookie-compliance__buttons button:focus {
+  text-decoration: underline;
+}
+
+.cookie-compliance__buttons button.essential-only-button {
+  background: var(--ctf-background-color);
+  color: var(--ctf-foreground-color);
+  cursor: pointer;
+}
+
+/*// Withdraw tab*/
+.eu-cookie-withdraw-tab {
+  background: var(--ctf-background-color);
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-radius: 0 10px 0 0;
+  border-color: var(--ctf-color-black);
+  padding: var(--spacing-smallest);
+  top: auto;
+  bottom: 0;
+  left: calc(100% + 35px);
+  width: 4.5rem;
+  text-align: left;
+  transform: translate(-50%,0);
+}
+
+.eu-cookie-withdraw-tab span {
+  padding: 5px;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.eu-cookie-withdraw-tab:hover {
+  border-color: var(--ctf-color-black);
+  text-decoration: underline;
+}
