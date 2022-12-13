@@ -1,6 +1,6 @@
 _core:
   default_config_hash: TyHUT0zu8K8Wbm27eiQISJ77dq-TgBpgIDxFVArK1Dc
-enable: 0
+enable: 1
 admin-pages: 0
-admin-disable: 0
-google-tag: ''
+admin-disable: 1
+google-tag: GTM-KC9B5CG
