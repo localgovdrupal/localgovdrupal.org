@@ -1,0 +1,54 @@
+{% if pl %}
+<div id="sliding-popup" class="cookie-compliance sliding-popup-left">
+  {% endif %}
+  <button type="button" class="eu-cookie-withdraw-tab"><span>Cookie Settings</span></button>
+  <div class="popup-content">
+    <div class="cookie-compliance__content">
+
+      {# The base message #}
+      <div id="popup-text" class="info cookie-compliance__info cookie-compliance__content_container">
+        {{ message }}
+      </div>
+
+      {# Categories #}
+      {% if cookie_categories %}
+        <div id="eu-cookie-compliance-categories" class="eu-cookie-compliance-categories cookie-compliance__content_container">
+          {% for key, category in cookie_categories %}
+            <div class="eu-cookie-compliance-category">
+              <div>
+                <input type="checkbox" name="cookie-categories" id="cookie-category-{{ key }}"
+                      value="{{ key }}"
+                      {% if category.checkbox_default_state in ['checked', 'required'] %} checked {% endif %}
+                      {% if category.checkbox_default_state == 'required' %} disabled {% endif %} >
+                <label for="cookie-category-{{ key }}">{{ category.label }}</label>
+              </div>
+              {% if category.description %}
+                <div class="eu-cookie-compliance-category-description">{{ category.description }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+          {% if save_preferences_button_label %}
+            <div class="eu-cookie-compliance-categories-buttons">
+              <button type="button"
+                      class="eu-cookie-compliance-save-preferences-button">{{ save_preferences_button_label }}</button>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="cookie-compliance__content_container cookie-compliance__buttons{% if cookie_categories %} eu-cookie-compliance-has-categories{% endif %}">
+        {# Accept all #}
+        <button type="button" class="cookie-compliance__button {{ primary_button_class }}">{{ agree_button }}</button>
+
+        {# Essential cookies only (custom) #}
+        <button type="button" class="cookie-compliance__button cookie-compliance__button--essential-only essential-only-button">Accept only essential cookies</button>
+
+        {# More info link #}
+        <button type="button" class="cookie-compliance__button cookie-compliance__button--more find-more-button">{{ more_info_button }}</button>
+      </div>
+
+    </div>
+  </div>
+  {% if pl %}
+</div>
+{% endif %}

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - eu_cookie_compliance
     - media
     - search_api_autocomplete
     - system
@@ -14,5 +15,6 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'display eu cookie compliance popup'
   - 'use search_api_autocomplete for localgov_news_search'
   - 'view media'

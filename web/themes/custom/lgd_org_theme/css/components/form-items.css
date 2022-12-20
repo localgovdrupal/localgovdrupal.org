@@ -30,3 +30,32 @@ form#views-exposed-form-localgov-news-search-page-search-news {
 .js input.form-autocomplete {
   background-position: 98% center;
 }
+
+/*Mailchimp*/
+#mc_embed_signup .indicates-required {
+  font-size: var(--font-size-small);
+  margin-bottom: var(--spacing);
+}
+
+.mc-field-group {
+  margin-bottom: var(--spacing);
+
+}
+
+
+.webform-button--submit,
+#mc-embedded-subscribe {
+  font-size: var(--font-size-medium);
+}
+
+.response {
+  color: white;
+  padding: 1rem;
+  background-color: green;
+  margin-bottom: var(--spacing);
+}
+
+/*Webform*/
+.block-webform {
+  margin-bottom: var(--spacing-largest);
+}
