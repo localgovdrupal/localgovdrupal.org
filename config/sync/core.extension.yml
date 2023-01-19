@@ -44,6 +44,9 @@ module:
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
+  jquery_ui: 0
+  jquery_ui_autocomplete: 0
+  jquery_ui_menu: 0
   layout_discovery: 0
   layout_paragraphs: 0
   lgd_org_blocks: 0
