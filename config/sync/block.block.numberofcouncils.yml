@@ -18,8 +18,8 @@ settings:
   label: 'Number of councils'
   label_display: '0'
   provider: lgd_org_blocks
-  number: '33'
-  content: 'UK Councils and growing'
+  number: '34'
+  content: 'UK & Ireland Councils and growing'
 visibility:
   request_path:
     id: request_path
