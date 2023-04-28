@@ -15,12 +15,15 @@ settings:
   time_format: G
   element_type: office_hours_datelist
   increment: 15
+  valhrs: false
   required_start: false
   limit_start: ''
   required_end: false
   limit_end: ''
+  all_day: false
+  exceptions: true
+  seasons: false
   comment: 0
-  valhrs: false
   cardinality_per_day: 2
 module: office_hours
 locked: false
