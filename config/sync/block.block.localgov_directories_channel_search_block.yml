@@ -1,0 +1,36 @@
+uuid: 93ac0967-49ee-46c8-9926-6c33b41189a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_directories
+    - node
+  theme:
+    - localgov_base
+_core:
+  default_config_hash: aVJQTfRDCa64UZEFneWj9unJfaDRWew6I_XoKIK9L-Q
+id: localgov_directories_channel_search_block
+theme: localgov_base
+region: sidebar_first
+weight: 0
+provider: null
+plugin: localgov_directories_channel_search_block
+settings:
+  id: localgov_directories_channel_search_block
+  label: 'Directory channel search'
+  label_display: '0'
+  provider: localgov_directories
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      localgov_directory: localgov_directory
+      localgov_directories_page: localgov_directories_page
+      localgov_directories_venue: localgov_directories_venue
+      localgov_directories_org: localgov_directories_org
+      localgov_directory_promo_page: localgov_directory_promo_page

@@ -1,0 +1,302 @@
+uuid: 56abf822-109c-4da1-b414-2ec828ae0b49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_directory_promo_page.body
+    - field.field.node.localgov_directory_promo_page.localgov_directory_address
+    - field.field.node.localgov_directory_promo_page.localgov_directory_banner
+    - field.field.node.localgov_directory_promo_page.localgov_directory_channels
+    - field.field.node.localgov_directory_promo_page.localgov_directory_email
+    - field.field.node.localgov_directory_promo_page.localgov_directory_facets_select
+    - field.field.node.localgov_directory_promo_page.localgov_directory_files
+    - field.field.node.localgov_directory_promo_page.localgov_directory_job_title
+    - field.field.node.localgov_directory_promo_page.localgov_directory_name
+    - field.field.node.localgov_directory_promo_page.localgov_directory_phone
+    - field.field.node.localgov_directory_promo_page.localgov_directory_standfirst
+    - field.field.node.localgov_directory_promo_page.localgov_directory_title_sort
+    - field.field.node.localgov_directory_promo_page.localgov_directory_website
+    - field.field.node.localgov_directory_promo_page.localgov_paragraph_content
+    - node.type.localgov_directory_promo_page
+  module:
+    - address
+    - field_group
+    - layout_paragraphs
+    - link
+    - localgov_directories
+    - media_library
+    - paragraphs
+    - path
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_description
+        - group_channels_and_facets
+        - group_enquiries
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 20
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_description:
+      children:
+        - title
+        - localgov_directory_title_sort
+        - body
+        - group_banner_standfirst
+        - localgov_paragraph_content
+        - localgov_directory_files
+      label: Description
+      region: content
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_channels_and_facets:
+      children:
+        - localgov_directory_channels
+        - localgov_directory_facets_select
+      label: 'Channels and facets'
+      region: content
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_enquiries:
+      children:
+        - localgov_directory_name
+        - localgov_directory_job_title
+        - localgov_directory_phone
+        - localgov_directory_email
+        - localgov_directory_address
+        - localgov_directory_website
+      label: Enquiries
+      region: content
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_banner_standfirst:
+      children:
+        - localgov_directory_banner
+        - localgov_directory_standfirst
+      label: 'Optional banner and standfirst'
+      region: content
+      parent_name: group_description
+      weight: -2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: 0aw6vh3AJj09Lhdq4NpceurzFWx7hAErUy74QgN3120
+id: node.localgov_directory_promo_page.default
+targetEntityType: node
+bundle: localgov_directory_promo_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: -3
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: true
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_address:
+    type: address_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_banner:
+    type: paragraphs
+    weight: -1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  localgov_directory_channels:
+    type: localgov_directories_channel_selector
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_email:
+    type: email_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  localgov_directory_facets_select:
+    type: localgov_directories_facet_checkbox
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_files:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  localgov_directory_job_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_phone:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_standfirst:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_title_sort:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_website:
+    type: link_default
+    weight: 7
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  localgov_paragraph_content:
+    type: layout_paragraphs
+    weight: 0
+    region: content
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 1
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: b02d425d-b956-493d-b501-3b689232fec8
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.localgov_directories_facets
+  module:
+    - facets
+  theme:
+    - lgd_org_theme
+id: facets
+theme: lgd_org_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:localgov_directories_facets'
+settings:
+  id: 'facet_block:localgov_directories_facets'
+  label: Facets
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: facets
+visibility: {  }

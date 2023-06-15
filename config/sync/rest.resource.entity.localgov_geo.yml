@@ -1,0 +1,38 @@
+uuid: ddae9710-73c5-4b73-8554-83e0ad957da4
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_geo
+    - serialization
+    - user
+_core:
+  default_config_hash: ZmUkE13eYOV60BI5nCKMRq92QE_YXFMp7b-DBiOBQU4
+id: entity.localgov_geo
+plugin_id: 'entity:localgov_geo'
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie
+  POST:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie
+  PATCH:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie
+  DELETE:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie

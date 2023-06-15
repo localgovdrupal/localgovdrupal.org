@@ -1,0 +1,23 @@
+uuid: e3af9675-6c00-4855-8a2c-a9bb93670411
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.localgov_geo.location
+    - localgov_geo.localgov_geo_type.address
+  module:
+    - geofield
+_core:
+  default_config_hash: O97o22y5dBtzkBvBps0GD5ktNFnI28F1kTi05x87bJE
+id: localgov_geo.address.location
+field_name: location
+entity_type: localgov_geo
+bundle: address
+label: location
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

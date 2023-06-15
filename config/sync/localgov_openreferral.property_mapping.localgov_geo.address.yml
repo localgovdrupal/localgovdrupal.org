@@ -1,0 +1,29 @@
+uuid: b23ae98b-0a77-4818-a3c7-916fd8038f16
+langcode: en
+status: true
+dependencies:
+  config:
+    - localgov_geo.localgov_geo_type.address
+  module:
+    - localgov_geo
+_core:
+  default_config_hash: PEgB7HxLCFsqRQdL-5bfDNTIp6jY8byHSeGveuiKtpU
+id: localgov_geo.address
+entity_type: localgov_geo
+bundle: address
+public_type: location
+public_datatype: null
+property_mappings:
+  default:
+    -
+      field_name: label
+      public_name: name
+    -
+      field_name: uuid
+      public_name: id
+    -
+      field_name: location
+      public_name: _flatten
+    -
+      field_name: postal_address
+      public_name: physical_addresses

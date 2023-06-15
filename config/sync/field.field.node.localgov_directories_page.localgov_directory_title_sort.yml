@@ -1,0 +1,21 @@
+uuid: 39de5c49-ddf9-4d82-bb11-d4dbc3016d80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_title_sort
+    - node.type.localgov_directories_page
+_core:
+  default_config_hash: mGl4478kWc9mfKbXwe36st32Mv9EmmV3tolZGRoDQ-M
+id: node.localgov_directories_page.localgov_directory_title_sort
+field_name: localgov_directory_title_sort
+entity_type: node
+bundle: localgov_directories_page
+label: 'Title used for sorting'
+description: '<strong>Can be left blank</strong>. If this field is completed it will be used instead of the <em>Title</em> for alphabetically sorted lists. For example to move ''The'' or ''A'' from the beginning of a name.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

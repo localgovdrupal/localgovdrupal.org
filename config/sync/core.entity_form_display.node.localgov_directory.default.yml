@@ -1,0 +1,117 @@
+uuid: 863164c1-b7d6-4b85-98a9-1fcb5586b430
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_directory.body
+    - field.field.node.localgov_directory.localgov_directory_channel_types
+    - field.field.node.localgov_directory.localgov_directory_facets_enable
+    - field.field.node.localgov_directory.localgov_proximity_search_cfg
+    - field.field.node.localgov_directory.localgov_services_parent
+    - node.type.localgov_directory
+  module:
+    - path
+    - text
+_core:
+  default_config_hash: HfgP4-gJWsj2jzxpuxfmChH0TWYIQSBlDxQORTXyxvg
+id: node.localgov_directory.default
+targetEntityType: node
+bundle: localgov_directory
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: true
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_channel_types:
+    type: options_buttons
+    weight: 123
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_facets_enable:
+    type: options_buttons
+    weight: 122
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_proximity_search_cfg:
+    type: boolean_checkbox
+    weight: 124
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  localgov_services_parent:
+    type: entity_reference_autocomplete
+    weight: -10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

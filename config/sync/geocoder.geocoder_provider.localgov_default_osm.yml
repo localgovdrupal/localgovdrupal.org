@@ -1,0 +1,16 @@
+uuid: ab951c95-886b-478d-8cd7-5fe2bd2a857e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zq3uqM0zRR4OQluD3bdNO0faTE8NZoZgTdqp6yUB7nc
+id: localgov_default_osm
+label: OpenStreetMap
+plugin: openstreetmap
+configuration:
+  rootUrl: 'https://nominatim.openstreetmap.org'
+  userAgent: LocalGovDrupal
+  referer: 'https://localgov.lndo.site/'
+  throttle:
+    period: 2
+    limit: 1

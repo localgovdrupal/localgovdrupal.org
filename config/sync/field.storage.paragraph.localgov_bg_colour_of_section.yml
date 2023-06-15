@@ -1,0 +1,32 @@
+uuid: bd2e1d14-915f-4e4f-a912-f33ee9a378e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: x3q5uP9ka5bQjDYltz84xAV2DJBMRK_Ejf9raMDqU0g
+id: paragraph.localgov_bg_colour_of_section
+field_name: localgov_bg_colour_of_section
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: colour-1
+      label: Accent
+    -
+      value: colour-2
+      label: 'Accent Alt'
+    -
+      value: colour-3
+      label: 'Light Grey'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

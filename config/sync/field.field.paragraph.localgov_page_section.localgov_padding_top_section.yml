@@ -1,0 +1,23 @@
+uuid: 66af091d-fdb8-4d49-a515-6cad2fcbf1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_padding_top_section
+    - paragraphs.paragraphs_type.localgov_page_section
+  module:
+    - options
+_core:
+  default_config_hash: Uodn13MKsU4gttELGuoLI8f9OD_Gq1bKynFO5seOMdg
+id: paragraph.localgov_page_section.localgov_padding_top_section
+field_name: localgov_padding_top_section
+entity_type: paragraph
+bundle: localgov_page_section
+label: 'Padding Top'
+description: 'Adds a padding buffer to the top of this page section.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

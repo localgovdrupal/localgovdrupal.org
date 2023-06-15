@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.localgov_destinations
+    - node.type.localgov_directory
     - node.type.localgov_services_landing
     - node.type.localgov_services_page
     - node.type.localgov_services_sublanding
@@ -28,6 +29,7 @@ settings:
       localgov_services_sublanding: localgov_services_sublanding
       localgov_services_page: localgov_services_page
       localgov_step_by_step_overview: localgov_step_by_step_overview
+      localgov_directory: localgov_directory
     sort:
       field: _none
     auto_create: false

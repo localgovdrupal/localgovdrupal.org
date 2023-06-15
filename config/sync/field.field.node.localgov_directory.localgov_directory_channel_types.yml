@@ -1,0 +1,23 @@
+uuid: 2df53be5-fc8c-4b2c-88ef-8a65551b0a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_channel_types
+    - node.type.localgov_directory
+_core:
+  default_config_hash: FdnrUZ0DQeOiTC4AonrNOBZNLxwehfsV4u70zrQG6pQ
+id: node.localgov_directory.localgov_directory_channel_types
+field_name: localgov_directory_channel_types
+entity_type: node
+bundle: localgov_directory
+label: 'Enabled Content types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: localgov_directories_entry_types
+  handler_settings: {  }
+field_type: entity_reference

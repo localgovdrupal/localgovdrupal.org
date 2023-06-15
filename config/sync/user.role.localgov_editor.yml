@@ -7,6 +7,10 @@ dependencies:
     - media.type.document
     - media.type.image
     - media.type.remote_video
+    - node.type.localgov_directories_page
+    - node.type.localgov_directories_venue
+    - node.type.localgov_directory
+    - node.type.localgov_directory_promo_page
     - node.type.localgov_services_landing
     - node.type.localgov_services_page
     - node.type.localgov_services_sublanding
@@ -20,7 +24,8 @@ dependencies:
     - content_moderation
     - entity_browser
     - entity_hierarchy
-    - layout_paragraphs
+    - localgov_directories
+    - localgov_geo
     - media
     - node
     - paragraphs
@@ -45,6 +50,8 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access directory facets overview'
+  - 'access geo overview'
   - 'access media overview'
   - 'access page_components entity browser pages'
   - 'access paragraphs_library_items entity browser pages'
@@ -59,8 +66,14 @@ permissions:
   - 'administer sitemap settings'
   - 'bypass node access'
   - 'create council_logo media'
+  - 'create directory facets'
   - 'create document media'
+  - 'create geo'
   - 'create image media'
+  - 'create localgov_directories_page content'
+  - 'create localgov_directories_venue content'
+  - 'create localgov_directory content'
+  - 'create localgov_directory_promo_page content'
   - 'create localgov_services_landing content'
   - 'create localgov_services_page content'
   - 'create localgov_services_sublanding content'
@@ -77,6 +90,10 @@ permissions:
   - 'delete any council_logo media'
   - 'delete any document media'
   - 'delete any image media'
+  - 'delete any localgov_directories_page content'
+  - 'delete any localgov_directories_venue content'
+  - 'delete any localgov_directory content'
+  - 'delete any localgov_directory_promo_page content'
   - 'delete any localgov_services_landing content'
   - 'delete any localgov_services_page content'
   - 'delete any localgov_services_sublanding content'
@@ -88,6 +105,11 @@ permissions:
   - 'delete any remote_video media'
   - 'delete any webform'
   - 'delete any webform submission'
+  - 'delete directory facets'
+  - 'delete geo'
+  - 'delete localgov_directories_page revisions'
+  - 'delete localgov_directories_venue revisions'
+  - 'delete localgov_directory_promo_page revisions'
   - 'delete localgov_services_landing revisions'
   - 'delete localgov_services_page revisions'
   - 'delete localgov_services_sublanding revisions'
@@ -99,6 +121,10 @@ permissions:
   - 'delete own council_logo media'
   - 'delete own document media'
   - 'delete own image media'
+  - 'delete own localgov_directories_page content'
+  - 'delete own localgov_directories_venue content'
+  - 'delete own localgov_directory content'
+  - 'delete own localgov_directory_promo_page content'
   - 'delete own localgov_services_landing content'
   - 'delete own localgov_services_page content'
   - 'delete own localgov_services_sublanding content'
@@ -115,6 +141,10 @@ permissions:
   - 'edit any council_logo media'
   - 'edit any document media'
   - 'edit any image media'
+  - 'edit any localgov_directories_page content'
+  - 'edit any localgov_directories_venue content'
+  - 'edit any localgov_directory content'
+  - 'edit any localgov_directory_promo_page content'
   - 'edit any localgov_services_landing content'
   - 'edit any localgov_services_page content'
   - 'edit any localgov_services_sublanding content'
@@ -125,10 +155,16 @@ permissions:
   - 'edit any remote_video media'
   - 'edit any webform'
   - 'edit any webform submission'
+  - 'edit directory facets'
+  - 'edit geo'
   - 'edit layout paragraphs plugin config'
   - 'edit own council_logo media'
   - 'edit own document media'
   - 'edit own image media'
+  - 'edit own localgov_directories_page content'
+  - 'edit own localgov_directories_venue content'
+  - 'edit own localgov_directory content'
+  - 'edit own localgov_directory_promo_page content'
   - 'edit own localgov_services_landing content'
   - 'edit own localgov_services_page content'
   - 'edit own localgov_services_sublanding content'
@@ -145,6 +181,10 @@ permissions:
   - 'edit webform submissions own node'
   - 'reorder entity_hierarchy children'
   - 'revert all revisions'
+  - 'revert localgov_directories_page revisions'
+  - 'revert localgov_directories_venue revisions'
+  - 'revert localgov_directory revisions'
+  - 'revert localgov_directory_promo_page revisions'
   - 'revert localgov_services_landing revisions'
   - 'revert localgov_services_page revisions'
   - 'revert localgov_services_sublanding revisions'
@@ -157,6 +197,11 @@ permissions:
   - 'view all revisions'
   - 'view any unpublished content'
   - 'view any webform submission'
+  - 'view directory facets'
+  - 'view localgov_directories_page revisions'
+  - 'view localgov_directories_venue revisions'
+  - 'view localgov_directory revisions'
+  - 'view localgov_directory_promo_page revisions'
   - 'view localgov_services_landing revisions'
   - 'view localgov_services_page revisions'
   - 'view localgov_services_sublanding revisions'

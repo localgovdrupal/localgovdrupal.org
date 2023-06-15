@@ -1,0 +1,28 @@
+uuid: 27f9dcc5-c670-4632-95fc-8751f30b797d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_website
+    - node.type.localgov_directories_org
+  module:
+    - link
+  enforced:
+    module:
+      - localgov_directories
+_core:
+  default_config_hash: VBvnUILPQGnP6_4BhmHMKnliyrEl1eGQENP80mePz2A
+id: node.localgov_directories_org.localgov_directory_website
+field_name: localgov_directory_website
+entity_type: node
+bundle: localgov_directories_org
+label: Website
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

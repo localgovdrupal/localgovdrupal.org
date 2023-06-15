@@ -1,0 +1,21 @@
+uuid: 9eebb043-78c3-4e3b-9bde-2bde1eee4d45
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: guAXF7xX7-fVQ2DSCjf2Vt8_fKBfY5Nex8r01JNg6Is
+id: node.localgov_directory_organisation
+field_name: localgov_directory_organisation
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

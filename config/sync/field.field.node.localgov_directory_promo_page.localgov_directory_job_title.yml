@@ -1,0 +1,21 @@
+uuid: 2984d4e4-5c05-4587-b76d-0884374e9857
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_job_title
+    - node.type.localgov_directory_promo_page
+_core:
+  default_config_hash: xXHY7GxJjLyCg-G8rdtCQN671IIuQXpjr-KtCnK9BNo
+id: node.localgov_directory_promo_page.localgov_directory_job_title
+field_name: localgov_directory_job_title
+entity_type: node
+bundle: localgov_directory_promo_page
+label: 'Contact job title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

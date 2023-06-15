@@ -1,0 +1,23 @@
+uuid: a0da78fb-d152-4200-8cf7-f49a45dc0c90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_bg_colour_of_section
+    - paragraphs.paragraphs_type.localgov_page_section
+  module:
+    - options
+_core:
+  default_config_hash: xSsRGjGaTW6Ow1wpkliwwgusORSYkYX6zxVNO4MEr1Q
+id: paragraph.localgov_page_section.localgov_bg_colour_of_section
+field_name: localgov_bg_colour_of_section
+entity_type: paragraph
+bundle: localgov_page_section
+label: 'Background Colour'
+description: 'Sets the background colour for this layout.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+uuid: ccbc4289-e306-4ddd-adb8-2ee4492097cc
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - localgov_directories
+      - localgov_menu_link_group
+      - localgov_directories_org
+_core:
+  default_config_hash: ma8obLMOGrsN2qwdtagHjDnefvC-tnTpI8xPbVO51e0
+id: localgov_directories_org
+group_label: Directory
+weight: 0
+parent_menu: admin
+parent_menu_link: 'admin_toolbar_tools.extra_links:node.add'
+child_menu_links:
+  - 'admin_toolbar_tools.extra_links:node.add.localgov_directories_org'

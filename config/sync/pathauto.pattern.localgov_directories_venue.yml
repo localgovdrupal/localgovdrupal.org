@@ -1,0 +1,24 @@
+uuid: e2f555f5-bd91-4f1a-85a1-0c7a84b4c29e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: zLcBruqrFyXkqhKCoJxBtYCTbziEz3iVEoQY8zttVTM
+id: localgov_directories_venue
+label: 'Directory Entry Venue'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  cf0a2bbc-3869-4912-a0e7-0f25ba4fcd1e:
+    id: 'entity_bundle:node'
+    bundles:
+      localgov_directories_venue: localgov_directories_venue
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cf0a2bbc-3869-4912-a0e7-0f25ba4fcd1e
+selection_logic: and
+weight: -5
+relationships: {  }

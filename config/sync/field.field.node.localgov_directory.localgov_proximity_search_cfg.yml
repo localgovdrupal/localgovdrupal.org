@@ -1,0 +1,23 @@
+uuid: efa794b8-6b04-493b-aeca-eab60a4e4fbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_proximity_search_cfg
+    - node.type.localgov_directory
+id: node.localgov_directory.localgov_proximity_search_cfg
+field_name: localgov_proximity_search_cfg
+entity_type: node
+bundle: localgov_directory
+label: 'Proximity search settings'
+description: 'Activate proximity search for directory entries.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

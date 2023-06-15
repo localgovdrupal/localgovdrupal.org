@@ -1,0 +1,71 @@
+uuid: dd5f5501-f3df-4c69-aed9-a43a50968a8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.localgov_directory_promo_page.body
+    - field.field.node.localgov_directory_promo_page.localgov_directory_address
+    - field.field.node.localgov_directory_promo_page.localgov_directory_banner
+    - field.field.node.localgov_directory_promo_page.localgov_directory_channels
+    - field.field.node.localgov_directory_promo_page.localgov_directory_email
+    - field.field.node.localgov_directory_promo_page.localgov_directory_facets_select
+    - field.field.node.localgov_directory_promo_page.localgov_directory_files
+    - field.field.node.localgov_directory_promo_page.localgov_directory_job_title
+    - field.field.node.localgov_directory_promo_page.localgov_directory_name
+    - field.field.node.localgov_directory_promo_page.localgov_directory_phone
+    - field.field.node.localgov_directory_promo_page.localgov_directory_standfirst
+    - field.field.node.localgov_directory_promo_page.localgov_directory_title_sort
+    - field.field.node.localgov_directory_promo_page.localgov_directory_website
+    - field.field.node.localgov_directory_promo_page.localgov_paragraph_content
+    - image.style.square_large
+    - node.type.localgov_directory_promo_page
+  module:
+    - field_formatter_class
+    - media
+    - text
+    - user
+_core:
+  default_config_hash: XfCOIRwiQRsDyfWuqqBDpzz7LWY69GnbLUzbvXNMpX4
+id: node.localgov_directory_promo_page.teaser
+targetEntityType: node
+bundle: localgov_directory_promo_page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  localgov_directory_banner:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: square_large
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  links: true
+  localgov_directory_address: true
+  localgov_directory_channels: true
+  localgov_directory_email: true
+  localgov_directory_facets_select: true
+  localgov_directory_files: true
+  localgov_directory_job_title: true
+  localgov_directory_name: true
+  localgov_directory_phone: true
+  localgov_directory_search: true
+  localgov_directory_standfirst: true
+  localgov_directory_title_sort: true
+  localgov_directory_website: true
+  localgov_paragraph_content: true
+  search_api_excerpt: true

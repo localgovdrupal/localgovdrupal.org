@@ -1,0 +1,23 @@
+uuid: 1664b144-6982-402b-8655-4e2f9ec0d0c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_padding_bottom_section
+    - paragraphs.paragraphs_type.localgov_page_section
+  module:
+    - options
+_core:
+  default_config_hash: Pd7fAzt5zOnUiCN_5vwQ4i61MgSKajtjAArnmaH2Lqg
+id: paragraph.localgov_page_section.localgov_padding_bottom_section
+field_name: localgov_padding_bottom_section
+entity_type: paragraph
+bundle: localgov_page_section
+label: 'Padding Bottom'
+description: 'Adds a padding buffer to the bottom of this page section.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

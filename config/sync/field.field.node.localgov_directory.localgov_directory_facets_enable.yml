@@ -1,0 +1,25 @@
+uuid: 8621f2fc-81bb-4d95-b464-7aa04fe94888
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_facets_enable
+    - node.type.localgov_directory
+_core:
+  default_config_hash: YYGa-gLKtSpfzQsa_TxV2OT1CqU3pLRtHeUjUS6mhog
+id: node.localgov_directory.localgov_directory_facets_enable
+field_name: localgov_directory_facets_enable
+entity_type: node
+bundle: localgov_directory
+label: 'Enabled Facets'
+description: 'Which facets are enabled to be shown on this directory channel, and will be added when editing content to be added to this directory.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:localgov_directories_facets_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

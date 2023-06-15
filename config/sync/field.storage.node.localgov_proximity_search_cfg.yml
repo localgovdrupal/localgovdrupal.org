@@ -1,0 +1,20 @@
+uuid: a49b1fc3-6819-4c49-8c12-3252378a962b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fQvI0Vfg_M-kc5CzikK4tMXz6a2wl3ROuFLFeX4QPJU
+id: node.localgov_proximity_search_cfg
+field_name: localgov_proximity_search_cfg
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,294 @@
+uuid: e528d3a5-36d1-4dd5-90fc-a337609999c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.localgov_geo_library
+    - field.field.node.localgov_directories_venue.body
+    - field.field.node.localgov_directories_venue.localgov_directory_channels
+    - field.field.node.localgov_directories_venue.localgov_directory_email
+    - field.field.node.localgov_directories_venue.localgov_directory_facets_select
+    - field.field.node.localgov_directories_venue.localgov_directory_files
+    - field.field.node.localgov_directories_venue.localgov_directory_job_title
+    - field.field.node.localgov_directories_venue.localgov_directory_name
+    - field.field.node.localgov_directories_venue.localgov_directory_notes
+    - field.field.node.localgov_directories_venue.localgov_directory_opening_times
+    - field.field.node.localgov_directories_venue.localgov_directory_organisation
+    - field.field.node.localgov_directories_venue.localgov_directory_phone
+    - field.field.node.localgov_directories_venue.localgov_directory_title_sort
+    - field.field.node.localgov_directories_venue.localgov_directory_website
+    - field.field.node.localgov_directories_venue.localgov_location
+    - node.type.localgov_directories_venue
+  module:
+    - entity_browser
+    - field_group
+    - link
+    - localgov_directories
+    - media_library
+    - path
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_description
+        - group_directory
+        - group_enquiries
+        - group_venue
+      label: tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        id: ''
+        direction: vertical
+    group_description:
+      children:
+        - title
+        - localgov_directory_title_sort
+        - body
+        - localgov_directory_files
+        - localgov_directory_organisation
+      label: Description
+      region: content
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_directory:
+      children:
+        - localgov_directory_channels
+        - localgov_directory_facets_select
+      label: 'Channels and facets'
+      region: content
+      parent_name: group_tabs
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_enquiries:
+      children:
+        - localgov_directory_name
+        - localgov_directory_job_title
+        - localgov_directory_phone
+        - localgov_directory_email
+        - localgov_directory_website
+      label: Enquiries
+      region: content
+      parent_name: group_tabs
+      weight: 8
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_venue:
+      children:
+        - localgov_location
+        - localgov_directory_opening_times
+        - localgov_directory_notes
+      label: Venue
+      region: content
+      parent_name: group_tabs
+      weight: 9
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: fGGCppy8qdMYXq0fgpTDOBTmF0lwBRbFrJ8EaTsCyq4
+id: node.localgov_directories_venue.default
+targetEntityType: node
+bundle: localgov_directories_venue
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: true
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_channels:
+    type: localgov_directories_channel_selector
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_email:
+    type: email_default
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  localgov_directory_facets_select:
+    type: localgov_directories_facet_checkbox
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_files:
+    type: media_library_widget
+    weight: 27
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  localgov_directory_job_title:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_name:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_notes:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_opening_times:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_organisation:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_phone:
+    type: telephone_default
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_title_sort:
+    type: string_textfield
+    weight: 25
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_directory_website:
+    type: link_default
+    weight: 16
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  localgov_location:
+    type: entity_browser_entity_reference
+    weight: 7
+    region: content
+    settings:
+      entity_browser: localgov_geo_library
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: true
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 24
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

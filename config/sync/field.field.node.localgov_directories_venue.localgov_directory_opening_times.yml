@@ -1,0 +1,23 @@
+uuid: 9f29a41d-0a7e-434c-839d-cf104bc1fc41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_opening_times
+    - node.type.localgov_directories_venue
+  module:
+    - text
+_core:
+  default_config_hash: PYSoy8iZF7jm-ui5aPs2h8pJKOr5lLARmfoXb_045Xo
+id: node.localgov_directories_venue.localgov_directory_opening_times
+field_name: localgov_directory_opening_times
+entity_type: node
+bundle: localgov_directories_venue
+label: 'Venue opening times'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

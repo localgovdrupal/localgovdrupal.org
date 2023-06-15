@@ -1,0 +1,23 @@
+uuid: fb4d746c-1e4c-41e1-9880-c95611f1566f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_phone
+    - node.type.localgov_directory_promo_page
+  module:
+    - telephone
+_core:
+  default_config_hash: 7PQkWNnqYLnFEs9n143RsyjlGksRGAJxRIN7zj1Szeo
+id: node.localgov_directory_promo_page.localgov_directory_phone
+field_name: localgov_directory_phone
+entity_type: node
+bundle: localgov_directory_promo_page
+label: 'Contact phone'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

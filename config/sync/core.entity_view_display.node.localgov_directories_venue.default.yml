@@ -1,0 +1,154 @@
+uuid: 56a69e78-8ea7-472b-8628-6da957109be0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_directories_venue.body
+    - field.field.node.localgov_directories_venue.localgov_directory_channels
+    - field.field.node.localgov_directories_venue.localgov_directory_email
+    - field.field.node.localgov_directories_venue.localgov_directory_facets_select
+    - field.field.node.localgov_directories_venue.localgov_directory_files
+    - field.field.node.localgov_directories_venue.localgov_directory_job_title
+    - field.field.node.localgov_directories_venue.localgov_directory_name
+    - field.field.node.localgov_directories_venue.localgov_directory_notes
+    - field.field.node.localgov_directories_venue.localgov_directory_opening_times
+    - field.field.node.localgov_directories_venue.localgov_directory_organisation
+    - field.field.node.localgov_directories_venue.localgov_directory_phone
+    - field.field.node.localgov_directories_venue.localgov_directory_title_sort
+    - field.field.node.localgov_directories_venue.localgov_directory_website
+    - field.field.node.localgov_directories_venue.localgov_location
+    - node.type.localgov_directories_venue
+  module:
+    - field_group
+    - link
+    - telephone
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_enquiries:
+      children:
+        - localgov_directory_name
+        - localgov_directory_job_title
+        - localgov_directory_phone
+        - localgov_directory_email
+        - localgov_directory_website
+      label: Enquiries
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+    group_venue:
+      children:
+        - localgov_location
+        - localgov_directory_opening_times
+        - localgov_directory_notes
+      label: Venue
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+_core:
+  default_config_hash: QSk3UiE5Jz66Zf3hqjzQg5MVD3USfMDnTeSU1W1KWmk
+id: node.localgov_directories_venue.default
+targetEntityType: node
+bundle: localgov_directories_venue
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  localgov_directory_email:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  localgov_directory_files:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  localgov_directory_job_title:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  localgov_directory_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  localgov_directory_notes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  localgov_directory_opening_times:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  localgov_directory_phone:
+    type: telephone_link
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  localgov_directory_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  localgov_location:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: embed
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  links: true
+  localgov_directory_channels: true
+  localgov_directory_facets_select: true
+  localgov_directory_organisation: true
+  localgov_directory_search: true
+  localgov_directory_title_sort: true
+  search_api_excerpt: true

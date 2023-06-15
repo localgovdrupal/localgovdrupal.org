@@ -1,0 +1,38 @@
+uuid: 15975792-d2bf-4cbf-9552-5dfe3367c674
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_banner
+    - node.type.localgov_directory_promo_page
+    - paragraphs.paragraphs_type.localgov_banner_primary
+    - paragraphs.paragraphs_type.localgov_banner_secondary
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: DMEQ0VS8apxWyJX-4vswY28A4ZHhOnAKcFj2kMDDtnw
+id: node.localgov_directory_promo_page.localgov_directory_banner
+field_name: localgov_directory_banner
+entity_type: node
+bundle: localgov_directory_promo_page
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      localgov_banner_primary: localgov_banner_primary
+      localgov_banner_secondary: localgov_banner_secondary
+    negate: 0
+    target_bundles_drag_drop:
+      localgov_banner_primary:
+        weight: 0
+        enabled: true
+      localgov_banner_secondary:
+        weight: 1
+        enabled: true
+field_type: entity_reference_revisions

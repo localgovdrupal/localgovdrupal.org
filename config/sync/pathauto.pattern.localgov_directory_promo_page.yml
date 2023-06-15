@@ -1,0 +1,24 @@
+uuid: 3ee8c4ac-4c48-4697-8d05-fd28f1f1ef47
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: GV11WCI2L-OoAGvOBg7yCtqnXRd3SIQvGnaXFSeMAHc
+id: localgov_directory_promo_page
+label: 'Directory Promo Page'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  cf0a2bbc-3869-4912-a0e7-0f25ba4fcd1e:
+    id: 'entity_bundle:node'
+    bundles:
+      localgov_directory_promo_page: localgov_directory_promo_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cf0a2bbc-3869-4912-a0e7-0f25ba4fcd1e
+selection_logic: and
+weight: -5
+relationships: {  }

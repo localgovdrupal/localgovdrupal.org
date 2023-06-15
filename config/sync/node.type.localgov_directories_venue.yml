@@ -1,0 +1,13 @@
+uuid: f7eafccb-38fe-473f-a4f9-17c4a7994d19
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aFAyHHV687JGOdcsXqeVUREICSxQ2Uk5GZ_EfONa0xY
+name: 'Directory venue'
+type: localgov_directories_venue
+description: 'A venue entry with location.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

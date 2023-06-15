@@ -1,0 +1,13 @@
+uuid: d5151be1-1d0e-4256-abd7-af49b3cbb928
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Ai5i4cKvppU43ERbC7FAphWSwdOqphVHkqm47josjCo
+name: 'Directory page'
+type: localgov_directories_page
+description: 'A simple directory entry.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

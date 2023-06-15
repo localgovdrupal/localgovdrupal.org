@@ -7,6 +7,9 @@ dependencies:
     - media.type.document
     - media.type.image
     - media.type.remote_video
+    - node.type.localgov_directories_page
+    - node.type.localgov_directories_venue
+    - node.type.localgov_directory_promo_page
     - node.type.localgov_services_landing
     - node.type.localgov_services_page
     - node.type.localgov_services_sublanding
@@ -17,7 +20,7 @@ dependencies:
   module:
     - content_moderation
     - entity_browser
-    - layout_paragraphs
+    - localgov_geo
     - media
     - node
     - paragraphs
@@ -42,7 +45,11 @@ permissions:
   - 'access toolbar'
   - 'create council_logo media'
   - 'create document media'
+  - 'create geo'
   - 'create image media'
+  - 'create localgov_directories_page content'
+  - 'create localgov_directories_venue content'
+  - 'create localgov_directory_promo_page content'
   - 'create localgov_services_landing content'
   - 'create localgov_services_page content'
   - 'create localgov_services_sublanding content'
@@ -57,6 +64,9 @@ permissions:
   - 'delete media'
   - 'delete own document media'
   - 'delete own image media'
+  - 'delete own localgov_directories_page content'
+  - 'delete own localgov_directories_venue content'
+  - 'delete own localgov_directory_promo_page content'
   - 'delete own localgov_services_landing content'
   - 'delete own localgov_services_page content'
   - 'delete own localgov_services_sublanding content'
@@ -71,6 +81,9 @@ permissions:
   - 'edit layout paragraphs plugin config'
   - 'edit own document media'
   - 'edit own image media'
+  - 'edit own localgov_directories_page content'
+  - 'edit own localgov_directories_venue content'
+  - 'edit own localgov_directory_promo_page content'
   - 'edit own localgov_services_landing content'
   - 'edit own localgov_services_page content'
   - 'edit own localgov_services_sublanding content'
@@ -80,6 +93,9 @@ permissions:
   - 'edit own localgov_subsites_page content'
   - 'edit own remote_video media'
   - 'edit paragraph library item'
+  - 'revert localgov_directories_page revisions'
+  - 'revert localgov_directories_venue revisions'
+  - 'revert localgov_directory_promo_page revisions'
   - 'revert localgov_services_landing revisions'
   - 'revert localgov_services_page revisions'
   - 'revert localgov_services_sublanding revisions'
@@ -90,6 +106,9 @@ permissions:
   - 'update media'
   - 'view all revisions'
   - 'view any unpublished content'
+  - 'view localgov_directories_page revisions'
+  - 'view localgov_directories_venue revisions'
+  - 'view localgov_directory_promo_page revisions'
   - 'view localgov_services_landing revisions'
   - 'view localgov_services_page revisions'
   - 'view localgov_services_sublanding revisions'

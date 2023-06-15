@@ -1,0 +1,27 @@
+uuid: 39913185-5daf-4079-8642-261c32ee0d6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_address
+    - node.type.localgov_directory_promo_page
+  module:
+    - address
+_core:
+  default_config_hash: Z4HGk3vO613q0p5OaHRJXzoDAVVpcr8m5WFcT68HOW4
+id: node.localgov_directory_promo_page.localgov_directory_address
+field_name: localgov_directory_address
+entity_type: node
+bundle: localgov_directory_promo_page
+label: 'Enquiries address'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

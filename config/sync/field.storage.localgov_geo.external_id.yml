@@ -1,0 +1,23 @@
+uuid: cf9b3061-13e4-485e-847c-e5ee3623040e
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_geo
+_core:
+  default_config_hash: ClisQUKIyuIktxFFUy_zKmLoqr3F0VXiNQ_bJnzeKwk
+id: localgov_geo.external_id
+field_name: external_id
+entity_type: localgov_geo
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

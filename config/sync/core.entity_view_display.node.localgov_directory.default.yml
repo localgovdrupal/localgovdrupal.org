@@ -1,0 +1,47 @@
+uuid: 5bce755a-dfb4-44a1-a42d-a33f603500c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_directory.body
+    - field.field.node.localgov_directory.localgov_directory_channel_types
+    - field.field.node.localgov_directory.localgov_directory_facets_enable
+    - field.field.node.localgov_directory.localgov_proximity_search_cfg
+    - field.field.node.localgov_directory.localgov_services_parent
+    - node.type.localgov_directory
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 47ht0JK7dizMS7L0unPWEF5VFpgs-I1VM-JFu4UY1u4
+id: node.localgov_directory.default
+targetEntityType: node
+bundle: localgov_directory
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  localgov_directory_map:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  localgov_directory_view:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  links: true
+  localgov_directory_channel_types: true
+  localgov_directory_facets: true
+  localgov_directory_facets_enable: true
+  localgov_directory_view_with_search: true
+  localgov_proximity_search_cfg: true
+  localgov_services_parent: true
+  search_api_excerpt: true

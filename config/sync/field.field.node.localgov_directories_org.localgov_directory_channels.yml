@@ -1,0 +1,29 @@
+uuid: 65b099b2-557b-4ca0-8b76-796b42610b39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_channels
+    - node.type.localgov_directories_org
+  enforced:
+    module:
+      - localgov_directories
+_core:
+  default_config_hash: eFNXeoQTKm5Pc_ryghZq5oUg8n3UIGMzoQKITdClJwE
+id: node.localgov_directories_org.localgov_directory_channels
+field_name: localgov_directory_channels
+entity_type: node
+bundle: localgov_directories_org
+label: 'Directory channels'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: localgov_directories_channels_selection
+  handler_settings:
+    sort:
+      field: title
+      direction: DESC
+field_type: entity_reference

@@ -1,0 +1,36 @@
+uuid: e6157d67-1edd-4c64-9294-ccf705e9f1d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.localgov_geo.postal_address
+    - localgov_geo.localgov_geo_type.address
+  module:
+    - address
+_core:
+  default_config_hash: cPVK8esAh6ldr15OeJ1HraSlpFybhOxQ4l-nhoF2hAA
+id: localgov_geo.address.postal_address
+field_name: postal_address
+entity_type: localgov_geo
+bundle: address
+label: Address
+description: 'Enter the address here, and then use the ''Populate from address field'' button to find it on the map.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    GB: GB
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+  fields: {  }
+field_type: address

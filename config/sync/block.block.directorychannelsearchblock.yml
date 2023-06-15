@@ -1,0 +1,30 @@
+uuid: cae165c4-be55-4328-8016-b9e5fb3133d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_directories
+    - node
+  theme:
+    - lgd_org_theme
+id: directorychannelsearchblock
+theme: lgd_org_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: localgov_directories_channel_search_block
+settings:
+  id: localgov_directories_channel_search_block
+  label: 'Directory channel search block'
+  label_display: '0'
+  provider: localgov_directories
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      localgov_directory: localgov_directory

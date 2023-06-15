@@ -1,0 +1,31 @@
+uuid: ecb9e022-f84f-4080-8671-37e671b2ca21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_channels
+    - node.type.localgov_directory
+    - node.type.localgov_directory_promo_page
+_core:
+  default_config_hash: JWr9BRE_2ONEEsPzwk9gU22Y8PDM9DY2nbycyW7IDTI
+id: node.localgov_directory_promo_page.localgov_directory_channels
+field_name: localgov_directory_channels
+entity_type: node
+bundle: localgov_directory_promo_page
+label: 'Directory channels'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_directory: localgov_directory
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

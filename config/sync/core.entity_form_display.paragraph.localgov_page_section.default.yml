@@ -1,0 +1,49 @@
+uuid: c2370dff-397b-429d-aed2-dba9df7faf3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_page_section.localgov_bg_colour_of_section
+    - field.field.paragraph.localgov_page_section.localgov_padding_bottom_section
+    - field.field.paragraph.localgov_page_section.localgov_padding_top_section
+    - field.field.paragraph.localgov_page_section.localgov_width_of_section
+    - paragraphs.paragraphs_type.localgov_page_section
+_core:
+  default_config_hash: LfqNBVWUMex_hAZ3coPcZoseE-ls7B6133mHjvoAd9g
+id: paragraph.localgov_page_section.default
+targetEntityType: paragraph
+bundle: localgov_page_section
+mode: default
+content:
+  layout_paragraphs_fields:
+    weight: -200
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  localgov_bg_colour_of_section:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_padding_bottom_section:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_padding_top_section:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_width_of_section:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

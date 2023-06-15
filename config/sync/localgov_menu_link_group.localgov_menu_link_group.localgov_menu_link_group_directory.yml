@@ -1,0 +1,19 @@
+uuid: 617e46f5-7bfe-406e-aa58-ab6c0778d4cd
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - localgov_directories
+      - localgov_menu_link_group
+_core:
+  default_config_hash: wme2pgNgS_0kU6ULuUPWt-aqII8SIJgQDi6TUGT4t0Q
+id: localgov_menu_link_group_directory
+group_label: Directory
+weight: 0
+parent_menu: admin
+parent_menu_link: 'admin_toolbar_tools.extra_links:node.add'
+child_menu_links:
+  - 'admin_toolbar_tools.extra_links:node.add.localgov_directory'
+  - 'admin_toolbar_tools.extra_links:node.add.localgov_directories_page'
+  - 'admin_toolbar_tools.extra_links:node.add.localgov_directories_venue'

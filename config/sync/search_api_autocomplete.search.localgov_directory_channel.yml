@@ -1,0 +1,40 @@
+uuid: 973e66e6-2a10-4560-8a08-6d80811464e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.localgov_directories_index_default
+    - views.view.localgov_directory_channel
+  module:
+    - views
+    - search_api_autocomplete
+_core:
+  default_config_hash: _6cGscGjySW_8it5Qw6Ih4EX8nH2yo6QRi1RiUhNurc
+id: localgov_directory_channel
+label: 'Directory channel'
+index_id: localgov_directories_index_default
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes:
+      'entity:node':
+        localgov_directory_page: ''
+    highlight:
+      enabled: false
+      field: ''
+    suggest_keys: false
+suggester_weights:
+  live_results: 0
+suggester_limits: {  }
+search_settings:
+  'views:localgov_directory_channel':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

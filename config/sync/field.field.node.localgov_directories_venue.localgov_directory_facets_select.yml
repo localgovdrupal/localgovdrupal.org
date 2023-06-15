@@ -1,0 +1,31 @@
+uuid: 191e3e76-9dcd-4281-a8d1-32f10b5f49e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_facets_select
+    - node.type.localgov_directories_venue
+  enforced:
+    module:
+      - localgov_directories
+_core:
+  default_config_hash: kA2knxU2oMh4lFG2lnvhS6pyu7WHotAPiR7POn8BKa4
+id: node.localgov_directories_venue.localgov_directory_facets_select
+field_name: localgov_directory_facets_select
+entity_type: node
+bundle: localgov_directories_venue
+label: Facets
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: localgov_directories_facets_selection
+  handler_settings:
+    sort:
+      field: bundle
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

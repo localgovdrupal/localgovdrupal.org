@@ -1,0 +1,24 @@
+uuid: dd131cd6-38de-4ab2-99ce-8008d3c818a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.localgov_directories_venue
+_core:
+  default_config_hash: K4uF1FXhVlMsFO-z-_QzxVYRrU4A6h18UocngIjJiJU
+id: node.localgov_directories_venue.promote
+field_name: promote
+entity_type: node
+bundle: localgov_directories_venue
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

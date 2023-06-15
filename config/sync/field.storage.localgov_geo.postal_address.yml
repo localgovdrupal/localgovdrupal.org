@@ -1,0 +1,21 @@
+uuid: d95c1b22-27b6-4477-9ce0-0ac5bc6c3f46
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - localgov_geo
+_core:
+  default_config_hash: VIWZ21SnurbV-haUpJjLETVA-bJqtxqt7g3YWGP7kYY
+id: localgov_geo.postal_address
+field_name: postal_address
+entity_type: localgov_geo
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

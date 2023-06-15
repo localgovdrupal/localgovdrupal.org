@@ -1,0 +1,73 @@
+uuid: be839f7c-fd93-43ba-bdbf-a7813afd45a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.localgov_directories_org.body
+    - field.field.node.localgov_directories_org.localgov_directory_channels
+    - field.field.node.localgov_directories_org.localgov_directory_email
+    - field.field.node.localgov_directories_org.localgov_directory_facets_select
+    - field.field.node.localgov_directories_org.localgov_directory_files
+    - field.field.node.localgov_directories_org.localgov_directory_notes
+    - field.field.node.localgov_directories_org.localgov_directory_phone
+    - field.field.node.localgov_directories_org.localgov_directory_website
+    - field.field.node.localgov_directories_org.localgov_location
+    - node.type.localgov_directories_org
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_enquiries:
+      children:
+        - localgov_directory_email
+        - localgov_directory_phone
+        - localgov_directory_website
+      label: Enquiries
+      parent_name: ''
+      region: hidden
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+    group_organisation:
+      children:
+        - localgov_directory_notes
+        - localgov_location
+      label: Venue
+      parent_name: ''
+      region: hidden
+      weight: 9
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+_core:
+  default_config_hash: d0VegsXmTIBiTpeEGrbtmYpKuw3Rkc1PwejfBZjon2U
+id: node.localgov_directories_org.search_result
+targetEntityType: node
+bundle: localgov_directories_org
+mode: search_result
+content:
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  links: true
+  localgov_directory_channels: true
+  localgov_directory_email: true
+  localgov_directory_facets_select: true
+  localgov_directory_files: true
+  localgov_directory_notes: true
+  localgov_directory_phone: true
+  localgov_directory_search: true
+  localgov_directory_website: true
+  localgov_location: true

@@ -1,0 +1,31 @@
+uuid: 76602fda-89c4-4070-90af-8b220305f718
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_directory_organisation
+    - node.type.localgov_directories_org
+    - node.type.localgov_directories_venue
+_core:
+  default_config_hash: rsSoMUovvG9C_1jaa1n5GVV5M2Ayvnf7MbM0IOiN_Ko
+id: node.localgov_directories_venue.localgov_directory_organisation
+field_name: localgov_directory_organisation
+entity_type: node
+bundle: localgov_directories_venue
+label: Organisation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_directories_org: localgov_directories_org
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

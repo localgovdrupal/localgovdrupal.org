@@ -1,0 +1,22 @@
+uuid: 1c356f83-721c-4c42-ad37-ed732d7c1d7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_directories
+    - node
+_core:
+  default_config_hash: Klc8XMC0MqbNrd-0EW7fAYp_qVPUgi4Z7CI4BoSRvYo
+id: node.localgov_directory_facets_enable
+field_name: localgov_directory_facets_enable
+entity_type: node
+type: entity_reference
+settings:
+  target_type: localgov_directories_facets_type
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

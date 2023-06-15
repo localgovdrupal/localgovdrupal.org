@@ -1,0 +1,110 @@
+uuid: 3e03cfa6-7fb8-432c-8266-ce79c8e0a757
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.localgov_geo.address.accessibility
+    - field.field.localgov_geo.address.external_id
+    - field.field.localgov_geo.address.location
+    - field.field.localgov_geo.address.postal_address
+    - localgov_geo.localgov_geo_type.address
+  module:
+    - geofield_map
+    - localgov_geo_address
+    - text
+_core:
+  default_config_hash: jfUnajWSAB4egEC507hsq8AQ204Kf6bmz-sg0_BlSAI
+id: localgov_geo.address.default
+targetEntityType: localgov_geo
+bundle: address
+mode: default
+content:
+  accessibility:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  location:
+    type: geofield_map
+    weight: 1
+    region: content
+    settings:
+      html5_geolocation: false
+      default_value:
+        lat: !!float 0
+        lon: !!float 0
+      map_library: leaflet
+      map_google_api_key: ''
+      map_google_places:
+        places_control: false
+        places_additional_options: ''
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: true
+      zoom_level: 5
+      zoom:
+        start: 6
+        focus: 12
+        min: 0
+        max: 22
+      click_to_find_marker: false
+      click_to_place_marker: false
+      hide_coordinates: false
+      geoaddress_field:
+        field: '0'
+        hidden: false
+        disabled: true
+      map_geocoder:
+        control: 0
+        settings:
+          providers:
+            localgov_default_osm:
+              weight: 0
+              checked: false
+          min_terms: 4
+          delay: 800
+          options: ''
+    third_party_settings: {  }
+  postal_address:
+    type: localgov_geo_address
+    weight: 0
+    region: content
+    settings:
+      providers:
+        localgov_default_osm:
+          checked: true
+          weight: 0
+      geocode_geofield: location
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  external_id: true
+  label: true

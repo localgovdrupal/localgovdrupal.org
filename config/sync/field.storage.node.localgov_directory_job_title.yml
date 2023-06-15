@@ -1,0 +1,23 @@
+uuid: 8f8d6e1c-dad8-4811-a583-028466271b54
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: qEeRgZ6BrzvrFf_A6RsSlAmDsbSR9v1jYCGf2kBtJO8
+id: node.localgov_directory_job_title
+field_name: localgov_directory_job_title
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

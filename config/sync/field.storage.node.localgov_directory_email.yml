@@ -1,0 +1,20 @@
+uuid: e4f42bf2-c857-49b7-a8e5-2a61137def88
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 09rUfkWDzQlS2BIa9zYdicXmD1U2SK3pw9Yg6mE2BCI
+id: node.localgov_directory_email
+field_name: localgov_directory_email
+entity_type: node
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

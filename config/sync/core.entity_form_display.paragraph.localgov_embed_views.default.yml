@@ -1,0 +1,41 @@
+uuid: c3eda4fb-42c6-45a1-82ba-2845726f9ba4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_embed_views.localgov_embed_block_view
+    - field.field.paragraph.localgov_embed_views.localgov_heading_level
+    - field.field.paragraph.localgov_embed_views.localgov_title
+    - paragraphs.paragraphs_type.localgov_embed_views
+  module:
+    - viewsreference
+_core:
+  default_config_hash: Y9e8vL69NC2XOoBsYMA_zGWpgkKn09IpR3mh8UgkiO4
+id: paragraph.localgov_embed_views.default
+targetEntityType: paragraph
+bundle: localgov_embed_views
+mode: default
+content:
+  localgov_embed_block_view:
+    type: viewsreference_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_heading_level:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,50 @@
+uuid: 9dc03e98-3c84-45b7-9f74-82e6c2e243df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.localgov_directories_page.body
+    - field.field.node.localgov_directories_page.localgov_directory_address
+    - field.field.node.localgov_directories_page.localgov_directory_channels
+    - field.field.node.localgov_directories_page.localgov_directory_email
+    - field.field.node.localgov_directories_page.localgov_directory_facets_select
+    - field.field.node.localgov_directories_page.localgov_directory_files
+    - field.field.node.localgov_directories_page.localgov_directory_job_title
+    - field.field.node.localgov_directories_page.localgov_directory_name
+    - field.field.node.localgov_directories_page.localgov_directory_phone
+    - field.field.node.localgov_directories_page.localgov_directory_title_sort
+    - field.field.node.localgov_directories_page.localgov_directory_website
+    - node.type.localgov_directories_page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: N_0CbAKWJjOjeOSzQct7SXin8_7CJVXKFEuDg_fR1_U
+id: node.localgov_directories_page.teaser
+targetEntityType: node
+bundle: localgov_directories_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true
+  localgov_directory_address: true
+  localgov_directory_channels: true
+  localgov_directory_email: true
+  localgov_directory_facets_select: true
+  localgov_directory_files: true
+  localgov_directory_job_title: true
+  localgov_directory_name: true
+  localgov_directory_phone: true
+  localgov_directory_search: true
+  localgov_directory_title_sort: true
+  localgov_directory_website: true
+  search_api_excerpt: true

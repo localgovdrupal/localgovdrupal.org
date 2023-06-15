@@ -1,0 +1,128 @@
+uuid: fa82027f-c0e6-428f-80f6-4eb2d3e09b11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.localgov_geo.address.accessibility
+    - field.field.localgov_geo.address.external_id
+    - field.field.localgov_geo.address.location
+    - field.field.localgov_geo.address.postal_address
+    - localgov_geo.localgov_geo_type.address
+  module:
+    - address
+    - leaflet
+    - text
+_core:
+  default_config_hash: lSeaAxgBqUauSKrMOxnS7heoucx2zEyIIf8DFlH_mXw
+id: localgov_geo.address.default
+targetEntityType: localgov_geo
+bundle: address
+mode: default
+content:
+  accessibility:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  location:
+    type: leaflet_formatter_default
+    label: visually_hidden
+    settings:
+      multiple_map: false
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: false
+      disable_wheel: false
+      gesture_handling: false
+      reset_map:
+        control: false
+        options: '{"position":"topleft","title":"Reset View"}'
+      locate:
+        control: false
+        options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
+        automatic: false
+      leaflet_tooltip:
+        value: ''
+        options: '{"permanent":false,"direction":"center"}'
+      popup: false
+      popup_content: ''
+      leaflet_popup:
+        control: '0'
+        content: ''
+        options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
+      map_position:
+        force: false
+        center:
+          lat: !!float 0
+          lon: !!float 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+      icon:
+        iconType: marker
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+        excluded: ''
+        include_path: false
+      fullscreen:
+        control: false
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+      feature_properties:
+        values: ''
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers:
+            localgov_default_osm:
+              weight: 0
+              checked: false
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  postal_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  external_id: true
+  search_api_excerpt: true
+  status: true
+  uid: true

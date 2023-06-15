@@ -1,0 +1,23 @@
+uuid: 111ccd48-1a22-4a5d-be2e-fdf8d3428f09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.localgov_geo.accessibility
+    - localgov_geo.localgov_geo_type.address
+  module:
+    - text
+_core:
+  default_config_hash: fpJFm_mWMrZMJyIeIoKxFwfh_t_7lxabRH1oRuDp3bg
+id: localgov_geo.address.accessibility
+field_name: accessibility
+entity_type: localgov_geo
+bundle: address
+label: Accessibility
+description: 'Any information about access, or restrictions, at the address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

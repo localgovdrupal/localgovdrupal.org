@@ -1,0 +1,110 @@
+uuid: 493294cd-b237-48d4-bc64-4a5e69e76f12
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.directory_index
+    - field.field.node.localgov_directories_org.body
+    - field.field.node.localgov_directories_org.localgov_directory_channels
+    - field.field.node.localgov_directories_org.localgov_directory_email
+    - field.field.node.localgov_directories_org.localgov_directory_facets_select
+    - field.field.node.localgov_directories_org.localgov_directory_files
+    - field.field.node.localgov_directories_org.localgov_directory_notes
+    - field.field.node.localgov_directories_org.localgov_directory_phone
+    - field.field.node.localgov_directories_org.localgov_directory_website
+    - field.field.node.localgov_directories_org.localgov_location
+    - node.type.localgov_directories_org
+  module:
+    - link
+    - telephone
+    - text
+    - user
+_core:
+  default_config_hash: Mx54R8WhwWpDTa-WIl-syYHg31YOJrIzdgou0ibdVw0
+id: node.localgov_directories_org.directory_index
+targetEntityType: node
+bundle: localgov_directories_org
+mode: directory_index
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_channels:
+    weight: 3
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  localgov_directory_email:
+    type: basic_string
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_facets_select:
+    weight: 2
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  localgov_directory_files:
+    type: entity_reference_label
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  localgov_directory_notes:
+    type: text_default
+    weight: 8
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  localgov_directory_phone:
+    type: telephone_link
+    weight: 11
+    region: content
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+  localgov_directory_website:
+    type: link_separate
+    weight: 10
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  localgov_location:
+    weight: 12
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  localgov_directory_search: true
+  search_api_excerpt: true

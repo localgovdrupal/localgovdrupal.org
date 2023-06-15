@@ -1,0 +1,23 @@
+uuid: 6ae7e7ad-38fb-497e-a54e-6677d1aae20f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: UahIuJ5Yu-6NibtaCm2319o9bvymXv9XuVfoeYTmJwY
+id: node.localgov_directory_name
+field_name: localgov_directory_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
