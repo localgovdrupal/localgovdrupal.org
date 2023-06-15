@@ -89,3 +89,13 @@ cookie-compliance:
   css:
     theme:
       css/components/cookie-compliance.css: {}
+
+directories:
+  css:
+    theme:
+      css/components/directories.css: {}
+
+views:
+  css:
+    theme:
+      css/components/views.css: {}

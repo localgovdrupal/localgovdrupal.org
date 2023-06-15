@@ -22,6 +22,12 @@ libraries:
   - lgd_org_theme/front
   - lgd_org_theme/form-items
   - lgd_org_theme/cookie-compliance
+  - lgd_org_theme/views
+
+libraries-extend:
+  localgov_base/directories:
+    - lgd_org_theme/directories
+
 
 ckeditor_stylesheets:
   - css/ckeditor.css

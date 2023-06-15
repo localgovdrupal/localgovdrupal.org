@@ -1,0 +1,5 @@
+.localgov-directories-venue fieldset,
+.localgov-directories-page fieldset {
+  border: 1px solid var(--color-grey-medium);
+  padding: 0 var(--spacing-large) var(--spacing-large);
+}

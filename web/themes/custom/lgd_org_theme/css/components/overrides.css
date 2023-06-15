@@ -65,7 +65,8 @@
   .region-sidebar-second {
     grid-column: 2 / span 2;
   }
-  .newsroom__sidebar {
+  .newsroom__sidebar,
+  .lgd-region--sidebar-first {
     grid-column: 1 / span 3;
   }
 }

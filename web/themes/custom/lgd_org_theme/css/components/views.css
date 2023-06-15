@@ -1,0 +1,4 @@
+.views-row + .views-row {
+  border-top: 1px solid var(--color-grey-medium);
+  padding-top: var(--spacing-larger);
+}
