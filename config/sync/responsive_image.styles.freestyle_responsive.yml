@@ -1,0 +1,42 @@
+uuid: e456040a-0bcb-45af-ab35-b2a927448863
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.freestyle_lg
+    - image.style.freestyle_md
+    - image.style.freestyle_sm
+    - image.style.freestyle_xl
+    - image.style.freestyle_xs
+  module:
+    - localgov_media
+id: freestyle_responsive
+label: 'Freestyle Responsive'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: freestyle_xl
+    breakpoint_id: localgov_media.bootstrap4_xl_1200px
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: freestyle_lg
+    breakpoint_id: localgov_media.bootstrap4_lg_992px
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: freestyle_md
+    breakpoint_id: localgov_media.bootstrap4_md_768px
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: freestyle_sm
+    breakpoint_id: localgov_media.bootstrap4_sm_576px
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: freestyle_xs
+    breakpoint_id: localgov_media.bootstrap4_xs
+    multiplier: 1x
+breakpoint_group: localgov_media
+fallback_image_style: freestyle_xs

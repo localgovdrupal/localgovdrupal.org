@@ -1,0 +1,10 @@
+uuid: 6c3ba3e7-a583-4a5b-a726-42c4af121853
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.freestyle
+label: Freestyle
+targetEntityType: media
+cache: true
