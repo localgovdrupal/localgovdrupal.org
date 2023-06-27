@@ -37,6 +37,7 @@ content:
         - '7_3'
         - '8_7'
         - square
+        - freestyle
       crop_types_required: {  }
       warn_multiple_usages: true
       show_crop_area: false

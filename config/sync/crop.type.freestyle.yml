@@ -1,0 +1,12 @@
+uuid: 84903122-024f-4692-b35b-2a34ffa30227
+langcode: en
+status: true
+dependencies: {  }
+label: Freestyle
+id: freestyle
+description: 'User defined crop, with no aspect ratio set.'
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
