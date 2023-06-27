@@ -56,11 +56,11 @@ settings:
           items:
             - Table
   plugins:
-    stylescombo:
-      styles: "mark|Highlight\r\na.external-link|External link\r\na.pdf-link|PDF link\r\na.btn.btn-start.col-sm-6.mt-3|Start button\r\np.alert.alert-info|Alert info\r\np.alert.alert-danger|Alert warning\r\np.alert.alert-primary|Alert failure\r\np.alert.alert-success|Alert success\r\np.callout.callout-primary|Callout primary\r\np.callout.callout-success|Callout success\r\np.callout.callout-danger|Callout danger\r\np.callout.callout-teal|Callout teal\r\np.callout.callout-carbon|Callout carbon\r\np.callout.callout-yellow|Callout yellow\r\nul.list-checked|Green ticks"
     drupallink:
       linkit_enabled: true
       linkit_profile: default
+    stylescombo:
+      styles: "mark|Highlight\r\na.external-link|External link\r\na.pdf-link|PDF link\r\na.btn.btn-start.col-sm-6.mt-3|Start button\r\np.alert.alert-info|Alert info\r\np.alert.alert-danger|Alert warning\r\np.alert.alert-primary|Alert failure\r\np.alert.alert-success|Alert success\r\np.callout.callout-primary|Callout primary\r\np.callout.callout-success|Callout success\r\np.callout.callout-danger|Callout danger\r\np.callout.callout-teal|Callout teal\r\np.callout.callout-carbon|Callout carbon\r\np.callout.callout-yellow|Callout yellow\r\nul.list-checked|Green ticks"
 image_upload:
   status: false
   scheme: public

@@ -1,0 +1,26 @@
+uuid: 099f8569-4089-47de-bb79-4494c29fbd09
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.freestyle
+  module:
+    - crop
+name: freestyle_xs
+label: 'Freestyle XS'
+effects:
+  f3eb0e0f-2392-45c6-a7de-e4cb4fc1c9cf:
+    uuid: f3eb0e0f-2392-45c6-a7de-e4cb4fc1c9cf
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: freestyle
+      automatic_crop_provider: null
+  60a82ceb-fb5b-4657-872c-c1e115529f21:
+    uuid: 60a82ceb-fb5b-4657-872c-c1e115529f21
+    id: image_scale
+    weight: 2
+    data:
+      width: 576
+      height: null
+      upscale: false
