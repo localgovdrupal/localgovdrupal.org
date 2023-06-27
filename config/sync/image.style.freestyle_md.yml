@@ -1,0 +1,26 @@
+uuid: 6c8139be-d483-4dd0-8704-6552f52f9e8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.freestyle
+  module:
+    - crop
+name: freestyle_md
+label: 'Freestyle MD'
+effects:
+  68824022-c5eb-440a-b04e-768413ea85a9:
+    uuid: 68824022-c5eb-440a-b04e-768413ea85a9
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: freestyle
+      automatic_crop_provider: null
+  f9ab7868-b066-4158-a7ec-eda160621255:
+    uuid: f9ab7868-b066-4158-a7ec-eda160621255
+    id: image_scale
+    weight: 2
+    data:
+      width: 992
+      height: null
+      upscale: false
