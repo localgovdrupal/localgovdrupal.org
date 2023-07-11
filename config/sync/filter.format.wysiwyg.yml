@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.freestyle
     - core.entity_view_mode.media.medium_8_7
     - core.entity_view_mode.media.responsive_3x2
     - core.entity_view_mode.media.scale_crop_7_3_large
@@ -91,6 +92,7 @@ filters:
       default_view_mode: responsive_3x2
       allowed_view_modes:
         default: default
+        freestyle: freestyle
         medium_8_7: medium_8_7
         responsive_3x2: responsive_3x2
         scale_crop_7_3_large: scale_crop_7_3_large

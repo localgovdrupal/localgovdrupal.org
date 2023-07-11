@@ -1,0 +1,18 @@
+uuid: 8e819b45-9a28-458b-98a9-20fe0143766a
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.freestyle
+  module:
+    - crop
+name: freestyle_xl
+label: 'Freestyle XL'
+effects:
+  bedb8b60-f088-4af7-9992-48673988a5b7:
+    uuid: bedb8b60-f088-4af7-9992-48673988a5b7
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: freestyle
+      automatic_crop_provider: null

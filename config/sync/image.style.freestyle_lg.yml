@@ -1,0 +1,26 @@
+uuid: 23b48b6b-9f6e-449f-8326-f4fbcebbe237
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.freestyle
+  module:
+    - crop
+name: freestyle_lg
+label: 'Freestyle LG'
+effects:
+  b8c9ed50-b967-42d0-ae44-c7ee81e2daa3:
+    uuid: b8c9ed50-b967-42d0-ae44-c7ee81e2daa3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: freestyle
+      automatic_crop_provider: null
+  3905f2d7-b5ce-4004-a356-e6502f7f1700:
+    uuid: 3905f2d7-b5ce-4004-a356-e6502f7f1700
+    id: image_scale
+    weight: 2
+    data:
+      width: 1200
+      height: null
+      upscale: false
