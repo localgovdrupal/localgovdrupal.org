@@ -35,15 +35,15 @@ third_party_settings:
         - localgov_directory_email
         - localgov_directory_address
         - localgov_directory_website
+      label: Enquiries
       parent_name: ''
+      region: content
       weight: 2
       format_type: fieldset
-      region: content
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         description: ''
-      label: Enquiries
 _core:
   default_config_hash: CbFJXKJj2tbKrjoN3eXxIA3dl7AWEGsTiqCggpH20uc
 id: node.localgov_directories_page.default
@@ -52,61 +52,61 @@ bundle: localgov_directories_page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   localgov_directory_address:
-    weight: 7
+    type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 7
     region: content
   localgov_directory_email:
-    weight: 6
+    type: email_mailto
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: email_mailto
+    weight: 6
     region: content
   localgov_directory_files:
     type: entity_reference_entity_view
-    weight: 1
     label: above
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
+    weight: 1
     region: content
   localgov_directory_job_title:
-    weight: 4
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   localgov_directory_name:
-    weight: 3
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   localgov_directory_phone:
-    weight: 5
+    type: telephone_link
     label: inline
     settings:
       title: ''
     third_party_settings: {  }
-    type: telephone_link
+    weight: 5
     region: content
   localgov_directory_website:
-    weight: 8
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -115,7 +115,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 8
     region: content
 hidden:
   links: true

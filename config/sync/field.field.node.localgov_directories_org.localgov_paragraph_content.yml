@@ -1,0 +1,162 @@
+uuid: 27f2bb1a-3034-4a7c-abd8-514af98e5272
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_paragraph_content
+    - node.type.localgov_directories_org
+    - paragraphs.paragraphs_type.localgov_call_out_box
+    - paragraphs.paragraphs_type.localgov_featured_teasers
+    - paragraphs.paragraphs_type.localgov_ia_block
+    - paragraphs.paragraphs_type.localgov_link
+    - paragraphs.paragraphs_type.localgov_link_and_summary
+    - paragraphs.paragraphs_type.localgov_media_with_text
+    - paragraphs.paragraphs_type.localgov_quote
+    - paragraphs.paragraphs_type.localgov_table
+    - paragraphs.paragraphs_type.localgov_text
+    - paragraphs.paragraphs_type.localgov_video
+    - paragraphs.paragraphs_type.page_section
+  module:
+    - entity_reference_revisions
+id: node.localgov_directories_org.localgov_paragraph_content
+field_name: localgov_paragraph_content
+entity_type: node
+bundle: localgov_directories_org
+label: 'Layouts and rich content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      localgov_call_out_box: localgov_call_out_box
+      localgov_featured_teasers: localgov_featured_teasers
+      localgov_ia_block: localgov_ia_block
+      localgov_link: localgov_link
+      localgov_link_and_summary: localgov_link_and_summary
+      localgov_media_with_text: localgov_media_with_text
+      localgov_quote: localgov_quote
+      localgov_table: localgov_table
+      localgov_text: localgov_text
+      localgov_video: localgov_video
+      page_section: page_section
+    negate: 0
+    target_bundles_drag_drop:
+      from_library:
+        weight: 39
+        enabled: false
+      localgov_accordion:
+        weight: 40
+        enabled: false
+      localgov_accordion_pane:
+        weight: 41
+        enabled: false
+      localgov_banner_primary:
+        weight: 42
+        enabled: false
+      localgov_banner_secondary:
+        weight: 43
+        enabled: false
+      localgov_block_view:
+        weight: 44
+        enabled: false
+      localgov_box_link:
+        weight: 45
+        enabled: false
+      localgov_box_links_listing:
+        weight: 46
+        enabled: false
+      localgov_call_out_box:
+        weight: 47
+        enabled: true
+      localgov_contact:
+        weight: 48
+        enabled: false
+      localgov_documents:
+        weight: 49
+        enabled: false
+      localgov_embed_views:
+        weight: 50
+        enabled: false
+      localgov_fact_box:
+        weight: 51
+        enabled: false
+      localgov_featured_campaign:
+        weight: 52
+        enabled: false
+      localgov_featured_subsite:
+        weight: 53
+        enabled: false
+      localgov_featured_teaser:
+        weight: 54
+        enabled: false
+      localgov_featured_teasers:
+        weight: 55
+        enabled: true
+      localgov_ia_block:
+        weight: 56
+        enabled: true
+      localgov_image:
+        weight: 57
+        enabled: false
+      localgov_key_contact_item:
+        weight: 59
+        enabled: false
+      localgov_key_contacts:
+        weight: 58
+        enabled: false
+      localgov_key_fact:
+        weight: 60
+        enabled: false
+      localgov_key_facts:
+        weight: 61
+        enabled: false
+      localgov_labelled_icon:
+        weight: 62
+        enabled: false
+      localgov_link:
+        weight: 63
+        enabled: true
+      localgov_link_and_summary:
+        weight: 64
+        enabled: true
+      localgov_media_with_text:
+        weight: 65
+        enabled: true
+      localgov_newsroom_teaser:
+        weight: 66
+        enabled: false
+      localgov_page_section:
+        weight: 67
+        enabled: false
+      localgov_quote:
+        weight: 68
+        enabled: true
+      localgov_subscribe_panel:
+        weight: 69
+        enabled: false
+      localgov_tab_panel:
+        weight: 72
+        enabled: false
+      localgov_table:
+        weight: 70
+        enabled: true
+      localgov_tabs:
+        weight: 71
+        enabled: false
+      localgov_text:
+        weight: 73
+        enabled: true
+      localgov_video:
+        weight: 74
+        enabled: true
+      page_section:
+        weight: 75
+        enabled: true
+      topic_list_builder:
+        weight: 76
+        enabled: false
+field_type: entity_reference_revisions

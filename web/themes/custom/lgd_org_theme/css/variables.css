@@ -49,6 +49,9 @@ body {
   --spacing-padding-horizontal: 0;
   --line-height: 1.4;
   --vertical-rhythm-spacing: calc(var(--line-height) * 0.75rem);
+  --flow-space: var(--vertical-rhythm-spacing);
+  --box-space: var(--flow-space);
+  --slat-space: var(--flow-space);
 
   /* Colours */
   /*

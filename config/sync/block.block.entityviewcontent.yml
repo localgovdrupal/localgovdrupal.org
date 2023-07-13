@@ -1,0 +1,31 @@
+uuid: 00abaa68-84b8-4bec-ad91-42cce09e6de3
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+  theme:
+    - lgd_org_theme
+id: entityviewcontent
+theme: lgd_org_theme
+region: content_top
+weight: -16
+provider: null
+plugin: 'entity_view:node'
+settings:
+  id: 'entity_view:node'
+  label: 'Entity view (Content)'
+  label_display: '0'
+  provider: ctools
+  view_mode: banner
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      localgov_directories_org: localgov_directories_org

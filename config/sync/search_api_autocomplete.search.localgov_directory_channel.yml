@@ -16,13 +16,13 @@ index_id: localgov_directories_index_default
 suggester_settings:
   live_results:
     fields: {  }
-    view_modes:
-      'entity:node':
-        localgov_directory_page: ''
     highlight:
       enabled: false
       field: ''
     suggest_keys: false
+    view_modes:
+      'entity:node':
+        localgov_directory_page: ''
 suggester_weights:
   live_results: 0
 suggester_limits: {  }
@@ -35,6 +35,6 @@ options:
   limit: 10
   min_length: 1
   show_count: false
-  autosubmit: true
-  submit_button_selector: ':submit'
   delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

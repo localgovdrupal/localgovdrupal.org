@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_result
     - field.field.node.localgov_directories_org.body
+    - field.field.node.localgov_directories_org.field_media_image
     - field.field.node.localgov_directories_org.localgov_directory_channels
     - field.field.node.localgov_directories_org.localgov_directory_email
     - field.field.node.localgov_directories_org.localgov_directory_facets_select
@@ -13,6 +14,7 @@ dependencies:
     - field.field.node.localgov_directories_org.localgov_directory_phone
     - field.field.node.localgov_directories_org.localgov_directory_website
     - field.field.node.localgov_directories_org.localgov_location
+    - field.field.node.localgov_directories_org.localgov_paragraph_content
     - node.type.localgov_directories_org
   module:
     - field_group
@@ -61,6 +63,7 @@ content:
 hidden:
   body: true
   content_moderation_control: true
+  field_media_image: true
   links: true
   localgov_directory_channels: true
   localgov_directory_email: true
@@ -71,3 +74,4 @@ hidden:
   localgov_directory_search: true
   localgov_directory_website: true
   localgov_location: true
+  localgov_paragraph_content: true

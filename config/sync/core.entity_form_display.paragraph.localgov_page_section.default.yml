@@ -17,9 +17,9 @@ mode: default
 content:
   layout_paragraphs_fields:
     weight: -200
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   localgov_bg_colour_of_section:
     type: options_select
     weight: 1

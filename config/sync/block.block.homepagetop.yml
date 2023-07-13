@@ -16,7 +16,7 @@ third_party_settings:
 id: homepagetop
 theme: lgd_org_theme
 region: content_top
-weight: 0
+weight: -14
 provider: null
 plugin: 'block_content:37ff0082-b79d-4220-bd5c-e8de1121496c'
 settings:

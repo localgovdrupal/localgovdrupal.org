@@ -8,9 +8,9 @@ id: localgov_default_osm
 label: OpenStreetMap
 plugin: openstreetmap
 configuration:
-  rootUrl: 'https://nominatim.openstreetmap.org'
-  userAgent: LocalGovDrupal
-  referer: 'https://localgov.lndo.site/'
   throttle:
     period: 2
     limit: 1
+  rootUrl: 'https://nominatim.openstreetmap.org'
+  userAgent: LocalGovDrupal
+  referer: 'https://localgov.lndo.site/'

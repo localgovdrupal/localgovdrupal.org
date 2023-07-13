@@ -10,7 +10,7 @@ dependencies:
 id: numberofcouncils
 theme: lgd_org_theme
 region: banner
-weight: -5
+weight: -15
 provider: null
 plugin: lgd_org_blocks_blocks_3
 settings:

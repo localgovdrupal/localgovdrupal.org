@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_form_mode.localgov_geo.inline
     - field.field.node.localgov_directories_org.body
+    - field.field.node.localgov_directories_org.field_media_image
     - field.field.node.localgov_directories_org.localgov_directory_channels
     - field.field.node.localgov_directories_org.localgov_directory_email
     - field.field.node.localgov_directories_org.localgov_directory_facets_select
@@ -13,10 +14,12 @@ dependencies:
     - field.field.node.localgov_directories_org.localgov_directory_phone
     - field.field.node.localgov_directories_org.localgov_directory_website
     - field.field.node.localgov_directories_org.localgov_location
+    - field.field.node.localgov_directories_org.localgov_paragraph_content
     - node.type.localgov_directories_org
   module:
     - field_group
     - inline_entity_form
+    - layout_paragraphs
     - link
     - localgov_directories
     - media_library
@@ -31,80 +34,78 @@ third_party_settings:
         - group_directory
         - group_enquiries
         - group_organisation
+      label: tabs
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: vertical
-      label: tabs
     group_description:
       children:
         - title
         - body
         - localgov_directory_files
+      label: Description
+      region: content
       parent_name: group_tabs
       weight: 6
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Description
     group_directory:
       children:
         - localgov_directory_channels
         - localgov_directory_facets_select
+      label: Directory
+      region: content
       parent_name: group_tabs
       weight: 7
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Directory
     group_enquiries:
       children:
-        - localgov_directory_name
-        - localgov_directory_job_title
         - localgov_directory_phone
         - localgov_directory_email
         - localgov_directory_website
+      label: Enquiries
+      region: content
       parent_name: group_tabs
       weight: 8
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Enquiries
     group_organisation:
       children:
         - localgov_location
-        - localgov_directory_opening_times
         - localgov_directory_notes
+      label: Headquarters
+      region: content
       parent_name: group_tabs
       weight: 9
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        show_empty_fields: false
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Venue
 _core:
   default_config_hash: kN0n57C1-HX8qqEANel3luujYfcxFp2VCjGQy1G0okg
 id: node.localgov_directories_org.default
@@ -115,46 +116,57 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 25
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: true
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-  localgov_directory_channels:
-    weight: 9
-    settings: {  }
-    third_party_settings: {  }
-    type: localgov_directories_channel_selector
+  field_media_image:
+    type: media_library_widget
+    weight: 52
     region: content
-  localgov_directory_email:
-    weight: 15
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: email_default
+      media_types:
+        - image
+        - council_logo
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+  localgov_directory_channels:
+    type: localgov_directories_channel_selector
+    weight: 9
     region: content
-  localgov_directory_facets_select:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
-    type: localgov_directories_facet_checkbox
+  localgov_directory_email:
+    type: email_default
+    weight: 15
     region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  localgov_directory_facets_select:
+    type: localgov_directories_facet_checkbox
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   localgov_directory_files:
+    type: media_library_widget
     weight: 26
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
   localgov_directory_notes:
     type: text_textarea
     weight: 10
@@ -164,32 +176,42 @@ content:
       placeholder: ''
     third_party_settings: {  }
   localgov_directory_phone:
+    type: telephone_default
     weight: 14
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: telephone_default
-    region: content
   localgov_directory_website:
+    type: link_default
     weight: 16
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   localgov_location:
     type: inline_entity_form_simple
     weight: 7
     region: content
     settings:
       form_mode: inline
+      override_labels: false
       label_singular: ''
       label_plural: ''
-      revision: false
-      override_labels: false
       collapsible: false
       collapsed: false
+      revision: false
+    third_party_settings: {  }
+  localgov_paragraph_content:
+    type: layout_paragraphs
+    weight: 51
+    region: content
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 1
+      empty_message: ''
     third_party_settings: {  }
   path:
     type: path
@@ -199,24 +221,29 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 3
     region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 4
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -229,16 +256,16 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 1
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

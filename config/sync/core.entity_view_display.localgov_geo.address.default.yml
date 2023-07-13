@@ -9,7 +9,7 @@ dependencies:
     - field.field.localgov_geo.address.postal_address
     - localgov_geo.localgov_geo_type.address
   module:
-    - address
+    - field_formatter_class
     - leaflet
     - text
 _core:
@@ -24,7 +24,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   location:
     type: leaflet_formatter_default
@@ -40,6 +40,9 @@ content:
       reset_map:
         control: false
         options: '{"position":"topleft","title":"Reset View"}'
+      map_scale:
+        control: false
+        options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
       locate:
         control: false
         options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
@@ -58,6 +61,7 @@ content:
         center:
           lat: !!float 0
           lon: !!float 0
+        zoomControlPosition: topleft
         zoom: 12
         minZoom: 1
         maxZoom: 18
@@ -99,6 +103,9 @@ content:
       geocoder:
         control: false
         settings:
+          autocomplete:
+            placeholder: 'Search Address'
+            title: 'Search an Address on the Map'
           position: topright
           input_size: 25
           providers:
@@ -110,19 +117,18 @@ content:
           zoom: 16
           popup: false
           options: ''
-    third_party_settings: {  }
+      map_lazy_load:
+        lazy_load: false
+      weight: null
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
-    region: content
-  postal_address:
-    type: address_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
     region: content
 hidden:
   created: true
   external_id: true
+  postal_address: true
   search_api_excerpt: true
   status: true
   uid: true

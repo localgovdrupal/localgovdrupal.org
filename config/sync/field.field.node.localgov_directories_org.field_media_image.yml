@@ -1,0 +1,31 @@
+uuid: 11c838cc-7b04-4b7d-937d-b44e048e44c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_image
+    - media.type.council_logo
+    - media.type.image
+    - node.type.localgov_directories_org
+id: node.localgov_directories_org.field_media_image
+field_name: field_media_image
+entity_type: node
+bundle: localgov_directories_org
+label: Logo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      council_logo: council_logo
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: council_logo
+field_type: entity_reference

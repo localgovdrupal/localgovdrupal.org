@@ -23,32 +23,32 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   d5750416-1d97-43b9-95b1-f843724c8ecd:
+    id: view
+    uuid: d5750416-1d97-43b9-95b1-f843724c8ecd
+    label: 'Search existing locations'
+    weight: 1
     settings:
       submit_text: 'Select location'
       auto_select: false
       view: localgov_geo_library
       view_display: entity_browser_1
-    uuid: d5750416-1d97-43b9-95b1-f843724c8ecd
-    weight: 1
-    label: 'Search existing locations'
-    id: view
   3edf0a0f-cb61-4324-8d36-1898e23a16ed:
+    id: entity_form
+    uuid: 3edf0a0f-cb61-4324-8d36-1898e23a16ed
+    label: 'Create new address'
+    weight: 2
     settings:
       submit_text: 'Save address'
       entity_type: localgov_geo
       bundle: address
       form_mode: inline
-    uuid: 3edf0a0f-cb61-4324-8d36-1898e23a16ed
-    weight: 2
-    label: 'Create new address'
-    id: entity_form
   beda8d11-9000-4069-95e7-dbb4282941db:
+    id: entity_form
+    uuid: beda8d11-9000-4069-95e7-dbb4282941db
+    label: 'Create new area'
+    weight: 3
     settings:
       submit_text: 'Save area'
       entity_type: localgov_geo
       bundle: area
       form_mode: inline
-    uuid: beda8d11-9000-4069-95e7-dbb4282941db
-    weight: 3
-    label: 'Create new area'
-    id: entity_form

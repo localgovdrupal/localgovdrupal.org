@@ -1,9 +1,9 @@
-uuid: c89e105f-0604-4a43-bc2b-95b3cd82a1f8
+uuid: a301ec26-ec5f-4166-a5f4-97cdd5f4113e
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.banner
     - field.field.node.localgov_directories_org.body
     - field.field.node.localgov_directories_org.field_media_image
     - field.field.node.localgov_directories_org.localgov_directory_channels
@@ -17,25 +17,60 @@ dependencies:
     - field.field.node.localgov_directories_org.localgov_paragraph_content
     - node.type.localgov_directories_org
   module:
-    - text
+    - field_formatter_class
+    - field_group
     - user
+third_party_settings:
+  field_group:
+    group_enquiries:
+      children:
+        - localgov_directory_phone
+        - localgov_directory_email
+        - localgov_directory_website
+      label: Enquiries
+      parent_name: group_organisation
+      region: hidden
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+    group_organisation:
+      children:
+        - group_enquiries
+        - localgov_location
+        - localgov_directory_notes
+      label: 'Headquarters / Main Office / Location'
+      parent_name: ''
+      region: hidden
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
 _core:
-  default_config_hash: uKr3248K2NPAaAIn10NbEgsvFFNBYKvEJFmMWS1Rpnc
-id: node.localgov_directories_org.teaser
+  default_config_hash: PbDdGhMntwv40PW9Cu5slDmyexN1RlhufFSAP30ARkM
+id: node.localgov_directories_org.banner
 targetEntityType: node
 bundle: localgov_directories_org
-mode: teaser
+mode: banner
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_media_image:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      trim_length: 600
-    third_party_settings: {  }
+      view_mode: freestyle
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
     region: content
 hidden:
-  field_media_image: true
+  body: true
   links: true
   localgov_directory_channels: true
   localgov_directory_email: true

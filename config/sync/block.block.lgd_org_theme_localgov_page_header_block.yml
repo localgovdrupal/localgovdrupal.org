@@ -11,7 +11,7 @@ _core:
 id: lgd_org_theme_localgov_page_header_block
 theme: lgd_org_theme
 region: content_top
-weight: -10
+weight: -15
 provider: null
 plugin: localgov_page_header_block
 settings:

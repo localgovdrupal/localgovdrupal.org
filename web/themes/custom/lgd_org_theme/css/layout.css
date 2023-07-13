@@ -5,6 +5,22 @@
 /*
   The main container class that defines how wide our content area is
 */
+
+/* objects > flow */
+.l-flow > * + * {
+  margin-top: var(--flow-space, var(--spacing-small));
+}
+
+.l-box {
+  padding: var(--box-space);
+}
+
+.l-slat {
+  margin-top: var(--slat-gap);
+  margin-bottom: var(--slat-gap);
+}
+
+
 .lgd-container,
 .lgd-region__inner--banner,
 .lgd-region--banner .lgd-region__inner {
@@ -104,5 +120,36 @@
   .path-frontpage #main-content .lgd-container {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.layout {
+  gap: var(--spacing-larger);
+}
+
+@media screen and (min-width: 40rem) {
+.layout--threecol-33-34-33 > .layout__region--first,
+.layout--threecol-33-34-33 > .layout__region--second,
+.layout--threecol-33-34-33 > .layout__region--third {
+    flex: 1 1 calc(calc(100% / 3) - var(--spacing-larger) * 3);
+  }
+}
+
+@media screen and (min-width: 40rem) {
+.layout--twocol > .layout__region--first,
+.layout--twocol > .layout__region--second {
+    flex: 1 1 calc(50% - var(--spacing-larger) * 2);
+  }
+}
+
+
+.node--type-localgov-directories-org.node--view-mode-banner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 40rem) {
+  .node--type-localgov-directories-org.node--view-mode-banner > * {
+    max-width: 50%;
   }
 }

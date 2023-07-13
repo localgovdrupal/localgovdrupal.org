@@ -24,13 +24,13 @@ configuration:
       - xml
     supported_auth:
       - cookie
-  PATCH:
+  DELETE:
     supported_formats:
       - json
       - xml
     supported_auth:
       - cookie
-  DELETE:
+  PATCH:
     supported_formats:
       - json
       - xml

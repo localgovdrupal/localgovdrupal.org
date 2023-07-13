@@ -5,4 +5,23 @@
   paragraphs from bleeding to the full width of the screen.
 #}
 
-{% include "@localgov_base/paragraphs/paragraph.html.twig" %}
+{% if not localgov_base_remove_css %}
+  {{ attach_library('localgov_base/page-sections') }}
+{% endif %}
+
+
+{%
+  set classes = [
+    'lgd-page-section',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+    <div class="">
+      {{ content }}
+    </div>
+</div>

@@ -14,7 +14,7 @@ _core:
 id: lgd_org_theme_views_block__services_block_service_list
 theme: lgd_org_theme
 region: content_top
-weight: 5
+weight: -13
 provider: null
 plugin: 'views_block:services-block_service_list'
 settings:

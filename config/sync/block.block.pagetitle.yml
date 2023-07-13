@@ -10,7 +10,7 @@ dependencies:
 id: pagetitle
 theme: lgd_org_theme
 region: content
-weight: -15
+weight: -16
 provider: null
 plugin: page_title_block
 settings:

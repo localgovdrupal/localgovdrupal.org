@@ -13,12 +13,12 @@ pattern: '[node:title]'
 selection_criteria:
   cf0a2bbc-3869-4912-a0e7-0f25ba4fcd1e:
     id: 'entity_bundle:node'
-    bundles:
-      localgov_directory_promo_page: localgov_directory_promo_page
     negate: false
+    uuid: cf0a2bbc-3869-4912-a0e7-0f25ba4fcd1e
     context_mapping:
       node: node
-    uuid: cf0a2bbc-3869-4912-a0e7-0f25ba4fcd1e
+    bundles:
+      localgov_directory_promo_page: localgov_directory_promo_page
 selection_logic: and
 weight: -5
 relationships: {  }

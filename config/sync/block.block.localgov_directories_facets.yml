@@ -26,8 +26,8 @@ settings:
 visibility:
   node_type:
     id: node_type
-    bundles:
-      localgov_directory: localgov_directory
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      localgov_directory: localgov_directory
