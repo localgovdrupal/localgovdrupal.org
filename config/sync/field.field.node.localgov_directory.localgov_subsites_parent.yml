@@ -1,0 +1,34 @@
+uuid: 35550e7e-dbf6-4570-8da4-910f924a86bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_subsites_parent
+    - node.type.localgov_directory
+    - node.type.localgov_subsites_overview
+  module:
+    - entity_hierarchy
+id: node.localgov_directory.localgov_subsites_parent
+field_name: localgov_subsites_parent
+entity_type: node
+bundle: localgov_directory
+label: Parent
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_subsites_overview: localgov_subsites_overview
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: localgov_subsites_overview
+  weight_min: -50
+  weight_max: 50
+  weight_label: Weight
+field_type: entity_reference_hierarchy

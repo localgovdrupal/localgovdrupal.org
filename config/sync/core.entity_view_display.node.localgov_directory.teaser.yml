@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.localgov_directory.localgov_directory_facets_enable
     - field.field.node.localgov_directory.localgov_proximity_search_cfg
     - field.field.node.localgov_directory.localgov_services_parent
+    - field.field.node.localgov_directory.localgov_subsites_parent
     - node.type.localgov_directory
   module:
     - text
@@ -38,4 +39,5 @@ hidden:
   localgov_directory_view_with_search: true
   localgov_proximity_search_cfg: true
   localgov_services_parent: true
+  localgov_subsites_parent: true
   search_api_excerpt: true
