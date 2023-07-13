@@ -6,11 +6,8 @@ dependencies:
     - field.storage.node.localgov_paragraph_content
     - node.type.localgov_directories_org
     - paragraphs.paragraphs_type.localgov_call_out_box
-    - paragraphs.paragraphs_type.localgov_featured_teasers
-    - paragraphs.paragraphs_type.localgov_ia_block
+    - paragraphs.paragraphs_type.localgov_image
     - paragraphs.paragraphs_type.localgov_link
-    - paragraphs.paragraphs_type.localgov_link_and_summary
-    - paragraphs.paragraphs_type.localgov_media_with_text
     - paragraphs.paragraphs_type.localgov_quote
     - paragraphs.paragraphs_type.localgov_table
     - paragraphs.paragraphs_type.localgov_text
@@ -33,11 +30,8 @@ settings:
   handler_settings:
     target_bundles:
       localgov_call_out_box: localgov_call_out_box
-      localgov_featured_teasers: localgov_featured_teasers
-      localgov_ia_block: localgov_ia_block
+      localgov_image: localgov_image
       localgov_link: localgov_link
-      localgov_link_and_summary: localgov_link_and_summary
-      localgov_media_with_text: localgov_media_with_text
       localgov_quote: localgov_quote
       localgov_table: localgov_table
       localgov_text: localgov_text
@@ -95,13 +89,13 @@ settings:
         enabled: false
       localgov_featured_teasers:
         weight: 55
-        enabled: true
+        enabled: false
       localgov_ia_block:
         weight: 56
-        enabled: true
+        enabled: false
       localgov_image:
         weight: 57
-        enabled: false
+        enabled: true
       localgov_key_contact_item:
         weight: 59
         enabled: false
@@ -122,10 +116,10 @@ settings:
         enabled: true
       localgov_link_and_summary:
         weight: 64
-        enabled: true
+        enabled: false
       localgov_media_with_text:
         weight: 65
-        enabled: true
+        enabled: false
       localgov_newsroom_teaser:
         weight: 66
         enabled: false
