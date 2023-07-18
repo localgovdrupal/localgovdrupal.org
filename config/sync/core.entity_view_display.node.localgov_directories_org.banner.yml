@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.banner
     - field.field.node.localgov_directories_org.body
     - field.field.node.localgov_directories_org.field_media_image
+    - field.field.node.localgov_directories_org.field_social_media
     - field.field.node.localgov_directories_org.localgov_directory_channels
     - field.field.node.localgov_directories_org.localgov_directory_email
     - field.field.node.localgov_directories_org.localgov_directory_facets_select
@@ -71,6 +72,7 @@ content:
     region: content
 hidden:
   body: true
+  field_social_media: true
   links: true
   localgov_directory_channels: true
   localgov_directory_email: true

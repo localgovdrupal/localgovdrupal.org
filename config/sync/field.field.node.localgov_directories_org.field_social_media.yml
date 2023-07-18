@@ -1,0 +1,23 @@
+uuid: fc7deb2b-1021-4a0a-aced-2fa529b7d584
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_media
+    - node.type.localgov_directories_org
+  module:
+    - link
+id: node.localgov_directories_org.field_social_media
+field_name: field_social_media
+entity_type: node
+bundle: localgov_directories_org
+label: 'Social media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

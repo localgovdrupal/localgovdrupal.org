@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.localgov_directories_org.body
     - field.field.node.localgov_directories_org.field_media_image
+    - field.field.node.localgov_directories_org.field_social_media
     - field.field.node.localgov_directories_org.localgov_directory_channels
     - field.field.node.localgov_directories_org.localgov_directory_email
     - field.field.node.localgov_directories_org.localgov_directory_facets_select
@@ -65,6 +66,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_social_media:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 10
     region: content
   localgov_directory_email:
     type: basic_string

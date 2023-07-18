@@ -14,7 +14,7 @@ id: node.localgov_directories_org.localgov_directory_email
 field_name: localgov_directory_email
 entity_type: node
 bundle: localgov_directories_org
-label: 'Enquiries email'
+label: Email
 description: ''
 required: false
 translatable: true
