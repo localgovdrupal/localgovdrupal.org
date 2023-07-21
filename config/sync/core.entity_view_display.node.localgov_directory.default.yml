@@ -46,13 +46,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_standfirst:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
-    region: content
   localgov_directory_map:
     settings: {  }
     third_party_settings: {  }
@@ -64,6 +57,7 @@ content:
     weight: 4
     region: content
 hidden:
+  field_standfirst: true
   links: true
   localgov_directory_channel_types: true
   localgov_directory_facets: true

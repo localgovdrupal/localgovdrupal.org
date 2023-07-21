@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.localgov_directories_org.localgov_paragraph_content
     - node.type.localgov_directories_org
   module:
+    - field_formatter_class
     - field_group
     - layout_paragraphs
     - link
@@ -27,16 +28,19 @@ third_party_settings:
   field_group:
     group_enquiries:
       children:
+        - field_media_image
         - localgov_directory_phone
         - localgov_directory_email
         - localgov_directory_website
-      label: Enquiries
+        - field_social_media
+      label: Connect
       parent_name: ''
       region: content
       weight: 3
       format_type: fieldset
       format_settings:
         classes: ''
+        show_empty_fields: false
         id: ''
         description: ''
     group_organisation:
@@ -67,6 +71,17 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: freestyle
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 10
+    region: content
   field_social_media:
     type: link
     label: above
@@ -77,14 +92,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 5
+    weight: 14
     region: content
   localgov_directory_email:
     type: basic_string
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 12
     region: content
   localgov_directory_facets_select:
     type: entity_reference_label
@@ -95,14 +110,6 @@ content:
       field_formatter_class:
         class: ''
     weight: 0
-    region: content
-  localgov_directory_files:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 6
     region: content
   localgov_directory_notes:
     type: text_default
@@ -117,7 +124,7 @@ content:
     settings:
       title: ''
     third_party_settings: {  }
-    weight: 7
+    weight: 11
     region: content
   localgov_directory_website:
     type: link
@@ -129,7 +136,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 10
+    weight: 13
     region: content
   localgov_location:
     type: entity_reference_entity_view
@@ -150,8 +157,8 @@ content:
     weight: 2
     region: content
 hidden:
-  field_media_image: true
   links: true
   localgov_directory_channels: true
+  localgov_directory_files: true
   localgov_directory_search: true
   search_api_excerpt: true
