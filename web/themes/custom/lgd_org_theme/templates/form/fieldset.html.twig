@@ -30,7 +30,8 @@
     'js-form-item',
     'form-item',
     'js-form-wrapper',
-    'form-wrapper'
+    'form-wrapper',
+    'fieldset--' ~ legend.title['#markup']|clean_class,
   ]
 %}
 <fieldset{{ attributes.addClass(classes) }}>

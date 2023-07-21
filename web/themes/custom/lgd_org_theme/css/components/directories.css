@@ -17,3 +17,23 @@
   padding-bottom: var(--spacing-large);
   border-bottom: 1px solid var(--color-grey-medium);
 }
+
+@media screen and (min-width: 40rem) {
+  .fieldset--connect .fieldset-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: var(--spacing-large);
+  }
+
+  .fieldset--connect .fieldset-wrapper > span {
+    width: calc((100% -  var(--spacing-large)/2));
+}
+
+
+.directory-org--facets * {
+  display: inline;
+}
+
+.directory-org--facets div + div:before {
+  content: ', ';
+}

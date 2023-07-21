@@ -290,3 +290,9 @@ th {
 .lgd-prev-next {
   margin-top: var(--spacing-largest);
 }
+
+
+.fieldset-wrapper > .field--name-field-media-image{
+  max-width: 50%;
+  float: right;
+}
