@@ -1,0 +1,21 @@
+uuid: 855ca310-d130-4c96-9022-81a604a6b859
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_standfirst
+    - node.type.localgov_directory
+  module:
+    - text
+id: node.localgov_directory.field_standfirst
+field_name: field_standfirst
+entity_type: node
+bundle: localgov_directory
+label: Standfirst
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

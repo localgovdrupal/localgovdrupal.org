@@ -1,0 +1,19 @@
+uuid: 7a8071b6-555e-4d8e-a8a0-8c151d003f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_title
+    - node.type.localgov_directory
+id: node.localgov_directory.field_map_title
+field_name: field_map_title
+entity_type: node
+bundle: localgov_directory
+label: 'Map title'
+description: 'An optional heading to display above the map (if there is one) on the Directory Channel.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

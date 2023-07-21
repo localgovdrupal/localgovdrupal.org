@@ -1,0 +1,19 @@
+uuid: 091707a6-5268-4340-aee9-fa9035b9b0d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_list_title
+    - node.type.localgov_directory
+id: node.localgov_directory.field_list_title
+field_name: field_list_title
+entity_type: node
+bundle: localgov_directory
+label: 'List title'
+description: 'An optional heading to display before the list of directory items on the Directory Channel.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

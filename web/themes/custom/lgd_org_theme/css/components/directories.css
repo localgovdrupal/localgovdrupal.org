@@ -3,3 +3,17 @@
   border: 1px solid var(--color-grey-medium);
   padding: 0 var(--spacing-large) var(--spacing-large);
 }
+
+.page-node-type-localgov-directory .localgov-directory__content > * + * {
+  padding-top: var(--spacing-large);
+}
+
+.page-node-type-localgov-directory .localgov-directory__content > * + h2 {
+  padding-top: var(--spacing-larger);
+}
+
+
+.page-node-type-localgov-directory .views-element-container {
+  padding-bottom: var(--spacing-large);
+  border-bottom: 1px solid var(--color-grey-medium);
+}

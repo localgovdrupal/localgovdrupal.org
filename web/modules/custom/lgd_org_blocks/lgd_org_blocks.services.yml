@@ -1,0 +1,6 @@
+services:
+  # Alter page header.
+  lgd_org_blocks.page_header:
+    class: Drupal\lgd_org_blocks\EventSubscriber\PageHeaderSubscriber
+    tags:
+      - { name: 'event_subscriber' }

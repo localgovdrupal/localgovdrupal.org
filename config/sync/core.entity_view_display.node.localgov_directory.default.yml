@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.localgov_directory.body
+    - field.field.node.localgov_directory.field_list_title
+    - field.field.node.localgov_directory.field_map_title
+    - field.field.node.localgov_directory.field_standfirst
     - field.field.node.localgov_directory.localgov_directory_channel_types
     - field.field.node.localgov_directory.localgov_directory_facets_enable
     - field.field.node.localgov_directory.localgov_proximity_search_cfg
@@ -27,15 +30,38 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_list_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_map_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_standfirst:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   localgov_directory_map:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   localgov_directory_view:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
 hidden:
   links: true

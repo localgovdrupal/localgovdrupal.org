@@ -22,3 +22,13 @@ code {
   background-color: #f1f1f1;
   padding: 2px;
 }
+
+
+.lgd-page-title-block p:first-of-type{
+  font-family: var(--font-secondary);
+  font-size: clamp(1.5rem,2.5vw,var(--font-size-larger));
+}
+
+.lgd-page-title-block {
+  max-width: var(--page-title-width);
+}

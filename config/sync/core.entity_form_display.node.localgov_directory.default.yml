@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.localgov_directory.body
+    - field.field.node.localgov_directory.field_list_title
+    - field.field.node.localgov_directory.field_map_title
+    - field.field.node.localgov_directory.field_standfirst
     - field.field.node.localgov_directory.localgov_directory_channel_types
     - field.field.node.localgov_directory.localgov_directory_facets_enable
     - field.field.node.localgov_directory.localgov_proximity_search_cfg
@@ -23,7 +26,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 10
     region: content
     settings:
       rows: 9
@@ -37,28 +40,52 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_list_title:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_map_title:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_standfirst:
+    type: text_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   localgov_directory_channel_types:
     type: options_buttons
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   localgov_directory_facets_enable:
     type: options_buttons
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   localgov_proximity_search_cfg:
     type: boolean_checkbox
-    weight: 12
+    weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   localgov_subsites_parent:
     type: entity_reference_hierarchy_autocomplete
-    weight: 13
+    weight: 14
     region: content
     settings:
       match_operator: CONTAINS
