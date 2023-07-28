@@ -109,7 +109,7 @@
   <div class="lgd-container padding-horizontal">
 
       <div{{ content_attributes.addClass(content_type|clean_class ~ '__content', 'node__content', 'l-flow') }}>
-        {% if content.field_facets_display %}
+        {% if content.field_facets_display.0 %}
           <div class="c-tags">{{content.field_facets_display}}</div>
         {% endif %}
 
