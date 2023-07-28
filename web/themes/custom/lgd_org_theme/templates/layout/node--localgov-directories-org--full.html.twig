@@ -109,7 +109,9 @@
   <div class="lgd-container padding-horizontal">
 
       <div{{ content_attributes.addClass(content_type|clean_class ~ '__content', 'node__content', 'l-flow') }}>
-        <div class="c-tags">{{content.field_facets_display}}</div>
+        {% if content.field_facets_display %}
+          <div class="c-tags">{{content.field_facets_display}}</div>
+        {% endif %}
 
         {{ content.body }}
         {{ content.localgov_paragraph_content }}
