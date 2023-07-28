@@ -27,13 +27,21 @@
 
   .fieldset--connect .fieldset-wrapper > span {
     width: calc((100% -  var(--spacing-large)/2));
+  }
 }
 
-
-.directory-org--facets * {
-  display: inline;
+.c-tags {
+  border-bottom: 1px solid var(--color-grey-light);
+  padding-bottom: var(--spacing);
+  margin-bottom: var(--spacing-larger);
+  font-size: var(--font-size-medium);
+  max-width: var(--page-title-width);
 }
+.c-tags > * > * {
+  display: inline-block;
+  background-color:  hsl(48, 100%, 95%);
+  background: var(--color-grey-light);
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.25rem;
 
-.directory-org--facets div + div:before {
-  content: ', ';
 }

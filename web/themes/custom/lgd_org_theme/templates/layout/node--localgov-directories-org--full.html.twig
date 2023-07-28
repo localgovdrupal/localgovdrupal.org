@@ -109,7 +109,8 @@
   <div class="lgd-container padding-horizontal">
 
       <div{{ content_attributes.addClass(content_type|clean_class ~ '__content', 'node__content', 'l-flow') }}>
-        <div class="directory-org--facets">{{ content.localgov_directory_facets_select }}</div>
+        <div class="c-tags">{{content.field_facets_display}}</div>
+
         {{ content.body }}
         {{ content.localgov_paragraph_content }}
         {% if content.group_enquiries %}
@@ -127,14 +128,12 @@
               {{content.group_enquiries.localgov_directory_phone }}
               {{content.group_enquiries.localgov_directory_email }}
               {{content.group_enquiries.localgov_directory_website }}
-
+              {{content.group_enquiries.field_social_media }}
             </span>
-
-
           </div>
         </fieldset>
         {% endif %}
-        {{ content|without('localgov_directory_facets_select', 'body', 'localgov_paragraph_content', 'group_enquiries') }}
+        {{ content|without('localgov_directory_facets_select', 'body', 'localgov_paragraph_content', 'group_enquiries', 'field_facets_display') }}
       </div>
   </div>
 
