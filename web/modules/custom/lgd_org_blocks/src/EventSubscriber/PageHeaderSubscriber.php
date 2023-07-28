@@ -40,11 +40,13 @@ class PageHeaderSubscriber implements EventSubscriberInterface {
     }
     //dpm($event->getEntity()->get('field_standfirst')->value);
     $standfirst = $event->getEntity()->get('field_standfirst')->value;
-    $event->setLede([
-      '#type' => 'html_tag',
-      '#tag' => 'p',
-      '#value' => t($standfirst),
-    ]);
+    if ($standfirst) {
+      $event->setLede([
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => t($standfirst),
+      ]);
+    }
   }
 
 }
