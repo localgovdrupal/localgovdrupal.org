@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: XWHtTGfKpwNV1L-8e-KL_ZjGkM7LE6nOx64gcHjDNkk
+account: '3568555'
+snippet_version: 6
+snippet_path: 'public://hotjar/hotjar.script.js'
+attachment_mode: build
+visibility_pages: 1
+pages: '<front>'
+visibility_roles: 0
+roles: {  }
+language: en
