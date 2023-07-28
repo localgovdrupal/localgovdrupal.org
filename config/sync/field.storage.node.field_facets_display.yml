@@ -1,0 +1,20 @@
+uuid: 3bfea912-12f9-406e-a8d6-b85b9220dafb
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_directories
+    - node
+id: node.field_facets_display
+field_name: field_facets_display
+entity_type: node
+type: entity_reference
+settings:
+  target_type: localgov_directories_facets
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

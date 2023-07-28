@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.localgov_directories_org.body
+    - field.field.node.localgov_directories_org.field_facets_display
     - field.field.node.localgov_directories_org.field_media_image
     - field.field.node.localgov_directories_org.field_social_media
     - field.field.node.localgov_directories_org.localgov_directory_channels
@@ -47,7 +48,7 @@ third_party_settings:
       children:
         - localgov_location
         - localgov_directory_notes
-      label: 'Headquarters / Main Office / Location'
+      label: 'Primary location'
       parent_name: ''
       region: content
       weight: 4
@@ -70,6 +71,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_facets_display:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
     region: content
   field_media_image:
     type: entity_reference_entity_view
@@ -100,16 +111,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 12
-    region: content
-  localgov_directory_facets_select:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: false
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    weight: 0
     region: content
   localgov_directory_notes:
     type: text_default
@@ -159,6 +160,7 @@ content:
 hidden:
   links: true
   localgov_directory_channels: true
+  localgov_directory_facets_select: true
   localgov_directory_files: true
   localgov_directory_search: true
   search_api_excerpt: true

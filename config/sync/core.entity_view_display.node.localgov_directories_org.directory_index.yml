@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.directory_index
     - field.field.node.localgov_directories_org.body
+    - field.field.node.localgov_directories_org.field_facets_display
     - field.field.node.localgov_directories_org.field_media_image
     - field.field.node.localgov_directories_org.field_social_media
     - field.field.node.localgov_directories_org.localgov_directory_channels
@@ -109,6 +110,7 @@ content:
     weight: 12
     region: content
 hidden:
+  field_facets_display: true
   field_media_image: true
   field_social_media: true
   localgov_directory_search: true

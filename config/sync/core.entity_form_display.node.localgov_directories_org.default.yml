@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_form_mode.localgov_geo.inline
     - field.field.node.localgov_directories_org.body
+    - field.field.node.localgov_directories_org.field_facets_display
     - field.field.node.localgov_directories_org.field_media_image
     - field.field.node.localgov_directories_org.field_social_media
     - field.field.node.localgov_directories_org.localgov_directory_channels
@@ -64,6 +65,7 @@ third_party_settings:
       children:
         - localgov_directory_channels
         - localgov_directory_facets_select
+        - field_facets_display
       label: Directory
       region: content
       parent_name: group_tabs
@@ -145,6 +147,16 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_facets_display:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_media_image:
     type: media_library_widget
