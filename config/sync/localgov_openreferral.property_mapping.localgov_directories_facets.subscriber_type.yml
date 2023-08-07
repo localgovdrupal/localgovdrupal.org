@@ -2,8 +2,6 @@ uuid: 66837f8b-15a0-40c4-bd34-c48a444c27d6
 langcode: en
 status: true
 dependencies:
-  config:
-    - localgov_directories.localgov_directories_facets_type.subscriber_type
   module:
     - localgov_directories
 id: localgov_directories_facets.subscriber_type

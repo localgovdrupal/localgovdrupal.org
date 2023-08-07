@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_facets_display
-    - localgov_directories.localgov_directories_facets_type.subscriber_type
-    - localgov_directories.localgov_directories_facets_type.supplier_services
     - node.type.localgov_directories_org
 id: node.localgov_directories_org.field_facets_display
 field_name: field_facets_display
