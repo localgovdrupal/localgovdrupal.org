@@ -8,17 +8,17 @@
     "packages": [
         {
             "name": "agile-collective/ac_eu_cookie_compliance_tweaks",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.agile.coop/agile-public/ac-eu-cookie-compliance-tweaks",
-                "reference": "be8a0d8e12555cfdb261b20e0fd4fc0ab85261eb"
+                "reference": "e2d15093481f4ced941083c209b663da1fa17d9a"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://packages.agile.coop//dist/agile-collective/ac_eu_cookie_compliance_tweaks/agile-collective-ac_eu_cookie_compliance_tweaks-1.1.6-eec1b9.tar",
-                "reference": "be8a0d8e12555cfdb261b20e0fd4fc0ab85261eb",
-                "shasum": "45ea06c291d8d7cfb371cc7bdc1d6c2e1236e794"
+                "url": "https://packages.agile.coop//dist/agile-collective/ac_eu_cookie_compliance_tweaks/agile-collective-ac_eu_cookie_compliance_tweaks-1.1.7-ee0265.tar",
+                "reference": "e2d15093481f4ced941083c209b663da1fa17d9a",
+                "shasum": "a1508255e8058d067fda127f3920aba69c42619f"
             },
             "require": {
                 "drupal/eu_cookie_compliance": "^1.19"
@@ -34,7 +34,7 @@
             ],
             "description": "Drupal module tweaking the eu cookie compliance module to work with our way of handling cookies.",
             "homepage": "https://gitlab.agile.coop/agile-public/ac-eu-cookie-compliance-tweaks",
-            "time": "2023-06-14T14:57:51+00:00"
+            "time": "2023-07-11T13:35:04+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -17667,5 +17667,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

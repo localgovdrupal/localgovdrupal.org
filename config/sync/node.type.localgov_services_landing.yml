@@ -1,7 +1,14 @@
 uuid: db2d1913-3707-4cc1-b95e-3adc5c1c4a87
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: pz0FetUXygbM1FQplBcj-KBsRr-YjJXpF1ZV1PLCSUg
 name: 'Service landing page'
