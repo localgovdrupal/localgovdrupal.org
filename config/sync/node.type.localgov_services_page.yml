@@ -7,10 +7,8 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - business
-      - about-this-website
       - main
-    parent: 'about-this-website:'
+    parent: 'main:'
 _core:
   default_config_hash: WULkEekP8OdZimuV1w42i5Jm5eEXT6P0ep9hxPyGzUg
 name: 'Service page'

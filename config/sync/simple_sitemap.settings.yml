@@ -12,6 +12,7 @@ base_url: 'https://localgovdrupal.org'
 default_variant: default
 custom_links_include_images: false
 disable_language_hreflang: false
+hide_branding: false
 excluded_languages: {  }
 enabled_entity_types:
   - node

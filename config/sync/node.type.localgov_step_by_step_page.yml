@@ -1,7 +1,14 @@
 uuid: 82d191e2-7f1b-4378-8b38-527666cf09a1
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: j3RRyeSrU8DVYj0Yv-6rekfSbs6PU0J4fSrmBsBCs_4
 name: 'Step by step page'

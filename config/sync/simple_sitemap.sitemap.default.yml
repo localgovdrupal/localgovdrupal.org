@@ -1,0 +1,11 @@
+uuid: 4d372148-8709-4a9a-99bd-d48e32bdf098
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_sitemap.type.default_hreflang
+id: default
+label: Default
+description: 'The default hreflang sitemap - lists URLs to be indexed by modern search engines.'
+type: default_hreflang
+weight: 0
