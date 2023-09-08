@@ -4,6 +4,10 @@
   padding: 0 var(--spacing-large) var(--spacing-large);
 }
 
+.localgov-directories-org__content {
+  max-width: var(--page-title-width);
+}
+
 .page-node-type-localgov-directory .localgov-directory__content > * + * {
   padding-top: var(--spacing-large);
 }
