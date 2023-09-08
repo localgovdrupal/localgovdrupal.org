@@ -27,5 +27,9 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
+      localgov_directories_org: localgov_directories_org
+      localgov_directories_page: localgov_directories_page
+      localgov_directories_venue: localgov_directories_venue
+      localgov_directory_promo_page: localgov_directory_promo_page
       localgov_subsites_overview: localgov_subsites_overview
       localgov_subsites_page: localgov_subsites_page

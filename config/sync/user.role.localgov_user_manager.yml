@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - role_delegation
+    - shortcut
     - system
     - toolbar
   enforced:
@@ -16,6 +17,7 @@ label: 'User manager'
 weight: 5
 is_admin: null
 permissions:
+  - 'access shortcuts'
   - 'access toolbar'
   - 'administer users'
   - 'assign localgov_author role'

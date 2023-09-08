@@ -9,6 +9,7 @@ dependencies:
     - content_moderation
     - media
     - node
+    - shortcut
     - system
     - toolbar
   enforced:
@@ -23,6 +24,7 @@ is_admin: null
 permissions:
   - 'access content overview'
   - 'access media overview'
+  - 'access shortcuts'
   - 'access toolbar'
   - 'create image media'
   - 'create localgov_news_article content'

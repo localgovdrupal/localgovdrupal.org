@@ -9,6 +9,7 @@ dependencies:
     - fontawesome
     - localgov_geo
     - media
+    - shortcut
     - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
@@ -19,6 +20,7 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access fontawesome additional settings'
+  - 'access shortcuts'
   - 'use text format wysiwyg'
   - 'view geo'
   - 'view media'

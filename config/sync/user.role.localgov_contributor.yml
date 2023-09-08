@@ -24,6 +24,7 @@ dependencies:
     - paragraphs
     - paragraphs_library
     - path
+    - shortcut
     - system
     - toolbar
   enforced:
@@ -40,6 +41,7 @@ permissions:
   - 'access media overview'
   - 'access page_components entity browser pages'
   - 'access paragraphs_library_items entity browser pages'
+  - 'access shortcuts'
   - 'access toolbar'
   - 'create council_logo media'
   - 'create document media'
