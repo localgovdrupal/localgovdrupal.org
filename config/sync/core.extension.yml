@@ -74,6 +74,7 @@ module:
   localgov_directories_venue_or: 0
   localgov_geo: 0
   localgov_geo_address: 0
+  localgov_geo_update: 0
   localgov_homepage_paragraphs: 0
   localgov_media: 0
   localgov_menu_link_group: 0
