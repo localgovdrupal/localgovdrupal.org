@@ -1,0 +1,21 @@
+uuid: f3c00c6d-5d58-4730-92f5-7c04bde406d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - localgov_directories.localgov_directories_facets_type.supplier_services
+  module:
+    - localgov_directories
+id: localgov_directories_facets.supplier_services
+entity_type: localgov_directories_facets
+bundle: supplier_services
+public_type: taxonomy
+public_datatype: ''
+property_mappings:
+  default:
+    -
+      field_name: title
+      public_name: name
+    -
+      field_name: uuid
+      public_name: id
