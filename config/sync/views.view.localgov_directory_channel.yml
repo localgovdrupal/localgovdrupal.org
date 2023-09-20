@@ -322,7 +322,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: div
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -337,7 +337,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -365,7 +365,7 @@ display:
           entity_type: localgov_geo
           plugin_id: search_api_field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -436,7 +436,7 @@ display:
           admin_label: ''
           plugin_id: search_api_rendered_item
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -478,8 +478,10 @@ display:
           hide_alter_empty: true
           view_modes:
             'entity:node':
+              localgov_directories_org: default
               localgov_directories_page: teaser
               localgov_directories_venue: teaser
+              localgov_directory_promo_page: default
       pager:
         type: none
         options:
@@ -606,18 +608,36 @@ display:
           entity_source: __base_table
           entity_source_submit: 'Update Entity Source'
           name_field: title
-          view_mode: full
+          leaflet_tooltip:
+            value: ''
+            options: '{"permanent":false,"direction":"center"}'
+          leaflet_popup:
+            value: '#rendered_view_fields'
+            options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
+            view_mode: directory_map_pin
           leaflet_map: 'OSM Mapnik'
           height: '400'
           height_unit: px
           hide_empty_map: true
           disable_wheel: false
           gesture_handling: false
+          fitbounds_options: '{"padding":[0,0]}'
+          reset_map:
+            control: false
+            options: '{"position":"topleft","title":"Reset View"}'
+          map_scale:
+            control: false
+            options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
+          locate:
+            control: false
+            options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
+            automatic: false
           map_position:
             force: false
             center:
               lat: !!float 0
               lon: !!float 0
+            zoomControlPosition: topleft
             zoom: 12
             minZoom: 1
             maxZoom: 18
@@ -653,21 +673,12 @@ display:
           geocoder:
             control: false
             settings:
+              autocomplete:
+                placeholder: 'Search Address'
+                title: 'Search an Address on the Map'
               position: topright
               input_size: 25
               providers:
-                file:
-                  weight: '0'
-                  checked: 0
-                gpx_file:
-                  weight: '0'
-                  checked: 0
-                geojson_file:
-                  weight: '0'
-                  checked: 0
-                kml_file:
-                  weight: '0'
-                  checked: 0
                 localgov_default_osm:
                   weight: '0'
                   checked: 0
@@ -676,13 +687,18 @@ display:
               zoom: 16
               popup: false
               options: ''
+          map_lazy_load:
+            lazy_load: false
+          feature_properties:
+            values: ''
       row:
-        type: search_api
+        type: fields
         options:
-          view_modes:
-            'entity:node':
-              localgov_directories_page: teaser
-              localgov_directories_venue: teaser
+          default_field_elements: true
+          inline:
+            title: title
+          separator: ''
+          hide_empty: false
       defaults:
         empty: false
         pager: false
