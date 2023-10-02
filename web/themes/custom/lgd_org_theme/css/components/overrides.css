@@ -156,8 +156,7 @@ main {
   .media-with-text--media-left {
     display: flex;
   }
-  .media-with-text--media-right > *,
-  .media-with-text--media-left > * {
+  .media-with-text__inner > * {
     width: 50%;
   }
   .media-with-text--media-left > *:last-child {
