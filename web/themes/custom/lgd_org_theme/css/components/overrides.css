@@ -134,7 +134,7 @@ main {
 
 /*Media item with text*/
 .media-with-text {
-  margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing) !important;
 }
 
 .media-with-text--media-right,
@@ -142,10 +142,10 @@ main {
   display: block;
 }
 
-.media-with-text--media-right > *,
+/*.media-with-text--media-right > *,
 .media-with-text--media-left > * {
   width: 100%;
-}
+}*/
 .media-with-text--media-left > *:last-child {
   padding-left: 0;
   padding-top: 1rem;
@@ -156,7 +156,8 @@ main {
   .media-with-text--media-left {
     display: flex;
   }
-  .media-with-text__inner > * {
+  .media-with-text--media-right .media-with-text__inner > *,
+  .media-with-text--media-left .media-with-text__inner > * {
     width: 50%;
   }
   .media-with-text--media-left > *:last-child {
