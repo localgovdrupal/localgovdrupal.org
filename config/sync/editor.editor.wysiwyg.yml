@@ -1,71 +1,124 @@
-uuid: 92e9ac06-7e12-4b4e-a0ec-a3c1ccb85b3f
+uuid: 819744b6-7c27-4b9c-9ab1-10b74673c6a1
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.wysiwyg
   module:
-    - ckeditor
-_core:
-  default_config_hash: BYnFpZIRCLycV6n5MmbSZt71mMClHh-9GoNgSaGV3mI
+    - ckeditor5
 format: wysiwyg
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Format
-            - Styles
-            - RemoveFormat
-            - Underline
-            - Bold
-            - Italic
-        -
-          name: Edit
-          items:
-            - Copy
-            - Cut
-            - Paste
-            - Undo
-            - Redo
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-            - DrupalMediaLibrary
-        -
-          name: Tools
-          items:
-            - Source
-        -
-          name: Tables
-          items:
-            - Table
+    items:
+      - heading
+      - style
+      - removeFormat
+      - underline
+      - bold
+      - italic
+      - '|'
+      - undo
+      - redo
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - drupalMedia
+      - '|'
+      - sourceEditing
+      - '|'
+      - insertTable
   plugins:
-    drupallink:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: 'External link'
+          element: '<a class="external-link">'
+        -
+          label: 'PDF link'
+          element: '<a class="pdf-link">'
+        -
+          label: 'Start button'
+          element: '<a class="btn btn-start col-sm-6 mt-3">'
+        -
+          label: 'Alert info'
+          element: '<p class="alert alert-info">'
+        -
+          label: 'Alert warning'
+          element: '<p class="alert alert-danger">'
+        -
+          label: 'Alert failure'
+          element: '<p class="alert alert-primary">'
+        -
+          label: 'Alert success'
+          element: '<p class="alert alert-success">'
+        -
+          label: 'Callout primary'
+          element: '<p class="callout callout-primary">'
+        -
+          label: 'Callout success'
+          element: '<p class="callout callout-success">'
+        -
+          label: 'Callout danger'
+          element: '<p class="callout callout-danger">'
+        -
+          label: 'Callout teal'
+          element: '<p class="callout callout-teal">'
+        -
+          label: 'Callout carbon'
+          element: '<p class="callout callout-carbon">'
+        -
+          label: 'Callout yellow'
+          element: '<p class="callout callout-yellow">'
+        -
+          label: 'Green ticks'
+          element: '<ul class="list-checked">'
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<mark>'
+        - '<blockquote cite>'
+        - '<ol type>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+        - '<a hreflang title>'
+        - '<ul type>'
+        - '<img data-entity-type data-entity-uuid data-caption>'
+        - '<drupal-media data-caption title>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_imageResize:
+      allow_resize: true
+    media_media:
+      allow_view_mode_override: true
+    linkit_extension:
       linkit_enabled: true
       linkit_profile: default
-    stylescombo:
-      styles: "mark|Highlight\r\na.external-link|External link\r\na.pdf-link|PDF link\r\na.btn.btn-start.col-sm-6.mt-3|Start button\r\np.alert.alert-info|Alert info\r\np.alert.alert-danger|Alert warning\r\np.alert.alert-primary|Alert failure\r\np.alert.alert-success|Alert success\r\np.callout.callout-primary|Callout primary\r\np.callout.callout-success|Callout success\r\np.callout.callout-danger|Callout danger\r\np.callout.callout-teal|Callout teal\r\np.callout.callout-carbon|Callout carbon\r\np.callout.callout-yellow|Callout yellow\r\nul.list-checked|Green ticks"
 image_upload:
   status: false
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0
