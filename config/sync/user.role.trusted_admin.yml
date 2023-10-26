@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - block
+    - block_content
+    - file
     - gtm
     - localgov_directories
 id: trusted_admin
@@ -11,6 +13,10 @@ label: 'Trusted admin'
 weight: 7
 is_admin: null
 permissions:
+  - 'access block library'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer blocks'
   - 'administer directory facets types'
   - 'administer gtm'
+  - 'delete own files'

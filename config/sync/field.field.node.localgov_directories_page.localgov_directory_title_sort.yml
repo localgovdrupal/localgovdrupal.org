@@ -12,7 +12,7 @@ field_name: localgov_directory_title_sort
 entity_type: node
 bundle: localgov_directories_page
 label: 'Title used for sorting'
-description: '<strong>Can be left blank</strong>. If this field is completed it will be used instead of the <em>Title</em> for alphabetically sorted lists. For example to move ''The'' or ''A'' from the beginning of a name.'
+description: "<strong>Can be left blank</strong>. If this field is completed it will be used instead of the <em>Title</em> for alphabetically sorted lists. For example to move 'The' or 'A' from the beginning of a name."
 required: false
 translatable: false
 default_value: {  }

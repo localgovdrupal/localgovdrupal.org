@@ -1,0 +1,51 @@
+uuid: 647ceffb-9223-4c7d-bc2b-ba159e680023
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.geo_entity.postal_address
+    - geo_entity.geo_entity_type.address
+  module:
+    - address
+_core:
+  default_config_hash: L4C_VwrfAvuTn5YmHywSvTcWWxaL1iLdJkHLdDA3W0o
+id: geo_entity.address.postal_address
+field_name: postal_address
+entity_type: geo_entity
+bundle: address
+label: Address
+description: "Enter the address here, and then use the 'Populate from address field' button to find it on the map."
+required: true
+translatable: false
+default_value:
+  -
+    langcode: null
+    country_code: GB
+    administrative_area: null
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: ''
+    organization: null
+    given_name: null
+    additional_name: null
+    family_name: null
+default_value_callback: ''
+settings:
+  available_countries:
+    IE: IE
+    GB: GB
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+  fields: {  }
+field_type: address

@@ -1,0 +1,102 @@
+uuid: ba685495-e072-4457-b195-f478cfae264f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.geo_entity.address.accessibility
+    - field.field.geo_entity.address.external_id
+    - field.field.geo_entity.address.location
+    - field.field.geo_entity.address.postal_address
+    - geo_entity.geo_entity_type.address
+  module:
+    - geofield_map
+    - localgov_geo_address
+_core:
+  default_config_hash: dq_s51tGcrytR_JGtB3BpF17hngcNJo1koJ2boJsE0g
+id: geo_entity.address.default
+targetEntityType: geo_entity
+bundle: address
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  location:
+    type: geofield_map
+    weight: 1
+    region: content
+    settings:
+      html5_geolocation: false
+      default_value:
+        lat: 0.0
+        lon: 0.0
+      map_library: leaflet
+      map_google_api_key: ''
+      map_google_places:
+        places_control: false
+        places_additional_options: ''
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: true
+      zoom_level: 5
+      zoom:
+        start: 6
+        focus: 12
+        min: 0
+        max: 22
+      click_to_find_marker: false
+      click_to_place_marker: false
+      hide_coordinates: false
+      geoaddress_field:
+        field: '0'
+        hidden: false
+        disabled: true
+      map_geocoder:
+        control: 0
+        settings:
+          providers:
+            localgov_default_osm:
+              weight: 0
+              checked: false
+          min_terms: 4
+          delay: 800
+          options: ''
+    third_party_settings: {  }
+  postal_address:
+    type: geo_entity_address
+    weight: 0
+    region: content
+    settings:
+      providers:
+        localgov_default_osm:
+          checked: true
+          weight: 0
+      geocode_geofield: location
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  accessibility: true
+  external_id: true
+  label: true

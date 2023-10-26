@@ -19,6 +19,7 @@ dependencies:
     - node.type.localgov_subsites_page
   module:
     - entity_browser
+    - file
     - media
     - node
     - paragraphs
@@ -62,6 +63,7 @@ permissions:
   - 'create url aliases'
   - 'delete media'
   - 'delete own document media'
+  - 'delete own files'
   - 'delete own image media'
   - 'delete own localgov_directories_page content'
   - 'delete own localgov_directories_venue content'

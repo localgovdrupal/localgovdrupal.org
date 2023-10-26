@@ -6,9 +6,10 @@ dependencies:
     - filter.format.webform_default
     - filter.format.wysiwyg
   module:
+    - file
     - filter
     - fontawesome
-    - localgov_geo
+    - geo_entity
     - media
     - shortcut
     - system
@@ -22,6 +23,7 @@ permissions:
   - 'access content'
   - 'access fontawesome additional settings'
   - 'access shortcuts'
+  - 'delete own files'
   - 'use text format webform_default'
   - 'use text format wysiwyg'
   - 'view geo'

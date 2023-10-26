@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - file
     - role_delegation
     - shortcut
     - system
@@ -23,4 +24,5 @@ permissions:
   - 'assign localgov_author role'
   - 'assign localgov_contributor role'
   - 'assign localgov_editor role'
+  - 'delete own files'
   - 'view the administration theme'

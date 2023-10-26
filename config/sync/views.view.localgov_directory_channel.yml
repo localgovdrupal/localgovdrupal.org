@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.localgov_geo.location
+    - field.storage.geo_entity.location
     - field.storage.node.body
     - search_api.index.localgov_directories_index_default
   module:
+    - geo_entity
     - geofield
     - leaflet_views
-    - localgov_geo
     - search_api
     - search_api_location_views
     - text
@@ -357,12 +357,12 @@ display:
             multi_separator: ', '
         location:
           id: location
-          table: search_api_entity_localgov_geo
+          table: search_api_entity_geo_entity
           field: location
           relationship: localgov_location
           group_type: group
           admin_label: ''
-          entity_type: localgov_geo
+          entity_type: geo_entity
           plugin_id: search_api_field
           label: ''
           exclude: true
@@ -635,8 +635,8 @@ display:
           map_position:
             force: false
             center:
-              lat: !!float 0
-              lon: !!float 0
+              lat: 0.0
+              lon: 0.0
             zoomControlPosition: topleft
             zoom: 12
             minZoom: 1
@@ -730,7 +730,7 @@ display:
         - url
         - 'user.node_grants:view'
       tags:
-        - 'config:field.storage.localgov_geo.location'
+        - 'config:field.storage.geo_entity.location'
         - 'config:search_api.index.localgov_directories_index_default'
         - 'search_api_list:localgov_directories_index_default'
   node_embed:

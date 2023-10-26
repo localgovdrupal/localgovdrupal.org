@@ -14,7 +14,7 @@ field_name: postal_address
 entity_type: localgov_geo
 bundle: address
 label: Address
-description: 'Enter the address here, and then use the ''Populate from address field'' button to find it on the map.'
+description: "Enter the address here, and then use the 'Populate from address field' button to find it on the map."
 required: true
 translatable: false
 default_value:

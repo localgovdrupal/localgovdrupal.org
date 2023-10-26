@@ -18,8 +18,8 @@ headers:
 body: null
 body_content_type: null
 runtime_measurement: true
-timeout: !!float 1
-connect_timeout: !!float 1
-cooldown_time: !!float 0
+timeout: 1.0
+connect_timeout: 1.0
+cooldown_time: 0.0
 max_requests: 100
 http_errors: true

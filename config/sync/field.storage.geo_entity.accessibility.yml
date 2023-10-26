@@ -1,0 +1,21 @@
+uuid: a4ed9a0d-be95-44bb-82c1-ab8cf83bc5c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - geo_entity
+    - text
+_core:
+  default_config_hash: 7I9f2UTlh2Oh5PaoyH9v7H06TsvUeNtUQZ2rwjBjDHQ
+id: geo_entity.accessibility
+field_name: accessibility
+entity_type: geo_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

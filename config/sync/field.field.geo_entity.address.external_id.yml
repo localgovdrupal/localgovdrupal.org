@@ -1,0 +1,21 @@
+uuid: 5351ce9f-92ac-4408-b2c7-d8f4de9c40b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.geo_entity.external_id
+    - geo_entity.geo_entity_type.address
+_core:
+  default_config_hash: 01iGA6c1Fe8ARJ5rD8hhp2QBHZV-77Xmi7x3im3wdPg
+id: geo_entity.address.external_id
+field_name: external_id
+entity_type: geo_entity
+bundle: address
+label: 'External ID'
+description: 'An field for storing external identifier for synchronising with geoservice providers.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
