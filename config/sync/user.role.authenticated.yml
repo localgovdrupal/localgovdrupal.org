@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.webform_default
     - filter.format.wysiwyg
   module:
     - filter
@@ -21,6 +22,7 @@ permissions:
   - 'access content'
   - 'access fontawesome additional settings'
   - 'access shortcuts'
+  - 'use text format webform_default'
   - 'use text format wysiwyg'
   - 'view geo'
   - 'view media'

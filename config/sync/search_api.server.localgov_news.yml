@@ -20,3 +20,4 @@ backend_config:
   autocomplete:
     suggest_suffix: true
     suggest_words: true
+  phrase: disabled
