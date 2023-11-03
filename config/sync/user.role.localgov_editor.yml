@@ -163,7 +163,6 @@ permissions:
   - 'edit any webform submission'
   - 'edit directory facets'
   - 'edit geo'
-  - 'edit layout paragraphs plugin config'
   - 'edit own council_logo media'
   - 'edit own document media'
   - 'edit own image media'
