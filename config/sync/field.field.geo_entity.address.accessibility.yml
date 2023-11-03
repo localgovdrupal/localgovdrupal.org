@@ -1,0 +1,24 @@
+uuid: ff6ed59e-2c5e-4a2e-8644-43d92364b158
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.geo_entity.accessibility
+    - geo_entity.geo_entity_type.address
+  module:
+    - text
+_core:
+  default_config_hash: 6xsn5d4LzCkBbdmXi_T8fQKzN9jgxqSq5NtxJDsR4iQ
+id: geo_entity.address.accessibility
+field_name: accessibility
+entity_type: geo_entity
+bundle: address
+label: Accessibility
+description: 'Any information about access, or restrictions, at the address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

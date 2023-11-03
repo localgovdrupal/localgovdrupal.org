@@ -7,6 +7,7 @@ dependencies:
     - node.type.localgov_news_article
   module:
     - content_moderation
+    - file
     - media
     - node
     - shortcut
@@ -29,6 +30,7 @@ permissions:
   - 'create image media'
   - 'create localgov_news_article content'
   - 'delete any localgov_news_article content'
+  - 'delete own files'
   - 'delete own localgov_news_article content'
   - 'edit any image media'
   - 'edit any localgov_news_article content'

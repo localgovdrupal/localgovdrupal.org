@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.localgov_geo_library
+    - entity_browser.browser.geo_entity_library
     - field.field.node.localgov_directories_venue.body
     - field.field.node.localgov_directories_venue.localgov_directory_channels
     - field.field.node.localgov_directories_venue.localgov_directory_email
@@ -232,7 +232,7 @@ content:
     weight: 7
     region: content
     settings:
-      entity_browser: localgov_geo_library
+      entity_browser: geo_entity_library
       field_widget_display: label
       field_widget_edit: true
       field_widget_remove: true

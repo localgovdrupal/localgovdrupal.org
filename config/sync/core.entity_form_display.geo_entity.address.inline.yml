@@ -1,0 +1,83 @@
+uuid: 9cfa5fd7-ae2f-4b16-92e3-a402bc9de085
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.geo_entity.inline
+    - field.field.geo_entity.address.accessibility
+    - field.field.geo_entity.address.external_id
+    - field.field.geo_entity.address.location
+    - field.field.geo_entity.address.postal_address
+    - geo_entity.geo_entity_type.address
+  module:
+    - geofield_map
+    - localgov_geo_address
+_core:
+  default_config_hash: RotLx2QI9NjB2LG0enmxY425Ijfj62aGS-Tqa-6eFUk
+id: geo_entity.address.inline
+targetEntityType: geo_entity
+bundle: address
+mode: inline
+content:
+  location:
+    type: geofield_map
+    weight: 1
+    region: content
+    settings:
+      html5_geolocation: false
+      default_value:
+        lat: 0.0
+        lon: 0.0
+      map_library: leaflet
+      map_google_api_key: ''
+      map_google_places:
+        places_control: false
+        places_additional_options: ''
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: true
+      zoom_level: 5
+      zoom:
+        start: 6
+        focus: 12
+        min: 0
+        max: 22
+      click_to_find_marker: false
+      click_to_place_marker: false
+      hide_coordinates: false
+      geoaddress_field:
+        field: '0'
+        hidden: false
+        disabled: true
+      map_geocoder:
+        control: 0
+        settings:
+          providers:
+            localgov_default_osm:
+              weight: 0
+              checked: true
+          min_terms: 4
+          delay: 800
+          options: ''
+    third_party_settings: {  }
+  postal_address:
+    type: geo_entity_address
+    weight: 0
+    region: content
+    settings:
+      providers:
+        localgov_default_osm:
+          checked: true
+          weight: 0
+      geocode_geofield: location
+    third_party_settings: {  }
+hidden:
+  accessibility: true
+  created: true
+  external_id: true
+  label: true
+  status: true
+  uid: true
