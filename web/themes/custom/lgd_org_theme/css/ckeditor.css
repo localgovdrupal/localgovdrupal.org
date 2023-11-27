@@ -1,3 +1,7 @@
+.ck.ck-balloon-panel {
+  z-index: 1300 !important;
+}
+
 .alert {
   padding: 1rem;
   border: 4px solid blue;
