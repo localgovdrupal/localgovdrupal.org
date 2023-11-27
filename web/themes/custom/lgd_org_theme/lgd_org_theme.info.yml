@@ -29,7 +29,7 @@ libraries-extend:
     - lgd_org_theme/directories
 
 
-ckeditor_stylesheets:
+ckeditor5-stylesheets:
   - css/ckeditor.css
 
 regions:
