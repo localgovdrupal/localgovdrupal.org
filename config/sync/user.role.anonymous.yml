@@ -5,6 +5,7 @@ dependencies:
   module:
     - eu_cookie_compliance
     - geo_entity
+    - localgov_directories
     - media
     - search_api_autocomplete
     - system
@@ -18,5 +19,6 @@ permissions:
   - 'access content'
   - 'display eu cookie compliance popup'
   - 'use search_api_autocomplete for localgov_news_search'
+  - 'view directory facets'
   - 'view geo'
   - 'view media'

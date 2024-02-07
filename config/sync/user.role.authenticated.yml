@@ -10,6 +10,7 @@ dependencies:
     - filter
     - fontawesome
     - geo_entity
+    - localgov_directories
     - media
     - shortcut
     - system
@@ -26,5 +27,6 @@ permissions:
   - 'delete own files'
   - 'use text format webform_default'
   - 'use text format wysiwyg'
+  - 'view directory facets'
   - 'view geo'
   - 'view media'
