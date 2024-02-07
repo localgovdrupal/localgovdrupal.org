@@ -1,0 +1,34 @@
+uuid: c625455e-e46d-4319-938c-eafac658cecf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_numbered_text.localgov_numbered_text_number
+    - field.field.paragraph.localgov_numbered_text.localgov_text
+    - paragraphs.paragraphs_type.localgov_numbered_text
+  module:
+    - text
+id: paragraph.localgov_numbered_text.default
+targetEntityType: paragraph
+bundle: localgov_numbered_text
+mode: default
+content:
+  localgov_numbered_text_number:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

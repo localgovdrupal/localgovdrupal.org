@@ -8,5 +8,6 @@ _core:
   default_config_hash: il3Ntl4khcN2oXElGyFY6HjxQQaoch18NmLLdofzMdw
 id: geo_entity.full
 label: Full
+description: ''
 targetEntityType: geo_entity
 cache: true

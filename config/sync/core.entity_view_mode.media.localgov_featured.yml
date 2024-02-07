@@ -8,5 +8,6 @@ _core:
   default_config_hash: 6TN7TO22lrA_lUHUUubDM_9Lxl-r78gkJ_NTndS0GRQ
 id: media.localgov_featured
 label: Featured
+description: ''
 targetEntityType: media
 cache: true

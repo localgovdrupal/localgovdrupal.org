@@ -8,5 +8,6 @@ _core:
   default_config_hash: fTJCo3AIYyh-3mdmVE9MpIH3dau7smBFnbGscvwu_Fw
 id: geo_entity.inline
 label: Inline
+description: ''
 targetEntityType: geo_entity
 cache: true

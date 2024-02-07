@@ -6,5 +6,6 @@ dependencies:
     - paragraphs_library
 id: paragraphs_library_item.token
 label: Token
+description: ''
 targetEntityType: paragraphs_library_item
 cache: true

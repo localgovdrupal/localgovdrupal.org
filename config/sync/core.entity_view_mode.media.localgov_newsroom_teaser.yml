@@ -8,5 +8,6 @@ _core:
   default_config_hash: O79cil-8jZ1UbgWsevakAykC8Bcyhek69tUFqxPWtE0
 id: media.localgov_newsroom_teaser
 label: 'Newsroom teaser'
+description: ''
 targetEntityType: media
 cache: true
