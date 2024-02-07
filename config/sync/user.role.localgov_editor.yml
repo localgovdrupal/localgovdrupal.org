@@ -28,6 +28,7 @@ dependencies:
     - entity_hierarchy
     - file
     - geo_entity
+    - help
     - localgov_directories
     - media
     - node
@@ -56,6 +57,7 @@ permissions:
   - 'access content overview'
   - 'access directory facets overview'
   - 'access geo overview'
+  - 'access help pages'
   - 'access media overview'
   - 'access page_components entity browser pages'
   - 'access paragraphs_library_items entity browser pages'

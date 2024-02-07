@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   module:
-    - localgov_geo
+    - localgov_geo_update
 _core:
   default_config_hash: uh4Qm1-_I0AQ3pojBu1RkAcbwtbFYsGfLlvflYUjhes
 id: localgov_geo.inline
 label: Inline
+description: ''
 targetEntityType: localgov_geo
 cache: true

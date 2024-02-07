@@ -8,5 +8,6 @@ _core:
   default_config_hash: qDNQRhYlSzA3vOtWq7iN4Cj0ewr5fOiHLgV-GsiEI5Y
 id: geo_entity.embed
 label: Embed
+description: ''
 targetEntityType: geo_entity
 cache: true

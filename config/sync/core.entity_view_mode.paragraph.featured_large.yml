@@ -8,5 +8,6 @@ _core:
   default_config_hash: blgDUaa-0FfERtRJfP0Ov2synIi6J4a7c8kBopp9FMU
 id: paragraph.featured_large
 label: 'Featured large'
+description: ''
 targetEntityType: paragraph
 cache: true
