@@ -614,9 +614,9 @@ display:
           leaflet_popup:
             value: '#rendered_view_fields'
             options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
-            view_mode: directory_map_pin
+            view_mode: directory_index
           leaflet_map: 'OSM Mapnik'
-          height: '400'
+          height: '480'
           height_unit: px
           hide_empty_map: true
           disable_wheel: false
@@ -680,6 +680,12 @@ display:
               input_size: 25
               providers:
                 localgov_default_osm:
+                  weight: '0'
+                  checked: 0
+                geo_entity_osm:
+                  weight: '0'
+                  checked: 0
+                geo_entity_demo_photon:
                   weight: '0'
                   checked: 0
               min_terms: 4
