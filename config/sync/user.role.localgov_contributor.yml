@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.wysiwyg
     - media.type.council_logo
     - media.type.document
     - media.type.image
@@ -20,6 +21,7 @@ dependencies:
   module:
     - entity_browser
     - file
+    - filter
     - media
     - node
     - paragraphs
@@ -94,6 +96,7 @@ permissions:
   - 'edit own remote_video media'
   - 'edit paragraph library item'
   - 'update media'
+  - 'use text format wysiwyg'
   - 'view all revisions'
   - 'view localgov_directories_page revisions'
   - 'view localgov_directories_venue revisions'

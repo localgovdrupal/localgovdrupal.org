@@ -67,6 +67,7 @@ settings:
         - '<ul type>'
         - '<img data-entity-type data-entity-uuid data-caption>'
         - '<drupal-media data-caption title>'
+        - '<iframe src width height frameborder allowfullscreen>'
     ckeditor5_style:
       styles:
         -

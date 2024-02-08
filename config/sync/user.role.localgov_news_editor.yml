@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.wysiwyg
     - media.type.image
     - node.type.localgov_news_article
   module:
     - content_moderation
     - file
+    - filter
     - media
     - node
     - shortcut
@@ -37,6 +39,7 @@ permissions:
   - 'edit own image media'
   - 'edit own localgov_news_article content'
   - 'revert localgov_news_article revisions'
+  - 'use text format wysiwyg'
   - 'view any unpublished content'
   - 'view localgov_news_article revisions'
   - 'view own unpublished media'

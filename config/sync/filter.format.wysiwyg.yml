@@ -48,7 +48,7 @@ filters:
     status: true
     weight: -47
     settings:
-      allowed_html: '<br> <p class="alert alert-info alert-danger alert-primary alert-success callout callout-primary callout-success callout-danger callout-teal callout-carbon callout-yellow"> <h1> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <a class="external-link pdf-link btn btn-start col-sm-6 mt-3" hreflang title href data-entity-type data-entity-uuid data-entity-substitution> <ul class="list-checked" type> <cite> <dl> <dt> <dd> <mark> <blockquote cite> <ol type start> <img data-entity-type data-entity-uuid data-caption src alt height width data-align> <drupal-media data-caption title data-entity-type data-entity-uuid alt data-view-mode data-align> <strong> <em> <u> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
+      allowed_html: '<br> <p class="alert alert-info alert-danger alert-primary alert-success callout callout-primary callout-success callout-danger callout-teal callout-carbon callout-yellow"> <h1> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <a class="external-link pdf-link btn btn-start col-sm-6 mt-3" hreflang title href data-entity-type data-entity-uuid data-entity-substitution> <ul class="list-checked" type> <cite> <dl> <dt> <dd> <mark> <blockquote cite> <ol type start> <img data-entity-type data-entity-uuid data-caption src alt height width data-align> <drupal-media data-caption title data-entity-type data-entity-uuid alt data-view-mode data-align> <iframe src width height frameborder allowfullscreen> <strong> <em> <u> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_html_escape:

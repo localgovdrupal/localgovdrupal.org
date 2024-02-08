@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.wysiwyg
     - media.type.council_logo
     - media.type.document
     - media.type.image
@@ -21,6 +22,7 @@ dependencies:
     - content_moderation
     - entity_browser
     - file
+    - filter
     - geo_entity
     - media
     - node
@@ -107,6 +109,7 @@ permissions:
   - 'revert localgov_subsites_overview revisions'
   - 'revert localgov_subsites_page revisions'
   - 'update media'
+  - 'use text format wysiwyg'
   - 'view all revisions'
   - 'view any unpublished content'
   - 'view localgov_directories_page revisions'

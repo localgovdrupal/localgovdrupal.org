@@ -2,10 +2,13 @@ uuid: f186f0b2-3116-42ef-bcb8-2896b6aa3434
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.wysiwyg
   module:
     - block
     - block_content
     - file
+    - filter
     - gtm
     - localgov_directories
 id: trusted_admin
@@ -20,3 +23,4 @@ permissions:
   - 'administer directory facets types'
   - 'administer gtm'
   - 'delete own files'
+  - 'use text format wysiwyg'

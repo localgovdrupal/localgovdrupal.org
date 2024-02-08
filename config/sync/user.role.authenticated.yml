@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - filter.format.webform_default
-    - filter.format.wysiwyg
   module:
     - file
     - filter
@@ -26,7 +25,6 @@ permissions:
   - 'access shortcuts'
   - 'delete own files'
   - 'use text format webform_default'
-  - 'use text format wysiwyg'
   - 'view directory facets'
   - 'view geo'
   - 'view media'
