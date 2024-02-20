@@ -1,0 +1,3 @@
+.field--name-localgov-subsites-content table td[colspan] {
+  background-color: var(--color-grey-light);
+}

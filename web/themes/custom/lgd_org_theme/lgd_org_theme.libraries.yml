@@ -99,3 +99,8 @@ views:
   css:
     theme:
       css/components/views.css: {}
+
+tables:
+  css:
+    theme:
+      css/components/tables.css: {}
