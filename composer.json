@@ -67,6 +67,11 @@
     },
     "extra": {
         "enable-patching": true,
+        "patches": {
+            "drupal/layout_paragraphs": {
+                "Ensure CKEditor save buttons are visible in modal windows.": "patches/layout_paragraphs_no_save_button.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
