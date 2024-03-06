@@ -1,0 +1,15 @@
+diff --git a/css/builder.css b/css/builder.css
+index 2ce8ee7..6bdfd10 100644
+--- a/css/builder.css
++++ b/css/builder.css
+@@ -319,6 +319,10 @@ form.layout-paragraphs-builder-form .js-lpb-component-list {
+   padding: 20px;
+ }
+ 
++.layout-paragraphs-component-form .ck-editor__main > .ck-editor__editable {
++  max-height: calc(100vh - 320px);
++}
++
+ .lpb-enable {
+   display: flex;
+   justify-content: center;
