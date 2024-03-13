@@ -54,10 +54,10 @@ blockquote > p:last-of-type:after {
   margin: 0;
   width: 100%;
   background: url("../../assets/images/speech-front.svg") no-repeat 0 100% ;
-  padding-bottom: clamp(50px, 8vw, 75px);
+  padding-bottom: clamp(50px, 8vw, 100px);
   background-size: contain;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pull-out-quote__author {

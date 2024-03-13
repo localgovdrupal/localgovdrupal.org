@@ -20,16 +20,19 @@
 .menu--main > .menu-item a {
   padding: 0 !important;
   display: inline-block !important;
-  letter-spacing: -0.7px;
+  letter-spacing: -1px;
+  /*font-size: 21px;*/
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .menu--main > .menu-item + .menu-item {
   margin-left: 0 !important;
 }
 
-header .menu a{
+/*.menu--main a {
   text-decoration: none;
-}
+}*/
 
 /* Mobile toggle styling  */
 
@@ -122,6 +125,11 @@ header .menu a{
     font-size: var(--font-size-large);
     font-weight: 500;
   }
+
+  /*.menu--utility-menu a{
+    text-decoration: underline;
+  }*/
+
   .menu--main li {
     border: none;
     padding: 0;
@@ -132,7 +140,7 @@ header .menu a{
     border: none;
   }
 
-  .menu--utility-menu li:nth-last-of-type(1),
+  /*.menu--utility-menu li:nth-last-of-type(1),
   .menu--utility-menu li:nth-last-of-type(2),
   .menu--utility-menu li:nth-last-of-type(3){
     border: 1px solid black;
@@ -152,11 +160,9 @@ header .menu a{
   }
   .menu--utility-menu li:nth-last-of-type(1) {
     padding-right: 20px;
-  }
-  .menu--main {
-    font-size: 21px;
-    font-weight: 600;
-  }
+  }*/
+
+
 
   .menu--main > .menu-item a {
     padding: var(--spacing-smaller) var(--spacing-small) !important;
@@ -187,21 +193,14 @@ header .menu a{
 
 @media screen and (min-width: 72rem) {
   .menu--main {
-    font-size: 1.5625rem;
+    font-size: 32px; /* todo */
   }
 }
 
 /* Hover and active trail styles */
 
 .menu--utility-menu > .menu-item--active-trail a,
-.menu--utility-menu > .menu-item a:focus,
-.menu--utility-menu > .menu-item a:hover,
-.menu--main > .menu-item--active-trail a,
-.menu--main > .menu-item a:focus,
-.menu--main > .menu-item a:hover {
-  color: var(--color-black);
-  background-color: transparent !important;
+.menu--main > .menu-item--active-trail a {
   font-weight: 600;
 }
-
 

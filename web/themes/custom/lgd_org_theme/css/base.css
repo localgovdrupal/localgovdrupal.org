@@ -54,3 +54,7 @@ tbody td {
 tbody tr {
   border-bottom: var(--table-border);
 }
+
+a {
+  text-underline-offset: 2px;
+}
