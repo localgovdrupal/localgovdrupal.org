@@ -118,6 +118,24 @@
   color: var(--header-link-color);
 }
 
+
+/*Branding */
+
+.branding {
+  display: flex;
+  gap: var(--spacing-smaller);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-small);
+  align-items: center;
+  font-weight: 500;
+}
+
+.branding__item--slogan {
+  max-width: var(--header-logo-width);
+  border-left: 1px solid var(--color-black);
+  padding-left: var(--spacing-smaller);
+}
+
 .branding__item--logo {
   width: var(--header-logo-width);
 
@@ -133,7 +151,7 @@
 
 @media screen and (min-width: 70rem) {
   .branding__item--logo {
-    width: 13.25rem ;
+    /*width: 13.25rem ;*/
   }
 }
 

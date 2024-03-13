@@ -32,7 +32,7 @@
 body {
 
   /* Widths and Spacing */
-  --width-extra-large: 90rem; /* 1440px */
+  --width-extra-large: 102.5rem; /* 1640px */
   --width-large: 60rem;
   --width-medium: 48rem;
   --width-small: 30rem;
@@ -81,10 +81,20 @@ body {
     In this section, we "apply" our colours.
   */
   --color-link: var(--color-black);
+  --color-slogan: var(--color-black);
 
   /* Fonts */
   --font-primary: 'Inter', oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-secondary: 'Lora', "Times New Roman", times, serif;
+
+
+  --font-heading-1: var(--font-primary);
+  --font-heading-2: var(--font-primary);
+  --font-heading-3: var(--font-primary);
+  --font-heading-4: var(--font-primary);
+  --font-heading-5: var(--font-primary);
+  --font-heading-6: var(--font-primary);
+
   /*
     Font sizes based on vertical rhythm of:
     - Font size: 16px;
@@ -138,7 +148,7 @@ body {
   --header-services-button-bg-color: transparent;
   --header-services-button-bg-color-hover: var(--color-accent);
   --header-services-button-color-hover: var(--color-black);
-  --header-logo-width: 9.62rem;
+  --header-logo-width: 12.93rem;
 
   /* Footer Items */
   --color-section-pre-footer-bg: var(--color-bittersweet);

@@ -24,6 +24,7 @@ libraries:
   - lgd_org_theme/cookie-compliance
   - lgd_org_theme/views
   - lgd_org_theme/tables
+  - lgd_org_theme/submenu
 
 libraries-extend:
   localgov_base/directories:

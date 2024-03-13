@@ -1,21 +1,17 @@
 h1 {
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
+  font-weight: 700;
+}
+
+h2, h3 {
+  --line-height: 1.3;
+  line-height: var(--line-height);
   font-weight: 600;
-}
-
-h2, h3 {
-  --line-height: 1.3;
-  line-height: var(--line-height);
-}
-
-h2, h3 {
-  --line-height: 1.3;
-  line-height: var(--line-height);
 }
 
 @media screen and (min-width: 48rem) {
   body {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-largish);
     --line-height: 1.45;
     line-height: var(--line-height);
   }
@@ -25,14 +21,6 @@ h2, h3 {
   }
 }
 
-h3 {
-  font-family: var(--font-primary) !important;
-  font-weight: 600;
-}
-
-h2 {
-  font-weight:500;
-}
 
 .field--name-localgov-text h2,
 .field--name-localgov-text h3,

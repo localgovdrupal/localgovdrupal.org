@@ -104,3 +104,8 @@ tables:
   css:
     theme:
       css/components/tables.css: {}
+
+submenu:
+  css:
+    theme:
+      css/components/submenu.css: {}
