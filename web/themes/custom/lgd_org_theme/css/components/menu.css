@@ -21,7 +21,7 @@
   padding: 0 !important;
   display: inline-block !important;
   letter-spacing: -1px;
-  /*font-size: 21px;*/
+  font-size: clamp(1.25rem, 2vw, 2rem);
   font-weight: 600;
   text-decoration: none;
 }
@@ -30,16 +30,14 @@
   margin-left: 0 !important;
 }
 
-/*.menu--main a {
-  text-decoration: none;
-}*/
+
 
 /* Mobile toggle styling  */
 
 .lgd-header__toggle {
-  background: url(../../assets/images/menu-polygon.svg) 0 0 no-repeat;
-  width: 85px;
-  height: 85px !important;
+  /*background: url(../../assets/images/menu-polygon.svg) 0 0 no-repeat;*/
+  width: 60px;
+  height: 60px !important;
   background-size: contain;
   flex-wrap: wrap;
   text-align: center;
@@ -68,9 +66,13 @@
 /* Utility menu styling */
 
 .menu--utility-menu {
-  margin-bottom: var(--spacing-larger);
+  display: flex;
+  margin-bottom: var(--spacing-mega);
   padding-left: 0;
   list-style: none;
+  justify-content: flex-end;
+  font-size: var(--font-size-large);
+  font-weight: 500;
 }
 
 .menu--utility-menu,
@@ -116,15 +118,7 @@
     padding: var(--spacing-smallest) var(--spacing-smallest) !important;
   }
 
-  .menu--utility-menu {
-    display: flex;
-    margin-bottom: 2rem;
-    padding-left: 0;
-    list-style: none;
-    justify-content: flex-end;
-    font-size: var(--font-size-large);
-    font-weight: 500;
-  }
+
 
   /*.menu--utility-menu a{
     text-decoration: underline;
@@ -139,29 +133,6 @@
     padding: 10px;
     border: none;
   }
-
-  /*.menu--utility-menu li:nth-last-of-type(1),
-  .menu--utility-menu li:nth-last-of-type(2),
-  .menu--utility-menu li:nth-last-of-type(3){
-    border: 1px solid black;
-  }
-
-  .menu--utility-menu li:nth-last-of-type(3),
-  .menu--utility-menu li:nth-last-of-type(2) {
-    border-right: 0;
-  }
-  .menu--utility-menu li:nth-last-of-type(1),
-  .menu--utility-menu li:nth-last-of-type(2) {
-    border-left: 0;
-  }
-  .menu--utility-menu li:nth-last-of-type(3) {
-    margin-left: var(--spacing);
-    padding-left: 20px;
-  }
-  .menu--utility-menu li:nth-last-of-type(1) {
-    padding-right: 20px;
-  }*/
-
 
 
   .menu--main > .menu-item a {
@@ -191,11 +162,7 @@
 
 }
 
-@media screen and (min-width: 72rem) {
-  .menu--main {
-    font-size: 32px; /* todo */
-  }
-}
+
 
 /* Hover and active trail styles */
 
@@ -204,3 +171,16 @@
   font-weight: 600;
 }
 
+
+/*.menu--utility-menu a[href="https://github.com/localgovdrupal/localgov"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.menu--utility-menu a[href="https://github.com/localgovdrupal/localgov"]:after {
+  content: url(/themes/custom/lgd_org_theme/assets/images/github.svg);
+}*/

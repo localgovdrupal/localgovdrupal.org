@@ -4,8 +4,8 @@
   line-height: 1.4;
   margin-bottom: var(--spacing-smaller);
 }
+
 .block-localgov-subsite-navigation .menu li a {
-  /*margin-bottom: var(--spacing-smaller);*/
   display: inline-block;
 }
 
@@ -33,12 +33,7 @@
   display: block;
 }
 
-.block-localgov-subsite-navigation > .menu > li > a {
-  /*font-size: 1.4rem;*/
-  /*margin-bottom: var(--spacing);
-  display: block;*/
-  /*text-decoration: none;*/
-}
+
 .block-localgov-subsite-navigation > .menu > li > a:hover {
   text-decoration: underline;
 }
