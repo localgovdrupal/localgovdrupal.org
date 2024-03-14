@@ -1,7 +1,9 @@
 uuid: 9a67fa09-879a-47d6-9015-e81951630a78
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 _core:
   default_config_hash: YaSEBB_CY8wmpn9qPWM8-gtfB6lPg1PNV8bwzGxINcw
 id: localgov_link_and_summary
@@ -9,4 +11,7 @@ label: 'Link and summary'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,20 @@
+uuid: 4ed3749a-8649-4b06-8db2-fe7a23421083
+langcode: en
+status: true
+dependencies:
+  module:
+    - lgd_org_blocks
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_social
+theme: lgd_org_theme
+region: footer
+weight: 0
+provider: null
+plugin: lgd_org_social
+settings:
+  id: lgd_org_social
+  label: Social
+  label_display: '0'
+  provider: lgd_org_blocks
+visibility: {  }

@@ -1,0 +1,9 @@
+
+.lgd-page-section--bg-colour-4 {
+  border-top: 1px solid var(--color-black);
+}
+
+.lgd-page-section--bg-colour-5 {
+  background: linear-gradient(180deg, rgba(174, 191, 254, 0.2) 30.48%, rgba(255, 130, 98, 0.3) 114.39%);
+}
+

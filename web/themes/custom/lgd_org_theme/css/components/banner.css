@@ -1,29 +1,47 @@
 /* Banner Region */
 .lgd-region--banner {
-  background: var(--color-dandilion);
+  background: rgba(0, 68, 89, 0.8);
   padding-bottom: var(--spacing-large);
+  padding-top: var(--spacing-large);
+  color: var(--color-white);
+  position: relative;
+  /*background-image: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  /*background: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg), lightgray 50% / cover no-repeat;
+  background:  cover no-repeat var(--color-dark-blue), url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);*/
+}
+
+.lgd-region--banner:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 
 .lgd-region--banner .lgd-region__inner {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .path-frontpage .lgd-region--banner {
-  padding-bottom: var(--spacing-larger);
+  /*padding-bottom: var(--spacing-larger);*/
 }
 
 @media screen and (min-width: 72rem) {
   .lgd-region--banner {
-    padding-bottom: var(--spacing-largest);
+    padding-bottom: var(--spacing-mega);
+    padding-top: var(--spacing-mega);
   }
-  /* .lgd-region--banner .lgd-region__inner {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
-  } */
 }
 
 /* The slogan block. */
@@ -31,22 +49,12 @@
 .block-lgd-org-blocks-blocks {
   --line-height: 1.15;
   line-height: var(--line-height);
-  grid-column: 1 / span 6;
+
   font-family: var(--font-secondary);
   font-size: clamp(var(--font-size-largish), 2.5vw, 1.75rem);
   letter-spacing: -1px;
-  /* max-width: 560px; */
-}
-@media screen and (min-width: 72rem) {
-  .block-lgd-org-blocks-blocks {
-    grid-column: 1 / span 4;
-  }
 }
 
-.path-frontpage .block-lgd-org-blocks-blocks {
-  font-size: var(--font-size-larger);
-  margin-bottom: var(--spacing);
-}
 
 @media screen and (min-width: 72rem) {
   .path-frontpage .block-lgd-org-blocks-blocks {
@@ -58,72 +66,74 @@
 }
 
 .block-lgd-org-blocks-blocks-2 {
-  --line-height: 1.3;
+  --line-height: 1.4;
   line-height: var(--line-height);
-  grid-column: 1 / span 3;
-  font-size: 24px;
-  font-size: clamp(var(--font-size-medium), 2.5vw, 1.3125rem);
-  /* margin-bottom: var(--spacing); */
+  font-size: clamp(var(--font-size-medium), 2.5vw, 2rem);
   font-weight: 500;
   letter-spacing: -0.5px;
+  font-family: var(--font-secondary);
+  max-width: 40ch;
 }
 
 
 
 .block-lgd-org-blocks-blocks-3 {
-  grid-column: 4 / span 3;
-  /* grid-row: 1 / span 2; */
   justify-self: center;
   align-self: center;
 }
-@media screen and (min-width: 72rem) {
-  .block-lgd-org-blocks-blocks-3 {
-    grid-column: 5;
-    grid-row: 1 / span 2;
-    justify-self: center;
-    align-self: center;
-  }
-}
 
-.lgd-org--councils {
-  display: block;
-  background: url("../../assets/images/decagon.svg") 0 0 no-repeat;
-  background-size: contain;
-  width: 130px;
-  height: 130px;
-  text-align: center;
-  padding: var(--spacing);
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0.875rem;
+
+
+
+.lgd-org-big-numbers a {
+  font-size: clamp(0.875rem, 2vw, 2rem);
   font-weight: 500;
   letter-spacing: -0.3px;
   line-height: 1;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: var(--spacing);
+  border-radius: 100%;
+  /*background-color: pink;*/
+  text-decoration: none;
+  color: white;
+  width: clamp(130px, 25vw, 330px);
+  height: clamp(130px, 25vw, 330px);
+  aspect-ratio: 1 / 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
+.lgd-org-big-numbers a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+
+}
+
+.lgd-org-big-numbers a:focus {
+  background: transparent;
+  box-shadow: 0;
+  outline: 3px solid black;
+  outline-offset: 2px;
+  color: inherit;
+
+}
+
+.lgd-org-big-numbers .field--name-field-number,
 .lgd-org--councils .number {
-  font-size: 3.25rem;
+  font-size: clamp(3.25rem, 10vw, 9.375rem);
   letter-spacing: -3px;
   display: block;
   line-height: 100%;
   font-weight: normal;
 }
 
-
-@media screen and (min-width: 72rem) {
-  .lgd-org--councils {
-    width: 12.875rem;
-    height: 12.875rem;
-  }
-  .lgd-org--councils .number {
-    font-size: 5.3125rem;
-  }
-  .lgd-org--councils {
-    font-size: var(--font-size-medium);
-    line-height: 1.1;
-  }
+.lgd-org-big-numbers + .lgd-org-big-numbers {
+  margin-left: -5%;
 }

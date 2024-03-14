@@ -1,0 +1,14 @@
+.call-out-box {
+  border: 1px solid;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.call-out-box__content > .field {
+  font-family: var(--font-secondary);
+}
+
+.call-out-box__content > * + * {
+  margin-top: var(--spacing-small);
+}

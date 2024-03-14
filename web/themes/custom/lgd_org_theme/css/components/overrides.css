@@ -1,22 +1,16 @@
-.lgd-org--newsletter a {
-  display: block;
-  border: 1px solid var(--color-black);
-  text-decoration: none;
-  padding: var(--spacing);
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin: var(--spacing);
-}
-.lgd-org--newsletter a:hover {
-  background-color: var(--color-sahara);
+.lgd-org--newsletter.button-style-link a {
+  --button-bg-color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .lgd-footer__pre-footer .lgd-org--newsletter a {
-  color: var(--color-black);
+  /*color: var(--color-black);
   font-size: clamp(var(--font-size-large), 2.5vw, var(--font-size-larger));
   text-align: center;
   font-weight: 500;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.2px;*/
 }
 
 .lgd-footer__pre-footer .lgd-row__one-third {
@@ -76,36 +70,7 @@ main {
   padding-bottom: 0;
 }
 
-/*Media item with text*/
-.media-with-text {
-  margin-bottom: var(--spacing) !important;
-}
 
-.media-with-text--media-right,
-.media-with-text--media-left {
-  display: block;
-}
-
-
-.media-with-text--media-left > *:last-child {
-  padding-left: 0;
-  padding-top: 1rem;
-}
-
-@media screen and (min-width: 48rem) {
-  .media-with-text--media-right,
-  .media-with-text--media-left {
-    display: flex;
-  }
-  .media-with-text--media-right .media-with-text__inner > *,
-  .media-with-text--media-left .media-with-text__inner > * {
-    width: 50%;
-  }
-  .media-with-text--media-left > *:last-child {
-    padding-left: 1rem;
-    padding-top: 0;
-  }
-}
 
 /*Partcipating Councisl*/
 .block-views-blockcouncil-logos-block-1 h2 {

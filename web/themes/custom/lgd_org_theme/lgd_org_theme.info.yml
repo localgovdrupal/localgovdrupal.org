@@ -29,6 +29,14 @@ libraries:
 libraries-extend:
   localgov_base/directories:
     - lgd_org_theme/directories
+  localgov_base/callout-box:
+    - lgd_org_theme/callout-box
+  localgov_base/media-with-text:
+    - lgd_org_theme/media-and-text
+  localgov_base/footer:
+    - lgd_org_theme/footer
+  localgov_base/page-sections:
+    - lgd_org_theme/page-sections
 
 ckeditor5-stylesheets:
   - css/ckeditor.css

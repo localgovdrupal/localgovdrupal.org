@@ -6,21 +6,14 @@
   .path-frontpage .field--name-localgov-subsites-content > .field__item{
     margin-bottom: var(--spacing-largest);
   }
-  .path-frontpage .layout{
+  /*.path-frontpage .layout{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
-  }
+  }*/
 
-  .path-frontpage .layout--twocol > .layout__region--first{
-    grid-column: 1 ;
-  }
-  .path-frontpage .layout--twocol > .layout__region--second{
-    grid-column: 2 / span 2;
-    max-width: 49rem;
-  }
-
+/*
   .path-frontpage .layout--threecol-33-34-33 {
     grid-template-columns: repeat(11, 1fr);
     gap: 2rem;
@@ -35,7 +28,7 @@
   .path-frontpage .layout--threecol-33-34-33 > .layout__region--third{
     grid-column: 8 / span 3;
   }
-}
+}*/
 
 .path-frontpage blockquote {
   font-size: clamp(1.2rem, 3vw, 1.875rem);
@@ -76,8 +69,8 @@
 }
 
 .path-frontpage .lgd-region--content-top {
-  background: linear-gradient(180deg, #FFE376 30.48%, #FF8262 114.39%);
-  background: linear-gradient(180deg, rgba(255,227,118, 0.6) 30.48%, rgba(255,130,98, 0.6) 114.39%);
+  /*background: linear-gradient(180deg, #FFE376 30.48%, #FF8262 114.39%);
+  background: linear-gradient(180deg, rgba(255,227,118, 0.6) 30.48%, rgba(255,130,98, 0.6) 114.39%);*/
   padding: calc(var(--spacing)*2) 0 var(--spacing-largest);
   margin-bottom: calc(var(--spacing)*3);
 }

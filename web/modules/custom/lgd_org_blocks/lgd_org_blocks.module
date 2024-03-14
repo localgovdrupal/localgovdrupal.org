@@ -26,5 +26,8 @@ function lgd_org_blocks_theme($existing, $type, $theme, $path) {
         'content' => NULL,
       ],
     ],
+    'lgd_org_social' => [
+      'variables' => [],
+    ],
   ];
 }
