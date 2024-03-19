@@ -1,0 +1,131 @@
+.lgd-org--newsletter.button-style-link a {
+  --button-bg-color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.lgd-footer__pre-footer .lgd-row__one-third {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.lgd-region__inner--footer {
+  padding-top: var(--spacing-larger);
+  text-align: center;
+  @media screen and (min-width: 48rem) {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.lgd-region__inner--footer > * + * {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--spacing-larger);
+  @media screen and (min-width: 48rem) {
+    margin: 0;
+  }
+}
+
+.lgd-footer__post-footer {
+  text-align: center;
+  font-size: var(--font-size-medium);
+}
+
+/*.lgd-footer__post-footer .lgd-row__one-third {
+  margin-bottom: var(--spacing-largest);
+  text-align: center;
+  @media screen and (min-width: 48rem) {
+    margin-bottom: 0;
+  }
+}*/
+
+@media screen and (min-width: 48rem) {
+  .lgd-footer__post-footer .lgd-row__one-third:first-of-type {
+    width: 50%;
+    text-align: left;
+    align-items: end;
+    display: flex;
+
+  }
+}
+
+.lgd-org-social ul,
+.menu--footer{
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu--footer li a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+footer a:hover {
+  /*font-weight: bold;*/
+  /*background-color: white;*/
+  text-decoration-style: double;
+
+}
+
+
+.lgd-org-social ul {
+    display: inline-flex;
+    text-align: center;
+}
+
+.lgd-org-social ul li + li {
+  margin-left: 1rem;
+}
+
+.lgd-org-social img {
+  width: 3.8rem;
+  height: 3.8rem;
+  /*margin-bottom: 0.5rem;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lgd-org-social a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.block-lgd-org-odc {
+  width: fit-content;
+}
+
+
+.lgd-org-funded-by {
+  display: flex;
+
+  justify-content: center;
+  align-items: end;
+  @media screen and (min-width: 48rem) {
+    justify-content: end;
+  }
+}
+
+.lgd-org-funded-by img {
+  margin-left: var(--spacing);
+  height: 4rem;
+}
+
+.lgd-org--footer-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-largest);
+  @media screen and (min-width: 48rem) {
+    margin-bottom: 0;
+  }
+
+}
+.lgd-org--footer-block img {
+  height: 2rem;
+  margin-right: var(--spacing-smaller);
+}

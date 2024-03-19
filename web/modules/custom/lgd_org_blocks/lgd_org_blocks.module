@@ -29,5 +29,11 @@ function lgd_org_blocks_theme($existing, $type, $theme, $path) {
     'lgd_org_social' => [
       'variables' => [],
     ],
+    'lgd_org_odc' => [
+      'variables' => [],
+    ],
+    'lgd_org_footer_logos' => [
+      'variables' => [],
+    ],
   ];
 }

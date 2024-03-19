@@ -8,19 +8,20 @@ use Drupal\Core\Block\BlockBase;
  * Provides a blocks block.
  *
  * @Block(
- *   id = "lgd_org_blocks_builtwith",
- *   admin_label = @Translation("Built With"),
+ *   id = "lgd_org_odc",
+ *   admin_label = @Translation("ODC logo"),
  *   category = @Translation("Custom")
  * )
  */
-class BlocksBuiltwith extends BlockBase {
+class BlockOdc extends BlockBase {
 
   /**
    * {@inheritdoc}
    */
   public function build() {
     return [
-      '#theme' => 'lgd_org_builtwith',
+      '#theme' => 'lgd_org_odc',
     ];
   }
+
 }
