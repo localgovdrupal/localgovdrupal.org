@@ -1,17 +1,17 @@
-uuid: ba0f8091-0029-4e44-b908-4ce2c5d78172
+uuid: 52bdf076-b688-4714-a188-53a708018899
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.localgov_body_text
     - filter.format.wysiwyg
-    - paragraphs.paragraphs_type.localgov_featured_teasers
+    - paragraphs.paragraphs_type.multiple_image_and_links
   module:
     - text
-id: paragraph.localgov_featured_teasers.localgov_body_text
+id: paragraph.multiple_image_and_links.localgov_body_text
 field_name: localgov_body_text
 entity_type: paragraph
-bundle: localgov_featured_teasers
+bundle: multiple_image_and_links
 label: Content
 description: ''
 required: false
