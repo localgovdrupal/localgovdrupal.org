@@ -48,6 +48,7 @@ body {
   --spacing-large: 1.5rem; /*24px*/
   --spacing-larger: 2.34375rem; /*37.5px*/
   --spacing-largest: 3rem; /*48px*/
+  --spacing-big: 3.5rem;
   --spacing-mega: 4.5rem; /*72px*/
   --spacing-padding-horizontal: 0;
   --line-height: 1.4;
@@ -112,7 +113,7 @@ body {
   --font-size-large: calc(var(--font-size) * 1.1875);/*19px*/
   --font-size-largish: calc(var(--font-size) * 1.3125);/*21px*/
   --font-size-larger: calc(var(--font-size) * 1.625);/*26px*/
-  --font-size-largest: calc(var(--font-size) * 2.68);
+  --font-size-largest: calc(var(--font-size) * 2.875);
   --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
   --font-size-h2: clamp(var(--font-size-largish), 2.5vw, var(--font-size-larger));
   --font-size-h3: clamp(var(--font-size-medium), 2.5vw, var(--font-size-largish));
@@ -155,10 +156,10 @@ body {
   --header-logo-width: 12.93rem;
 
   /* Footer Items */
-  --color-section-pre-footer-bg: var(--color-bittersweet);
+  --color-section-pre-footer-bg: rgba(255, 130, 98, 0.70);
   --color-section-footer-bg: var(--color-yellow);
   --color-section-post-footer-bg: var(--color-yellow);
-  --section-spacing-vertical-pre-footer: var(--spacing-largest);
+  --section-spacing-vertical-pre-footer: 7.5rem;
   --section-spacing-vertical-footer: var(--spacing);
   --section-spacing-vertical-post-footer: var(--spacing-largest);
 
