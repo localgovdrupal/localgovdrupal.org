@@ -221,6 +221,8 @@ body {
   --call-out-box-bg-color: transparent;
   --call-out-box-padding: 2rem;
 
+  --featured-teaser-border: 0;
+
   /* Step by step  */
   --step-by-step-relationship-border-color: var(--color-accent);
   --step-by-step-part-of-color: var(--color-black);

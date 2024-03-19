@@ -1,0 +1,30 @@
+uuid: fb7d8bd2-a457-452c-ab88-34bf3d4cab8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured.localgov_heading_level
+    - field.field.paragraph.featured.localgov_title
+    - paragraphs.paragraphs_type.featured
+id: paragraph.featured.default
+targetEntityType: paragraph
+bundle: featured
+mode: default
+content:
+  localgov_heading_level:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

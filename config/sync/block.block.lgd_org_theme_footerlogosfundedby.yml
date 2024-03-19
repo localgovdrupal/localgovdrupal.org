@@ -1,4 +1,4 @@
-uuid: 4ed3749a-8649-4b06-8db2-fe7a23421083
+uuid: 1458199a-edb7-4222-aae1-a4a0558e5392
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - lgd_org_blocks
   theme:
     - lgd_org_theme
-id: lgd_org_theme_social
+id: lgd_org_theme_footerlogosfundedby
 theme: lgd_org_theme
-region: footer
-weight: -17
+region: lower_footer_third
+weight: 0
 provider: null
-plugin: lgd_org_social
+plugin: lgd_org_footer_logos
 settings:
-  id: lgd_org_social
-  label: Social
+  id: lgd_org_footer_logos
+  label: 'Footer logos (funded by)'
   label_display: '0'
   provider: lgd_org_blocks
 visibility: {  }
