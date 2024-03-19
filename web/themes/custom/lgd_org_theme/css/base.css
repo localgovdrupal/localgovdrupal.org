@@ -65,14 +65,21 @@ a.button-style-link,
   color: var(--color-black);
   border-radius: 2rem;
   padding: clamp(10px, 2vw, 1rem) clamp(20px, 2vw, 2.5rem);
-  font-size: clamp( 1rem, 2vw, var(--font-size-medium));
+  font-size: clamp( 1rem, 2vw, var(--font-size-largish));
   text-decoration: none;
   display: inline-block;
   margin-bottom: var(--flow-space);
   font-weight: 700;
+  text-align: center;
 }
 
 a.button-style-link:hover,
 .button-style-link a:hover {
   background-color: var(--button-bg-color-hover);
+}
+
+.paragraph--type--localgov-link.button-style-link {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }

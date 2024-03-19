@@ -1,24 +1,30 @@
-.featured-teasers {
+.multiple-image-links {
   text-align: center;
+  font-size: var(--font-size-h2);
 }
 
-.featured-teasers .field--name-localgov-paragraphs {
+.multiple-image-links .field--name-localgov-paragraphs {
   display: flex;
   flex-wrap: wrap;
-  margin-top: var(--spacing-largest);
+  margin-top: var(--spacing-mega);
   @media screen and (min-width: 50rem) {
     justify-content: center;
     align-items: end;
   }
 }
 
-.featured-teasers__teasers > .field__items > .field__item {
+.multiple-image-links__content > .field__items > .field__item {
   max-width: 20%;
 }
 
-.featured-teasers__teasers > .field__items > .field__item + .field__item {
+.multiple-image-links__content > .field__items > .field__item + .field__item {
   @media screen and (min-width: 40rem) {
     margin-top: 0;
     margin-left: var(--spacing-largest);
   }
+}
+
+
+.multiple-image-links__content--button {
+  margin-top: var(--spacing-mega);
 }

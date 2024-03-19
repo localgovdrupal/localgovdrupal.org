@@ -1,0 +1,27 @@
+{%
+  set classes = [
+    'image-link',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+
+  {% if paragraph.localgov_image.value %}
+      <a href="{% if paragraph.localgov_link.0.external %}{{ paragraph.localgov_link.0.uri}}{% else %}{{ path(paragraph.localgov_link.0.url.routeName, paragraph.localgov_link.0.url.routeParameters) }}{% endif %}">
+        <div class="featured-teaser__image">
+          <span aria-hidden="true">
+            {{ content.localgov_image }}
+          </span>
+          <span class="visually-hidden">
+            {{ paragraph.localgov_link.0.title}}
+          </span>
+        </div>
+      </a>
+  {% endif %}
+
+
+</div>

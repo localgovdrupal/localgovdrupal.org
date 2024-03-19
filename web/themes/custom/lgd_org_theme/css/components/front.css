@@ -1,40 +1,17 @@
-.path-frontpage .field--name-localgov-subsites-content > .field__item{
-  margin-bottom: var(--spacing);
+.path-frontpage h2 {
+  font-size: clamp(1.5rem, 4vw, var(--font-size-largest));
+  font-weight: 700;
 }
-
-@media screen and (min-width: 60rem) {
-  .path-frontpage .field--name-localgov-subsites-content > .field__item{
-    margin-bottom: var(--spacing-largest);
-  }
-  /*.path-frontpage .layout{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-
-  }*/
-
-/*
-  .path-frontpage .layout--threecol-33-34-33 {
-    grid-template-columns: repeat(11, 1fr);
-    gap: 2rem;
-  }
-
-  .path-frontpage .layout--threecol-33-34-33 > .layout__region--first{
-    grid-column: 2 / span 3;
-  }
-  .path-frontpage .layout--threecol-33-34-33 > .layout__region--second{
-    grid-column: 5 / span 3;
-  }
-  .path-frontpage .layout--threecol-33-34-33 > .layout__region--third{
-    grid-column: 8 / span 3;
-  }
-}*/
 
 .path-frontpage blockquote {
-  font-size: clamp(1.2rem, 3vw, 1.875rem);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+.path-frontpage .pull-out-quote__author {
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
 }
 .path-frontpage .pull-out-quote{
-  max-width: 795px;
+  max-width: 932px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 2rem;
@@ -58,8 +35,16 @@
   }
 }
 .path-frontpage .pull-out-quote__content:before {
-  width: 44PX;
+  content: '';
+  background: url("../../assets/images/quoteoutline.svg") repeat-x 0 50% ;
+  height: 200px;
+  width: 252px;
+  display: inline-block;
+  background-size: 100%;
+  margin-right: var(--spacing);
+  /*width: 44PX;*/
   margin-bottom: 1rem;
+  background-size: contain;
 }
 
 

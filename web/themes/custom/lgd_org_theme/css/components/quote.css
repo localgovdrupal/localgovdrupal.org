@@ -85,9 +85,9 @@ blockquote > p:last-of-type:after {
 
 /* Front page overrides */
 
-.path-frontpage .pull-out-quote__content:before{
+/*.path-frontpage .pull-out-quote__content:before{
   height: 50px;
 }
 .path-frontpage .pull-out-quote__content{
   padding-bottom: clamp(50px, 8vw, 75px);
-}
+}*/

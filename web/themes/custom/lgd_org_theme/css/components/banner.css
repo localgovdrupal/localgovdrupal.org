@@ -82,7 +82,9 @@
   align-self: center;
 }
 
-
+.lgd-org-big-numbers p {
+  margin-bottom: 0;
+}
 
 
 .lgd-org-big-numbers a {
