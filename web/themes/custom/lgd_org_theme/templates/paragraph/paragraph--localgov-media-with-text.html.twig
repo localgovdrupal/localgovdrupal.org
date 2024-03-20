@@ -69,19 +69,27 @@
 					<div class="media-with-text__body">
 						{{ heading }}
 						{{ content.localgov_text }}
-						<div class="button-style-link">
-            {{ link }}
-            {{ content.field_links }}
-            </div>
+            {% if link %}
+              <div class="button-style-link">
+                {{ link }}
+              </div>
+            {% endif %}
+            {% if content.field_links %}
+              <div class="button-style-link">
+              {{ content.field_links }}
+              </div>
+            {% endif %}
 					</div>
 				{% else %}
 					<div class="media-with-text__body">
 						{{ heading }}
 						{{ content.localgov_text }}
-						<div class="button-style-link">
-            {{ link }}
-            {{ content.field_links }}
-            </div>
+            {% if link or content.field_links.0 %}
+              <div class="button-style-link">
+              {{ link }}
+              {{ content.field_links }}
+              </div>
+            {% endif %}
 					</div>
 					<div class="media-with-text__media">
 						{{ content.localgov_media_item }}

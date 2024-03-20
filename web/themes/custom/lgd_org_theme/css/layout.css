@@ -176,3 +176,11 @@
     max-width: 50%;
   }
 }
+
+.layout__region > * {
+  margin-bottom: 0;
+}
+
+.layout__region > * + *{
+  margin-bottom: var(--vertical-rhythm-spacing);
+}

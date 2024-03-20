@@ -239,7 +239,7 @@ body {
   --color-page-section-background-color-1: var(--color-accent);
   --color-page-section-background-color-1-text-color: var(--color-black);
   --color-page-section-background-color-1-link-color: var(--color-black);
-  --color-page-section-background-color-2: var(--color-sahara);
+  --color-page-section-background-color-2: rgba(255, 225, 70, 0.20);
   --color-page-section-background-color-2-text-color: var(--color-black);
   --color-page-section-background-color-2-link-color: var(--color-black);
   --color-page-section-background-color-3: var(--color-grey-lightest);

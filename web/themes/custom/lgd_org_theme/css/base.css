@@ -59,6 +59,11 @@ a {
   text-underline-offset: 2px;
 }
 
+a:not([class*="toolbar"]):focus {
+  box-shadow: none;
+  outline: 3px solid black;
+}
+
 a.button-style-link,
 .button-style-link a{
   background-color: var(--button-bg-color);

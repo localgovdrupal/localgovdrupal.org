@@ -36,15 +36,16 @@
 }
 .path-frontpage .pull-out-quote__content:before {
   content: '';
-  background: url("../../assets/images/quoteoutline.svg") repeat-x 0 50% ;
-  height: 200px;
-  width: 252px;
+  background: url("../../assets/images/quoteoutline.svg") no-repeat 0 50% ;
+  height: clamp(140px, 25vw, 200px);
+  width: clamp(176px, 25vw, 253px);
   display: inline-block;
   background-size: 100%;
   margin-right: var(--spacing);
   /*width: 44PX;*/
   margin-bottom: 1rem;
   background-size: contain;
+  opacity: 0.7;
 }
 
 

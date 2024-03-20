@@ -28,8 +28,8 @@
   font-weight: 700;
 }
 
-
-.media-with-text__media {
+.media-with-text--media-right .media-with-text__media,
+.media-with-text--media-left .media-with-text__media {
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -61,4 +61,13 @@
 
 .media-with-text .button-style-link {
   margin-top: var(--spacing-larger);
+}
+
+.media-with-text--featured .media-with-text__body {
+  font-size: 1.2rem;
+
+}
+
+.media-with-text--featured .media-with-text__media {
+  margin: 0;
 }
