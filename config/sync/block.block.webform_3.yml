@@ -23,6 +23,7 @@ settings:
   webform_id: join_the_slack_community
   default_data: ''
   redirect: false
+  lazy: false
 visibility:
   request_path:
     id: request_path

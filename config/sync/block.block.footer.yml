@@ -10,8 +10,8 @@ dependencies:
     - lgd_org_theme
 id: footer
 theme: lgd_org_theme
-region: lower_footer_second
-weight: -8
+region: footer
+weight: -18
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

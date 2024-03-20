@@ -1,6 +1,6 @@
 uuid: 00c7daac-e9be-462f-81ea-754dc94de730
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - lgd_org_blocks

@@ -6,6 +6,7 @@
 .field--name-localgov-subsites-content > .field__item:first-of-type > .paragraph--type--page-section .layout__region--first p:first-of-type {
   font-family: var(--font-secondary);
   font-size: clamp(1.5rem, 2.5vw, var(--font-size-larger));
+  font-weight: 500;
 }
 
 pre {

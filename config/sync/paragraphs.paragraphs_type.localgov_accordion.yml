@@ -1,7 +1,9 @@
 uuid: 12087e3a-93f0-4497-add1-ebc95a64d0ce
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 _core:
   default_config_hash: vFEoAwB0p2xiUfX4y40EbKEzsqusuMqX5GGpv4c6c_M
 id: localgov_accordion
@@ -9,4 +11,7 @@ label: Accordion
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

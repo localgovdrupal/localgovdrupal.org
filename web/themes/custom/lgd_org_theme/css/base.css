@@ -1,21 +1,17 @@
 h1 {
-  font-family: var(--font-primary);
+  /*font-family: var(--font-primary);*/
+  font-weight: 700;
+}
+
+h2, h3 {
+  --line-height: 1.3;
+  line-height: var(--line-height);
   font-weight: 600;
-}
-
-h2, h3 {
-  --line-height: 1.3;
-  line-height: var(--line-height);
-}
-
-h2, h3 {
-  --line-height: 1.3;
-  line-height: var(--line-height);
 }
 
 @media screen and (min-width: 48rem) {
   body {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-largish);
     --line-height: 1.45;
     line-height: var(--line-height);
   }
@@ -25,14 +21,6 @@ h2, h3 {
   }
 }
 
-h3 {
-  font-family: var(--font-primary) !important;
-  font-weight: 600;
-}
-
-h2 {
-  font-weight:500;
-}
 
 .field--name-localgov-text h2,
 .field--name-localgov-text h3,
@@ -65,4 +53,38 @@ tbody td {
 
 tbody tr {
   border-bottom: var(--table-border);
+}
+
+a {
+  text-underline-offset: 2px;
+}
+
+a:not([class*="toolbar"]):focus {
+  box-shadow: none;
+  outline: 3px solid black;
+}
+
+a.button-style-link,
+.button-style-link a{
+  background-color: var(--button-bg-color);
+  color: var(--color-black);
+  border-radius: 2rem;
+  padding: clamp(10px, 2vw, 1rem) clamp(20px, 2vw, 2.5rem);
+  font-size: clamp( 1rem, 2vw, var(--font-size-largish));
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: var(--flow-space);
+  font-weight: 700;
+  text-align: center;
+}
+
+a.button-style-link:hover,
+.button-style-link a:hover {
+  background-color: var(--button-bg-color-hover);
+}
+
+.paragraph--type--localgov-link.button-style-link {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }

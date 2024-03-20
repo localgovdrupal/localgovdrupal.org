@@ -1,49 +1,4 @@
-.lgd-org--newsletter a {
-  display: block;
-  border: 1px solid var(--color-black);
-  text-decoration: none;
-  padding: var(--spacing);
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin: var(--spacing);
-}
-.lgd-org--newsletter a:hover {
-  background-color: var(--color-sahara);
-}
 
-.lgd-footer__pre-footer .lgd-org--newsletter a {
-  color: var(--color-black);
-  font-size: clamp(var(--font-size-large), 2.5vw, var(--font-size-larger));
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: -0.2px;
-}
-
-.lgd-footer__pre-footer .lgd-row__one-third {
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-}
-
-.lgd-footer__post-footer {
-  text-align: center;
-}
-@media screen and (min-width: 48rem) {
-  .lgd-footer__post-footer .lgd-row__one-third:first-of-type {
-    width: 50%;
-    text-align: left;
-  }
-}
-
-.menu--footer li {
-  display: inline-block;
-}
-.menu--footer li a {
-  text-decoration: underline;
-}
-.menu--footer li a:hover {
-  font-weight: bold;
-}
 
 /* sidebar */
 .region-sidebar-second {
@@ -55,62 +10,6 @@
 }
 .region-sidebar-second ul li {
   width: 100%;
-}
-
-@media screen and (min-width: 70rem) {
-  aside.lgd-row__one-third {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .region-sidebar-second {
-    grid-column: 2 / span 2;
-  }
-  .newsroom__sidebar,
-  .lgd-region--sidebar-first {
-    grid-column: 1 / span 3;
-  }
-}
-.block-localgov-subsite-navigation .menu li {
-  display: inline-block;
-  font-size: var(--font-size-medium);
-  line-height: 1.4;
-}
-.block-localgov-subsite-navigation .menu li a {
-  margin-bottom: var(--spacing-smaller);
-  display: inline-block;
-}
-
-.block-localgov-subsite-navigation .menu {
-  padding-left: 0;
-}
-
-.block-localgov-subsite-navigation > .menu {
-  text-align: center;
-  padding: 2rem 0 1rem;
-}
-
-@media screen and (min-width: 48rem) {
-  .block-localgov-subsite-navigation .menu {
-    text-align: left;
-    padding: 0;
-  }
-  .block-localgov-subsite-navigation > .menu > li > a {
-    margin-bottom: var(--spacing-large);
-  }
-}
-
-.block-localgov-subsite-navigation > .menu > li > a {
-  font-size: 1.4rem;
-  margin-bottom: var(--spacing);
-  display: block;
-  text-decoration: none;
-}
-.block-localgov-subsite-navigation > .menu > li > a:hover {
-  text-decoration: underline;
-}
-
-.is-active {
-  font-weight: 600;
 }
 
 .lgd-org--footer-block p {
@@ -132,39 +31,7 @@ main {
   padding-bottom: 0;
 }
 
-/*Media item with text*/
-.media-with-text {
-  margin-bottom: var(--spacing) !important;
-}
 
-.media-with-text--media-right,
-.media-with-text--media-left {
-  display: block;
-}
-
-/*.media-with-text--media-right > *,
-.media-with-text--media-left > * {
-  width: 100%;
-}*/
-.media-with-text--media-left > *:last-child {
-  padding-left: 0;
-  padding-top: 1rem;
-}
-
-@media screen and (min-width: 48rem) {
-  .media-with-text--media-right,
-  .media-with-text--media-left {
-    display: flex;
-  }
-  .media-with-text--media-right .media-with-text__inner > *,
-  .media-with-text--media-left .media-with-text__inner > * {
-    width: 50%;
-  }
-  .media-with-text--media-left > *:last-child {
-    padding-left: 1rem;
-    padding-top: 0;
-  }
-}
 
 /*Partcipating Councisl*/
 .block-views-blockcouncil-logos-block-1 h2 {

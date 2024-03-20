@@ -32,11 +32,14 @@
 body {
 
   /* Widths and Spacing */
-  --width-extra-large: 90rem; /* 1440px */
+  --width-extra-large: 102.5rem; /* 1640px */
   --width-large: 60rem;
   --width-medium: 48rem;
   --width-small: 30rem;
   --width-container: calc(var(--width-extra-large) - 100px);
+  --width-medium-container: calc(var(--width-extra-large) - 210px);
+  --width-small-container: calc(var(--width-extra-large) - 350px);
+
   --width-restricted-width-section: var(--width-medium);
   --spacing-smallest: 0.25rem;
   --spacing-smaller: 0.5rem;
@@ -45,6 +48,7 @@ body {
   --spacing-large: 1.5rem; /*24px*/
   --spacing-larger: 2.34375rem; /*37.5px*/
   --spacing-largest: 3rem; /*48px*/
+  --spacing-big: 3.5rem;
   --spacing-mega: 4.5rem; /*72px*/
   --spacing-padding-horizontal: 0;
   --line-height: 1.4;
@@ -64,8 +68,9 @@ body {
   --color-dandilion: #FFE146;
   --color-sahara: #fff4ca;
   --color-seafoam: #96F1C6;
-  --color-melrose: #aebffe;
-  --color-bittersweet: #ff8262;
+  --color-melrose: #D4DDFF;
+  --color-bittersweet: #FFB4A1;
+  --color-dark-blue: #004459;
 
   /*
     Grey Scale
@@ -81,10 +86,20 @@ body {
     In this section, we "apply" our colours.
   */
   --color-link: var(--color-black);
+  --color-slogan: var(--color-black);
 
   /* Fonts */
   --font-primary: 'Inter', oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-secondary: 'Lora', "Times New Roman", times, serif;
+
+
+  --font-heading-1: var(--font-primary);
+  --font-heading-2: var(--font-primary);
+  --font-heading-3: var(--font-primary);
+  --font-heading-4: var(--font-primary);
+  --font-heading-5: var(--font-primary);
+  --font-heading-6: var(--font-primary);
+
   /*
     Font sizes based on vertical rhythm of:
     - Font size: 16px;
@@ -98,7 +113,7 @@ body {
   --font-size-large: calc(var(--font-size) * 1.1875);/*19px*/
   --font-size-largish: calc(var(--font-size) * 1.3125);/*21px*/
   --font-size-larger: calc(var(--font-size) * 1.625);/*26px*/
-  --font-size-largest: calc(var(--font-size) * 2.68);
+  --font-size-largest: calc(var(--font-size) * 2.875);
   --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
   --font-size-h2: clamp(var(--font-size-largish), 2.5vw, var(--font-size-larger));
   --font-size-h3: clamp(var(--font-size-medium), 2.5vw, var(--font-size-largish));
@@ -138,13 +153,13 @@ body {
   --header-services-button-bg-color: transparent;
   --header-services-button-bg-color-hover: var(--color-accent);
   --header-services-button-color-hover: var(--color-black);
-  --header-logo-width: 9.62rem;
+  --header-logo-width: 12.93rem;
 
   /* Footer Items */
-  --color-section-pre-footer-bg: var(--color-bittersweet);
-  --color-section-footer-bg: var(--color-white);
-  --color-section-post-footer-bg: var(--color-melrose);
-  --section-spacing-vertical-pre-footer: var(--spacing-largest);
+  --color-section-pre-footer-bg: rgba(255, 130, 98, 0.70);
+  --color-section-footer-bg: var(--color-yellow);
+  --color-section-post-footer-bg: var(--color-yellow);
+  --section-spacing-vertical-pre-footer: 7.5rem;
   --section-spacing-vertical-footer: var(--spacing);
   --section-spacing-vertical-post-footer: var(--spacing-largest);
 
@@ -156,8 +171,8 @@ body {
   --button-icon-color: var(--button-text-color);
   --button-icon-color-hover: var(--color-accent);
   --button-border-color: var(--color-accent);
-  --button-bg-color: var(--color-accent);
-  --button-bg-color-hover: var(--color-white);
+  --button-bg-color: var(--color-melrose);
+  --button-bg-color-hover: var(--color-accent);
   --button-font-family: var(--font-primary);
   --button-border-radius: 0;
 
@@ -204,6 +219,10 @@ body {
 
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
+  --call-out-box-bg-color: transparent;
+  --call-out-box-padding: 2rem;
+
+  --featured-teaser-border: 0;
 
   /* Step by step  */
   --step-by-step-relationship-border-color: var(--color-accent);
@@ -214,4 +233,86 @@ body {
   --step-by-step-line-joining-items-border: var(--border);
   --step-by-step-line-joining-items-color: var(--color-black);
   --step-by-step-nav-block-width: var(--width-medium);
+
+
+
+  --color-page-section-background-color-1: var(--color-accent);
+  --color-page-section-background-color-1-text-color: var(--color-black);
+  --color-page-section-background-color-1-link-color: var(--color-black);
+  --color-page-section-background-color-2: rgba(255, 225, 70, 0.20);
+  --color-page-section-background-color-2-text-color: var(--color-black);
+  --color-page-section-background-color-2-link-color: var(--color-black);
+  --color-page-section-background-color-3: var(--color-grey-lightest);
+  --color-page-section-background-color-3-text-color: var(--color-black);
+  --color-page-section-background-color-3-link-color: var(--color-black);
+  --color-page-section-background-color-4: var(--color-white);
+  --color-page-section-background-color-4-text-color: var(--color-black);
+  --color-page-section-background-color-4-link-color: var(--color-link);
+  --color-page-section-background-color-5: linear-gradient(180deg, rgba(174, 191, 254, 0.2) 30.48%, rgba(255, 130, 98, 0.3) 114.39%);
+  --color-page-section-background-color-5-text-color: var(--color-black);
+  --color-page-section-background-color-5-link-color: var(--color-link);
+  --color-page-section-background-color-6: var(--color-accent);
+  --color-page-section-background-color-6-text-color: var(--color-white);
+  --color-page-section-background-color-6-link-color: var(--color-white);
+    /*--color-page-section-background-color-1-newsroom-teaser-background-color: var(--color-white);
+    --color-page-section-background-color-1-newsroom-teaser-text-color: var(--color-black);
+    --color-page-section-background-color-1-newsroom-teaser-link-color: var(--color-black);
+    --color-page-section-background-color-2-newsroom-teaser-background-color: var(--color-white);
+    --color-page-section-background-color-2-newsroom-teaser-text-color: var(--color-black);
+    --color-page-section-background-color-2-newsroom-teaser-link-color: var(--color-black);
+    --color-page-section-background-color-3-newsroom-teaser-background-color: var(--color-black);
+    --color-page-section-background-color-3-newsroom-teaser-text-color: var(--color-white);
+    --color-page-section-background-color-3-newsroom-teaser-link-color: var(--color-white);
+    --color-page-section-background-color-4-newsroom-teaser-background-color: var(--color-white);
+    --color-page-section-background-color-4-newsroom-teaser-text-color: var(--color-black);
+    --color-page-section-background-color-4-newsroom-teaser-link-color: var(--color-black);
+    --color-page-section-background-color-5-newsroom-teaser-background-color: var(--color-white);
+    --color-page-section-background-color-5-newsroom-teaser-text-color: var(--color-black);
+    --color-page-section-background-color-5-newsroom-teaser-link-color: var(--color-black);
+    --color-page-section-background-color-6-newsroom-teaser-background-color: var(--color-white);
+    --color-page-section-background-color-6-newsroom-teaser-text-color: var(--color-black);
+    --color-page-section-background-color-6-newsroom-teaser-link-color: var(--color-black);*/
+    /*--color-page-section-background-color-1-box-link-border-color: var(--color-white);
+    --color-page-section-background-color-1-box-link-background-color: var(--color-white);
+    --color-page-section-background-color-1-box-link-text-color: var(--color-black);
+    --color-page-section-background-color-1-box-link-link-color: var(--color-black);
+    --color-page-section-background-color-2-box-link-border-color: var(--color-white);
+    --color-page-section-background-color-2-box-link-background-color: var(--color-white);
+    --color-page-section-background-color-2-box-link-text-color: var(--color-black);
+    --color-page-section-background-color-2-box-link-link-color: var(--color-black);
+    --color-page-section-background-color-3-box-link-border-color: var(--color-black);
+    --color-page-section-background-color-3-box-link-background-color: var(--color-black);
+    --color-page-section-background-color-3-box-link-text-color: var(--color-white);
+    --color-page-section-background-color-3-box-link-link-color: var(--color-white);
+    --color-page-section-background-color-4-box-link-border-color: var(--color-white);
+    --color-page-section-background-color-4-box-link-background-color: var(--color-white);
+    --color-page-section-background-color-4-box-link-text-color: var(--color-black);
+    --color-page-section-background-color-4-box-link-link-color: var(--color-black);
+    --color-page-section-background-color-5-box-link-border-color: var(--color-white);
+    --color-page-section-background-color-5-box-link-background-color: var(--color-white);
+    --color-page-section-background-color-5-box-link-text-color: var(--color-black);
+    --color-page-section-background-color-5-box-link-link-color: var(--color-black);
+    --color-page-section-background-color-6-box-link-border-color: var(--color-white);
+    --color-page-section-background-color-6-box-link-background-color: var(--color-white);
+    --color-page-section-background-color-6-box-link-text-color: var(--color-black);
+    --color-page-section-background-color-6-box-link-link-color: var(--color-black);*/
+    /*--color-page-section-background-color-1-featured-subsite-background-color: var(--color-grey-lightest);
+    --color-page-section-background-color-1-featured-subsite-text-color: var(--color-black);
+    --color-page-section-background-color-1-featured-subsite-link-color: var(--color-black);
+    --color-page-section-background-color-2-featured-subsite-background-color: var(--color-grey-lightest);
+    --color-page-section-background-color-2-featured-subsite-text-color: var(--color-black);
+    --color-page-section-background-color-2-featured-subsite-link-color: var(--color-black);
+    --color-page-section-background-color-3-featured-subsite-background-color: var(--color-black);
+    --color-page-section-background-color-3-featured-subsite-text-color: var(--color-grey-lightest);
+    --color-page-section-background-color-3-featured-subsite-link-color: var(--color-grey-lightest);
+    --color-page-section-background-color-4-featured-subsite-background-color: var(--color-grey-lightest);
+    --color-page-section-background-color-4-featured-subsite-text-color: var(--color-black);
+    --color-page-section-background-color-4-featured-subsite-link-color: var(--color-black);
+    --color-page-section-background-color-5-featured-subsite-background-color: var(--color-grey-lightest);
+    --color-page-section-background-color-5-featured-subsite-text-color: var(--color-black);
+    --color-page-section-background-color-5-featured-subsite-link-color: var(--color-black);
+    --color-page-section-background-color-6-featured-subsite-background-color: var(--color-grey-lightest);
+    --color-page-section-background-color-6-featured-subsite-text-color: var(--color-black);
+    --color-page-section-background-color-6-featured-subsite-link-color: var(--color-black);*/
 }
+

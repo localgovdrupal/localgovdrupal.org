@@ -10,7 +10,7 @@ dependencies:
 id: directorychannelsearchblock
 theme: lgd_org_theme
 region: sidebar_first
-weight: 0
+weight: -15
 provider: null
 plugin: localgov_directories_channel_search_block
 settings:

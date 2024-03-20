@@ -1,0 +1,24 @@
+uuid: 52bdf076-b688-4714-a188-53a708018899
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_body_text
+    - filter.format.wysiwyg
+    - paragraphs.paragraphs_type.multiple_image_and_links
+  module:
+    - text
+id: paragraph.multiple_image_and_links.localgov_body_text
+field_name: localgov_body_text
+entity_type: paragraph
+bundle: multiple_image_and_links
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - wysiwyg
+field_type: text_long

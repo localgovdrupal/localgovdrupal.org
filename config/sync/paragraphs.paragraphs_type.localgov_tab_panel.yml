@@ -1,7 +1,9 @@
 uuid: b64230c1-fac8-45df-923b-5f2e39fdaf15
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 _core:
   default_config_hash: KD80_XJkUjhaM73UBKz302IhM-5LMcyhSXMRA8kUEdg
 id: localgov_tab_panel
@@ -9,4 +11,7 @@ label: 'Tab panel'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

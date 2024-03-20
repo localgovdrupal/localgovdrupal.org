@@ -1,0 +1,41 @@
+uuid: cafcdc44-ac2e-4188-9a9d-df6c63023318
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_link.localgov_image
+    - field.field.paragraph.image_link.localgov_link
+    - paragraphs.paragraphs_type.image_link
+  module:
+    - field_formatter_class
+    - link
+id: paragraph.image_link.default
+targetEntityType: paragraph
+bundle: image_link
+mode: default
+content:
+  localgov_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: freestyle
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+  localgov_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

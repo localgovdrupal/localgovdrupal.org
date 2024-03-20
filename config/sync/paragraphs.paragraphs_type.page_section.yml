@@ -17,7 +17,7 @@ behavior_plugins:
   layout_paragraphs:
     enabled: true
     available_layouts:
-      localgov_subsites_one_column_flexible: Flexible
-      layout_onecol: 'One column'
-      layout_twocol: 'Two column'
-      layout_threecol_33_34_33: 'Three column 33/34/33'
+      localgov_layout_onecol: 'One column (simple)'
+      localgov_layout_twocol: 'Two column (simple)'
+      localgov_layout_threecol_33_34_33: 'Three column 33/34/33 (simple)'
+      localgov_layout_fourcol_25_25_25_25: 'Four column 25/25/25/25 (simple)'

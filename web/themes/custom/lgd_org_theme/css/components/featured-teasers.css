@@ -1,0 +1,50 @@
+.multiple-image-links {
+  text-align: center;
+  font-size: var(--font-size-h2);
+}
+
+.multiple-image-links .field--name-localgov-paragraphs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--spacing-mega);
+  gap: 2rem;
+  @media screen and (min-width: 50rem) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: end;
+  }
+}
+
+.multiple-image-links__content > .field__items > .field__item {
+  max-width: 40%;
+  gap: 1rem;
+  @media screen and (min-width: 50rem) {
+    /*max-width: 20%;*/
+  }
+}
+
+.multiple-image-links__content > .field__items > .field__item + .field__item {
+
+  @media screen and (min-width: 40rem) {
+    margin-top: 0;
+    margin-left: var(--spacing-largest);
+  }
+}
+
+
+.multiple-image-links__content--button {
+  margin-top: var(--spacing-mega);
+}
+
+.image-link a {
+  display: block;
+}
+
+.image-link a:hover {
+  /*border: 1px solid black;*/
+  /* opacity: 0.8; */
+  outline-offset: 9px;
+  display: block;
+  outline: 2px solid black;
+}

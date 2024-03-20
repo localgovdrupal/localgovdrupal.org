@@ -104,3 +104,34 @@ tables:
   css:
     theme:
       css/components/tables.css: {}
+
+submenu:
+  css:
+    theme:
+      css/components/submenu.css: {}
+
+
+callout-box:
+  css:
+    theme:
+      css/components/callout-box.css: {}
+
+media-and-text:
+  css:
+    theme:
+      css/components/media-and-text.css: {}
+
+footer:
+  css:
+    theme:
+      css/components/footer.css: {}
+
+page-sections:
+  css:
+    theme:
+      css/components/page-sections.css: {}
+
+featured-teasers:
+  css:
+    theme:
+      css/components/featured-teasers.css: {}

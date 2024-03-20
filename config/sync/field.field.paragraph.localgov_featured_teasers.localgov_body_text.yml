@@ -1,0 +1,24 @@
+uuid: ba0f8091-0029-4e44-b908-4ce2c5d78172
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_body_text
+    - filter.format.wysiwyg
+    - paragraphs.paragraphs_type.localgov_featured_teasers
+  module:
+    - text
+id: paragraph.localgov_featured_teasers.localgov_body_text
+field_name: localgov_body_text
+entity_type: paragraph
+bundle: localgov_featured_teasers
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - wysiwyg
+field_type: text_long

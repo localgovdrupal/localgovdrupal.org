@@ -1,0 +1,45 @@
+
+.lgd-page-section--bg-colour-4 {
+  border-top: 1px solid var(--color-black);
+}
+
+.lgd-page-section--bg-colour-5 {
+  background: linear-gradient(180deg, rgba(174, 191, 254, 0.2) 30.48%, rgba(255, 130, 98, 0.3) 114.39%);
+}
+
+.lgd-page-section--padding-top-small {
+  padding-top: var(--spacing-small);
+}
+.lgd-page-section--padding-top-medium {
+  padding-top: var(--spacing);
+}
+.lgd-page-section--padding-top-large {
+  padding-top: var(--spacing-large);
+}
+.lgd-page-section--padding-top-larger {
+  padding-top: var(--spacing-larger);
+}
+.lgd-page-section--padding-top-largest {
+  padding-top: var(--spacing-mega);
+}
+
+.lgd-page-section--padding-bottom-small {
+  padding-bottom: var(--spacing-small);
+}
+.lgd-page-section--padding-bottom-medium {
+  padding-bottom: var(--spacing);
+}
+.lgd-page-section--padding-bottom-large {
+  padding-bottom: var(--spacing-large);
+}
+.lgd-page-section--padding-bottom-larger {
+  padding-bottom: var(--spacing-larger);
+}
+.lgd-page-section--padding-bottom-largest {
+  padding-bottom: var(--spacing-mega);
+}
+
+
+.lgd-page-section .layout__region--content > * + * {
+  margin-top: var(--spacing-large);
+}

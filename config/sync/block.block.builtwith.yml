@@ -18,5 +18,5 @@ settings:
   label_display: '0'
   provider: lgd_org_blocks
   content: 'This site is built with LocalGov Drupal'
-  footer_slogan: 'The publishing platform created by councils, for councils.'
+  footer_slogan: ''
 visibility: {  }

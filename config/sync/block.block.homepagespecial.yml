@@ -1,6 +1,6 @@
 uuid: abbeae9b-f105-4f59-873c-ca93f2989a4e
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:special_block:e1f85d82-9e41-42e5-b038-a1de5421b48a'
@@ -16,7 +16,7 @@ third_party_settings:
 id: homepagespecial
 theme: lgd_org_theme
 region: content_bottom
-weight: 0
+weight: -18
 provider: null
 plugin: 'block_content:e1f85d82-9e41-42e5-b038-a1de5421b48a'
 settings:

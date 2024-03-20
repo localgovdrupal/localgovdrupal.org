@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_link.localgov_link_style
     - field.field.paragraph.localgov_link.localgov_title
     - field.field.paragraph.localgov_link.localgov_url
     - paragraphs.paragraphs_type.localgov_link
@@ -13,6 +14,12 @@ targetEntityType: paragraph
 bundle: localgov_link
 mode: default
 content:
+  localgov_link_style:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   localgov_title:
     type: string_textfield
     weight: 0
