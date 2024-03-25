@@ -7,6 +7,7 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_banner_secondary
   module:
     - media_library
+    - media_library_edit
 _core:
   default_config_hash: wUDV2PG5ho0Wot1IeBQK66AHjGYAHkzPqWMJgLWMS_g
 id: paragraph.localgov_banner_secondary.default
@@ -20,7 +21,9 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
 hidden:
   created: true
   status: true

@@ -9,6 +9,7 @@ dependencies:
   module:
     - link
     - media_library
+    - media_library_edit
 id: paragraph.image_link.default
 targetEntityType: paragraph
 bundle: image_link
@@ -20,7 +21,9 @@ content:
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   localgov_link:
     type: link_default
     weight: 1
