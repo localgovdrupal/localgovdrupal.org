@@ -14,7 +14,7 @@ libraries:
   - lgd_org_theme/fact-box
   - lgd_org_theme/image-with-caption
   - lgd_org_theme/link-and-summary
-  - lgd_org_theme/menu
+  #- lgd_org_theme/menu
   - lgd_org_theme/banner
   - lgd_org_theme/text
   - lgd_org_theme/overrides
@@ -27,6 +27,8 @@ libraries:
   - lgd_org_theme/submenu
 
 libraries-extend:
+  localgov_base/menu-main:
+    - lgd_org_theme/menu
   localgov_base/directories:
     - lgd_org_theme/directories
   localgov_base/callout-box:

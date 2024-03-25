@@ -135,11 +135,11 @@
 }
 
 @media screen and (min-width: 70rem) {
-  .lgd-region--breadcrumb > .lgd-container,
+  /*.lgd-region--breadcrumb > .lgd-container,
   #main-content .lgd-container {
     padding-left: 70px;
     padding-right: 70px;
-  }
+  }*/
   .path-frontpage #main-content .lgd-container {
     padding-left: 0;
     padding-right: 0;

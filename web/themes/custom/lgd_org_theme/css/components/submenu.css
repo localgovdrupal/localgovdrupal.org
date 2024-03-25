@@ -1,44 +1,46 @@
-.block-localgov-subsite-navigation .menu li {
+
+aside .menu li {
   display: inline-block;
   font-size: var(--font-size-large);
   line-height: 1.4;
+  /*margin-bottom: var(--spacing-smaller);*/
+}
+
+aside .menu li a {
+  display: inline-block;
   margin-bottom: var(--spacing-smaller);
 }
 
-.block-localgov-subsite-navigation .menu li a {
-  display: inline-block;
-}
-
-.block-localgov-subsite-navigation .menu {
+aside .menu {
   padding-left: 0;
 }
 
-.block-localgov-subsite-navigation > .menu {
+aside > .menu {
   text-align: center;
   padding: 2rem 0 1rem;
 }
 
 @media screen and (min-width: 48rem) {
-  .block-localgov-subsite-navigation .menu {
+  aside .menu {
     text-align: left;
     padding: 0;
   }
-  .block-localgov-subsite-navigation > .menu > li > a {
+  aside > .menu > li > a {
     margin-bottom: var(--spacing-large);
   }
 }
 
-.block-localgov-subsite-navigation > .menu > li {
+aside > .menu > li {
   margin-bottom: var(--spacing);
   display: block;
 }
 
 
-.block-localgov-subsite-navigation > .menu > li > a:hover {
+aside > .menu > li > a:hover {
   text-decoration: underline;
 }
 
-.block-localgov-subsite-navigation > .menu li .menu-item--active-trail,
+aside > .menu li .menu-item--active-trail,
 .is-active {
   font-weight: 600;
 }
