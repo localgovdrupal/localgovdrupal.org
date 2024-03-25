@@ -1,0 +1,38 @@
+uuid: addf5b68-84e4-420f-b41c-70f4aefb2f7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_page_banner
+    - node.type.localgov_page
+    - paragraphs.paragraphs_type.localgov_banner_primary
+    - paragraphs.paragraphs_type.localgov_banner_secondary
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: XcQDaScNOBKIUzT1pdhpeJZgmD4p6_q0XxP9NX9iX_s
+id: node.localgov_page.localgov_page_banner
+field_name: localgov_page_banner
+entity_type: node
+bundle: localgov_page
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      localgov_banner_primary: localgov_banner_primary
+      localgov_banner_secondary: localgov_banner_secondary
+    negate: 0
+    target_bundles_drag_drop:
+      localgov_banner_primary:
+        weight: 0
+        enabled: true
+      localgov_banner_secondary:
+        weight: 1
+        enabled: true
+field_type: entity_reference_revisions

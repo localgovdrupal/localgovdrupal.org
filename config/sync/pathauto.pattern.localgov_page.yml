@@ -1,0 +1,24 @@
+uuid: 80f92fa6-8281-4f6f-be1d-97206a0c2a21
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: TtsjaMtN_bR2nyCLMqYhtpeaiu7bu16Y7FJlAXK3fJ4
+id: localgov_page
+label: Page
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  6fae898d-b922-46d6-b34d-953bb23f9aaf:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 6fae898d-b922-46d6-b34d-953bb23f9aaf
+    context_mapping:
+      node: node
+    bundles:
+      localgov_page: localgov_page
+selection_logic: and
+weight: -5
+relationships: {  }
