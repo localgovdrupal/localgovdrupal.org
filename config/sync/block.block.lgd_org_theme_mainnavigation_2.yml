@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - menu_block
     - node
     - system
@@ -29,7 +30,7 @@ settings:
   depth: 3
   expand_all_items: true
   parent: 'main:'
-  suggestion: main
+  suggestion: main_aside
 visibility:
   request_path:
     id: request_path
