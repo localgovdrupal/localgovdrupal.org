@@ -1,6 +1,6 @@
 uuid: d2425e06-b1b0-459c-bc8e-e94392c01d01
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - node
@@ -11,10 +11,10 @@ label: 'Directory channel'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  bf66b3bc-02c2-48db-9c7e-4f9cb2915bc6:
+  66ee9fe5-9a14-476c-a3d2-4fe6e0c467a9:
     id: 'entity_bundle:node'
     negate: false
-    uuid: bf66b3bc-02c2-48db-9c7e-4f9cb2915bc6
+    uuid: 66ee9fe5-9a14-476c-a3d2-4fe6e0c467a9
     context_mapping:
       node: node
     bundles:

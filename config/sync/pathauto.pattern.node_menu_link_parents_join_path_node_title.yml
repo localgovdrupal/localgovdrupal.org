@@ -1,0 +1,29 @@
+uuid: ec42aa0b-dc85-4c4d-b7be-84b67626c3f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_menu_link_parents_join_path_node_title
+label: 'Menu path'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  b3b3134c-36a5-4bd8-b563-399741287c09:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b3b3134c-36a5-4bd8-b563-399741287c09
+    context_mapping:
+      node: node
+    bundles:
+      localgov_directory: localgov_directory
+      localgov_page: localgov_page
+      localgov_services_landing: localgov_services_landing
+      localgov_services_page: localgov_services_page
+      localgov_services_sublanding: localgov_services_sublanding
+      localgov_step_by_step_overview: localgov_step_by_step_overview
+      localgov_subsites_overview: localgov_subsites_overview
+      localgov_subsites_page: localgov_subsites_page
+selection_logic: and
+weight: -5
+relationships: {  }
