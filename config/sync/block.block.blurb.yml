@@ -10,7 +10,7 @@ dependencies:
 id: blurb
 theme: lgd_org_theme
 region: banner
-weight: -16
+weight: -19
 provider: null
 plugin: lgd_org_blocks_blocks_2
 settings:
@@ -18,7 +18,7 @@ settings:
   label: Blurb
   label_display: '0'
   provider: lgd_org_blocks
-  content: 'LocalGov Drupal is a publicly owned asset that delivers a better digital experience for citizens, improves service outcomes, and saves money.'
+  content: 'Deliver a better digital experience for citizens, improve service outcomes, and save your council money with LocalGov Drupal.'
 visibility:
   request_path:
     id: request_path

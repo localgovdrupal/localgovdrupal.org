@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.main
   module:
-    - block_class
     - menu_block
     - node
     - system

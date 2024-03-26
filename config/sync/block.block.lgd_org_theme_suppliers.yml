@@ -1,27 +1,22 @@
-uuid: 6986d572-666c-40af-828a-b36ff71c40bd
+uuid: 2e477efc-4860-4413-a94d-a7935d5c55c9
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:big_numbers:a6654184-6156-4508-9260-1743758388dc'
+    - 'block_content:big_numbers:06a445fd-ccf0-4a1f-9027-8005f1f5dda4'
   module:
-    - block_class
     - block_content
     - system
   theme:
     - lgd_org_theme
-third_party_settings:
-  block_class:
-    classes: lgd-org-big-numbers
-    replaced_id: lgd-suppliers
 id: lgd_org_theme_suppliers
 theme: lgd_org_theme
 region: banner
-weight: 0
+weight: -17
 provider: null
-plugin: 'block_content:a6654184-6156-4508-9260-1743758388dc'
+plugin: 'block_content:06a445fd-ccf0-4a1f-9027-8005f1f5dda4'
 settings:
-  id: 'block_content:a6654184-6156-4508-9260-1743758388dc'
+  id: 'block_content:06a445fd-ccf0-4a1f-9027-8005f1f5dda4'
   label: Suppliers
   label_display: '0'
   provider: block_content

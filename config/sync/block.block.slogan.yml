@@ -9,7 +9,7 @@ dependencies:
 id: slogan
 theme: lgd_org_theme
 region: banner
-weight: -17
+weight: -16
 provider: null
 plugin: lgd_org_blocks_blocks
 settings:

@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.main
   module:
-    - block_class
     - system
   theme:
     - lgd_org_theme
