@@ -1,0 +1,21 @@
+uuid: 04e173d8-dd41-4fe4-880c-733e64cde2aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - disclosure_nav
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_disclosurenav
+theme: lgd_org_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: disclosure_nav
+settings:
+  id: disclosure_nav
+  label: 'Disclosure nav'
+  label_display: '0'
+  provider: disclosure_nav
+  example: 'Hello world!'
+visibility: {  }
