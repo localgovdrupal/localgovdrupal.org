@@ -6,7 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: vjPNusFwUdOlsp5K-TBYMbGuts8HCowmEvo5H2KSAmU
 name: Page
