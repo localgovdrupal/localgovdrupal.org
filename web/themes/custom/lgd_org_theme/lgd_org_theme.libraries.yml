@@ -135,3 +135,9 @@ featured-teasers:
   css:
     theme:
       css/components/featured-teasers.css: {}
+
+disclosure-nav:
+  css:
+    theme:
+      css/components/disclosure-nav.css: {}
+

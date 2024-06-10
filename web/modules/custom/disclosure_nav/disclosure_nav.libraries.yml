@@ -1,0 +1,9 @@
+tree:
+  css:
+    theme:
+      css/disclosure-nav.css: {}
+  js:
+    js/disclosure-nav.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

@@ -1,0 +1,18 @@
+<?php
+
+
+function disclosure_nav_theme($existing, $type, $theme, $path) {
+  $return = [];
+
+  $return['disclosure_nav'] = [
+    'variables' => [
+      'items' => [],
+      'menu_name' => '',
+      'attributes' => [],
+    ],
+  ];
+
+  return $return;
+}
+
+

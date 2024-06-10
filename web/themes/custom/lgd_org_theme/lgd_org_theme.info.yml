@@ -41,6 +41,8 @@ libraries-extend:
     - lgd_org_theme/page-sections
   localgov_base/featured-teasers:
     - lgd_org_theme/featured-teasers
+  disclosure_nav/tree:
+    - lgd_org_theme/disclosure-nav
 
 ckeditor5-stylesheets:
   - css/ckeditor.css

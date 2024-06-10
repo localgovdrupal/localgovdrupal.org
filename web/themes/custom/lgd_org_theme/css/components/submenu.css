@@ -1,24 +1,33 @@
 
-aside .menu li {
-  display: inline-block;
-  font-size: var(--font-size-large);
-  line-height: 1.4;
-  /*margin-bottom: var(--spacing-smaller);*/
+.sidebar .lgd-region__inner > nav {
+  padding: 1.5rem;
+  background: rgba(255, 180, 161, 0.11);
 }
 
-aside .menu li a {
-  display: inline-block;
-  margin-bottom: var(--spacing-smaller);
-}
-
-aside .menu {
-  padding-left: 0;
+aside > * {
+  max-width: 21rem;
 }
 
 aside > .menu {
   text-align: center;
   padding: 2rem 0 1rem;
 }
+
+aside .menu li {
+  display: inline-block;
+  font-size: var(--font-size-large);
+  line-height: 1.4;
+  margin-left: 0;
+  /*margin-bottom: var(--spacing-smaller);*/
+}
+
+aside .menu li a {
+  display: inline-block;
+  margin-bottom: var(--spacing-smaller);
+  text-decoration: none;
+}
+
+
 
 @media screen and (min-width: 48rem) {
   aside .menu {
@@ -43,4 +52,27 @@ aside > .menu > li > a:hover {
 aside > .menu li .menu-item--active-trail,
 .is-active {
   font-weight: 600;
+}
+
+
+aside .menu--main > .menu-item--active-trail a {
+  background-color: inherit;
+}
+aside .menu--main > .menu-item--active-trail > a {
+  /*background-color: inherit;*/
+  font-weight: bold;
+  /*border-color: red;*/
+}
+
+
+aside .menu ul {
+  margin-left: 1rem;
+  /*border-left: 2px solid orange;*/
+  /*padding-left: 1rem;*/
+}
+
+aside .menu--sub-menu a {
+  border-left: 2px solid orange;
+  padding-left: 1rem;
+  display: inline-block;
 }

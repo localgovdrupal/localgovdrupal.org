@@ -1,0 +1,5 @@
+name: 'Disclosure nav'
+type: module
+description: 'Provides an implementation the W3C WAI navigation pattern.'
+package: Custom
+core_version_requirement: ^10
