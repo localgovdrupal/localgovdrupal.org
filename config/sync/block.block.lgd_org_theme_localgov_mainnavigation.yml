@@ -1,6 +1,6 @@
 uuid: ca106d1e-53a8-4591-899e-03a793fe98a9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main

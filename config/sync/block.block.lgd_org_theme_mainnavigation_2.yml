@@ -30,7 +30,9 @@ settings:
   depth: 3
   expand_all_items: true
   parent: 'main:'
+  render_parent: false
   suggestion: main_aside
+  hide_on_nonactive: false
 visibility:
   request_path:
     id: request_path
