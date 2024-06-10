@@ -1,0 +1,34 @@
+uuid: 9d7c5e05-2073-48f0-becb-00ad92e808d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text_and_link:357afbcc-2566-4735-bd0e-e7f41c122dfc'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - lgd_org_theme
+third_party_settings:
+  block_class:
+    classes: block-homepage--intro
+id: lgd_org_theme_newblurb
+theme: lgd_org_theme
+region: banner
+weight: -19
+provider: null
+plugin: 'block_content:357afbcc-2566-4735-bd0e-e7f41c122dfc'
+settings:
+  id: 'block_content:357afbcc-2566-4735-bd0e-e7f41c122dfc'
+  label: 'New blurb'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
