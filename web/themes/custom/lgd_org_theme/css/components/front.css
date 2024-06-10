@@ -37,12 +37,13 @@
 .path-frontpage .pull-out-quote__content:before {
   content: '';
   background: url("../../assets/images/quoteoutline.svg") no-repeat 0 50% ;
-  height: clamp(140px, 25vw, 200px);
-  width: clamp(176px, 25vw, 253px);
+  height: clamp(120px, 25vw, 120px);
+  width: clamp(150px, 25vw, 150px);
   display: inline-block;
   background-size: 100%;
   margin-right: var(--spacing);
-  /*width: 44PX;*/
+  /*width: 44PX;
+  height: 60px;*/
   margin-bottom: 1rem;
   background-size: contain;
   opacity: 0.7;
