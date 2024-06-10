@@ -51,7 +51,7 @@
         {{ link(item.title, item.url, { 'class': link_classes }) }}
         {% if item.below %}
           {% set sub_menu_id = item.title|clean_class %}
-          <button aria-label="More {{ item.title }} pages" aria-expanded="false" aria-controls="{{ sub_menu_id }}"></button>
+          <button aria-label="{{ item.title }} submenu" aria-expanded="false" aria-controls="{{ sub_menu_id }}"></button>
           {{ menus.menu_links(item.below, attributes, menu_level + 1, sub_menu_id) }}
         {% endif %}
       </li>
