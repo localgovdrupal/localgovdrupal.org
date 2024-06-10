@@ -2,6 +2,8 @@
   background-color: var(--color-sahara);
   padding: var(--spacing-small);
   border: 1px solid var(--color-bittersweet);
+  /*width: 100vw;
+  margin-left: -5vw;*/
 }
 
 @media screen and (min-width: 60rem) {
@@ -14,8 +16,11 @@
 
 .lgd-header {
   padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
-  padding-bottom: 0;
+  /*padding-bottom: 0*/
   background-color: var(--color-section-header-bg);
+  @media screen and (min-width: 60rem) {
+    padding-bottom: 0;
+  }
 }
 
 .lgd-header__inner {

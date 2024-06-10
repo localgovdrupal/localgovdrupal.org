@@ -68,9 +68,9 @@
     grid-gap: 48px 64px;
     grid-template-columns: repeat(6, 1fr);
   }
-  .lgd-region--content-top {
+  /*.lgd-region--content-top {
     margin-bottom: calc(var(--spacing)*4);
-  }
+  }*/
 }
 
 /* Layout the blocks in that fancy section.  */

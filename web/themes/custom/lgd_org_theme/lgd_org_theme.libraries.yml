@@ -141,3 +141,7 @@ disclosure-nav:
     theme:
       css/components/disclosure-nav.css: {}
 
+page-title:
+  css:
+    theme:
+      css/components/page-title.css: {}

@@ -57,3 +57,18 @@
     width: calc(100%);
   }
 }
+
+main .lgd-row__one-third {
+  max-width: 21rem;
+}
+
+main .lgd-row__two-thirds + .lgd-row__one-third {
+  margin-top: 1rem;
+  padding-top: var(--spacing-larger);
+
+  @media screen and (min-width: 48rem)  {
+
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

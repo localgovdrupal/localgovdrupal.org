@@ -67,3 +67,31 @@
 .disclosure-nav .is-active + button:hover {
   background-color: rgba(255, 247, 206, 1);
 }
+
+/* Overrides for mobile */
+
+.disclosure-nav {
+  display: block;
+}
+
+.disclosure-nav ul {
+  /*z-index: initial;*/
+  position: relative;
+}
+
+.disclosure-nav > li {
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 60rem) {
+  .disclosure-nav {
+    display: flex;
+  }
+  .disclosure-nav ul {
+    /*z-index: 9;*/
+    position: absolute;
+  }
+  .disclosure-nav > li {
+    flex-wrap: nowrap;
+  }
+}

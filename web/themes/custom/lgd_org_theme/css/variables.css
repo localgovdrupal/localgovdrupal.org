@@ -32,13 +32,14 @@
 body {
 
   /* Widths and Spacing */
-  --width-extra-large: 102.5rem; /* 1640px */
+  --width-extra-large: 100rem; /* 1600px */
   --width-large: 60rem;
   --width-medium: 48rem;
   --width-small: 30rem;
-  --width-container: calc(var(--width-extra-large) - 100px);
+  --width-container: calc(var(--width-extra-large) - 70px); /* The header at max-width */
+  --width-big-container: calc(var(--width-extra-large) - 180px);
   --width-medium-container: calc(var(--width-extra-large) - 210px);
-  --width-small-container: calc(var(--width-extra-large) - 350px);
+  --width-small-container: calc(var(--width-extra-large) - 320px);
 
   --width-restricted-width-section: var(--width-medium);
   --spacing-smallest: 0.25rem;
@@ -71,6 +72,9 @@ body {
   --color-melrose: #D4DDFF;
   --color-bittersweet: #FFB4A1;
   --color-dark-blue: #004459;
+
+  --color-bittersweet-lightest: #fff7f5;
+  --color-bittersweet-darker: #FF8262;
 
   /*
     Grey Scale
