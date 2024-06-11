@@ -1,4 +1,17 @@
+.views-row {
+  padding-bottom: var(--spacing-larger);
+}
+
 .views-row + .views-row {
   border-top: 1px solid var(--color-grey-medium);
   padding-top: var(--spacing-larger);
+}
+
+.views-row .lgd-teaser__image  {
+  /*display: flex;*/
+  align-content: center;
+}
+
+.views-row .lgd-teaser__image img {
+  width: initial;
 }
