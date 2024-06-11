@@ -26,6 +26,7 @@ libraries:
   - lgd_org_theme/views
   - lgd_org_theme/tables
   - lgd_org_theme/submenu
+  - lgd_org_theme/mmenu
 
 libraries-extend:
   #localgov_base/menu-main:
@@ -55,10 +56,11 @@ ckeditor5-stylesheets:
 regions:
   tabs: "Tabs"
   header: "Header"
-  search: "Search"
-  mobile_search: "Mobile search"
+  #search: "Search"
+  #mobile_search: "Mobile search"
   primary_menu: "Primary menu"
-  secondary_menu: "Secondary menu"
+  mobile_toggles: "Mobile toggles"
+  #secondary_menu: "Secondary menu"
   banner: "Banner"
   breadcrumb: "Breadcrumb"
   messages: "Messages"

@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 h1 {
   /*font-family: var(--font-primary);*/
   font-weight: 700;

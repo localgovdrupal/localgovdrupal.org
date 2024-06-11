@@ -16,7 +16,7 @@
 							- the secondary region on all screen sizes (region where we expect
 								the services menu will be positioned).
 						#}
-						<div class="lgd-header__toggles">
+						{#<div class="lgd-header__toggles">
 							{% if has_secondary_menu %}
 								<button
 									class="lgd-header__toggle lgd-header__toggle--secondary"
@@ -42,27 +42,30 @@
 									<span class="lgd-header__toggle-icon lgd-header__toggle-icon--primary"></span>
 								</button>
 							{% endif %}
-						</div>
+						</div>#}
+            {% if page.mobile_toggles %}
+              {{ page.mobile_toggles }}
+            {% endif %}
 
-						{% if has_primary_menu or has_search %}
+						{% if has_primary_menu %}
 							<div id="lgd-header__nav--primary" class="lgd-header__nav lgd-header__nav--primary">
 								{% if has_primary_menu %}
 									{{ page.primary_menu }}
 								{% endif %}
 
-								{% if has_search %}
+								{#{% if has_search %}
 									{{ page.search }}
-								{% endif %}
+								{% endif %}#}
 							</div>
 						{% endif %}
 
           {% endif %}
 
-					{% if has_secondary_menu %}
+					{#{% if has_secondary_menu %}
 						<div id="lgd-header__nav--secondary" class="lgd-header__nav lgd-header__nav--secondary">
 							{{ page.secondary_menu }}
 						</div>
-					{% endif %}
+					{% endif %}#}
 
 				</div>
 			</div>

@@ -145,3 +145,8 @@ page-title:
   css:
     theme:
       css/components/page-title.css: {}
+
+mmenu:
+  css:
+    theme:
+      css/components/mmenu.css: {}

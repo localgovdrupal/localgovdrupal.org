@@ -32,6 +32,7 @@
         "drupal/purge": "3.x-dev@dev",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/redirect": "^1.6",
+        "drupal/responsive_menu": "^4.4",
         "drupal/stage_file_proxy": "^2.0",
         "drupal/upgrade_status": "^4.0",
         "drupal/varnish_purge": "^2.1",
