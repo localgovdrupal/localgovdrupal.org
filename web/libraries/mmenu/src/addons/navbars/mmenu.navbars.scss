@@ -1,0 +1,29 @@
+.mm-navbars {
+    flex-shrink: 0;
+
+    .mm-navbar {
+        position: relative;
+        padding-top: 0;
+        border-bottom: none;
+    }
+
+    &--top {
+        border-bottom: 1px solid var(--mm-color-border);
+
+        //  safe area inset for iPhones
+        .mm-navbar:first-child {
+            padding-top: env(safe-area-inset-top);
+        }
+    }
+
+    &--bottom {
+        border-top: 1px solid var(--mm-color-border);
+
+        //  safe area inset for iPhones
+        .mm-navbar:last-child {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    }
+}
+
+@import "breadcrumbs", "tabs";

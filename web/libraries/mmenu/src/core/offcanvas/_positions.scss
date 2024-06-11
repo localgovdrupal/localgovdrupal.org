@@ -1,0 +1,130 @@
+.mm-menu {
+    /** Horizontal transform */
+    --mm-translate-horizontal: 0;
+
+    /** Vertical transform */
+    --mm-translate-vertical: 0;
+
+    &--position {
+        // Left + Right
+        &-left,
+        &-left-front {
+            right: auto;
+        }
+
+        &-right,
+        &-right-front {
+            left: auto;
+        }
+
+        &-left,
+        &-right,
+        &-left-front,
+        &-right-front {
+            width: clamp(
+                var(--mm-min-size),
+                var(--mm-size),
+                var(--mm-max-size)
+            );
+        }
+
+        &-left-front {
+            --mm-translate-horizontal: -100%;
+        }
+
+        &-right-front {
+            --mm-translate-horizontal: 100%;
+        }
+
+        // Top + Bottom
+        &-top {
+            bottom: auto;
+        }
+
+        &-bottom {
+            top: auto;
+        }
+
+        &-top,
+        &-bottom {
+            width: 100%;
+            height: clamp(
+                var(--mm-min-size),
+                var(--mm-size),
+                var(--mm-max-size)
+            );
+        }
+
+        &-top {
+            --mm-translate-vertical: -100%;
+        }
+
+        &-bottom {
+            --mm-translate-vertical: 100%;
+        }
+
+        // All in front
+        &-left-front,
+        &-right-front,
+        &-top,
+        &-bottom {
+            z-index: 2;
+
+            transform: translate3d(
+                var(--mm-translate-horizontal),
+                var(--mm-translate-vertical),
+                0
+            );
+
+            transition-property: transform;
+
+            &.mm-menu--opened {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+}
+
+.mm-wrapper {
+    &--position {
+        // Left + right
+        &-left {
+            --mm-translate-horizontal: clamp(
+                var(--mm-min-size),
+                var(--mm-size),
+                var(--mm-max-size)
+            );
+        }
+
+        &-right {
+            --mm-translate-horizontal: clamp(
+                calc(-1 * var(--mm-max-size)),
+                calc(-1 * var(--mm-size)),
+                calc(-1 * var(--mm-min-size))
+            );
+        }
+
+        &-left,
+        &-right {
+            .mm-slideout {
+                transform: translate3d(0, 0, 0);
+            }
+
+            &.mm-wrapper--opened .mm-slideout {
+                transform: translate3d(var(--mm-translate-horizontal), 0, 0);
+            }
+        }
+
+        // All in front
+        &-left-front,
+        &-right-front,
+        &-top,
+        &-bottom {
+            .mm-wrapper__blocker {
+                z-index: 1;
+            }
+        }
+    }
+
+    // TODO RTL met position-right werkt niet
+}

@@ -1,0 +1,63 @@
+$mm_module: ".mm-btn";
+
+#{$mm_module} {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: v.$btnSize;
+    padding: 0;
+
+    &--next,
+    [dir="rtl"] &--prev {
+        --mm-btn-rotate: 135deg;
+    }
+
+    &--prev,
+    [dir="rtl"] &--next {
+        --mm-btn-rotate: -45deg;
+    }
+
+    &--prev:before,
+    &--next:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        box-sizing: border-box;
+        border: 2px solid var(--mm-color-icon);
+        border-bottom: none;
+        border-right: none;
+        transform: rotate(var(--mm-btn-rotate));
+    }
+
+    &--prev:before {
+        inset-inline-start: v.$listitemIndent + 3; // left, right for RTL
+    }
+
+    &--next:after {
+        inset-inline-end: v.$listitemIndent + 3; // right, left for RTL
+    }
+
+    &--close {
+        &:before {
+            content: '\d7';
+            font-size: 150%;
+        }
+    }
+
+    // <button> reset
+    &reset {
+        padding: 0;
+        background: none;
+        border: none;
+
+        cursor: pointer;
+    }
+}

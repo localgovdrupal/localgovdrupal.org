@@ -1,0 +1,32 @@
+@use "../../mixins" as m;
+@use "../../variables" as v;
+
+.mm-navbar__breadcrumbs {
+    @include m.ellipsis;
+
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 v.$panelPadding;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline-end: 6px; // right, left for RTL
+    }
+
+    > a {
+        text-decoration: underline;
+    }
+
+    &:not(:last-child) {
+        padding-inline-end: 0; // right, left for RTL
+    }
+
+    .mm-btn:not(.mm-hidden) + & {
+        padding-inline-start: 0; // left, right for RTL
+    }
+}

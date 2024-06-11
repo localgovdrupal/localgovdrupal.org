@@ -1,0 +1,27 @@
+:root {
+    --mm-blocker-visibility-delay: #{v.$transDr};
+    --mm-blocker-opacity-delay: 0s;
+}
+
+.mm-blocker {
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+
+    opacity: 0;
+    background: var(--mm-color-background);
+
+    transition: 
+        bottom 0s v.$transFn var(--mm-blocker-visibility-delay),
+        width v.$transDr v.$transFn,
+        opacity v.$transDr v.$transFn var(--mm-blocker-opacity-delay),
+        transform v.$transDr v.$transFn;
+
+    &:focus-visible {
+        opacity: 0.75;
+    }
+}

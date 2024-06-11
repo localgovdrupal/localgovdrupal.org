@@ -1,0 +1,47 @@
+@use "../../variables";
+
+$mm_module: ".mm-sectionindexer";
+
+:root {
+    --mm-sectionindexer-size: 20px;
+}
+
+#{$mm_module} {
+    background: inherit;
+    text-align: center;
+    font-size: 12px;
+
+    box-sizing: border-box;
+    width: var(--mm-sectionindexer-size);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    inset-inline-end: calc(-1 *  var(--mm-sectionindexer-size)); // right, left for RTL
+    z-index: 5;
+
+    transition-property: inset-inline-end; // right, left for RTL
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    a {
+        color: var(--mm-color-text-dimmed);
+        line-height: 1;
+        text-decoration: none;
+        display: block;
+    }
+
+    ~ .mm-panel {
+        padding-inline-end: 0; // right, left for RTL
+    }
+
+    &--active {
+        right: 0;
+
+        ~ .mm-panel {
+            padding-inline-end: var(--mm-sectionindexer-size); // right, left for RTL
+        }
+    }
+}

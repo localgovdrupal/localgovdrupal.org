@@ -1,0 +1,12 @@
+$mm_module: ".mm-counter";
+
+#{$mm_module} {
+    display: block;
+    padding-inline-start: 20px; // left, right for RTL
+    float: right;
+    color: var(--mm-color-text-dimmed);
+
+    [dir="rtl"] & {
+        float: left;
+    }
+}
