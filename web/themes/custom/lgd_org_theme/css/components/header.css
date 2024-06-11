@@ -166,10 +166,6 @@
   }
 }
 
-.path-frontpage header {
-  padding-bottom: var(--spacing);
-}
-
 .branding__item--logo a {
   transition: none;
 }

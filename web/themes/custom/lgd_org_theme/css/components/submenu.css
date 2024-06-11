@@ -1,6 +1,9 @@
 
+
+
 .sidebar .block-localgov-subsites > ul.menu,
-.sidebar .lgd-region__inner > nav {
+.sidebar .lgd-region__inner > nav,
+.sidebar .block-views-blocklocalgov-step-by-step-navigation-steps {
   padding: 1.5rem;
   background: var(--color-bittersweet-lightest);
   border: 1px solid var(--color-bittersweet-darker);

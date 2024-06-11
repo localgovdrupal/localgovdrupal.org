@@ -62,3 +62,28 @@ form#views-exposed-form-localgov-directory-channel-node-embed-in-a-search-block 
   margin-bottom: var(--spacing-largest);
 }
 
+
+.webform-multiple-add {
+  display: flex;
+  /*justify-content: end;*/
+  align-items: start;
+  padding-top: var(--spacing);
+  font-size: var(--font-size-small);
+}
+
+.webform-multiple-add input,
+button.tabledrag-toggle-weight {
+  font-size: var(--font-size-small);
+  background-color: var(--color_white);
+}
+
+a.tabledrag-handle .handle {
+  height: 25px;
+}
+
+input.button--primary {
+  background-color: var(--color-accent);
+  font-weight: 600;
+  font-size: var(--font-size-large);
+}
+

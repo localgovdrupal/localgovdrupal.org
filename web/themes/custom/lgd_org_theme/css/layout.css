@@ -246,3 +246,13 @@
 .layout__region > * + *{
   margin-bottom: var(--vertical-rhythm-spacing);
 }
+
+
+/*.field--name-localgov-subsites-content {
+  max-width: calc((100% / 3 * 2) - var(--spacing));
+}*/
+
+body:not(.path-frontpage) .paragraph--type--localgov-quote > *,
+body:not(.path-frontpage) .paragraph--type--localgov-text > *{
+  max-width: 910px;
+}

@@ -163,3 +163,9 @@ th {
   max-width: 50%;
   float: right;
 }
+
+
+.lgd-prev-next__link {
+  font-size: var(--font-size-medium);
+}
+
