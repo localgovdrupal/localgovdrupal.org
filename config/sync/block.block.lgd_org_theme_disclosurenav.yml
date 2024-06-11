@@ -9,7 +9,7 @@ dependencies:
 id: lgd_org_theme_disclosurenav
 theme: lgd_org_theme
 region: primary_menu
-weight: 0
+weight: -19
 provider: null
 plugin: disclosure_nav
 settings:

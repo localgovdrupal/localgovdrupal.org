@@ -45,7 +45,6 @@ module:
   geolocation: 0
   geolocation_google_maps: 0
   gin_login: 0
-  gin_toolbar: 0
   gtm: 0
   help: 0
   history: 0
@@ -124,6 +123,7 @@ module:
   rabbit_hole: 0
   redirect: 0
   responsive_image: 0
+  responsive_menu: 0
   rest: 0
   rh_taxonomy: 0
   role_delegation: 0

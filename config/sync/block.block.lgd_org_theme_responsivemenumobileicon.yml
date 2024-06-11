@@ -1,0 +1,20 @@
+uuid: 2c29dfcc-bfa9-4feb-a4bf-2b38f0e36ab3
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_responsivemenumobileicon
+theme: lgd_org_theme
+region: mobile_toggles
+weight: -20
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

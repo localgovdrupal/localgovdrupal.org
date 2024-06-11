@@ -2,10 +2,7 @@ uuid: 2e477efc-4860-4413-a94d-a7935d5c55c9
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:big_numbers:06a445fd-ccf0-4a1f-9027-8005f1f5dda4'
   module:
-    - block_content
     - system
   theme:
     - lgd_org_theme
