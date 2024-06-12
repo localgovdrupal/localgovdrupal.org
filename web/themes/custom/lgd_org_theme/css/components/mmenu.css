@@ -10,6 +10,11 @@
 
 }
 
+.mm-menu--offcanvas {
+  position: absolute;
+  /*z-index: 0;*/
+}
+
 @media screen and (min-width: 60rem)   {
   .responsive-menu-toggle-wrapper {
     display: none;
