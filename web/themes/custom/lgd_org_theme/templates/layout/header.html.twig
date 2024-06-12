@@ -9,7 +9,13 @@
 
 					{{ page.header }}
 
-          {% if has_primary_menu or has_search or has_secondary_menu %}
+
+                <div id="lgd-header__nav--secondary" class="lgd-header__nav lgd-header__nav--secondary">
+                  {{ page.secondary_menu }}
+                </div>
+
+
+          {% if has_primary_menu  %}
 						{#
 							The "Header Toggles" section sets a number of buttons to activate
 							- the primary menu/search regions on small screens, and
@@ -61,11 +67,7 @@
 
           {% endif %}
 
-					{#{% if has_secondary_menu %}
-						<div id="lgd-header__nav--secondary" class="lgd-header__nav lgd-header__nav--secondary">
-							{{ page.secondary_menu }}
-						</div>
-					{% endif %}#}
+
 
 				</div>
 			</div>

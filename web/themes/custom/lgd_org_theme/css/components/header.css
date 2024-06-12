@@ -25,7 +25,7 @@
 
 .lgd-header__inner {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   /*display: flex;
   flex-wrap: wrap;*/
   align-items: flex-start;
@@ -69,14 +69,26 @@
 
 @media screen and (min-width: 60rem) {
   .lgd-header__nav--primary {
+    grid-column: 1 / span 2;
     display: block;
     width: auto;
   }
 }
 
+.region-secondary-menu {
+  margin-top: 0;
+}
+
 .lgd-header__nav--secondary {
-  display: none;
+  @media screen and (min-width: 60rem) {
+  display: block;
   width: 100%;
+  margin: 0;
+  }
+}
+
+.lgd-region__inner--secondary-menu {
+  padding: 0;
 }
 
 .lgd-header__nav--active {

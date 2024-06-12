@@ -160,6 +160,8 @@ body {
   --header-services-button-color-hover: var(--color-black);
   --header-logo-width: 12.93rem;
 
+  --secondary-menu-bg-color-second: transparent;
+
   /* Footer Items */
   /*--color-section-pre-footer-bg: rgba(255, 130, 98, 0.70);*/
   --color-section-pre-footer-bg: rgba(0, 68, 89, 0.7);
