@@ -85,5 +85,11 @@ input.button--primary {
   background-color: var(--color-accent);
   font-weight: 600;
   font-size: var(--font-size-large);
+  &:hover {
+    background-color: var(--color-bittersweet);
+  }
 }
 
+input.button--primary:hover {
+  background-color: var(--color-bittersweet);
+}

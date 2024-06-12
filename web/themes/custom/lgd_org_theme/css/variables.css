@@ -178,7 +178,7 @@ body {
   --button-icon-color-hover: var(--color-black);
   --button-border-color: var(--color-melrose);
   --button-bg-color: var(--color-melrose);
-  --button-bg-color-hover: var(--color-white);
+  --button-bg-color-hover: var(--color-accent);
   --button-font-family: var(--font-primary);
   --button-border-radius: 0;
 

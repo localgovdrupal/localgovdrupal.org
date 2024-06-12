@@ -4,7 +4,7 @@
 
 .disclosure-nav > li > a {
 
-  padding: var(--spacing) var(--spacing) !important;
+  padding: var(--spacing-small) var(--spacing-small) !important;
   display: inline-block !important;
   letter-spacing: -1px;
   font-size: clamp(1.25rem, 2vw, 2rem);
@@ -12,7 +12,17 @@
   text-decoration: none;
 }
 
-.disclosure-nav button, .disclosure-nav .main-link {
+.disclosure-nav > li button {
+  padding: var(--spacing-small) var(--spacing-small);
+}
+
+.disclosure-nav > li + li  {
+  margin-left: var(--spacing-small);
+}
+
+
+.disclosure-nav button,
+.disclosure-nav .main-link {
   border-right-color: transparent;
 }
 
