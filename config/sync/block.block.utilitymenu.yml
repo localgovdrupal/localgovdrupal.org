@@ -10,7 +10,7 @@ dependencies:
     - lgd_org_theme
 id: utilitymenu
 theme: lgd_org_theme
-region: primary_menu
+region: secondary_menu
 weight: -20
 provider: null
 plugin: 'system_menu_block:utility-menu'
