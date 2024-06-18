@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_link.field_link
     - field.field.paragraph.localgov_link.localgov_link_style
     - field.field.paragraph.localgov_link.localgov_title
     - field.field.paragraph.localgov_link.localgov_url
     - paragraphs.paragraphs_type.localgov_link
   module:
+    - link
     - options
 _core:
   default_config_hash: Ch5SL-Nn8onmVWzqR90OaxIwwMGLAy3lnqfmBVqW2Qs
@@ -16,6 +18,18 @@ targetEntityType: paragraph
 bundle: localgov_link
 mode: default
 content:
+  field_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
   localgov_link_style:
     type: list_default
     label: hidden
@@ -31,13 +45,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  localgov_url:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
+  localgov_url: true
   search_api_excerpt: true
