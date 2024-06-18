@@ -45,6 +45,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  localgov_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
-  localgov_url: true
   search_api_excerpt: true

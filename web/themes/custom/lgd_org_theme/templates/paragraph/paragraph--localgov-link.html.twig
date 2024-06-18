@@ -58,7 +58,7 @@
 
 <div{{ attributes.addClass(classes) }}>
 
-  {% if paragraph.field_link %}
+  {% if paragraph.field_link.0 or paragraph.localgov_url.0 %}
     <div class="link-wrapper">
       {#{% include "@localgov_base/includes/icons/icon.html.twig" with {
           icon_name: title_icon,
@@ -66,16 +66,20 @@
         }
       %}#}
       <div class="link-content">
+      {% if paragraph.field_link.0 %}
         <a href="{{ content.field_link.0['#url_title'] }}">
+        {% elseif paragraph.localgov_url.0 %}
+        <a href="{{ content.localgov_url.0 }}">
+        {% endif %}
           {{ content.localgov_title.0 }}
         </a>
       </div>
     </div>
   {% endif %}
 
-  {% if content|without('field_link','localgov_title','localgov_link_style') %}
+  {% if content|without('field_link','localgov_title','localgov_link_style', 'localgov_url') %}
     <div class="link-block__content">
-      {{ content|without('field_link','localgov_title','localgov_link_style') }}
+      {{ content|without('field_link','localgov_title','localgov_link_style', 'localgov_url') }}
     </div>
   {% endif %}
 
