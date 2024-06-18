@@ -2,10 +2,10 @@ _core:
   default_config_hash: 7oNO5Ci1XbGo6pXiGAo8fY7GXlxy41RhL7lGyt2OXYw
 horizontal_menu: main
 horizontal_depth: 9
-off_canvas_menus: main
+off_canvas_menus: 'main, utility-menu'
 horizontal_wrapping_element: nav
 horizontal_breakpoint: wide
-horizontal_media_query: '(min-width: 960px)'
+horizontal_media_query: 'all and (min-width: 851px)'
 include_css: false
 off_canvas_position: right
 off_canvas_theme: theme-white
@@ -17,7 +17,7 @@ horizontal_superfish_speed_out: 100
 horizontal_superfish_hoverintent: true
 drag: false
 breakpoint_css_filepath: 'public://css'
-use_breakpoint: false
+use_breakpoint: true
 allow_admin: false
 wrapper_admin: true
 wrapper_theme: false
