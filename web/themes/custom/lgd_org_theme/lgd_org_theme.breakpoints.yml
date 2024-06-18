@@ -6,13 +6,13 @@ lgd_org_theme.mobile:
     - 1x
 lgd_org_theme.narrow:
   label: narrow
-  mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
+  mediaQuery: 'all and (min-width: 560px) and (max-width: 959px)'
   weight: 1
   multipliers:
     - 1x
 lgd_org_theme.wide:
   label: wide
-  mediaQuery: 'all and (min-width: 851px)'
+  mediaQuery: 'all and (min-width: 960px)'
   weight: 2
   multipliers:
     - 1x

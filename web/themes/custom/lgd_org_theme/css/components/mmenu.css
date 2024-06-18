@@ -15,6 +15,10 @@
   /*z-index: 0;*/
 }
 
+.responsive-menu-toggle-wrapper.responsive-menu-toggle {
+  display: block;
+}
+
 @media screen and (min-width: 60rem)   {
   .responsive-menu-toggle-wrapper {
     display: none;
