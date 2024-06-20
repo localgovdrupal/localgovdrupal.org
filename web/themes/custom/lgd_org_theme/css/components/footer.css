@@ -1,16 +1,39 @@
+.lgd-footer {
+  margin-top: 1rem;
+  margin-top: clamp(1rem, 10vw, var(--section-spacing-vertical-footer));
+}
+
+.lgd-footer__footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: clamp(1rem, 10vw, var(--spacing));
+  padding-bottom: clamp(1rem, 10vw, var(--spacing));
+  color: var(--color-footer-text);
+  background-color: var(--color-section-footer-bg);
+}
+
 .lgd-org--newsletter.button-style-link a {
   --button-bg-color: var(--color-white);
   font-family: var(--font-secondary);
   font-size: clamp(1.2rem, 4vw, var(--font-size-larger));
   font-weight: 500;
+  padding: 1rem 2.5rem;
   padding-block: clamp(1rem, 2vw, 1.5rem);
   padding-inline: 2.5rem;
   border-radius: 50px;
+  &:focus {
+    outline-color: var(--color-white) !important;
+  }
 }
 
 .lgd-footer__pre-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-pre-footer));
+  padding-bottom: clamp(1rem, 10vw, var(--section-spacing-vertical-pre-footer));
   position: relative;
 }
+
 .lgd-footer__pre-footer:before {
   background-image: url(../../assets/images/footer-illustration.png);
   content: "";
@@ -32,6 +55,7 @@
 }
 
 .lgd-region__inner--footer {
+  padding-top: var(--spacing-large);
   padding-top: clamp(var(--spacing-large), 2vw, var(--spacing-larger));
   text-align: center;
   @media screen and (min-width: 48rem) {
@@ -54,14 +78,6 @@
   text-align: center;
   font-size: var(--font-size-medium);
 }
-
-/*.lgd-footer__post-footer .lgd-row__one-third {
-  margin-bottom: var(--spacing-largest);
-  text-align: center;
-  @media screen and (min-width: 48rem) {
-    margin-bottom: 0;
-  }
-}*/
 
 @media screen and (min-width: 48rem) {
   .lgd-footer__post-footer .lgd-row__one-third:first-of-type {
@@ -86,16 +102,16 @@
 }
 
 footer a:hover {
-  /*font-weight: bold;*/
-  /*background-color: white;*/
   text-decoration-style: double;
-
 }
 
 
 .lgd-org-social ul {
-    display: inline-flex;
+    display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .lgd-org-social ul li + li {
@@ -105,25 +121,32 @@ footer a:hover {
 .lgd-org-social img {
   width: 3.8rem;
   height: 3.8rem;
-  /*margin-bottom: 0.5rem;*/
   margin-left: auto;
   margin-right: auto;
 }
 
 .lgd-org-social a {
-  /*text-decoration: none;*/
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
+  min-width: 2rem;
+  display: block;
 }
 
 .block-lgd-org-odc {
   width: fit-content;
 }
 
+.block-lgd-org-odc a{
+  display: block;
+}
+
+.lgd-org-funded-by a:hover,
+.block-lgd-org-odc a:hover {
+  background: var(--color-focus);
+}
 
 .lgd-org-funded-by {
   display: flex;
-
   justify-content: center;
   align-items: end;
   @media screen and (min-width: 48rem) {

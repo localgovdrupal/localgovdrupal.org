@@ -1,9 +1,13 @@
+.skip-link.visually-hidden.focusable:active,
+.skip-link.visually-hidden.focusable:focus {
+  position: absolute !important;
+  z-index: 9;
+}
+
 .lgd-region__inner--primary-menu {
   background-color: var(--color-sahara);
   padding: var(--spacing-small);
   border: 1px solid var(--color-bittersweet);
-  /*width: 100vw;
-  margin-left: -5vw;*/
 }
 
 @media screen and (min-width: 60rem) {
@@ -15,8 +19,8 @@
 }
 
 .lgd-header {
+  padding-top: 1rem;
   padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
-  /*padding-bottom: 0*/
   background-color: var(--color-section-header-bg);
   @media screen and (min-width: 60rem) {
     padding-bottom: 0;
@@ -26,8 +30,6 @@
 .lgd-header__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /*display: flex;
-  flex-wrap: wrap;*/
   align-items: flex-start;
   justify-content: initial;
   justify-items: end;
@@ -38,7 +40,6 @@
 
 .lgd-header .lgd-region--header {
   justify-self: flex-start;
-  /*margin-right: calc(var(--spacing) * 2);*/
 }
 
 .lgd-region--mobile-toggles .padding-horizontal {
@@ -104,6 +105,7 @@
 
 .branding {
   display: flex;
+  gap: var(--spacing-smaller);
   gap: clamp(var(--spacing-smaller), 10vw, var(--spacing-small));
   font-family: var(--font-secondary);
   font-size: clamp(var(--font-size-small), 2vw, var(--font-size-large));
@@ -114,6 +116,7 @@
 .branding__item--slogan {
   max-width: var(--header-logo-width);
   border-left: 1px solid var(--color-black);
+  padding-left: var(--spacing-smaller);
   padding-left: clamp(var(--spacing-smaller), 10vw, var(--spacing-small));
 }
 
@@ -125,7 +128,6 @@
 @media screen and (min-width: 60rem) {
   .branding__item--logo {
     width: var(--header-logo-width);
-    /*margin-top: var(--spacing-small);*/
   }
 }
 

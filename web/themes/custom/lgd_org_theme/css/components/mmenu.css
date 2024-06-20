@@ -81,9 +81,6 @@
 
 .lgd-header__toggle-icon::after {
   display: inline-block;
-  /*margin-top: calc(var(--font-size-larger) * -0.1);
-  margin-left: calc(var(--spacing) / 2);*/
-  /*content: "\203A";*/
   transition: var(--transition-time);
   transform: rotate(90deg);
   font-size: var(--font-size-larger);

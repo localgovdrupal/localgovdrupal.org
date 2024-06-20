@@ -1,6 +1,3 @@
-
-
-
 .sidebar .block-localgov-subsites > ul.menu,
 .sidebar .lgd-region__inner > nav,
 .sidebar .block-views-blocklocalgov-step-by-step-navigation-steps {
@@ -10,46 +7,30 @@
   border-left: 0;
 }
 
-/*aside > * {
-  max-width: 21rem;
-}*/
-
-/*aside > .menu {
-  text-align: center;
-  padding: 2rem 0 1rem;
-}*/
-
 aside .menu li {
   display: inline-block;
   font-size: var(--font-size-large);
   line-height: 1.4;
   margin-left: 0;
-  /*margin-bottom: var(--spacing-smaller);*/
 }
 
 aside h2 a {
   text-decoration: none;
   font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 aside .menu li a {
   display: inline-block;
   padding-block: var(--spacing-small);
-  /*margin-bottom: var(--spacing-smaller);*/
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-
-
-/*@media screen and (min-width: 48rem) {
-  aside .menu {
-    text-align: left;
-    padding: 0;
-  }
-  aside > .menu > li > a {
-    margin-bottom: var(--spacing-large);
-  }
-}*/
 
 aside > .menu > li {
   margin-bottom: var(--spacing);
@@ -57,27 +38,8 @@ aside > .menu > li {
 }
 
 
-/*aside > .menu > li > a:hover {
-  text-decoration: underline;
-}*/
-
-/*aside > .menu li .menu-item--active-trail,
-.is-active {
-  font-weight: 600;
-}*/
-
-
-/*aside .menu--main > .menu-item--active-trail a {
-  background-color: inherit;
-}*/
-
-
-
 aside .menu {
   padding-left: 0
-  /*margin-left: 1rem;*/
-  /*border-left: 2px solid orange;*/
-  /*padding-left: 1rem;*/
 }
 
 aside .menu ul {
@@ -99,15 +61,11 @@ aside .menu--sub-menu a {
 
 .block-localgov-subsites .menu .menu .menu-item--active-trail,
 aside .menu--main > .menu-item--active-trail > a {
-  /*background-color: inherit;*/
   font-weight: bold;
   border-color:  var(--color-bittersweet-darker);
 }
 
 .sidebar--second {
-  /*position: relative;*/
   background: white;
   background: linear-gradient(90deg, var(--color-bittersweet-darker) 1px, rgba(255,255,255,1) 1px, rgba(255,255,255,1) 100%);
-
-
 }
