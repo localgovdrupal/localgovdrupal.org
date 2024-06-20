@@ -160,13 +160,8 @@
   letter-spacing: -3px;
   display: block;
   line-height: 100%;
-  /*font-weight: normal;*/
 }
 
 .lgd-org-big-numbers + .lgd-org-big-numbers {
   margin-left: -5%;
-  /*margin-left: -1em;
-  @media screen and (min-width: 48rem) {
-    margin-left: -2rem;
-  }*/
 }

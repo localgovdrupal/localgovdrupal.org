@@ -10,15 +10,19 @@
 .lgd-page-section--padding-top-small {
   padding-top: var(--spacing-small);
 }
+
 .lgd-page-section--padding-top-medium {
   padding-top: var(--spacing);
 }
+
 .lgd-page-section--padding-top-large {
   padding-top: var(--spacing-large);
 }
+
 .lgd-page-section--padding-top-larger {
   padding-top: var(--spacing-larger);
 }
+
 .lgd-page-section--padding-top-largest {
   padding-top: var(--spacing-mega);
 }
@@ -26,19 +30,22 @@
 .lgd-page-section--padding-bottom-small {
   padding-bottom: var(--spacing-small);
 }
+
 .lgd-page-section--padding-bottom-medium {
   padding-bottom: var(--spacing);
 }
+
 .lgd-page-section--padding-bottom-large {
   padding-bottom: var(--spacing-large);
 }
+
 .lgd-page-section--padding-bottom-larger {
   padding-bottom: var(--spacing-larger);
 }
+
 .lgd-page-section--padding-bottom-largest {
   padding-bottom: var(--spacing-mega);
 }
-
 
 .lgd-page-section .layout__region--content > * + * {
   margin-top: var(--spacing-large);
