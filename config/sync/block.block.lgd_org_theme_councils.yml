@@ -1,21 +1,24 @@
-uuid: 0b5fb8ec-d5e5-4824-a72e-63423d22eb3f
+uuid: 489ed0d8-5b68-4052-8e4a-90a872dfa90a
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:big_numbers:badf17ce-8267-41e0-a9f6-19856712a3f8'
   module:
+    - block_content
     - system
   theme:
     - lgd_org_theme
 id: lgd_org_theme_councils
 theme: lgd_org_theme
 region: banner
-weight: -18
+weight: -19
 provider: null
-plugin: 'block_content:ba2caa4f-3b1e-4e82-9f7d-eb573075a7c2'
+plugin: 'block_content:badf17ce-8267-41e0-a9f6-19856712a3f8'
 settings:
-  id: 'block_content:ba2caa4f-3b1e-4e82-9f7d-eb573075a7c2'
+  id: 'block_content:badf17ce-8267-41e0-a9f6-19856712a3f8'
   label: councils
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''
