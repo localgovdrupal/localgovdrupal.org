@@ -1,3 +1,9 @@
+.skip-link.visually-hidden.focusable:active,
+.skip-link.visually-hidden.focusable:focus {
+  position: absolute !important;
+  z-index: 9;
+}
+
 .lgd-region__inner--primary-menu {
   background-color: var(--color-sahara);
   padding: var(--spacing-small);

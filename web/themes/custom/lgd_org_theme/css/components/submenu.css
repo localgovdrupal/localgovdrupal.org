@@ -10,33 +10,28 @@
   border-left: 0;
 }
 
-/*aside > * {
-  max-width: 21rem;
-}*/
-
-/*aside > .menu {
-  text-align: center;
-  padding: 2rem 0 1rem;
-}*/
-
 aside .menu li {
   display: inline-block;
   font-size: var(--font-size-large);
   line-height: 1.4;
   margin-left: 0;
-  /*margin-bottom: var(--spacing-smaller);*/
 }
 
 aside h2 a {
   text-decoration: none;
   font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 aside .menu li a {
   display: inline-block;
   padding-block: var(--spacing-small);
-  /*margin-bottom: var(--spacing-smaller);*/
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 

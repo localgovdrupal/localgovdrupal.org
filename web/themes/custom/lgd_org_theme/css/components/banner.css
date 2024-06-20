@@ -5,11 +5,6 @@
   padding-top: var(--spacing-large);
   color: var(--color-white);
   position: relative;
-  /*background-image: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  /*background: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg), lightgray 50% / cover no-repeat;
-  background:  cover no-repeat var(--color-dark-blue), url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);*/
 }
 
 .lgd-region--banner:before {
@@ -36,10 +31,6 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-}
-
-.path-frontpage .lgd-region--banner {
-  /*padding-bottom: var(--spacing-larger);*/
 }
 
 @media screen and (min-width: 72rem) {
@@ -106,6 +97,9 @@
   margin-top: 1rem;
   &:hover {
     background-color: var(--color-accent);
+  }
+  &:focus {
+    outline-color: var(--color-white) !important;
   }
 }
 
