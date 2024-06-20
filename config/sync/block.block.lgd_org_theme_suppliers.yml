@@ -1,19 +1,22 @@
-uuid: 2e477efc-4860-4413-a94d-a7935d5c55c9
+uuid: f7c7a09f-389f-427a-bafb-4861aa5fe96a
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:big_numbers:2f683767-00ec-4014-8db8-722fd92f8af9'
   module:
+    - block_content
     - system
   theme:
     - lgd_org_theme
 id: lgd_org_theme_suppliers
 theme: lgd_org_theme
 region: banner
-weight: -17
+weight: -18
 provider: null
-plugin: 'block_content:06a445fd-ccf0-4a1f-9027-8005f1f5dda4'
+plugin: 'block_content:2f683767-00ec-4014-8db8-722fd92f8af9'
 settings:
-  id: 'block_content:06a445fd-ccf0-4a1f-9027-8005f1f5dda4'
+  id: 'block_content:2f683767-00ec-4014-8db8-722fd92f8af9'
   label: Suppliers
   label_display: '0'
   provider: block_content

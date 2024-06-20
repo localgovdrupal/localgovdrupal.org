@@ -1,9 +1,9 @@
-uuid: 9d7c5e05-2073-48f0-becb-00ad92e808d9
+uuid: 0f1e3028-c8d7-48aa-a33c-3aba74818627
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:text_and_link:357afbcc-2566-4735-bd0e-e7f41c122dfc'
+    - 'block_content:text_and_link:a18ab9ac-5d58-499b-bb42-a268e3458db8'
   module:
     - block_class
     - block_content
@@ -16,11 +16,11 @@ third_party_settings:
 id: lgd_org_theme_newblurb
 theme: lgd_org_theme
 region: banner
-weight: -19
+weight: -20
 provider: null
-plugin: 'block_content:357afbcc-2566-4735-bd0e-e7f41c122dfc'
+plugin: 'block_content:a18ab9ac-5d58-499b-bb42-a268e3458db8'
 settings:
-  id: 'block_content:357afbcc-2566-4735-bd0e-e7f41c122dfc'
+  id: 'block_content:a18ab9ac-5d58-499b-bb42-a268e3458db8'
   label: 'New blurb'
   label_display: '0'
   provider: block_content
