@@ -1,16 +1,36 @@
+.lgd-footer {
+  margin-top: 1rem;
+  margin-top: clamp(1rem, 10vw, var(--section-spacing-vertical-footer));
+}
+
+.lgd-footer__footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: clamp(1rem, 10vw, var(--spacing));
+  padding-bottom: clamp(1rem, 10vw, var(--spacing));
+  color: var(--color-footer-text);
+  background-color: var(--color-section-footer-bg);
+}
+
 .lgd-org--newsletter.button-style-link a {
   --button-bg-color: var(--color-white);
   font-family: var(--font-secondary);
   font-size: clamp(1.2rem, 4vw, var(--font-size-larger));
   font-weight: 500;
+  padding: 1rem 2.5rem;
   padding-block: clamp(1rem, 2vw, 1.5rem);
   padding-inline: 2.5rem;
   border-radius: 50px;
 }
 
 .lgd-footer__pre-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-pre-footer));
+  padding-bottom: clamp(1rem, 10vw, var(--section-spacing-vertical-pre-footer));
   position: relative;
 }
+
 .lgd-footer__pre-footer:before {
   background-image: url(../../assets/images/footer-illustration.png);
   content: "";
@@ -32,6 +52,7 @@
 }
 
 .lgd-region__inner--footer {
+  padding-top: var(--spacing-large);
   padding-top: clamp(var(--spacing-large), 2vw, var(--spacing-larger));
   text-align: center;
   @media screen and (min-width: 48rem) {

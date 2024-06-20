@@ -95,6 +95,7 @@
   background-color: var(--color-white);
   color: var(--color-black);
   border-radius: 2rem;
+  padding: 10px 20px;
   padding: clamp(10px, 2vw, 1rem) clamp(20px, 2vw, 2.5rem);
   font-size: clamp(1rem,2vw,var(--font-size-largish));
   text-decoration: none;

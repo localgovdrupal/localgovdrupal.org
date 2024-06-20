@@ -15,6 +15,7 @@
 }
 
 .lgd-header {
+  padding-top: 1rem;
   padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-header));
   /*padding-bottom: 0*/
   background-color: var(--color-section-header-bg);
@@ -104,6 +105,7 @@
 
 .branding {
   display: flex;
+  gap: var(--spacing-smaller);
   gap: clamp(var(--spacing-smaller), 10vw, var(--spacing-small));
   font-family: var(--font-secondary);
   font-size: clamp(var(--font-size-small), 2vw, var(--font-size-large));
@@ -114,6 +116,7 @@
 .branding__item--slogan {
   max-width: var(--header-logo-width);
   border-left: 1px solid var(--color-black);
+  padding-left: var(--spacing-smaller);
   padding-left: clamp(var(--spacing-smaller), 10vw, var(--spacing-small));
 }
 
