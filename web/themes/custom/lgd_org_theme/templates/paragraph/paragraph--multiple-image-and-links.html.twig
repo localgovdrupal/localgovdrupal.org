@@ -1,0 +1,30 @@
+
+  {{ attach_library('localgov_base/featured-teasers') }}
+{%
+  set classes = [
+    'multiple-image-links',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {% if heading %}
+    <div class="multiple-image-links__heading">
+      {{ heading }}
+    </div>
+  {% endif %}
+
+  <div class="multiple-image-links__content">
+    {{ content|without('localgov_link') }}
+  </div>
+
+  {% if content.localgov_link %}
+  <div class="multiple-image-links__content--button button-style-link">
+  {{ content.localgov_link }}
+  </div>
+  {% endif %}
+
+</div>

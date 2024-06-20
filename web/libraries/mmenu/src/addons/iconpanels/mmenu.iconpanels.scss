@@ -1,0 +1,41 @@
+:root {
+    --mm-iconpanel-size: 50px;
+}
+
+@for $i from 0 through 4 {
+    .mm-panel--iconpanel-#{$i} {
+        inset-inline-start: calc(
+            #{$i} * var(--mm-iconpanel-size)
+        ); // left, right for RTL
+    }
+}
+
+.mm-panel--iconpanel-first {
+    ~ .mm-panel {
+        inset-inline-start: var(--mm-iconpanel-size); // left, right for RTL
+    }
+}
+
+.mm-menu--iconpanel {
+    // Hide navbars and dividers in parent panels.
+    .mm-panel--parent {
+        .mm-navbar,
+        .mm-divider {
+            opacity: 0;
+        }
+    }
+
+    .mm-panels {
+        > .mm-panel {
+            &--parent {
+                overflow-y: hidden;
+                transform: unset;
+            }
+
+            &:not(.mm-panel--iconpanel-first):not(.mm-panel--iconpanel-0) {
+                border-inline-start-width: 1px; // left, right for RTL
+                border-inline-start-style: solid; // left, right for RTL
+            }
+        }
+    }
+}

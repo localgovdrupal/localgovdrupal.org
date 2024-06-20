@@ -1,0 +1,23 @@
+uuid: d7c7b40c-37a1-4b9f-96a2-b49a7cf74e24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_link
+    - paragraphs.paragraphs_type.multiple_image_and_links
+  module:
+    - link
+id: paragraph.multiple_image_and_links.localgov_link
+field_name: localgov_link
+entity_type: paragraph
+bundle: multiple_image_and_links
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

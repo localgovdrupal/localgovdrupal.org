@@ -1,0 +1,77 @@
+$mm_module: ".mm-menu";
+
+#{$mm_module} {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+    overscroll-behavior: none;
+
+    background: var(--mm-color-background);
+    border-color: var(--mm-color-border);
+    color: var(--mm-color-text);
+    line-height: var(--mm-lineheight);
+
+    -webkit-tap-highlight-color: var(--mm-color-background-emphasis);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    ::placeholder {
+        color: var(--mm-color-text-dimmed);
+    }
+
+    &,
+    * {
+        box-sizing: border-box;
+
+        &:focus,
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    a,
+    button,
+    label {
+        color: inherit;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--mm-color-focusring);
+            outline-offset: -5px;
+        }
+    }
+
+    input,
+    select,
+    textarea {
+        &:focus,
+        &:focus-visible {
+            outline: 2px solid var(--mm-color-focusring);
+            outline-offset: 2px;
+        }
+    }
+
+    a,
+    a:link,
+    a:active,
+    a:visited,
+    a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+}
+

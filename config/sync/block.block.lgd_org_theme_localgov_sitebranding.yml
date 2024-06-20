@@ -11,7 +11,7 @@ _core:
 id: lgd_org_theme_localgov_sitebranding
 theme: lgd_org_theme
 region: header
-weight: 0
+weight: -21
 provider: null
 plugin: system_branding_block
 settings:
@@ -21,5 +21,5 @@ settings:
   provider: system
   use_site_logo: true
   use_site_name: true
-  use_site_slogan: false
+  use_site_slogan: true
 visibility: {  }

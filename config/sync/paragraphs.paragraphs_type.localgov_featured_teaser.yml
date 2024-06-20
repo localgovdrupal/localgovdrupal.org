@@ -1,7 +1,9 @@
 uuid: 7610fd58-450e-42c6-9d28-a14a239ffb72
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 _core:
   default_config_hash: Q7jqlTUhgt_PoWQl9qIcIZQXRpQefT2njKdfHf-7esk
 id: localgov_featured_teaser
@@ -9,4 +11,7 @@ label: 'Featured teaser'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -18,12 +18,12 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_key_facts
     - paragraphs.paragraphs_type.localgov_link_and_summary
     - paragraphs.paragraphs_type.localgov_media_with_text
+    - paragraphs.paragraphs_type.localgov_page_section
     - paragraphs.paragraphs_type.localgov_quote
     - paragraphs.paragraphs_type.localgov_table
     - paragraphs.paragraphs_type.localgov_tabs
     - paragraphs.paragraphs_type.localgov_text
     - paragraphs.paragraphs_type.localgov_video
-    - paragraphs.paragraphs_type.page_section
   module:
     - entity_reference_revisions
 _core:
@@ -43,15 +43,16 @@ settings:
   handler_settings:
     target_bundles:
       localgov_accordion: localgov_accordion
-      localgov_block_view: localgov_block_view
       localgov_box_link: localgov_box_link
       localgov_call_out_box: localgov_call_out_box
       localgov_documents: localgov_documents
       localgov_fact_box: localgov_fact_box
       localgov_featured_teasers: localgov_featured_teasers
       localgov_image: localgov_image
-      localgov_key_contacts: localgov_key_contacts
       localgov_key_facts: localgov_key_facts
+      localgov_block_view: localgov_block_view
+      localgov_box_links_listing: localgov_box_links_listing
+      localgov_key_contacts: localgov_key_contacts
       localgov_link_and_summary: localgov_link_and_summary
       localgov_media_with_text: localgov_media_with_text
       localgov_quote: localgov_quote
@@ -59,18 +60,26 @@ settings:
       localgov_tabs: localgov_tabs
       localgov_text: localgov_text
       localgov_video: localgov_video
-      page_section: page_section
-      localgov_box_links_listing: localgov_box_links_listing
+      localgov_page_section: localgov_page_section
     negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: -55
+        enabled: false
+      image_link:
+        weight: 43
         enabled: false
       localgov_accordion:
         weight: -53
         enabled: true
       localgov_accordion_pane:
         weight: -54
+        enabled: false
+      localgov_banner_primary:
+        weight: 46
+        enabled: false
+      localgov_banner_secondary:
+        weight: 47
         enabled: false
       localgov_block_view:
         weight: -37
@@ -90,15 +99,27 @@ settings:
       localgov_documents:
         weight: -50
         enabled: true
+      localgov_embed_views:
+        weight: 54
+        enabled: false
       localgov_fact_box:
         weight: -49
         enabled: true
+      localgov_featured_campaign:
+        weight: 56
+        enabled: false
+      localgov_featured_subsite:
+        weight: 57
+        enabled: false
       localgov_featured_teaser:
         weight: -29
         enabled: false
       localgov_featured_teasers:
         weight: -48
         enabled: true
+      localgov_ia_block:
+        weight: 60
+        enabled: false
       localgov_image:
         weight: -47
         enabled: true
@@ -114,6 +135,9 @@ settings:
       localgov_key_facts:
         weight: -46
         enabled: true
+      localgov_labelled_icon:
+        weight: 66
+        enabled: false
       localgov_link:
         weight: -36
         enabled: false
@@ -123,9 +147,21 @@ settings:
       localgov_media_with_text:
         weight: -24
         enabled: true
+      localgov_newsroom_teaser:
+        weight: 70
+        enabled: false
+      localgov_numbered_text:
+        weight: 71
+        enabled: false
+      localgov_page_section:
+        weight: 72
+        enabled: true
       localgov_quote:
         weight: -23
         enabled: true
+      localgov_subscribe_panel:
+        weight: 74
+        enabled: false
       localgov_tab_panel:
         weight: -15
         enabled: false
@@ -141,9 +177,12 @@ settings:
       localgov_video:
         weight: -19
         enabled: true
+      multiple_image_and_links:
+        weight: 80
+        enabled: false
       page_section:
         weight: -16
-        enabled: true
+        enabled: false
       topic_list_builder:
         weight: -35
         enabled: false

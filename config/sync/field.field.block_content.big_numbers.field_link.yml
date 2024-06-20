@@ -1,0 +1,23 @@
+uuid: a0596bd6-351a-4fd0-af50-cca642448963
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.big_numbers
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.big_numbers.field_link
+field_name: field_link
+entity_type: block_content
+bundle: big_numbers
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

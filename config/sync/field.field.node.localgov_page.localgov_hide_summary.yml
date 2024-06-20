@@ -1,0 +1,25 @@
+uuid: 215e087e-aa2a-4c80-b8e3-c6247b09295a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_hide_summary
+    - node.type.localgov_page
+_core:
+  default_config_hash: DUoqfKXTGG3Ec8AZ5JW8pq7f91PZxzPsY5uvIm57MQg
+id: node.localgov_page.localgov_hide_summary
+field_name: localgov_hide_summary
+entity_type: node
+bundle: localgov_page
+label: 'Hide summary'
+description: 'Hide the summary field when viewing this page; instead use it only for displays in teasers.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 774b144b-a4b4-423c-baae-ced24279f135
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_heading_level
+    - paragraphs.paragraphs_type.multiple_image_and_links
+  module:
+    - options
+id: paragraph.multiple_image_and_links.localgov_heading_level
+field_name: localgov_heading_level
+entity_type: paragraph
+bundle: multiple_image_and_links
+label: 'Heading level'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,113 @@
+
+
+
+.sidebar .block-localgov-subsites > ul.menu,
+.sidebar .lgd-region__inner > nav,
+.sidebar .block-views-blocklocalgov-step-by-step-navigation-steps {
+  padding: 1.5rem;
+  background: var(--color-bittersweet-lightest);
+  border: 1px solid var(--color-bittersweet-darker);
+  border-left: 0;
+}
+
+/*aside > * {
+  max-width: 21rem;
+}*/
+
+/*aside > .menu {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}*/
+
+aside .menu li {
+  display: inline-block;
+  font-size: var(--font-size-large);
+  line-height: 1.4;
+  margin-left: 0;
+  /*margin-bottom: var(--spacing-smaller);*/
+}
+
+aside h2 a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+aside .menu li a {
+  display: inline-block;
+  padding-block: var(--spacing-small);
+  /*margin-bottom: var(--spacing-smaller);*/
+  text-decoration: none;
+}
+
+
+
+/*@media screen and (min-width: 48rem) {
+  aside .menu {
+    text-align: left;
+    padding: 0;
+  }
+  aside > .menu > li > a {
+    margin-bottom: var(--spacing-large);
+  }
+}*/
+
+aside > .menu > li {
+  margin-bottom: var(--spacing);
+  display: block;
+}
+
+
+/*aside > .menu > li > a:hover {
+  text-decoration: underline;
+}*/
+
+/*aside > .menu li .menu-item--active-trail,
+.is-active {
+  font-weight: 600;
+}*/
+
+
+/*aside .menu--main > .menu-item--active-trail a {
+  background-color: inherit;
+}*/
+
+
+
+aside .menu {
+  padding-left: 0
+  /*margin-left: 1rem;*/
+  /*border-left: 2px solid orange;*/
+  /*padding-left: 1rem;*/
+}
+
+aside .menu ul {
+  padding-left: 0.5rem;
+}
+
+aside .menu .is-active {
+  font-weight: bold;
+}
+
+.block-localgov-subsites .menu .menu .menu-item--active-trail,
+aside .menu .menu a,
+aside .menu--sub-menu a {
+  border-left: 4px solid rgba(219, 219, 219, 1);
+  padding: calc(var(--spacing-smallest)/2);
+  padding-left: 1rem;
+  display: inline-block;
+}
+
+.block-localgov-subsites .menu .menu .menu-item--active-trail,
+aside .menu--main > .menu-item--active-trail > a {
+  /*background-color: inherit;*/
+  font-weight: bold;
+  border-color:  var(--color-bittersweet-darker);
+}
+
+.sidebar--second {
+  /*position: relative;*/
+  background: white;
+  background: linear-gradient(90deg, var(--color-bittersweet-darker) 1px, rgba(255,255,255,1) 1px, rgba(255,255,255,1) 100%);
+
+
+}

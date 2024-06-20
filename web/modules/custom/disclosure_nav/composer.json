@@ -1,0 +1,11 @@
+{
+    "name": "agile-collective/disclosure_nav",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "James Hall",
+            "email": "james@agile.coop"
+        }
+    ],
+    "require": {}
+}

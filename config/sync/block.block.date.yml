@@ -12,7 +12,7 @@ dependencies:
 id: date
 theme: lgd_org_theme
 region: sidebar_first
-weight: -7
+weight: -16
 provider: null
 plugin: 'facet_block:localgov_news_date'
 settings:

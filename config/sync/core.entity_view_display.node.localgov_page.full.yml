@@ -1,0 +1,35 @@
+uuid: 04da9a77-cca0-443f-8d1b-8acc94cafc28
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.localgov_page.localgov_hide_summary
+    - field.field.node.localgov_page.localgov_page_banner
+    - field.field.node.localgov_page.localgov_page_summary
+    - field.field.node.localgov_page.localgov_paragraph_content
+    - node.type.localgov_page
+  module:
+    - user
+_core:
+  default_config_hash: v2fQAVXQyHcPoW0CsrLt_KwbwuQz1616hmelGnOveos
+id: node.localgov_page.full
+targetEntityType: node
+bundle: localgov_page
+mode: full
+content:
+  localgov_page_banner:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive_banner
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true
+  localgov_hide_summary: true
+  localgov_page_summary: true
+  localgov_paragraph_content: true
+  search_api_excerpt: true

@@ -1,0 +1,52 @@
+@use "../../variables";
+
+.mm-menu--selected {
+    &-hover,
+    &-parent {
+        .mm-listitem__text,
+        .mm-listitem__btn {
+            transition-property: background-color;
+        }
+    }
+
+    @media (hover: hover) {
+        &-hover {
+            .mm-listview:hover > .mm-listitem--selected:not(:hover) {
+                > .mm-listitem__text {
+                    background: none;
+                }
+            }
+            .mm-listitem__text,
+            .mm-listitem__btn {
+                &:hover {
+                    background: var(--mm-color-background-emphasis);
+                }
+            }
+        }
+    }
+
+    &-parent {
+        .mm-listitem__text,
+        .mm-listitem__btn {
+            transition-delay: variables.$transDr * 0.5;
+
+            @media (hover: hover) {
+                &:hover {
+                    transition-delay: 0s;
+                }
+            }
+        }
+
+        .mm-panel--parent .mm-listitem:not(.mm-listitem--selected-parent) {
+            > .mm-listitem__text {
+                background: none;
+            }
+        }
+        .mm-listitem--selected-parent {
+            > .mm-listitem__text,
+            > .mm-listitem__btn {
+                background: var(--mm-color-background-emphasis);
+            }
+        }
+    }
+}

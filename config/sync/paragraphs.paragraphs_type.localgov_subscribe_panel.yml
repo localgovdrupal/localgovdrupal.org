@@ -1,7 +1,9 @@
 uuid: 12e9fb07-3618-4e56-a79f-4676b85083fe
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 _core:
   default_config_hash: eSgksMFIaUwSGbZkVCk4c-x9FVCJsFWVp9JpWuv3GSg
 id: localgov_subscribe_panel
@@ -9,4 +11,7 @@ label: 'Subscribe panel'
 icon_uuid: null
 icon_default: null
 description: 'Email and social media subscription panel.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

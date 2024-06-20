@@ -3,40 +3,45 @@
 */
 
 .menu--main > .menu-item a {
-  padding: 0;
-}
-
-
- @media screen and (min-width: 48rem) {
-  .menu--main > .menu-item {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  /*padding: 0;*/
+  color: var(--color-black);
+  @media screen and (min-width: 48rem) {
+    color: var(--color-black) !important;
   }
 }
 
 
+ /*@media screen and (min-width: 48rem) {
+  .lgd-region--primary-menu .menu--main > .menu-item {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}*/
+
+
 /* Main menu styling */
 
-.menu--main > .menu-item a {
+/*.lgd-region--primary-menu .menu--main > .menu-item a {
   padding: 0 !important;
   display: inline-block !important;
-  letter-spacing: -0.7px;
-}
-
-.menu--main > .menu-item + .menu-item {
-  margin-left: 0 !important;
-}
-
-header .menu a{
+  letter-spacing: -1px;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-weight: 600;
   text-decoration: none;
 }
+
+.lgd-region--primary-menu .menu--main > .menu-item + .menu-item {
+  margin-left: 0 !important;
+}*/
+
+
 
 /* Mobile toggle styling  */
 
 .lgd-header__toggle {
-  background: url(../../assets/images/menu-polygon.svg) 0 0 no-repeat;
-  width: 85px;
-  height: 85px !important;
+  /*background: url(../../assets/images/menu-polygon.svg) 0 0 no-repeat;*/
+  width: 60px;
+  height: 60px !important;
   background-size: contain;
   flex-wrap: wrap;
   text-align: center;
@@ -65,18 +70,22 @@ header .menu a{
 /* Utility menu styling */
 
 .menu--utility-menu {
-  margin-bottom: var(--spacing-larger);
+  display: flex;
+  margin-bottom: 3rem;
   padding-left: 0;
   list-style: none;
+  justify-content: flex-end;
+  font-size: var(--font-size-large);
+  font-weight: 500;
 }
 
 .menu--utility-menu,
-.menu--main  {
+.lgd-region--primary-menu .menu--main  {
   width: 100%;
 }
 
 .menu--utility-menu li,
-.menu--main li {
+.lgd-region--primary-menu .menu--main li {
   border-bottom: 1px solid var(--color-black);
   padding: var(--spacing-smaller);
   display: block;
@@ -88,120 +97,94 @@ header .menu a{
 /* Override the base theme to keep the vertical menu until 60rem */
 
 @media screen and (min-width: 48rem){
-  .lgd-region--primary-menu .menu--main {
+  /*.lgd-region--primary-menu .menu--main {
       display: block !important;
-  }
-  .lgd-region--primary-menu .menu--main > .menu-item a {
+  }*/
+  /*.lgd-region--primary-menu .menu--main > .menu-item a {
     color: var(--color-black);
-  }
-  .lgd-region--primary-menu {
+  }*/
+  /*.lgd-region--primary-menu {
     width: 100%;
-  }
+  }*/
 }
 
-@media screen and (min-width: 60rem){
+/*@media screen and (min-width: 60rem){
   .lgd-region--primary-menu .menu--main {
       display: flex !important;
   }
   .navigation--main {
     margin-right: -1rem;
   }
-}
+}*/
 
 @media screen and (min-width: 60rem) {
-  .menu--main > .menu-item a {
+  .lgd-region--primary-menu .menu--main > .menu-item a {
     padding: var(--spacing-smallest) var(--spacing-smallest) !important;
   }
 
-  .menu--utility-menu {
-    display: flex;
-    margin-bottom: 2rem;
-    padding-left: 0;
-    list-style: none;
-    justify-content: flex-end;
-    font-size: var(--font-size-large);
-    font-weight: 500;
-  }
-  .menu--main li {
+
+
+  /*.menu--utility-menu a{
+    text-decoration: underline;
+  }*/
+
+  /*.lgd-region--primary-menu .menu--main li {
     border: none;
     padding: 0;
-  }
+  }*/
 
   .menu--utility-menu li {
     padding: 10px;
     border: none;
   }
 
-  .menu--utility-menu li:nth-last-of-type(1),
-  .menu--utility-menu li:nth-last-of-type(2),
-  .menu--utility-menu li:nth-last-of-type(3){
-    border: 1px solid black;
-  }
 
-  .menu--utility-menu li:nth-last-of-type(3),
-  .menu--utility-menu li:nth-last-of-type(2) {
-    border-right: 0;
-  }
-  .menu--utility-menu li:nth-last-of-type(1),
-  .menu--utility-menu li:nth-last-of-type(2) {
-    border-left: 0;
-  }
-  .menu--utility-menu li:nth-last-of-type(3) {
-    margin-left: var(--spacing);
-    padding-left: 20px;
-  }
-  .menu--utility-menu li:nth-last-of-type(1) {
-    padding-right: 20px;
-  }
-  .menu--main {
-    font-size: 21px;
-    font-weight: 600;
-  }
-
-  .menu--main > .menu-item a {
+  /*.lgd-region--primary-menu .menu--main > .menu-item a {
     padding: var(--spacing-smaller) var(--spacing-small) !important;
   }
 
-  .menu--main > .menu-item + .menu-item {
+  .lgd-region--primary-menu .menu--main > .menu-item + .menu-item {
     margin-left: 0 !important;
-  }
+  }*/
 
   /* Hover and active trail styles */
 
   .menu--utility-menu > .menu-item--active-trail a,
   .menu--utility-menu > .menu-item a:focus,
   .menu--utility-menu > .menu-item a:hover,
-  .menu--main > .menu-item--active-trail a,
-  .menu--main > .menu-item a:focus,
-  .menu--main > .menu-item a:hover {
+  /*.lgd-region--primary-menu .menu--main > .menu-item--active-trail a,
+  .lgd-region--primary-menu .menu--main > .menu-item a:focus,*/
+  .lgd-region--primary-menu .menu--main > .menu-item a:hover {
     color: var(--color-black);
     background-color: transparent !important;
     border-bottom: 4px solid var(--color-black) !important;
   }
 
-  .menu--main > .menu-item a {
+  /*.lgd-region--primary-menu .menu--main > .menu-item a {
     border-bottom: 4px solid transparent !important;
-  }
+  }*/
 
 }
 
-@media screen and (min-width: 72rem) {
-  .menu--main {
-    font-size: 1.5625rem;
-  }
-}
+
 
 /* Hover and active trail styles */
 
 .menu--utility-menu > .menu-item--active-trail a,
-.menu--utility-menu > .menu-item a:focus,
-.menu--utility-menu > .menu-item a:hover,
-.menu--main > .menu-item--active-trail a,
-.menu--main > .menu-item a:focus,
-.menu--main > .menu-item a:hover {
-  color: var(--color-black);
-  background-color: transparent !important;
+.lgd-region--primary-menu .menu--main > .menu-item--active-trail a {
   font-weight: 600;
 }
 
 
+/*.menu--utility-menu a[href="https://github.com/localgovdrupal/localgov"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.menu--utility-menu a[href="https://github.com/localgovdrupal/localgov"]:after {
+  content: url(/themes/custom/lgd_org_theme/assets/images/github.svg);
+}*/

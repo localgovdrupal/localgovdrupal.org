@@ -1,0 +1,21 @@
+uuid: a4dc7661-6551-435a-a2ab-f129859df46e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_link_style
+    - paragraphs.paragraphs_type.localgov_link
+  module:
+    - options
+id: paragraph.localgov_link.localgov_link_style
+field_name: localgov_link_style
+entity_type: paragraph
+bundle: localgov_link
+label: 'Link style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

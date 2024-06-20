@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_media_with_text.field_links
     - field.field.paragraph.localgov_media_with_text.localgov_heading_level
     - field.field.paragraph.localgov_media_with_text.localgov_link
     - field.field.paragraph.localgov_media_with_text.localgov_media_item
@@ -13,6 +14,7 @@ dependencies:
     - field.field.paragraph.localgov_media_with_text.localgov_title
     - paragraphs.paragraphs_type.localgov_media_with_text
   module:
+    - field_formatter_class
     - link
     - text
 _core:
@@ -22,6 +24,18 @@ targetEntityType: paragraph
 bundle: localgov_media_with_text
 mode: default
 content:
+  field_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
   localgov_link:
     type: link
     label: hidden
@@ -38,9 +52,11 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: freestyle
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 0
     region: content
   localgov_text:
@@ -56,3 +72,4 @@ hidden:
   localgov_media_with_text_style: true
   localgov_opens_in_a_new_window: true
   localgov_title: true
+  search_api_excerpt: true

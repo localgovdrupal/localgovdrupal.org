@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_featured_teasers.localgov_body_text
     - field.field.paragraph.localgov_featured_teasers.localgov_heading_level
     - field.field.paragraph.localgov_featured_teasers.localgov_paragraphs
     - field.field.paragraph.localgov_featured_teasers.localgov_title
     - paragraphs.paragraphs_type.localgov_featured_teasers
   module:
     - entity_reference_revisions
+    - text
 _core:
   default_config_hash: c-wRT2KnelLA2DlSq3qG0HJJpXHUnoH4TbD2oarv51c
 id: paragraph.localgov_featured_teasers.default
@@ -16,6 +18,13 @@ targetEntityType: paragraph
 bundle: localgov_featured_teasers
 mode: default
 content:
+  localgov_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
   localgov_paragraphs:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -23,8 +32,9 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   localgov_heading_level: true
   localgov_title: true
+  search_api_excerpt: true

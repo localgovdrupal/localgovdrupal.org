@@ -1,0 +1,20 @@
+uuid: 67da9865-791a-4635-9cac-36033c188323
+langcode: en
+status: true
+dependencies:
+  module:
+    - lgd_org_blocks
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_odclogo
+theme: lgd_org_theme
+region: footer
+weight: -16
+provider: null
+plugin: lgd_org_odc
+settings:
+  id: lgd_org_odc
+  label: 'ODC logo'
+  label_display: '0'
+  provider: lgd_org_blocks
+visibility: {  }

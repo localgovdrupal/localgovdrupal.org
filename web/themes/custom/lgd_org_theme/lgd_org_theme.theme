@@ -56,3 +56,39 @@ function lgd_org_theme_theme_suggestions_block_alter(array &$suggestions, array 
     $suggestions[] = 'block__' . $bundle;
   }
 }
+
+
+/**
+ * Implements hook_preprocess_HOOK() for hook_preprocess_paragraph().
+ */
+function lgd_org_theme_paragraphs_preprocess_paragraph(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['paragraph'];
+
+  if ($paragraph->bundle() === 'localgov_link') {
+    $variables['attributes']['class'][] = 'new-class';
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function lgd_org_theme_preprocess_page(&$variables) {
+  $variables['#attached']['drupalSettings']['responsive_menu']['custom'] = [
+  'options' => [
+    //  'navbar' => [
+    //    'add' => TRUE,
+    //    'title' => 'This is a test',
+    //],
+    "offCanvas" => [
+      "position"=> "right",
+    ]
+  ],
+  //'config' => [
+  //  'classNames' => [
+  //    'selected' => 'my-custom-menu--active-trail',
+  //  ],
+  //]
+  ];
+}

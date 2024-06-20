@@ -1,0 +1,29 @@
+uuid: 09b0b535-7755-44bc-94e8-d9e12729dbc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_image
+    - media.type.image
+    - paragraphs.paragraphs_type.image_link
+id: paragraph.image_link.localgov_image
+field_name: localgov_image
+entity_type: paragraph
+bundle: image_link
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

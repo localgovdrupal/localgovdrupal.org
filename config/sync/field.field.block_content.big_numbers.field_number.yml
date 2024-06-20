@@ -1,0 +1,23 @@
+uuid: b2d61441-344a-472a-a85c-cd49b81ffbc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.big_numbers
+    - field.storage.block_content.field_number
+id: block_content.big_numbers.field_number
+field_name: field_number
+entity_type: block_content
+bundle: big_numbers
+label: Number
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

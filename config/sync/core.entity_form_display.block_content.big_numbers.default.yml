@@ -1,0 +1,51 @@
+uuid: 1f785b89-8970-43fa-914b-99d7e0b00182
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.big_numbers
+    - field.field.block_content.big_numbers.body
+    - field.field.block_content.big_numbers.field_link
+    - field.field.block_content.big_numbers.field_number
+  module:
+    - link
+    - text
+id: block_content.big_numbers.default
+targetEntityType: block_content
+bundle: big_numbers
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 1
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 26
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_number:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

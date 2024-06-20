@@ -1,0 +1,24 @@
+
+
+
+<header class="lgd-header">
+	<div class="lgd-container">
+    <div class="branding__item branding__item--logo">
+      <a href="/" rel="home" class="branding__logo">
+        <img src="/themes/custom/lgd_org_theme/logo.svg" alt="LocalGov Drupal">
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="main" id="main-content">
+  <div class="lgd-container">
+    {% if title %}
+      <h1> {{ title }}</h1>
+    {% endif %}
+    <div class="content">
+      {{ page.content }}
+    </div>
+    </div>
+  </main>
+

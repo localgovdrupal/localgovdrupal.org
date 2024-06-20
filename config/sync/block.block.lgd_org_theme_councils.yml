@@ -1,0 +1,27 @@
+uuid: 0b5fb8ec-d5e5-4824-a72e-63423d22eb3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_councils
+theme: lgd_org_theme
+region: banner
+weight: -18
+provider: null
+plugin: 'block_content:ba2caa4f-3b1e-4e82-9f7d-eb573075a7c2'
+settings:
+  id: 'block_content:ba2caa4f-3b1e-4e82-9f7d-eb573075a7c2'
+  label: councils
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

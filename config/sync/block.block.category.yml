@@ -12,7 +12,7 @@ dependencies:
 id: category
 theme: lgd_org_theme
 region: sidebar_first
-weight: -8
+weight: -17
 provider: null
 plugin: 'facet_block:localgov_news_category'
 settings:

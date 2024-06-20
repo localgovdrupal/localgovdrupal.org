@@ -1,0 +1,107 @@
+.disclosure-nav {
+  background-color: transparent !important;
+}
+
+.disclosure-nav > li > a {
+
+  padding: var(--spacing) var(--spacing-small) !important;
+  display: inline-block !important;
+  letter-spacing: -1px;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.disclosure-nav > li button {
+  padding: var(--spacing) var(--spacing-small);
+}
+
+.disclosure-nav > li + li  {
+  margin-left: var(--spacing-small);
+}
+
+
+.disclosure-nav button,
+.disclosure-nav .main-link {
+  border-right-color: transparent;
+}
+
+
+.disclosure-nav button:focus,
+.disclosure-nav .main-link:focus {
+  border-color: black;
+  outline: 1px solid black;
+  position: relative;
+}
+
+.disclosure-nav a:hover,
+.disclosure-nav button:hover,
+.disclosure-nav button[aria-expanded="true"]{
+  background-color: rgba(255, 247, 206, 1);
+  color: black;
+}
+
+.disclosure-nav button:hover::after,
+.disclosure-nav button[aria-expanded="true"]::after {
+  border-color: black;
+}
+
+.disclosure-nav ul {
+  background: rgba(255, 130, 98, 1);
+  border: 0;
+  width: 100%;
+}
+
+.disclosure-nav ul a {
+  font-size: 1.2rem ;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 180, 161, 1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.disclosure-nav ul a:hover {
+  background-color: var(--color-accent);
+}
+
+.disclosure-nav ul a:focus {
+  outline: 1px solid black;
+  background-color: rgba(255, 247, 206, 1) ;
+}
+
+.disclosure-nav > li > .is-active,
+.disclosure-nav .is-active + button {
+  background-color: rgba(255, 247, 206, 0.6) ;
+}
+
+.disclosure-nav .is-active + button:hover {
+  background-color: rgba(255, 247, 206, 1);
+}
+
+/* Overrides for mobile */
+
+.disclosure-nav {
+  display: block;
+}
+
+.disclosure-nav ul {
+  /*z-index: initial;*/
+  position: relative;
+}
+
+.disclosure-nav > li {
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 60rem) {
+  .disclosure-nav {
+    display: flex;
+  }
+  .disclosure-nav ul {
+    /*z-index: 9;*/
+    position: absolute;
+  }
+  .disclosure-nav > li {
+    flex-wrap: nowrap;
+  }
+}

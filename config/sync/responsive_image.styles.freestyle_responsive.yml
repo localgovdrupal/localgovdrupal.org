@@ -3,26 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.freestyle_lg
     - image.style.freestyle_md
     - image.style.freestyle_sm
-    - image.style.freestyle_xl
     - image.style.freestyle_xs
   module:
     - localgov_media
 id: freestyle_responsive
 label: 'Freestyle Responsive'
 image_style_mappings:
-  -
-    image_mapping_type: image_style
-    image_mapping: freestyle_xl
-    breakpoint_id: localgov_media.bootstrap4_xl_1200px
-    multiplier: 1x
-  -
-    image_mapping_type: image_style
-    image_mapping: freestyle_lg
-    breakpoint_id: localgov_media.bootstrap4_lg_992px
-    multiplier: 1x
   -
     image_mapping_type: image_style
     image_mapping: freestyle_md

@@ -1,7 +1,9 @@
 uuid: 01692cf1-239e-4252-a258-79f43042686e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 _core:
   default_config_hash: _1CYx_ksb6-E8WCQNDbvWRlCXZpAc1YREzry-sH-q00
 id: localgov_newsroom_teaser
@@ -9,4 +11,7 @@ label: 'Newsroom teaser'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

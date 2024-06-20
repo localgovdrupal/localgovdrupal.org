@@ -4,7 +4,7 @@ langcode: en
 uuid: 42ca7905-6b1a-40d0-b2bb-807086eb42cf
 name: 'LocalGov Drupal'
 mail: hello@localgovdrupal.org
-slogan: 'Open source publishing platform, created by councils, for councils'
+slogan: 'The publishing platform created by councils, for councils'
 page:
   403: /node/42
   404: /node/41

@@ -11,7 +11,7 @@ dependencies:
 id: facets
 theme: lgd_org_theme
 region: sidebar_first
-weight: 0
+weight: -14
 provider: null
 plugin: 'facet_block:localgov_directories_facets'
 settings:

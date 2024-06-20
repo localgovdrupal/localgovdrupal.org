@@ -5,6 +5,7 @@ dependencies:
   module:
     - localgov_subsites
     - node
+    - system
   theme:
     - lgd_org_theme
 id: subsitenavigation_2
@@ -33,3 +34,7 @@ visibility:
       localgov_directory_promo_page: localgov_directory_promo_page
       localgov_subsites_overview: localgov_subsites_overview
       localgov_subsites_page: localgov_subsites_page
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/about-us\r\n/about-us/*"

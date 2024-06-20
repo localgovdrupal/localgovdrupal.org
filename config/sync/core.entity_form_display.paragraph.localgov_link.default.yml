@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_link.field_link
+    - field.field.paragraph.localgov_link.localgov_link_style
     - field.field.paragraph.localgov_link.localgov_title
     - field.field.paragraph.localgov_link.localgov_url
     - paragraphs.paragraphs_type.localgov_link
+  module:
+    - link
 _core:
   default_config_hash: mzQONd63mQ1LwDRVI09ZW2xACZbfPfeVxQYsaiP325U
 id: paragraph.localgov_link.default
@@ -13,6 +17,20 @@ targetEntityType: paragraph
 bundle: localgov_link
 mode: default
 content:
+  field_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  localgov_link_style:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   localgov_title:
     type: string_textfield
     weight: 0
@@ -21,15 +39,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  localgov_url:
-    type: string_textfield
-    weight: 1
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   created: true
+  localgov_url: true
   status: true
   uid: true

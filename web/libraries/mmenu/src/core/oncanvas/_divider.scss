@@ -1,0 +1,30 @@
+$mm_module: ".mm-divider";
+
+#{$mm_module} {
+    @include m.ellipsis;
+
+    position: sticky;
+    z-index: 2;
+    top: 0;
+
+    .mm-navbar:not(.mm-hidden) ~ .mm-listview & {
+        top: var(--mm-navbar-size);
+    }
+
+    min-height: var(--mm-lineheight);
+    padding: calc(
+            ((var(--mm-listitem-size) * 0.65) - var(--mm-lineheight)) * 0.5
+        )
+        v.$listitemIndent;
+
+    font-size: 75%;
+    text-transform: uppercase;
+    background: var(--mm-color-background);
+    background-image: linear-gradient(
+        var(--mm-color-background-highlight),
+        var(--mm-color-background-highlight)
+    );
+
+    opacity: 1;
+    transition-property: opacity;
+}

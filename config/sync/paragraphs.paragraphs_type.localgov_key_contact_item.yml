@@ -1,7 +1,9 @@
 uuid: e2339353-45dc-4985-ba3d-b1d662360d00
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 _core:
   default_config_hash: gjUn0WQH04_1wX3WgpzYupOUWmfQxwkkPlgDaAYoC4s
 id: localgov_key_contact_item
@@ -9,4 +11,7 @@ label: 'Key contact item'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

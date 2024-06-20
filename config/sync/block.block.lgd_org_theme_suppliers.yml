@@ -1,0 +1,27 @@
+uuid: 2e477efc-4860-4413-a94d-a7935d5c55c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_suppliers
+theme: lgd_org_theme
+region: banner
+weight: -17
+provider: null
+plugin: 'block_content:06a445fd-ccf0-4a1f-9027-8005f1f5dda4'
+settings:
+  id: 'block_content:06a445fd-ccf0-4a1f-9027-8005f1f5dda4'
+  label: Suppliers
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

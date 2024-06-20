@@ -12,7 +12,7 @@ dependencies:
 id: exposedformlocalgov_news_searchpage_search_news
 theme: lgd_org_theme
 region: sidebar_first
-weight: -9
+weight: -18
 provider: null
 plugin: 'views_exposed_filter_block:localgov_news_search-page_search_news'
 settings:

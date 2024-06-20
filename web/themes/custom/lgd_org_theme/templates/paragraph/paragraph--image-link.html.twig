@@ -1,0 +1,28 @@
+{%
+  set classes = [
+    'image-link',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+
+  {% if paragraph.localgov_image.value %}
+      {#{{ dpm(content.localgov_link.0['#url_title'])}}#}
+      <a href="{{ content.localgov_link.0['#url_title'] }}">
+        <div class="featured-teaser__image">
+          <span aria-hidden="true">
+            {{ content.localgov_image }}
+          </span>
+          <span class="visually-hidden">
+            {{ paragraph.localgov_link.0.title}}
+          </span>
+        </div>
+      </a>
+  {% endif %}
+
+
+</div>

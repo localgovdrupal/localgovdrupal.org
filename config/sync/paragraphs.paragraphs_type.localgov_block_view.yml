@@ -1,7 +1,9 @@
 uuid: fad98e09-e64b-44e5-8f91-c52efb814c62
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 _core:
   default_config_hash: P1K5K84iHY5OnCctlkiwtN9Zldefnsb9HB3AJm8Wjnw
 id: localgov_block_view
@@ -9,4 +11,7 @@ label: 'Block view'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

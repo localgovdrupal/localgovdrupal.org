@@ -1,0 +1,52 @@
+uuid: 34c65fe4-1518-47c7-b903-a3d8672dba7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multiple_image_and_links.localgov_body_text
+    - field.field.paragraph.multiple_image_and_links.localgov_heading_level
+    - field.field.paragraph.multiple_image_and_links.localgov_link
+    - field.field.paragraph.multiple_image_and_links.localgov_paragraphs
+    - field.field.paragraph.multiple_image_and_links.localgov_title
+    - paragraphs.paragraphs_type.multiple_image_and_links
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+id: paragraph.multiple_image_and_links.default
+targetEntityType: paragraph
+bundle: multiple_image_and_links
+mode: default
+content:
+  localgov_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  localgov_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  localgov_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  localgov_heading_level: true
+  localgov_title: true
+  search_api_excerpt: true

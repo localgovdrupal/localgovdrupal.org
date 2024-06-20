@@ -10,6 +10,7 @@ dependencies:
     - field.field.paragraph.localgov_featured_teaser.localgov_title
     - paragraphs.paragraphs_type.localgov_featured_teaser
   module:
+    - field_formatter_class
     - link
     - text
 _core:
@@ -23,9 +24,11 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: default
-      link: true
-    third_party_settings: {  }
+      view_mode: freestyle
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     weight: 1
     region: content
   localgov_link:
@@ -50,3 +53,4 @@ content:
 hidden:
   localgov_heading_level: true
   localgov_title: true
+  search_api_excerpt: true

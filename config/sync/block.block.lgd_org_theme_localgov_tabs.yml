@@ -9,7 +9,7 @@ _core:
 id: lgd_org_theme_localgov_tabs
 theme: lgd_org_theme
 region: tabs
-weight: -11
+weight: -21
 provider: null
 plugin: local_tasks_block
 settings:
