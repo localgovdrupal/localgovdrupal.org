@@ -20,6 +20,7 @@ module:
   dbal: 0
   dblog: 0
   disclosure_nav: 0
+  dynamic_entity_reference: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -62,6 +63,7 @@ module:
   lgd_org_blocks: 0
   link: 0
   link_attributes: 0
+  linkchecker: 0
   linkit: 0
   localgov_core: 0
   localgov_directories: 0
