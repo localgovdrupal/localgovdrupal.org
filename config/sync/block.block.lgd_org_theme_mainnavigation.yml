@@ -1,0 +1,38 @@
+uuid: 346b355a-20dd-4267-8d18-f4e673190287
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - system
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_mainnavigation
+theme: lgd_org_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: true
+  label_type: fixed
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'main:menu_link_content:08d3d468-a9ac-422c-b863-2acd87fc7607'
+  render_parent: false
+  suggestion: main
+  hide_on_nonactive: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/community/our-suppliers/supplier-directory/*\r\n"
