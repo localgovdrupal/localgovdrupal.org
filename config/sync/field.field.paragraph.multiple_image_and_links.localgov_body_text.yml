@@ -7,7 +7,12 @@ dependencies:
     - filter.format.wysiwyg
     - paragraphs.paragraphs_type.multiple_image_and_links
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: paragraph.multiple_image_and_links.localgov_body_text
 field_name: localgov_body_text
 entity_type: paragraph

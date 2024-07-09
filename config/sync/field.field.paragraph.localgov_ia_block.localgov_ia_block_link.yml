@@ -7,6 +7,11 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_ia_block
   module:
     - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
 _core:
   default_config_hash: QTnqZOe4lPYlIiQ_QYK6PzqFsEDszJRpy2EVa1v7obc
 id: paragraph.localgov_ia_block.localgov_ia_block_link

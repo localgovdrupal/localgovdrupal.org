@@ -7,6 +7,11 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_call_out_box
   module:
     - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
 _core:
   default_config_hash: XoJlbP8ctFb4mKzYzmjZE8vOZWcKwCx1vR5rqI3DBOU
 id: paragraph.localgov_call_out_box.localgov_button

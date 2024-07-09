@@ -7,6 +7,11 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_media_with_text
   module:
     - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
 id: paragraph.localgov_media_with_text.field_links
 field_name: field_links
 entity_type: paragraph

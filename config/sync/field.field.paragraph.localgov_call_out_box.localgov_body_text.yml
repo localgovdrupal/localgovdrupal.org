@@ -6,7 +6,12 @@ dependencies:
     - field.storage.paragraph.localgov_body_text
     - paragraphs.paragraphs_type.localgov_call_out_box
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 _core:
   default_config_hash: HwZMtIoKne-rUz_gMfMFUem5YB8BhTErOWdzEA-4Ejc
 id: paragraph.localgov_call_out_box.localgov_body_text
@@ -19,5 +24,6 @@ required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text_long
