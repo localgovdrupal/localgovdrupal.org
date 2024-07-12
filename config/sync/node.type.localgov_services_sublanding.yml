@@ -14,7 +14,7 @@ _core:
 name: 'Service sub-landing page'
 type: localgov_services_sublanding
 description: 'Pages for detail and links to specific pages within a service.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false

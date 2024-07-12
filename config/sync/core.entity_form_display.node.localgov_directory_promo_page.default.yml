@@ -145,7 +145,8 @@ content:
     type: address_default
     weight: 6
     region: content
-    settings: {  }
+    settings:
+      wrapper_type: details
     third_party_settings: {  }
   localgov_directory_banner:
     type: paragraphs

@@ -1,0 +1,38 @@
+uuid: 5f84b249-5f27-4a0a-b3b4-67f4603badbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - system
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_mainnavigation_3
+theme: lgd_org_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: true
+  label_type: fixed
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'main:menu_link_content:87ade040-ddfd-4371-81ae-5fa77c5d406d'
+  render_parent: false
+  suggestion: main
+  hide_on_nonactive: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/products/localgov-drupal-cms/case-studies/*'

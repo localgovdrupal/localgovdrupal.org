@@ -14,7 +14,7 @@ _core:
 name: 'Step by step overview'
 type: localgov_step_by_step_overview
 description: 'Main step by step page.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

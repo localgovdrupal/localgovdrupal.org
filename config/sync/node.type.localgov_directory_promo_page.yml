@@ -13,7 +13,7 @@ _core:
 name: 'Directory promotional page'
 type: localgov_directory_promo_page
 description: 'A directory page allowing unstructured content areas.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

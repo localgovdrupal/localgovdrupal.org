@@ -14,7 +14,7 @@ _core:
 name: 'Service page'
 type: localgov_services_page
 description: 'Basic page that can be placed in a service and on a service sub landing page.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false

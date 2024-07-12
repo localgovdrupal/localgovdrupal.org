@@ -120,6 +120,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -134,7 +135,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: none
+        type: search_api_none
         options: {  }
       empty: {  }
       sorts:
@@ -745,7 +746,7 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_none
       defaults:
         cache: false
       display_extenders: {  }
@@ -971,7 +972,7 @@ display:
           multi_separator: ', '
           format_plural_values: {  }
       cache:
-        type: none
+        type: search_api_none
       sorts:
         localgov_location_distance:
           id: localgov_location_distance

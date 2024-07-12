@@ -22,6 +22,7 @@ dependencies:
     - entity_browser
     - file
     - filter
+    - geo_entity
     - media
     - node
     - paragraphs
@@ -41,6 +42,7 @@ weight: 4
 is_admin: null
 permissions:
   - 'access content overview'
+  - 'access geo_entity_library entity browser pages'
   - 'access media overview'
   - 'access page_components entity browser pages'
   - 'access paragraphs_library_items entity browser pages'
@@ -48,6 +50,7 @@ permissions:
   - 'access toolbar'
   - 'create council_logo media'
   - 'create document media'
+  - 'create geo'
   - 'create image media'
   - 'create localgov_directories_page content'
   - 'create localgov_directories_venue content'
