@@ -1,5 +1,6 @@
 _core:
   default_config_hash: XWHtTGfKpwNV1L-8e-KL_ZjGkM7LE6nOx64gcHjDNkk
+langcode: en
 account: '3568555'
 snippet_version: 6
 snippet_path: 'public://hotjar/hotjar.script.js'

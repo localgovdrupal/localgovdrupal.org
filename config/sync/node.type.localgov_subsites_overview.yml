@@ -14,7 +14,7 @@ _core:
 name: 'Subsite overview'
 type: localgov_subsites_overview
 description: 'Main subsite landing page.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false

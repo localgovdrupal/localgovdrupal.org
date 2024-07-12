@@ -121,7 +121,8 @@ content:
     type: address_default
     weight: 15
     region: content
-    settings: {  }
+    settings:
+      wrapper_type: details
     third_party_settings: {  }
   localgov_directory_channels:
     type: localgov_directories_channel_selector

@@ -14,7 +14,7 @@ _core:
 name: 'Service landing page'
 type: localgov_services_landing
 description: 'Top level section page for each service.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false

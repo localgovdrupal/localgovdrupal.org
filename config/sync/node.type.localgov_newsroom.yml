@@ -17,7 +17,7 @@ _core:
 name: Newsroom
 type: localgov_newsroom
 description: 'A page for listing and featuring news articles.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false
