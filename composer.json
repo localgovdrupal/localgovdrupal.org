@@ -27,7 +27,7 @@
         "drupal/geofield_map": "^3.0",
         "drupal/gtm": "^1.8",
         "drupal/hotjar": "^3.1",
-        "drupal/linkchecker": "^2.0",
+        "drupal/linkchecker": "^2.0@alpha",
         "drupal/masquerade": "^2.0@beta",
         "drupal/menu_block": "^1.10",
         "drupal/purge": "3.x-dev@dev",
