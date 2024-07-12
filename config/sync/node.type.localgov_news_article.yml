@@ -17,7 +17,7 @@ _core:
 name: 'News article'
 type: localgov_news_article
 description: 'A stand-alone news article that may also appear in a news listing page.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false

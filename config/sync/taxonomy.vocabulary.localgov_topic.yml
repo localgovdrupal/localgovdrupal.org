@@ -8,3 +8,4 @@ name: Topic
 vid: localgov_topic
 description: 'Topic tags group together related content across all services'
 weight: 0
+new_revision: false

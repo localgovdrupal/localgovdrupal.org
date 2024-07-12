@@ -14,7 +14,7 @@ _core:
 name: 'Subsite page'
 type: localgov_subsites_page
 description: 'General subsite pages attached to an overview page.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false

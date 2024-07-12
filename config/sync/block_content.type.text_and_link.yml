@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: text_and_link
 label: 'Text and link'
-revision: 0
+revision: false
 description: ''
