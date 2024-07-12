@@ -146,7 +146,8 @@ content:
     type: address_default
     weight: 35
     region: content
-    settings: {  }
+    settings:
+      wrapper_type: details
     third_party_settings: {  }
   localgov_contact_email:
     type: email_default

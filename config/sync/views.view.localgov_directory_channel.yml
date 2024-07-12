@@ -135,7 +135,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: none
+        type: search_api_none
         options: {  }
       empty: {  }
       sorts:
@@ -746,7 +746,7 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_none
       defaults:
         cache: false
       display_extenders: {  }
@@ -972,7 +972,7 @@ display:
           multi_separator: ', '
           format_plural_values: {  }
       cache:
-        type: none
+        type: search_api_none
       sorts:
         localgov_location_distance:
           id: localgov_location_distance

@@ -59,6 +59,7 @@ permissions:
   - 'access content overview'
   - 'access directory facets overview'
   - 'access geo overview'
+  - 'access geo_entity_library entity browser pages'
   - 'access help pages'
   - 'access media overview'
   - 'access page_components entity browser pages'
