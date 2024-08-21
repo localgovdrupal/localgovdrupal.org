@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_form_mode.localgov_geo.inline
+    - core.entity_form_mode.geo_entity.inline
     - field.field.node.localgov_directories_org.body
     - field.field.node.localgov_directories_org.field_facets_display
     - field.field.node.localgov_directories_org.field_media_image
+    - field.field.node.localgov_directories_org.field_meta_tags
     - field.field.node.localgov_directories_org.field_social_media
     - field.field.node.localgov_directories_org.localgov_directory_channels
     - field.field.node.localgov_directories_org.localgov_directory_email
@@ -26,6 +27,7 @@ dependencies:
     - localgov_directories
     - media_library
     - media_library_edit
+    - metatag
     - path
     - text
 third_party_settings:
@@ -169,6 +171,14 @@ content:
     third_party_settings:
       media_library_edit:
         show_edit: '1'
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 8
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
   field_social_media:
     type: link_default
     weight: 22
@@ -279,7 +289,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
