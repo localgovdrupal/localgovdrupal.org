@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.localgov_directories_page.body
+    - field.field.node.localgov_directories_page.field_meta_tags
     - field.field.node.localgov_directories_page.localgov_directory_address
     - field.field.node.localgov_directories_page.localgov_directory_channels
     - field.field.node.localgov_directories_page.localgov_directory_email
@@ -21,6 +22,7 @@ dependencies:
     - link
     - localgov_directories
     - media_library
+    - metatag
     - path
     - telephone
     - text
@@ -117,12 +119,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 9
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
   localgov_directory_address:
     type: address_default
     weight: 15
     region: content
-    settings:
-      wrapper_type: details
+    settings: {  }
     third_party_settings: {  }
   localgov_directory_channels:
     type: localgov_directories_channel_selector
@@ -204,7 +213,7 @@ content:
       display_label: true
     third_party_settings: {  }
   simple_sitemap:
-    weight: 10
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -241,7 +250,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
