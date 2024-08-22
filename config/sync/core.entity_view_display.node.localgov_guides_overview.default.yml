@@ -1,0 +1,41 @@
+uuid: 1e65cac6-442e-4c92-9c9a-2451755f49a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_guides_overview.body
+    - field.field.node.localgov_guides_overview.localgov_guides_list_format
+    - field.field.node.localgov_guides_overview.localgov_guides_pages
+    - field.field.node.localgov_guides_overview.localgov_guides_section_title
+    - field.field.node.localgov_guides_overview.localgov_services_parent
+    - field.field.node.localgov_guides_overview.localgov_topic_classified
+    - node.type.localgov_guides_overview
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: tim2ndeicMRut5POPNdtXI-LjO6uZKHhGoMlTVUXZRI
+id: node.localgov_guides_overview.default
+targetEntityType: node
+bundle: localgov_guides_overview
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  localgov_guides_list_format: true
+  localgov_guides_pages: true
+  localgov_guides_section_title: true
+  localgov_services_parent: true
+  localgov_topic_classified: true
+  search_api_excerpt: true

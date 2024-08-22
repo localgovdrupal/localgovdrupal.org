@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - menu_block
     - node
     - system
@@ -43,6 +44,8 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
+      localgov_guides_overview: localgov_guides_overview
+      localgov_guides_page: localgov_guides_page
       localgov_page: localgov_page
       localgov_step_by_step_overview: localgov_step_by_step_overview
       localgov_step_by_step_page: localgov_step_by_step_page

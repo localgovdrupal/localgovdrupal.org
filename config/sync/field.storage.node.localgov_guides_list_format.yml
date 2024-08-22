@@ -1,0 +1,29 @@
+uuid: 33f28e44-45c1-450a-b96f-c10e9e467a31
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: H8McozX01p4WgWF3kcQxYzSKWiixyDxsSaljKcaWE-4
+id: node.localgov_guides_list_format
+field_name: localgov_guides_list_format
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: unordered
+      label: 'Progress: Bullet points'
+    -
+      value: ordered
+      label: 'Progress: Numbers'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

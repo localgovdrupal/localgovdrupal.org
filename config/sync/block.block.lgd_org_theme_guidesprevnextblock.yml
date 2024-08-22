@@ -1,0 +1,30 @@
+uuid: 324301da-da5f-42cd-b174-0e2ab034e710
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_guides
+    - node
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_guidesprevnextblock
+theme: lgd_org_theme
+region: content
+weight: -14
+provider: null
+plugin: localgov_guides_prev_next_block
+settings:
+  id: localgov_guides_prev_next_block
+  label: ''
+  label_display: visible
+  provider: localgov_guides
+  show_title: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      localgov_guides_overview: localgov_guides_overview
+      localgov_guides_page: localgov_guides_page
