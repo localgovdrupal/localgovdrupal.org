@@ -1,0 +1,23 @@
+.guide-nav {
+  margin-top: var(--spacing);
+}
+
+.lgd-guide-nav {
+  background-color: var(--color-bittersweet-lightest);
+  border: 1px solid var(--color-bittersweet-darker);
+}
+
+.lgd-guide-nav__list-item {
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .lgd-guides.node--view-mode-full .field--name-body ,
+  .lgd-guide-nav {
+    max-width: calc((100% / 3* 2) - var(--spacing));
+  }
+
+  .lgd-guide-nav__list {
+    column-count: var(--guide-nav-column-count);
+  }
+}
