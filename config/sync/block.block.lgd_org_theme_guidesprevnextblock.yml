@@ -9,8 +9,8 @@ dependencies:
     - lgd_org_theme
 id: lgd_org_theme_guidesprevnextblock
 theme: lgd_org_theme
-region: content
-weight: -14
+region: content_bottom
+weight: -22
 provider: null
 plugin: localgov_guides_prev_next_block
 settings:
