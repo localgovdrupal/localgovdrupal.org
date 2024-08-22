@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.localgov_page.field_meta_tags
     - field.field.node.localgov_page.localgov_hide_summary
     - field.field.node.localgov_page.localgov_page_banner
     - field.field.node.localgov_page.localgov_page_summary
@@ -10,6 +11,7 @@ dependencies:
     - node.type.localgov_page
   module:
     - layout_paragraphs
+    - metatag
     - paragraphs
     - path
 _core:
@@ -24,6 +26,14 @@ content:
     weight: 7
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 13
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   localgov_hide_summary:
     type: boolean_checkbox
@@ -67,6 +77,7 @@ content:
       preview_view_mode: preview
       nesting_depth: 0
       require_layouts: 1
+      empty_message: ''
     third_party_settings: {  }
   path:
     type: path
@@ -82,7 +93,7 @@ content:
       display_label: true
     third_party_settings: {  }
   simple_sitemap:
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -119,7 +130,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
