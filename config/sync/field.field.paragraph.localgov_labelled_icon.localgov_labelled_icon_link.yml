@@ -7,6 +7,11 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_labelled_icon
   module:
     - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
 _core:
   default_config_hash: 8PeBnpbVB0jBsL18FRqKJbIfwHTongEoC0psvBUuRLI
 id: paragraph.localgov_labelled_icon.localgov_labelled_icon_link

@@ -7,6 +7,11 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_contact
   module:
     - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
 _core:
   default_config_hash: E8rSMi_7TWMtGAo6n7Ax7w37mFyZuR4x4Bku2XTPcbQ
 id: paragraph.localgov_contact.localgov_contact_url

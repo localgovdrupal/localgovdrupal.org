@@ -7,6 +7,11 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_newsroom_teaser
   module:
     - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
 _core:
   default_config_hash: x3G7fjc-ChD17yHBXywfXvJIikBoDPuoew6TmDOnu_M
 id: paragraph.localgov_newsroom_teaser.localgov_newsroom_teaser_link
