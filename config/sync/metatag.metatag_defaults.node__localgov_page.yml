@@ -1,0 +1,8 @@
+uuid: e52d2992-48de-4426-a6fe-5fad50f1760d
+langcode: en
+status: true
+dependencies: {  }
+id: node__localgov_page
+label: 'Content: Page'
+tags:
+  description: '[node:localgov_page_summary]'
