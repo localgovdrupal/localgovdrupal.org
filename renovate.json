@@ -8,30 +8,37 @@
   ],
   "reviewers": ["stephen-cox"],
   "branchPrefix": "renovate/",
+  "enabledManagers": [
+    "composer",
+    "github-actions"
+  ],
+  "ignorePaths": ["web/**"],
+  "major": {
+    "dependencyDashboardApproval": true
+  },
+  "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
+      "groupName": "Drupal contrib",
+      "groupSlug": "contrib",
+      "rangeStrategy": "update-lockfile",
+      "matchManagers": ["composer"],
+      "matchDatasources": ["packagist"],
+      "matchPackageNames": [
+        "agile-collective/**",
+        "drupal/**",
+        "drush/**",
+        "localgovdrupal/**",
+        "!drupal/core-**"
+      ]
+    },
+    {
       "groupName": "Drupal core",
-      "managers": ["composer"],
-      "matchFileNames": ["composer.json"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "groupSlug": "drupal-core",
       "rangeStrategy": "update-lockfile",
+      "matchManagers": ["composer"],
+      "matchDatasources": ["packagist"],
       "matchPackageNames": ["drupal/core-**"]
-    },
-    {
-      "groupName": "Drupal contributed modules",
-      "managers": ["composer"],
-      "matchFileNames": ["composer.json"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "rangeStrategy": "update-lockfile",
-      "matchPackageNames": ["drupal/**", "!drupal/core-**"]
-    },
-    {
-      "groupName": "LocalGov Drupal",
-      "managers": ["composer"],
-      "matchFileNames": ["composer.json"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "rangeStrategy": "update-lockfile",
-      "matchPackageNames": ["localgovdrupal/**"]
     },
     {
       "matchManagers": ["github-actions"],
