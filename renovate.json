@@ -8,27 +8,42 @@
   ],
   "reviewers": ["stephen-cox"],
   "branchPrefix": "renovate/",
+  "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
-      "groupName": "Drupal core",
+      "groupName": "Skip major updates",
       "matchManagers": ["composer"],
-      "matchFileNames": ["composer.json"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageNames": ["drupal/core-**"]
+      "matchDatasources": ["packagist"],
+      "matchUpdateTypes": ["major"],
+      "matchPackagePatterns": [".*"],
+      "enabled": false
     },
     {
-      "groupName": "Drupal contributed modules",
+      "groupName": "Contrib",
+      "groupSlug": "contrib",
       "matchManagers": ["composer"],
-      "matchFileNames": ["composer.json"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageNames": ["drupal/**", "!drupal/core-**"]
+      "matchDatasources": ["packagist"],
+      "separateMinorPatch": false,
+      "matchPackagePatterns": [".*"],
+      "excludePackageNames": [
+        "drupal/core-composer-scaffold",
+        "drupal/core-project-message",
+        "drupal/core-recommended",
+        "drupal/core-dev"
+      ]
     },
     {
-      "groupName": "LocalGov Drupal",
+      "groupName": "Drupal Core",
+      "groupSlug": "drupal-core",
       "matchManagers": ["composer"],
-      "matchFileNames": ["composer.json"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageNames": ["localgovdrupal/**"]
+      "matchDatasources": ["packagist"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "matchPackageNames": [
+        "drupal/core-composer-scaffold",
+        "drupal/core-project-message",
+        "drupal/core-recommended",
+        "drupal/core-dev"
+      ]
     },
     {
       "matchManagers": ["github-actions"],
