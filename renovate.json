@@ -8,6 +8,10 @@
   ],
   "reviewers": ["stephen-cox"],
   "branchPrefix": "renovate/",
+  "enabledManagers": [
+    "composer",
+    "github-actions"
+  ],
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
@@ -15,7 +19,9 @@
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
       "matchUpdateTypes": ["major"],
-      "matchPackagePatterns": [".*"],
+      "matchPackageNames": [
+        "/.*/"
+      ],
       "enabled": false
     },
     {
@@ -24,12 +30,12 @@
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
       "separateMinorPatch": false,
-      "matchPackagePatterns": [".*"],
-      "excludePackageNames": [
-        "drupal/core-composer-scaffold",
-        "drupal/core-project-message",
-        "drupal/core-recommended",
-        "drupal/core-dev"
+      "matchPackageNames": [
+        "/.*/",
+        "!drupal/core-composer-scaffold",
+        "!drupal/core-project-message",
+        "!drupal/core-recommended",
+        "!drupal/core-dev"
       ]
     },
     {
