@@ -12,6 +12,9 @@
     "composer",
     "github-actions"
   ],
+  "github-actions": {
+    "fileMatch": ["^.github/workflows/.*\\.yml$"]
+  },
   "major": {
     "dependencyDashboardApproval": true
   },
@@ -26,7 +29,6 @@
     },
     {
       "matchManagers": ["github-actions"],
-      "fileMatch": [".github/workflows/**.yml"],
       "automerge": true
     }
   ]
