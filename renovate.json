@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:best-practices",
     ":preserveSemverRanges",
     ":rebaseStalePrs",
     ":enableVulnerabilityAlertsWithLabel('security')"
@@ -12,16 +12,11 @@
     "composer",
     "github-actions"
   ],
+  "major": {
+    "dependencyDashboardApproval": true
+  },
   "rangeStrategy": "update-lockfile",
   "packageRules": [
-    {
-      "groupName": "Skip major updates",
-      "matchManagers": ["composer"],
-      "matchDatasources": ["packagist"],
-      "matchUpdateTypes": ["major"],
-      "matchPackageNames": ["*"],
-      "enabled": false
-    },
     {
       "groupName": "Contrib",
       "groupSlug": "contrib",
@@ -40,7 +35,7 @@
     },
     {
       "matchManagers": ["github-actions"],
-      "matchFileNames": ["/^.github\/workflows\/.*\\.yml$/"],
+      "matchFileNames": ["/^.github\\/workflows.*\\.yml$/"],
       "automerge": true
     }
   ]
