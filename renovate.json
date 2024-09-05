@@ -18,15 +18,16 @@
   },
   "packageRules": [
     {
-      "groupName": "Contrib",
+      "groupName": "Drupal contrib",
       "groupSlug": "contrib",
       "rangeStrategy": "update-lockfile",
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
-      "matchPackageNames": ["*", "!drupal/core-**"]
+      "matchPackageNames": ["*", "!drupal/core-**"],
+      "matchUpdateTypes": ["patch", "minor"]
     },
     {
-      "groupName": "Drupal Core",
+      "groupName": "Drupal core",
       "groupSlug": "drupal-core",
       "rangeStrategy": "update-lockfile",
       "matchManagers": ["composer"],
