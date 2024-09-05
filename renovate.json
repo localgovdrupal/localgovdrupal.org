@@ -1,31 +1,41 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "gitAuthor": "Renovate Bot <renovate-bot@mycompany.com>",
-  "extends": [
-    "config:base",
-    ":preserveSemverRanges",
-    ":rebaseStalePrs",
-    ":enableVulnerabilityAlertsWithLabel('security')",
-    "group:recommended"
-  ],
-  "packageRules": [
-    {
-      "managers": ["composer"],
-      "matchPackagePatterns": ["^drupal/"],
-      "rangeStrategy": "update-lockfile",
-      "groupName": "Drupal contributed modules"
-    },
-    {
-      "managers": ["composer"],
-      "matchPackagePatterns": ["^drupal/core-recommended", "^drupal/core-composer-scaffold", "^drupal/core-project-message"],
-      "rangeStrategy": "update-lockfile",
-      "groupName": "Drupal core"
-    },
-    {
-      "managers": ["composer"],
-      "matchPackagePatterns": ["^localgovdrupal/"],
-      "rangeStrategy": "update-lockfile",
-      "groupName": "LocalGov Drupal"
-    }
-  ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    ":preserveSemverRanges",
+    ":rebaseStalePrs",
+    ":enableVulnerabilityAlertsWithLabel('security')"
+  ],
+  "reviewers": ["stephen-cox"],
+  "branchPrefix": "renovate/",
+  "packageRules": [
+    {
+      "groupName": "Drupal core",
+      "managers": ["composer"],
+      "matchFileNames": ["composer.json"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "rangeStrategy": "update-lockfile",
+      "matchPackageNames": ["drupal/core-**"]
+    },
+    {
+      "groupName": "Drupal contributed modules",
+      "managers": ["composer"],
+      "matchFileNames": ["composer.json"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "rangeStrategy": "update-lockfile",
+      "matchPackageNames": ["drupal/**", "!drupal/core-**"]
+    },
+    {
+      "groupName": "LocalGov Drupal",
+      "managers": ["composer"],
+      "matchFileNames": ["composer.json"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "rangeStrategy": "update-lockfile",
+      "matchPackageNames": ["localgovdrupal/**"]
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "automerge": true
+    }
+  ]
 }
