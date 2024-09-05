@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
+    "config:base",
     ":preserveSemverRanges",
     ":rebaseStalePrs",
     ":enableVulnerabilityAlertsWithLabel('security')"
@@ -12,20 +12,34 @@
     "composer",
     "github-actions"
   ],
-  "github-actions": {
-    "fileMatch": ["^.github/workflows/.*\\.yml$"]
-  },
+  "ignorePaths": ["web/**"],
   "major": {
     "dependencyDashboardApproval": true
   },
   "packageRules": [
     {
-      "groupName": "Contrib",
-      "groupSlug": "contrib",
+      "groupName": "Skip major updates",
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageNames": ["*"]
+      "matchUpdateTypes": ["major"],
+      "matchPackageNames": ["*"],
+      "enabled": false
+    },
+    {
+      "groupName": "Contrib",
+      "groupSlug": "contrib",
+      "rangeStrategy": "update-lockfile",
+      "matchManagers": ["composer"],
+      "matchDatasources": ["packagist"],
+      "matchPackageNames": ["*", "!drupal/core-**"]
+    },
+    {
+      "groupName": "Drupal Core",
+      "groupSlug": "drupal-core",
+      "rangeStrategy": "update-lockfile",
+      "matchManagers": ["composer"],
+      "matchDatasources": ["packagist"],
+      "matchPackageNames": ["drupal/core-**"]
     },
     {
       "matchManagers": ["github-actions"],
