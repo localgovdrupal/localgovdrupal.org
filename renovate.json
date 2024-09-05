@@ -19,9 +19,7 @@
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
       "matchUpdateTypes": ["major"],
-      "matchPackageNames": [
-        "*"
-      ],
+      "matchPackageNames": ["*"],
       "enabled": false
     },
     {
@@ -30,24 +28,19 @@
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
       "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageNames": [
-        "*",
-        "!drupal/core-**"
-      ]
+      "matchPackageNames": ["*", "!drupal/core-**"]
     },
     {
       "groupName": "Drupal Core",
       "groupSlug": "drupal-core",
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "matchPackageNames": [
-        "drupal/core-**"
-      ]
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackageNames": ["drupal/core-**"]
     },
     {
       "matchManagers": ["github-actions"],
-      "matchFileNames": ["/^.github/workflows/.*\\.yml$/"],
+      "matchFileNames": ["/^.github\/workflows\/.*\\.yml$/"],
       "automerge": true
     }
   ]
