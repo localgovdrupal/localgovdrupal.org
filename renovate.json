@@ -15,27 +15,14 @@
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
-      "groupName": "Skip major updates",
-      "matchManagers": ["composer"],
-      "matchDatasources": ["packagist"],
-      "matchUpdateTypes": ["major"],
-      "matchPackageNames": [
-        "/.*/"
-      ],
-      "enabled": false
-    },
-    {
       "groupName": "Contrib",
       "groupSlug": "contrib",
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
-      "separateMinorPatch": false,
+      "matchUpdateTypes": ["minor", "patch"],
       "matchPackageNames": [
         "/.*/",
-        "!drupal/core-composer-scaffold",
-        "!drupal/core-project-message",
-        "!drupal/core-recommended",
-        "!drupal/core-dev"
+        "!drupal/core-**"
       ]
     },
     {
@@ -45,14 +32,12 @@
       "matchDatasources": ["packagist"],
       "matchUpdateTypes": ["patch", "minor"],
       "matchPackageNames": [
-        "drupal/core-composer-scaffold",
-        "drupal/core-project-message",
-        "drupal/core-recommended",
-        "drupal/core-dev"
+        "drupal/core-**"
       ]
     },
     {
       "matchManagers": ["github-actions"],
+      "matchFileNames": [".github/workflows/**"],
       "automerge": true
     }
   ]
