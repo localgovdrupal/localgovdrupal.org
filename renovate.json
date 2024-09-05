@@ -22,7 +22,13 @@
       "matchUpdateTypes": ["major"],
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
-      "matchPackageNames": ["*", "!drupal/core-**"]
+      "matchPackageNames": [
+        "agile-collective/**",
+        "drupal/**",
+        "drush/**",
+        "localgovdrupal/**",
+        "!drupal/core-**"
+      ]
     },
     {
       "groupName": "Drupal contrib",
