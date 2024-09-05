@@ -16,6 +16,7 @@
   "major": {
     "dependencyDashboardApproval": true
   },
+  "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
