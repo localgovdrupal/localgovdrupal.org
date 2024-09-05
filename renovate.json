@@ -11,26 +11,23 @@
   "packageRules": [
     {
       "groupName": "Drupal core",
-      "managers": ["composer"],
+      "matchManagers": ["composer"],
       "matchFileNames": ["composer.json"],
       "matchUpdateTypes": ["minor", "patch"],
-      "rangeStrategy": "update-lockfile",
       "matchPackageNames": ["drupal/core-**"]
     },
     {
       "groupName": "Drupal contributed modules",
-      "managers": ["composer"],
+      "matchManagers": ["composer"],
       "matchFileNames": ["composer.json"],
       "matchUpdateTypes": ["minor", "patch"],
-      "rangeStrategy": "update-lockfile",
       "matchPackageNames": ["drupal/**", "!drupal/core-**"]
     },
     {
       "groupName": "LocalGov Drupal",
-      "managers": ["composer"],
+      "matchManagers": ["composer"],
       "matchFileNames": ["composer.json"],
       "matchUpdateTypes": ["minor", "patch"],
-      "rangeStrategy": "update-lockfile",
       "matchPackageNames": ["localgovdrupal/**"]
     },
     {
