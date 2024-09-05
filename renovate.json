@@ -22,18 +22,12 @@
       "matchUpdateTypes": ["major"],
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
-      "matchPackageNames": [
-        "agile-collective/**",
-        "drupal/**",
-        "drush/**",
-        "localgovdrupal/**",
-        "!drupal/core-**"
-      ]
+      "matchPackageNames": [ "*", "!drupal/core-**"]
     },
     {
       "groupName": "Drupal contrib",
       "groupSlug": "contrib",
-      "rangeStrategy": "update-lockfile",
+      "matchUpdateTypes": ["minor", "patch"],
       "matchManagers": ["composer"],
       "matchDatasources": ["packagist"],
       "matchPackageNames": ["*", "!drupal/core-**"]
