@@ -15,7 +15,6 @@
   "major": {
     "dependencyDashboardApproval": true
   },
-  "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
       "groupName": "Contrib",
@@ -27,7 +26,7 @@
     },
     {
       "matchManagers": ["github-actions"],
-      "matchFileNames": [".github/workflows/**.yml"],
+      "fileMatch": [".github/workflows/**.yml"],
       "automerge": true
     }
   ]
