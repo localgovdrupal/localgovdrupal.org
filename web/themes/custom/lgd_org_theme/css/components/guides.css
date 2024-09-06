@@ -4,7 +4,7 @@
 
 .lgd-guide-nav {
   background-color: var(--color-bittersweet-lightest);
-  border: 1px solid var(--color-bittersweet-darker);
+  border-top: 2px solid var(--color-bittersweet-darker);
 }
 
 .lgd-guide-nav__list-item {
