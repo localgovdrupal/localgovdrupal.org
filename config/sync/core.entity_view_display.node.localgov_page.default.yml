@@ -85,6 +85,7 @@ content:
     weight: 2
     region: content
 hidden:
+  field_meta_tags: true
   links: true
   localgov_hide_summary: true
   search_api_excerpt: true
