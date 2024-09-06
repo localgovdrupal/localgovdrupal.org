@@ -16,6 +16,9 @@
   "major": {
     "dependencyDashboardApproval": true
   },
+  "constraints": {
+    "php": "8.1.29"
+  },
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
