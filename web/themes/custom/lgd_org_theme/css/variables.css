@@ -164,7 +164,7 @@ body {
 
   /* Footer Items */
   /*--color-section-pre-footer-bg: rgba(255, 130, 98, 0.70);*/
-  --color-section-pre-footer-bg: rgba(0, 68, 89, 0.7);
+  --color-section-pre-footer-bg: rgba(0, 68, 89, 0.8);
   --color-section-footer-bg: var(--color-yellow);
   --color-section-post-footer-bg: var(--color-yellow);
   --section-spacing-vertical-pre-footer: 7.5rem;

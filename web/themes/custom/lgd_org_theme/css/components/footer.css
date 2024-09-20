@@ -18,7 +18,7 @@
   font-size: clamp(1.2rem, 4vw, var(--font-size-larger));
   font-weight: 500;
   padding: 1rem 2.5rem;
-  padding-block: clamp(1rem, 2vw, 1.5rem);
+  padding-block: 1rem;
   padding-inline: 2.5rem;
   border-radius: 50px;
   &:focus {
@@ -74,16 +74,21 @@
   }
 }
 
+.lgd-region__inner--footer > * {
+  min-width: 20%;
+}
+
 .lgd-footer__post-footer {
   text-align: center;
   font-size: var(--font-size-medium);
 }
 
 @media screen and (min-width: 48rem) {
-  .lgd-footer__post-footer .lgd-row__one-third:first-of-type {
-    width: 50%;
-    text-align: left;
-    align-items: end;
+  .lgd-footer__post-footer .lgd-row {
+    /*width: 50%;*/
+    /*text-align: left;*/
+    align-items: space-around;
+    justify-content: space-around;
     display: flex;
 
   }
@@ -153,10 +158,12 @@ footer a:hover {
     justify-content: end;
   }
 }
-
-.lgd-org-funded-by img {
+.lgd-org-funded-by a {
   margin-left: var(--spacing);
-  height: 5rem;
+}
+.lgd-org-funded-by img {
+  /*margin-left: var(--spacing);*/
+  width: 6rem;
 }
 
 .lgd-org--footer-block {
