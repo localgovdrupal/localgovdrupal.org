@@ -107,8 +107,8 @@
   display: flex;
   gap: var(--spacing-smaller);
   gap: clamp(var(--spacing-smaller), 10vw, var(--spacing-small));
-  font-family: var(--font-secondary);
-  font-size: clamp(var(--font-size-small), 2vw, var(--font-size-large));
+  /*font-family: var(--font-secondary);*/
+  font-size: clamp(var(--font-size-small), 2vw, 1rem);
   align-items: center;
   font-weight: 500;
 }

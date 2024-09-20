@@ -50,7 +50,7 @@ body {
   --spacing-larger: 2.34375rem; /*37.5px*/
   --spacing-largest: 3rem; /*48px*/
   --spacing-big: 3.5rem;
-  --spacing-mega: 4.5rem; /*72px*/
+  --spacing-mega: 3.75rem; /*72px*/
   --spacing-padding-horizontal: 0;
   --line-height: 1.4;
   --vertical-rhythm-spacing: calc(var(--line-height) * 0.75rem);
@@ -117,8 +117,8 @@ body {
   --font-size-medium: calc(var(--font-size) * 1.0625);/*17px*/
   --font-size-large: calc(var(--font-size) * 1.1875);/*19px*/
   --font-size-largish: calc(var(--font-size) * 1.3125);/*21px*/
-  --font-size-larger: calc(var(--font-size) * 1.625);/*26px*/
-  --font-size-largest: calc(var(--font-size) * 2.875);
+  --font-size-larger: calc(var(--font-size) * 1.5625);/*25px - used*/
+  --font-size-largest: calc(var(--font-size) * 2.625); /* used */
   --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
   --font-size-h2: clamp(var(--font-size-largish), 2.5vw, var(--font-size-larger));
   --font-size-h3: clamp(var(--font-size-medium), 2.5vw, var(--font-size-largish));
@@ -149,7 +149,7 @@ body {
   --breadcrumbs-spacing-bottom: clamp(var(--spacing-smaller), 2.5vw, var(--spacing-large));
 
   /* Header Items */
-  --section-spacing-vertical-header: clamp(var(--spacing), 2.5vw, 1.5rem);
+  --section-spacing-vertical-header: clamp(var(--spacing), 2.5vw, 1rem);
   --color-section-header-bg: var(--color-accent);
   --header-link-color: var(--color-black);
   --header-services-button-border: var(--border);
@@ -158,7 +158,7 @@ body {
   --header-services-button-bg-color: transparent;
   --header-services-button-bg-color-hover: var(--color-accent);
   --header-services-button-color-hover: var(--color-black);
-  --header-logo-width: 12.93rem;
+  --header-logo-width: 11.25rem;
 
   --secondary-menu-bg-color-second: transparent;
 
@@ -228,7 +228,7 @@ body {
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
   --call-out-box-bg-color: transparent;
-  --call-out-box-padding: 2rem;
+  --call-out-box-padding: 2rem 3rem 1.5rem;
 
   --featured-teaser-border: 0;
 

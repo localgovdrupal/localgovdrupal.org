@@ -60,7 +60,7 @@ tbody tr {
 }
 
 a {
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
 }
 
 a:not([class*="toolbar"]):focus {
@@ -75,8 +75,8 @@ a.button-style-link,
   color: var(--color-black);
   border-radius: 2rem;
   padding: 10px 20px;
-  padding: clamp(10px, 2vw, 1rem) clamp(20px, 2vw, 2.5rem);
-  font-size: clamp( 1rem, 2vw, var(--font-size-largish));
+  padding: 10px clamp(20px, 2vw, 1.5rem);
+  font-size: clamp( 1rem, 2vw, var(--font-size-large));
   text-decoration: none;
   display: inline-block;
   margin-bottom: var(--flow-space);
