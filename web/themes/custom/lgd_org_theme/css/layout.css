@@ -119,53 +119,7 @@
   }
 }
 
-.lgd-region--content-bottom .lgd-container {
-  padding: 0 !important;
-  max-width: 100vw !important;
-}
 
-.lgd-region--content-bottom .field--name-field-content {
-  width: 90%;
-  max-width: 52rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.lgd-region--content-bottom .field--name-field-content > * {
-  margin-left: var(--spacing-small);
-  margin-right: var(--spacing-small);
-  margin-bottom: var(--spacing);
-}
-.lgd-region--content-bottom .field--name-body {
-  margin-bottom: 4rem;
-  width: 90%;
-  max-width: 52rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.lgd-region--content-bottom .field--name-body h2{
-  font-size: 2.25rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-family: var(--font-primary);
-  margin-bottom: 2rem;
-}
-
-@media screen and (min-width: 48rem) {
-  .lgd-region--content-bottom .field--name-field-content {
-    display: flex;
-    width: 54.5rem;
-    max-width: 75%;
-    justify-content: space-around;
-  }
-  .lgd-region--content-bottom .field--name-body {
-    width: 49.5rem;
-    max-width: 75%;
-  }
-  .lgd-region--content-bottom .field--name-field-content > * {
-    margin-bottom: 0;
-  }
-}
 
 @media screen and (min-width: 70rem) {
   .path-frontpage #main-content .lgd-container {

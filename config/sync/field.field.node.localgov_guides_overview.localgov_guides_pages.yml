@@ -1,0 +1,30 @@
+uuid: 80cc9dfd-7d7e-41af-bf7a-35a93f4e3efa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_guides_pages
+    - node.type.localgov_guides_overview
+    - node.type.localgov_guides_page
+_core:
+  default_config_hash: M3v0wbRMQM99YA8dKMreBhB6c2O82KZ2SX3KF3iVVXk
+id: node.localgov_guides_overview.localgov_guides_pages
+field_name: localgov_guides_pages
+entity_type: node
+bundle: localgov_guides_overview
+label: 'Guide pages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      localgov_guides_page: localgov_guides_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

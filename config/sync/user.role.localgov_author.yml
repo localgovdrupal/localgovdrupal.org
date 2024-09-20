@@ -11,6 +11,8 @@ dependencies:
     - node.type.localgov_directories_page
     - node.type.localgov_directories_venue
     - node.type.localgov_directory_promo_page
+    - node.type.localgov_guides_overview
+    - node.type.localgov_guides_page
     - node.type.localgov_services_landing
     - node.type.localgov_services_page
     - node.type.localgov_services_sublanding
@@ -56,6 +58,8 @@ permissions:
   - 'create localgov_directories_page content'
   - 'create localgov_directories_venue content'
   - 'create localgov_directory_promo_page content'
+  - 'create localgov_guides_overview content'
+  - 'create localgov_guides_page content'
   - 'create localgov_services_landing content'
   - 'create localgov_services_page content'
   - 'create localgov_services_sublanding content'
@@ -74,6 +78,8 @@ permissions:
   - 'delete own localgov_directories_page content'
   - 'delete own localgov_directories_venue content'
   - 'delete own localgov_directory_promo_page content'
+  - 'delete own localgov_guides_overview content'
+  - 'delete own localgov_guides_page content'
   - 'delete own localgov_services_landing content'
   - 'delete own localgov_services_page content'
   - 'delete own localgov_services_sublanding content'
@@ -90,6 +96,8 @@ permissions:
   - 'edit own localgov_directories_page content'
   - 'edit own localgov_directories_venue content'
   - 'edit own localgov_directory_promo_page content'
+  - 'edit own localgov_guides_overview content'
+  - 'edit own localgov_guides_page content'
   - 'edit own localgov_services_landing content'
   - 'edit own localgov_services_page content'
   - 'edit own localgov_services_sublanding content'
@@ -102,6 +110,8 @@ permissions:
   - 'revert localgov_directories_page revisions'
   - 'revert localgov_directories_venue revisions'
   - 'revert localgov_directory_promo_page revisions'
+  - 'revert localgov_guides_overview revisions'
+  - 'revert localgov_guides_page revisions'
   - 'revert localgov_services_landing revisions'
   - 'revert localgov_services_page revisions'
   - 'revert localgov_services_sublanding revisions'
@@ -116,6 +126,8 @@ permissions:
   - 'view localgov_directories_page revisions'
   - 'view localgov_directories_venue revisions'
   - 'view localgov_directory_promo_page revisions'
+  - 'view localgov_guides_overview revisions'
+  - 'view localgov_guides_page revisions'
   - 'view localgov_services_landing revisions'
   - 'view localgov_services_page revisions'
   - 'view localgov_services_sublanding revisions'

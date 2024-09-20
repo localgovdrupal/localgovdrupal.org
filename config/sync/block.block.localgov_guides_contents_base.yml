@@ -1,0 +1,22 @@
+uuid: 29831060-39b6-40c6-a89f-26b61d3e7afa
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_guides
+  theme:
+    - localgov_base
+_core:
+  default_config_hash: 0ayTAR0TQsR-c9aXDCVm6N-nmIkXlIrfC1ZKADo-YPk
+id: localgov_guides_contents_base
+theme: localgov_base
+region: content_top
+weight: 0
+provider: null
+plugin: localgov_guides_contents
+settings:
+  id: localgov_guides_contents
+  label: 'Guide contents'
+  label_display: '0'
+  provider: localgov_guides
+visibility: {  }

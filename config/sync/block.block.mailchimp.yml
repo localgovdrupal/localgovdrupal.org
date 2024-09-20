@@ -10,7 +10,7 @@ dependencies:
 id: mailchimp
 theme: lgd_org_theme
 region: content
-weight: -13
+weight: -18
 provider: null
 plugin: lgd_org_blocks_mailchimp
 settings:

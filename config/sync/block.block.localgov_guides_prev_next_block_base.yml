@@ -1,0 +1,23 @@
+uuid: 5708b1e1-1444-466f-907f-599a97d0795b
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_guides
+  theme:
+    - localgov_base
+_core:
+  default_config_hash: mig7axaHFxsNoLl99m2P-MNlabK1uA3YHMygVnox6t4
+id: localgov_guides_prev_next_block_base
+theme: localgov_base
+region: content_bottom
+weight: -6
+provider: null
+plugin: localgov_guides_prev_next_block
+settings:
+  id: localgov_guides_prev_next_block
+  label: 'Guides prev next block'
+  label_display: '0'
+  provider: localgov_guides
+  show_title: true
+visibility: {  }
