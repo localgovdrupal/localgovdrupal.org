@@ -1,0 +1,13 @@
+uuid: 160bbfad-601a-4c20-9f97-f5f425f7913f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - localgov_guides
+_core:
+  default_config_hash: dTwq4Yy-V-ZZK0YqaDR110_9pZ3tuJ3sZeOrT0MPXhk
+id: node__localgov_guides_page
+label: 'Content: Guide page'
+tags:
+  title: '[node:title] | [node:localgov_guides_parent] | [site:name]'

@@ -1,0 +1,26 @@
+uuid: 65d79cff-1060-46d0-a6a6-bea31dd568c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.localgov_guides_overview
+  module:
+    - text
+_core:
+  default_config_hash: 8ETUgMaQ4K-fNoFlR79xByKXfnd5K0TCe7zhgREIkR0
+id: node.localgov_guides_overview.body
+field_name: body
+entity_type: node
+bundle: localgov_guides_overview
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

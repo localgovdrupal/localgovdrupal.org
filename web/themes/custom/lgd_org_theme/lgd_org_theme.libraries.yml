@@ -155,3 +155,8 @@ mmenu:
   css:
     theme:
       css/components/mmenu.css: {}
+
+guides:
+  css:
+    theme:
+      css/components/guides.css: {}

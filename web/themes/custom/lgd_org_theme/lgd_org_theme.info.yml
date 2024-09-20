@@ -43,6 +43,8 @@ libraries-extend:
     - lgd_org_theme/page-sections
   localgov_base/featured-teasers:
     - lgd_org_theme/featured-teasers
+  localgov_base/guide-nav:
+    - lgd_org_theme/guides
   disclosure_nav/tree:
     - lgd_org_theme/disclosure-nav
 

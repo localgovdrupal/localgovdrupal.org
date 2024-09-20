@@ -1,0 +1,21 @@
+uuid: c2c1a3fa-86ee-4dfe-b19d-99f28b2b878f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ABxn3qO7h6v9sYVhmpKLn4tpQbpzW9ex5TGG6E19l1c
+id: node.localgov_guides_parent
+field_name: localgov_guides_parent
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
