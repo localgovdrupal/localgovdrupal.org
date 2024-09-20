@@ -30,6 +30,11 @@
   align-items: center;
   @media screen and (min-width: 35rem) {
     display: grid;
+    grid-template-columns: 1fr clamp(98px, 25vw, 234px) 2rem clamp(98px, 25vw, 234px);
+    max-width: 90% !important;
+
+  }
+  @media screen and (min-width: 72rem) {
     grid-template-columns: 1fr 234px 2rem 234px;
     max-width: 1180px !important;
   }
