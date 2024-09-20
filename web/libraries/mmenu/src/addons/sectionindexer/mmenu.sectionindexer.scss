@@ -1,10 +1,6 @@
-@use "../../variables";
+@import '../../mixins', '../../includes', '../../variables';
 
-$mm_module: ".mm-sectionindexer";
-
-:root {
-    --mm-sectionindexer-size: 20px;
-}
+$mm_module: '.mm-sectionindexer';
 
 #{$mm_module} {
     background: inherit;
@@ -12,21 +8,25 @@ $mm_module: ".mm-sectionindexer";
     font-size: 12px;
 
     box-sizing: border-box;
-    width: var(--mm-sectionindexer-size);
+    width: $mm_sectionIndexerSize;
 
     position: absolute;
     top: 0;
     bottom: 0;
-    inset-inline-end: calc(-1 *  var(--mm-sectionindexer-size)); // right, left for RTL
+    right: -$mm_sectionIndexerSize;
     z-index: 5;
 
-    transition-property: inset-inline-end; // right, left for RTL
+    transition: right $mm_transitionDuration $mm_transitionFunction;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
     a {
+        @if ($mm_IE11Fallbacks) {
+            color: $mm_dimmedTextColor;
+        }
+
         color: var(--mm-color-text-dimmed);
         line-height: 1;
         text-decoration: none;
@@ -34,14 +34,14 @@ $mm_module: ".mm-sectionindexer";
     }
 
     ~ .mm-panel {
-        padding-inline-end: 0; // right, left for RTL
+        padding-right: 0;
     }
 
-    &--active {
+    &_active {
         right: 0;
 
         ~ .mm-panel {
-            padding-inline-end: var(--mm-sectionindexer-size); // right, left for RTL
+            padding-right: $mm_sectionIndexerSize;
         }
     }
 }

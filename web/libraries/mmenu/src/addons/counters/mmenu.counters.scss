@@ -1,12 +1,23 @@
-$mm_module: ".mm-counter";
+@import '../../mixins', '../../includes', '../../variables';
+
+$mm_module: '.mm-counter';
 
 #{$mm_module} {
-    display: block;
-    padding-inline-start: 20px; // left, right for RTL
-    float: right;
-    color: var(--mm-color-text-dimmed);
+    @if ($mm_IE11Fallbacks) {
+        color: $mm_dimmedTextColor;
+    }
 
-    [dir="rtl"] & {
-        float: left;
+    display: block;
+    padding-left: $mm_padding * 2;
+    float: right;
+    text-align: right;
+    color: var(--mm-color-text-dimmed);
+}
+
+@if ($mm_include_searchfield) {
+    .mm-listitem_nosubitems > #{$mm_module} {
+        display: none;
     }
 }
+
+@import 'counters.rtl';

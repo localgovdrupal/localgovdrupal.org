@@ -1,26 +1,42 @@
+/*
+    JS tasks.
+        *) The "module" file is transpiled from the specified "custom input" dir.
+*/
+
 const { src, dest, watch, series } = require('gulp');
 
 const typescript = require('gulp-typescript');
 const webpack = require('webpack-stream');
 
-const dirs = {
-    input: 'src',
-    output: 'dist'
-};
+const dirs = require('./dirs.js');
+var dir = {};
 
 /** Run all scripts. */
 exports.all = JSall = (cb) => {
-    return series(JStranspile, JSpack)(cb);
+    dir = dirs(false);
+
+    series(JStranspile, JSpack)(cb);
+};
+
+exports.custom = JScustom = (cb) => {
+    dir = dirs(true);
+
+    series(JSpack)(cb);
 };
 
 /** Put a watch on all files. */
 exports.watch = JSwatch = (cb) => {
-    return watch(dirs.input + '/**/*.ts', {
+    dir = dirs(false);
+
+    watch(dir.input + '/**/*.ts', {
         ignored: [
-            dirs.input + '/**/*.d.ts', //	Exclude all typings.
+            dir.input + '/**/*.d.ts', //	Exclude all typings.
         ],
     }).on('change', (path) => {
         console.log('Change detected to .ts file "' + path + '"');
+        var cb = () => {
+            console.log('JS transpiled and concatenated.');
+        };
 
         //	Changing any file only affects the files in the same directory:
         //		- transpile only the directory to js;
@@ -30,37 +46,39 @@ exports.watch = JSwatch = (cb) => {
         files.shift();
         files = files.join('/');
 
-        var JStranspileOne = (cb) => JStranspile(cb, 
-            dirs.input + '/' + files + '/*.ts',
-            dirs.output + '/' + files
-        );
+        var input = dir.input + '/' + files + '/*.ts',
+            output = dir.output + '/' + files;
 
-        series(JStranspileOne, JSpack)(() => {
-            console.log('JS transpiled and concatenated.');
-        });
+        var JStranspileOne = (cb) => JStranspile(cb, input, output);
+
+        series(JStranspileOne, JSpack)(cb);
     });
+
+    cb();
 };
 
-// Transpile the speicfied TS files (defaults to all TS files) to JS.
+// *) Transpile all TS files to JS.
 const JStranspile = (cb, input, output) => {
     return src([
-        dirs.input + '/**/*.d.ts', // Include all typings.
-        input || (dirs.input + '/**/*.ts'), // Include the needed ts files.
+        dir.input + '/**/*.d.ts', // Include all typings.
+        input || (dir.input + '/**/*.ts'), // Include the needed ts files.
     ])
         .pipe(
             typescript({
-                target: 'es2016',
+                target: 'es5',
                 module: 'es6',
                 moduleResolution: 'node',
                 resolveJsonModule: true,
             })
         )
-        .pipe(dest(output || dirs.output));
+        .pipe(dest(output || dir.output));
 };
 
 // Pack the files.
 const JSpack = () => {
-    return src(dirs.input + '/mmenu.js')
+    var input = dir.build || dir.input;
+
+    return src(input + '/mmenu.js')
         .pipe(
             webpack({
                 // mode: 'development',
@@ -73,5 +91,5 @@ const JSpack = () => {
                 // }
             })
         )
-        .pipe(dest(dirs.output));
+        .pipe(dest(dir.output));
 };

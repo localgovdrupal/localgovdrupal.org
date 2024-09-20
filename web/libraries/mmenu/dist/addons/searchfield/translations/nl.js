@@ -1,7 +1,5 @@
 export default {
-    'cancel': 'annuleren',
-    'Cancel searching': 'Zoeken annuleren',
-    'Clear searchfield': 'Zoekveld leeg maken',
+    Search: 'Zoeken',
     'No results found.': 'Geen resultaten gevonden.',
-    'Search': 'Zoeken',
+    cancel: 'annuleren'
 };

@@ -1,15 +1,16 @@
 import Mmenu from '../../core/oncanvas/mmenu.oncanvas';
-import OPTIONS from './options';
+import options from './_options';
+import { extendShorthandOptions } from './_options';
 import * as DOM from '../../_modules/dom';
 import * as support from '../../_modules/support';
 import { extend } from '../../_modules/helpers';
 
+//  Add the options.
+Mmenu.options.sectionIndexer = options;
 
-export default function (this: Mmenu) {
-    this.opts.sectionIndexer = this.opts.sectionIndexer || {};
-
-    //	Extend options.
-    const options = extend(this.opts.sectionIndexer, OPTIONS);
+export default function(this: Mmenu) {
+    var options = extendShorthandOptions(this.opts.sectionIndexer);
+    this.opts.sectionIndexer = extend(options, Mmenu.options.sectionIndexer);
 
     if (!options.add) {
         return;
@@ -31,7 +32,7 @@ export default function (this: Mmenu) {
 
             //	Prevent default behavior when clicking an anchor
             this.node.indx.addEventListener('click', evnt => {
-                const anchor = evnt.target as HTMLElement;
+                var anchor = evnt.target as HTMLElement;
 
                 if (anchor.matches('a')) {
                     evnt.preventDefault();
@@ -44,10 +45,10 @@ export default function (this: Mmenu) {
                     return;
                 }
 
-                const letter = evnt.target.textContent;
-                const panel = DOM.children(this.node.pnls, '.mm-panel--opened')[0];
+                var letter = evnt.target.textContent,
+                    panel = DOM.children(this.node.pnls, '.mm-panel_opened')[0];
 
-                let newTop = -1,
+                var newTop = -1,
                     oldTop = panel.scrollTop;
 
                 panel.scrollTop = 0;
@@ -57,10 +58,10 @@ export default function (this: Mmenu) {
                         if (
                             newTop < 0 &&
                             letter ==
-                            divider.textContent
-                                .trim()
-                                .slice(0, 1)
-                                .toLowerCase()
+                                divider.textContent
+                                    .trim()
+                                    .slice(0, 1)
+                                    .toLowerCase()
                         ) {
                             newTop = divider.offsetTop;
                         }
@@ -78,13 +79,13 @@ export default function (this: Mmenu) {
         }
 
         //	Show or hide the indexer
-        this.bind('openPanel:before', (panel: HTMLElement) => {
-            const active = DOM.find(panel, '.mm-divider').filter(
+        this.bind('openPanel:start', (panel: HTMLElement) => {
+            var active = DOM.find(panel, '.mm-divider').filter(
                 divider => !divider.matches('.mm-hidden')
             ).length;
 
             this.node.indx.classList[active ? 'add' : 'remove'](
-                'mm-sectionindexer--active'
+                'mm-sectionindexer_active'
             );
         });
     });

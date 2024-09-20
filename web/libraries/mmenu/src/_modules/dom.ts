@@ -4,14 +4,20 @@
  * @param 	{string}		selector	The nodeName and classnames for the element to create.
  * @return	{HTMLElement}				The created element.
  */
-export const create = (selector: string): HTMLElement => {
-    const args = selector.split('.'),
-        elem = document.createElement(args.shift());
+export function create(selector: string): HTMLElement {
+    const args = selector.split('.');
+    const elem = document.createElement(args.shift());
 
-    elem.classList.add(...args);
+    //  IE11:
+    args.forEach((classname) => {
+        elem.classList.add(classname);
+    });
+
+    //  Better browsers:
+    // elem.classList.add(...args);
 
     return elem;
-};
+}
 
 /**
  * Find all elements matching the selector.
@@ -21,12 +27,12 @@ export const create = (selector: string): HTMLElement => {
  * @param 	{string}		filter	The filter to match.
  * @return	{array}					Array of elements that match the filter.
  */
-export const find = (
+export function find(
     element: HTMLElement | Document,
     filter: string
-): HTMLElement[] => {
-    return filter.length ? [].slice.call(element.querySelectorAll(filter)) : [];
-};
+): HTMLElement[] {
+    return Array.prototype.slice.call(element.querySelectorAll(filter));
+}
 
 /**
  * Find all child elements matching the (optional) selector.
@@ -35,33 +41,13 @@ export const find = (
  * @param 	{string}		filter	The filter to match.
  * @return	{array}					Array of child elements that match the filter.
  */
-export const children = (
-    element: HTMLElement,
-    filter?: string
-): HTMLElement[] => {
+export function children(element: HTMLElement, filter?: string): HTMLElement[] {
     const children: HTMLElement[] = Array.prototype.slice.call(
         element.children
     );
     return filter
         ? children.filter((child) => child.matches(filter))
         : children;
-};
-
-/**
- * Find all text from direct child element.
- *
- * @param 	{HTMLElement} 	element Element to search in.
- * @return	{string}				The text.
- */
-export const childText = (
-    element: HTMLElement
-): string => {
-    return element 
-        ? [].slice.call(element.childNodes)
-            .filter(node => node.nodeType === Node.TEXT_NODE)
-            .map(node => node.nodeValue.trim())
-            .join(' ')
-        : '';
 }
 
 /**
@@ -69,12 +55,13 @@ export const childText = (
  * @param   {HTMLElement}   element Element to search in.
  * @return  {string}                The text.
  */
-export const text = (element: HTMLElement): string => {
-    return [].slice.call(element.childNodes)
-        .filter((child) => !child.ariaHidden)
+export function text(element: HTMLElement): string {
+    return Array.prototype.slice
+        .call(element.childNodes)
+        .filter((child) => child.nodeType == 3)
         .map((child) => child.textContent)
         .join(' ');
-};
+}
 
 /**
  * Find all preceding elements matching the selector.
@@ -83,10 +70,7 @@ export const text = (element: HTMLElement): string => {
  * @param 	{string}		filter	The filter to match.
  * @return	{array}					Array of preceding elements that match the selector.
  */
-export const parents = (
-    element: HTMLElement,
-    filter?: string
-): HTMLElement[] => {
+export function parents(element: HTMLElement, filter?: string): HTMLElement[] {
     /** Array of preceding elements that match the selector. */
     let parents: HTMLElement[] = [];
 
@@ -100,7 +84,7 @@ export const parents = (
     return filter
         ? parents.filter((parent) => parent.matches(filter))
         : parents;
-};
+}
 
 /**
  * Find all previous siblings matching the selecotr.
@@ -109,10 +93,7 @@ export const parents = (
  * @param 	{string}		filter	The filter to match.
  * @return	{array}					Array of previous siblings that match the selector.
  */
-export const prevAll = (
-    element: HTMLElement,
-    filter?: string
-): HTMLElement[] => {
+export function prevAll(element: HTMLElement, filter?: string): HTMLElement[] {
     /** Array of previous siblings that match the selector. */
     let previous: HTMLElement[] = [];
 
@@ -127,7 +108,7 @@ export const prevAll = (
     }
 
     return previous;
-};
+}
 
 /**
  * Get an element offset relative to the document.
@@ -136,34 +117,34 @@ export const prevAll = (
  * @param 	{string}		 [direction=top] 	Offset top or left.
  * @return	{number}							The element offset relative to the document.
  */
-export const offset = (element: HTMLElement, direction?: string): number => {
+export function offset(element: HTMLElement, direction?: string): number {
     return (
         element.getBoundingClientRect()[direction] +
         document.body[direction === 'left' ? 'scrollLeft' : 'scrollTop']
     );
-};
+}
 
 /**
  * Filter out non-listitem listitems.
  * @param  {array} listitems 	Elements to filter.
  * @return {array}				The filtered set of listitems.
  */
-export const filterLI = (listitems: HTMLElement[]): HTMLElement[] => {
+export function filterLI(listitems: HTMLElement[]): HTMLElement[] {
     return listitems.filter((listitem) => !listitem.matches('.mm-hidden'));
-};
+}
 
 /**
  * Find anchors in listitems (excluding anchor that open a sub-panel).
  * @param  {array} 	listitems 	Elements to filter.
  * @return {array}				The found set of anchors.
  */
-export const filterLIA = (listitems: HTMLElement[]): HTMLElement[] => {
+export function filterLIA(listitems: HTMLElement[]): HTMLElement[] {
     let anchors = [];
     filterLI(listitems).forEach((listitem) => {
         anchors.push(...children(listitem, 'a.mm-listitem__text'));
     });
-    return anchors.filter((anchor) => !anchor.matches('.mm-btn--next'));
-};
+    return anchors.filter((anchor) => !anchor.matches('.mm-btn_next'));
+}
 
 /**
  * Refactor a classname on multiple elements.
@@ -171,12 +152,13 @@ export const filterLIA = (listitems: HTMLElement[]): HTMLElement[] => {
  * @param {string}		oldClass 	Classname to remove.
  * @param {string}		newClass 	Classname to add.
  */
-export const reClass = (
+export function reClass(
     element: HTMLElement,
     oldClass: string,
     newClass: string
-) => {
+) {
     if (element.matches('.' + oldClass)) {
+        element.classList.remove(oldClass);
         element.classList.add(newClass);
     }
-};
+}

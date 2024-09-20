@@ -1,0 +1,86 @@
+@import '../../mixins', '../../includes', '../../variables';
+
+@if ($mm_include_toggles) {
+    input.mm-toggle {
+        @if ($mm_IE11Fallbacks) {
+            margin-top: ($mm_listitemSize - $mm_toggleHeight) / 2;
+            background: $mm_borderColor;
+
+            &:before {
+                background: $mm_backgroundColor;
+            }
+        }
+
+        display: inline-block;
+        min-width: $mm_toggleWidth;
+        width: $mm_toggleWidth;
+        height: $mm_toggleHeight;
+        margin: 0 $mm_padding;
+        margin-top: calc((var(--mm-listitem-size) - #{$mm_toggleHeight}) / 2);
+        border: none !important;
+        background: var(--mm-color-border);
+        border-radius: $mm_toggleHeight;
+        appearance: none !important;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:before {
+            content: '';
+            display: block;
+            width: $mm_toggleHeight - 2;
+            height: $mm_toggleHeight - 2;
+            margin: 1px;
+            border-radius: $mm_toggleHeight;
+            background: var(--mm-color-background);
+            transition: transform 0.2s ease;
+        }
+
+        &:checked {
+            background: $mm_toggleCheckedColor;
+
+            &:before {
+                transform: translateX($mm_toggleWidth - $mm_toggleHeight);
+            }
+        }
+    }
+}
+
+@if ($mm_include_checks) {
+    input.mm-check {
+        @if ($mm_IE11Fallbacks) {
+            margin-top: ($mm_listitemSize - $mm_checkHeight) / 2;
+        }
+
+        appearance: none !important;
+        border: none !important;
+        background: none !important;
+        cursor: pointer;
+        display: inline-block;
+        width: $mm_checkWidth;
+        height: $mm_checkHeight;
+        margin: 0 $mm_padding;
+        margin-top: calc((var(--mm-listitem-size) - #{$mm_checkHeight}) / 2);
+
+        &:before {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 20%;
+            margin: 25% 0 0 20%;
+            border-left: 3px solid;
+            border-bottom: 3px solid;
+            border-color: var(--mm-color-text);
+            opacity: 0.3;
+            transform: rotate(-45deg);
+            transition: opacity 0.2s ease;
+        }
+
+        &:checked {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@import 'toggles.rtl';

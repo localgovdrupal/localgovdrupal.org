@@ -1,53 +1,70 @@
-@use "../../variables" as v;
+@import '../../mixins', '../../includes', '../../variables';
 
-:root {
-    --mm-size: 80%;
-    --mm-min-size: 240px;
-    --mm-max-size: 440px;
-}
-
-//	Menu
-.mm-menu--offcanvas {
-    position: fixed;
-    z-index: 0;
-}
-
-//	Page node
+//	Animations
 .mm-page {
     box-sizing: border-box;
-    min-height: 100vh;
-    background: inherit;
+    position: relative;
 }
 
-//  All sliding out nodes
-:where(.mm-slideout) {
-    position: relative;
+.mm-slideout {
+    transition: transform $mm_transitionDuration $mm_transitionFunction;
     z-index: 1;
-    width: 100%;
-    transition-duration: v.$transDr;
-    transition-timing-function: v.$transFn;
-    transition-property: width, transform;
 }
 
 //	Wrapper
-.mm-wrapper--opened {
-    &,
-    body {
+.mm-wrapper {
+    &_opened {
+        overflow-x: hidden;
+        position: relative;
+
+        .mm-page {
+            min-height: 100vh;
+        }
+    }
+    &_background {
+        .mm-page {
+            background: inherit;
+        }
+    }
+}
+
+//	Menu
+.mm-menu_offcanvas {
+    position: fixed;
+    right: auto;
+    z-index: 0;
+
+    &:not(.mm-menu_opened) {
+        display: none;
+    }
+}
+
+@include mm_offcanvas_size;
+
+@if ($mm_include_offcanvas_blocker) {
+    .mm-wrapper__blocker {
+        background: rgba(3, 2, 1, 0);
         overflow: hidden;
-    }
-}
-
-//  UI Blocker
-.mm-wrapper__blocker {
-    background: #00000066;
-
-    .mm-wrapper--opened & {
-        --mm-blocker-visibility-delay: 0s;
-        --mm-blocker-opacity-delay: #{v.$transDr};
-
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
         bottom: 0;
-        opacity: 0.5;
+        left: 0;
+        z-index: 2;
+    }
+
+    .mm-wrapper_blocking {
+        overflow: hidden;
+
+        body {
+            overflow: hidden;
+        }
+
+        .mm-wrapper__blocker {
+            display: block;
+        }
     }
 }
 
-@import "positions";
+@import 'offcanvas.rtl';

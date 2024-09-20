@@ -1,29 +1,34 @@
-.mm-navbars {
-    flex-shrink: 0;
+@import '../../mixins', '../../includes', '../../variables';
 
-    .mm-navbar {
-        position: relative;
-        padding-top: 0;
-        border-bottom: none;
-    }
+%mm_navbars {
+}
 
-    &--top {
-        border-bottom: 1px solid var(--mm-color-border);
+@if ($mm_include_navbars_top) {
+    .mm-navbars_top {
+        flex-shrink: 0;
 
-        //  safe area inset for iPhones
-        .mm-navbar:first-child {
-            padding-top: env(safe-area-inset-top);
-        }
-    }
-
-    &--bottom {
-        border-top: 1px solid var(--mm-color-border);
-
-        //  safe area inset for iPhones
-        .mm-navbar:last-child {
-            padding-bottom: env(safe-area-inset-bottom);
+        .mm-navbar:not(:last-child) {
+            border-bottom: none;
         }
     }
 }
 
-@import "breadcrumbs", "tabs";
+@if ($mm_include_navbars_bottom) {
+    .mm-navbars_bottom {
+        flex-shrink: 0;
+
+        .mm-navbar {
+            border-bottom: none;
+
+            &:first-child {
+                @if ($mm_IE11Fallbacks) {
+                    border-top: 1px solid $mm_borderColor;
+                }
+
+                border-top: 1px solid var(--mm-color-border);
+            }
+        }
+    }
+}
+
+@import 'navbar.searchfield', 'navbar.breadcrumbs', 'navbar.tabs';

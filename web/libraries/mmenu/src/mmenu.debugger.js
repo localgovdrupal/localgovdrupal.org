@@ -2,15 +2,15 @@
  * Debugger for mmenu.js
  * Include this file after including the mmenu.js plugin to debug your menu.
  */
-(function () {
+(function() {
     const _console = Mmenu.console ||
         console || {
-        log: function () { },
-        warn: function () { },
-        error: function () { },
-        group: function () { },
-        groupEnd: function () { }
-    };
+            log: function() {},
+            warn: function() {},
+            error: function() {},
+            group: function() {},
+            groupEnd: function() {}
+        };
 
     const warnings = [];
     const deprecated = (depr, repl, vers) => {
@@ -35,200 +35,7 @@
     }
 
     /** Log deprecated warnings. */
-    Mmenu.prototype._deprecatedWarnings = function () {
-        /**
-         * ----------------------------
-         * Version 9.0 > 9.1
-         * ----------------------------
-         */
-
-        /* Extensions */
-
-        //  Removed all extensions.
-        if (this.opts.extensions) {
-            deprecated(
-                `The "Extension" option`,
-                '9.1.0'
-            );
-        }
-
-        // Removed position extensions.
-        [
-            'position-right',
-            'position-front',
-            'position-top',
-            'position-bottom'
-        ].forEach(ext => {
-            Object.keys(this.opts.extensions).forEach(key => {
-                if (this.opts.extensions[key].includes(ext)) {
-                    deprecated(
-                        `The "${ext}" extension`,
-                        'the "offcanvas.position" option',
-                        '9.1.0'
-                    );
-                }
-            });
-        });
-        
-
-        /**
-         * ----------------------------
-         * Version 8.5 > 9.0
-         * ----------------------------
-         */
-
-        /* Add-ons */
-
-        //  Removed add-ons.
-        [
-            'screenreader',
-            'keyboardNavigation',
-            'autoheight',
-            'columns',
-            'dividers',
-            'dropdown',
-            'fixedelements',
-            'lazysubmenus'
-        ].forEach(addon => {
-            if (this.opts[addon]) {
-                deprecated(
-                    `The "${addon}" add-on`,
-                    null,
-                    '9.0.0'
-                );
-            }
-            if (this.conf[addon]) {
-                deprecated(
-                    `The "${addon}" add-on`,
-                    null,
-                    '9.0.0'
-                );
-            }
-        });
-
-        //  Searchfield changes
-        [
-            'cancel',
-            'panel'
-        ].forEach(option => {
-            if (typeof this.opts.searchfield[option] !== 'undefined') {
-                deprecated(
-                    `The "${option}" option for the "searchfield" add-on`,
-                    `The "${option}" configuration option`,
-                    '9.0.0'
-                )
-            }
-        });
-        
-        [
-            'search',
-            'showSubPanels',
-            'showTextItems'
-        ].forEach(option => {
-            if (typeof this.opts.searchfield[option] !== 'undefined') {
-                deprecated(
-                    `The "${option}" option for the "searchfield" add-on`,
-                    null,
-                    '9.0.0'
-                )
-            }
-        });
-
-        //  Counters "addTo" and "count" are removed.
-        if (this.opts.counters.addTo) {
-            ['addTo', 'count'].forEach(option => {
-                deprecated(
-                    `The "${option}" options for the "counters" add-on`,
-                    null,
-                    '9.0.0'
-                );
-            });
-        };
-
-        /* Extensions */
-
-        // Removed extensions.
-        [
-            'borderstyle',
-            'effects',
-            'listview',
-            'multiline',
-            'popup',
-            'shadows'
-        ].forEach(ext => {
-            Object.keys(this.opts.extensions).forEach(key => {
-                if (this.opts.extensions[key].includes(ext)) {
-                    deprecated(
-                        `The "${ext}" extension`,
-                        'custom CSS',
-                        '9.0.0'
-                    );
-                }
-            });
-        });
-
-        /* Config */
-
-        //  Prev classnames removed from navbars add-on.
-        if (
-            this.conf.classNames.prev ||
-            this.node.menu.querySelector('.Prev')
-        ) {
-            deprecated(
-                'Predefining a back button for navbars',
-                null,
-                '9.0.0'
-            );
-        }
-
-        //  Title classnames removed from navbars add-on.
-        if (
-            this.conf.classNames.title ||
-            this.node.menu.querySelector('.Title')
-        ) {
-            deprecated(
-                'Predefining a title for navbars',
-                null,
-                '9.0.0'
-            );
-        }
-
-        /* Wrappers */
-
-        //  Removed wrappers.
-        [
-            'angular',
-            'bootstrap',
-            'magento',
-            'olark',
-            'turbolinks',
-            'wordpress'
-        ].forEach(wrpr => {
-            if (this.opts.wrappers.includes(wrpr)) {
-                deprecated(
-                    `The "${wrpr}" wrapper`,
-                    null,
-                    '9.0.0'
-                );
-            }
-        });
-
-        /* API */
-
-        //	Removed API methods.
-        [
-            'initPanels'
-        ].forEach(method => {
-            this.bind(method + ':before', () => {
-                deprecated(
-                    `The "${method}" API method`,
-                    null,
-                    '9.0.0'
-                );
-            });
-        });
-
-
+    Mmenu.prototype._deprecatedWarnings = function() {
         /**
          * ----------------------------
          * Version 8.4 > 8.5
@@ -252,12 +59,12 @@
 
         /* Extensions */
 
-        // Removed the extensions.
+        // Removed the tileview extension.
         ['tileview'].forEach(ext => {
             Object.keys(this.opts.extensions).forEach(key => {
                 if (this.opts.extensions[key].includes(ext)) {
                     deprecated(
-                        `The "${ext}" extension`,
+                        'The "' + ext + '" extension',
                         'custom CSS',
                         '8.5.0'
                     );
@@ -321,7 +128,7 @@
             //  "drag.menu" Suboptions now are the "drag" options.
             if (this.opts.drag.menu) {
                 deprecated(
-                    'The "menu" options for the "drag" add-on',
+                    'The "drag.menu" options for the "drag" add-on',
                     'the "drag" option',
                     '8.3.0'
                 );
@@ -351,7 +158,7 @@
         ].forEach(ext => {
             if (this.node.menu.querySelector(ext)) {
                 deprecated(
-                    `Using the classname ${ext} on a specific panel.`,
+                    'Using the classname ' + ext + ' on a specific panel.',
                     'custom CSS',
                     '8.3.0'
                 );
@@ -373,7 +180,7 @@
             Object.keys(this.opts.extensions).forEach(key => {
                 if (this.opts.extensions[key].includes(ext)) {
                     deprecated(
-                        `The "${ext}" extension`,
+                        'The "' + ext + '" extension',
                         'custom CSS',
                         '8.3.0'
                     );
@@ -414,6 +221,189 @@
             if (typeof this.conf.offCanvas.clone == 'undefined') {
                 this.conf.offCanvas.clone = this.conf.clone;
             }
+        }
+
+        /**
+         * ----------------------------
+         * Version 7.3 > 8.0
+         * ----------------------------
+         */
+
+        /* API */
+
+        //	These methods no longer accept a jQuery object as an argument,
+        //		they now only accept a HTMLElement.
+        [
+            'setPage',
+            'openPanel',
+            'closePanel',
+            'closeAllPanels',
+            'setSelected'
+        ].forEach(method => {
+            this.bind(method + ':before', panel => {
+                if (
+                    typeof panel != 'undefined' &&
+                    typeof jQuery != 'undefined' &&
+                    panel instanceof jQuery
+                ) {
+                    deprecated(
+                        'Passing a jQuery object as an argument to the "' +
+                            method +
+                            '" API method',
+                        'a HTMLElement',
+                        '8.0.0'
+                    );
+                }
+            });
+        });
+
+        //	These methods no longer accept a jQuery object as an argument,
+        //		they now only accept an array of HTMLElements.
+        ['initPanels'].forEach(method => {
+            this.bind(method + ':before', panel => {
+                if (
+                    typeof panel != 'undefined' &&
+                    typeof jQuery != 'undefined' &&
+                    panel instanceof jQuery
+                ) {
+                    deprecated(
+                        'Passing a jQuery object as an argument to the "' +
+                            method +
+                            '" API method',
+                        'a HTMLElement array',
+                        '8.0.0'
+                    );
+                }
+            });
+        });
+
+        /* OPTIONS */
+
+        //	opts.navbars.navbar.height is removed in favor of specifying a different CSS variable (--mm-navbar-size ) for each navbar.
+        if (this.opts.navbars) {
+            this.opts.navbars.forEach(navbar => {
+                if (typeof navbar.height !== 'undefined') {
+                    deprecated(
+                        'The "height" option in the "navbars" options.',
+                        'the CSS variable "--mm-navbar-size"',
+                        '8.0.0'
+                    );
+                }
+            });
+        }
+
+        //	opts.dividers.fixed is removed, all dividers are now sticky by default.
+        if (this.opts.dividers) {
+            if (
+                typeof this.opts.dividers == 'object' &&
+                typeof this.opts.dividers.fixed !== 'undefined'
+            ) {
+                deprecated(
+                    'The "fixed" option in the "dividers" options.',
+                    null,
+                    '8.0.0'
+                );
+            }
+        }
+
+        //	opts.iconbar.add is renamed to opts.iconbar.use.
+        if (this.opts.iconbar) {
+            if (
+                typeof this.opts.iconbar == 'object' &&
+                typeof this.opts.iconbar.add !== 'undefined'
+            ) {
+                deprecated(
+                    'The "add" option in the "iconbar" options.',
+                    '"use"',
+                    '8.0.0'
+                );
+
+                //	Try to fix it.
+                this.opts.iconbar.use = this.opts.iconbar.add;
+            }
+        }
+
+        /* CONFIGURATION */
+
+        //	conf.fixedElements.elemInsertMethod is changed to conf.fixedElements.fixed.insertMethod.
+        if (typeof this.conf.fixedElements.elemInsertMethod != 'undefined') {
+            deprecated(
+                'The "elemInsertMethod" option in the "fixedElements" configuration',
+                '"fixed.insertMethod"',
+                '8.0.0'
+            );
+
+            //	Try to fix it.
+            if (
+                typeof this.conf.fixedElements.fixed.insertMethod == 'undefined'
+            ) {
+                this.conf.fixedElements.fixed.insertMethod = this.conf.fixedElements.elemInsertMethod;
+            }
+        }
+
+        //	conf.fixedElements.elemInsertSelector is changed to conf.fixedElements.fixed.insertSelector.
+        if (typeof this.conf.fixedElements.elemInsertMethod != 'undefined') {
+            deprecated(
+                'The "elemInsertSelector" option in the "fixedElements" configuration',
+                '"fixed.insertSelector"',
+                '8.0.0'
+            );
+
+            //	Try to fix it.
+            if (
+                typeof this.conf.fixedElements.fixed.insertSelector ==
+                'undefined'
+            ) {
+                this.conf.fixedElements.fixed.insertSelector = this.conf.fixedElements.elemInsertSelector;
+            }
+        }
+
+        /* WRAPPERS */
+
+        //	Removed and renamed framework wrappers
+        if (this.opts.wrappers) {
+            this.opts.wrappers.forEach(wrapper => {
+                switch (wrapper) {
+                    //  Bootstrap 3 framework wrapper is removed
+                    case 'bootstrap3':
+                        deprecated('The "bootstrap3" wrapper', null, '8.0.0');
+
+                        //  Try to fix it.
+                        let indexbs3 = this.opts.wrappers.indexOf(wrapper);
+                        if (indexbs3 > -1) {
+                            this.opts.wrappers.splice(indexbs3, 1);
+                        }
+                        break;
+
+                    //  Bootstrap 4 framework wrapper is renamed to "bootstrap"
+                    case 'bootstrap4':
+                        deprecated(
+                            'The "bootstrap4" wrapper',
+                            '"bootstrap"',
+                            '8.0.0'
+                        );
+
+                        //	Try to fix it.
+                        this.opts.wrappers.push('bootstrap');
+
+                        let indexbs4 = this.opts.wrappers.indexOf(wrapper);
+                        if (indexbs4 > -1) {
+                            this.opts.wrappers.splice(indexbs4, 1);
+                        }
+                        break;
+
+                    //  jQuery Mobile framework wrapper is removed
+                    case 'jqueryMobile':
+                        deprecated('The "jqueryMobile" wrapper', null, '8.0.0');
+
+                        //  Try to fix it.
+                        let indexjqm = this.opts.wrappers.indexOf(wrapper);
+                        if (indexjqm > -1) {
+                            this.opts.wrappers.splice(indexjqm, 1);
+                        }
+                        break;
+                }
+            });
         }
 
         if (warnings.length) {

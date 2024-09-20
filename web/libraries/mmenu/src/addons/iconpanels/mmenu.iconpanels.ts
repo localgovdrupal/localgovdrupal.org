@@ -1,15 +1,17 @@
 import Mmenu from '../../core/oncanvas/mmenu.oncanvas';
-import OPTIONS from './_options';
+import options from './_options';
+import { extendShorthandOptions } from './_options';
 import * as DOM from '../../_modules/dom';
 import { extend } from '../../_modules/helpers';
 
-export default function (this: Mmenu) {
-    this.opts.iconPanels = this.opts.iconPanels || {};
+//	Add the options.
+Mmenu.options.iconPanels = options;
 
-    //	Extend options.
-    const options = extend(this.opts.iconPanels, OPTIONS);
+export default function(this: Mmenu) {
+    var options = extendShorthandOptions(this.opts.iconPanels);
+    this.opts.iconPanels = extend(options, Mmenu.options.iconPanels);
 
-    let keepFirst = false;
+    var keepFirst = false;
 
     if (options.visible == 'first') {
         keepFirst = true;
@@ -22,61 +24,103 @@ export default function (this: Mmenu) {
     //	Add the iconpanels
     if (options.add) {
         this.bind('initMenu:after', () => {
-            this.node.menu.classList.add('mm-menu--iconpanel');
-        });
+            let classnames = ['mm-menu_iconpanel'];
 
-        /** The classnames that can be set to a panel */
-        const classnames = [
-            'mm-panel--iconpanel-0',
-            'mm-panel--iconpanel-1',
-            'mm-panel--iconpanel-2',
-            'mm-panel--iconpanel-3'
-        ];
+            if (options.hideNavbar) {
+                classnames.push('mm-menu_hidenavbar');
+            }
 
-        //  Show only the main panel.
-        if (keepFirst) {
-            this.bind('initMenu:after', () => {
-                DOM.children(this.node.pnls, '.mm-panel')[0]?.classList.add('mm-panel--iconpanel-first');
+            if (options.hideDivider) {
+                classnames.push('mm-menu_hidedivider');
+            }
+
+            //  IE11:
+            classnames.forEach(classname => {
+                this.node.menu.classList.add(classname);
             });
 
-        //  Show parent panel(s).
-        } else {
+            //  Better browsers:
+            // this.node.menu.classList.add(...classnames);
+        });
 
-            this.bind('openPanel:after', (panel: HTMLElement) => {
+        let classnames = [];
+        if (!keepFirst) {
+            for (let i = 0; i <= options.visible; i++) {
+                classnames.push('mm-panel_iconpanel-' + i);
+            }
+        }
 
-                //  Do nothing when opening a vertical submenu
-                if (panel.closest('.mm-listitem--vertical')) {
-                    return;
-                }
+        this.bind('openPanel:start', (panel?: HTMLElement) => {
+            var panels = DOM.children(this.node.pnls, '.mm-panel');
+            panel = panel || panels[0];
 
-                let panels = DOM.children(this.node.pnls, '.mm-panel');
+            if (panel.parentElement.matches('.mm-listitem_vertical')) {
+                return;
+            }
+
+            if (keepFirst) {
+                panels.forEach((panel, p) => {
+                    panel.classList[p == 0 ? 'add' : 'remove'](
+                        'mm-panel_iconpanel-first'
+                    );
+                });
+            } else {
+                //	Remove the "iconpanel" classnames from all panels.
+                panels.forEach(panel => {
+                    //  IE11:
+                    classnames.forEach(classname => {
+                        panel.classList.remove(classname);
+                    });
+
+                    //  Better browsers:
+                    // panel.classList.remove(...classnames);
+                });
 
                 //	Filter out panels that are not opened.
-                panels = panels.filter((panel) =>
-                    panel.matches('.mm-panel--parent')
+                panels = panels.filter(panel =>
+                    panel.matches('.mm-panel_opened-parent')
                 );
 
                 //	Add the current panel to the list.
-                panels.push(panel);
+                let panelAdded = false;
+                panels.forEach(elem => {
+                    if (panel === elem) {
+                        panelAdded = true;
+                    }
+                });
+                if (!panelAdded) {
+                    panels.push(panel);
+                }
+
+                //	Remove the "hidden" classname from all opened panels.
+                panels.forEach(panel => {
+                    panel.classList.remove('mm-hidden');
+                });
 
                 //	Slice the opened panels to the max visible amount.
                 panels = panels.slice(-options.visible);
 
                 //	Add the "iconpanel" classnames.
                 panels.forEach((panel, p) => {
-                    panel.classList.remove('mm-panel--iconpanel-first', ...classnames);
-                    panel.classList.add(`mm-panel--iconpanel-${p}`);
+                    panel.classList.add('mm-panel_iconpanel-' + p);
                 });
-            });
-        }
+            }
+        });
 
-        // this.bind('initPanel:after', (panel: HTMLElement) => {
-        //     if (!panel.closest('.mm-listitem--vertical') &&
-        //         !DOM.children(panel, '.mm-panel__blocker')[0]
-        //     ) {
-        //         const blocker = DOM.create('div.mm-blocker.mm-panel__blocker') as HTMLElement;
-        //         panel.prepend(blocker);
-        //     }
-        // });
+        this.bind('initPanel:after', (panel: HTMLElement) => {
+            if (
+                options.blockPanel &&
+                !panel.parentElement.matches('.mm-listitem_vertical') &&
+                !DOM.children(panel, '.mm-panel__blocker')[0]
+            ) {
+                let blocker = DOM.create('a.mm-panel__blocker');
+                blocker.setAttribute(
+                    'href',
+                    '#' + panel.closest('.mm-panel').id
+                );
+
+                panel.prepend(blocker);
+            }
+        });
     }
 }

@@ -1,44 +1,45 @@
-@use "../../variables" as v;
+@import '../../mixins', '../../includes', '../../variables';
 
-$mm_module: ".mm-searchfield";
+$mm_module: '.mm-searchfield';
 
-/**
- * The form.
- */
 #{$mm_module} {
+    @if ($mm_IE11Fallbacks) {
+        height: $mm_navbarSize;
+
+        input {
+            height: $mm_navbarSize * 0.7;
+            line-height: $mm_navbarSize * 0.7;
+
+            &,
+            &:hover,
+            &:focus {
+                background: $mm_highlightedBackgroundColor;
+                color: $mm_textColor;
+            }
+        }
+    }
+
     display: flex;
     flex-grow: 1;
     height: var(--mm-navbar-size);
     padding: 0;
     overflow: hidden;
-}
-/**
- * The fieldset
- */
-#{$mm_module}__input {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
 
-    // Input
     input {
         display: block;
         width: 100%;
         max-width: 100%;
         height: calc(var(--mm-navbar-size) * 0.7);
-        min-height: auto;
-        max-height: auto;
+        min-height: unset;
+        max-height: unset;
         margin: 0;
-        padding: 0 10px;
+        padding: 0 $mm_padding;
         box-sizing: border-box;
-        border: none;
+        border: none !important;
         border-radius: 4px;
         line-height: calc(var(--mm-navbar-size) * 0.7);
+        box-shadow: none !important;
+        outline: none !important;
         font: inherit;
         font-size: inherit;
 
@@ -48,10 +49,6 @@ $mm_module: ".mm-searchfield";
             background: var(--mm-color-background-highlight);
             color: var(--mm-color-text);
         }
-
-        .mm-menu[class*="-contrast"] & {
-            border: 1px solid var(--mm-color-border);
-        }
     }
 
     input::-ms-clear {
@@ -59,39 +56,80 @@ $mm_module: ".mm-searchfield";
     }
 }
 
-/**
- * Submit and reset buttons.
- */
-#{$mm_module}__btn {
-    display: none;
-    position: absolute;
-    inset-inline-end: 0; // right, left for RTL
-    top: 0;
-    bottom: 0;
-
-    #{$mm_module}--searching & {
-        display: block;
-    }
-}
-
-/**
- * Cancel button.
- */
-#{$mm_module}__cancel {
-    display: block;
+#{$mm_module}__input {
+    display: flex;
+    flex: 1;
+    align-items: center;
     position: relative;
-    margin-inline-end: -100px; // right, left for RTL
-    padding-inline-start: 5px; // left, right for RTL
-    padding-inline-end: v.$listitemIndent; // right, left for RTL
-    visibility: hidden;
-    line-height: var(--mm-navbar-size);
-    text-decoration: none;
-    transition-property: visibility, margin;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 $mm_padding;
+    box-sizing: border-box;
+}
 
-    #{$mm_module}--cancelable & {
-        visibility: visible;
-        margin-inline-end: 0; // right, left for RTL
+.mm-panel__noresultsmsg {
+    @if ($mm_IE11Fallbacks) {
+        color: $mm_dimmedTextColor;
+    }
+
+    padding: $mm_btnSize 0;
+    color: var(--mm-color-text-dimmed);
+    text-align: center;
+    font-size: 150%;
+}
+
+@if ($mm_include_searchfield_btn) {
+    #{$mm_module}__btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 }
 
-@import "./panel";
+@if ($mm_include_searchfield_searchpanel) {
+    .mm-panel_search {
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        border-left: none !important;
+    }
+
+    #{$mm_module}__cancel {
+        @if ($mm_IE11Fallbacks) {
+            line-height: $mm_navbarSize;
+        }
+
+        display: block;
+        padding-right: $mm_padding;
+        margin-right: -100px;
+        line-height: var(--mm-navbar-size);
+        text-decoration: none;
+
+        transition: margin $mm_transitionDuration $mm_transitionFunction;
+    }
+
+    #{$mm_module}__cancel-active {
+        margin-right: 0;
+    }
+}
+
+// Listitem with no search results in the child panel.
+.mm-listitem_nosubitems {
+    > .mm-listitem__btn {
+        display: none;
+    }
+
+    > .mm-listitem__text {
+        padding-right: $mm_padding;
+    }
+}
+
+// Listitem with only search results in the child panel (not in the listitem itself).
+.mm-listitem_onlysubitems {
+    > .mm-listitem__text:not(.mm-listitem__btn) {
+        // This should (sort of) disable the anchor in the listitem.
+        z-index: -1;
+        pointer-events: none;
+    }
+}

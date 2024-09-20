@@ -1,38 +1,55 @@
 import Mmenu from '../../core/oncanvas/mmenu.oncanvas';
-import OPTIONS from './options';
+import options from './_options';
+import { extendShorthandOptions } from './_options';
 import * as DOM from '../../_modules/dom';
 import * as media from '../../_modules/matchmedia';
 import { extend } from '../../_modules/helpers';
 
-export default function (this: Mmenu) {
-    // Only for off-canvas menus.
-    if (!this.opts.offCanvas.use) {
+//  Add the options.
+Mmenu.options.sidebar = options;
+
+export default function(this: Mmenu) {
+    if (!this.opts.offCanvas) {
         return;
     }
 
-    this.opts.sidebar = this.opts.sidebar || {};
-
-    //	Extend options.
-    const options = extend(this.opts.sidebar, OPTIONS);
+    var options = extendShorthandOptions(this.opts.sidebar);
+    this.opts.sidebar = extend(options, Mmenu.options.sidebar);
 
     //	Collapsed
     if (options.collapsed.use) {
         //	Make the menu collapsable.
         this.bind('initMenu:after', () => {
-            this.node.menu.classList.add('mm-menu--sidebar-collapsed');
+            this.node.menu.classList.add('mm-menu_sidebar-collapsed');
+
+            if (
+                options.collapsed.blockMenu &&
+                this.opts.offCanvas &&
+                !DOM.children(this.node.menu, '.mm-menu__blocker')[0]
+            ) {
+                let anchor = DOM.create('a.mm-menu__blocker');
+                anchor.setAttribute('href', '#' + this.node.menu.id);
+
+                this.node.menu.prepend(anchor);
+            }
+
+            if (options.collapsed.hideNavbar) {
+                this.node.menu.classList.add('mm-menu_hidenavbar');
+            }
+
+            if (options.collapsed.hideDivider) {
+                this.node.menu.classList.add('mm-menu_hidedivider');
+            }
         });
 
-        /** Enable the collapsed sidebar */
+        //	En-/disable the collapsed sidebar.
         let enable = () => {
-            this.node.wrpr.classList.add('mm-wrapper--sidebar-collapsed');
+            this.node.wrpr.classList.add('mm-wrapper_sidebar-collapsed');
         };
-
-        /** Disable the collapsed sidebar */
         let disable = () => {
-            this.node.wrpr.classList.remove('mm-wrapper--sidebar-collapsed');
+            this.node.wrpr.classList.remove('mm-wrapper_sidebar-collapsed');
         };
-
-        if (typeof options.collapsed.use === 'boolean') {
+        if (typeof options.collapsed.use == 'boolean') {
             this.bind('initMenu:after', enable);
         } else {
             media.add(options.collapsed.use, enable, disable);
@@ -43,63 +60,76 @@ export default function (this: Mmenu) {
     if (options.expanded.use) {
         //	Make the menu expandable
         this.bind('initMenu:after', () => {
-            this.node.menu.classList.add('mm-menu--sidebar-expanded');
+            this.node.menu.classList.add('mm-menu_sidebar-expanded');
         });
 
-        let expandedEnabled = false;
-
-        /** Enable the expanded sidebar */
+        //	En-/disable the expanded sidebar.
         let enable = () => {
-            expandedEnabled = true;
-            this.node.wrpr.classList.add('mm-wrapper--sidebar-expanded');
-            this.node.menu.removeAttribute('aria-modal');
-            this.open();
-            Mmenu.node.page.removeAttribute('inert');
+            this.node.wrpr.classList.add('mm-wrapper_sidebar-expanded');
+            if (!this.node.wrpr.matches('.mm-wrapper_sidebar-closed')) {
+                this.open();
+            }
         };
-
-        /** Disable the expanded sidebar */
         let disable = () => {
-            expandedEnabled = false;
-            this.node.wrpr.classList.remove('mm-wrapper--sidebar-expanded');
-            this.node.menu.setAttribute('aria-modal', 'true');
+            this.node.wrpr.classList.remove('mm-wrapper_sidebar-expanded');
             this.close();
         };
-
         if (typeof options.expanded.use == 'boolean') {
             this.bind('initMenu:after', enable);
         } else {
             media.add(options.expanded.use, enable, disable);
         }
 
-        //  Store exanded state when opening and closing the menu.
-        this.bind('close:after', () => {
-            if (expandedEnabled) {
-                window.sessionStorage.setItem('mmenuExpandedState', 'closed');
+        //  Manually en-/disable the expanded sidebar (open / close the menu)
+        this.bind('close:start', () => {
+            if (this.node.wrpr.matches('.mm-wrapper_sidebar-expanded')) {
+                this.node.wrpr.classList.add('mm-wrapper_sidebar-closed');
+
+                if (options.expanded.initial == 'remember') {
+                    window.localStorage.setItem('mmenuExpandedState', 'closed');
+                }
             }
         });
 
-        this.bind('open:after', () => {
-            if (expandedEnabled) {
-                window.sessionStorage.setItem('mmenuExpandedState', 'open');
-                Mmenu.node.page.removeAttribute('inert');
+        this.bind('open:start', () => {
+            if (this.node.wrpr.matches('.mm-wrapper_sidebar-expanded')) {
+                this.node.wrpr.classList.remove('mm-wrapper_sidebar-closed');
+
+                if (options.expanded.initial == 'remember') {
+                    window.localStorage.setItem('mmenuExpandedState', 'open');
+                }
             }
         });
 
         //  Set the initial state
-        let initialState = options.expanded.initial;
+        var initialState = options.expanded.initial;
 
-        const state = window.sessionStorage.getItem('mmenuExpandedState');
-        switch (state) {
-            case 'open':
-            case 'closed':
-                initialState = state;
-                break;
+        if (options.expanded.initial == 'remember') {
+            let state = window.localStorage.getItem('mmenuExpandedState');
+            switch (state) {
+                case 'open':
+                case 'closed':
+                    initialState = state;
+                    break;
+            }
         }
 
-        if (initialState === 'closed') {
-            this.bind('init:after', () => {
-                this.close();
+        if (initialState == 'closed') {
+            this.bind('initMenu:after', () => {
+                this.node.wrpr.classList.add('mm-wrapper_sidebar-closed');
             });
         }
+
+        //	Add click behavior.
+        //	Prevents default behavior when clicking an anchor
+        this.clck.push((anchor: HTMLElement, args: mmClickArguments) => {
+            if (args.inMenu && args.inListview) {
+                if (this.node.wrpr.matches('.mm-wrapper_sidebar-expanded')) {
+                    return {
+                        close: options.expanded.initial == 'closed'
+                    };
+                }
+            }
+        });
     }
 }

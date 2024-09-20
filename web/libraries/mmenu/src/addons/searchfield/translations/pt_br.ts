@@ -1,7 +1,5 @@
 export default {
-    'cancel': 'cancelar',
-    'Cancel searching': 'Cancelar pesquisa',
-    'Clear searchfield': 'Limpar campo de pesquisa',
+    Search: 'Buscar',
     'No results found.': 'Nenhum resultado encontrado.',
-    'Search': 'Buscar',
+    cancel: 'cancelar'
 };
