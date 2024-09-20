@@ -15,7 +15,7 @@ third_party_settings:
 id: footerlogos
 theme: lgd_org_theme
 region: lower_footer_third
-weight: -12
+weight: -21
 provider: null
 plugin: 'block_content:f6ff6fd8-a3a9-4ae1-b32d-3676d7b4ba40'
 settings:

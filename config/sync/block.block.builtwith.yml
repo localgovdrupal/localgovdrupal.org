@@ -8,8 +8,8 @@ dependencies:
     - lgd_org_theme
 id: builtwith
 theme: lgd_org_theme
-region: lower_footer_first
-weight: -7
+region: lower_footer_second
+weight: -21
 provider: null
 plugin: lgd_org_blocks_builtwith
 settings:
