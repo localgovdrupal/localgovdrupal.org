@@ -1,0 +1,18 @@
+uuid: 5339c13c-f7d5-45f8-9aa4-4a2a12297679
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - localgov_guides
+      - localgov_menu_link_group
+_core:
+  default_config_hash: O8C0Eh1RBtmfIEaHxe3vS6RE4dcygQrqBxichnnR_A0
+id: localgov_menu_link_group_guide
+group_label: Guide
+weight: 0
+parent_menu: admin
+parent_menu_link: 'admin_toolbar_tools.extra_links:node.add'
+child_menu_links:
+  - 'admin_toolbar_tools.extra_links:node.add.localgov_guides_overview'
+  - 'admin_toolbar_tools.extra_links:node.add.localgov_guides_page'

@@ -1,0 +1,21 @@
+uuid: bf7ae1c7-a68d-4462-8787-4c280e4fc5a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_guides_section_title
+    - node.type.localgov_guides_overview
+_core:
+  default_config_hash: 1gtf0KY_GSZrNvacWp4qvTm9Wwl_4Tf7N_5bzC-4lZQ
+id: node.localgov_guides_overview.localgov_guides_section_title
+field_name: localgov_guides_section_title
+entity_type: node
+bundle: localgov_guides_overview
+label: 'Guide section title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
