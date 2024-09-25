@@ -1,0 +1,90 @@
+$mm_module: '.mm-panel';
+
+#{$mm_module} {
+    @if ($mm_IE11Fallbacks) {
+        background: $mm_backgroundColor;
+        border-color: $mm_borderColor;
+        color: $mm_textColor;
+
+        &:after {
+            height: $mm_listitemSize;
+        }
+    }
+
+    z-index: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    overflow-y: auto;
+
+    color: var(--mm-color-text);
+    border-color: var(--mm-color-border);
+    background: var(--mm-color-background);
+
+    transform: translate3d(100%, 0, 0);
+    transition: transform $mm_transitionDuration $mm_transitionFunction;
+
+    //	Fixes css from other styles hiding submenus
+    &:not(.mm-hidden) {
+        display: block;
+    }
+
+    //	Because padding-bottom is ignored when a DIV is scrollable
+    &:after {
+        content: '';
+        display: block;
+        height: var(--mm-listitem-size);
+    }
+
+    &_opened {
+        z-index: 1;
+        transform: translate3d(0%, 0, 0);
+    }
+
+    &_opened-parent {
+        transform: translate3d(-$mm_subpanelOffset, 0, 0);
+    }
+
+    &_highest {
+        z-index: 2;
+    }
+
+    &_noanimation {
+        transition: none !important;
+
+        &#{$mm_module}_opened-parent {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .mm-panels > & {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+#{$mm_module}__content {
+    padding: $mm_panelPadding $mm_panelPadding 0;
+}
+
+.mm-panels {
+    @if ($mm_IE11Fallbacks) {
+        background: $mm_backgroundColor;
+        border-color: $mm_borderColor;
+        color: $mm_textColor;
+    }
+
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+
+    background: var(--mm-color-background);
+    border-color: var(--mm-color-border);
+    color: var(--mm-color-text);
+}

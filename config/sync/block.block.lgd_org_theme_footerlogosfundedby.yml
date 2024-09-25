@@ -8,8 +8,8 @@ dependencies:
     - lgd_org_theme
 id: lgd_org_theme_footerlogosfundedby
 theme: lgd_org_theme
-region: lower_footer_third
-weight: 0
+region: footer
+weight: -19
 provider: null
 plugin: lgd_org_footer_logos
 settings:

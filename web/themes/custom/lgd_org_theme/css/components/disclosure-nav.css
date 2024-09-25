@@ -4,16 +4,16 @@
 
 .disclosure-nav > li > a {
 
-  padding: var(--spacing) var(--spacing-small) !important;
+  padding: var(--spacing-small) !important;
   display: inline-block !important;
   letter-spacing: -1px;
-  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-size: clamp(1.25rem, 2vw, 1.625rem);
   font-weight: 700;
   text-decoration: none;
 }
 
 .disclosure-nav > li button {
-  padding: var(--spacing) var(--spacing-small);
+  padding:  var(--spacing-small);
 }
 
 .disclosure-nav > li + li  {

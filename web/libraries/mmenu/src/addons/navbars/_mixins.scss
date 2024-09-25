@@ -1,0 +1,15 @@
+@mixin mm_navbar_tabs_borders( $top, $bottom, $last, $first ) {
+	.mm-navbars_#{$top} {
+		.mm-navbar_tabs:not( :#{$last}-child ) {
+			border-#{$bottom}-width: 1px;
+			border-#{$bottom}-style: solid;
+		}
+		.mm-navbar__tab_selected {
+			border-#{$bottom}: none;
+			margin-#{$bottom}: -1px;
+		}
+		.mm-navbar_tabs:#{$first}-child .mm-navbar__tab_selected {
+			border-#{$top}: none;
+		}
+	}
+}

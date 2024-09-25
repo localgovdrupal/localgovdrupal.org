@@ -4,11 +4,11 @@
 }
 
 .path-frontpage blockquote {
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: var(--font-size-larger);
 }
 
 .path-frontpage .pull-out-quote__author {
-  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  font-size: calc(var(--font-size) * 1.1875);
 }
 .path-frontpage .pull-out-quote{
   max-width: 932px;
@@ -37,8 +37,8 @@
 .path-frontpage .pull-out-quote__content:before {
   content: '';
   background: url("../../assets/images/quoteoutline.svg") no-repeat 0 50% ;
-  height: clamp(120px, 25vw, 120px);
-  width: clamp(150px, 25vw, 150px);
+  height: clamp(120px, 25vw, 144px);
+  width: clamp(150px, 25vw, 195px);
   display: inline-block;
   background-size: 100%;
   margin-right: var(--spacing);

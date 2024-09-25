@@ -1,41 +1,69 @@
+@import '../../mixins', '../../includes', '../../variables';
+
 :root {
-    --mm-iconpanel-size: 50px;
+    --mm-iconpanel-size: #{$mm_iconpanelSize};
 }
 
-@for $i from 0 through 4 {
-    .mm-panel--iconpanel-#{$i} {
-        inset-inline-start: calc(
-            #{$i} * var(--mm-iconpanel-size)
-        ); // left, right for RTL
-    }
-}
+@include mm_iconpanel_size(1);
+@include mm_iconpanel_size(2);
+@include mm_iconpanel_size(3);
 
-.mm-panel--iconpanel-first {
+.mm-panel_iconpanel-first {
     ~ .mm-panel {
-        inset-inline-start: var(--mm-iconpanel-size); // left, right for RTL
+        @if ($mm_IE11Fallbacks) {
+            width: calc(100% - #{$mm_iconpanelSize});
+        }
+
+        width: calc(100% - var(--mm-iconpanel-size));
     }
 }
 
-.mm-menu--iconpanel {
-    // Hide navbars and dividers in parent panels.
-    .mm-panel--parent {
-        .mm-navbar,
-        .mm-divider {
-            opacity: 0;
+.mm-menu_iconpanel .mm-panels {
+    > .mm-panel {
+        left: auto;
+        transition-property: transform, width;
+
+        &_opened,
+        &_opened-parent {
+            display: block !important;
         }
-    }
 
-    .mm-panels {
-        > .mm-panel {
-            &--parent {
-                overflow-y: hidden;
-                transform: unset;
-            }
+        &_opened-parent {
+            overflow-y: hidden;
+            transform: unset;
+        }
 
-            &:not(.mm-panel--iconpanel-first):not(.mm-panel--iconpanel-0) {
-                border-inline-start-width: 1px; // left, right for RTL
-                border-inline-start-style: solid; // left, right for RTL
-            }
+        &:not(.mm-panel_iconpanel-first):not(.mm-panel_iconpanel-0) {
+            border-left-width: 1px;
+            border-left-style: solid;
         }
     }
 }
+
+.mm-menu_hidenavbar .mm-panel_opened-parent .mm-navbar,
+.mm-menu_hidedivider .mm-panel_opened-parent .mm-divider {
+    opacity: 0;
+}
+
+@if ($mm_include_iconpanels_blocker) {
+    .mm-panel__blocker {
+        background: inherit;
+        opacity: 0;
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 3;
+
+        transition: opacity $mm_transitionDuration $mm_transitionFunction;
+
+        .mm-panel_opened-parent & {
+            opacity: 0.6;
+            bottom: -100000px;
+        }
+    }
+}
+
+@import 'iconpanels.rtl';

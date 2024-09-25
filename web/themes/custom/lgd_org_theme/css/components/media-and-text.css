@@ -3,7 +3,7 @@
 .media-with-text {
   --button-bg-color: var(--color-bittersweet);
   text-align: center;
-  font-size: clamp(1.1rem, 2vw, 1.95rem);
+  font-size: clamp(var(--font-size-medium), 2.5vw, var(--font-size-larger));
 }
 
 .media-with-text--media-left .media-with-text__inner,

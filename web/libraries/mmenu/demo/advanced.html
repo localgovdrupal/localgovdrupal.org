@@ -18,40 +18,47 @@
         <link rel="stylesheet" href="../dist/mmenu.css" />
 
         <style>
-            .mm-wrapper--sidebar-expanded.mm-wrapper--opened #header a {
-                display: none;
+            :root {
+                --mm-sidebar-expanded-size: 300px;
+            }
+            .mm-menu {
+                --mm-listitem-size: 50px;
+                --mm-navbar-size: 50px;
             }
 
-            .mm-navbar--tabs span {
+            @media (min-width: 992px) {
+                .header a {
+                    display: none;
+                }
+            }
+
+            .mm-navbar_tabs span {
                 display: inline-block;
-                margin-inline-start: 8px;
+                margin-left: 8px;
             }
-
             @media (max-width: 450px) {
-                .mm-navbar--tabs span {
+                .mm-navbar_tabs span {
                     display: none;
                 }
             }
         </style>
     </head>
-
     <body>
         <div id="page">
-            <div id="header">
+            <div class="header">
                 <a href="#menu"><span></span></a>
                 Demo
             </div>
-            <div id="content">
-                <h1>This is a demo.</h1>
-                <p>Click the menu icon to open the menu.</p>
+            <div class="content">
+                <p>
+                    <strong>This is an advanced demo.</strong><br />
+                    Click the menu icon to open the menu.
+                </p>
             </div>
             <nav id="menu">
                 <div id="panel-menu">
                     <ul>
-                        <li>
-                            <a href="#/">Home</a>
-                            <input type="checkbox" class="mm-toggle" />
-                        </li>
+                        <li><a href="#/">Home</a></li>
                         <li>
                             <span>About us</span>
                             <ul>
@@ -75,15 +82,17 @@
                     </ul>
                 </div>
 
-                <ul id="panel-account" data-mm-title="Account">
-                    <li><a href="#/">My profile</a></li>
-                    <li><a href="#/">Privacy settings</a></li>
-                    <li><a href="#/">Activity</a></li>
-                    <li><a href="#/">Sign out</a></li>
-                </ul>
+                <div id="panel-account">
+                    <ul>
+                        <li><a href="#/">My profile</a></li>
+                        <li><a href="#/">Privacy settings</a></li>
+                        <li><a href="#/">Activity</a></li>
+                        <li><a href="#/">Sign out</a></li>
+                    </ul>
+                </div>
 
-                <div id="panel-cart" data-mm-title="Shopping cart">
-                    <p style="text-align: center; padding-top: 30px">
+                <div id="panel-cart">
+                    <p style="text-align: center; padding-top: 30px;">
                         Your shoppingcart is empty.<br />
                         <a href="#/">Continue shopping.</a>
                     </p>
@@ -92,27 +101,20 @@
         </div>
 
         <!-- mmenu scripts -->
+        <script src="../dist/mmenu.polyfills.js"></script>
         <script src="../dist/mmenu.js"></script>
         <script>
             new Mmenu(
-                document.querySelector("#menu"),
+                document.querySelector('#menu'),
                 {
-                    theme: "white",
-                    setSelected: {
-                        hover: true,
-                        parent: true,
-                    },
-                    counters: {
-                        add: true,
-                    },
+                    extensions: ['theme-dark', 'shadow-page'],
+                    setSelected: true,
+                    counters: true,
                     searchfield: {
-                        add: true,
-                        placeholder: "Search menu items",
-                        splash: "<p>What are you looking for?</p>",
-                        title: "Search",
+                        placeholder: 'Search menu items',
                     },
                     iconbar: {
-                        use: "(min-width: 450px)",
+                        use: '(min-width: 450px)',
                         top: [
                             '<a href="#/"><span class="fa fa-home"></span></a>',
                         ],
@@ -122,25 +124,21 @@
                             '<a href="#/"><span class="fa fa-youtube"></span></a>',
                         ],
                     },
-                    iconPanels: {
-                        add: true,
-                        visible: 1,
-                    },
                     sidebar: {
                         collapsed: {
-                            use: "(min-width: 768px)",
+                            use: '(min-width: 450px)',
+                            hideNavbar: false,
                         },
                         expanded: {
-                            use: "(min-width: 1024px)",
-                            initial: "closed",
+                            use: '(min-width: 992px)',
                         },
                     },
                     navbars: [
                         {
-                            content: ["searchfield"],
+                            content: ['searchfield'],
                         },
                         {
-                            type: "tabs",
+                            type: 'tabs',
                             content: [
                                 '<a href="#panel-menu"><i class="fa fa-bars"></i> <span>Menu</span></a>',
                                 '<a href="#panel-account"><i class="fa fa-user"></i> <span>Account</span></a>',
@@ -148,26 +146,30 @@
                             ],
                         },
                         {
-                            content: ["prev", "breadcrumbs", "close"],
+                            content: ['prev', 'breadcrumbs', 'close'],
                         },
                         {
-                            position: "bottom",
+                            position: 'bottom',
                             content: [
-                                '<a href="https://mmenujs.com/wordpress-plugin" target="_blank">WordPress plugin</a>',
+                                '<a href="http://mmenu.frebsite.nl/wordpress-plugin" target="_blank">WordPress plugin</a>',
                             ],
                         },
                     ],
                 },
                 {
                     searchfield: {
-                        cancel: true,
                         clear: true,
+                    },
+                    navbars: {
+                        breadcrumbs: {
+                            removeFirst: true,
+                        },
                     },
                 }
             );
 
-            document.addEventListener("click", function (evnt) {
-                var anchor = evnt.target.closest('a[href="#/"]');
+            document.addEventListener('click', function (evnt) {
+                var anchor = evnt.target.closest('a[href^="#/"]');
                 if (anchor) {
                     alert("Thank you for clicking, but that's a demo link.");
                     evnt.preventDefault();

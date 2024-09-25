@@ -1,61 +1,62 @@
 import Mmenu from '../../core/oncanvas/mmenu.oncanvas';
-import OPTIONS from './options';
-
+import options from './_options';
+import { extendShorthandOptions } from './_options';
 import * as DOM from '../../_modules/dom';
 import { extend } from '../../_modules/helpers';
 
-export default function (this: Mmenu) {
-    this.opts.backButton = this.opts.backButton || {};
+//	Add the options.
+Mmenu.options.backButton = options;
 
-    if (!this.opts.offCanvas.use) {
+export default function (this: Mmenu) {
+    if (!this.opts.offCanvas) {
         return;
     }
 
-    //	Extend options.
-    const options = extend(this.opts.backButton, OPTIONS);
+    var options = extendShorthandOptions(this.opts.backButton);
+    this.opts.backButton = extend(options, Mmenu.options.backButton);
 
-    const _menu = `#${this.node.menu.id}`;
+    var _menu = '#' + this.node.menu.id;
 
     //	Close menu
     if (options.close) {
-        let states = [];
+        var states = [];
 
         const setStates = () => {
             states = [_menu];
             DOM.children(
                 this.node.pnls,
-                '.mm-panel--opened, .mm-panel--parent'
+                '.mm-panel_opened, .mm-panel_opened-parent'
             ).forEach((panel) => {
                 states.push('#' + panel.id);
             });
         };
 
-        this.bind('open:after', () => {
-            history.pushState(null, '', location.pathname + location.search + _menu);
+        this.bind('open:finish', () => {
+            history.pushState(null, document.title, _menu);
         });
-        this.bind('open:after', setStates);
-        this.bind('openPanel:after', setStates);
-        this.bind('close:after', () => {
+        this.bind('open:finish', setStates);
+        this.bind('openPanel:finish', setStates);
+        this.bind('close:finish', () => {
             states = [];
             history.back();
             history.pushState(
                 null,
-                '',
+                document.title,
                 location.pathname + location.search
             );
         });
 
-        window.addEventListener('popstate', () => {
-            if (this.node.menu.matches('.mm-menu--opened')) {
+        window.addEventListener('popstate', (evnt) => {
+            if (this.vars.opened) {
                 if (states.length) {
                     states = states.slice(0, -1);
-                    const hash = states[states.length - 1];
+                    var hash = states[states.length - 1];
 
                     if (hash == _menu) {
                         this.close();
                     } else {
                         this.openPanel(this.node.menu.querySelector(hash));
-                        history.pushState(null, '', location.pathname + location.search + _menu);
+                        history.pushState(null, document.title, _menu);
                     }
                 }
             }
@@ -64,7 +65,7 @@ export default function (this: Mmenu) {
 
     if (options.open) {
         window.addEventListener('popstate', (evnt) => {
-            if (!this.node.menu.matches('.mm-menu--opened') && location.hash == _menu) {
+            if (!this.vars.opened && location.hash == _menu) {
                 this.open();
             }
         });

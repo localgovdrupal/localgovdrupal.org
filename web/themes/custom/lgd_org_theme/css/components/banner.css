@@ -1,5 +1,6 @@
 /* Banner Region */
 .lgd-region--banner {
+
   background: rgba(0, 68, 89, 0.8);
   padding-bottom: var(--spacing-large);
   padding-top: var(--spacing-large);
@@ -28,8 +29,14 @@
   justify-content: center;
   align-items: center;
   @media screen and (min-width: 35rem) {
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr clamp(98px, 25vw, 234px) 2rem clamp(98px, 25vw, 234px);
+    max-width: 90% !important;
+
+  }
+  @media screen and (min-width: 72rem) {
+    grid-template-columns: 1fr 234px 2rem 234px;
+    max-width: 1180px !important;
   }
 }
 
@@ -65,7 +72,7 @@
 .block-lgd-org-blocks-blocks-2 {
   --line-height: 1.4;
   line-height: var(--line-height);
-  font-size: clamp(var(--font-size-medium), 2.5vw, 2rem);
+  font-size: clamp(var(--font-size-medium), 2.5vw, 1.5625rem);
   font-weight: 500;
   letter-spacing: -0.5px;
   font-family: var(--font-secondary);
@@ -87,8 +94,9 @@
   color: var(--color-black);
   border-radius: 2rem;
   padding: 10px 20px;
-  padding: clamp(10px, 2vw, 1rem) clamp(20px, 2vw, 2.5rem);
-  font-size: clamp(1rem,2vw,var(--font-size-largish));
+  padding: 10px clamp(20px, 2vw, 1.5rem);
+  font-size: clamp(1rem,2vw,var(--font-size-large));
+  font-family: var(--font-primary);
   text-decoration: none;
   display: inline-block;
   margin-bottom: var(--flow-space);
@@ -115,7 +123,7 @@
 
 
 .lgd-org-big-numbers a {
-  font-size: clamp(0.875rem, 2vw, 2rem);
+  font-size: clamp(0.875rem, 2vw, 1.625rem);
   font-weight: 500;
   letter-spacing: -0.3px;
   line-height: 1;
@@ -128,8 +136,8 @@
   /*background-color: pink;*/
   text-decoration: none;
   color: white;
-  width: clamp(130px, 25vw, 330px);
-  height: clamp(130px, 25vw, 330px);
+  width: clamp(130px, 25vw, 273px);
+  height: clamp(130px, 25vw, 273px);
   aspect-ratio: 1 / 1;
   flex-wrap: wrap;
   flex-direction: column;
@@ -156,12 +164,19 @@
 
 .lgd-org-big-numbers .field--name-field-number,
 .lgd-org--councils .number {
-  font-size: clamp(3.25rem, 10vw, 9.375rem);
+  font-size: clamp(3.25rem, 10vw, 7.75rem);
   letter-spacing: -3px;
   display: block;
   line-height: 100%;
 }
 
+.lgd-org-big-numbers:first-of-type {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
 .lgd-org-big-numbers + .lgd-org-big-numbers {
-  margin-left: -5%;
+  grid-column: 3 / span 2;
+  grid-row: 1;
+  /*margin-left: -5%;*/
 }
