@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_accordion.localgov_allow_multiple_open
+    - field.field.paragraph.localgov_accordion.localgov_display_show_hide_all
     - field.field.paragraph.localgov_accordion.localgov_heading_level
     - field.field.paragraph.localgov_accordion.localgov_paragraphs
     - field.field.paragraph.localgov_accordion.localgov_title
@@ -16,15 +18,29 @@ targetEntityType: paragraph
 bundle: localgov_accordion
 mode: default
 content:
+  localgov_allow_multiple_open:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  localgov_display_show_hide_all:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   localgov_heading_level:
     type: options_select
-    weight: 1
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   localgov_paragraphs:
     type: paragraphs
-    weight: 2
+    weight: 4
     region: content
     settings:
       title: 'Accordion pane'

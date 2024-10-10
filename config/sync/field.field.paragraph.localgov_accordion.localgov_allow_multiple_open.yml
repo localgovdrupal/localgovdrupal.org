@@ -1,0 +1,21 @@
+uuid: 92f19b85-8ddc-43cb-88e6-d224c4b093b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_allow_multiple_open
+    - paragraphs.paragraphs_type.localgov_accordion
+id: paragraph.localgov_accordion.localgov_allow_multiple_open
+field_name: localgov_allow_multiple_open
+entity_type: paragraph
+bundle: localgov_accordion
+label: 'Allow multiple open panes'
+description: 'When this is set to true, the resulting accordion will allow multiple panes to be open simultaneously.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
