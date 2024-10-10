@@ -18,6 +18,7 @@ services:
         SIMPLETEST_DB: 'mysql://database:database@database/database'
         MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", { "chromeOptions": { "w3c": false } }, "http://chromedriver:4444/wd/hub"]'
   database:
+    type: mariadb:10.11
     creds:
       user: database
       password: database
