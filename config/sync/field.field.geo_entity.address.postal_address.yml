@@ -28,6 +28,7 @@ default_value:
     sorting_code: null
     address_line1: ''
     address_line2: ''
+    address_line3: ''
     organization: null
     given_name: null
     additional_name: null
@@ -35,6 +36,7 @@ default_value:
 default_value_callback: ''
 settings:
   available_countries:
+    BE: BE
     IE: IE
     GB: GB
   langcode_override: ''
