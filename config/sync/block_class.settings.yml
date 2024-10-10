@@ -2,7 +2,11 @@ maxlength_block_class_field: 255
 field_type: multiple_textfields
 default_case: standard
 allow_only_letters_and_numbers: false
-block_classes_stored: '{"block-homepage--intro":"block-homepage--intro","special--homepage":"special--homepage","footer-logos":"footer-logos","lgd-org-big-numbers":"lgd-org-big-numbers"}'
+block_classes_stored:
+  - block-homepage--intro
+  - special--homepage
+  - footer-logos
+  - lgd-org-big-numbers
 enable_attributes: true
 enable_auto_complete: true
 qty_classes_per_block: 10
@@ -13,6 +17,7 @@ enable_id_replacement: true
 weight_attributes: null
 weight_class: null
 weight_id: null
+maxlength_attributes: 255
 attribute_keys_stored: '[]'
 attribute_value_stored: '[]'
 attributes_inline: '[]'

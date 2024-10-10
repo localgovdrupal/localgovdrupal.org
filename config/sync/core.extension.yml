@@ -62,6 +62,7 @@ module:
   lgd_org_blocks: 0
   link: 0
   link_attributes: 0
+  link_attributes_menu_link_content: 0
   linkit: 0
   localgov_core: 0
   localgov_directories: 0
