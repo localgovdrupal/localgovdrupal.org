@@ -281,16 +281,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v2.2.2",
+            "version": "v2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "4d23e46ea32534268ea121453c93ceda2bc3ee69"
+                "reference": "ca69b9cc502867111e585f7c627894ffac6f328a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/4d23e46ea32534268ea121453c93ceda2bc3ee69",
-                "reference": "4d23e46ea32534268ea121453c93ceda2bc3ee69",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/ca69b9cc502867111e585f7c627894ffac6f328a",
+                "reference": "ca69b9cc502867111e585f7c627894ffac6f328a",
                 "shasum": ""
             },
             "require": {
@@ -339,9 +339,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v2.2.2"
+                "source": "https://github.com/commerceguys/addressing/tree/v2.2.3"
             },
-            "time": "2024-07-12T11:53:22+00:00"
+            "time": "2024-11-11T16:07:47+00:00"
         },
         {
             "name": "composer/installers",
@@ -1670,16 +1670,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.9.1",
+            "version": "3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "d7dc08f98cba352b2bab5d32c5e58f7e745c11a7"
+                "reference": "61446f07fcb522414d6cfd8b1c3e5f9e18c579ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/d7dc08f98cba352b2bab5d32c5e58f7e745c11a7",
-                "reference": "d7dc08f98cba352b2bab5d32c5e58f7e745c11a7",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/61446f07fcb522414d6cfd8b1c3e5f9e18c579ba",
+                "reference": "61446f07fcb522414d6cfd8b1c3e5f9e18c579ba",
                 "shasum": ""
             },
             "require": {
@@ -1695,7 +1695,7 @@
                 "doctrine/coding-standard": "12.0.0",
                 "fig/log-test": "^1",
                 "jetbrains/phpstorm-stubs": "2023.1",
-                "phpstan/phpstan": "1.12.0",
+                "phpstan/phpstan": "1.12.6",
                 "phpstan/phpstan-strict-rules": "^1.6",
                 "phpunit/phpunit": "9.6.20",
                 "psalm/plugin-phpunit": "0.18.4",
@@ -1763,7 +1763,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.9.1"
+                "source": "https://github.com/doctrine/dbal/tree/3.9.3"
             },
             "funding": [
                 {
@@ -1779,7 +1779,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-01T13:49:23+00:00"
+            "time": "2024-10-10T17:56:43+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2162,17 +2162,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "3.5.0"
+                "reference": "3.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.5.0.zip",
-                "reference": "3.5.0",
-                "shasum": "099e8d4dc98e1d551b4f9cffdc39599eb8ad04e8"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.5.1.zip",
+                "reference": "3.5.1",
+                "shasum": "b5215109836f7fade374fef531231e36c1c9b945"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -2183,8 +2183,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.5.0",
-                    "datestamp": "1722639094",
+                    "version": "3.5.1",
+                    "datestamp": "1730409973",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2969,17 +2969,17 @@
         },
         {
             "name": "drupal/date_recur",
-            "version": "3.6.0",
+            "version": "3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/date_recur.git",
-                "reference": "3.6.0"
+                "reference": "3.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/date_recur-3.6.0.zip",
-                "reference": "3.6.0",
-                "shasum": "445acb9d8a8b34e4caacb3f26a1cf868e2a9c595"
+                "url": "https://ftp.drupal.org/files/projects/date_recur-3.6.1.zip",
+                "reference": "3.6.1",
+                "shasum": "e29338403beb5c002b0dbf0246fc7bb6e8094800"
             },
             "require": {
                 "drupal/core": "^10.2",
@@ -3011,8 +3011,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.6.0",
-                    "datestamp": "1724686293",
+                    "version": "3.6.1",
+                    "datestamp": "1730751118",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3463,17 +3463,17 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "2.11.0",
+            "version": "2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser.git",
-                "reference": "8.x-2.11"
+                "reference": "8.x-2.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.11.zip",
-                "reference": "8.x-2.11",
-                "shasum": "4ead3d3f9f6365fbc25cfbd0edcc5e0a9cc52e02"
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.12.zip",
+                "reference": "8.x-2.12",
+                "shasum": "eeafb55f02317c63b17d71913cb918e6341b7c0d"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -3495,8 +3495,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.11",
-                    "datestamp": "1723378138",
+                    "version": "8.x-2.12",
+                    "datestamp": "1730631838",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3536,7 +3536,7 @@
                     "homepage": "https://www.drupal.org/user/471638"
                 },
                 {
-                    "name": "Primsi",
+                    "name": "primsi",
                     "homepage": "https://www.drupal.org/user/282629"
                 },
                 {
@@ -3558,7 +3558,7 @@
         },
         {
             "name": "drupal/entity_browser_entity_form",
-            "version": "2.11.0",
+            "version": "2.12.0",
             "require": {
                 "drupal/core": "^10.2 || ^11",
                 "drupal/entity_browser": "*",
@@ -3567,8 +3567,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.11",
-                    "datestamp": "1723378138",
+                    "version": "8.x-2.12",
+                    "datestamp": "1730631838",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3589,7 +3589,7 @@
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
-                    "name": "Devin Carlson",
+                    "name": "devin carlson",
                     "homepage": "https://www.drupal.org/user/290182"
                 },
                 {
@@ -3605,7 +3605,7 @@
                     "homepage": "https://www.drupal.org/user/471638"
                 },
                 {
-                    "name": "Primsi",
+                    "name": "primsi",
                     "homepage": "https://www.drupal.org/user/282629"
                 },
                 {
@@ -4381,17 +4381,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.61.0",
+            "version": "1.62.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.61"
+                "reference": "8.x-1.62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.61.zip",
-                "reference": "8.x-1.61",
-                "shasum": "b204f101ee536597b9c293f66f75102d6ea2d268"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.62.zip",
+                "reference": "8.x-1.62",
+                "shasum": "0d5a59c934c96f38dcf2742f6d715316b695ec7e"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
@@ -4404,8 +4404,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.61",
-                    "datestamp": "1725441883",
+                    "version": "8.x-1.62",
+                    "datestamp": "1730931913",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4490,23 +4490,23 @@
         },
         {
             "name": "drupal/geolocation",
-            "version": "3.13.0",
+            "version": "3.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geolocation.git",
-                "reference": "8.x-3.13"
+                "reference": "8.x-3.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-3.13.zip",
-                "reference": "8.x-3.13",
-                "shasum": "49029950bc0927f14b1d0ce01f93e03cdd131ee6"
+                "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-3.14.zip",
+                "reference": "8.x-3.14",
+                "shasum": "2f7cda9ce6ca1c03e30405f892714ae6f6a04bfd"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10",
+                "drupal/core": "^10.3 || ^11",
                 "drupal/jquery_ui": "*",
                 "drupal/jquery_ui_autocomplete": "^2.0",
-                "php": "^7.3 || ^8.0"
+                "php": "^8.0"
             },
             "require-dev": {
                 "drupal/address": "*",
@@ -4526,8 +4526,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.13",
-                    "datestamp": "1714403539",
+                    "version": "8.x-3.14",
+                    "datestamp": "1729420964",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4557,17 +4557,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-rc13",
+            "version": "3.0.0-rc14",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-rc13"
+                "reference": "8.x-3.0-rc14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-rc13.zip",
-                "reference": "8.x-3.0-rc13",
-                "shasum": "7b8e9d7ae6fe6de7de0bba930200fe80b437eefe"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-rc14.zip",
+                "reference": "8.x-3.0-rc14",
+                "shasum": "8ca8735f5a1d7ef25ee446358cd704a3feb1cae7"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
@@ -4576,8 +4576,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-rc13",
-                    "datestamp": "1720416342",
+                    "version": "8.x-3.0-rc14",
+                    "datestamp": "1731015952",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -4717,6 +4717,10 @@
                     "name": "Sascha Eggenberger (saschaeggi)",
                     "homepage": "https://www.drupal.org/u/saschaeggi",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "saschaeggi",
+                    "homepage": "https://www.drupal.org/user/1999056"
                 }
             ],
             "description": "Gin Toolbar for Frontend use",
@@ -5304,17 +5308,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.25",
+            "version": "10.2.26",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.25"
+                "reference": "10.2.26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.25.zip",
-                "reference": "10.2.25",
-                "shasum": "06aff8c46ca30873d6accc452348bcf6f4e46348"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.26.zip",
+                "reference": "10.2.26",
+                "shasum": "826389d325634e42587d4a3ec47485ab350f881a"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
@@ -5323,8 +5327,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.25",
-                    "datestamp": "1724410606",
+                    "version": "10.2.26",
+                    "datestamp": "1730930365",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5428,17 +5432,17 @@
         },
         {
             "name": "drupal/linkit",
-            "version": "6.1.4",
+            "version": "6.1.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linkit.git",
-                "reference": "6.1.4"
+                "reference": "6.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/linkit-6.1.4.zip",
-                "reference": "6.1.4",
-                "shasum": "f5544a39d691af5efd1532bd5403862a7153f60b"
+                "url": "https://ftp.drupal.org/files/projects/linkit-6.1.6.zip",
+                "reference": "6.1.6",
+                "shasum": "113d8e569cfb92f8d7feb0a2f7713953c0715e92"
             },
             "require": {
                 "drupal/core": "^10.1"
@@ -5450,8 +5454,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.1.4",
-                    "datestamp": "1715203830",
+                    "version": "6.1.6",
+                    "datestamp": "1729189029",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5670,17 +5674,17 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "2.0.2",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "2.0.2"
+                "reference": "2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-2.0.2.zip",
-                "reference": "2.0.2",
-                "shasum": "748013c50a0ed5e10359413bb3481392a0bf0d3f"
+                "url": "https://ftp.drupal.org/files/projects/metatag-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "c28fe2fdac68a9370a6af6cbafff4425dd5148f3"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10 || ^11",
@@ -5688,6 +5692,7 @@
                 "php": ">=8.0"
             },
             "require-dev": {
+                "drupal/forum": "*",
                 "drupal/hal": "^1 || ^2 || ^9",
                 "drupal/metatag_dc": "*",
                 "drupal/metatag_open_graph": "*",
@@ -5699,8 +5704,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.2",
-                    "datestamp": "1722869772",
+                    "version": "2.1.0",
+                    "datestamp": "1731004042",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5848,7 +5853,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -5868,7 +5873,7 @@
                     "homepage": "https://www.drupal.org/user/227761"
                 },
                 {
-                    "name": "Primsi",
+                    "name": "primsi",
                     "homepage": "https://www.drupal.org/user/282629"
                 }
             ],
@@ -7128,17 +7133,17 @@
         },
         {
             "name": "drupal/upgrade_status",
-            "version": "4.3.5",
+            "version": "4.3.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/upgrade_status.git",
-                "reference": "4.3.5"
+                "reference": "4.3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/upgrade_status-4.3.5.zip",
-                "reference": "4.3.5",
-                "shasum": "353c17f14c855f5ba0fe48c6a4f6486360c066a7"
+                "url": "https://ftp.drupal.org/files/projects/upgrade_status-4.3.6.zip",
+                "reference": "4.3.6",
+                "shasum": "8169732d814034f541238d67ba31300825a61aca"
             },
             "require": {
                 "dekor/php-array-table": "^2.0",
@@ -7155,8 +7160,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.3.5",
-                    "datestamp": "1723044184",
+                    "version": "4.3.6",
+                    "datestamp": "1729173427",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7174,7 +7179,7 @@
             ],
             "authors": [
                 {
-                    "name": "Gábor Hojtsy",
+                    "name": "gábor hojtsy",
                     "homepage": "https://www.drupal.org/user/4166"
                 }
             ],
@@ -7635,20 +7640,20 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.17.0",
+            "version": "v4.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c"
+                "reference": "cb56001e54359df7ae76dc522d08845dc741621b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/bbc513d79acf6691fa9cf10f192c90dd2957f18c",
-                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/cb56001e54359df7ae76dc522d08845dc741621b",
+                "reference": "cb56001e54359df7ae76dc522d08845dc741621b",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "require-dev": {
                 "cerdic/css-tidy": "^1.7 || ^2.0",
@@ -7690,9 +7695,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.17.0"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.18.0"
             },
-            "time": "2023-11-17T15:01:25+00:00"
+            "time": "2024-11-01T03:51:45+00:00"
         },
         {
             "name": "geocoder-php/common-http",
@@ -8469,16 +8474,16 @@
         },
         {
             "name": "localgovdrupal/localgov",
-            "version": "3.0.10",
+            "version": "3.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov.git",
-                "reference": "9356710aedd9b644ddf43185e93c66a762097f5e"
+                "reference": "e3c0f2a4f66d6a7dd479e9d9fb398094d8473683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov/zipball/9356710aedd9b644ddf43185e93c66a762097f5e",
-                "reference": "9356710aedd9b644ddf43185e93c66a762097f5e",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov/zipball/e3c0f2a4f66d6a7dd479e9d9fb398094d8473683",
+                "reference": "e3c0f2a4f66d6a7dd479e9d9fb398094d8473683",
                 "shasum": ""
             },
             "require": {
@@ -8489,6 +8494,7 @@
                 "drupal/gin": "^3.0@alpha",
                 "drupal/gin_login": "^2.0.3",
                 "drupal/gin_toolbar": "^1.0@beta",
+                "drupal/masquerade": "^2.0",
                 "drupal/preview_link": "^2.1@alpha",
                 "drupal/redirect": "^1.10",
                 "drupal/search_api": "^1.21",
@@ -8526,12 +8532,12 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "Users can't reference unpublished content even when they have access to it. See https://www.drupal.org/project/drupal/issues/2845144": "https://www.drupal.org/files/issues/2024-02-13/2845144-87.patch",
-                        "Content moderation and Workspaces https://www.drupal.org/project/drupal/issues/3179199#comment-15711680": "https://www.drupal.org/files/issues/2024-08-11/3179199-3132022-content-moderation-workspaces-query.patch"
+                        "Users can't reference unpublished content even when they have access to it. See https://www.drupal.org/project/drupal/issues/2845144": "https://www.drupal.org/files/issues/2024-02-13/2845144-87.patch"
                     },
                     "drupal/preview_link": {
                         "Automatically populating multiple preview link entities #3439968": "https://www.drupal.org/files/issues/2024-05-22/3439968-4.diff",
-                        "Add a 'copy to clipboard' feature for preview_link": "https://www.drupal.org/files/issues/2024-08-15/3449121-10.patch"
+                        "Add a 'copy to clipboard' feature for preview_link": "https://www.drupal.org/files/issues/2024-08-15/3449121-10.patch",
+                        "References to other entities being previewed don't display #3481523": "https://www.drupal.org/files/issues/2024-10-18/3481523-4.patch"
                     },
                     "drupal/pathauto": {
                         "Allow path generation inside of a workspace - and importantly don't regenerate when publishing space https://www.drupal.org/project/pathauto/issues/3283769": "https://www.drupal.org/files/issues/2024-04-08/3283769-10.patch"
@@ -8550,27 +8556,27 @@
             "homepage": "https://github.com/localgovdrupal/localgov",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov/issues",
-                "source": "https://github.com/localgovdrupal/localgov/tree/3.0.10"
+                "source": "https://github.com/localgovdrupal/localgov/tree/3.0.12"
             },
-            "time": "2024-08-15T14:31:13+00:00"
+            "time": "2024-10-23T08:08:36+00:00"
         },
         {
             "name": "localgovdrupal/localgov_alert_banner",
-            "version": "1.7.10",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_alert_banner.git",
-                "reference": "38e436089f024ea919a014a05e14995e2926c986"
+                "reference": "3738905fc902273fee6fa65ed97938ded7d48ce9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_alert_banner/zipball/38e436089f024ea919a014a05e14995e2926c986",
-                "reference": "38e436089f024ea919a014a05e14995e2926c986",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_alert_banner/zipball/3738905fc902273fee6fa65ed97938ded7d48ce9",
+                "reference": "3738905fc902273fee6fa65ed97938ded7d48ce9",
                 "shasum": ""
             },
             "require": {
                 "drupal/condition_field": "^2.0",
-                "drupal/core": "^9.4 || ^10.0"
+                "drupal/core": "^10.0 || ^11.0"
             },
             "require-dev": {
                 "drupal/group": "^3.2",
@@ -8579,7 +8585,7 @@
             "suggest": {
                 "drupal/group": "For Group integration.",
                 "drupal/scheduled_transitions": "Gives the ability to schedule the publishing and unpublishing of alert banners",
-                "localgovdrupal/localgov_core": "^1 || ^2"
+                "localgovdrupal/localgov_core": "Required by localgov_alert_banner_full_page sub module for localgov_media."
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -8590,22 +8596,22 @@
             "homepage": "https://github.com/localgovdrupal/localgov_alert_banner",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_alert_banner/issues",
-                "source": "https://github.com/localgovdrupal/localgov_alert_banner/tree/1.7.10"
+                "source": "https://github.com/localgovdrupal/localgov_alert_banner/tree/1.8.1"
             },
-            "time": "2024-10-08T11:56:15+00:00"
+            "time": "2024-10-16T09:15:40+00:00"
         },
         {
             "name": "localgovdrupal/localgov_base",
-            "version": "1.6.1",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_base.git",
-                "reference": "a16cbeac02a233a5efdf6d35f77ca83ff7edc3ac"
+                "reference": "dfc1ad3d67c04ff91184469d0dfe588b1db77524"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_base/zipball/a16cbeac02a233a5efdf6d35f77ca83ff7edc3ac",
-                "reference": "a16cbeac02a233a5efdf6d35f77ca83ff7edc3ac",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_base/zipball/dfc1ad3d67c04ff91184469d0dfe588b1db77524",
+                "reference": "dfc1ad3d67c04ff91184469d0dfe588b1db77524",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -8617,22 +8623,22 @@
             "homepage": "https://github.com/localgovdrupal/localgov_base",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_base/issues",
-                "source": "https://github.com/localgovdrupal/localgov_base/tree/1.6.1"
+                "source": "https://github.com/localgovdrupal/localgov_base/tree/1.8.0"
             },
-            "time": "2024-07-16T11:58:52+00:00"
+            "time": "2024-11-08T09:03:06+00:00"
         },
         {
             "name": "localgovdrupal/localgov_core",
-            "version": "2.13.9",
+            "version": "2.13.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_core.git",
-                "reference": "79765b37e933623ca5cae4242a79381339af91df"
+                "reference": "9233410ccb851342580e8a60c8c2aa5868723d7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_core/zipball/79765b37e933623ca5cae4242a79381339af91df",
-                "reference": "79765b37e933623ca5cae4242a79381339af91df",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_core/zipball/9233410ccb851342580e8a60c8c2aa5868723d7b",
+                "reference": "9233410ccb851342580e8a60c8c2aa5868723d7b",
                 "shasum": ""
             },
             "require": {
@@ -8664,9 +8670,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov_core",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_core/issues",
-                "source": "https://github.com/localgovdrupal/localgov_core/tree/2.13.9"
+                "source": "https://github.com/localgovdrupal/localgov_core/tree/2.13.10"
             },
-            "time": "2024-10-03T09:42:10+00:00"
+            "time": "2024-10-15T11:44:19+00:00"
         },
         {
             "name": "localgovdrupal/localgov_demo",
@@ -8712,16 +8718,16 @@
         },
         {
             "name": "localgovdrupal/localgov_directories",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_directories.git",
-                "reference": "e587d3b14ce38bd3382b0520951d091c6cc42d12"
+                "reference": "2dbd793e920824a71dc8cde3ff1acfaacfa7ac37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_directories/zipball/e587d3b14ce38bd3382b0520951d091c6cc42d12",
-                "reference": "e587d3b14ce38bd3382b0520951d091c6cc42d12",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_directories/zipball/2dbd793e920824a71dc8cde3ff1acfaacfa7ac37",
+                "reference": "2dbd793e920824a71dc8cde3ff1acfaacfa7ac37",
                 "shasum": ""
             },
             "require": {
@@ -8735,11 +8741,13 @@
                 "localgovdrupal/localgov_geo": "^2.0"
             },
             "require-dev": {
+                "drupal/facets_form": "^1.0",
                 "localgovdrupal/localgov_openreferral": "^2.0",
                 "localgovdrupal/localgov_paragraphs": "^2.3",
                 "localgovdrupal/localgov_services": "^2.1"
             },
             "suggest": {
+                "drupal/facets_form": "Displays facets as checkboxes within a form.",
                 "localgovdrupal/localgov_openreferral": "Enables Open Referral output of Directories",
                 "localgovdrupal/localgov_paragraphs": "For Directory Promo Page content type in Directories"
             },
@@ -8762,22 +8770,22 @@
             "homepage": "https://github.com/localgovdrupal/localgov_directories",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_directories/issues",
-                "source": "https://github.com/localgovdrupal/localgov_directories/tree/3.2.1"
+                "source": "https://github.com/localgovdrupal/localgov_directories/tree/3.2.2"
             },
-            "time": "2024-10-03T09:31:05+00:00"
+            "time": "2024-10-15T12:00:40+00:00"
         },
         {
             "name": "localgovdrupal/localgov_events",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_events.git",
-                "reference": "7b4b5f0f79b2bd7558f7df90656e0497edec3993"
+                "reference": "35cf0ba83e2e31d9a288c5d568bad7581d36bb05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_events/zipball/7b4b5f0f79b2bd7558f7df90656e0497edec3993",
-                "reference": "7b4b5f0f79b2bd7558f7df90656e0497edec3993",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_events/zipball/35cf0ba83e2e31d9a288c5d568bad7581d36bb05",
+                "reference": "35cf0ba83e2e31d9a288c5d568bad7581d36bb05",
                 "shasum": ""
             },
             "require": {
@@ -8813,9 +8821,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov_events",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_events/issues",
-                "source": "https://github.com/localgovdrupal/localgov_events/tree/3.0.2"
+                "source": "https://github.com/localgovdrupal/localgov_events/tree/3.0.3"
             },
-            "time": "2024-10-03T09:43:29+00:00"
+            "time": "2024-11-05T13:30:59+00:00"
         },
         {
             "name": "localgovdrupal/localgov_geo",
@@ -8891,16 +8899,16 @@
         },
         {
             "name": "localgovdrupal/localgov_menu_link_group",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_menu_link_group.git",
-                "reference": "55237bc083eff874738e821afe246cc548668e5d"
+                "reference": "ba78f4e549e149bb9393ea88d7f4d0ae6a5cdcd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_menu_link_group/zipball/55237bc083eff874738e821afe246cc548668e5d",
-                "reference": "55237bc083eff874738e821afe246cc548668e5d",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_menu_link_group/zipball/ba78f4e549e149bb9393ea88d7f4d0ae6a5cdcd4",
+                "reference": "ba78f4e549e149bb9393ea88d7f4d0ae6a5cdcd4",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -8912,9 +8920,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov_menu_link_group",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_menu_link_group/issues",
-                "source": "https://github.com/localgovdrupal/localgov_menu_link_group/tree/1.1.5"
+                "source": "https://github.com/localgovdrupal/localgov_menu_link_group/tree/1.1.6"
             },
-            "time": "2024-09-10T12:00:31+00:00"
+            "time": "2024-11-12T12:33:25+00:00"
         },
         {
             "name": "localgovdrupal/localgov_news",
@@ -8993,16 +9001,16 @@
         },
         {
             "name": "localgovdrupal/localgov_page",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_page.git",
-                "reference": "e02bd06c1bfd8210a150785b676dfa69476a4c39"
+                "reference": "77865e4023800eaccb0e3401f6afd6aa89d42886"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_page/zipball/e02bd06c1bfd8210a150785b676dfa69476a4c39",
-                "reference": "e02bd06c1bfd8210a150785b676dfa69476a4c39",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_page/zipball/77865e4023800eaccb0e3401f6afd6aa89d42886",
+                "reference": "77865e4023800eaccb0e3401f6afd6aa89d42886",
                 "shasum": ""
             },
             "require": {
@@ -9026,9 +9034,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov_page",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_page/issues",
-                "source": "https://github.com/localgovdrupal/localgov_page/tree/1.0.0-beta2"
+                "source": "https://github.com/localgovdrupal/localgov_page/tree/1.0.0-beta3"
             },
-            "time": "2023-09-11T13:16:01+00:00"
+            "time": "2024-11-12T12:29:57+00:00"
         },
         {
             "name": "localgovdrupal/localgov_page_components",
@@ -9128,16 +9136,16 @@
         },
         {
             "name": "localgovdrupal/localgov_publications",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_publications.git",
-                "reference": "7a30fed60604aded775670ec04ae6ab4f9b61931"
+                "reference": "0c8d7d78650bce7290ee725a4e7a978f579bc20c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_publications/zipball/7a30fed60604aded775670ec04ae6ab4f9b61931",
-                "reference": "7a30fed60604aded775670ec04ae6ab4f9b61931",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_publications/zipball/0c8d7d78650bce7290ee725a4e7a978f579bc20c",
+                "reference": "0c8d7d78650bce7290ee725a4e7a978f579bc20c",
                 "shasum": ""
             },
             "require": {
@@ -9163,22 +9171,22 @@
             "homepage": "https://github.com/localgovdrupal/localgov_publications",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_publications/issues",
-                "source": "https://github.com/localgovdrupal/localgov_publications/tree/1.0.8"
+                "source": "https://github.com/localgovdrupal/localgov_publications/tree/1.0.9"
             },
-            "time": "2024-09-24T11:31:37+00:00"
+            "time": "2024-10-30T19:04:00+00:00"
         },
         {
             "name": "localgovdrupal/localgov_scarfolk",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_scarfolk.git",
-                "reference": "7c107f0d35101f13006d42f4f6399572951b71e5"
+                "reference": "d0d1a9245833776765068b9e1653841be60deb50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_scarfolk/zipball/7c107f0d35101f13006d42f4f6399572951b71e5",
-                "reference": "7c107f0d35101f13006d42f4f6399572951b71e5",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_scarfolk/zipball/d0d1a9245833776765068b9e1653841be60deb50",
+                "reference": "d0d1a9245833776765068b9e1653841be60deb50",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -9190,9 +9198,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov_scarfolk",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_scarfolk/issues",
-                "source": "https://github.com/localgovdrupal/localgov_scarfolk/tree/1.2.1"
+                "source": "https://github.com/localgovdrupal/localgov_scarfolk/tree/1.3.0"
             },
-            "time": "2024-09-10T11:08:34+00:00"
+            "time": "2024-11-08T09:21:40+00:00"
         },
         {
             "name": "localgovdrupal/localgov_search",
@@ -9384,16 +9392,16 @@
         },
         {
             "name": "localgovdrupal/localgov_workflows",
-            "version": "1.3.6",
+            "version": "1.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_workflows.git",
-                "reference": "9897748beec7a80768cb632b01ed3bc0a5ea1355"
+                "reference": "26978d0756b2a5230f72b2f3e92abe8f2d7e3f59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_workflows/zipball/9897748beec7a80768cb632b01ed3bc0a5ea1355",
-                "reference": "9897748beec7a80768cb632b01ed3bc0a5ea1355",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_workflows/zipball/26978d0756b2a5230f72b2f3e92abe8f2d7e3f59",
+                "reference": "26978d0756b2a5230f72b2f3e92abe8f2d7e3f59",
                 "shasum": ""
             },
             "require": {
@@ -9413,9 +9421,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov_workflows",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_workflows/issues",
-                "source": "https://github.com/localgovdrupal/localgov_workflows/tree/1.3.6"
+                "source": "https://github.com/localgovdrupal/localgov_workflows/tree/1.3.7"
             },
-            "time": "2024-10-03T09:35:10+00:00"
+            "time": "2024-10-22T11:46:52+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -15771,16 +15779,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c"
+                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
-                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
+                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
                 "shasum": ""
             },
             "require": {
@@ -15819,7 +15827,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.0"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
             },
             "funding": [
                 {
@@ -15827,7 +15835,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-06-12T14:39:25+00:00"
+            "time": "2024-11-08T17:47:46+00:00"
         },
         {
             "name": "nyholm/psr7-server",
@@ -16471,16 +16479,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.5.1",
+            "version": "5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "0c70d2c566e899666f367ab7b80986beb3581e6f"
+                "reference": "f3558a4c23426d12bffeaab463f8a8d8b681193c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/0c70d2c566e899666f367ab7b80986beb3581e6f",
-                "reference": "0c70d2c566e899666f367ab7b80986beb3581e6f",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/f3558a4c23426d12bffeaab463f8a8d8b681193c",
+                "reference": "f3558a4c23426d12bffeaab463f8a8d8b681193c",
                 "shasum": ""
             },
             "require": {
@@ -16489,7 +16497,7 @@
                 "php": "^7.4 || ^8.0",
                 "phpdocumentor/reflection-common": "^2.2",
                 "phpdocumentor/type-resolver": "^1.7",
-                "phpstan/phpdoc-parser": "^1.7",
+                "phpstan/phpdoc-parser": "^1.7|^2.0",
                 "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
@@ -16529,29 +16537,29 @@
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.5.1"
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.0"
             },
-            "time": "2024-11-06T11:58:54+00:00"
+            "time": "2024-11-12T11:25:25+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "1fb5ba8d045f5dd984ebded5b1cc66f29459422d"
+                "reference": "679e3ce485b99e84c775d28e2e96fade9a7fb50a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/1fb5ba8d045f5dd984ebded5b1cc66f29459422d",
-                "reference": "1fb5ba8d045f5dd984ebded5b1cc66f29459422d",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/679e3ce485b99e84c775d28e2e96fade9a7fb50a",
+                "reference": "679e3ce485b99e84c775d28e2e96fade9a7fb50a",
                 "shasum": ""
             },
             "require": {
                 "doctrine/deprecations": "^1.0",
                 "php": "^7.3 || ^8.0",
                 "phpdocumentor/reflection-common": "^2.0",
-                "phpstan/phpdoc-parser": "^1.18"
+                "phpstan/phpdoc-parser": "^1.18|^2.0"
             },
             "require-dev": {
                 "ext-tokenizer": "*",
@@ -16587,9 +16595,9 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.9.0"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.10.0"
             },
-            "time": "2024-11-03T20:11:34+00:00"
+            "time": "2024-11-09T15:12:26+00:00"
         },
         {
             "name": "phpspec/prophecy",
