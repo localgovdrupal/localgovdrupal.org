@@ -40,7 +40,8 @@
         "drush/drush": "^12.0",
         "localgovdrupal/localgov": "^3.0@alpha",
         "localgovdrupal/localgov_page": "^1.0@beta",
-        "localgovdrupal/localgov_publications": "^1.0"
+        "localgovdrupal/localgov_publications": "^1.0",
+        "localgovdrupal/localgov_sa11y": "^1.0@beta"
     },
     "require-dev": {
         "brianium/paratest": "^6.0",
@@ -61,9 +62,9 @@
         "sort-packages": true,
         "bin-dir": "bin/",
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "cweagans/composer-patches": true,
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "php-http/discovery": true,

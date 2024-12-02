@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d86663c983a31a8017645b344b64b30",
+    "content-hash": "248e065d6dc6e600defba821e39c06fe",
     "packages": [
         {
             "name": "agile-collective/ac_eu_cookie_compliance_tweaks",
@@ -9223,6 +9223,41 @@
                 "source": "https://github.com/localgovdrupal/localgov_publications/tree/1.0.10"
             },
             "time": "2024-11-19T12:50:13+00:00"
+        },
+        {
+            "name": "localgovdrupal/localgov_sa11y",
+            "version": "1.0.0-beta10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localgovdrupal/localgov_sa11y.git",
+                "reference": "675cebb09a73897995bc1ceb418b614507f96029"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_sa11y/zipball/675cebb09a73897995bc1ceb418b614507f96029",
+                "reference": "675cebb09a73897995bc1ceb418b614507f96029",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Conroy"
+                },
+                {
+                    "name": "Maria Young"
+                }
+            ],
+            "description": "Adds Sa11y to LocalGov Drupal sites",
+            "homepage": "https://github.com/localgovdrupal/localgov_sa11y",
+            "support": {
+                "issues": "https://github.com/localgovdrupal/localgov_sa11y/issues",
+                "source": "https://github.com/localgovdrupal/localgov_sa11y/tree/1.0.0-beta10"
+            },
+            "time": "2024-10-30T10:31:44+00:00"
         },
         {
             "name": "localgovdrupal/localgov_scarfolk",
@@ -19483,7 +19518,8 @@
         "drupal/rabbit_hole": 10,
         "drupal/webform": 5,
         "localgovdrupal/localgov": 15,
-        "localgovdrupal/localgov_page": 10
+        "localgovdrupal/localgov_page": 10,
+        "localgovdrupal/localgov_sa11y": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
