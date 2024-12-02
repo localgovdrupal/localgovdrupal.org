@@ -1,0 +1,23 @@
+uuid: b17f2340-b38c-44f6-96a6-ec540baf05a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_published_date
+    - node.type.localgov_publication_cover_page
+  module:
+    - datetime
+_core:
+  default_config_hash: btuO21nQcpQnnY2QGUjVBC7UkXYufoNTw7PFcSROK_Q
+id: node.localgov_publication_cover_page.localgov_published_date
+field_name: localgov_published_date
+entity_type: node
+bundle: localgov_publication_cover_page
+label: Published
+description: 'When was this publication published?'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

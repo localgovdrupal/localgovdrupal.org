@@ -1,0 +1,21 @@
+uuid: 84fe7f2d-1ac9-4889-aeb5-1d85e51386ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_title
+    - paragraphs.paragraphs_type.localgov_publications_banner
+_core:
+  default_config_hash: HtpS4AjAXbNfGjB8wM2pNkmzna2P1nyXii5FNnF78wA
+id: paragraph.localgov_publications_banner.localgov_title
+field_name: localgov_title
+entity_type: paragraph
+bundle: localgov_publications_banner
+label: 'Banner Title'
+description: "A title for the banner text box - this isn't the page title."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

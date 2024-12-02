@@ -1,0 +1,15 @@
+uuid: b16c2dfb-e714-44c8-9e90-349d856686c1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - localgov_publications
+_core:
+  default_config_hash: 8M2iVbKNMDdA4Er2w5U2N3Vx60aysv7Au2c_ZxI8aYE
+id: localgov_publications_banner
+label: 'Publications Banner'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: ac4d0671-0eab-4b7b-b517-e5b83b46938f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_updated_date
+    - node.type.localgov_publication_cover_page
+  module:
+    - datetime
+_core:
+  default_config_hash: YUbY-zcJQ0nZKEMpqNz279hV64MAD5XPNaT0NYs4tnw
+id: node.localgov_publication_cover_page.localgov_updated_date
+field_name: localgov_updated_date
+entity_type: node
+bundle: localgov_publication_cover_page
+label: 'Last Updated'
+description: 'When was this document last updated? '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

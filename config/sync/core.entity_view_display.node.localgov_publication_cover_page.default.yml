@@ -1,0 +1,88 @@
+uuid: 25687643-6124-4aaf-ab5c-2c36f53fd2ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_publication_cover_page.body
+    - field.field.node.localgov_publication_cover_page.localgov_documents
+    - field.field.node.localgov_publication_cover_page.localgov_publication
+    - field.field.node.localgov_publication_cover_page.localgov_publication_content
+    - field.field.node.localgov_publication_cover_page.localgov_publications_banner
+    - field.field.node.localgov_publication_cover_page.localgov_published_date
+    - field.field.node.localgov_publication_cover_page.localgov_updated_date
+    - node.type.localgov_publication_cover_page
+  module:
+    - entity_reference_revisions
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_documents:
+      children:
+        - localgov_publication
+        - localgov_documents
+      label: Documents
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h2
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+_core:
+  default_config_hash: ipi0YuoBSxHX4Us_a-CUE6fcBha_FIS537r0Mv9bpos
+id: node.localgov_publication_cover_page.default
+targetEntityType: node
+bundle: localgov_publication_cover_page
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  localgov_documents:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: publication
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  localgov_publication:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  localgov_publication_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  body: true
+  localgov_publications_banner: true
+  localgov_published_date: true
+  localgov_updated_date: true
+  search_api_excerpt: true

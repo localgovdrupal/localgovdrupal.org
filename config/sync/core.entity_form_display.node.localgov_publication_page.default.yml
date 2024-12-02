@@ -1,0 +1,101 @@
+uuid: a6aa5735-ad67-4a41-928e-3396c6213ffa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_publication_page.localgov_page_content
+    - field.field.node.localgov_publication_page.localgov_publication_content
+    - field.field.node.localgov_publication_page.localgov_published_date
+    - field.field.node.localgov_publication_page.localgov_updated_date
+    - node.type.localgov_publication_page
+  module:
+    - datetime
+    - layout_paragraphs
+    - path
+_core:
+  default_config_hash: OihNXvC7cy6CpE0UtbAJWYA9r24GLwZxvEfhq3egxuY
+id: node.localgov_publication_page.default
+targetEntityType: node
+bundle: localgov_publication_page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_publication_content:
+    type: layout_paragraphs
+    weight: 3
+    region: content
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 0
+      empty_message: ''
+    third_party_settings: {  }
+  localgov_published_date:
+    type: datetime_default
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_updated_date:
+    type: datetime_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  localgov_page_content: true

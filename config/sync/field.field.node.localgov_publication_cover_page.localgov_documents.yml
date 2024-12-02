@@ -1,0 +1,31 @@
+uuid: 465f466f-b208-4152-ba64-6bf6c2b949bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_documents
+    - media.type.document
+    - node.type.localgov_publication_cover_page
+_core:
+  default_config_hash: KW9AKnx0HFe08lHfvFh0uSl-AyUs_Rg32Cbik26Mmhk
+id: node.localgov_publication_cover_page.localgov_documents
+field_name: localgov_documents
+entity_type: node
+bundle: localgov_publication_cover_page
+label: Documents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: fd39f34d-fe99-48e5-976d-a6d602f97e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_publications_text
+    - paragraphs.paragraphs_type.localgov_publications_banner
+_core:
+  default_config_hash: tnp81FfvADZmRq2wm02Pu68Aq9-_I9ChgRbEeE4fqpY
+id: paragraph.localgov_publications_banner.localgov_publications_text
+field_name: localgov_publications_text
+entity_type: paragraph
+bundle: localgov_publications_banner
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

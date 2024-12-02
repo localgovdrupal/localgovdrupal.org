@@ -1,0 +1,21 @@
+uuid: 7a302cd7-c370-4f17-a3e9-86e5c0fc905b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_url
+    - paragraphs.paragraphs_type.localgov_publications_banner
+_core:
+  default_config_hash: L40A8YRcxyx0hgRwebwGtftWEv-xeH5Ls6s6d7gXqBc
+id: paragraph.localgov_publications_banner.localgov_url
+field_name: localgov_url
+entity_type: paragraph
+bundle: localgov_publications_banner
+label: URL
+description: 'An optional url. Adding a url here will make the whole box a link.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

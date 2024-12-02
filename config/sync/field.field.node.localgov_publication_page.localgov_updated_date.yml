@@ -1,0 +1,23 @@
+uuid: da16d75c-96e8-4046-bfcc-f239c4c22a4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_updated_date
+    - node.type.localgov_publication_page
+  module:
+    - datetime
+_core:
+  default_config_hash: KzM9W69IqoWVRX9qW42nyfNph-d4JqdPU-V2WkmQXT0
+id: node.localgov_publication_page.localgov_updated_date
+field_name: localgov_updated_date
+entity_type: node
+bundle: localgov_publication_page
+label: 'Updated date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

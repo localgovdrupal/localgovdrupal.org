@@ -1,0 +1,24 @@
+uuid: 7a673eba-811b-4d38-b280-07156caf71ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - localgov_publications
+_core:
+  default_config_hash: Y9eVbUzTyyqiH4CZcd_R-Gvs3jzpd-maAbkPAj_aCbI
+id: paragraph.localgov_publications_text
+field_name: localgov_publications_text
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

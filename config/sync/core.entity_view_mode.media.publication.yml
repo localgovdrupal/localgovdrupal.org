@@ -1,0 +1,16 @@
+uuid: 9bc14987-963e-42a0-9966-33a8864603bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - localgov_publications
+_core:
+  default_config_hash: PkNM6UyUYsIX5Kecdz5jbNLaH0ycF_2OYx9k08B-WZs
+id: media.publication
+label: Publication
+description: ''
+targetEntityType: media
+cache: true

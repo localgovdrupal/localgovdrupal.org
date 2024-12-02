@@ -1,0 +1,80 @@
+uuid: 44730d6e-4073-4802-9884-d83bf55558fd
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.localgov_publication_cover_page.body
+    - field.field.node.localgov_publication_cover_page.localgov_documents
+    - field.field.node.localgov_publication_cover_page.localgov_publication
+    - field.field.node.localgov_publication_cover_page.localgov_publication_content
+    - field.field.node.localgov_publication_cover_page.localgov_publications_banner
+    - field.field.node.localgov_publication_cover_page.localgov_published_date
+    - field.field.node.localgov_publication_cover_page.localgov_updated_date
+    - node.type.localgov_publication_cover_page
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_documents:
+      children:
+        - localgov_publication
+        - localgov_documents
+      label: Documents
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: true
+        label_element: h2
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+_core:
+  default_config_hash: QmifWX4m5PziBYmvn2h1dkvdg9IW4FfrT-vNLRX8yKI
+id: node.localgov_publication_cover_page.full
+targetEntityType: node
+bundle: localgov_publication_cover_page
+mode: full
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  localgov_documents:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: publication
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  localgov_publication:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  body: true
+  localgov_publication_content: true
+  localgov_publications_banner: true
+  localgov_published_date: true
+  localgov_updated_date: true
+  search_api_excerpt: true

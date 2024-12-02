@@ -1,0 +1,24 @@
+uuid: ee762115-5989-4c45-b8a7-f0227c76eb97
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.localgov_publication_page
+_core:
+  default_config_hash: eaXLxwTzJiglPDWEYy_2kDbd6Z4GJvALyGoaQU4T-8U
+id: node.localgov_publication_page.promote
+field_name: promote
+entity_type: node
+bundle: localgov_publication_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

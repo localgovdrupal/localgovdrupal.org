@@ -9,6 +9,7 @@ module:
   block: 0
   block_class: 0
   block_content: 0
+  book: 0
   breakpoint: 0
   ckeditor5: 0
   config: 0
@@ -44,6 +45,7 @@ module:
   geofield_map: 0
   geolocation: 0
   geolocation_google_maps: 0
+  geolocation_leaflet: 0
   gin_login: 0
   gtm: 0
   help: 0
@@ -87,6 +89,7 @@ module:
   localgov_paragraphs: 0
   localgov_paragraphs_layout: 0
   localgov_paragraphs_views: 0
+  localgov_publications: 0
   localgov_roles: 0
   localgov_services: 0
   localgov_services_landing: 0

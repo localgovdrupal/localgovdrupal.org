@@ -1,0 +1,27 @@
+uuid: ad42f4bd-cf43-462d-aba5-9ca11c4ebf8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_publication
+    - node.type.localgov_publication_cover_page
+_core:
+  default_config_hash: HXtyiQYIT6KgGGBK5UUj_rrm1sNHOfKWbr5l_p0Vy8E
+id: node.localgov_publication_cover_page.localgov_publication
+field_name: localgov_publication
+entity_type: node
+bundle: localgov_publication_cover_page
+label: Publication
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: publication_entity_reference_widget
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

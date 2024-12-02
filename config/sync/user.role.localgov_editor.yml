@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.geo_entity_library
+    - entity_browser.browser.page_components
+    - entity_browser.browser.paragraphs_library_items
     - filter.format.wysiwyg
     - media.type.council_logo
     - media.type.document
@@ -15,6 +18,8 @@ dependencies:
     - node.type.localgov_directory_promo_page
     - node.type.localgov_guides_overview
     - node.type.localgov_guides_page
+    - node.type.localgov_publication_cover_page
+    - node.type.localgov_publication_page
     - node.type.localgov_services_landing
     - node.type.localgov_services_page
     - node.type.localgov_services_sublanding
@@ -26,6 +31,7 @@ dependencies:
   module:
     - block
     - block_content
+    - book
     - content_moderation
     - entity_browser
     - entity_hierarchy
@@ -70,9 +76,11 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access webform overview'
+  - 'add content to books'
   - 'administer block content'
   - 'administer block types'
   - 'administer blocks'
+  - 'administer book outlines'
   - 'administer menu'
   - 'administer nodes'
   - 'administer redirect settings'
@@ -91,6 +99,8 @@ permissions:
   - 'create localgov_directory_promo_page content'
   - 'create localgov_guides_overview content'
   - 'create localgov_guides_page content'
+  - 'create localgov_publication_cover_page content'
+  - 'create localgov_publication_page content'
   - 'create localgov_services_landing content'
   - 'create localgov_services_page content'
   - 'create localgov_services_sublanding content'
@@ -99,6 +109,7 @@ permissions:
   - 'create localgov_subsites_overview content'
   - 'create localgov_subsites_page content'
   - 'create media'
+  - 'create new books'
   - 'create paragraph library item'
   - 'create remote_video media'
   - 'create terms in localgov_topic'
@@ -114,6 +125,8 @@ permissions:
   - 'delete any localgov_directory_promo_page content'
   - 'delete any localgov_guides_overview content'
   - 'delete any localgov_guides_page content'
+  - 'delete any localgov_publication_cover_page content'
+  - 'delete any localgov_publication_page content'
   - 'delete any localgov_services_landing content'
   - 'delete any localgov_services_page content'
   - 'delete any localgov_services_sublanding content'
@@ -133,6 +146,8 @@ permissions:
   - 'delete localgov_directory_promo_page revisions'
   - 'delete localgov_guides_overview revisions'
   - 'delete localgov_guides_page revisions'
+  - 'delete localgov_publication_cover_page revisions'
+  - 'delete localgov_publication_page revisions'
   - 'delete localgov_services_landing revisions'
   - 'delete localgov_services_page revisions'
   - 'delete localgov_services_sublanding revisions'
@@ -152,6 +167,8 @@ permissions:
   - 'delete own localgov_directory_promo_page content'
   - 'delete own localgov_guides_overview content'
   - 'delete own localgov_guides_page content'
+  - 'delete own localgov_publication_cover_page content'
+  - 'delete own localgov_publication_page content'
   - 'delete own localgov_services_landing content'
   - 'delete own localgov_services_page content'
   - 'delete own localgov_services_sublanding content'
@@ -175,6 +192,8 @@ permissions:
   - 'edit any localgov_directory_promo_page content'
   - 'edit any localgov_guides_overview content'
   - 'edit any localgov_guides_page content'
+  - 'edit any localgov_publication_cover_page content'
+  - 'edit any localgov_publication_page content'
   - 'edit any localgov_services_landing content'
   - 'edit any localgov_services_page content'
   - 'edit any localgov_services_sublanding content'
@@ -197,6 +216,8 @@ permissions:
   - 'edit own localgov_directory_promo_page content'
   - 'edit own localgov_guides_overview content'
   - 'edit own localgov_guides_page content'
+  - 'edit own localgov_publication_cover_page content'
+  - 'edit own localgov_publication_page content'
   - 'edit own localgov_services_landing content'
   - 'edit own localgov_services_page content'
   - 'edit own localgov_services_sublanding content'
@@ -220,6 +241,8 @@ permissions:
   - 'revert localgov_directory_promo_page revisions'
   - 'revert localgov_guides_overview revisions'
   - 'revert localgov_guides_page revisions'
+  - 'revert localgov_publication_cover_page revisions'
+  - 'revert localgov_publication_page revisions'
   - 'revert localgov_services_landing revisions'
   - 'revert localgov_services_page revisions'
   - 'revert localgov_services_sublanding revisions'
@@ -241,6 +264,8 @@ permissions:
   - 'view localgov_directory_promo_page revisions'
   - 'view localgov_guides_overview revisions'
   - 'view localgov_guides_page revisions'
+  - 'view localgov_publication_cover_page revisions'
+  - 'view localgov_publication_page revisions'
   - 'view localgov_services_landing revisions'
   - 'view localgov_services_page revisions'
   - 'view localgov_services_sublanding revisions'

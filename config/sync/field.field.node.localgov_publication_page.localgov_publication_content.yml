@@ -1,0 +1,52 @@
+uuid: 99110918-92b2-4bb5-a46d-897be8c4dc22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.localgov_publication_content
+    - node.type.localgov_publication_page
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Fj6xqTfaeR9iTM9AfLu_hF1fivucp101h4o2W-SHinI
+id: node.localgov_publication_page.localgov_publication_content
+field_name: localgov_publication_content
+entity_type: node
+bundle: localgov_publication_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      from_library:
+        weight: 9
+        enabled: false
+      localgov_contact:
+        weight: 10
+        enabled: false
+      localgov_image:
+        weight: 11
+        enabled: false
+      localgov_link:
+        weight: 12
+        enabled: false
+      localgov_numbered_text:
+        weight: 13
+        enabled: false
+      localgov_publications_banner:
+        weight: 14
+        enabled: false
+      localgov_text:
+        weight: 15
+        enabled: false
+      topic_list_builder:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,52 @@
+uuid: 66d7da3f-9fa1-453f-a130-8a3369e669e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.localgov_publications_banner.localgov_image
+    - field.field.paragraph.localgov_publications_banner.localgov_publications_text
+    - field.field.paragraph.localgov_publications_banner.localgov_title
+    - field.field.paragraph.localgov_publications_banner.localgov_url
+    - paragraphs.paragraphs_type.localgov_publications_banner
+_core:
+  default_config_hash: CwADhxEt0sAi9ZBLwsgcHvO0Ebjz7x1pjs0vWeYKxyg
+id: paragraph.localgov_publications_banner.default
+targetEntityType: paragraph
+bundle: localgov_publications_banner
+mode: default
+content:
+  localgov_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive_banner
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  localgov_publications_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  localgov_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  localgov_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  localgov_publications_text: true
+  search_api_excerpt: true

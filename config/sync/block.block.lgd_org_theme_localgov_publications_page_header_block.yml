@@ -1,0 +1,31 @@
+uuid: 92e2d1b2-c727-43ee-b939-1115c8d16f42
+langcode: en
+status: true
+dependencies:
+  module:
+    - localgov_publications
+    - node
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_localgov_publications_page_header_block
+theme: lgd_org_theme
+region: content_top
+weight: -6
+provider: null
+plugin: localgov_publications_page_header_block
+settings:
+  id: localgov_publications_page_header_block
+  label: 'Publications page header block.'
+  label_display: '0'
+  provider: localgov_publications
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      localgov_publication_cover_page: localgov_publication_cover_page
+      localgov_publication_page: localgov_publication_page

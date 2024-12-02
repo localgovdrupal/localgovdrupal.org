@@ -1,0 +1,39 @@
+uuid: d3127aa8-92ac-4dee-b4d9-df1d523bfce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_publication_page.localgov_page_content
+    - field.field.node.localgov_publication_page.localgov_publication_content
+    - field.field.node.localgov_publication_page.localgov_published_date
+    - field.field.node.localgov_publication_page.localgov_updated_date
+    - node.type.localgov_publication_page
+  module:
+    - layout_paragraphs
+    - user
+_core:
+  default_config_hash: fVJzwlHUIvzN-jc4YPzMUQhcEqkYFVziyqdewhJPJ8w
+id: node.localgov_publication_page.default
+targetEntityType: node
+bundle: localgov_publication_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  localgov_publication_content:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  localgov_page_content: true
+  localgov_published_date: true
+  localgov_updated_date: true
+  search_api_excerpt: true

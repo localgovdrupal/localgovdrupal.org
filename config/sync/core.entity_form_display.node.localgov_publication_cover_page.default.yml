@@ -1,0 +1,208 @@
+uuid: c2176afb-0d15-493b-8362-74cd07d95411
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.localgov_publication_cover_page.body
+    - field.field.node.localgov_publication_cover_page.localgov_documents
+    - field.field.node.localgov_publication_cover_page.localgov_publication
+    - field.field.node.localgov_publication_cover_page.localgov_publication_content
+    - field.field.node.localgov_publication_cover_page.localgov_publications_banner
+    - field.field.node.localgov_publication_cover_page.localgov_published_date
+    - field.field.node.localgov_publication_cover_page.localgov_updated_date
+    - node.type.localgov_publication_cover_page
+  module:
+    - datetime
+    - field_group
+    - layout_paragraphs
+    - media_library
+    - paragraphs
+    - path
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_description
+        - group_banner
+        - group_documents
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_description:
+      children:
+        - title
+        - localgov_publication_content
+        - localgov_published_date
+        - localgov_updated_date
+      label: Description
+      region: content
+      parent_name: group_tabs
+      weight: 17
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_banner:
+      children:
+        - localgov_publications_banner
+      label: Banner
+      region: content
+      parent_name: group_tabs
+      weight: 18
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_documents:
+      children:
+        - localgov_documents
+        - localgov_publication
+      label: Documents
+      region: content
+      parent_name: group_tabs
+      weight: 19
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'The Publication this cover page is about might come in different formats, add them all here. '
+        required_fields: true
+_core:
+  default_config_hash: gffW7cGju9qit2mpLvGZKZmIHE8WPUxHMehouDevR7w
+id: node.localgov_publication_cover_page.default
+targetEntityType: node
+bundle: localgov_publication_cover_page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_documents:
+    type: media_library_widget
+    weight: 6
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  localgov_publication:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  localgov_publication_content:
+    type: layout_paragraphs
+    weight: 2
+    region: content
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 0
+      empty_message: ''
+    third_party_settings: {  }
+  localgov_publications_banner:
+    type: entity_reference_paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: Banner
+      title_plural: Banner
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: localgov_publications_banner
+    third_party_settings: {  }
+  localgov_published_date:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  localgov_updated_date:
+    type: datetime_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true

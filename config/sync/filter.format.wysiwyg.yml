@@ -11,6 +11,7 @@ dependencies:
   module:
     - editor
     - linkit
+    - localgov_publications
     - media
 _core:
   default_config_hash: DsgACm5gAgK8K1UNs_KD3K7ryJg0n9yQIWMYYuKb8Tw
@@ -89,6 +90,13 @@ filters:
     weight: -48
     settings:
       title: true
+  localgov_publications_heading_ids:
+    id: localgov_publications_heading_ids
+    provider: localgov_publications
+    status: true
+    weight: 10
+    settings:
+      keep_existing_ids: true
   media_embed:
     id: media_embed
     provider: media

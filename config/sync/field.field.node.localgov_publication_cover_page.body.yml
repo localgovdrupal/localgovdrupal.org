@@ -1,0 +1,26 @@
+uuid: 12300d3f-5057-4a5e-89e9-b62a993ec82f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.localgov_publication_cover_page
+  module:
+    - text
+_core:
+  default_config_hash: mSsZAtjWC_gCTA-4coWbOA2ykHLxWWmpjwAVcVJ_w88
+id: node.localgov_publication_cover_page.body
+field_name: body
+entity_type: node
+bundle: localgov_publication_cover_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
