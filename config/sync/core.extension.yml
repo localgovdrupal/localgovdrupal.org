@@ -88,6 +88,7 @@ module:
   localgov_paragraphs_layout: 0
   localgov_paragraphs_views: 0
   localgov_roles: 0
+  localgov_sa11y: 0
   localgov_services: 0
   localgov_services_landing: 0
   localgov_services_navigation: 0

@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.geo_entity_library
+    - entity_browser.browser.page_components
+    - entity_browser.browser.paragraphs_library_items
     - filter.format.wysiwyg
     - media.type.council_logo
     - media.type.document
