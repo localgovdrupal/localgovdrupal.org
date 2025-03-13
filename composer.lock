@@ -8,17 +8,17 @@
     "packages": [
         {
             "name": "agile-collective/ac_eu_cookie_compliance_tweaks",
-            "version": "1.1.11",
+            "version": "1.1.13",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.agile.coop/agile-public/ac-eu-cookie-compliance-tweaks",
-                "reference": "6f82bfc525ec2f54b125107811e39628548d7a92"
+                "reference": "21fc3a97c3c91d984891c91a587fbed812880069"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://packages.agile.coop//dist/agile-collective/ac_eu_cookie_compliance_tweaks/agile-collective-ac_eu_cookie_compliance_tweaks-1.1.11-632d73.tar",
-                "reference": "6f82bfc525ec2f54b125107811e39628548d7a92",
-                "shasum": "b3e72008aef8ff79f85b3fe51ffb5f61d254e640"
+                "url": "https://packages.agile.coop//dist/agile-collective/ac_eu_cookie_compliance_tweaks/agile-collective-ac_eu_cookie_compliance_tweaks-1.1.13-6a7369.tar",
+                "reference": "21fc3a97c3c91d984891c91a587fbed812880069",
+                "shasum": "73e421eb5b610b16315931652c3f7e3875389ba5"
             },
             "require": {
                 "drupal/eu_cookie_compliance": "^1.19"
@@ -34,7 +34,7 @@
             ],
             "description": "Drupal module tweaking the eu cookie compliance module to work with our way of handling cookies.",
             "homepage": "https://gitlab.agile.coop/agile-public/ac-eu-cookie-compliance-tweaks",
-            "time": "2023-10-27T14:04:38+00:00"
+            "time": "2025-01-29T09:37:15+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -2135,7 +2135,7 @@
                     "homepage": "https://www.drupal.org/user/86106"
                 },
                 {
-                    "name": "Centarro",
+                    "name": "centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
                 {
@@ -2181,7 +2181,7 @@
             "extra": {
                 "drupal": {
                     "version": "3.5.2",
-                    "datestamp": "1739914592",
+                    "datestamp": "1740098273",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3400,6 +3400,147 @@
             }
         },
         {
+            "name": "drupal/disable_html5_validation",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/disable_html5_validation.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/disable_html5_validation-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "8d26a0cf7255e3e52d1d58cdabc7152d83f43a76"
+            },
+            "require": {
+                "drupal/core": ">=9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1693858995",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ikit-claw",
+                    "homepage": "https://www.drupal.org/user/3285813"
+                },
+                {
+                    "name": "sch4lly",
+                    "homepage": "https://www.drupal.org/user/856550"
+                }
+            ],
+            "description": "Disables HTML5 validation in all forms",
+            "homepage": "https://www.drupal.org/project/disable_html5_validation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/disable_html5_validation"
+            }
+        },
+        {
+            "name": "drupal/dropzonejs",
+            "version": "2.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dropzonejs.git",
+                "reference": "8.x-2.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.11.zip",
+                "reference": "8.x-2.11",
+                "shasum": "0fb4eff1bba2fd33850db0dfd9929ef4bd4569ee"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10 || ^11"
+            },
+            "require-dev": {
+                "drupal/entity_browser": "^2.5"
+            },
+            "suggest": {
+                "enyo/dropzone": "Required to use drupal/dropzonejs. DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.11",
+                    "datestamp": "1723381576",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Janez Urevc",
+                    "homepage": "https://drupal.org/u/slashrsm",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Christian Fritsch",
+                    "homepage": "https://drupal.org/u/chrfritsch",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Primoz Hmeljak",
+                    "homepage": "https://drupal.org/u/Primsi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Qiangjun Ran",
+                    "homepage": "https://drupal.org/u/jungle",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1998478/committers",
+                    "role": "contributor"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "wouters_f",
+                    "homepage": "https://www.drupal.org/user/721548"
+                },
+                {
+                    "name": "zkday",
+                    "homepage": "https://www.drupal.org/user/888644"
+                }
+            ],
+            "description": "Drupal integration for DropzoneJS - An open source library that provides drag’n’drop file uploads with image previews.",
+            "homepage": "https://www.drupal.org/project/dropzonejs",
+            "keywords": [
+                "DropzoneJS",
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://www.drupal.org/project/dropzonejs",
+                "issues": "https://www.drupal.org/project/issues/dropzonejs",
+                "#media": "http://drupal.slack.com"
+            }
+        },
+        {
             "name": "drupal/dynamic_entity_reference",
             "version": "3.2.0",
             "source": {
@@ -3783,7 +3924,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -3856,7 +3997,7 @@
             ],
             "authors": [
                 {
-                    "name": "Lullabot",
+                    "name": "lullabot",
                     "homepage": "https://www.drupal.org/user/3815489"
                 },
                 {
@@ -3864,7 +4005,7 @@
                     "homepage": "https://www.drupal.org/user/1288796"
                 },
                 {
-                    "name": "seanB",
+                    "name": "seanb",
                     "homepage": "https://www.drupal.org/user/545912"
                 }
             ],
@@ -4203,7 +4344,7 @@
             ],
             "authors": [
                 {
-                    "name": "Daniel.Moberly",
+                    "name": "daniel.moberly",
                     "homepage": "https://www.drupal.org/user/1160788"
                 },
                 {
@@ -4894,6 +5035,10 @@
                     "name": "Alexandre Mallet",
                     "homepage": "https://github.com/woprrr",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "Drupal media CI",
+                    "homepage": "https://www.drupal.org/user/3057985"
                 },
                 {
                     "name": "Drupal Media Team",
@@ -5611,17 +5756,17 @@
         },
         {
             "name": "drupal/menu_block",
-            "version": "1.13.0",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_block.git",
-                "reference": "8.x-1.13"
+                "reference": "8.x-1.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.13.zip",
-                "reference": "8.x-1.13",
-                "shasum": "693a932cba9bd5767bdeee506de446228bc4cc8c"
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.14.zip",
+                "reference": "8.x-1.14",
+                "shasum": "c71e60acaba8a7553e8cf423a56328771cbdedf4"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11"
@@ -5629,8 +5774,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.13",
-                    "datestamp": "1722579322",
+                    "version": "8.x-1.14",
+                    "datestamp": "1740624449",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5643,7 +5788,7 @@
             ],
             "authors": [
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -5651,7 +5796,7 @@
                     "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
-                    "name": "JohnAlbin",
+                    "name": "johnalbin",
                     "homepage": "https://www.drupal.org/user/32095"
                 },
                 {
@@ -5858,7 +6003,7 @@
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Frans",
+                    "name": "frans",
                     "homepage": "https://www.drupal.org/user/514222"
                 },
                 {
@@ -5913,7 +6058,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.13",
-                    "datestamp": "1722507672",
+                    "datestamp": "1739552840",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5931,11 +6076,11 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -6015,7 +6160,7 @@
                     "homepage": "https://www.drupal.org/user/314289"
                 },
                 {
-                    "name": "Sam152",
+                    "name": "sam152",
                     "homepage": "https://www.drupal.org/user/1485048"
                 }
             ],
@@ -6207,17 +6352,17 @@
         },
         {
             "name": "drupal/redirect",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/redirect.git",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "9d72d7e0717dbdea3ab3306c5d6840da5bd3024c"
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "7df8b3524bbde07d254216039636947a689140ef"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10 || ^11"
@@ -6225,8 +6370,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1723277641",
+                    "version": "8.x-1.11",
+                    "datestamp": "1737382886",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6239,7 +6384,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -6247,7 +6392,7 @@
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
-                    "name": "Kristen Pol",
+                    "name": "kristen pol",
                     "homepage": "https://www.drupal.org/user/8389"
                 },
                 {
@@ -6357,7 +6502,7 @@
                     "homepage": "https://www.drupal.org/user/748566"
                 },
                 {
-                    "name": "Rajeshreeputra",
+                    "name": "rajeshreeputra",
                     "homepage": "https://www.drupal.org/user/3418561"
                 },
                 {
@@ -6771,6 +6916,55 @@
             }
         },
         {
+            "name": "drupal/simple_media_bulk_upload",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_media_bulk_upload.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_media_bulk_upload-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "58660193c242b67a9afdc3963e57ffa3909fed7f"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11",
+                "drupal/dropzonejs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1727354010",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bkosborne",
+                    "homepage": "https://www.drupal.org/user/788032"
+                },
+                {
+                    "name": "nagy.balint",
+                    "homepage": "https://www.drupal.org/user/1763952"
+                }
+            ],
+            "description": "Provides a form to upload many media items at once.",
+            "homepage": "https://www.drupal.org/project/simple_media_bulk_upload",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_media_bulk_upload"
+            }
+        },
+        {
             "name": "drupal/simple_sitemap",
             "version": "4.2.1",
             "source": {
@@ -7018,6 +7212,10 @@
                     "homepage": "https://www.drupal.org/user/266527"
                 },
                 {
+                    "name": "erutan",
+                    "homepage": "https://www.drupal.org/user/726248"
+                },
+                {
                     "name": "guilherme-lima-almeida",
                     "homepage": "https://www.drupal.org/user/3636010"
                 },
@@ -7192,20 +7390,20 @@
         },
         {
             "name": "drupal/varnish_purge",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varnish_purge.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varnish_purge-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "9fbddb71417113d58345d2fbe9d0a1aa9c5d5c36"
+                "url": "https://ftp.drupal.org/files/projects/varnish_purge-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "e4a8b45ab81923ec8f250b385dd71f1178fa1ca9"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^9.1 || ^10 || ^11"
             },
             "require-dev": {
                 "drupal/purge": "*",
@@ -7215,8 +7413,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1681218333",
+                    "version": "8.x-2.3",
+                    "datestamp": "1739875635",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7233,6 +7431,10 @@
                     "homepage": "https://www.drupal.org/user/93644"
                 },
                 {
+                    "name": "dieterholvoet",
+                    "homepage": "https://www.drupal.org/user/3567222"
+                },
+                {
                     "name": "javivf",
                     "homepage": "https://www.drupal.org/user/2789335"
                 },
@@ -7241,7 +7443,7 @@
                     "homepage": "https://www.drupal.org/user/2479724"
                 },
                 {
-                    "name": "MiSc",
+                    "name": "misc",
                     "homepage": "https://www.drupal.org/user/382892"
                 }
             ],
@@ -7318,20 +7520,20 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.2.7",
+            "version": "6.2.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.2.7"
+                "reference": "6.2.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.2.7.zip",
-                "reference": "6.2.7",
-                "shasum": "7e0520773f2521d70837371b08e09a13704b4274"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.2.9.zip",
+                "reference": "6.2.9",
+                "shasum": "650752c3cc6d0144c6f378b8d25d45c083e23600"
             },
             "require": {
-                "drupal/core": "^10.1",
+                "drupal/core": "^10.2",
                 "php": ">=8.1"
             },
             "require-dev": {
@@ -7378,8 +7580,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.2.7",
-                    "datestamp": "1721425228",
+                    "version": "6.2.9",
+                    "datestamp": "1733851063",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7411,12 +7613,12 @@
                     "homepage": "https://www.drupal.org/user/493050"
                 },
                 {
-                    "name": "quicksketch",
-                    "homepage": "https://www.drupal.org/user/35821"
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
                 },
                 {
-                    "name": "torotil",
-                    "homepage": "https://www.drupal.org/user/865256"
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
                 }
             ],
             "description": "Enables the creation of webforms and questionnaires.",
@@ -8475,39 +8677,41 @@
         },
         {
             "name": "localgovdrupal/localgov",
-            "version": "3.0.12",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov.git",
-                "reference": "e3c0f2a4f66d6a7dd479e9d9fb398094d8473683"
+                "reference": "7564cb65396a74d8d8cdff7c0528e65c7cfaf678"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov/zipball/e3c0f2a4f66d6a7dd479e9d9fb398094d8473683",
-                "reference": "e3c0f2a4f66d6a7dd479e9d9fb398094d8473683",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov/zipball/7564cb65396a74d8d8cdff7c0528e65c7cfaf678",
+                "reference": "7564cb65396a74d8d8cdff7c0528e65c7cfaf678",
                 "shasum": ""
             },
             "require": {
                 "drupal/admin_toolbar": "^3.0",
-                "drupal/content_lock": "^2.4",
                 "drupal/core": "^10.0",
+                "drupal/disable_html5_validation": "^2.0",
                 "drupal/entity_browser": "^2.9",
-                "drupal/gin": "^3.0@alpha",
+                "drupal/gin": "^3.0 || ^4.0",
                 "drupal/gin_login": "^2.0.3",
-                "drupal/gin_toolbar": "^1.0@beta",
+                "drupal/gin_toolbar": "^1.0 || ^2.0",
                 "drupal/masquerade": "^2.0",
                 "drupal/preview_link": "^2.1@alpha",
                 "drupal/redirect": "^1.10",
-                "drupal/search_api": "^1.21",
+                "drupal/simple_media_bulk_upload": "^2.0",
                 "drupal/simple_sitemap": "^4.1",
                 "drush/drush": ">=10",
                 "localgovdrupal/localgov_alert_banner": "^1.2.0",
                 "localgovdrupal/localgov_base": "^1.3.1",
+                "localgovdrupal/localgov_content_lock": "^1.0.0",
                 "localgovdrupal/localgov_core": "^2.12.0",
                 "localgovdrupal/localgov_demo": "^3.0@alpha",
                 "localgovdrupal/localgov_directories": "^3.0",
                 "localgovdrupal/localgov_events": "^3.0",
                 "localgovdrupal/localgov_guides": "^2.1.0",
+                "localgovdrupal/localgov_login_redirect": "^1.0.0",
                 "localgovdrupal/localgov_menu_link_group": "^1.1.0",
                 "localgovdrupal/localgov_news": "^2.3.0",
                 "localgovdrupal/localgov_openreferral": "^2.0@beta",
@@ -8526,28 +8730,29 @@
             },
             "type": "drupal-profile",
             "extra": {
-                "enable-patching": true,
-                "composer-exit-on-patch-failure": true,
-                "patchLevel": {
-                    "drupal/core": "-p2"
-                },
                 "patches": {
                     "drupal/core": {
                         "Users can't reference unpublished content even when they have access to it. See https://www.drupal.org/project/drupal/issues/2845144": "https://www.drupal.org/files/issues/2024-02-13/2845144-87.patch"
-                    },
-                    "drupal/preview_link": {
-                        "Automatically populating multiple preview link entities #3439968": "https://www.drupal.org/files/issues/2024-05-22/3439968-4.diff",
-                        "Add a 'copy to clipboard' feature for preview_link": "https://www.drupal.org/files/issues/2024-08-15/3449121-10.patch",
-                        "References to other entities being previewed don't display #3481523": "https://www.drupal.org/files/issues/2024-10-18/3481523-4.patch"
                     },
                     "drupal/pathauto": {
                         "Allow path generation inside of a workspace - and importantly don't regenerate when publishing space https://www.drupal.org/project/pathauto/issues/3283769": "https://www.drupal.org/files/issues/2024-04-08/3283769-10.patch"
                     },
                     "drupal/redirect": {
-                        "Create redirect from path alias change and workspaces https://www.drupal.org/project/redirect/issues/3431260": "https://www.drupal.org/files/issues/2024-03-18/3431260.patch",
-                        "Validation issue on adding url redirect: https://www.drupal.org/project/redirect/issues/3057250": "https://www.drupal.org/files/issues/2024-08-11/redirect--2024-08-11--3057250-79.patch"
+                        "Validation issue on adding url redirect: https://www.drupal.org/project/redirect/issues/3057250": "https://www.drupal.org/files/issues/2024-08-11/redirect--2024-08-11--3057250-79.patch",
+                        "Create redirect from path alias change and workspaces https://www.drupal.org/project/redirect/issues/3431260": "https://www.drupal.org/files/issues/2024-03-18/3431260.patch"
+                    },
+                    "drupal/preview_link": {
+                        "Set Preview Link expiry in days #3510967": "https://www.drupal.org/files/issues/2025-03-11/3510967-4.patch",
+                        "Add a 'copy to clipboard' feature for preview_link": "https://www.drupal.org/files/issues/2024-08-15/3449121-10.patch",
+                        "Automatically populating multiple preview link entities #3439968": "https://www.drupal.org/files/issues/2024-05-22/3439968-4.diff",
+                        "References to other entities being previewed don't display #3481523": "https://www.drupal.org/files/issues/2024-10-18/3481523-4.patch"
                     }
-                }
+                },
+                "patchLevel": {
+                    "drupal/core": "-p2"
+                },
+                "enable-patching": true,
+                "composer-exit-on-patch-failure": true
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8557,9 +8762,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov/issues",
-                "source": "https://github.com/localgovdrupal/localgov/tree/3.0.12"
+                "source": "https://github.com/localgovdrupal/localgov/tree/3.1.1"
             },
-            "time": "2024-10-23T08:08:36+00:00"
+            "time": "2025-03-11T16:45:24+00:00"
         },
         {
             "name": "localgovdrupal/localgov_alert_banner",
@@ -8629,6 +8834,36 @@
             "time": "2024-11-08T09:03:06+00:00"
         },
         {
+            "name": "localgovdrupal/localgov_content_lock",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localgovdrupal/localgov_content_lock.git",
+                "reference": "df47f5211b77c15d38f39365d278dc88c251d172"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_content_lock/zipball/df47f5211b77c15d38f39365d278dc88c251d172",
+                "reference": "df47f5211b77c15d38f39365d278dc88c251d172",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/content_lock": "^2.4 || ^3.0@alpha"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Customises the Content Lock module for use with LocalGov Drupal.",
+            "homepage": "https://github.com/localgovdrupal/localgov_content_lock",
+            "support": {
+                "issues": "https://github.com/localgovdrupal/localgov_content_lock/issues",
+                "source": "https://github.com/localgovdrupal/localgov_content_lock/tree/1.0.1"
+            },
+            "time": "2025-02-11T12:14:52+00:00"
+        },
+        {
             "name": "localgovdrupal/localgov_core",
             "version": "2.13.10",
             "source": {
@@ -8657,11 +8892,11 @@
             },
             "type": "drupal-module",
             "extra": {
-                "enable-patching": true,
-                "composer-exit-on-patch-failure": true,
                 "patchLevel": {
                     "drupal/core": "-p2"
-                }
+                },
+                "enable-patching": true,
+                "composer-exit-on-patch-failure": true
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8803,16 +9038,16 @@
             },
             "type": "drupal-module",
             "extra": {
-                "enable-patching": true,
-                "composer-exit-on-patch-failure": true,
-                "patchLevel": {
-                    "drupal/core": "-p2"
-                },
                 "patches": {
                     "drupal/date_recur_modular": {
                         "Date validation #3154944": "https://www.drupal.org/files/issues/2020-06-25/alpha-modal-form-end-date-validation.patch"
                     }
-                }
+                },
+                "patchLevel": {
+                    "drupal/core": "-p2"
+                },
+                "enable-patching": true,
+                "composer-exit-on-patch-failure": true
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8897,6 +9132,33 @@
                 "source": "https://github.com/localgovdrupal/localgov_guides/tree/2.1.13"
             },
             "time": "2024-10-03T09:32:58+00:00"
+        },
+        {
+            "name": "localgovdrupal/localgov_login_redirect",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localgovdrupal/localgov_login_redirect.git",
+                "reference": "051b7c11a564992d706163a05a1670b4bed5dad2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_login_redirect/zipball/051b7c11a564992d706163a05a1670b4bed5dad2",
+                "reference": "051b7c11a564992d706163a05a1670b4bed5dad2",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Simple module to redirect users at login.",
+            "homepage": "https://github.com/localgovdrupal/localgov_login_redirect",
+            "support": {
+                "issues": "https://github.com/localgovdrupal/localgov_login_redirect/issues",
+                "source": "https://github.com/localgovdrupal/localgov_login_redirect/tree/1.0.1"
+            },
+            "time": "2025-02-11T12:08:10+00:00"
         },
         {
             "name": "localgovdrupal/localgov_menu_link_group",
@@ -9109,19 +9371,19 @@
             },
             "type": "drupal-module",
             "extra": {
-                "enable-patching": true,
-                "composer-exit-on-patch-failure": true,
+                "patches": {
+                    "drupal/tablefield": {
+                        "Fix PHP8.2 deprecation in Drupal tablefield, see https://www.drupal.org/project/tablefield/issues/3397688.": "https://www.drupal.org/files/issues/2023-12-21/tablefield-php8.2-deprecated-creation-of-dynamic-properties-3397688-9.patch"
+                    },
+                    "drupal/geolocation": {
+                        "Fix schema #3138668": "https://www.drupal.org/files/issues/2021-01-27/geolocation-google-maps-schema-update-3138668-5.patch"
+                    }
+                },
                 "patchLevel": {
                     "drupal/core": "-p2"
                 },
-                "patches": {
-                    "drupal/geolocation": {
-                        "Fix schema #3138668": "https://www.drupal.org/files/issues/2021-01-27/geolocation-google-maps-schema-update-3138668-5.patch"
-                    },
-                    "drupal/tablefield": {
-                        "Fix PHP8.2 deprecation in Drupal tablefield, see https://www.drupal.org/project/tablefield/issues/3397688.": "https://www.drupal.org/files/issues/2023-12-21/tablefield-php8.2-deprecated-creation-of-dynamic-properties-3397688-9.patch"
-                    }
-                }
+                "enable-patching": true,
+                "composer-exit-on-patch-failure": true
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -9178,16 +9440,16 @@
         },
         {
             "name": "localgovdrupal/localgov_sa11y",
-            "version": "1.0.0-beta10",
+            "version": "1.0.0-beta11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov_sa11y.git",
-                "reference": "675cebb09a73897995bc1ceb418b614507f96029"
+                "reference": "92f162d67c79c65cfa6da0c99b57c33387c9a9f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov_sa11y/zipball/675cebb09a73897995bc1ceb418b614507f96029",
-                "reference": "675cebb09a73897995bc1ceb418b614507f96029",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov_sa11y/zipball/92f162d67c79c65cfa6da0c99b57c33387c9a9f2",
+                "reference": "92f162d67c79c65cfa6da0c99b57c33387c9a9f2",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -9207,9 +9469,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov_sa11y",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov_sa11y/issues",
-                "source": "https://github.com/localgovdrupal/localgov_sa11y/tree/1.0.0-beta10"
+                "source": "https://github.com/localgovdrupal/localgov_sa11y/tree/1.0.0-beta11"
             },
-            "time": "2024-10-30T10:31:44+00:00"
+            "time": "2025-01-22T16:17:06+00:00"
         },
         {
             "name": "localgovdrupal/localgov_scarfolk",
@@ -9304,12 +9566,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "enable-patching": true,
                 "patches": {
                     "drupal/core": {
                         "node_access filters out accessible nodes when node is left joined (1349080)": "https://git.drupalcode.org/project/drupal/-/commit/c271adb.diff"
                     }
-                }
+                },
+                "enable-patching": true
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -9381,11 +9643,11 @@
             },
             "type": "drupal-module",
             "extra": {
-                "composer-exit-on-patch-failure": true,
+                "patches": [],
                 "patchLevel": {
                     "drupal/core": "-p2"
                 },
-                "patches": []
+                "composer-exit-on-patch-failure": true
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
