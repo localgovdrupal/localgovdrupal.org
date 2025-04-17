@@ -5438,6 +5438,10 @@
                     "homepage": "https://www.drupal.org/user/278450"
                 },
                 {
+                    "name": "pixelwhip",
+                    "homepage": "https://www.drupal.org/user/275292"
+                },
+                {
                     "name": "sethhill",
                     "homepage": "https://www.drupal.org/user/676480"
                 }
@@ -5633,6 +5637,78 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/linkit",
                 "issues": "http://drupal.org/project/linkit"
+            }
+        },
+        {
+            "name": "drupal/localgov_utilities",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/localgov_utilities.git",
+                "reference": "1.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/localgov_utilities-1.0.0-beta2.zip",
+                "reference": "1.0.0-beta2",
+                "shasum": "0b613ed729e29585072f4173831fd949e0032448"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "drupal/textfield_counter": "^2.4"
+            },
+            "require-dev": {
+                "drupal/textfield_counter": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta2",
+                    "datestamp": "1744124871",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "andybroomfield",
+                    "homepage": "https://www.drupal.org/user/636756"
+                },
+                {
+                    "name": "ekes",
+                    "homepage": "https://www.drupal.org/user/10083"
+                },
+                {
+                    "name": "finn lewis",
+                    "homepage": "https://www.drupal.org/user/119432"
+                },
+                {
+                    "name": "localgov",
+                    "homepage": "https://www.drupal.org/user/3841829"
+                },
+                {
+                    "name": "markconroy",
+                    "homepage": "https://www.drupal.org/user/336910"
+                },
+                {
+                    "name": "stephen-cox",
+                    "homepage": "https://www.drupal.org/user/2862323"
+                },
+                {
+                    "name": "tonypaulbarker",
+                    "homepage": "https://www.drupal.org/user/807484"
+                }
+            ],
+            "description": "Utility modules for the LocalGov Drupal distribution.",
+            "homepage": "https://www.drupal.org/project/localgov_utilities",
+            "support": {
+                "source": "https://git.drupalcode.org/project/localgov_utilities"
             }
         },
         {
@@ -7259,6 +7335,56 @@
             }
         },
         {
+            "name": "drupal/textfield_counter",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/textfield_counter.git",
+                "reference": "2.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/textfield_counter-2.4.0.zip",
+                "reference": "2.4.0",
+                "shasum": "0abca4ec71b4b46499c823acf60d37a09d0e2f91"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11",
+                "php": ">=8.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.4.0",
+                    "datestamp": "1735316359",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jay Friendly (jaypan)",
+                    "homepage": "https://www.drupal.org/u/jaypan"
+                },
+                {
+                    "name": "jaypan",
+                    "homepage": "https://www.drupal.org/user/324696"
+                }
+            ],
+            "description": "Creates field formatters with character counts for text fields and text areas.",
+            "homepage": "https://www.drupal.org/project/textfield_counter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/textfield_counter",
+                "issues": "https://www.drupal.org/project/issues/textfield_counter"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.15.0",
             "source": {
@@ -8677,16 +8803,16 @@
         },
         {
             "name": "localgovdrupal/localgov",
-            "version": "3.1.1",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localgovdrupal/localgov.git",
-                "reference": "7564cb65396a74d8d8cdff7c0528e65c7cfaf678"
+                "reference": "dc3a740d16f3a6793272831fc7c9d366dea20b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localgovdrupal/localgov/zipball/7564cb65396a74d8d8cdff7c0528e65c7cfaf678",
-                "reference": "7564cb65396a74d8d8cdff7c0528e65c7cfaf678",
+                "url": "https://api.github.com/repos/localgovdrupal/localgov/zipball/dc3a740d16f3a6793272831fc7c9d366dea20b64",
+                "reference": "dc3a740d16f3a6793272831fc7c9d366dea20b64",
                 "shasum": ""
             },
             "require": {
@@ -8697,6 +8823,7 @@
                 "drupal/gin": "^3.0 || ^4.0",
                 "drupal/gin_login": "^2.0.3",
                 "drupal/gin_toolbar": "^1.0 || ^2.0",
+                "drupal/localgov_utilities": "^1.0@beta",
                 "drupal/masquerade": "^2.0",
                 "drupal/preview_link": "^2.1@alpha",
                 "drupal/redirect": "^1.10",
@@ -8762,9 +8889,9 @@
             "homepage": "https://github.com/localgovdrupal/localgov",
             "support": {
                 "issues": "https://github.com/localgovdrupal/localgov/issues",
-                "source": "https://github.com/localgovdrupal/localgov/tree/3.1.1"
+                "source": "https://github.com/localgovdrupal/localgov/tree/3.2.1"
             },
-            "time": "2025-03-11T16:45:24+00:00"
+            "time": "2025-04-15T11:37:43+00:00"
         },
         {
             "name": "localgovdrupal/localgov_alert_banner",
