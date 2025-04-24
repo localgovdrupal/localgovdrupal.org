@@ -19,6 +19,7 @@ module:
   datetime: 0
   dbal: 0
   dblog: 0
+  disable_html5_validation: 0
   disclosure_nav: 0
   dynamic_page_cache: 0
   editor: 0
