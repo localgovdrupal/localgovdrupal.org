@@ -43,10 +43,9 @@
   {% block content %}
     {{ content.field_number }}
     {{ content.body }}
-
   {% endblock %}
 {% if content.field_link.0 %}
   </a>
 {% endif %}
-
+{{ content | without('field_number', 'body', 'field_link') }}
 </div>
