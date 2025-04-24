@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "248e065d6dc6e600defba821e39c06fe",
+    "content-hash": "adf9243f764eac93fdb2222cac2cdbae",
     "packages": [
         {
             "name": "agile-collective/ac_eu_cookie_compliance_tweaks",
@@ -2251,17 +2251,17 @@
         },
         {
             "name": "drupal/block_class",
-            "version": "2.0.12",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_class.git",
-                "reference": "2.0.12"
+                "reference": "4.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_class-2.0.12.zip",
-                "reference": "2.0.12",
-                "shasum": "cc3945f8038bcc9bb48eff897df332aa952d62e6"
+                "url": "https://ftp.drupal.org/files/projects/block_class-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "46fa2437a8bd272a1f757a7cd957eb2747e28cdb"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11"
@@ -2269,8 +2269,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.12",
-                    "datestamp": "1723243074",
+                    "version": "4.0.1",
+                    "datestamp": "1745427425",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

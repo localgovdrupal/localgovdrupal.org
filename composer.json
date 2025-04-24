@@ -19,7 +19,7 @@
         "agile-collective/ac_eu_cookie_compliance_tweaks": "^1.0",
         "composer/installers": "^1.10",
         "cweagans/composer-patches": "^1.6",
-        "drupal/block_class": "^2.0",
+        "drupal/block_class": "^4.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
