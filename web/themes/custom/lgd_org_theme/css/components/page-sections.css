@@ -54,6 +54,6 @@
 .lgd-page-section.lgd-page-section--has-bg-colour{
   &:not(.lgd-page-section--contained-breakout)&:not(.lgd-page-section--full-width-contained-content)&:not(.lgd-page-section--full-width){
 
-    padding-inline: var(--spacing);
+    padding-inline: var(--spacing-large);
   }
 }
