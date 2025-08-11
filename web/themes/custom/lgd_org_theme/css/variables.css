@@ -211,8 +211,8 @@ body {
   --image-with-caption-bg-color: var(--color-white);
 
   /* Quote */
-  --quote-padding: 0px;
-  --quote-padding-left: 0px;
+  --quote-padding: 0;
+  --quote-padding-left: var(--spacing-large);
   --quote-bg-color: none;
   --quote-author-color: var(--color-black);
 

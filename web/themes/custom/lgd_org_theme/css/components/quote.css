@@ -22,15 +22,6 @@ blockquote > p:first-of-type:before {
   background: url("../../assets/images/quote-purple.svg") no-repeat 0 50% ;
 }
 
-blockquote > p:last-of-type:after {
-  content: "";
-  display: block;
-  width: 28px;
-  height: 1px;
-  border-top: 5px solid var(--color-melrose);
-  margin-top: 12px;
-}
-
 .pull-out-quote {
   --font-size-largish: calc(var(--font-size) * 1.375);
   --font-size-large: calc(var(--font-size) * 1.5);
