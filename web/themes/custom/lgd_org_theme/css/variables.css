@@ -228,7 +228,7 @@ body {
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
   --call-out-box-bg-color: transparent;
-  --call-out-box-padding: 2rem 3rem 1.5rem;
+  --call-out-box-padding: clamp(1rem, 3vw, 2rem) clamp(1.5rem, 4vw, 3rem) clamp(1rem, 2vw, 1.5rem);
 
   --featured-teaser-border: 0;
 
