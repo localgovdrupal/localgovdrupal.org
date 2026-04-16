@@ -22,6 +22,7 @@ settings:
   provider: menu_block
   follow: false
   follow_parent: child
+  display_empty: false
   label_link: true
   label_type: fixed
   level: 1
@@ -35,4 +36,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/community/our-suppliers/supplier-directory/*\r\n"
+    pages: "/community/our-certified-suppliers/supplier-directory/*\r\n/community/our-certified-suppliers/getting-started-certified-supplier\r\n/community/our-councils/getting-started-localgov-drupal-council"
