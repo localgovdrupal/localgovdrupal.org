@@ -3,10 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api.server.localgov_openreferral
     - core.entity_view_mode.node.directory_index
+    - search_api.server.localgov_openreferral
   module:
-    - search_api
     - localgov_openreferral
     - node
   enforced:

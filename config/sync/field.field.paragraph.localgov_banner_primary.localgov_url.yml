@@ -12,7 +12,7 @@ field_name: localgov_url
 entity_type: paragraph
 bundle: localgov_banner_primary
 label: URL
-description: 'An optional url. Adding a url here will make the whole box a link.'
+description: 'An optional url. Adding a url here will make the banner title a link.'
 required: false
 translatable: true
 default_value: {  }

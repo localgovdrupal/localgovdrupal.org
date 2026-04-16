@@ -96,6 +96,10 @@
   display: block;
 }
 
+.user-logged-in .lgd-header {
+  margin-top: 78px;
+}
+
 /* Theming the Header Toggles */
 
 

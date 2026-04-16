@@ -9,7 +9,7 @@ _core:
 id: localgov_guides_page
 label: 'Guide page'
 type: 'canonical_entities:node'
-pattern: '[node:localgov_guides_parent:entity:url:relative]/[node:title]'
+pattern: '[node:localgov_guides_parent:entity:url:path]/[node:title]'
 selection_criteria:
   1ceaab92-3301-4e34-a8de-9dbcae184528:
     id: 'entity_bundle:node'

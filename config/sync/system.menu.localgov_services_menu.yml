@@ -5,6 +5,6 @@ dependencies: {  }
 _core:
   default_config_hash: ydYiJB1sGGlS_EYUnQ0VLrpTDbByy-p9fvb481pz-xg
 id: localgov_services_menu
-label: 'Services menu'
-description: 'Service links'
+label: 'Services menu (Old)'
+description: 'Old Service links with broken machine name. Delete this menu once you replace your services menu blocks.'
 locked: false

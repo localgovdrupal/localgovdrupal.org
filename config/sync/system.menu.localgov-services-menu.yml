@@ -1,0 +1,8 @@
+uuid: cdf634c5-c71d-4fd9-ba20-606e73782ffd
+langcode: en
+status: true
+dependencies: {  }
+id: localgov-services-menu
+label: 'Services menu'
+description: 'Service links'
+locked: false

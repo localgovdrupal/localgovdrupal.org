@@ -28,6 +28,9 @@
         "drupal/gtm": "^1.8",
         "drupal/hotjar": "^3.1",
         "drupal/linkit": "^7.0",
+        "drupal/localgov": "^3.0@alpha",
+        "drupal/localgov_page": "^1.0@beta",
+        "drupal/localgov_sa11y": "^1.0@beta",
         "drupal/masquerade": "^2.0@beta",
         "drupal/menu_block": "^1.10",
         "drupal/purge": "3.x-dev@dev",
@@ -38,10 +41,7 @@
         "drupal/upgrade_status": "^4.0",
         "drupal/varnish_purge": "^2.1",
         "drupal/webform": "^6.2@RC",
-        "drush/drush": "^12.0",
-        "localgovdrupal/localgov": "^3.0@alpha",
-        "localgovdrupal/localgov_page": "^1.0@beta",
-        "localgovdrupal/localgov_sa11y": "^1.0@beta"
+        "drush/drush": "^13"
     },
     "require-dev": {
         "brianium/paratest": "^6.0",

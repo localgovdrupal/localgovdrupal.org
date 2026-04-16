@@ -9,7 +9,7 @@ _core:
 id: localgov_services_hierarchy
 label: 'Services Hierarchy'
 type: 'canonical_entities:node'
-pattern: '[node:localgov_services_parent:entity:url:relative]/[node:title]'
+pattern: '[node:localgov_services_parent:entity:url:path]/[node:title]'
 selection_criteria:
   9dd1b1bc-3678-4642-8568-86d6d27c3dfd:
     id: 'entity_bundle:node'

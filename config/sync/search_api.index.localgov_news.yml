@@ -3,14 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_index
     - field.storage.node.localgov_news_categories
     - field.storage.node.localgov_news_date
     - field.storage.node.localgov_newsroom
     - search_api.server.localgov_news
-    - core.entity_view_mode.node.search_index
   module:
+    - localgov_openreferral
     - node
-    - search_api
   enforced:
     module:
       - localgov_news
