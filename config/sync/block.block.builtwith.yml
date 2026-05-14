@@ -9,7 +9,7 @@ dependencies:
 id: builtwith
 theme: lgd_org_theme
 region: lower_footer_second
-weight: -21
+weight: -23
 provider: null
 plugin: lgd_org_blocks_builtwith
 settings:

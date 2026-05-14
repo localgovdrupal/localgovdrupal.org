@@ -9,7 +9,7 @@ dependencies:
 id: lgd_org_theme_social
 theme: lgd_org_theme
 region: footer
-weight: -20
+weight: -23
 provider: null
 plugin: lgd_org_social
 settings:

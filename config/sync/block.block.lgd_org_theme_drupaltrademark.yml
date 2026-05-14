@@ -1,0 +1,25 @@
+uuid: d79389ca-f2b2-40db-b9af-1f1adc721398
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:special_block:0380bcae-02ed-492d-9dfb-fa54255e6e80'
+  module:
+    - block_content
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_drupaltrademark
+theme: lgd_org_theme
+region: lower_footer_second
+weight: -22
+provider: null
+plugin: 'block_content:0380bcae-02ed-492d-9dfb-fa54255e6e80'
+settings:
+  id: 'block_content:0380bcae-02ed-492d-9dfb-fa54255e6e80'
+  label: 'Drupal trademark'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -9,7 +9,7 @@ dependencies:
 id: lgd_org_theme_footerlogosfundedby
 theme: lgd_org_theme
 region: footer
-weight: -19
+weight: -22
 provider: null
 plugin: lgd_org_footer_logos
 settings:
