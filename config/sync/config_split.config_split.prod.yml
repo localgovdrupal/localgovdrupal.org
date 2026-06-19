@@ -1,0 +1,23 @@
+uuid: dc218509-da27-4b3b-98a1-8072528309e8
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: Production
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/prod
+module:
+  purge: 0
+  purge_processor_cron: 0
+  purge_queuer_coretags: 0
+  purge_tokens: 0
+  purge_ui: 0
+  varnish_purge_tags: 0
+  varnish_purger: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
