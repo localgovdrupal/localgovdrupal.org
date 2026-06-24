@@ -1,0 +1,25 @@
+uuid: 519cde90-436d-42a2-962a-35f432e16b1d
+langcode: en
+status: false
+dependencies: {  }
+id: stage
+label: Stage
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/stage
+module:
+  masquerade: 0
+  purge: 0
+  purge_processor_cron: 0
+  purge_queuer_coretags: 0
+  purge_tokens: 0
+  purge_ui: 0
+  varnish_purge_tags: 0
+  varnish_purger: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

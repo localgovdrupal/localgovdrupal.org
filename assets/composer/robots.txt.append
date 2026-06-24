@@ -1,0 +1,2 @@
+# Prevent facets indexing
+Disallow: /*?f*

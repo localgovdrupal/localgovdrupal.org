@@ -12,13 +12,13 @@ module:
   breakpoint: 0
   ckeditor5: 0
   config: 0
+  config_split: 0
   content_moderation: 0
   contextual: 0
   crop: 0
   ctools: 0
   datetime: 0
   dbal: 0
-  dblog: 0
   disable_html5_validation: 0
   disclosure_nav: 0
   dynamic_page_cache: 0
@@ -99,7 +99,6 @@ module:
   localgov_subsites: 0
   localgov_subsites_paragraphs: 0
   localgov_topics: 0
-  masquerade: 0
   media: 0
   media_library: 0
   media_library_edit: 0
@@ -118,12 +117,6 @@ module:
   path: 0
   path_alias: 0
   phpass: 0
-  purge: 0
-  purge_drush: 0
-  purge_processor_cron: 0
-  purge_queuer_coretags: 0
-  purge_tokens: 0
-  purge_ui: 0
   rabbit_hole: 0
   redirect: 0
   responsive_image: 0
@@ -151,8 +144,6 @@ module:
   toolbar: 0
   update: 0
   user: 0
-  varnish_purge_tags: 0
-  varnish_purger: 0
   views_ui: 0
   viewsreference: 0
   webform: 0

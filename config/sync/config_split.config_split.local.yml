@@ -1,0 +1,20 @@
+uuid: 50c31e9d-5ad1-4862-a253-f1803b8de35b
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/local
+module:
+  dblog: 0
+  devel: 0
+  masquerade: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
