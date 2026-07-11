@@ -136,14 +136,16 @@
 .layout--threecol-33-34-33 > .layout__region--first,
 .layout--threecol-33-34-33 > .layout__region--second,
 .layout--threecol-33-34-33 > .layout__region--third {
-    flex: 1 1 calc(calc(100% / 3) - var(--spacing-larger) * 3);
+    flex: 0 1 calc((100% - 2 * var(--spacing-larger)) / 3);
+    min-width: 0;
   }
 }
 
 @media screen and (min-width: 40rem) {
 .layout--twocol > .layout__region--first,
 .layout--twocol > .layout__region--second {
-    flex: 1 1 calc(50% - var(--spacing-larger) * 2);
+    flex: 0 1 calc((100% - var(--spacing-larger)) / 2);
+    min-width: 0;
   }
 }
 
