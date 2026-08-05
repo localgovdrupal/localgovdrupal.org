@@ -60,13 +60,13 @@ tbody tr {
 }
 
 a {
-  text-underline-offset: 3px;
+  /*text-underline-offset: 3px;*/
 }
 
 a:not([class*="toolbar"]):focus {
-  box-shadow: none;
+  /*box-shadow: none;
   outline: 2px solid black;
-  outline-offset: 2px;
+  outline-offset: 2px;*/
 }
 
 a.button-style-link,
@@ -93,4 +93,21 @@ a.button-style-link:hover,
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+}
+
+.button-style-link--fancy a,
+a.button-style-link--fancy {
+  border-radius: 0;
+  border: 2px solid;
+  color: var(--color-text);
+  /*background: white;
+  background: var(--color-page-section-background-color);*/
+  background: transparent;
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-larger);
+  font-weight: 700;
+  padding-inline: var(--spacing-large);
+  display: inline-block;
+  box-shadow: 4px 4px var(--color-page-section-background-color), 6px 6px black;
 }

@@ -234,7 +234,7 @@ body {
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
   --call-out-box-bg-color: transparent;
-  --call-out-box-padding: 2rem 3rem 1.5rem;
+  --call-out-box-padding: 3rem 3rem 4rem;
 
   --featured-teaser-border: 0;
 
@@ -249,7 +249,7 @@ body {
   --step-by-step-nav-block-width: var(--width-medium);
 
 
-
+  --color-page-section-background-color: white;
   --color-page-section-background-color-1: var(--color-accent);
   --color-page-section-background-color-1-text-color: var(--color-black);
   --color-page-section-background-color-1-link-color: var(--color-black);

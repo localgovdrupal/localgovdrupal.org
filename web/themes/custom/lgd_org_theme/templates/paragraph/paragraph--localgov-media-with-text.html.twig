@@ -70,12 +70,12 @@
 						{{ heading }}
 						{{ content.localgov_text }}
             {% if link %}
-              <div class="button-style-link">
+              <div class="button-style-link--fancy">
                 {{ link }}
               </div>
             {% endif %}
             {% if content.field_links %}
-              <div class="button-style-link">
+              <div class="button-style-link--fancy">
               {{ content.field_links }}
               </div>
             {% endif %}
@@ -85,7 +85,7 @@
 						{{ heading }}
 						{{ content.localgov_text }}
             {% if link or content.field_links.0 %}
-              <div class="button-style-link">
+              <div class="button-style-link--fancy">
               {{ link }}
               {{ content.field_links }}
               </div>
