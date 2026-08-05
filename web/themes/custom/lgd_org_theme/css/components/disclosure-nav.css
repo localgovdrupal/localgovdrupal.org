@@ -13,7 +13,7 @@
 }
 
 .disclosure-nav > li button {
-  padding:  var(--spacing-small);
+  padding: 0.25rem;
 }
 
 .disclosure-nav > li + li  {
@@ -39,6 +39,13 @@
 .disclosure-nav button[aria-expanded="true"]{
   background-color: rgba(255, 247, 206, 1);
   color: black;
+}
+
+.disclosure-nav button::after {
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+  height: 0.7rem;
+  width: 0.7rem;
 }
 
 .disclosure-nav button:hover::after,

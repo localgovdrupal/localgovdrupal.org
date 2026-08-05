@@ -5,22 +5,19 @@
 
 .lgd-footer__footer {
   padding-top: 1rem;
-  padding-bottom: 1rem;
   padding-top: clamp(1rem, 10vw, var(--spacing));
-  padding-bottom: clamp(1rem, 10vw, var(--spacing));
   color: var(--color-footer-text);
   background-color: var(--color-section-footer-bg);
 }
 
 .lgd-org--newsletter.button-style-link a {
   --button-bg-color: var(--color-white);
-  font-family: var(--font-secondary);
-  font-size: clamp(1.2rem, 4vw, var(--font-size-larger));
-  font-weight: 500;
-  padding: 1rem 2.5rem;
-  padding-block: 1rem;
+  font-family: var(--font-primary);
+  font-size: clamp(1.2rem, 4vw, var(--font-size-large));
+  font-weight: 700;
   padding-inline: 2.5rem;
   border-radius: 50px;
+  margin-bottom: 0;
   &:focus {
     outline-color: var(--color-white) !important;
   }
@@ -55,8 +52,7 @@
 }
 
 .lgd-region__inner--footer {
-  padding-top: var(--spacing-large);
-  padding-top: clamp(var(--spacing-large), 2vw, var(--spacing-larger));
+  padding-top: var(--spacing);
   text-align: center;
   @media screen and (min-width: 48rem) {
     text-align: left;
@@ -102,12 +98,12 @@
 
 .menu--footer li a {
   font-size: var(--font-size-medium);
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   font-weight: 700;
 }
 
 footer a:hover {
-  text-decoration-style: double;
+  /*text-decoration-style: double;*/
 }
 
 
@@ -124,10 +120,11 @@ footer a:hover {
 }
 
 .lgd-org-social img {
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 3rem;
+  height: 3rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.7rem;
 }
 
 .lgd-org-social a {
@@ -167,10 +164,13 @@ footer a:hover {
 }
 
 .lgd-org--footer-block {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
   align-items: center;
   margin-bottom: var(--spacing-largest);
+  > * + * {
+    margin-top: 0.7rem;
+  }
   @media screen and (min-width: 48rem) {
     margin-bottom: 0;
   }
@@ -178,7 +178,8 @@ footer a:hover {
 }
 .lgd-org--footer-block img {
   height: 2rem;
-  margin-right: var(--spacing-smaller);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .lgd-org-trademark {

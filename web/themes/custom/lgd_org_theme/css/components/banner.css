@@ -1,7 +1,7 @@
 /* Banner Region */
 .lgd-region--banner {
 
-  background: rgba(0, 68, 89, 0.8);
+  background: var(--color-purple-transparent);
   padding-bottom: var(--spacing-large);
   padding-top: var(--spacing-large);
   color: var(--color-white);
@@ -75,7 +75,7 @@
   font-size: clamp(var(--font-size-medium), 2.5vw, 1.5625rem);
   font-weight: 500;
   letter-spacing: -0.5px;
-  font-family: var(--font-secondary);
+  /*font-family: var(--font-secondary);*/
   max-width: 36ch;
   text-align: center;
   margin-bottom: 2rem;
@@ -123,11 +123,15 @@
 
 
 .lgd-org-big-numbers a {
-  font-size: clamp(0.875rem, 2vw, 1.625rem);
+  font-size: clamp(0.875rem, 2vw, 1.6rem);
   font-weight: 500;
   letter-spacing: -0.3px;
   line-height: 1;
-  border: 1px solid;
+  /*border: 1px solid;*/
+  background-image: url(../../assets/images/wibblycircle.svg);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -147,24 +151,23 @@
 }
 
 .lgd-org-big-numbers a:hover {
-  border-color: var(--color-accent);
+  /*border-color: var(--color-accent);*/
   color: var(--color-accent);
-  background: transparent;
+  /*background: transparent;*/
 
 }
 
 .lgd-org-big-numbers a:focus {
-  background: transparent;
-  box-shadow: 0;
-  outline: 3px solid black;
-  outline-offset: 2px;
+  background-color: transparent;
+  outline: 2px solid white;
+  /*box-shadow: 0;*/
   color: inherit;
 
 }
 
 .lgd-org-big-numbers .field--name-field-number,
 .lgd-org--councils .number {
-  font-size: clamp(3.25rem, 10vw, 7.75rem);
+  font-size: clamp(3.25rem, 10vw, 5.6rem);
   letter-spacing: -3px;
   display: block;
   line-height: 100%;
