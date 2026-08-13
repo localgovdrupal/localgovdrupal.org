@@ -19,6 +19,9 @@ settings:
     -
       value: featured
       label: Featured
+    -
+      value: background_1
+      label: 'Background 1'
   allowed_values_function: ''
 module: options
 locked: false
