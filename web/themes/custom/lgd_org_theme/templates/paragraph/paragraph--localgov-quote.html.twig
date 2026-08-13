@@ -55,7 +55,9 @@
 
 <figure{{ attributes.addClass(classes) }}>
   <blockquote class="pull-out-quote__content">
-    {{ content|without('localgov_author') }}
+    <div>
+    {{ content.localgov_text_plain.0 }}
+    </div>
   </blockquote>
 
   {% if paragraph.localgov_author.value %}

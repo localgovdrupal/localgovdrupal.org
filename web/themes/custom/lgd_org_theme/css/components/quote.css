@@ -13,9 +13,11 @@ blockquote > p:first-of-type:before,
   background: url("../../assets/images/quoteoutline.svg") no-repeat 0 50% ;
   height: 4rem;
   width: 5rem;
-  display: inline-block;
+  display: block;
   background-size: 100%;
-  margin-right: var(--spacing);
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 blockquote > p:first-of-type:before {
@@ -39,33 +41,20 @@ blockquote > p:first-of-type:before {
   margin-bottom: clamp(var(--spacing), 8vw, var(--spacing-mega));
   text-align: center;
   line-height: 1.3;
-      /*-webkit-mask-image: url("../../assets/images/speech-mask.png");
-  mask-image: url("../../assets/images/speech-mask.png");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: cover;*/
 }
 
 .pull-out-quote__content {
-  margin: 0;
-  width: 100%;
-
-  background: url("../../assets/images/speechbubble.svg") no-repeat 0 100% ;
-  /*background-color: var(--color-purple);*/
-  /*padding-bottom: clamp(50px, 8vw, 100px);*/
-  /*background-size: contain;*/
-  /*padding-left: 1.5rem;*/
-  /*padding-right: 1.5rem;*/
-  /*color: black;*/
-  background-size: 100%;
-  padding: 3rem 5rem 9rem;
+  background-image: url("../../assets/images/speechbubble-purple.svg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-color: pink;
-
+  border: 1px solid transparent;
+  object-fit: fill;
 }
-/*.pull-out-quote__content:before {
-  content: url("../../assets/images/speechbubble.svg");
-}*/
+
+.pull-out-quote__content div {
+  margin-bottom: 6rem;
+  margin-inline: 2rem;
+}
 
 .pull-out-quote__author {
   margin-top: 1rem;
@@ -75,16 +64,4 @@ blockquote > p:first-of-type:before {
   font-family: var(--font-primary);
 }
 
-/*.pull-out-quote__content:before {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.pull-out-quote__content:before {
-  height: 30px;
-  width: 36px;
-  margin-bottom: 1.5rem;
-  display: block;
-}*/
 

@@ -69,8 +69,8 @@ a:not([class*="toolbar"]):focus {
   outline-offset: 2px;*/
 }
 
-a.button-style-link,
-.button-style-link a{
+a.button-style-link--rounded,
+.button-style-link--rounded a{
   background-color: var(--button-bg-color);
   color: var(--color-black);
   border-radius: 2rem;
@@ -84,19 +84,20 @@ a.button-style-link,
   text-align: center;
 }
 
-a.button-style-link:hover,
-.button-style-link a:hover {
+a.button-style-link--rounded:hover,
+.button-style-link--rounded a:hover {
   background-color: var(--button-bg-color-hover);
 }
 
-.paragraph--type--localgov-link.button-style-link {
+/*.paragraph--type--localgov-link.button-style-link {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-}
+}*/
 
-.button-style-link--fancy a,
-a.button-style-link--fancy {
+.button-style-link a,
+a.button-style-link {
+  line-height: 1.1;
   border-radius: 0;
   border: 2px solid;
   color: var(--color-text);
@@ -107,7 +108,17 @@ a.button-style-link--fancy {
   position: relative;
   font-size: var(--font-size-larger);
   font-weight: 700;
-  padding-inline: var(--spacing-large);
+  padding: 0.75rem;
   display: inline-block;
   box-shadow: 4px 4px var(--color-page-section-background-color), 6px 6px black;
+  &:hover {
+    background-color: var(--color-purple-lightest);
+  }
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }

@@ -1,9 +1,9 @@
 .sidebar .block-localgov-subsites > ul.menu,
 .sidebar .lgd-region__inner > nav,
 .sidebar .block-views-blocklocalgov-step-by-step-navigation-steps {
-  padding: 1.5rem;
-  background: var(--color-bittersweet-lightest);
-  border: 1px solid var(--color-bittersweet-darker);
+  /*padding: 1.5rem;*/
+  /*background: var(--color-bittersweet-lightest);*/
+  /*border: 1px solid var(--color-bittersweet-darker);*/
   border-left: 0;
 }
 
@@ -17,6 +17,7 @@ aside .menu li {
 aside h2 a {
   text-decoration: none;
   font-weight: 700;
+  color: var(--color-purple);
   &:hover {
     text-decoration: underline;
   }
@@ -26,12 +27,15 @@ aside .menu li a {
   display: inline-block;
   padding-block: var(--spacing-small);
   text-decoration: none;
+  font-weight: 700;
   &:hover {
     text-decoration: underline;
   }
 }
 
-
+aside .menu li li a {
+  font-weight: normal;
+}
 aside > .menu > li {
   margin-bottom: var(--spacing);
   display: block;
@@ -43,17 +47,19 @@ aside .menu {
 }
 
 aside .menu ul {
-  padding-left: 0.5rem;
+  /*padding-left: 0.5rem;*/
 }
 
 aside .menu .is-active {
   font-weight: bold;
+  color: var(--color-purple);
 }
 
 .block-localgov-subsites .menu .menu .menu-item--active-trail,
 aside .menu .menu a,
 aside .menu--sub-menu a {
-  border-left: 4px solid rgba(219, 219, 219, 1);
+  border-left: 2px solid var(--color-skyblue);
+  margin-bottom: 2px;
   padding: calc(var(--spacing-smallest)/2);
   padding-left: 1rem;
   display: inline-block;
@@ -66,6 +72,10 @@ aside .menu--main > .menu-item--active-trail > a {
 }
 
 .sidebar--second {
-  background: white;
-  background: linear-gradient(90deg, var(--color-bittersweet-darker) 1px, rgba(255,255,255,1) 1px, rgba(255,255,255,1) 100%);
+  /*background: white;
+  background: linear-gradient(90deg, var(--color-bittersweet-darker) 1px, rgba(255,255,255,1) 1px, rgba(255,255,255,1) 100%);*/
+}
+
+aside .menu--main > .menu-item--active-trail > a.is-active {
+color: var(--color-purple);
 }

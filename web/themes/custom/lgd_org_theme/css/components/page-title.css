@@ -1,4 +1,8 @@
 .lgd-page-title-block {
-  /*margin-bottom: 0;
-  border-bottom: 0;*/
+  /*margin-bottom: 0; */
+  border-block-end: 0;
+}
+
+.block-localgov-page-header-block {
+  border-bottom: 2px solid var(--color-grey-light);
 }

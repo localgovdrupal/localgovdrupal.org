@@ -10,7 +10,7 @@
   background-color: var(--color-section-footer-bg);
 }
 
-.lgd-org--newsletter.button-style-link a {
+.lgd-org--newsletter.button-style-link--rounded a {
   --button-bg-color: var(--color-white);
   font-family: var(--font-primary);
   font-size: clamp(1.2rem, 4vw, var(--font-size-large));

@@ -1,8 +1,9 @@
 .call-out-box {
+  --button-bg-color: var(--color-purple-lightest);
   border: 2px solid var(--color-purple);
   border-radius: 2rem;
   text-align: center;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.25rem);
 }
 
 .call-out-box__content > .field {

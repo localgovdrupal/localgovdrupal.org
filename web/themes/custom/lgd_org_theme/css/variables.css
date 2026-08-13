@@ -151,7 +151,7 @@ body {
   --breadcrumbs-font-size: clamp(var(--font-size-smaller), 2.5vw, var(--font-size-medium));
   --breadcrumbs-padding-vertical: var(--spacing-smaller);
   --breadcrumbs-padding-horizontal: 0;
-  --breadcrumbs-link-color: var(--color-black);
+  --breadcrumbs-link-color: var(--color-purple);
   --breadcrumbs-spacing-bottom: clamp(var(--spacing-smaller), 2.5vw, var(--spacing-large));
 
   /* Header Items */
@@ -212,8 +212,8 @@ body {
 
   /* Image with Caption */
   --image-with-caption-border: var(--border);
-  --image-with-caption-border-color: var(--color-black);
-  --image-with-caption-padding: var(--spacing) 0 var(--spacing);
+  --image-with-caption-border-color: var(--color-purple);
+  --image-with-caption-padding: var(--spacing-smaller) 0 var(--spacing-smaller);
   --image-with-caption-bg-color: var(--color-white);
 
   /* Quote */
@@ -234,7 +234,7 @@ body {
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
   --call-out-box-bg-color: transparent;
-  --call-out-box-padding: 3rem 3rem 4rem;
+  --call-out-box-padding: 2.5rem 1.5rem;
 
   --featured-teaser-border: 0;
 
@@ -250,7 +250,7 @@ body {
 
 
   --color-page-section-background-color: white;
-  --color-page-section-background-color-1: var(--color-accent);
+  --color-page-section-background-color-1: var(--color-purple-lightest);
   --color-page-section-background-color-1-text-color: var(--color-black);
   --color-page-section-background-color-1-link-color: var(--color-black);
   --color-page-section-background-color-2: rgba(255, 225, 70, 0.20);
@@ -259,10 +259,10 @@ body {
   --color-page-section-background-color-3: var(--color-grey-lightest);
   --color-page-section-background-color-3-text-color: var(--color-black);
   --color-page-section-background-color-3-link-color: var(--color-black);
-  --color-page-section-background-color-4: var(--color-white);
+  --color-page-section-background-color-4: var(--color-grey-lightest);
   --color-page-section-background-color-4-text-color: var(--color-black);
   --color-page-section-background-color-4-link-color: var(--color-link);
-  --color-page-section-background-color-5: linear-gradient(180deg, rgba(174, 191, 254, 0.2) 30.48%, rgba(255, 130, 98, 0.3) 114.39%);
+  --color-page-section-background-color-5: var(--color-skyblue);
   --color-page-section-background-color-5-text-color: var(--color-black);
   --color-page-section-background-color-5-link-color: var(--color-link);
   --color-page-section-background-color-6: var(--color-accent);

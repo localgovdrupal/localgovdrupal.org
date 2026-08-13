@@ -59,7 +59,7 @@
 }
 
 main .lgd-row__one-third {
-  max-width: 21rem;
+  /*max-width: 21rem;*/
 }
 
 main .lgd-row__two-thirds + .lgd-row__one-third {
