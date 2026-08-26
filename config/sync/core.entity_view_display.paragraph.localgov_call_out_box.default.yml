@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_call_out_box.field_button_style
     - field.field.paragraph.localgov_call_out_box.localgov_background_image
     - field.field.paragraph.localgov_call_out_box.localgov_body_text
     - field.field.paragraph.localgov_call_out_box.localgov_button
@@ -66,5 +67,7 @@ content:
     weight: 4
     region: content
 hidden:
+  field_button_style: true
   localgov_colour_theme: true
   localgov_opens_in_a_new_window: true
+  search_api_excerpt: true

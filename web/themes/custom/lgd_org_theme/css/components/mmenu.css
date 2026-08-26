@@ -1,12 +1,13 @@
 .mm-menu {
-  --mm-color-background: var(--color-bittersweet-darker);
-  --mm-color-border: var(--color-bittersweet-lightest);
+  --mm-color-background: #E8CCE2;
+  --mm-color-border: var(--color-purple);
   --mm-color-icon: rgb(0 0 0 / 0.4);
   --mm-color-text: rgb(0 0 0 / 0.8);
   --mm-color-text-dimmed: rgb(0 0 0 / 0.7);
   --mm-color-background-highlight: rgb(0 0 0 / 0.05);
   --mm-color-background-emphasis: rgb(255 255 255 / 0.75);
   --mm-color-focusring: var(--color-accent);
+  --mm-color-button: black;
 
 }
 

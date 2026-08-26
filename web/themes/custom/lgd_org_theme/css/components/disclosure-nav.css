@@ -54,7 +54,7 @@
 }
 
 .disclosure-nav ul {
-  background: rgba(255, 130, 98, 1);
+  background: var(--color-bittersweet);
   border: 0;
   width: 100%;
 }

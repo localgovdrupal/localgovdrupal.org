@@ -1,6 +1,7 @@
 .call-out-box {
   --button-bg-color: var(--color-purple-lightest);
-  border: 2px solid var(--color-purple);
+  --call-out-border-color: var(--color-purple);
+  border: 2px solid var(--call-out-border-color);
   border-radius: 2rem;
   text-align: center;
   font-size: clamp(1.2rem, 2vw, 1.25rem);
@@ -12,4 +13,22 @@
 
 .call-out-box__content > * + * {
   margin-top: var(--spacing-large);
+}
+
+.call-out-box__content .button-style-link {
+  margin-top: 2rem;
+}
+
+.call-out-box .button-style-link .link--wrapper {
+  border-color: var(--call-out-border-color);
+}
+
+.button-style-link .call-out-box__link {
+  margin-top: 0;
+  color: var(--call-out-border-color);
+}
+
+
+.call-out-box__link:after {
+  display: none !important;
 }

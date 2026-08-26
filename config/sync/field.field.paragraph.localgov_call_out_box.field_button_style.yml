@@ -1,0 +1,21 @@
+uuid: 616f3de4-e74c-4704-9158-b52332df3300
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_style
+    - paragraphs.paragraphs_type.localgov_call_out_box
+  module:
+    - options
+id: paragraph.localgov_call_out_box.field_button_style
+field_name: field_button_style
+entity_type: paragraph
+bundle: localgov_call_out_box
+label: 'Button style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

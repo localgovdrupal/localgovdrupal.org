@@ -71,6 +71,10 @@ a:not([class*="toolbar"]):focus {
 
 a.button-style-link--rounded,
 .button-style-link--rounded a{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
   background-color: var(--button-bg-color);
   color: var(--color-black);
   border-radius: 2rem;
@@ -78,10 +82,17 @@ a.button-style-link--rounded,
   padding: 10px clamp(20px, 2vw, 1.5rem);
   font-size: clamp( 1rem, 2vw, var(--font-size-large));
   text-decoration: none;
-  display: inline-block;
+  /*display: inline-block;*/
   margin-bottom: var(--flow-space);
   font-weight: 700;
   text-align: center;
+}
+
+/*.button-style-link--rounded::after,*/
+.button-style-link--rounded a::after {
+  content: url(../assets/images/arrow.svg);
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
 a.button-style-link--rounded:hover,
@@ -89,36 +100,51 @@ a.button-style-link--rounded:hover,
   background-color: var(--button-bg-color-hover);
 }
 
-/*.paragraph--type--localgov-link.button-style-link {
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-}*/
-
-.button-style-link a,
-a.button-style-link {
-  line-height: 1.1;
-  border-radius: 0;
-  border: 2px solid;
-  color: var(--color-text);
-  /*background: white;
-  background: var(--color-page-section-background-color);*/
-  background: transparent;
-  text-decoration: none;
-  position: relative;
-  font-size: var(--font-size-larger);
-  font-weight: 700;
-  padding: 0.75rem;
-  display: inline-block;
-  box-shadow: 4px 4px var(--color-page-section-background-color), 6px 6px black;
-  &:hover {
-    background-color: var(--color-purple-lightest);
-  }
-}
 
 .breadcrumbs__link {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
+}
+
+.button-style-link .link--wrapper,
+.button-style-link .field__item{
+  position: relative;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.button-style-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: var(--color-page-section-background-color);
+  border: 2px solid ;
+  font-size: var(--font-size-largish);
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+  &:hover {
+    background-color: var(--button-bg-color-hover);
+  }
+}
+
+.button-style-link a::after {
+  content: url(../assets/images/arrow.svg);
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+a .link--icon {
+  transition: transform 0.2s ease;
+}
+
+a:hover .link--icon,
+.button-style-link--rounded a:hover::after,
+.button-style-link a:hover::after {
+  transform: translateX(4px);
 }

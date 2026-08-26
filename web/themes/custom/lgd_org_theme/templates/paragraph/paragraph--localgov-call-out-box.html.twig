@@ -53,21 +53,44 @@
   ]
 %}
 
+{%
+  set link_class = paragraph.field_button_style.0.value
+%}
+
+{#{% set link_classes = [
+  link_class == 'rounded' ? 'button-style-link--rounded' ? 'button-style-link'
+] %}#}
+
+
+
 {% if not localgov_base_remove_css %}
   {{ attach_library('localgov_base/callout-box') }}
 {% endif %}
 
 <div{{ attributes.addClass(classes) }}
   {% if background_url is defined and background_url %}style="background-image: url('{{ background_url }}')"{% endif %}>
-  <div class="call-out-box__content">
+  <div class="call-out-box__content ">
     {% if paragraph.localgov_header_text.0 %}{{ heading }}{% endif %}
     {{ content|without('localgov_button', 'localgov_background_image', 'localgov_colour_theme', 'localgov_header_text', 'localgov_heading_level', 'localgov_opens_in_a_new_window') }}
-    <a href="{{ button_url }}" class="call-out-box__link button-style-link--rounded"
+    <div class="{% if link_class == 'rounded' %}button-style-link--rounded{% else %}button-style-link{% endif %}">
+      <div class="link--wrapper">
+
+
+    <a href="{{ button_url }}" class="call-out-box__link
+"
       {% if open_in_new_window %} target="_blank" {% endif %}>
       <span>{{ paragraph.localgov_button.getValue[0].title }}</span>
       {% if open_in_new_window %}
         <span class="visually-hidden"> {{ '(opens in a new window)'|t }}</span>
       {% endif %}
+        <span aria-hidden="true" class="link--icon">
+          <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.7407 0.707153L25 9.96641L15.7407 19.2257" stroke="currentColor" stroke-width="2"/>
+          <path d="M24.4213 9.96643L2.82228e-05 9.96643" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </span>
     </a>
+      </div>
+    </div>
   </div>
 </div>

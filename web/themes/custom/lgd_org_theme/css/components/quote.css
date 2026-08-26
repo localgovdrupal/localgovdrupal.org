@@ -16,8 +16,8 @@ blockquote > p:first-of-type:before,
   display: block;
   background-size: 100%;
   margin-inline: auto;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
 }
 
 blockquote > p:first-of-type:before {
@@ -52,8 +52,8 @@ blockquote > p:first-of-type:before {
 }
 
 .pull-out-quote__content div {
-  margin-bottom: 6rem;
-  margin-inline: 2rem;
+  margin-bottom: 8rem;
+  margin-inline: 5rem;
 }
 
 .pull-out-quote__author {
