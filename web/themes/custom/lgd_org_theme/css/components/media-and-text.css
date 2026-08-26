@@ -69,7 +69,7 @@
 .media-with-text--featured {
   --button-bg-color: var(--color-purple-lightest);
   text-align: start;
-  border: 1px solid purple;
+  border: 2px solid purple;
   background-color: white;
   padding: 2rem;
   border-radius: 30px;
@@ -159,13 +159,13 @@
 .screen-image-style{
   border-radius: 1rem;
     overflow: hidden;
-    border: 2px solid var(--color-grey-dark);
+    border: 2px solid #c9c8c8;
     padding-top: 2.5rem;
     background-image: url(../../assets/images/screen-buttons.svg);
     background-repeat: no-repeat;
     background-position: 1rem 1rem;
     background-color: white;
-    div {
-      border-top: 1px solid var(--color-grey-dark);
+    > div {
+      border-top: 2px solid #c9c8c8;
     }
 }
