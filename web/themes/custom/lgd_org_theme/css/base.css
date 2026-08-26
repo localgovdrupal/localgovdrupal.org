@@ -108,7 +108,7 @@ a.button-style-link--rounded:hover,
   }
 }
 
-.button-style-link .link--wrapper,
+.button-style-link .link-wrapper,
 .button-style-link .field__item{
   position: relative;
   display: inline-block;

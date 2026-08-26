@@ -1,3 +1,7 @@
 .paragraph--type--localgov-link .link-wrapper{
   margin-bottom: var(--spacing);
 }
+
+.paragraph--type--localgov-link a:after {
+  display: none !important;
+}
