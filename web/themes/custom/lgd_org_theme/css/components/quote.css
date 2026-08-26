@@ -44,10 +44,11 @@ blockquote > p:first-of-type:before {
 }
 
 .pull-out-quote__content {
-  background-image: url("../../assets/images/speechbubble-purple.svg");
+  background-image: url("../../assets/images/speech-invert.svg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  border: 1px solid transparent;
+  background-color: var(--color-purple-lightest);
+  border: 1px solid white;
   object-fit: fill;
 }
 
@@ -57,11 +58,50 @@ blockquote > p:first-of-type:before {
 }
 
 .pull-out-quote__author {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: var(--quote-author-color);
   font-weight: normal;
   font-size: var(--font-size-medium);
   font-family: var(--font-primary);
+      display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
 }
 
+.pull-out-quote__author .field--name-field-author-image {
+  border-radius: 100%;
+  height: 4rem;
+  width: 4rem;
+  display: inline-flex;
+}
+
+.quote-style--purple .pull-out-quote__content{
+  background-color: var(--color-purple-lightest);
+}
+.quote-style--green .pull-out-quote__content{
+  background-color: var(--color-seafoam-lightest);
+}
+.quote-style--yellow .pull-out-quote__content{
+  background-color: var(--color-sahara);
+}
+.quote-style--blue .pull-out-quote__content{
+  background-color: var(--color-skyblue-lightest);
+}
+.quote-style--orange .pull-out-quote__content{
+  background-color: var(--color-bittersweet-lightest);
+}
+/*.quote-style--white .pull-out-quote__content{
+  background-color: var(--color-orange-lightest);
+}*/
+
+
+.lgd-page-section--has-bg-colour .pull-out-quote__content {
+  background-image: url("../../assets/images/speechbubble.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 1px solid transparent;
+  object-fit: fill;
+}
 

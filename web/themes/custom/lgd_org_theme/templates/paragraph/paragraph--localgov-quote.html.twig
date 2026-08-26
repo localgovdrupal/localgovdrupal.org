@@ -49,11 +49,14 @@
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished'
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    paragraph.field_style.0.value ? 'quote-style--' ~ paragraph.field_style.0.value|clean_class  : 'quote-style--purple'
+
   ]
 %}
 
 <figure{{ attributes.addClass(classes) }}>
+  {{ dpm(paragraph.field_style.0.value) }}
   <blockquote class="pull-out-quote__content">
     <div>
     {{ content.localgov_text_plain.0 }}
@@ -62,6 +65,7 @@
 
   {% if paragraph.localgov_author.value %}
     <figcaption class="pull-out-quote__author">
+      {{ content.field_author_image }}
       {{ paragraph.localgov_author.value }}
     </figcaption>
   {% endif %}

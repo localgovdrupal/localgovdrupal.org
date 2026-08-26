@@ -113,6 +113,7 @@ a.button-style-link--rounded:hover,
   position: relative;
   display: inline-block;
   border: 2px solid black;
+  height: fit-content;
 }
 
 .button-style-link a {

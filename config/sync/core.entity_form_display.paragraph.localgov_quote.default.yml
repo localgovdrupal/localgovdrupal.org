@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_quote.field_author_image
+    - field.field.paragraph.localgov_quote.field_style
     - field.field.paragraph.localgov_quote.localgov_author
     - field.field.paragraph.localgov_quote.localgov_text_plain
     - paragraphs.paragraphs_type.localgov_quote
+  module:
+    - media_library
 _core:
   default_config_hash: wYnuz4j2pgS3aH9haQv5wGWhBEZNlh7ZJnjseg76DBI
 id: paragraph.localgov_quote.default
@@ -13,6 +17,19 @@ targetEntityType: paragraph
 bundle: localgov_quote
 mode: default
 content:
+  field_author_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_style:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   localgov_author:
     type: string_textfield
     weight: 1

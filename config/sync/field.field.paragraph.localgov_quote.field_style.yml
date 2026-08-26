@@ -1,0 +1,21 @@
+uuid: a5fea98d-6fb9-41aa-b2b5-4442357b2417
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.localgov_quote
+  module:
+    - options
+id: paragraph.localgov_quote.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: localgov_quote
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -56,6 +56,11 @@
   ]
 %}
 
+{%
+  set image_dec_class = paragraph.field_image_decoration.0.value
+%}
+
+
 {{ attach_library('localgov_base/media-with-text') }}
 
 {% block paragraph %}
@@ -87,7 +92,7 @@
               </div>
             {% endif %}
 					</div>
-					<div class="media-with-text__media">
+					<div class="media-with-text__media {% if image_dec_class %}{{ image_dec_class}}-image-style{% endif %}">
 						{{ content.localgov_media_item }}
 					</div>
 				{% endif %}
