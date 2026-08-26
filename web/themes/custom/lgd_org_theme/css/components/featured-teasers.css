@@ -4,7 +4,8 @@
 }
 
 .multiple-image-links .field--name-localgov-paragraphs {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   flex-wrap: wrap;
   margin-top: var(--spacing-mega);
@@ -13,27 +14,28 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: end;
-    gap: 0;
+    /*gap: 0;*/
+  }
+  > .field__item {
+    grid-column: span 2;
+    grid-row: span 4;
+    max-width: 425px;
+  }
+  > .field__item:nth-of-type(4) {
+    grid-column: 2 / span 2;
+
+  }
+    > .field__item:nth-of-type(5),
+    > .field__item:nth-of-type(4) {
+      position: relative;
+      top: -4rem;
+
   }
 }
 
-.multiple-image-links__content > .field__items > .field__item {
-  max-width: 40%;
-  gap: 1rem;
-  @media screen and (min-width: 50rem) {
-    /*max-width: 20%;*/
-    max-width: initial;
-    gap: 0;
-  }
-}
 
-.multiple-image-links__content > .field__items > .field__item + .field__item {
 
-  @media screen and (min-width: 40rem) {
-    margin-top: 0;
-    margin-left: var(--spacing-largest);
-  }
-}
+
 
 
 .multiple-image-links__content--button {
@@ -42,7 +44,7 @@
 
 .image-link a {
   display: block;
-  max-width: 250px;
+  /*max-width: 250px;*/
 }
 
 .image-link a:hover {
@@ -51,4 +53,18 @@
   outline-offset: 9px;
   display: block;
   outline: 2px solid black;
+}
+
+.multiple-image-links .image-link a{
+  border-radius: 1rem;
+    overflow: hidden;
+    border: 2px solid var(--color-grey-dark);
+    padding-top: 2.5rem;
+    background-image: url(../../assets/images/screen-buttons.svg);
+    background-repeat: no-repeat;
+    background-position: 1rem 1rem;
+    background-color: white;
+    > div {
+      border-top: 1px solid var(--color-grey-dark);
+    }
 }
