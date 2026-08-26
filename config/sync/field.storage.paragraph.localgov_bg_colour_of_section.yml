@@ -24,7 +24,7 @@ settings:
       label: 'Border top'
     -
       value: colour-5
-      label: Gradient
+      label: Blue
     -
       value: colour-3
       label: 'Light Grey'

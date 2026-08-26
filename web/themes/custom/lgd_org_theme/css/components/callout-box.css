@@ -1,10 +1,12 @@
 .call-out-box {
   --button-bg-color: var(--color-purple-lightest);
   --call-out-border-color: var(--color-purple);
+  --color-page-section-background-color: white;
   border: 2px solid var(--call-out-border-color);
   border-radius: 2rem;
   text-align: center;
   font-size: clamp(1.2rem, 2vw, 1.25rem);
+  background-color: white;
 }
 
 .call-out-box__content > .field {

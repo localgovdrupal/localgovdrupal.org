@@ -79,7 +79,7 @@ body {
   --color-seafoam-lightest: rgba(128, 223, 193, 0.27);
   --color-skyblue-lightest: #EAF8FD;
   --color-bittersweet-darker: #FF8262;
-  --color-purple-lightest: #8C027233;
+  --color-purple-lightest: #e8cce3;
   --color-purple-transparent: rgba(140, 2, 114, 0.8);
 
   /*
@@ -253,7 +253,7 @@ body {
   --color-page-section-background-color-1: var(--color-purple-lightest);
   --color-page-section-background-color-1-text-color: var(--color-black);
   --color-page-section-background-color-1-link-color: var(--color-black);
-  --color-page-section-background-color-2: rgba(255, 225, 70, 0.20);
+  --color-page-section-background-color-2: #fff9d9;
   --color-page-section-background-color-2-text-color: var(--color-black);
   --color-page-section-background-color-2-link-color: var(--color-black);
   --color-page-section-background-color-3: var(--color-grey-lightest);
