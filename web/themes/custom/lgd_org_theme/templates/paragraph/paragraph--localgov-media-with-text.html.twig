@@ -76,7 +76,10 @@
 						{{ content.localgov_text }}
             {% if link or content.field_links.0 %}
               <div class="{% if style == 'featured' %}button-style-link--rounded{% else %}button-style-link{% endif %}">
+              <div class="link-wrapper">
+
               {{ link }}
+              </div>
               {{ content.field_links }}
               </div>
             {% endif %}
@@ -87,7 +90,10 @@
 						{{ content.localgov_text }}
             {% if link or content.field_links.0 %}
               <div class="{% if style == 'featured' %}button-style-link--rounded{% else %}button-style-link{% endif %}">
+              <div class="link-wrapper">
+
               {{ link }}
+              </div>
               {{ content.field_links }}
               </div>
             {% endif %}

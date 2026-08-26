@@ -90,7 +90,12 @@ a.button-style-link--rounded,
 
 /*.button-style-link--rounded::after,*/
 .button-style-link--rounded a::after {
-  content: url(../assets/images/arrow.svg);
+  content: '';
+  width: 1.5rem;
+  height: 1rem;
+  background-image: url(../assets/images/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   display: inline-block;
   transition: transform 0.2s ease;
 }
