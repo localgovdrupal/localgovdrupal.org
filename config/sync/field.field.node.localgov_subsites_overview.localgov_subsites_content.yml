@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.localgov_subsites_content
     - node.type.localgov_subsites_overview
+    - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.localgov_accordion
     - paragraphs.paragraphs_type.localgov_call_out_box
     - paragraphs.paragraphs_type.localgov_image
@@ -19,6 +20,7 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_video
     - paragraphs.paragraphs_type.multiple_image_and_links
     - paragraphs.paragraphs_type.page_section
+    - paragraphs.paragraphs_type.promo_block
   module:
     - entity_reference_revisions
 _core:
@@ -40,6 +42,7 @@ settings:
       localgov_accordion: localgov_accordion
       localgov_call_out_box: localgov_call_out_box
       localgov_key_facts: localgov_key_facts
+      from_library: from_library
       localgov_image: localgov_image
       localgov_link_and_summary: localgov_link_and_summary
       localgov_media_with_text: localgov_media_with_text
@@ -50,12 +53,13 @@ settings:
       localgov_link: localgov_link
       localgov_page_section: localgov_page_section
       multiple_image_and_links: multiple_image_and_links
+      promo_block: promo_block
       page_section: page_section
     negate: 0
     target_bundles_drag_drop:
       from_library:
         weight: -20
-        enabled: false
+        enabled: true
       image_link:
         weight: 45
         enabled: false
@@ -172,6 +176,9 @@ settings:
         enabled: true
       page_section:
         weight: 100
+        enabled: true
+      promo_block:
+        weight: 83
         enabled: true
       topic_list_builder:
         weight: 78

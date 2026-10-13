@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.localgov_subsites_content
     - node.type.localgov_subsites_page
+    - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.localgov_accordion
     - paragraphs.paragraphs_type.localgov_call_out_box
     - paragraphs.paragraphs_type.localgov_image
@@ -33,6 +34,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      from_library: from_library
       localgov_accordion: localgov_accordion
       localgov_call_out_box: localgov_call_out_box
       localgov_image: localgov_image
@@ -47,7 +49,7 @@ settings:
     target_bundles_drag_drop:
       from_library:
         weight: -55
-        enabled: false
+        enabled: true
       image_link:
         weight: 43
         enabled: false
@@ -164,6 +166,9 @@ settings:
         enabled: false
       page_section:
         weight: -16
+        enabled: false
+      promo_block:
+        weight: 83
         enabled: false
       topic_list_builder:
         weight: -35
