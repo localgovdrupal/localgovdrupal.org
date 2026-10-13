@@ -165,3 +165,8 @@ link:
   css:
     theme:
       css/components/link.css: {}
+
+promo-block:
+  css:
+    theme:
+      css/components/promo-block.css: {}
