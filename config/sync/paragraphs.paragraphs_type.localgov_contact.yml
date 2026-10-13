@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - layout_paragraphs
     - paragraphs_library
 third_party_settings:
   paragraphs_library:
@@ -14,8 +13,5 @@ id: localgov_contact
 label: Contact
 icon_uuid: null
 icon_default: null
-description: ''
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+description: 'Not currently used'
+behavior_plugins: {  }
