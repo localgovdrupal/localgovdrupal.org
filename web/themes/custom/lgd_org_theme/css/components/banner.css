@@ -1,26 +1,16 @@
 /* Banner Region */
 .lgd-region--banner {
 
-  background: var(--color-purple-transparent);
+  background: #85006C;
   padding-bottom: var(--spacing-large);
   padding-top: var(--spacing-large);
   color: var(--color-white);
   position: relative;
-}
-
-.lgd-region--banner:before {
-  content: "";
-  width: 100%;
-  height: 100%;
   background-image: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
+
 
 
 .lgd-region--banner .lgd-region__inner {

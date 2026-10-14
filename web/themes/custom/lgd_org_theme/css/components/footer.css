@@ -29,6 +29,7 @@
   padding-top: clamp(1rem, 10vw, var(--section-spacing-vertical-pre-footer));
   padding-bottom: clamp(1rem, 10vw, var(--section-spacing-vertical-pre-footer));
   position: relative;
+  background: #8C0272;
 }
 
 .lgd-footer__pre-footer:before {
@@ -42,7 +43,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  background-blend-mode: multiply;
+  opacity: 0.5;
 }
 
 .lgd-footer__pre-footer .lgd-row__one-third {
