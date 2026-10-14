@@ -113,14 +113,26 @@ a.button-style-link--rounded:hover,
   }
 }
 
-.button-style-link .link-wrapper,
-.button-style-link .field__item{
-  position: relative;
-  display: inline-block;
-  border: 2px solid black;
-  height: fit-content;
+.button-style-link,
+.button_2-style-link {
+  .link-wrapper,
+  .field__item{
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    height: fit-content;
+  }
 }
 
+
+.button_2-style-link {
+  .link-wrapper,
+  .field__item{
+    border-color: var(--color-purple);
+  }
+}
+
+.button_2-style-link a,
 .button-style-link a {
   display: inline-flex;
   align-items: center;
@@ -139,6 +151,11 @@ a.button-style-link--rounded:hover,
   }
 }
 
+.button_2-style-link a {
+  color: var(--color-purple);
+}
+
+.button_2-style-link a::after
 .button-style-link a::after {
   content: url(../assets/images/arrow.svg);
   display: inline-block;
@@ -151,6 +168,8 @@ a .link--icon {
 
 a:hover .link--icon,
 .button-style-link--rounded a:hover::after,
+.button_2-style-link a:hover::after,
 .button-style-link a:hover::after {
   transform: translateX(4px);
 }
+

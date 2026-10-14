@@ -13,7 +13,10 @@ settings:
   allowed_values:
     -
       value: button
-      label: Button
+      label: 'Button (Stacked)'
+    -
+      value: button_2
+      label: 'Button (Stacked Purple)'
   allowed_values_function: ''
 module: options
 locked: false
