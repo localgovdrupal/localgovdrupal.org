@@ -16,6 +16,7 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_table
     - paragraphs.paragraphs_type.localgov_text
     - paragraphs.paragraphs_type.localgov_video
+    - paragraphs.paragraphs_type.promo_block
   module:
     - entity_reference_revisions
 _core:
@@ -45,6 +46,7 @@ settings:
       localgov_text: localgov_text
       localgov_video: localgov_video
       localgov_page_section: localgov_page_section
+      promo_block: promo_block
     negate: 0
     target_bundles_drag_drop:
       from_library:
@@ -169,7 +171,7 @@ settings:
         enabled: false
       promo_block:
         weight: 83
-        enabled: false
+        enabled: true
       topic_list_builder:
         weight: -35
         enabled: false
