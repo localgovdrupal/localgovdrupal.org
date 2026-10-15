@@ -80,25 +80,8 @@
 }
 
 .block-homepage--intro a {
-  background-color: var(--color-white);
-  color: var(--color-black);
-  border-radius: 2rem;
-  padding: 10px 20px;
-  padding: 10px clamp(20px, 2vw, 1.5rem);
-  font-size: clamp(1rem,2vw,var(--font-size-large));
-  font-family: var(--font-primary);
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: var(--flow-space);
-  font-weight: 700;
-  text-align: center;
+  background-color: var(--color-white) !important;
   margin-top: 1rem;
-  &:hover {
-    background-color: var(--color-accent);
-  }
-  &:focus {
-    outline-color: var(--color-white) !important;
-  }
 }
 
 

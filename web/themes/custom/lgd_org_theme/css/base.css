@@ -69,6 +69,7 @@ a:not([class*="toolbar"]):focus {
   outline-offset: 2px;*/
 }
 
+.block-homepage--intro a,
 a.button-style-link--rounded,
 .button-style-link--rounded a{
   display: inline-flex;
@@ -89,6 +90,7 @@ a.button-style-link--rounded,
 }
 
 /*.button-style-link--rounded::after,*/
+.block-homepage--intro a::after,
 .button-style-link--rounded a::after {
   content: '';
   width: 1.5rem;
@@ -100,6 +102,7 @@ a.button-style-link--rounded,
   transition: transform 0.2s ease;
 }
 
+.block-homepage--intro a:hover,
 a.button-style-link--rounded:hover,
 .button-style-link--rounded a:hover {
   background-color: var(--button-bg-color-hover);
@@ -166,6 +169,7 @@ a .link--icon {
   transition: transform 0.2s ease;
 }
 
+.block-homepage--intro a:hover::after,
 a:hover .link--icon,
 .button-style-link--rounded a:hover::after,
 .button_2-style-link a:hover::after,
