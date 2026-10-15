@@ -1,9 +1,6 @@
 .sidebar .block-localgov-subsites > ul.menu,
 .sidebar .lgd-region__inner > nav,
 .sidebar .block-views-blocklocalgov-step-by-step-navigation-steps {
-  /*padding: 1.5rem;*/
-  /*background: var(--color-bittersweet-lightest);*/
-  /*border: 1px solid var(--color-bittersweet-darker);*/
   border-left: 0;
 }
 
@@ -46,10 +43,6 @@ aside .menu {
   padding-left: 0
 }
 
-aside .menu ul {
-  /*padding-left: 0.5rem;*/
-}
-
 aside .menu .is-active {
   font-weight: bold;
   color: var(--color-purple);
@@ -68,14 +61,11 @@ aside .menu--sub-menu a {
 .block-localgov-subsites .menu .menu .menu-item--active-trail,
 aside .menu--main > .menu-item--active-trail > a {
   font-weight: bold;
-  border-color:  var(--color-bittersweet-darker);
+  color: var(--color-purple);
 }
 
-.sidebar--second {
-  /*background: white;
-  background: linear-gradient(90deg, var(--color-bittersweet-darker) 1px, rgba(255,255,255,1) 1px, rgba(255,255,255,1) 100%);*/
-}
-
-aside .menu--main > .menu-item--active-trail > a.is-active {
-color: var(--color-purple);
+aside .menu--sub-menu a.is-active{
+  color: var(--color-text);
+  background-color:  var(--color-skyblue-lightest);
+  padding-right: 2rem;
 }
