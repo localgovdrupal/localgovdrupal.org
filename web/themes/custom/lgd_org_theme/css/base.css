@@ -155,7 +155,7 @@ a.button-style-link--rounded:hover,
   color: var(--color-purple);
 }
 
-.button_2-style-link a::after
+.button_2-style-link a::after,
 .button-style-link a::after {
   content: url(../assets/images/arrow.svg);
   display: inline-block;
