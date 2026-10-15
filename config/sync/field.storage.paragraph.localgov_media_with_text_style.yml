@@ -22,6 +22,9 @@ settings:
     -
       value: background_1
       label: 'Background 1'
+    -
+      value: background_2
+      label: 'Background 2'
   allowed_values_function: ''
 module: options
 locked: false

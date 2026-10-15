@@ -52,7 +52,8 @@
     'media-with-text',
     'media-with-text--' ~ style|clean_class,
     'media-with-text--media-' ~ media_position|clean_class,
-    media_size ? 'media-with-text--media-' ~ media_size|clean_class
+    media_size ? 'media-with-text--media-' ~ media_size|clean_class,
+    style in ['background_1', 'background_2'] ? 'media-with-text--has-background'
   ]
 %}
 

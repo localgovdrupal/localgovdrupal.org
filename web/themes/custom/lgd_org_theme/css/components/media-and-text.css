@@ -80,7 +80,7 @@
 }
 
 
-.media-with-text--background-1 .media-with-text__body,
+.media-with-text--has-background .media-with-text__body,
 .media-with-text--featured .media-with-text__body {
   font-size: 1.2rem;
   padding: 0;
@@ -90,82 +90,180 @@
   margin: 0;
 }
 
-.media-with-text--background-1 .media-with-text__media {
-  border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
 
+/* Style: Background 1 */
+
+.layout__region {
+  container-name: column-region;
+  container-type: inline-size;
 }
 
-.media-with-text--background-1.media-with-text--media-left .media-with-text__media,
-.media-with-text--background-1.media-with-text--media-right .media-with-text__media{
-  bottom: 4rem;
-  margin-left: 2rem;
-  height: calc(100% - 2rem);
-  align-self: end;
-  z-index: 1;
-  * {
-    height: 100%;
-    object-fit: cover;
-  }
-}
+/* ---------------------------------------------
+   Base
+--------------------------------------------- */
 
 .media-with-text--background-1 {
+  --mt-background-color: var(--color-bittersweet-lightest);
+}
+.media-with-text--background-2 {
+  --mt-background-color: var(--color-skyblue-lightest);
+}
+
+.media-with-text--has-background {
+  position: relative;
   margin-top: 3rem;
-   text-align: start;
-   position: relative;
-   font-size: var(--font-size-largish);
+  text-align: start;
+  font-size: var(--font-size-largish);
 }
 
-.media-with-text--background-1 .media-with-text__body {
-      background: var(--color-bittersweet-lightest);
-    position: relative;
-    padding: 2rem;
-    padding-left: 0;
-    display: block;
-    border-radius: 0 2rem 2rem 0;
+.media-with-text--has-background .media-with-text__media {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
-.media-with-text--background-1 .media-with-text__body:before {
-      content: "";
-    display: block;
-    width: calc(100% + 2rem);
-    height: 100%;
-    background: var(--color-bittersweet-lightest);
-    position: absolute;
-    right: 100%;
-    top: 0;
-    z-index: 0;
-    border-radius: 2rem 0 0 2rem;
+.media-with-text--has-background .media-with-text__body {
+  position: relative;
+  display: block;
+  padding: 2rem;
+  background: var(--mt-background-color);
 }
 
-.media-with-text--background-1.media-with-text--media-left .media-with-text__inner,
-.media-with-text--background-1.media-with-text--media-right .media-with-text__inner {
-  align-items: start;
-  margin-top: 3rem;
-
+.media-with-text--has-background .media-with-text__body::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  display: block;
+  height: 100%;
+  background: var(--mt-background-color);
 }
 
+/* ---------------------------------------------
+   Stacked layout (default for all variants)
+   top + left    → media above body
+   bottom + right → media below body
+--------------------------------------------- */
 
-@media screen and (min-width: 48rem) {
-  .media-with-text--background-1.media-with-text--media-right  .media-with-text__inner,
-  .media-with-text--background-1.media-with-text--media-left .media-with-text__inner{
-    display: grid;
-    gap: 2rem;
+.media-with-text--has-background .media-with-text__media {
+  margin-left: 2rem;
+  width: fit-content;
+}
+
+.media-with-text--has-background .media-with-text__body::before {
+  right: 0;
+  width: 100%;
+}
+
+.media-with-text--has-background:is(.media-with-text--media-left, .media-with-text--media-right) .media-with-text__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+/* Media above */
+.media-with-text--has-background:is(.media-with-text--media-top, .media-with-text--media-left) .media-with-text__body {
+  border-radius: 0 0 2rem 2rem;
+}
+
+.media-with-text--has-background:is(.media-with-text--media-top, .media-with-text--media-left) .media-with-text__body::before {
+  top: auto;
+  bottom: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+/* Media below */
+.media-with-text--has-background:is(.media-with-text--media-bottom, .media-with-text--media-right) .media-with-text__body {
+  border-radius: 2rem 2rem 0 0;
+}
+
+.media-with-text--has-background:is(.media-with-text--media-bottom, .media-with-text--media-right) .media-with-text__body::before {
+  top: 100%;
+  bottom: auto;
+  border-radius: 0 0 2rem 2rem;
+}
+
+/* Ensure media sits after the body for right when stacked,
+   regardless of source order */
+.media-with-text--has-background.media-with-text--media-right .media-with-text__media {
+  order: 1;
+}
+
+/* ---------------------------------------------
+   Side-by-side layout (left / right, > 45rem)
+--------------------------------------------- */
+@container column-region (width < 40rem) {
+  .media-with-text--has-background .media-with-text__body::before {
+    max-height: 250px;
+  }
+}
+@container column-region (width > 40rem) {
+  .media-with-text--has-background:is(.media-with-text--media-left, .media-with-text--media-right) .media-with-text__inner {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+
+  .media-with-text--has-background:is(.media-with-text--media-left, .media-with-text--media-right) .media-with-text__media {
+    bottom: 4rem;
+    width: auto;
+    height: calc(100% - 2rem);
+    align-self: end;
+
+    * {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .media-with-text--has-background:is(.media-with-text--media-left, .media-with-text--media-right) .media-with-text__body::before {
+    top: 0;
+    bottom: auto;
+    width: calc(100% + 2rem);
+  }
+
+  /* Left */
+  .media-with-text--has-background.media-with-text--media-left .media-with-text__body {
+    padding: 2rem 2rem 2rem 0;
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  .media-with-text--has-background.media-with-text--media-left .media-with-text__body::before {
+    right: 100%;
+    left: auto;
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  /* Right */
+  .media-with-text--has-background.media-with-text--media-right .media-with-text__media {
+    order: 0;
+    margin-right: 2rem;
+    margin-left: 0;
+  }
+
+  .media-with-text--has-background.media-with-text--media-right .media-with-text__body {
+    padding: 2rem 0 2rem 2rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  .media-with-text--has-background.media-with-text--media-right .media-with-text__body::before {
+    right: auto;
+    left: 100%;
+    border-radius: 0 2rem 2rem 0;
   }
 }
 
 .screen-image-style{
   border-radius: 1rem;
-    overflow: hidden;
-    border: 2px solid #c9c8c8;
-    padding-top: 2.5rem;
-    background-image: url(../../assets/images/screen-buttons.svg);
-    background-repeat: no-repeat;
-    background-position: 1rem 1rem;
-    background-color: white;
-    > div {
-      border-top: 2px solid #c9c8c8;
-    }
+  overflow: hidden;
+  border: 2px solid #c9c8c8;
+  padding-top: 2.5rem;
+  background-image: url(../../assets/images/screen-buttons.svg);
+  background-repeat: no-repeat;
+  background-position: 1rem 1rem;
+  background-color: white;
+  > div {
+    border-top: 2px solid #c9c8c8;
+  }
 }
