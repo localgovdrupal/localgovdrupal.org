@@ -1,0 +1,22 @@
+uuid: 71b28191-4b39-403f-aba2-ddb75750b04b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.promo_block.localgov_body_text
+    - field.field.paragraph.promo_block.localgov_colour_theme
+    - field.field.paragraph.promo_block.localgov_header_text
+    - field.field.paragraph.promo_block.localgov_image
+    - paragraphs.paragraphs_type.promo_block
+id: paragraph.promo_block.preview
+targetEntityType: paragraph
+bundle: promo_block
+mode: preview
+content: {  }
+hidden:
+  localgov_body_text: true
+  localgov_colour_theme: true
+  localgov_header_text: true
+  localgov_image: true
+  search_api_excerpt: true

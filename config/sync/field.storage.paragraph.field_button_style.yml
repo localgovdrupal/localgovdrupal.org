@@ -1,0 +1,27 @@
+uuid: 3ae77d0f-a324-47a3-8e91-25d2a3df75cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_button_style
+field_name: field_button_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: stacked
+      label: Stacked
+    -
+      value: rounded
+      label: Rounded
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

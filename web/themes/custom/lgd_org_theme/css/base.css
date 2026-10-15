@@ -60,17 +60,22 @@ tbody tr {
 }
 
 a {
-  text-underline-offset: 3px;
+  /*text-underline-offset: 3px;*/
 }
 
 a:not([class*="toolbar"]):focus {
-  box-shadow: none;
+  /*box-shadow: none;
   outline: 2px solid black;
-  outline-offset: 2px;
+  outline-offset: 2px;*/
 }
 
-a.button-style-link,
-.button-style-link a{
+.block-homepage--intro a,
+a.button-style-link--rounded,
+.button-style-link--rounded a{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
   background-color: var(--button-bg-color);
   color: var(--color-black);
   border-radius: 2rem;
@@ -78,19 +83,97 @@ a.button-style-link,
   padding: 10px clamp(20px, 2vw, 1.5rem);
   font-size: clamp( 1rem, 2vw, var(--font-size-large));
   text-decoration: none;
-  display: inline-block;
+  /*display: inline-block;*/
   margin-bottom: var(--flow-space);
   font-weight: 700;
   text-align: center;
 }
 
-a.button-style-link:hover,
-.button-style-link a:hover {
+/*.button-style-link--rounded::after,*/
+.block-homepage--intro a::after,
+.button-style-link--rounded a::after {
+  content: '';
+  width: 1.5rem;
+  height: 1rem;
+  background-image: url(../assets/images/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.block-homepage--intro a:hover,
+a.button-style-link--rounded:hover,
+.button-style-link--rounded a:hover {
   background-color: var(--button-bg-color-hover);
 }
 
-.paragraph--type--localgov-link.button-style-link {
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
+
+.breadcrumbs__link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
+
+.button-style-link,
+.button_2-style-link {
+  .link-wrapper,
+  .field__item{
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    height: fit-content;
+  }
+}
+
+
+.button_2-style-link {
+  .link-wrapper,
+  .field__item{
+    border-color: var(--color-purple);
+  }
+}
+
+.button_2-style-link a,
+.button-style-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: var(--color-page-section-background-color);
+  border: 2px solid ;
+  font-size: var(--font-size-largish);
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+  &:hover {
+    background-color: var(--button-bg-color-hover);
+  }
+}
+
+.button_2-style-link a {
+  color: var(--color-purple);
+}
+
+.button_2-style-link a::after,
+.button-style-link a::after {
+  content: url(../assets/images/arrow.svg);
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+a .link--icon {
+  transition: transform 0.2s ease;
+}
+
+.block-homepage--intro a:hover::after,
+a:hover .link--icon,
+.button-style-link--rounded a:hover::after,
+.button_2-style-link a:hover::after,
+.button-style-link a:hover::after {
+  transform: translateX(4px);
+}
+

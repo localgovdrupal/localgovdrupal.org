@@ -1,0 +1,11 @@
+uuid: 5aa0d428-d078-412b-bc8a-3e3823082e28
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.aside
+label: Aside
+description: ''
+targetEntityType: node
+cache: true

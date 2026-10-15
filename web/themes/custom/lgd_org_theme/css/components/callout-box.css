@@ -1,14 +1,36 @@
 .call-out-box {
-  border: 1px solid;
+  --button-bg-color: var(--color-purple-lightest);
+  --call-out-border-color: var(--color-purple);
+  --color-page-section-background-color: white;
+  border: 2px solid var(--call-out-border-color);
   border-radius: 2rem;
   text-align: center;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.25rem);
+  background-color: white;
 }
 
 .call-out-box__content > .field {
-  font-family: var(--font-secondary);
+  /*font-family: var(--font-secondary);*/
 }
 
 .call-out-box__content > * + * {
-  margin-top: var(--spacing-small);
+  margin-top: var(--spacing-large);
+}
+
+.call-out-box__content .button-style-link {
+  margin-top: 2rem;
+}
+
+.call-out-box .button-style-link .link-wrapper {
+  border-color: var(--call-out-border-color);
+}
+
+.button-style-link .call-out-box__link {
+  margin-top: 0;
+  color: var(--call-out-border-color);
+}
+
+
+.call-out-box__link:after {
+  display: none !important;
 }

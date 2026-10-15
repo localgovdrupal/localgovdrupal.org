@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.localgov_page.field_meta_tags
+    - field.field.node.localgov_page.field_promo_block
     - field.field.node.localgov_page.localgov_hide_summary
     - field.field.node.localgov_page.localgov_page_banner
     - field.field.node.localgov_page.localgov_page_summary
@@ -21,8 +22,8 @@ third_party_settings:
         - localgov_page_summary
       label: 'Page Top'
       parent_name: ''
-      region: content
-      weight: 1
+      region: hidden
+      weight: 7
       format_type: html_element
       format_settings:
         classes: full__page-top
@@ -70,13 +71,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  localgov_page_summary:
-    type: basic_string
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   localgov_paragraph_content:
     type: layout_paragraphs
     label: hidden
@@ -84,10 +78,12 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
   field_meta_tags: true
+  field_promo_block: true
   links: true
   localgov_hide_summary: true
+  localgov_page_summary: true
   search_api_excerpt: true

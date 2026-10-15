@@ -92,3 +92,38 @@ function lgd_org_theme_preprocess_page(&$variables) {
   //]
   ];
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function lgd_org_theme_preprocess_block(&$variables): void {
+  $route_match = Drupal::routeMatch();
+  $route = $route_match->getRouteName();
+
+  if ($variables['plugin_id'] === 'localgov_page_header_block') {
+
+    // Check if we are on a node page, latest version or a preview link.
+    if ($route === 'entity.node.canonical' || $route === 'entity.node.latest_version' || $route === 'entity.node.preview_link') {
+      $node = $route_match->getParameter('node');
+      $node_status = $node->isPublished();
+      $node_type = $node->getType();
+
+
+      if ($node_type === 'localgov_services_landing' || $node_type === 'localgov_services_sublanding'|| $node_type === 'localgov_newsroom'){
+        $node_summary = $node->field_summary->value;
+        $variables['content'][0]['#lede'] = $node_summary;
+      }
+      if ($node_type === 'localgov_page'){
+        $node_summary = $node->	localgov_page_summary->value;
+        $variables['content'][0]['#lede'] = $node_summary;
+      }
+      //if ($node_type === 'localgov_guides_page' && theme_get_setting('localgov_base_localgov_guides_stacked_heading') === TRUE) {
+      //  $node_title = $node->getTitle();
+      //  $parent_title = $node->get('localgov_guides_parent')->entity->getTitle();
+
+      //  $variables['content'][0]['#title'] = $node_title;
+      //  $variables['content'][0]['#subtitle'] = $parent_title;
+      //}
+    }
+  }
+}
