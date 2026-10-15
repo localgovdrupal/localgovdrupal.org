@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.localgov_quote.field_style
     - field.field.paragraph.localgov_quote.localgov_author
     - field.field.paragraph.localgov_quote.localgov_text_plain
-    - image.style.thumbnail
+    - image.style.square_small
     - paragraphs.paragraphs_type.localgov_quote
   module:
     - field_formatter_class
@@ -24,7 +24,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: thumbnail
+      image_style: square_small
       image_loading:
         attribute: lazy
     third_party_settings:

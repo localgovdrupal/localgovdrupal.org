@@ -58,15 +58,15 @@ blockquote > p:first-of-type:before {
 }
 
 .pull-out-quote__author {
-  margin-top: 0.5rem;
+  margin-top: 0;
   color: var(--quote-author-color);
   font-weight: normal;
   font-size: var(--font-size-medium);
   font-family: var(--font-primary);
-      display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .pull-out-quote__author .field--name-field-author-image {
@@ -74,6 +74,7 @@ blockquote > p:first-of-type:before {
   height: 4rem;
   width: 4rem;
   display: inline-flex;
+  overflow: hidden;
 }
 
 .quote-style--purple .pull-out-quote__content{
