@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_media_with_text.field_image_decoration
     - field.field.paragraph.localgov_media_with_text.field_links
     - field.field.paragraph.localgov_media_with_text.localgov_heading_level
     - field.field.paragraph.localgov_media_with_text.localgov_link
@@ -16,6 +17,7 @@ dependencies:
   module:
     - field_formatter_class
     - link
+    - options
     - text
 _core:
   default_config_hash: Q0n1MBaO1YRp46KkWPfrgPxtu-Wq-caQwbP-hW0kLug
@@ -24,6 +26,13 @@ targetEntityType: paragraph
 bundle: localgov_media_with_text
 mode: default
 content:
+  field_image_decoration:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_links:
     type: link
     label: hidden

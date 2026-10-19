@@ -13,7 +13,7 @@
 }
 
 .disclosure-nav > li button {
-  padding:  var(--spacing-small);
+  padding: 0.25rem;
 }
 
 .disclosure-nav > li + li  {
@@ -41,13 +41,20 @@
   color: black;
 }
 
+.disclosure-nav button::after {
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+  height: 0.7rem;
+  width: 0.7rem;
+}
+
 .disclosure-nav button:hover::after,
 .disclosure-nav button[aria-expanded="true"]::after {
   border-color: black;
 }
 
 .disclosure-nav ul {
-  background: rgba(255, 130, 98, 1);
+  background: var(--color-bittersweet);
   border: 0;
   width: 100%;
 }

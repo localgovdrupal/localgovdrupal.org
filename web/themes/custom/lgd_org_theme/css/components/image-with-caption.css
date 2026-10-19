@@ -1,3 +1,9 @@
+.lgd-image {
+  border-radius: 2rem 2rem 0 0;
+  overflow: hidden;
+}
+
+
 .lgd-image--has-caption {
   border: 0;
   border-bottom: var(--image-with-caption-border);
@@ -7,5 +13,6 @@
 
 .field--name-localgov-caption {
  font-size: var(--font-size-small);
- padding-top: var(--spacing-large);
+ color: var(--color-purple);
+ /*padding-top: var(--spacing);*/
 }

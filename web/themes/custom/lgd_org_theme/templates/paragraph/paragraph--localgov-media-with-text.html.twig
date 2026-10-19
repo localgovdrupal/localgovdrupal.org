@@ -52,9 +52,15 @@
     'media-with-text',
     'media-with-text--' ~ style|clean_class,
     'media-with-text--media-' ~ media_position|clean_class,
-    media_size ? 'media-with-text--media-' ~ media_size|clean_class
+    media_size ? 'media-with-text--media-' ~ media_size|clean_class,
+    style in ['background_1', 'background_2'] ? 'media-with-text--has-background'
   ]
 %}
+
+{%
+  set image_dec_class = paragraph.field_image_decoration.0.value
+%}
+
 
 {{ attach_library('localgov_base/media-with-text') }}
 
@@ -63,19 +69,19 @@
 		<div class="media-with-text__inner">
 			{% block content %}
 				{% if media_position == 'left' or media_position == 'top' %}
-					<div class="media-with-text__media">
+					<div class="media-with-text__media {% if image_dec_class %}{{ image_dec_class}}-image-style{% endif %}">
 						{{ content.localgov_media_item }}
 					</div>
 					<div class="media-with-text__body">
 						{{ heading }}
 						{{ content.localgov_text }}
-            {% if link %}
-              <div class="button-style-link">
-                {{ link }}
-              </div>
-            {% endif %}
-            {% if content.field_links %}
-              <div class="button-style-link">
+            {% if link or content.field_links.0 %}
+              <div class="{% if style == 'featured' %}button-style-link--rounded{% else %}button-style-link{% endif %}">
+                {% if link %}
+                  <div class="link-wrapper">
+                    {{ link }}
+                  </div>
+                {% endif %}
               {{ content.field_links }}
               </div>
             {% endif %}
@@ -85,13 +91,17 @@
 						{{ heading }}
 						{{ content.localgov_text }}
             {% if link or content.field_links.0 %}
-              <div class="button-style-link">
-              {{ link }}
-              {{ content.field_links }}
+              <div class="{% if style == 'featured' %}button-style-link--rounded{% else %}button-style-link{% endif %}">
+                {% if link %}
+                  <div class="link-wrapper">
+                    {{ link }}
+                  </div>
+                {% endif %}
+                {{ content.field_links }}
               </div>
             {% endif %}
 					</div>
-					<div class="media-with-text__media">
+					<div class="media-with-text__media {% if image_dec_class %}{{ image_dec_class}}-image-style{% endif %}">
 						{{ content.localgov_media_item }}
 					</div>
 				{% endif %}
