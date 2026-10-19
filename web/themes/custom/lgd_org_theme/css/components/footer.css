@@ -47,6 +47,11 @@
   opacity: 0.5;
 }
 
+.lgd-footer .lgd-container {
+    z-index: 2;
+    position: relative;
+}
+
 .lgd-footer__pre-footer .lgd-row__one-third {
   margin-left: auto;
   margin-right: auto;
