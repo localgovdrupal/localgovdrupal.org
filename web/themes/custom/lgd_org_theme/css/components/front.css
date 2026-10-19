@@ -1,6 +1,7 @@
 .path-frontpage h2 {
   font-size: clamp(1.5rem, 4vw, var(--font-size-largest));
   font-weight: 700;
+  line-height: 1.2;
 }
 
 /*.path-frontpage blockquote {

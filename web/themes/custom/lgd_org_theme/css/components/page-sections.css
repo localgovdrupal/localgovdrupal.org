@@ -51,6 +51,10 @@
   margin-top: var(--spacing-large);
 }
 
+.lgd-page-section .layout__region--content > * + .media-with-text--has-background {
+  margin-top: 4rem;
+}
+
 .lgd-page-section.lgd-page-section--has-bg-colour{
   &:not(.lgd-page-section--contained-breakout)&:not(.lgd-page-section--full-width-contained-content)&:not(.lgd-page-section--full-width){
 

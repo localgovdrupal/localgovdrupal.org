@@ -20,8 +20,16 @@ blockquote > p:first-of-type:before,
   margin-top: 3rem;
 }
 
-blockquote > p:first-of-type:before {
+/*blockquote > p:first-of-type:before {
   background: url("../../assets/images/quoteoutline.svg") no-repeat 0 50% ;
+}*/
+
+blockquote:not(.pull-out-quote__content) {
+  border-color: var(--color-purple-lightest);
+}
+
+blockquote:not(.pull-out-quote__content) > p:first-of-type:before {
+  margin-inline: unset;
 }
 
 .pull-out-quote {
@@ -53,8 +61,8 @@ blockquote > p:first-of-type:before {
 }
 
 .pull-out-quote__content div {
-  margin-bottom: 8rem;
-  margin-inline: 5rem;
+  margin-bottom: 9rem;
+  margin-inline: 5.5rem;
 }
 
 .pull-out-quote__author {

@@ -14,7 +14,7 @@
 }
 
 .call-out-box__content > * + * {
-  margin-top: var(--spacing-large);
+  margin-top: var(--spacing);
 }
 
 .call-out-box__content .button-style-link {
