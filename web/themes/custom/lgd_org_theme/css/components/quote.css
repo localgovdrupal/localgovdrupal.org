@@ -53,7 +53,7 @@ blockquote:not(.pull-out-quote__content) > p:first-of-type:before {
 
 .pull-out-quote__content {
   background-image: url("../../assets/images/speech-invert.svg");
-  background-size: 100% 100%;
+  background-size: 101% 101%;
   background-repeat: no-repeat;
   background-color: var(--color-purple-lightest);
   border: 1px solid white;
