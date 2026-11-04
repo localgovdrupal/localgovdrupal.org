@@ -29,14 +29,14 @@
   margin-left: auto;
 }
 
-@media screen and (min-width: 48rem) {
+/*@media screen and (min-width: 48rem) {
 
   .field--name-localgov-subsites-content > .field__item > .paragraph:not(.paragraph--type--localgov-page-section),
   .block-page-title-block,
   .lgd-container{
     max-width: calc(100% - 70px);
   }
-}
+}*/
 
 @media screen and (min-width: 60rem) {
   .field--name-localgov-subsites-content > .field__item > .paragraph:not(.paragraph--type--localgov-page-section),
