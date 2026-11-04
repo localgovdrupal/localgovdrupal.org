@@ -1,4 +1,4 @@
-.layout__region {
+.layout__region .field--name-paragraphs {
   container-name: column-region;
   container-type: inline-size;
 }

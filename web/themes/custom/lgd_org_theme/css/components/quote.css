@@ -26,6 +26,7 @@ blockquote > p:first-of-type:before,
 
 blockquote:not(.pull-out-quote__content) {
   border-color: var(--color-purple-lightest);
+  font-size: unset;
 }
 
 blockquote:not(.pull-out-quote__content) > p:first-of-type:before {
@@ -38,8 +39,8 @@ blockquote:not(.pull-out-quote__content) > p:first-of-type:before {
   --spacing-mega: 4rem;
   margin-right: 0;
   margin-left: 0;
-  padding: var(--quote-padding);
-  padding-left: var(--quote-padding-left);
+  /*padding: var(--quote-padding);
+  padding-left: var(--quote-padding-left);*/
   border-color: transparent;
   border-left: 0px;
   background-color: var(--quote-bg-color);
@@ -49,6 +50,7 @@ blockquote:not(.pull-out-quote__content) > p:first-of-type:before {
   margin-bottom: clamp(var(--spacing), 8vw, var(--spacing-mega));
   text-align: center;
   line-height: 1.3;
+  padding: 0;
 }
 
 .pull-out-quote__content {
@@ -62,7 +64,7 @@ blockquote:not(.pull-out-quote__content) > p:first-of-type:before {
 
 .pull-out-quote__content div {
   margin-bottom: 9rem;
-  margin-inline: 5.5rem;
+  margin-inline: 12%;
 }
 
 .pull-out-quote__author {
@@ -72,6 +74,7 @@ blockquote:not(.pull-out-quote__content) > p:first-of-type:before {
   font-size: var(--font-size-medium);
   font-family: var(--font-primary);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
   justify-content: center;

@@ -26,6 +26,7 @@
 .media-with-text .field--name-field-links {
   display: inline-flex;
   gap: var(--spacing);
+  flex-wrap: wrap;
 }
 
 .media-with-text h2 {
