@@ -6,3 +6,8 @@ id: node__localgov_page
 label: 'Content: Page'
 tags:
   description: '[node:localgov_page_summary]'
+  schema_article_description: '[node:localgov_page_summary]'
+  schema_article_headline: '[node:title]'
+  schema_article_id: '[node:url]'
+  schema_article_publisher: 'a:6:{s:5:"@type";s:12:"Organization";s:3:"@id";s:39:"https://localgovdrupal.org#organization";s:4:"name";s:15:"LocalGov Drupal";s:3:"url";s:27:"https://localgovdrupal.org/";s:6:"sameAs";s:177:"https://www.youtube.com/channel/UCgOTBrkZvJwCuODRpHxZIIA https://www.linkedin.com/company/localgovdrupal https://github.com/localgovdrupal https://www.drupal.org/localgov-drupal";s:4:"logo";a:2:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:63:"https://localgovdrupal.org/themes/custom/lgd_org_theme/logo.svg";}}'
+  schema_article_type: Article

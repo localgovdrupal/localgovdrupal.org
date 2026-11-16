@@ -8,4 +8,12 @@ id: front
 label: 'Front page'
 tags:
   canonical_url: '[site:url]'
+  schema_organization_contact_point: 'a:2:{s:5:"@type";s:12:"ContactPoint";s:5:"email";s:25:"hello@localgovdrupal.org ";}'
+  schema_organization_description: 'The publishing platform created by councils, for councils. LocalGov Drupal is a community of developers, content designers and digital leaders from local councils across the UK and Ireland. '
+  schema_organization_id: 'https://localgovdrupal.org#organization'
+  schema_organization_logo: 'a:2:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:63:"https://localgovdrupal.org/themes/custom/lgd_org_theme/logo.svg";}'
+  schema_organization_name: 'LocalGov Drupal'
+  schema_organization_same_as: 'https://www.youtube.com/channel/UCgOTBrkZvJwCuODRpHxZIIA https://www.linkedin.com/company/localgovdrupal https://github.com/localgovdrupal https://www.drupal.org/localgov-drupal'
+  schema_organization_type: Organization
+  schema_organization_url: 'https://localgovdrupal.org/'
   shortlink: '[site:url]'
