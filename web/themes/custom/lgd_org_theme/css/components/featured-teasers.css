@@ -33,23 +33,15 @@
   }
 }
 
-
-
-
-
-
 .multiple-image-links__content--button {
   margin-top: var(--spacing-mega);
 }
 
 .image-link a {
   display: block;
-  /*max-width: 250px;*/
 }
 
 .image-link a:hover {
-  /*border: 1px solid black;*/
-  /* opacity: 0.8; */
   outline-offset: 9px;
   display: block;
   outline: 2px solid black;

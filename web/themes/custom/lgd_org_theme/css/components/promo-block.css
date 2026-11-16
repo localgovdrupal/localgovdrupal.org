@@ -60,19 +60,6 @@
 
 }
 
-/*.lgd-row__one-third .promo-block {
-    @media screen and (min-width: 40rem) {
-      grid-template-columns: 1fr;
-      .promo-block__image {
-        flex-direction: row;
-        align-items: flex-start;
-      }
-      svg {
-        transform: none;
-      }
-  }
-}*/
-
 aside .promo-block {
   margin-top: 4rem;
 }
