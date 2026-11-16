@@ -26,6 +26,7 @@ settings:
       - alignment
       - bulletedList
       - numberedList
+      - horizontalLine
       - '|'
       - blockQuote
       - drupalInsertImage

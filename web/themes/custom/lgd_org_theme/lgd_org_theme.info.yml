@@ -27,6 +27,7 @@ libraries:
   - lgd_org_theme/tables
   - lgd_org_theme/submenu
   - lgd_org_theme/mmenu
+  - lgd_org_theme/link
 
 libraries-extend:
   #localgov_base/menu-main:
@@ -47,6 +48,8 @@ libraries-extend:
     - lgd_org_theme/guides
   disclosure_nav/tree:
     - lgd_org_theme/disclosure-nav
+  localgov_base/page-title-block:
+    - lgd_org_theme/page-title
 
 libraries-override:
   localgov_base/menu-main: lgd_org_theme/menu

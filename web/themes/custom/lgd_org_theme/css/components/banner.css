@@ -1,26 +1,16 @@
 /* Banner Region */
 .lgd-region--banner {
 
-  background: rgba(0, 68, 89, 0.8);
+  background: #85006C;
   padding-bottom: var(--spacing-large);
   padding-top: var(--spacing-large);
   color: var(--color-white);
   position: relative;
-}
-
-.lgd-region--banner:before {
-  content: "";
-  width: 100%;
-  height: 100%;
   background-image: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
+
 
 
 .lgd-region--banner .lgd-region__inner {
@@ -75,7 +65,7 @@
   font-size: clamp(var(--font-size-medium), 2.5vw, 1.5625rem);
   font-weight: 500;
   letter-spacing: -0.5px;
-  font-family: var(--font-secondary);
+  /*font-family: var(--font-secondary);*/
   max-width: 36ch;
   text-align: center;
   margin-bottom: 2rem;
@@ -90,25 +80,8 @@
 }
 
 .block-homepage--intro a {
-  background-color: var(--color-white);
-  color: var(--color-black);
-  border-radius: 2rem;
-  padding: 10px 20px;
-  padding: 10px clamp(20px, 2vw, 1.5rem);
-  font-size: clamp(1rem,2vw,var(--font-size-large));
-  font-family: var(--font-primary);
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: var(--flow-space);
-  font-weight: 700;
-  text-align: center;
+  background-color: var(--color-white) !important;
   margin-top: 1rem;
-  &:hover {
-    background-color: var(--color-accent);
-  }
-  &:focus {
-    outline-color: var(--color-white) !important;
-  }
 }
 
 
@@ -123,11 +96,15 @@
 
 
 .lgd-org-big-numbers a {
-  font-size: clamp(0.875rem, 2vw, 1.625rem);
+  font-size: clamp(0.875rem, 2vw, 1.6rem);
   font-weight: 500;
   letter-spacing: -0.3px;
   line-height: 1;
-  border: 1px solid;
+  /*border: 1px solid;*/
+  background-image: url(../../assets/images/wibblycircle.svg);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -147,24 +124,23 @@
 }
 
 .lgd-org-big-numbers a:hover {
-  border-color: var(--color-accent);
+  /*border-color: var(--color-accent);*/
   color: var(--color-accent);
-  background: transparent;
+  /*background: transparent;*/
 
 }
 
 .lgd-org-big-numbers a:focus {
-  background: transparent;
-  box-shadow: 0;
-  outline: 3px solid black;
-  outline-offset: 2px;
+  background-color: transparent;
+  outline: 2px solid white;
+  /*box-shadow: 0;*/
   color: inherit;
 
 }
 
 .lgd-org-big-numbers .field--name-field-number,
 .lgd-org--councils .number {
-  font-size: clamp(3.25rem, 10vw, 7.75rem);
+  font-size: clamp(3.25rem, 10vw, 5.6rem);
   letter-spacing: -3px;
   display: block;
   line-height: 100%;

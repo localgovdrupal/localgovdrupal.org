@@ -1,0 +1,15 @@
+uuid: b31092ca-7506-4d00-a913-7cb48e568697
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: promo_block
+label: 'Promo block'
+icon_uuid: null
+icon_default: null
+description: 'Image, heading, text and link which can be reused across the site'
+behavior_plugins: {  }

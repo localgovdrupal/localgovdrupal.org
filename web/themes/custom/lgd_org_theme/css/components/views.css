@@ -1,17 +1,25 @@
 .views-row {
   padding-bottom: var(--spacing-larger);
+  /*padding: 2rem;*/
+  /*border-radius: 2rem;*/
 }
 
 .views-row + .views-row {
-  border-top: 1px solid var(--color-grey-medium);
+  border-top: 2px solid var(--color-purple);
   padding-top: var(--spacing-larger);
 }
 
 .views-row .lgd-teaser__image  {
   /*display: flex;*/
   align-content: center;
+  border-radius: 2rem ;
+  overflow: hidden;
+
 }
 
 .views-row .lgd-teaser__image img {
   width: initial;
+  /*border-radius: 2rem ;
+  border: 1px solid var(--color-purple);
+  padding: 1rem;*/
 }

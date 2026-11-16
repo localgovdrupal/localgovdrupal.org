@@ -7,8 +7,6 @@ dependencies:
     - node.type.localgov_directory_promo_page
     - paragraphs.paragraphs_type.localgov_accordion
     - paragraphs.paragraphs_type.localgov_call_out_box
-    - paragraphs.paragraphs_type.localgov_embed_views
-    - paragraphs.paragraphs_type.localgov_featured_teasers
     - paragraphs.paragraphs_type.localgov_image
     - paragraphs.paragraphs_type.localgov_link
     - paragraphs.paragraphs_type.localgov_media_with_text
@@ -36,8 +34,6 @@ settings:
     target_bundles:
       localgov_accordion: localgov_accordion
       localgov_call_out_box: localgov_call_out_box
-      localgov_embed_views: localgov_embed_views
-      localgov_featured_teasers: localgov_featured_teasers
       localgov_image: localgov_image
       localgov_link: localgov_link
       localgov_media_with_text: localgov_media_with_text
@@ -49,6 +45,9 @@ settings:
     target_bundles_drag_drop:
       from_library:
         weight: 37
+        enabled: false
+      image_link:
+        weight: 43
         enabled: false
       localgov_accordion:
         weight: 38
@@ -82,7 +81,7 @@ settings:
         enabled: false
       localgov_embed_views:
         weight: 48
-        enabled: true
+        enabled: false
       localgov_fact_box:
         weight: 48
         enabled: false
@@ -97,7 +96,7 @@ settings:
         enabled: false
       localgov_featured_teasers:
         weight: 52
-        enabled: true
+        enabled: false
       localgov_ia_block:
         weight: 53
         enabled: false
@@ -131,6 +130,9 @@ settings:
       localgov_newsroom_teaser:
         weight: 63
         enabled: false
+      localgov_numbered_text:
+        weight: 71
+        enabled: false
       localgov_page_section:
         weight: 64
         enabled: true
@@ -155,4 +157,13 @@ settings:
       localgov_video:
         weight: 71
         enabled: true
+      multiple_image_and_links:
+        weight: 80
+        enabled: false
+      page_section:
+        weight: 81
+        enabled: false
+      topic_list_builder:
+        weight: 82
+        enabled: false
 field_type: entity_reference_revisions

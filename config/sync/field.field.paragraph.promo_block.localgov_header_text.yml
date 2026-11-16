@@ -1,0 +1,19 @@
+uuid: f97177f1-57df-4d2a-bb6b-d9829337a6ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_header_text
+    - paragraphs.paragraphs_type.promo_block
+id: paragraph.promo_block.localgov_header_text
+field_name: localgov_header_text
+entity_type: paragraph
+bundle: promo_block
+label: 'Header text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

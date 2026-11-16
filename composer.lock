@@ -6320,17 +6320,17 @@
         },
         {
             "name": "drupal/localgov_base",
-            "version": "2.3.4",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/localgov_base.git",
-                "reference": "2.3.4"
+                "reference": "2.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/localgov_base-2.3.4.zip",
-                "reference": "2.3.4",
-                "shasum": "747e51537e89cf458ed9e71c8290a9cbc3aa04f6"
+                "url": "https://ftp.drupal.org/files/projects/localgov_base-2.6.0.zip",
+                "reference": "2.6.0",
+                "shasum": "1e0815bdccf76ffe61d5c9d62d96e60b684b3554"
             },
             "require": {
                 "drupal/core": "^10.1.3 || ^11"
@@ -6338,8 +6338,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "2.3.4",
-                    "datestamp": "1773694854",
+                    "version": "2.6.0",
+                    "datestamp": "1786965982",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

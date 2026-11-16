@@ -67,21 +67,28 @@ body {
   */
   --color-accent: var(--color-dandilion);
   --color-dandilion: #FFE146;
-  --color-sahara: #fff4ca;
-  --color-seafoam: #96F1C6;
-  --color-melrose: #D4DDFF;
+  --color-sahara: #fff6c8;
+  --color-skyblue: #9ad7f9;
+  --color-seafoam: #80DFC1;
+  /*--color-melrose: #D4DDFF;*/
   --color-bittersweet: #FFB4A1;
-  --color-dark-blue: #004459;
+  /*--color-dark-blue: #004459;*/
+  --color-purple: #8c0272;
 
-  --color-bittersweet-lightest: #fff7f5;
+  --color-bittersweet-lightest: rgba(255, 180, 161, 0.44);
+  --color-seafoam-lightest: rgba(128, 223, 193, 0.27);
+  --color-midlight-blue: #D7F1FC;
+  --color-skyblue-lightest: #EAF8FD;
   --color-bittersweet-darker: #FF8262;
+  --color-purple-lightest: #e8cce3;
+  --color-purple-transparent: rgba(140, 2, 114, 0.8);
 
   /*
     Grey Scale
     In this section, we define our greys; let's not have 50 shades
   */
   --color-white: #fff;
-  --color-grey-light: #e7e7e6;
+  --color-grey-light: #f5f5f5;
   --color-grey-medium: #b1b4b6;
   --color-grey-dark: #505a5f;
   --color-black: #0b0c0c;
@@ -94,8 +101,8 @@ body {
   --color-slogan: var(--color-black);
 
   /* Fonts */
-  --font-primary: 'Inter', oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --font-secondary: 'Lora', "Times New Roman", times, serif;
+  --font-primary: 'Reddit Sans', oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-secondary: 'Besley', "Times New Roman", times, serif;
 
 
   --font-heading-1: var(--font-primary);
@@ -145,7 +152,7 @@ body {
   --breadcrumbs-font-size: clamp(var(--font-size-smaller), 2.5vw, var(--font-size-medium));
   --breadcrumbs-padding-vertical: var(--spacing-smaller);
   --breadcrumbs-padding-horizontal: 0;
-  --breadcrumbs-link-color: var(--color-black);
+  --breadcrumbs-link-color: var(--color-purple);
   --breadcrumbs-spacing-bottom: clamp(var(--spacing-smaller), 2.5vw, var(--spacing-large));
 
   /* Header Items */
@@ -164,12 +171,12 @@ body {
 
   /* Footer Items */
   /*--color-section-pre-footer-bg: rgba(255, 130, 98, 0.70);*/
-  --color-section-pre-footer-bg: rgba(0, 68, 89, 0.8);
+  --color-section-pre-footer-bg: var(--color-purple-transparent);
   --color-section-footer-bg: var(--color-yellow);
   --color-section-post-footer-bg: var(--color-yellow);
-  --section-spacing-vertical-pre-footer: 7.5rem;
+  --section-spacing-vertical-pre-footer: 4rem;
   --section-spacing-vertical-footer: var(--spacing);
-  --section-spacing-vertical-post-footer: var(--spacing-largest);
+  --section-spacing-vertical-post-footer: 1rem;
 
   /* Button Elements (and button-styled links) */
   --button-padding-vertical: var(--spacing);
@@ -206,8 +213,8 @@ body {
 
   /* Image with Caption */
   --image-with-caption-border: var(--border);
-  --image-with-caption-border-color: var(--color-black);
-  --image-with-caption-padding: var(--spacing) 0 var(--spacing);
+  --image-with-caption-border-color: var(--color-purple);
+  --image-with-caption-padding: var(--spacing-smaller) 0 var(--spacing-smaller);
   --image-with-caption-bg-color: var(--color-white);
 
   /* Quote */
@@ -228,7 +235,7 @@ body {
   /* Call-out Box */
   --call-out-box-text-color: var(--color-black);
   --call-out-box-bg-color: transparent;
-  --call-out-box-padding: 2rem 3rem 1.5rem;
+  --call-out-box-padding: 2.5rem 1.5rem;
 
   --featured-teaser-border: 0;
 
@@ -243,20 +250,20 @@ body {
   --step-by-step-nav-block-width: var(--width-medium);
 
 
-
-  --color-page-section-background-color-1: var(--color-accent);
+  --color-page-section-background-color: white;
+  --color-page-section-background-color-1: var(--color-purple-lightest);
   --color-page-section-background-color-1-text-color: var(--color-black);
   --color-page-section-background-color-1-link-color: var(--color-black);
-  --color-page-section-background-color-2: rgba(255, 225, 70, 0.20);
+  --color-page-section-background-color-2: #fff9d9;
   --color-page-section-background-color-2-text-color: var(--color-black);
   --color-page-section-background-color-2-link-color: var(--color-black);
   --color-page-section-background-color-3: var(--color-grey-lightest);
   --color-page-section-background-color-3-text-color: var(--color-black);
   --color-page-section-background-color-3-link-color: var(--color-black);
-  --color-page-section-background-color-4: var(--color-white);
+  --color-page-section-background-color-4: var(--color-grey-lightest);
   --color-page-section-background-color-4-text-color: var(--color-black);
   --color-page-section-background-color-4-link-color: var(--color-link);
-  --color-page-section-background-color-5: linear-gradient(180deg, rgba(174, 191, 254, 0.2) 30.48%, rgba(255, 130, 98, 0.3) 114.39%);
+  --color-page-section-background-color-5: var(--color-skyblue);
   --color-page-section-background-color-5-text-color: var(--color-black);
   --color-page-section-background-color-5-link-color: var(--color-link);
   --color-page-section-background-color-6: var(--color-accent);

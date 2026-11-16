@@ -6,7 +6,7 @@
   /*padding: 0;*/
   color: var(--color-black);
   @media screen and (min-width: 48rem) {
-    color: var(--color-black) !important;
+    /*color: var(--color-black) !important;*/
   }
 }
 

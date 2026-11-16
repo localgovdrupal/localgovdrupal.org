@@ -3,9 +3,9 @@
   border-top: 1px solid var(--color-black);
 }
 
-.lgd-page-section--bg-colour-5 {
+/*.lgd-page-section--bg-colour-5 {
   background: linear-gradient(180deg, rgba(174, 191, 254, 0.2) 30.48%, rgba(255, 130, 98, 0.3) 114.39%);
-}
+}*/
 
 .lgd-page-section--padding-top-small {
   padding-top: var(--spacing-small);
@@ -49,6 +49,10 @@
 
 .lgd-page-section .layout__region--content > * + * {
   margin-top: var(--spacing-large);
+}
+
+.lgd-page-section .layout__region--content > * + .media-with-text--has-background {
+  margin-top: 4rem;
 }
 
 .lgd-page-section.lgd-page-section--has-bg-colour{

@@ -1,0 +1,23 @@
+uuid: df1f12db-bbee-4516-b6a2-bf7f7aeed250
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_colour_theme
+    - paragraphs.paragraphs_type.promo_block
+  module:
+    - options
+id: paragraph.promo_block.localgov_colour_theme
+field_name: localgov_colour_theme
+entity_type: paragraph
+bundle: promo_block
+label: 'Colour theme'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_index
+    - field.field.node.localgov_page.field_meta_tags
+    - field.field.node.localgov_page.field_promo_block
     - field.field.node.localgov_page.localgov_hide_summary
     - field.field.node.localgov_page.localgov_page_banner
     - field.field.node.localgov_page.localgov_page_summary
@@ -36,6 +38,8 @@ content:
     weight: 1
     region: content
 hidden:
+  field_meta_tags: true
+  field_promo_block: true
   links: true
   localgov_hide_summary: true
   localgov_page_banner: true

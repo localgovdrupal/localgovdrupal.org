@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_media_with_text.field_image_decoration
     - field.field.paragraph.localgov_media_with_text.field_links
     - field.field.paragraph.localgov_media_with_text.localgov_heading_level
     - field.field.paragraph.localgov_media_with_text.localgov_link
@@ -25,9 +26,15 @@ targetEntityType: paragraph
 bundle: localgov_media_with_text
 mode: default
 content:
+  field_image_decoration:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_links:
     type: link_default
-    weight: 8
+    weight: 7
     region: content
     settings:
       placeholder_url: ''
@@ -57,7 +64,7 @@ content:
         - remote_video
     third_party_settings:
       media_library_edit:
-        show_edit: '1'
+        show_edit: true
   localgov_media_position:
     type: options_select
     weight: 2
@@ -69,13 +76,6 @@ content:
     weight: 3
     region: content
     settings: {  }
-    third_party_settings: {  }
-  localgov_opens_in_a_new_window:
-    type: boolean_checkbox
-    weight: 7
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   localgov_text:
     type: text_textarea
@@ -95,4 +95,5 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  localgov_opens_in_a_new_window: true
   status: true

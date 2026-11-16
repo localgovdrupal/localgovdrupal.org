@@ -1,0 +1,54 @@
+uuid: e5cbe345-e290-4213-8cb4-517823391a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promo_block.localgov_body_text
+    - field.field.paragraph.promo_block.localgov_colour_theme
+    - field.field.paragraph.promo_block.localgov_header_text
+    - field.field.paragraph.promo_block.localgov_image
+    - paragraphs.paragraphs_type.promo_block
+  module:
+    - field_formatter_class
+    - options
+    - text
+id: paragraph.promo_block.default
+targetEntityType: paragraph
+bundle: promo_block
+mode: default
+content:
+  localgov_body_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  localgov_colour_theme:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  localgov_header_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  localgov_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: freestyle
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

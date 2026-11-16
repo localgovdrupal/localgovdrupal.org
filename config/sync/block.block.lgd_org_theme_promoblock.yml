@@ -1,0 +1,37 @@
+uuid: f88efafd-5d34-4809-93b2-3eb1d3a67e5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools_block
+    - node
+  theme:
+    - lgd_org_theme
+id: lgd_org_theme_promoblock
+theme: lgd_org_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'entity_field:node:field_promo_block'
+settings:
+  id: 'entity_field:node:field_promo_block'
+  label: 'Promo block'
+  label_display: '0'
+  provider: ctools_block
+  context_mapping:
+    entity: '@node.node_route_context:node'
+  formatter:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+    third_party_settings: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      localgov_page: localgov_page

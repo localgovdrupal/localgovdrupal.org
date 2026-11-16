@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.localgov_call_out_box.field_button_style
     - field.field.paragraph.localgov_call_out_box.localgov_background_image
     - field.field.paragraph.localgov_call_out_box.localgov_body_text
     - field.field.paragraph.localgov_call_out_box.localgov_button
@@ -13,7 +14,6 @@ dependencies:
     - paragraphs.paragraphs_type.localgov_call_out_box
   module:
     - link
-    - media_library
     - text
 _core:
   default_config_hash: Iru8dr7-dsVb-c2M0wcpKZjx00O3mrLSf6gRLoIBJFs
@@ -22,12 +22,11 @@ targetEntityType: paragraph
 bundle: localgov_call_out_box
 mode: default
 content:
-  localgov_background_image:
-    type: media_library_widget
-    weight: 6
+  field_button_style:
+    type: options_select
+    weight: 4
     region: content
-    settings:
-      media_types: {  }
+    settings: {  }
     third_party_settings: {  }
   localgov_body_text:
     type: text_textarea
@@ -45,12 +44,6 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  localgov_colour_theme:
-    type: options_select
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   localgov_header_text:
     type: string_textfield
     weight: 0
@@ -65,14 +58,10 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  localgov_opens_in_a_new_window:
-    type: boolean_checkbox
-    weight: 4
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
 hidden:
   created: true
+  localgov_background_image: true
+  localgov_colour_theme: true
+  localgov_opens_in_a_new_window: true
   status: true
   uid: true

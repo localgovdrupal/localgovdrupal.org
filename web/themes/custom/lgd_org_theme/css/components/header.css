@@ -40,6 +40,10 @@
 
 .lgd-header .lgd-region--header {
   justify-self: flex-start;
+  @media screen and (max-width: 40rem) {
+    margin-inline-end: 1rem;
+  }
+
 }
 
 .lgd-region--mobile-toggles .padding-horizontal {
@@ -112,7 +116,7 @@
   gap: var(--spacing-smaller);
   gap: clamp(var(--spacing-smaller), 10vw, var(--spacing-small));
   /*font-family: var(--font-secondary);*/
-  font-size: clamp(var(--font-size-small), 2vw, 1rem);
+  font-size: clamp(0.7rem, 2vw, 1rem);
   align-items: center;
   font-weight: 500;
 }

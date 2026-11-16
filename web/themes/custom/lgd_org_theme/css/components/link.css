@@ -1,0 +1,16 @@
+.paragraph--type--localgov-link .link-wrapper{
+  margin-bottom: var(--spacing);
+}
+
+.paragraph--type--localgov-link a:after {
+  display: none !important;
+}
+
+.paragraph--type--localgov-link.default-style-link a {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.paragraph--type--localgov-link.button-2-style-link {
+
+}

@@ -1,0 +1,21 @@
+uuid: 8793570e-01be-4005-b663-730a62736e5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_decoration
+    - paragraphs.paragraphs_type.localgov_media_with_text
+  module:
+    - options
+id: paragraph.localgov_media_with_text.field_image_decoration
+field_name: field_image_decoration
+entity_type: paragraph
+bundle: localgov_media_with_text
+label: 'Image decoration'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

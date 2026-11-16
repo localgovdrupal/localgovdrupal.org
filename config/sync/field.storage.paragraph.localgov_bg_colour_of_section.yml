@@ -15,7 +15,7 @@ settings:
   allowed_values:
     -
       value: colour-1
-      label: 'Accent (bright yellow)'
+      label: 'Accent (light purple)'
     -
       value: colour-2
       label: 'Accent Alt (light yellow)'
@@ -24,7 +24,7 @@ settings:
       label: 'Border top'
     -
       value: colour-5
-      label: Gradient
+      label: Blue
     -
       value: colour-3
       label: 'Light Grey'

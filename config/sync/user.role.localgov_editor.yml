@@ -78,6 +78,7 @@ permissions:
   - 'administer blocks'
   - 'administer menu'
   - 'administer nodes'
+  - 'administer paragraphs library'
   - 'administer redirect settings'
   - 'administer redirects'
   - 'administer sitemap settings'
