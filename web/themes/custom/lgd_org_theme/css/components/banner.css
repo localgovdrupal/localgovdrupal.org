@@ -6,7 +6,7 @@
   padding-top: var(--spacing-large);
   color: var(--color-white);
   position: relative;
-  background-image: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);
+  /*background-image: url(/themes/custom/lgd_org_theme/assets/images/bannerbg.jpg);*/
   background-repeat: no-repeat;
   background-size: cover;
 }
