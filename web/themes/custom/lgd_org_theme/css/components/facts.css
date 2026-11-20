@@ -4,15 +4,6 @@
   font-size: 1.1rem;
 }
 
-.key-facts > h2 {
-  /*background: var(--color-seafoam);
-  margin-bottom: 0;
-  padding: var(--spacing-small);
-  padding-bottom: var(--spacing-large);
-  font-family: var(--font-primary);
-  font-size: var(--font-size-large);
-  font-weight: 700;*/
-}
 
 .key-facts > .field__items{
   display: grid;
@@ -36,7 +27,6 @@
 }
 
 .key-fact {
-
   display: block;
 }
 
