@@ -9,7 +9,7 @@ _core:
 id: localgov_directories_venue
 label: 'Directory Entry Venue'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   2c7bc04f-d12f-4105-bb70-8fe2489ddc16:
     id: 'entity_bundle:node'

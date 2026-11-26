@@ -9,7 +9,7 @@ _core:
 id: localgov_newsroom
 label: Newsroom
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   58bd74f7-9aeb-469f-ae66-ee1acf0ac229:
     id: 'entity_bundle:node'

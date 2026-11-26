@@ -9,7 +9,7 @@ _core:
 id: localgov_subsites_page
 label: 'Subsite page'
 type: 'canonical_entities:node'
-pattern: '[node:localgov_subsites_parent:entity:url:relative]/[node:title]'
+pattern: '/[node:localgov_subsites_parent:entity:url:relative]/[node:title]'
 selection_criteria:
   a17ad9f1-47e0-407c-9351-970cb7dc958c:
     id: 'entity_bundle:node'
