@@ -9,7 +9,7 @@ _core:
 id: localgov_directory_channel
 label: 'Directory channel'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   66ee9fe5-9a14-476c-a3d2-4fe6e0c467a9:
     id: 'entity_bundle:node'

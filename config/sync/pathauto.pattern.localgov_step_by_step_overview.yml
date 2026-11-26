@@ -9,7 +9,7 @@ _core:
 id: localgov_step_by_step_overview
 label: 'Step by step overview'
 type: 'canonical_entities:node'
-pattern: '[node:localgov_subsites_parent:entity:url:relative]/[node:title]'
+pattern: '/[node:localgov_subsites_parent:entity:url:relative]/[node:title]'
 selection_criteria:
   2e4c94f6-c30c-447d-8226-6e3a996d200a:
     id: 'entity_bundle:node'

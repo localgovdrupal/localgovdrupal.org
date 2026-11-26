@@ -7,7 +7,7 @@ dependencies:
 id: node_menu_link_parents_join_path_node_title
 label: 'Menu path'
 type: 'canonical_entities:node'
-pattern: '[node:menu-link:parents:join-path]/[node:title]'
+pattern: '/[node:menu-link:parents:join-path]/[node:title]'
 selection_criteria:
   b3b3134c-36a5-4bd8-b563-399741287c09:
     id: 'entity_bundle:node'
